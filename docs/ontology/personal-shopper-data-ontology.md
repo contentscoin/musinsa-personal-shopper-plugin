@@ -2,7 +2,7 @@
 
 Owner tag: hermes-profile:paperclipbase
 Pack intent: personal-shopper-data
-Generated at: 2026-06-24T15:44:11.263Z
+Generated at: 2026-06-24T16:00:21.443Z
 
 ## Privacy boundary
 - No names, phone numbers, emails, addresses, order IDs, IP addresses, or raw user identifiers are stored.

@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Node test and ontology export
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: package.json
+
+      - name: Show versions
+        run: |
+          node --version
+          npm --version
+
+      - name: Run unit tests
+        run: npm test
+
+      - name: Regenerate product enrichment ontology
+        run: npm run enrich:products
+
+      - name: Regenerate analytics ontology export
+        run: npm run analytics:export
+
+      - name: Verify plugin manifest and OpenAPI files exist
+        run: |
+          test -f .well-known/ai-plugin.json
+          test -f openapi.yaml
+          test -f docs/ontology/musinsa-product-enrichment.md
+          test -f docs/ontology/personal-shopper-data-ontology.md

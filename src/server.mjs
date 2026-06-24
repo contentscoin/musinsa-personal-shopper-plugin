@@ -14,6 +14,7 @@ const server = http.createServer(async (req, res) => {
     if (req.method === 'GET' && url.pathname === '/health') return json(res, { ok: true, products_loaded: products.length });
     if (req.method === 'GET' && url.pathname === '/openapi.yaml') return text(res, await readFile(new URL('../openapi.yaml', import.meta.url), 'utf8'), 'application/yaml; charset=utf-8');
     if (req.method === 'GET' && url.pathname === '/.well-known/ai-plugin.json') return text(res, await readFile(new URL('../.well-known/ai-plugin.json', import.meta.url), 'utf8'), 'application/json; charset=utf-8');
+    if (req.method === 'GET' && (url.pathname === '/dashboard' || url.pathname === '/dashboard.html')) return text(res, await readFile(new URL('../docs/dashboard-mock.html', import.meta.url), 'utf8'), 'text/html; charset=utf-8');
     if (req.method === 'GET' && url.pathname === '/logo.png') return text(res, '', 'image/png');
     if (req.method === 'POST' && url.pathname === '/products/search') return json(res, { results: searchProducts(products, await body(req)) });
 

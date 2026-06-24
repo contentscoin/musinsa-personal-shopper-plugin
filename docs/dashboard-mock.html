@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MUSINSA Personal Shopper Analytics Dashboard</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b0f17; --panel:#121826; --panel2:#172033; --text:#e6edf7; --muted:#9aa8bd; --accent:#7c3aed; --green:#22c55e; --yellow:#f59e0b; --red:#ef4444; --line:#243044; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: radial-gradient(circle at top left, #1b1240 0, #0b0f17 32rem); color:var(--text); }
+    header { padding:40px 28px 16px; max-width:1200px; margin:0 auto; }
+    h1 { margin:0 0 10px; font-size: clamp(28px, 4vw, 48px); letter-spacing:-0.04em; }
+    .subtitle { color:var(--muted); max-width:860px; line-height:1.6; }
+    main { max-width:1200px; margin:0 auto; padding:16px 28px 60px; }
+    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap:16px; }
+    .card { background:linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02)); border:1px solid var(--line); border-radius:20px; padding:20px; box-shadow: 0 20px 60px rgba(0,0,0,.22); }
+    .metric { grid-column: span 3; }
+    .wide { grid-column: span 8; }
+    .side { grid-column: span 4; }
+    .full { grid-column: 1 / -1; }
+    .label { color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+    .value { font-size:34px; font-weight:800; margin-top:6px; }
+    .good { color:var(--green); } .warn { color:var(--yellow); } .bad { color:var(--red); }
+    ul { padding-left:18px; margin:12px 0 0; color:#d8e0ee; line-height:1.55; }
+    table { width:100%; border-collapse: collapse; margin-top:12px; font-size:14px; }
+    th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); }
+    th { color:var(--muted); font-weight:600; }
+    .pill { display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px; background:rgba(124,58,237,.18); color:#d9ccff; border:1px solid rgba(124,58,237,.35); font-size:13px; margin:4px 6px 0 0; }
+    .source { font-size:13px; color:var(--muted); }
+    a { color:#a78bfa; }
+    @media (max-width: 900px) { .metric, .wide, .side { grid-column: 1 / -1; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="pill">MUSINSA Personal Shopper</div>
+    <h1>Owner Analytics Dashboard</h1>
+    <p class="subtitle">개인정보를 제외한 쇼핑 질문, 추천, 클릭, 전환, low-confidence ontology gap을 시각화하는 오너용 대시보드 mock입니다. 서버에서 열면 실시간 API를 시도하고, 실패하면 포함된 샘플 데이터를 표시합니다.</p>
+  </header>
+
+  <main>
+    <section class="grid" id="metrics"></section>
+    <section class="grid" style="margin-top:16px">
+      <div class="card wide">
+        <div class="label">Generated insights</div>
+        <ul id="insights"></ul>
+      </div>
+      <div class="card side">
+        <div class="label">Ontology gaps</div>
+        <div id="gaps"></div>
+      </div>
+      <div class="card side">
+        <div class="label">Top queries</div>
+        <table id="queries"></table>
+      </div>
+      <div class="card side">
+        <div class="label">Top products</div>
+        <table id="products"></table>
+      </div>
+      <div class="card side">
+        <div class="label">Intent demand</div>
+        <div id="intents"></div>
+      </div>
+      <div class="card full source">
+        <strong>Resource sources:</strong>
+        <a href="https://opencrab.sh">OpenCrab / opencrab.sh</a> ·
+        <a href="https://github.com/contentscoin/musinsa-personal-shopper-plugin">GitHub repo</a> ·
+        <a href="https://www.musinsa.com/robots.txt">MUSINSA robots.txt</a> ·
+        <a href="https://www.musinsa.com/static/sitemap/sitemap-goods-1.xml">MUSINSA sitemap sample</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const fallback = {
+      total_events: 16,
+      funnel: { searches_or_recommendations: 5, product_clicks: 3, conversions: 3, click_through_rate: 0.6, conversion_rate: 0.6 },
+      top_queries: [
+        { value: '남성 차콜 후드집업 5만원 이하 추천', count: 5 },
+        { value: '비 오는 날 남친룩 추천 [phone]', count: 1 },
+        { value: '화이트 스니커즈 7만원 이하 추천 [email]', count: 1 }
+      ],
+      top_products: [{ value:'3783092', count:13 }, { value:'3697526', count:7 }],
+      intent_stats: { colors:[{value:'차콜',count:3},{value:'화이트',count:1}], categories:[{value:'후드집업',count:4}], budgets:[{value:'50000',count:3}] },
+      low_confidence: { count: 1, rate: 0.2, missing_ontology_fields: [{value:'occasion_tags', count:1}, {value:'weather_tags', count:1}, {value:'style_tags', count:1}] },
+      insights: [
+        { type:'funnel_health', summary:'검색/추천 5건 기준 CTR 0.6, CVR 0.6입니다.' },
+        { type:'high_conversion_product', summary:'상품 3783092는 클릭과 전환 양쪽에서 상위에 있어 우선 캠페인 후보입니다.' },
+        { type:'ontology_gap', summary:'추천 신뢰도가 낮은 질문이 있어 상품 태그/상황/핏 온톨로지 보강이 필요합니다.' }
+      ]
+    };
+
+    async function loadData() {
+      try {
+        const [summary, insight] = await Promise.all([
+          fetch('/analytics/summary').then(r => r.ok ? r.json() : Promise.reject(r.status)),
+          fetch('/analytics/insights').then(r => r.ok ? r.json() : Promise.reject(r.status))
+        ]);
+        return { ...summary, insights: insight.insights || summary.insights || [] };
+      } catch (_) { return fallback; }
+    }
+
+    function metric(label, value, cls='') { return `<div class="card metric"><div class="label">${label}</div><div class="value ${cls}">${value}</div></div>`; }
+    function rows(items=[]) { return '<tr><th>Value</th><th>Count</th></tr>' + items.map(x => `<tr><td>${escapeHtml(x.value)}</td><td>${x.count}</td></tr>`).join(''); }
+    function pills(items=[]) { return items.map(x => `<span class="pill">${escapeHtml(x.value)} · ${x.count}</span>`).join(''); }
+    function escapeHtml(s) { return String(s ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch])); }
+
+    loadData().then(data => {
+      document.getElementById('metrics').innerHTML = [
+        metric('Total events', data.total_events ?? 0),
+        metric('CTR', data.funnel?.click_through_rate ?? 0, 'good'),
+        metric('CVR', data.funnel?.conversion_rate ?? 0, 'good'),
+        metric('Ontology gaps', data.low_confidence?.count ?? 0, (data.low_confidence?.count ?? 0) ? 'warn' : 'good')
+      ].join('');
+      document.getElementById('insights').innerHTML = (data.insights || []).map(i => `<li><strong>${escapeHtml(i.type)}</strong>: ${escapeHtml(i.summary)}</li>`).join('') || '<li>인사이트 없음</li>';
+      document.getElementById('gaps').innerHTML = pills(data.low_confidence?.missing_ontology_fields || []);
+      document.getElementById('queries').innerHTML = rows(data.top_queries || []);
+      document.getElementById('products').innerHTML = rows(data.top_products || []);
+      document.getElementById('intents').innerHTML = `<p>Colors</p>${pills(data.intent_stats?.colors || [])}<p>Categories</p>${pills(data.intent_stats?.categories || [])}<p>Budgets</p>${pills(data.intent_stats?.budgets || [])}`;
+    });
+  </script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
   title: MUSINSA Personal Shopper Plugin
-  version: 0.2.0
+  version: 0.4.0
   description: Conversational shopping API over MUSINSA product ontology data with intent parsing, recommendations, comparison, and session shortlists.
 servers:
   - url: http://localhost:8787

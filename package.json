@@ -1,6 +1,6 @@
 {
   "name": "musinsa-personal-shopper-plugin",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "Developer-facing ChatGPT/Codex plugin prototype for conversational MUSINSA shopping backed by crawled product ontology data.",
   "type": "module",
   "scripts": {

@@ -29,6 +29,8 @@
 | Plugin contract | OpenAPI 3.1 + `/.well-known/ai-plugin.json` |
 | Demo script | `npm run demo` |
 | GitHub repo | public |
+| CI | GitHub Actions workflow included |
+| Owner dashboard mock | `GET /dashboard` |
 
 ---
 
@@ -129,6 +131,7 @@ npm start
 curl -s http://localhost:8787/health
 curl -s http://localhost:8787/openapi.yaml
 curl -s http://localhost:8787/.well-known/ai-plugin.json
+curl -s http://localhost:8787/dashboard
 ```
 
 ### End-to-end demo 실행
@@ -182,6 +185,8 @@ recommend
 | `GET /health` | 서버 상태와 로드된 상품 수 확인 |
 | `GET /openapi.yaml` | OpenAPI spec 제공 |
 | `GET /.well-known/ai-plugin.json` | Plugin manifest 제공 |
+| `GET /dashboard` | 오너용 analytics dashboard mock 제공 |
+| `GET /dashboard.html` | dashboard mock alias |
 | `GET /logo.png` | Manifest 호환용 placeholder |
 
 ### Shopping API
@@ -390,10 +395,24 @@ docs/ontology/personal-shopper-data-ontology.md
 | `docs/pitch-summary.md` | 한 장짜리 pitch summary |
 | `docs/demo-scenarios.md` | 데모 시나리오 |
 | `docs/implementation-plan.md` | 구현 계획/작업 매핑 |
+| `RESOURCE_LINKS.md` | OpenCrab/opencrab.sh, MUSINSA robots/sitemap, GitHub 등 리소스 출처 링크 |
 
 ---
 
-## 16. Hackathon Narrative
+## 16. 리소스 출처 링크
+
+핵심 출처 링크는 `RESOURCE_LINKS.md`에 정리되어 있습니다.
+
+특히 OpenCrab 공식 사이트는 아래 링크를 사용합니다.
+
+- OpenCrab / opencrab.sh: https://opencrab.sh
+- MUSINSA robots.txt: https://www.musinsa.com/robots.txt
+- MUSINSA sitemap sample: https://www.musinsa.com/static/sitemap/sitemap-goods-1.xml
+- GitHub repository: https://github.com/contentscoin/musinsa-personal-shopper-plugin
+
+---
+
+## 17. Hackathon Narrative
 
 **문제:** 무신사에는 풍부한 상품/리뷰/랭킹 데이터가 있지만, 고객은 여전히 검색어·필터·리뷰·사이즈 정보를 직접 조합해야 합니다. AI agent 시대에는 쇼핑도 자연어 대화에서 시작됩니다.
 
@@ -403,7 +422,7 @@ docs/ontology/personal-shopper-data-ontology.md
 
 ---
 
-## 17. 한계와 향후 확장
+## 18. 한계와 향후 확장
 
 현재 한계:
 

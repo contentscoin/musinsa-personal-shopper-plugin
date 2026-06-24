@@ -40,6 +40,7 @@
 | 상품 DB 온톨로지화 | 상품명, 브랜드, 가격, 리뷰, 이미지, 소재/핏 신호를 JSON/Markdown으로 구조화 |
 | 자연어 intent 파싱 | 예산, 색상, 카테고리, 성별, 계절 등 쇼핑 의도 추출 |
 | 상품 추천 API | 사용자 질의와 customer profile 기반 추천 |
+| Score breakdown | 추천 결과별 intent/price/review/style/personalization/risk 점수 분해 |
 | 리뷰/핏 인사이트 | 리뷰 집계, 소재/핏 라벨 기반 구매 조언 생성 |
 | 상품 비교 API | 후보 상품의 가격, 리뷰 수, 만족도, 할인율, 핏 신호 비교 |
 | Shortlist API | 세션별 추천 후보 저장/조회/삭제 |
@@ -229,8 +230,24 @@ curl -s -X POST http://localhost:8787/shopper/recommend \
 - `parsed_intent`
 - `assistant_summary`
 - `recommendations`
+- `recommendations[].score_breakdown`
 - `shortlist`
 - `next_questions`
+
+`score_breakdown`은 추천 근거를 투명하게 보여주기 위한 설명용 점수입니다.
+
+```json
+{
+  "total": 6.71,
+  "intent_match": 2.2,
+  "price_fit": 1.7,
+  "review_trust": 1.9,
+  "style_context": 0.35,
+  "personalization": 0.3,
+  "business_signal": 0.8,
+  "risk_penalty": -0.55
+}
+```
 
 ---
 
@@ -360,6 +377,7 @@ docs/ontology/personal-shopper-data-ontology.md
 | `low_confidence_recommendation` | 추천 신뢰도가 낮은 질문을 저장해 상품 온톨로지 개선 seed로 사용 |
 | `npm run enrich:products` | 상품별 style/occasion/season/fit/risk tag 자동 보강 |
 | `docs/ontology/musinsa-product-enrichment.md` | enrichment 결과를 OpenCrab-ready ontology 문서로 저장 |
+| `score_breakdown` | intent match, price fit, review trust, style context, personalization, business signal, risk penalty를 분해해 추천 설명력 강화 |
 
 ---
 

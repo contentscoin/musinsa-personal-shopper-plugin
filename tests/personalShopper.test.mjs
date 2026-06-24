@@ -16,6 +16,7 @@ const products = [
     price: { sale_price: 39900, final_price: 39900, normal_price: 60900, discount_rate: 34 },
     review: { total_count: 1000, satisfaction_score: 4.8, has_summary: true },
     materials: [{ dimension: '핏', selected: ['오버|사이즈'] }, { dimension: '두께', selected: ['두꺼움'] }],
+    ai_tags: { style_tags: ['미니멀', '캐주얼'], occasion_tags: ['일상'], season_tags: ['간절기'], fit_tags: ['오버핏'], risk_tags: ['두께감 확인'] },
     images: [{ url: 'https://example.com/hoodie.jpg' }],
     source_url: 'https://www.musinsa.com/products/1'
   },
@@ -57,6 +58,11 @@ test('recommend returns assistant summary, shortlist, and shopper insights', () 
   const result = recommend(products, { query: '후드집업 5만원 이하', customer_profile: { usual_size: 'L' } });
   assert.equal(result.recommendations.length, 1);
   assert.equal(result.recommendations[0].shopper_insight.product_id, '1');
+  assert.ok(result.recommendations[0].score_breakdown.total > 0);
+  assert.ok(result.recommendations[0].score_breakdown.intent_match > 0);
+  assert.ok(result.recommendations[0].score_breakdown.price_fit > 0);
+  assert.ok(result.recommendations[0].score_breakdown.review_trust > 0);
+  assert.ok(result.recommendations[0].score_breakdown.risk_penalty <= 0);
   assert.equal(result.recommendation_confidence.low_confidence, false);
   assert.equal(result.shortlist.length, 1);
   assert.match(result.assistant_summary, /상위 후보/);
@@ -96,6 +102,9 @@ test('openapi includes shortlist and analytics endpoints and upgraded response f
   assert.match(spec, /\/analytics\/export/);
   assert.match(spec, /parsed_intent/);
   assert.match(spec, /assistant_summary/);
+  assert.match(spec, /score_breakdown/);
+  assert.match(spec, /intent_match/);
+  assert.match(spec, /risk_penalty/);
   assert.match(spec, /comparison_table/);
 });
 

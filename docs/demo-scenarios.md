@@ -18,7 +18,21 @@ POST /shopper/recommend
 
 1. `parsed_intent` extracts gender/color/category/budget.
 2. Product ontology search returns matching hoodie products.
-3. Response includes `assistant_summary`, recommendation reasons, `decision_badges`, `recommendation_confidence`, `shortlist`, product URL/image.
+3. Response includes `assistant_summary`, recommendation reasons, `decision_badges`, `recommendation_confidence`, `score_breakdown`, `shortlist`, product URL/image.
+
+### Score breakdown highlight
+
+```json
+{
+  "intent_match": 2.2,
+  "price_fit": 1.7,
+  "review_trust": 1.9,
+  "style_context": 0.35,
+  "personalization": 0.3,
+  "business_signal": 0.8,
+  "risk_penalty": -0.55
+}
+```
 
 ---
 

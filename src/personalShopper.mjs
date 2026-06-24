@@ -77,9 +77,11 @@ export function recommend(products, request) {
   const recommendations = results.map((r, index) => {
     const full = getProduct(products, r.product_id);
     const shopperInsight = summarizeProduct(full, request.customer_profile ?? {});
+    const scoreBreakdown = buildScoreBreakdown(full, intent, request.customer_profile ?? {}, r.score, shopperInsight);
     return {
       ...r,
       rank: index + 1,
+      score_breakdown: scoreBreakdown,
       why_recommended: buildRecommendationReason(full, intent, shopperInsight),
       decision_badges: buildDecisionBadges(full, intent),
       shopper_insight: shopperInsight
@@ -97,6 +99,7 @@ export function recommend(products, request) {
       product_id: item.product_id,
       product_name: item.name_ko,
       price: item.price?.final_price ?? item.price?.sale_price,
+      score_breakdown: item.score_breakdown,
       reason: item.why_recommended,
       url: item.source_url,
       image: item.primary_image
@@ -164,6 +167,75 @@ function buildRecommendationReason(product, intent, insight) {
   return reasons.length ? reasons.join(' · ') : '요청 조건과 공개 상품 데이터 기준으로 관련도가 높음';
 }
 
+function buildScoreBreakdown(product, intent, customerProfile, searchScore, insight) {
+  const text = productText(product);
+  const aiTags = product.ai_tags ?? {};
+  const price = product.price?.final_price ?? product.price?.sale_price ?? Number.POSITIVE_INFINITY;
+  const reviewCount = product.review?.total_count ?? 0;
+  const satisfaction = product.review?.satisfaction_score ?? 0;
+  const stylePreferences = Array.isArray(customerProfile.style_preference) ? customerProfile.style_preference : [];
+
+  const matchedCategories = intent.categories.filter(c => text.includes(tight(c)) || text.includes(c));
+  const matchedColors = intent.colors.filter(c => text.includes(tight(c)) || text.includes(c));
+  const matchedSeasons = intent.seasons.filter(s => text.includes(tight(s)) || text.includes(s) || (aiTags.season_tags ?? []).includes(s));
+  const genderMatched = intent.gender ? (product.gender ?? []).includes(intent.gender) : false;
+  const brandMatched = intent.brand ? text.includes(tight(intent.brand)) : false;
+
+  const intentMatch = matchedCategories.length * 1.2 + matchedColors.length * 1 + matchedSeasons.length * 0.6 + (genderMatched ? 0.4 : 0) + (brandMatched ? 0.8 : 0);
+  const priceFit = intent.budget ? (price <= intent.budget ? 1.5 + Math.min((intent.budget - price) / intent.budget, 0.5) : -Math.min((price - intent.budget) / intent.budget, 2)) : 0.3;
+  const reviewTrust = Math.min(Math.log10(reviewCount + 1) / 3, 1.2) + (satisfaction ? satisfaction / 5 : 0);
+  const tagText = [...(aiTags.style_tags ?? []), ...(aiTags.occasion_tags ?? []), ...(aiTags.season_tags ?? []), ...(aiTags.fit_tags ?? [])].join(' ');
+  const contextTerms = [intent.raw_query, ...stylePreferences, customerProfile.purchase_context].filter(Boolean);
+  const contextMatches = contextTerms.flatMap(term => String(term).split(/\s+/)).filter(term => term.length >= 2 && tagText.includes(term)).length;
+  const styleContext = Math.min(contextMatches * 0.35, 1.4);
+  const personalization = buildPersonalizationScore(aiTags, customerProfile, insight);
+  const businessSignal = Math.min((product.price?.discount_rate ?? 0) / 60, 0.8) + (product.brand?.is_exclusive ? 0.3 : 0) + (product.images?.length ? 0.2 : 0);
+  const riskPenalty = -Math.min((insight.purchase_risks?.length ?? 0) * 0.4 + (aiTags.risk_tags?.length ?? 0) * 0.15, 1.5);
+  const total = intentMatch + priceFit + reviewTrust + styleContext + personalization + businessSignal + riskPenalty;
+
+  return {
+    total: round(total),
+    search_score: round(searchScore),
+    intent_match: round(intentMatch),
+    price_fit: round(priceFit),
+    review_trust: round(reviewTrust),
+    style_context: round(styleContext),
+    personalization: round(personalization),
+    business_signal: round(businessSignal),
+    risk_penalty: round(riskPenalty),
+    matched_signals: {
+      categories: matchedCategories,
+      colors: matchedColors,
+      seasons: matchedSeasons,
+      gender: genderMatched ? intent.gender : undefined,
+      brand: brandMatched ? intent.brand : undefined,
+      ai_tags: {
+        style_tags: aiTags.style_tags ?? [],
+        occasion_tags: aiTags.occasion_tags ?? [],
+        fit_tags: aiTags.fit_tags ?? [],
+        risk_tags: aiTags.risk_tags ?? []
+      }
+    },
+    explanation: buildScoreExplanation({ intentMatch, priceFit, reviewTrust, styleContext, personalization, businessSignal, riskPenalty })
+  };
+}
+
+function buildPersonalizationScore(aiTags, profile, insight) {
+  let score = 0;
+  const fitPref = String(profile.fit_preference ?? '');
+  if (fitPref && (aiTags.fit_tags ?? []).some(tag => fitPref.includes(tag) || tag.includes(fitPref.replace(/핏$/, '')))) score += 0.8;
+  if (profile.usual_size && insight.material_summary.fit.length) score += 0.3;
+  if (Array.isArray(profile.preferred_colors) && profile.preferred_colors.length) score += 0.2;
+  if (Array.isArray(profile.brand_preferences) && profile.brand_preferences.length) score += 0.2;
+  return Math.min(score, 1.5);
+}
+
+function buildScoreExplanation(parts) {
+  const positives = Object.entries(parts).filter(([key, value]) => key !== 'riskPenalty' && value > 0.7).map(([key]) => key);
+  const negatives = parts.riskPenalty < 0 ? ['risk_penalty'] : [];
+  return { positives, negatives };
+}
+
 function buildDecisionBadges(product, intent) {
   const price = product.price?.final_price ?? product.price?.sale_price;
   const badges = [];
@@ -228,7 +300,26 @@ function buildCompareNotes(rows) {
 }
 
 function productText(product) {
-  return [product.name_ko, product.brand?.name_ko, product.category_path?.join(' ')].filter(Boolean).join(' ').replace(/\s+/g, '');
+  return [
+    product.name_ko,
+    product.name_en,
+    product.brand?.name_ko,
+    product.brand?.name_en,
+    product.category_path?.join(' '),
+    ...(product.ai_tags?.style_tags ?? []),
+    ...(product.ai_tags?.occasion_tags ?? []),
+    ...(product.ai_tags?.season_tags ?? []),
+    ...(product.ai_tags?.fit_tags ?? []),
+    ...(product.ai_tags?.risk_tags ?? [])
+  ].filter(Boolean).join(' ').replace(/\s+/g, '');
+}
+
+function tight(value) {
+  return String(value ?? '').replace(/\s+/g, '');
+}
+
+function round(value) {
+  return Number(Number(value ?? 0).toFixed(3));
 }
 
 function buildAdvice(product, profile, risks) {

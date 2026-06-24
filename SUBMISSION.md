@@ -53,6 +53,7 @@ MUSINSA product data
 | Product DB ontology pack | 상품명, 브랜드, 가격, 리뷰, 이미지, 소재/핏 신호 온톨로지화 | 구현 |
 | Natural language intent parser | 예산/색상/카테고리/성별/계절 추출 | 구현 |
 | Recommendation API | 자연어 질의와 customer profile 기반 추천 | 구현 |
+| Score breakdown | 추천별 intent/price/review/style/personalization/risk 점수 분해 | 구현 |
 | Review/Fit insight | 리뷰 집계/소재/핏 라벨 기반 구매 조언 | 구현 |
 | Product comparison | 후보 상품 비교표, best pick, decision notes | 구현 |
 | Shortlist API | 세션별 후보 저장/조회/삭제 | 구현 |
@@ -213,6 +214,9 @@ MUSINSA product data
 
 6. **AI commerce intelligence loop**  
    `/analytics/insights`와 `low_confidence_recommendation` 이벤트로 전환율이 높은 질문/상품과 온톨로지 공백을 자동 발견하고, `style_tags`, `occasion_tags`, `risk_tags` enrichment로 상품 DB를 계속 개선합니다.
+
+7. **설명 가능한 추천 점수**  
+   각 추천 결과에 `score_breakdown`을 제공해 intent match, price fit, review trust, style context, personalization, business signal, risk penalty를 분해해서 보여줍니다.
 
 ## 13. 향후 확장
 

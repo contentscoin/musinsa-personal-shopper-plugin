@@ -279,9 +279,28 @@ components:
         product_id: { type: string }
         product_name: { type: string }
         price: { type: number }
+        score_breakdown:
+          $ref: '#/components/schemas/ScoreBreakdown'
         reason: { type: string }
         url: { type: string }
         image: { type: string }
+    ScoreBreakdown:
+      type: object
+      description: Transparent recommendation score components. Values are explanatory signals, not a regulated credit/risk score.
+      properties:
+        total: { type: number }
+        search_score: { type: number }
+        intent_match: { type: number }
+        price_fit: { type: number }
+        review_trust: { type: number }
+        style_context: { type: number }
+        personalization: { type: number }
+        business_signal: { type: number }
+        risk_penalty: { type: number }
+        matched_signals:
+          type: object
+        explanation:
+          type: object
     RecommendResponse:
       type: object
       properties:

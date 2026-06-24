@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T11:21:19.304Z",
+  "generated_at": "2026-06-24T15:44:11.263Z",
   "privacy": {
     "notice": {
       "title": "MUSINSA Personal Shopper analytics notice",
@@ -33,27 +33,27 @@
     "personal_data_policy": "No names, phone numbers, emails, addresses, order IDs, card numbers, tracking numbers, IP addresses, or raw user identifiers are stored. Session identifiers are SHA-256 hashed and queries are regex-sanitized before storage.",
     "owner_visibility": "Pack owner can view sanitized event-level rows plus aggregate statistics."
   },
-  "total_events": 12,
+  "total_events": 16,
   "event_counts": {
-    "conversion": 2,
-    "product_click": 2,
-    "recommendation": 2,
+    "conversion": 3,
+    "product_click": 3,
+    "recommendation": 3,
+    "shortlist_save": 3,
     "search": 2,
-    "shortlist_save": 2,
     "compare": 1,
     "low_confidence_recommendation": 1
   },
   "funnel": {
-    "searches_or_recommendations": 4,
-    "product_clicks": 2,
-    "conversions": 2,
-    "click_through_rate": 0.5,
-    "conversion_rate": 0.5
+    "searches_or_recommendations": 5,
+    "product_clicks": 3,
+    "conversions": 3,
+    "click_through_rate": 0.6,
+    "conversion_rate": 0.6
   },
   "top_queries": [
     {
       "value": "남성 차콜 후드집업 5만원 이하 추천",
-      "count": 3
+      "count": 5
     },
     {
       "value": "남성 차콜 후드집업 5만원 이하 추천 [phone]",
@@ -75,11 +75,11 @@
   "top_products": [
     {
       "value": "3783092",
-      "count": 9
+      "count": 13
     },
     {
       "value": "3697526",
-      "count": 5
+      "count": 7
     },
     {
       "value": "4240657",
@@ -93,20 +93,20 @@
   "top_clicked_products": [
     {
       "value": "3783092",
-      "count": 2
+      "count": 3
     }
   ],
   "top_converted_products": [
     {
       "value": "3783092",
-      "count": 2
+      "count": 3
     }
   ],
   "intent_stats": {
     "colors": [
       {
         "value": "차콜",
-        "count": 2
+        "count": 3
       },
       {
         "value": "화이트",
@@ -116,7 +116,7 @@
     "categories": [
       {
         "value": "후드집업",
-        "count": 3
+        "count": 4
       },
       {
         "value": "스니커즈",
@@ -126,13 +126,13 @@
     "genders": [
       {
         "value": "남성",
-        "count": 2
+        "count": 3
       }
     ],
     "budgets": [
       {
         "value": "50000",
-        "count": 2
+        "count": 3
       },
       {
         "value": "70000",
@@ -142,7 +142,7 @@
   },
   "low_confidence": {
     "count": 1,
-    "rate": 0.25,
+    "rate": 0.2,
     "missing_ontology_fields": [
       {
         "value": "occasion_tags",
@@ -167,13 +167,13 @@
   "insights": [
     {
       "type": "funnel_health",
-      "summary": "검색/추천 4건 기준 CTR 0.5, CVR 0.5입니다.",
+      "summary": "검색/추천 5건 기준 CTR 0.6, CVR 0.6입니다.",
       "evidence": {
-        "searches_or_recommendations": 4,
-        "product_clicks": 2,
-        "conversions": 2,
-        "click_through_rate": 0.5,
-        "conversion_rate": 0.5
+        "searches_or_recommendations": 5,
+        "product_clicks": 3,
+        "conversions": 3,
+        "click_through_rate": 0.6,
+        "conversion_rate": 0.6
       }
     },
     {
@@ -181,7 +181,7 @@
       "summary": "가장 많이 관찰된 질문 패턴은 \"남성 차콜 후드집업 5만원 이하 추천\"입니다.",
       "evidence": {
         "value": "남성 차콜 후드집업 5만원 이하 추천",
-        "count": 3
+        "count": 5
       }
     },
     {
@@ -189,7 +189,7 @@
       "summary": "가장 자주 노출/관심을 받은 상품 ID는 3783092입니다.",
       "evidence": {
         "value": "3783092",
-        "count": 9
+        "count": 13
       }
     },
     {
@@ -198,11 +198,11 @@
       "evidence": {
         "clicked": {
           "value": "3783092",
-          "count": 2
+          "count": 3
         },
         "converted": {
           "value": "3783092",
-          "count": 2
+          "count": 3
         }
       }
     },
@@ -211,7 +211,7 @@
       "summary": "현재 AI 쇼핑 질문에서 차콜 색상 수요가 가장 높습니다.",
       "evidence": {
         "value": "차콜",
-        "count": 2
+        "count": 3
       }
     },
     {
@@ -219,7 +219,7 @@
       "summary": "현재 AI 쇼핑 질문에서 후드집업 카테고리 수요가 가장 높습니다.",
       "evidence": {
         "value": "후드집업",
-        "count": 3
+        "count": 4
       }
     },
     {
@@ -506,6 +506,101 @@
       "metadata": {
         "surface": "api-verify",
         "locale": "ko-KR"
+      }
+    },
+    {
+      "event_id": "8b3bc85c-9eec-41e0-b888-144d6e925f75",
+      "event_type": "recommendation",
+      "occurred_at": "2026-06-24T15:44:11.071Z",
+      "session_hash": "34655f39a6569d58e19260b5",
+      "user_agent_family": "unknown",
+      "query": "남성 차콜 후드집업 5만원 이하 추천",
+      "parsed_intent": {
+        "budget": 50000,
+        "colors": [
+          "차콜"
+        ],
+        "categories": [
+          "후드집업"
+        ],
+        "seasons": [],
+        "gender": "남성"
+      },
+      "product_ids": [
+        "3783092",
+        "3697526"
+      ],
+      "missing_ontology_fields": [],
+      "source": "plugin",
+      "metadata": {
+        "surface": "demo-script",
+        "locale": "ko-KR",
+        "result_count": 2
+      }
+    },
+    {
+      "event_id": "0ce79ae5-0b73-401c-ab1a-6d778e6db1fb",
+      "event_type": "shortlist_save",
+      "occurred_at": "2026-06-24T15:44:11.078Z",
+      "session_hash": "34655f39a6569d58e19260b5",
+      "user_agent_family": "unknown",
+      "parsed_intent": {
+        "colors": [],
+        "categories": [],
+        "seasons": []
+      },
+      "product_ids": [
+        "3783092",
+        "3697526"
+      ],
+      "missing_ontology_fields": [],
+      "source": "plugin",
+      "metadata": {
+        "surface": "demo-script"
+      }
+    },
+    {
+      "event_id": "4f6c4469-4edb-4994-9242-ad27d5b72a17",
+      "event_type": "product_click",
+      "occurred_at": "2026-06-24T15:44:11.083Z",
+      "session_hash": "34655f39a6569d58e19260b5",
+      "user_agent_family": "unknown",
+      "query": "남성 차콜 후드집업 5만원 이하 추천",
+      "parsed_intent": {
+        "colors": [],
+        "categories": [],
+        "seasons": []
+      },
+      "product_ids": [
+        "3783092"
+      ],
+      "clicked_product_id": "3783092",
+      "rank": 1,
+      "missing_ontology_fields": [],
+      "source": "plugin",
+      "metadata": {
+        "surface": "demo-script"
+      }
+    },
+    {
+      "event_id": "96a90d06-fa5e-4161-9e31-8b6504fe0ad8",
+      "event_type": "conversion",
+      "occurred_at": "2026-06-24T15:44:11.086Z",
+      "session_hash": "34655f39a6569d58e19260b5",
+      "user_agent_family": "unknown",
+      "parsed_intent": {
+        "colors": [],
+        "categories": [],
+        "seasons": []
+      },
+      "product_ids": [
+        "3783092"
+      ],
+      "converted_product_id": "3783092",
+      "missing_ontology_fields": [],
+      "source": "plugin",
+      "metadata": {
+        "surface": "demo-script"
       }
     }
   ]

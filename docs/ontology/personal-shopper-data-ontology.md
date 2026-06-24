@@ -2,7 +2,7 @@
 
 Owner tag: hermes-profile:paperclipbase
 Pack intent: personal-shopper-data
-Generated at: 2026-06-24T11:21:19.304Z
+Generated at: 2026-06-24T15:44:11.263Z
 
 ## Privacy boundary
 - No names, phone numbers, emails, addresses, order IDs, IP addresses, or raw user identifiers are stored.
@@ -11,51 +11,51 @@ Generated at: 2026-06-24T11:21:19.304Z
 - Pack owner can view sanitized event-level rows plus aggregate statistics.
 
 ## Funnel metrics
-- Total events: 12
-- Searches/recommendations: 4
-- Product clicks: 2
-- Conversions: 2
-- Click-through rate: 0.5
-- Conversion rate: 0.5
+- Total events: 16
+- Searches/recommendations: 5
+- Product clicks: 3
+- Conversions: 3
+- Click-through rate: 0.6
+- Conversion rate: 0.6
 
 ## Event counts
-- conversion: 2
-- product_click: 2
-- recommendation: 2
+- conversion: 3
+- product_click: 3
+- recommendation: 3
+- shortlist_save: 3
 - search: 2
-- shortlist_save: 2
 - compare: 1
 - low_confidence_recommendation: 1
 
 ## Top queries
-- 남성 차콜 후드집업 5만원 이하 추천: 3
+- 남성 차콜 후드집업 5만원 이하 추천: 5
 - 남성 차콜 후드집업 5만원 이하 추천 [phone]: 1
 - 비 오는 날 남친룩 추천 [phone]: 1
 - 카드 [card_or_long_number] [address] 주문 [order_id] 후드집업: 1
 - 화이트 스니커즈 7만원 이하 추천 [email]: 1
 
 ## Top products
-- 3783092: 9
-- 3697526: 5
+- 3783092: 13
+- 3697526: 7
 - 4240657: 1
 - 4240660: 1
 
 ## Top clicked products
-- 3783092: 2
+- 3783092: 3
 
 ## Top converted products
-- 3783092: 2
+- 3783092: 3
 
 ## Top colors
-- 차콜: 2
+- 차콜: 3
 - 화이트: 1
 
 ## Top categories
-- 후드집업: 3
+- 후드집업: 4
 - 스니커즈: 1
 
 ## Top budgets
-- 50000: 2
+- 50000: 3
 - 70000: 1
 
 ## Low-confidence queries
@@ -67,7 +67,7 @@ Generated at: 2026-06-24T11:21:19.304Z
 - weather_tags: 1
 
 ## Generated marketing and ontology insights
-- funnel_health: 검색/추천 4건 기준 CTR 0.5, CVR 0.5입니다.
+- funnel_health: 검색/추천 5건 기준 CTR 0.6, CVR 0.6입니다.
 - top_query_pattern: 가장 많이 관찰된 질문 패턴은 "남성 차콜 후드집업 5만원 이하 추천"입니다.
 - top_product_interest: 가장 자주 노출/관심을 받은 상품 ID는 3783092입니다.
 - high_conversion_product: 상품 3783092는 클릭과 전환 양쪽에서 상위에 있어 우선 캠페인 후보입니다.
@@ -90,21 +90,25 @@ Generated at: 2026-06-24T11:21:19.304Z
 | 2026-06-24T07:56:01.644Z | product_click | 34655f39a6569d58e19260b5 | 남성 차콜 후드집업 5만원 이하 추천 | 3783092 | 3783092 |  | 1 |  |  | plugin |
 | 2026-06-24T07:56:01.648Z | conversion | 34655f39a6569d58e19260b5 |  | 3783092 |  | 3783092 |  |  |  | plugin |
 | 2026-06-24T11:20:43.976Z | low_confidence_recommendation | 3274a3eba4aacaa0f9ded48b | 비 오는 날 남친룩 추천 [phone] |  |  |  |  | 0.2 | occasion_tags,weather_tags,style_tags | plugin |
+| 2026-06-24T15:44:11.071Z | recommendation | 34655f39a6569d58e19260b5 | 남성 차콜 후드집업 5만원 이하 추천 | 3783092,3697526 |  |  |  |  |  | plugin |
+| 2026-06-24T15:44:11.078Z | shortlist_save | 34655f39a6569d58e19260b5 |  | 3783092,3697526 |  |  |  |  |  | plugin |
+| 2026-06-24T15:44:11.083Z | product_click | 34655f39a6569d58e19260b5 | 남성 차콜 후드집업 5만원 이하 추천 | 3783092 | 3783092 |  | 1 |  |  | plugin |
+| 2026-06-24T15:44:11.086Z | conversion | 34655f39a6569d58e19260b5 |  | 3783092 |  | 3783092 |  |  |  | plugin |
 
 ## Ontology triples
 - PersonalShopperDataPack -> has_owner_tag -> hermes-profile:paperclipbase
 - PersonalShopperDataPack -> has_privacy_policy -> sanitized_non_pii_events_only
-- PersonalShopperDataPack -> has_total_events -> 12
-- PersonalShopperDataPack -> has_click_through_rate -> 0.5
-- PersonalShopperDataPack -> has_conversion_rate -> 0.5
+- PersonalShopperDataPack -> has_total_events -> 16
+- PersonalShopperDataPack -> has_click_through_rate -> 0.6
+- PersonalShopperDataPack -> has_conversion_rate -> 0.6
 - PersonalShopperDataPack -> has_low_confidence_count -> 1
-- PersonalShopperDataPack -> has_top_query -> 남성 차콜 후드집업 5만원 이하 추천 (3)
+- PersonalShopperDataPack -> has_top_query -> 남성 차콜 후드집업 5만원 이하 추천 (5)
 - PersonalShopperDataPack -> has_top_query -> 남성 차콜 후드집업 5만원 이하 추천 [phone] (1)
 - PersonalShopperDataPack -> has_top_query -> 비 오는 날 남친룩 추천 [phone] (1)
 - PersonalShopperDataPack -> has_top_query -> 카드 [card_or_long_number] [address] 주문 [order_id] 후드집업 (1)
 - PersonalShopperDataPack -> has_top_query -> 화이트 스니커즈 7만원 이하 추천 [email] (1)
-- PersonalShopperDataPack -> has_top_product -> 3783092 (9)
-- PersonalShopperDataPack -> has_top_product -> 3697526 (5)
+- PersonalShopperDataPack -> has_top_product -> 3783092 (13)
+- PersonalShopperDataPack -> has_top_product -> 3697526 (7)
 - PersonalShopperDataPack -> has_top_product -> 4240657 (1)
 - PersonalShopperDataPack -> has_top_product -> 4240660 (1)
 - PersonalShopperDataPack -> has_generated_insight -> funnel_health

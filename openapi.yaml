@@ -1,0 +1,355 @@
+openapi: 3.1.0
+info:
+  title: MUSINSA Personal Shopper Plugin
+  version: 0.2.0
+  description: Conversational shopping API over MUSINSA product ontology data with intent parsing, recommendations, comparison, and session shortlists.
+servers:
+  - url: http://localhost:8787
+paths:
+  /health:
+    get:
+      operationId: health
+      summary: Health check
+      responses:
+        '200':
+          description: OK
+  /products/search:
+    post:
+      operationId: searchProducts
+      summary: Search MUSINSA products by natural language and structured filters
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProductSearchRequest'
+      responses:
+        '200':
+          description: Product search results
+  /products/{productId}:
+    get:
+      operationId: getProductDetail
+      summary: Get product detail from ontology store
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Product detail
+        '404':
+          description: Product not found
+  /products/{productId}/reviews/summary:
+    post:
+      operationId: summarizeProductReviews
+      summary: Summarize purchase-relevant fit/material/review signals
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                focus:
+                  type: array
+                  items: { type: string }
+                customer_profile:
+                  $ref: '#/components/schemas/CustomerProfile'
+      responses:
+        '200':
+          description: Review and fit summary
+  /shopper/recommend:
+    post:
+      operationId: recommendByProfile
+      summary: Recommend products based on parsed shopping intent, profile, budget, and style preferences
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RecommendRequest'
+      responses:
+        '200':
+          description: Recommendations with parsed_intent, assistant_summary, shortlist, and next questions
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RecommendResponse'
+  /shopper/compare:
+    post:
+      operationId: compareProducts
+      summary: Compare multiple products for purchase decision
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [product_ids]
+              properties:
+                product_ids:
+                  type: array
+                  items: { type: string }
+                criteria:
+                  type: array
+                  items: { type: string }
+      responses:
+        '200':
+          description: Product comparison table, best pick, and decision notes
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CompareResponse'
+  /shopper/shortlist:
+    post:
+      operationId: saveShortlist
+      summary: Save product candidates into an in-memory session shortlist
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SaveShortlistRequest'
+      responses:
+        '200':
+          description: Saved shortlist
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Shortlist'
+  /shopper/shortlist/{sessionId}:
+    get:
+      operationId: getShortlist
+      summary: Get a session shortlist
+      parameters:
+        - name: sessionId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Session shortlist
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Shortlist'
+    delete:
+      operationId: clearShortlist
+      summary: Clear a session shortlist
+      parameters:
+        - name: sessionId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Clear result
+  /analytics/events:
+    post:
+      operationId: recordAnalyticsEvent
+      summary: Record sanitized non-PII shopper behavior event for ontology/marketing analytics
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AnalyticsEventRequest'
+      responses:
+        '200':
+          description: Sanitized event accepted
+  /analytics/summary:
+    get:
+      operationId: getAnalyticsSummary
+      summary: Return aggregate non-PII usage, click-through, conversion, query, and intent statistics
+      responses:
+        '200':
+          description: Analytics summary
+  /analytics/notice:
+    get:
+      operationId: getAnalyticsNotice
+      summary: Return consent/notice text for non-PII analytics collection
+      responses:
+        '200':
+          description: Analytics notice
+  /analytics/funnel:
+    get:
+      operationId: getAnalyticsFunnel
+      summary: Return funnel, CTR, CVR, and event count metrics
+      responses:
+        '200':
+          description: Funnel analytics
+  /analytics/products:
+    get:
+      operationId: getAnalyticsProducts
+      summary: Return top products, clicked products, and converted products
+      responses:
+        '200':
+          description: Product analytics
+  /analytics/queries:
+    get:
+      operationId: getAnalyticsQueries
+      summary: Return top sanitized search/query patterns
+      responses:
+        '200':
+          description: Query analytics
+  /analytics/intents:
+    get:
+      operationId: getAnalyticsIntents
+      summary: Return intent statistics for colors, categories, genders, and budgets
+      responses:
+        '200':
+          description: Intent analytics
+  /analytics/export:
+    post:
+      operationId: exportAnalyticsSummary
+      summary: Regenerate local analytics summary for ontology export automation
+      responses:
+        '200':
+          description: Export-ready analytics summary
+components:
+  schemas:
+    ProductSearchRequest:
+      type: object
+      properties:
+        query: { type: string }
+        category: { type: string }
+        brand: { type: string }
+        price_min: { type: number }
+        price_max: { type: number }
+        gender: { type: string }
+        style_tags:
+          type: array
+          items: { type: string }
+        limit: { type: integer, default: 10 }
+    CustomerProfile:
+      type: object
+      properties:
+        height: { type: number }
+        weight: { type: number }
+        usual_size: { type: string }
+        fit_preference: { type: string }
+        style_preference:
+          type: array
+          items: { type: string }
+    RecommendRequest:
+      type: object
+      properties:
+        query: { type: string }
+        occasion: { type: string }
+        budget: { type: number }
+        brand: { type: string }
+        customer_profile:
+          $ref: '#/components/schemas/CustomerProfile'
+        limit: { type: integer, default: 5 }
+    ParsedIntent:
+      type: object
+      properties:
+        raw_query: { type: string }
+        budget: { type: number }
+        colors:
+          type: array
+          items: { type: string }
+        categories:
+          type: array
+          items: { type: string }
+        seasons:
+          type: array
+          items: { type: string }
+        gender: { type: string }
+        brand: { type: string }
+        must_have_terms:
+          type: array
+          items: { type: string }
+    ProductCard:
+      type: object
+      properties:
+        product_id: { type: string }
+        product_name: { type: string }
+        price: { type: number }
+        reason: { type: string }
+        url: { type: string }
+        image: { type: string }
+    RecommendResponse:
+      type: object
+      properties:
+        query_understood: { type: string }
+        parsed_intent:
+          $ref: '#/components/schemas/ParsedIntent'
+        assistant_summary: { type: string }
+        recommendations:
+          type: array
+          items: { type: object }
+        shortlist:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductCard'
+        next_questions:
+          type: array
+          items: { type: string }
+    CompareResponse:
+      type: object
+      properties:
+        comparison_table:
+          type: array
+          items: { type: object }
+        best_pick:
+          type: object
+        decision_notes:
+          type: array
+          items: { type: string }
+    SaveShortlistRequest:
+      type: object
+      properties:
+        session_id: { type: string }
+        product_ids:
+          type: array
+          items: { type: string }
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductCard'
+    Shortlist:
+      type: object
+      properties:
+        session_id: { type: string }
+        item_count: { type: integer }
+        created_at: { type: string }
+        updated_at: { type: string }
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductCard'
+    AnalyticsEventRequest:
+      type: object
+      description: Sanitized non-PII event. Do not send names, emails, phone numbers, addresses, raw order IDs, IP addresses, or raw user identifiers.
+      properties:
+        event_type:
+          type: string
+          enum: [search, recommendation, product_click, shortlist_save, compare, purchase_intent, conversion]
+        session_id:
+          type: string
+          description: Anonymous session identifier; server stores only a SHA-256 hash prefix.
+        query: { type: string }
+        parsed_intent:
+          $ref: '#/components/schemas/ParsedIntent'
+        product_ids:
+          type: array
+          items: { type: string }
+        clicked_product_id: { type: string }
+        converted_product_id: { type: string }
+        rank: { type: integer }
+        source: { type: string }
+        metadata:
+          type: object
+          properties:
+            surface: { type: string }
+            locale: { type: string }
+            experiment: { type: string }
+            result_count: { type: number }
+            latency_ms: { type: number }

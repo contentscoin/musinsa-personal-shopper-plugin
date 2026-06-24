@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "MUSINSA Personal Shopper",
+  "name_for_model": "musinsa_personal_shopper",
+  "description_for_human": "Conversational MUSINSA shopping assistant for product recommendations, comparisons, shortlists, and non-PII analytics.",
+  "description_for_model": "Use this plugin to search MUSINSA products, recommend products from natural-language shopping intent, compare candidate products, save shortlists, summarize fit/review/material signals, and record sanitized non-PII analytics events for marketing and model-improvement ontology packs. Do not send names, emails, phone numbers, addresses, order IDs, IP addresses, raw user IDs, or other personal data to analytics endpoints.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:8787/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "http://localhost:8787/logo.png",
+  "contact_email": "devnull@example.com",
+  "legal_info_url": "http://localhost:8787/analytics/notice"
+}

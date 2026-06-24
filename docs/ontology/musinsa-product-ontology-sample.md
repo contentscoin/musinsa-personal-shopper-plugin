@@ -1,0 +1,1007 @@
+# MUSINSA Product Ontology Crawl Sample
+
+Owner tag: hermes-profile:paperclipbase
+Pack intent: musinsa-product-db-personal-shopper-sample
+Created at: 2026-06-24T06:43:55.450Z
+Source boundary: public MUSINSA sitemap/product pages fetched with User-Agent ChatGPT-User after robots.txt allow check. Production should use official API/feed authorization.
+
+## Products
+
+### [크롭선택] ASI 포시즌 에센셜 후드 집업_피그먼트 차콜
+- Product ID: 3783092
+- Source URL: https://www.musinsa.com/products/3783092
+- Brand: 디미트리블랙 (DIMITRI BLACK)
+- Category: 아우터 > 후드 집업
+- Gender: 남성, 여성
+- Price: sale 39900, normal 60900, discount 34%
+- Review: 11607 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 핏=오버|사이즈; 촉감=보통; 신축성=보통; 비침=없음; 두께=보통; 계절=봄/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20240109/3783092/3783092_17164556227922_500.png
+- Ontology triples:
+  - MUSINSA product 3783092 -> has_name -> [크롭선택] ASI 포시즌 에센셜 후드 집업_피그먼트 차콜
+  - MUSINSA product 3783092 -> belongs_to_brand -> 디미트리블랙
+  - MUSINSA product 3783092 -> belongs_to_category -> 아우터 > 후드 집업
+  - MUSINSA product 3783092 -> has_sale_price -> 39900
+  - MUSINSA product 3783092 -> has_review_count -> 11607
+  - MUSINSA product 3783092 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 3783092 -> has_product_url -> https://www.musinsa.com/products/3783092
+  - MUSINSA product 3783092 -> has_material_signal_핏 -> 오버|사이즈
+  - MUSINSA product 3783092 -> has_material_signal_촉감 -> 보통
+  - MUSINSA product 3783092 -> has_material_signal_신축성 -> 보통
+  - MUSINSA product 3783092 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 3783092 -> has_material_signal_두께 -> 보통
+  - MUSINSA product 3783092 -> has_material_signal_계절 -> 봄, 가을, 겨울
+  - MUSINSA product 3783092 -> has_image -> https://image.msscdn.net/images/goods_img/20240109/3783092/3783092_17164556227922_500.png
+  - MUSINSA product 3783092 -> has_image -> https://image.msscdn.net/images/prd_img/20240109/3783092/detail_3783092_17707777300030_500.jpg
+  - MUSINSA product 3783092 -> has_image -> https://image.msscdn.net/images/prd_img/20240109/3783092/detail_3783092_17053864925648_500.png
+
+### [보라끌레르X수아레] 우먼 캐시미어 홀가먼트 니트 2 (단품/2팩)
+- Product ID: 5399594
+- Source URL: https://www.musinsa.com/products/5399594
+- Brand: 수아레 우먼 (SUARE WOMEN)
+- Category: 상의 > 니트/스웨터
+- Gender: 여성
+- Price: sale 79650, normal 135000, discount 41%
+- Review: 234 reviews, satisfaction 4.7, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20250903/5399594/5399594_17574011045277_500.jpg
+- Ontology triples:
+  - MUSINSA product 5399594 -> has_name -> [보라끌레르X수아레] 우먼 캐시미어 홀가먼트 니트 2 (단품/2팩)
+  - MUSINSA product 5399594 -> belongs_to_brand -> 수아레 우먼
+  - MUSINSA product 5399594 -> belongs_to_category -> 상의 > 니트/스웨터
+  - MUSINSA product 5399594 -> has_sale_price -> 79650
+  - MUSINSA product 5399594 -> has_review_count -> 234
+  - MUSINSA product 5399594 -> has_satisfaction_score -> 4.7
+  - MUSINSA product 5399594 -> has_product_url -> https://www.musinsa.com/products/5399594
+  - MUSINSA product 5399594 -> has_image -> https://image.msscdn.net/images/goods_img/20250903/5399594/5399594_17574011045277_500.jpg
+  - MUSINSA product 5399594 -> has_image -> https://image.msscdn.net/images/prd_img/20250903/5399594/detail_5399594_17569715663906_500.jpg
+  - MUSINSA product 5399594 -> has_image -> https://image.msscdn.net/images/prd_img/20250903/5399594/detail_5399594_17569715672295_500.jpg
+
+### 베켄바우어 트랙탑 - 블랙 / IY8077
+- Product ID: 3771089
+- Source URL: https://www.musinsa.com/products/3771089
+- Brand: 아디다스 (ADIDAS)
+- Category: 아우터 > 트레이닝 재킷
+- Gender: 남성
+- Price: sale 83990, normal 105000, discount 20%
+- Review: 2543 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20240102/3771089/3771089_17041852509353_500.jpg
+- Ontology triples:
+  - MUSINSA product 3771089 -> has_name -> 베켄바우어 트랙탑 - 블랙 / IY8077
+  - MUSINSA product 3771089 -> belongs_to_brand -> 아디다스
+  - MUSINSA product 3771089 -> belongs_to_category -> 아우터 > 트레이닝 재킷
+  - MUSINSA product 3771089 -> has_sale_price -> 83990
+  - MUSINSA product 3771089 -> has_review_count -> 2543
+  - MUSINSA product 3771089 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 3771089 -> has_product_url -> https://www.musinsa.com/products/3771089
+  - MUSINSA product 3771089 -> has_image -> https://image.msscdn.net/images/goods_img/20240102/3771089/3771089_17041852509353_500.jpg
+  - MUSINSA product 3771089 -> has_image -> https://image.msscdn.net/images/prd_img/20240102/3771089/detail_3771089_17041852541898_500.jpg
+  - MUSINSA product 3771089 -> has_image -> https://image.msscdn.net/images/prd_img/20240102/3771089/detail_3771089_17041852548511_500.jpg
+
+### 푸마 클럽 2 에라 - 화이트:블랙  / 397447-07
+- Product ID: 4240660
+- Source URL: https://www.musinsa.com/products/4240660
+- Brand: 푸마 (PUMA)
+- Category: 신발 > 스니커즈 > 패션스니커즈화
+- Gender: 남성, 여성
+- Price: sale 46990, normal 79000, discount 41%
+- Review: 574 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20240709/4240660/4240660_17217004549549_500.jpg
+- Ontology triples:
+  - MUSINSA product 4240660 -> has_name -> 푸마 클럽 2 에라 - 화이트:블랙  / 397447-07
+  - MUSINSA product 4240660 -> belongs_to_brand -> 푸마
+  - MUSINSA product 4240660 -> belongs_to_category -> 신발 > 스니커즈 > 패션스니커즈화
+  - MUSINSA product 4240660 -> has_sale_price -> 46990
+  - MUSINSA product 4240660 -> has_review_count -> 574
+  - MUSINSA product 4240660 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 4240660 -> has_product_url -> https://www.musinsa.com/products/4240660
+  - MUSINSA product 4240660 -> has_image -> https://image.msscdn.net/images/goods_img/20240709/4240660/4240660_17217004549549_500.jpg
+  - MUSINSA product 4240660 -> has_image -> https://image.msscdn.net/images/prd_img/20240709/4240660/detail_4240660_17217004607809_500.jpg
+  - MUSINSA product 4240660 -> has_image -> https://image.msscdn.net/images/prd_img/20240709/4240660/detail_4240660_17217004616251_500.jpg
+
+### 젤-1130 - 스틸 그레이:퓨어 실버 / 1201A934-020
+- Product ID: 3392006
+- Source URL: https://www.musinsa.com/products/3392006
+- Brand: 아식스 (ASICS)
+- Category: 신발 > 스니커즈 > 패션스니커즈화
+- Gender: 남성, 여성
+- Price: sale 119000, normal 119000, discount 0%
+- Review: 2889 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20230703/3392006/3392006_16890620065956_500.jpg
+- Ontology triples:
+  - MUSINSA product 3392006 -> has_name -> 젤-1130 - 스틸 그레이:퓨어 실버 / 1201A934-020
+  - MUSINSA product 3392006 -> belongs_to_brand -> 아식스
+  - MUSINSA product 3392006 -> belongs_to_category -> 신발 > 스니커즈 > 패션스니커즈화
+  - MUSINSA product 3392006 -> has_sale_price -> 119000
+  - MUSINSA product 3392006 -> has_review_count -> 2889
+  - MUSINSA product 3392006 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 3392006 -> has_product_url -> https://www.musinsa.com/products/3392006
+  - MUSINSA product 3392006 -> has_image -> https://image.msscdn.net/images/goods_img/20230703/3392006/3392006_16890620065956_500.jpg
+  - MUSINSA product 3392006 -> has_image -> https://image.msscdn.net/images/prd_img/20230703/3392006/detail_3392006_16890620121526_500.jpg
+  - MUSINSA product 3392006 -> has_image -> https://image.msscdn.net/images/prd_img/20230703/3392006/detail_3392006_16890620145243_500.jpg
+
+### [보라끌레르X수아레] 우먼 캐시미어 홀가먼트 니트 (단품/2팩)
+- Product ID: 4401124
+- Source URL: https://www.musinsa.com/products/4401124
+- Brand: 수아레 우먼 (SUARE WOMEN)
+- Category: 상의 > 니트/스웨터
+- Gender: 여성
+- Price: sale 79650, normal 135000, discount 41%
+- Review: 1247 reviews, satisfaction 4.7, has_summary=true
+- Material/Fit signals: 핏=레귤러; 촉감=부드러움; 신축성=있음; 비침=없음; 두께=보통; 계절=봄/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20240904/4401124/4401124_17585227609519_500.jpg
+- Ontology triples:
+  - MUSINSA product 4401124 -> has_name -> [보라끌레르X수아레] 우먼 캐시미어 홀가먼트 니트 (단품/2팩)
+  - MUSINSA product 4401124 -> belongs_to_brand -> 수아레 우먼
+  - MUSINSA product 4401124 -> belongs_to_category -> 상의 > 니트/스웨터
+  - MUSINSA product 4401124 -> has_sale_price -> 79650
+  - MUSINSA product 4401124 -> has_review_count -> 1247
+  - MUSINSA product 4401124 -> has_satisfaction_score -> 4.7
+  - MUSINSA product 4401124 -> has_product_url -> https://www.musinsa.com/products/4401124
+  - MUSINSA product 4401124 -> has_material_signal_핏 -> 레귤러
+  - MUSINSA product 4401124 -> has_material_signal_촉감 -> 부드러움
+  - MUSINSA product 4401124 -> has_material_signal_신축성 -> 있음
+  - MUSINSA product 4401124 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 4401124 -> has_material_signal_두께 -> 보통
+  - MUSINSA product 4401124 -> has_material_signal_계절 -> 봄, 가을, 겨울
+  - MUSINSA product 4401124 -> has_image -> https://image.msscdn.net/images/goods_img/20240904/4401124/4401124_17585227609519_500.jpg
+  - MUSINSA product 4401124 -> has_image -> https://image.msscdn.net/images/prd_img/20240904/4401124/detail_4401124_17255849484616_500.jpg
+  - MUSINSA product 4401124 -> has_image -> https://image.msscdn.net/images/prd_img/20240904/4401124/detail_4401124_17255849496883_500.jpg
+
+### 아톰 SV 후디 남성 - BLACK / AJPFM09902
+- Product ID: 5367614
+- Source URL: https://www.musinsa.com/products/5367614
+- Brand: 아크테릭스 (ARCTERYX)
+- Category: 스포츠/레저 > 아우터 > 기타 점퍼/재킷
+- Gender: 남성, 여성
+- Price: sale 541500, normal 570000, discount 5%
+- Review: 180 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20250827/5367614/5367614_17573795222252_500.jpg
+- Ontology triples:
+  - MUSINSA product 5367614 -> has_name -> 아톰 SV 후디 남성 - BLACK / AJPFM09902
+  - MUSINSA product 5367614 -> belongs_to_brand -> 아크테릭스
+  - MUSINSA product 5367614 -> belongs_to_category -> 스포츠/레저 > 아우터 > 기타 점퍼/재킷
+  - MUSINSA product 5367614 -> has_sale_price -> 541500
+  - MUSINSA product 5367614 -> has_review_count -> 180
+  - MUSINSA product 5367614 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 5367614 -> has_product_url -> https://www.musinsa.com/products/5367614
+  - MUSINSA product 5367614 -> has_image -> https://image.msscdn.net/images/goods_img/20250827/5367614/5367614_17573795222252_500.jpg
+  - MUSINSA product 5367614 -> has_image -> https://image.msscdn.net/images/prd_img/20250827/5367614/detail_5367614_17573795302643_500.jpg
+  - MUSINSA product 5367614 -> has_image -> https://image.msscdn.net/images/prd_img/20250827/5367614/detail_5367614_17573795308808_500.jpg
+
+### 2WAY 스웻 후드 집업 (MELANGE GREY)
+- Product ID: 1778404
+- Source URL: https://www.musinsa.com/products/1778404
+- Brand: 토피 (TOFFEE)
+- Category: 아우터 > 후드 집업
+- Gender: 남성, 여성
+- Price: sale 32150, normal 45000, discount 29%
+- Review: 98207 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20210204/1778404/1778404_1_500.jpg
+- Ontology triples:
+  - MUSINSA product 1778404 -> has_name -> 2WAY 스웻 후드 집업 (MELANGE GREY)
+  - MUSINSA product 1778404 -> belongs_to_brand -> 토피
+  - MUSINSA product 1778404 -> belongs_to_category -> 아우터 > 후드 집업
+  - MUSINSA product 1778404 -> has_sale_price -> 32150
+  - MUSINSA product 1778404 -> has_review_count -> 98207
+  - MUSINSA product 1778404 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 1778404 -> has_product_url -> https://www.musinsa.com/products/1778404
+  - MUSINSA product 1778404 -> has_image -> https://image.msscdn.net/images/goods_img/20210204/1778404/1778404_1_500.jpg
+
+### 후드 집업 - 블랙:크림화이트 / KC9315
+- Product ID: 5329359
+- Source URL: https://www.musinsa.com/products/5329359
+- Brand: 아디다스 (ADIDAS)
+- Category: 아우터 > 후드 집업
+- Gender: 남성, 여성
+- Price: sale 94990, normal 119000, discount 20%
+- Review: 1266 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20250818/5329359/5329359_17569461399483_500.jpg
+- Ontology triples:
+  - MUSINSA product 5329359 -> has_name -> 후드 집업 - 블랙:크림화이트 / KC9315
+  - MUSINSA product 5329359 -> belongs_to_brand -> 아디다스
+  - MUSINSA product 5329359 -> belongs_to_category -> 아우터 > 후드 집업
+  - MUSINSA product 5329359 -> has_sale_price -> 94990
+  - MUSINSA product 5329359 -> has_review_count -> 1266
+  - MUSINSA product 5329359 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 5329359 -> has_product_url -> https://www.musinsa.com/products/5329359
+  - MUSINSA product 5329359 -> has_image -> https://image.msscdn.net/images/goods_img/20250818/5329359/5329359_17569461399483_500.jpg
+  - MUSINSA product 5329359 -> has_image -> https://image.msscdn.net/images/prd_img/20250818/5329359/detail_5329359_17569461459307_500.jpg
+  - MUSINSA product 5329359 -> has_image -> https://image.msscdn.net/images/prd_img/20250818/5329359/detail_5329359_17569461466475_500.jpg
+
+### [보라끌레르X수아레](우먼)캐시미어 100 홀가먼트 니트 - 14 COLOR
+- Product ID: 4385991
+- Source URL: https://www.musinsa.com/products/4385991
+- Brand: 수아레 우먼 (SUARE WOMEN)
+- Category: 상의 > 니트/스웨터
+- Gender: 여성
+- Price: sale 99900, normal 135000, discount 26%
+- Review: 1503 reviews, satisfaction 4.7, has_summary=true
+- Material/Fit signals: 핏=레귤러; 촉감=부드러움; 신축성=있음; 비침=없음; 두께=보통/약간|두꺼움; 계절=봄/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20240829/4385991/4385991_17582601007705_500.jpg
+- Ontology triples:
+  - MUSINSA product 4385991 -> has_name -> [보라끌레르X수아레](우먼)캐시미어 100 홀가먼트 니트 - 14 COLOR
+  - MUSINSA product 4385991 -> belongs_to_brand -> 수아레 우먼
+  - MUSINSA product 4385991 -> belongs_to_category -> 상의 > 니트/스웨터
+  - MUSINSA product 4385991 -> has_sale_price -> 99900
+  - MUSINSA product 4385991 -> has_review_count -> 1503
+  - MUSINSA product 4385991 -> has_satisfaction_score -> 4.7
+  - MUSINSA product 4385991 -> has_product_url -> https://www.musinsa.com/products/4385991
+  - MUSINSA product 4385991 -> has_material_signal_핏 -> 레귤러
+  - MUSINSA product 4385991 -> has_material_signal_촉감 -> 부드러움
+  - MUSINSA product 4385991 -> has_material_signal_신축성 -> 있음
+  - MUSINSA product 4385991 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 4385991 -> has_material_signal_두께 -> 보통, 약간|두꺼움
+  - MUSINSA product 4385991 -> has_material_signal_계절 -> 봄, 가을, 겨울
+  - MUSINSA product 4385991 -> has_image -> https://image.msscdn.net/images/goods_img/20240829/4385991/4385991_17582601007705_500.jpg
+  - MUSINSA product 4385991 -> has_image -> https://image.msscdn.net/images/prd_img/20240829/4385991/detail_4385991_17572926291871_500.jpg
+  - MUSINSA product 4385991 -> has_image -> https://image.msscdn.net/images/prd_img/20240829/4385991/detail_4385991_17572926299852_500.jpg
+
+### 푸마 클럽 2 에라 - 블랙:화이트 / 397447-02
+- Product ID: 4240657
+- Source URL: https://www.musinsa.com/products/4240657
+- Brand: 푸마 (PUMA)
+- Category: 신발 > 스니커즈 > 패션스니커즈화
+- Gender: 남성, 여성
+- Price: sale 34990, normal 79000, discount 56%
+- Review: 410 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20240709/4240657/4240657_17217005570257_500.jpg
+- Ontology triples:
+  - MUSINSA product 4240657 -> has_name -> 푸마 클럽 2 에라 - 블랙:화이트 / 397447-02
+  - MUSINSA product 4240657 -> belongs_to_brand -> 푸마
+  - MUSINSA product 4240657 -> belongs_to_category -> 신발 > 스니커즈 > 패션스니커즈화
+  - MUSINSA product 4240657 -> has_sale_price -> 34990
+  - MUSINSA product 4240657 -> has_review_count -> 410
+  - MUSINSA product 4240657 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 4240657 -> has_product_url -> https://www.musinsa.com/products/4240657
+  - MUSINSA product 4240657 -> has_image -> https://image.msscdn.net/images/goods_img/20240709/4240657/4240657_17217005570257_500.jpg
+  - MUSINSA product 4240657 -> has_image -> https://image.msscdn.net/images/prd_img/20240709/4240657/detail_4240657_17217005627389_500.jpg
+  - MUSINSA product 4240657 -> has_image -> https://image.msscdn.net/images/prd_img/20240709/4240657/detail_4240657_17217005635342_500.jpg
+
+### [보라끌레르X수아레](우먼)캐시미어 100 라운드 가디건 - 9 COLOR
+- Product ID: 4386012
+- Source URL: https://www.musinsa.com/products/4386012
+- Brand: 수아레 우먼 (SUARE WOMEN)
+- Category: 아우터 > 카디건
+- Gender: 여성
+- Price: sale 109900, normal 149000, discount 26%
+- Review: 1083 reviews, satisfaction 4.7, has_summary=true
+- Material/Fit signals: 핏=레귤러; 촉감=부드러움; 신축성=있음; 비침=없음; 두께=보통/약간|두꺼움; 계절=봄/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20240829/4386012/4386012_17572925124747_500.jpg
+- Ontology triples:
+  - MUSINSA product 4386012 -> has_name -> [보라끌레르X수아레](우먼)캐시미어 100 라운드 가디건 - 9 COLOR
+  - MUSINSA product 4386012 -> belongs_to_brand -> 수아레 우먼
+  - MUSINSA product 4386012 -> belongs_to_category -> 아우터 > 카디건
+  - MUSINSA product 4386012 -> has_sale_price -> 109900
+  - MUSINSA product 4386012 -> has_review_count -> 1083
+  - MUSINSA product 4386012 -> has_satisfaction_score -> 4.7
+  - MUSINSA product 4386012 -> has_product_url -> https://www.musinsa.com/products/4386012
+  - MUSINSA product 4386012 -> has_material_signal_핏 -> 레귤러
+  - MUSINSA product 4386012 -> has_material_signal_촉감 -> 부드러움
+  - MUSINSA product 4386012 -> has_material_signal_신축성 -> 있음
+  - MUSINSA product 4386012 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 4386012 -> has_material_signal_두께 -> 보통, 약간|두꺼움
+  - MUSINSA product 4386012 -> has_material_signal_계절 -> 봄, 가을, 겨울
+  - MUSINSA product 4386012 -> has_image -> https://image.msscdn.net/images/goods_img/20240829/4386012/4386012_17572925124747_500.jpg
+  - MUSINSA product 4386012 -> has_image -> https://image.msscdn.net/images/prd_img/20240829/4386012/detail_4386012_17572925348397_500.jpg
+  - MUSINSA product 4386012 -> has_image -> https://image.msscdn.net/images/prd_img/20240829/4386012/detail_4386012_17572925355147_500.jpg
+
+### SHOWER - 808 (a) / BLACK
+- Product ID: 3276429
+- Source URL: https://www.musinsa.com/products/3276429
+- Brand: 킨치 (KINCHI)
+- Category: 신발 > 구두 > 더비 슈즈
+- Gender: 남성
+- Price: sale 173400, normal 289000, discount 40%
+- Review: 9221 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20230504/3276429/3276429_16995107122382_500.jpg
+- Ontology triples:
+  - MUSINSA product 3276429 -> has_name -> SHOWER - 808 (a) / BLACK
+  - MUSINSA product 3276429 -> belongs_to_brand -> 킨치
+  - MUSINSA product 3276429 -> belongs_to_category -> 신발 > 구두 > 더비 슈즈
+  - MUSINSA product 3276429 -> has_sale_price -> 173400
+  - MUSINSA product 3276429 -> has_review_count -> 9221
+  - MUSINSA product 3276429 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 3276429 -> has_product_url -> https://www.musinsa.com/products/3276429
+  - MUSINSA product 3276429 -> has_image -> https://image.msscdn.net/images/goods_img/20230504/3276429/3276429_16995107122382_500.jpg
+  - MUSINSA product 3276429 -> has_image -> https://image.msscdn.net/images/prd_img/20230504/3276429/detail_3276429_17770163081614_500.jpg
+  - MUSINSA product 3276429 -> has_image -> https://image.msscdn.net/images/prd_img/20230504/3276429/detail_3276429_17770163116531_500.jpg
+
+### 와이드 커브드 다트 코튼 팬츠[블랙]
+- Product ID: 4993411
+- Source URL: https://www.musinsa.com/products/4993411
+- Brand: 시그니처 (SIGNATURE)
+- Category: 바지 > 코튼 팬츠
+- Gender: 남성, 여성
+- Price: sale 22900, normal 53000, discount 57%
+- Review: 1654 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 핏=루즈; 촉감=보통; 신축성=없음; 비침=없음; 두께=보통; 계절=봄/여름/가을
+- Primary image: https://image.msscdn.net/images/goods_img/20250407/4993411/4993411_17443663335178_500.jpg
+- Ontology triples:
+  - MUSINSA product 4993411 -> has_name -> 와이드 커브드 다트 코튼 팬츠[블랙]
+  - MUSINSA product 4993411 -> belongs_to_brand -> 시그니처
+  - MUSINSA product 4993411 -> belongs_to_category -> 바지 > 코튼 팬츠
+  - MUSINSA product 4993411 -> has_sale_price -> 22900
+  - MUSINSA product 4993411 -> has_review_count -> 1654
+  - MUSINSA product 4993411 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 4993411 -> has_product_url -> https://www.musinsa.com/products/4993411
+  - MUSINSA product 4993411 -> has_material_signal_핏 -> 루즈
+  - MUSINSA product 4993411 -> has_material_signal_촉감 -> 보통
+  - MUSINSA product 4993411 -> has_material_signal_신축성 -> 없음
+  - MUSINSA product 4993411 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 4993411 -> has_material_signal_두께 -> 보통
+  - MUSINSA product 4993411 -> has_material_signal_계절 -> 봄, 여름, 가을
+  - MUSINSA product 4993411 -> has_image -> https://image.msscdn.net/images/goods_img/20250407/4993411/4993411_17443663335178_500.jpg
+  - MUSINSA product 4993411 -> has_image -> https://image.msscdn.net/images/prd_img/20250407/4993411/detail_4993411_17822671199922_500.jpg
+  - MUSINSA product 4993411 -> has_image -> https://image.msscdn.net/images/prd_img/20250407/4993411/detail_4993411_17822671208106_500.jpg
+
+### 아이언 레인저 8111 - 앰버 하니스 / 08111D
+- Product ID: 2114452
+- Source URL: https://www.musinsa.com/products/2114452
+- Brand: 레드윙 (REDWING)
+- Category: 신발 > 부츠/워커 > 미들/하프 부츠
+- Gender: 남성
+- Price: sale 537990, normal 598000, discount 10%
+- Review: 2268 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20210907/2114452/2114452_17331214675016_500.jpg
+- Ontology triples:
+  - MUSINSA product 2114452 -> has_name -> 아이언 레인저 8111 - 앰버 하니스 / 08111D
+  - MUSINSA product 2114452 -> belongs_to_brand -> 레드윙
+  - MUSINSA product 2114452 -> belongs_to_category -> 신발 > 부츠/워커 > 미들/하프 부츠
+  - MUSINSA product 2114452 -> has_sale_price -> 537990
+  - MUSINSA product 2114452 -> has_review_count -> 2268
+  - MUSINSA product 2114452 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 2114452 -> has_product_url -> https://www.musinsa.com/products/2114452
+  - MUSINSA product 2114452 -> has_image -> https://image.msscdn.net/images/goods_img/20210907/2114452/2114452_17331214675016_500.jpg
+  - MUSINSA product 2114452 -> has_image -> https://image.msscdn.net/images/prd_img/20210907/2114452/detail_2114452_17331214733726_500.jpg
+  - MUSINSA product 2114452 -> has_image -> https://image.msscdn.net/images/prd_img/20210907/2114452/detail_2114452_17331214743149_500.jpg
+
+### [보라끌레르X수아레](우먼)캐시미어 100 홀가먼트 브이넥 니트 - 8 COLOR
+- Product ID: 4385997
+- Source URL: https://www.musinsa.com/products/4385997
+- Brand: 수아레 우먼 (SUARE WOMEN)
+- Category: 상의 > 니트/스웨터
+- Gender: 여성
+- Price: sale 99900, normal 135000, discount 26%
+- Review: 813 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 핏=레귤러; 촉감=부드러움; 신축성=있음; 비침=없음; 두께=보통/약간|두꺼움; 계절=봄/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20240829/4385997/4385997_17585225944934_500.jpg
+- Ontology triples:
+  - MUSINSA product 4385997 -> has_name -> [보라끌레르X수아레](우먼)캐시미어 100 홀가먼트 브이넥 니트 - 8 COLOR
+  - MUSINSA product 4385997 -> belongs_to_brand -> 수아레 우먼
+  - MUSINSA product 4385997 -> belongs_to_category -> 상의 > 니트/스웨터
+  - MUSINSA product 4385997 -> has_sale_price -> 99900
+  - MUSINSA product 4385997 -> has_review_count -> 813
+  - MUSINSA product 4385997 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 4385997 -> has_product_url -> https://www.musinsa.com/products/4385997
+  - MUSINSA product 4385997 -> has_material_signal_핏 -> 레귤러
+  - MUSINSA product 4385997 -> has_material_signal_촉감 -> 부드러움
+  - MUSINSA product 4385997 -> has_material_signal_신축성 -> 있음
+  - MUSINSA product 4385997 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 4385997 -> has_material_signal_두께 -> 보통, 약간|두꺼움
+  - MUSINSA product 4385997 -> has_material_signal_계절 -> 봄, 가을, 겨울
+  - MUSINSA product 4385997 -> has_image -> https://image.msscdn.net/images/goods_img/20240829/4385997/4385997_17585225944934_500.jpg
+  - MUSINSA product 4385997 -> has_image -> https://image.msscdn.net/images/prd_img/20240829/4385997/detail_4385997_17255812814080_500.jpg
+  - MUSINSA product 4385997 -> has_image -> https://image.msscdn.net/images/prd_img/20240829/4385997/detail_4385997_17255812825572_500.jpg
+
+### 에어 포스 1 07 WB M - 플랙스:검 라이트 브라운:블랙:위트 / CJ9179-200
+- Product ID: 4371012
+- Source URL: https://www.musinsa.com/products/4371012
+- Brand: 나이키 (NIKE)
+- Category: 신발 > 스니커즈 > 패션스니커즈화
+- Gender: 남성
+- Price: sale 169000, normal 169000, discount 0%
+- Review: 2343 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20240826/4371012/4371012_17255868621694_500.jpg
+- Ontology triples:
+  - MUSINSA product 4371012 -> has_name -> 에어 포스 1 07 WB M - 플랙스:검 라이트 브라운:블랙:위트 / CJ9179-200
+  - MUSINSA product 4371012 -> belongs_to_brand -> 나이키
+  - MUSINSA product 4371012 -> belongs_to_category -> 신발 > 스니커즈 > 패션스니커즈화
+  - MUSINSA product 4371012 -> has_sale_price -> 169000
+  - MUSINSA product 4371012 -> has_review_count -> 2343
+  - MUSINSA product 4371012 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 4371012 -> has_product_url -> https://www.musinsa.com/products/4371012
+  - MUSINSA product 4371012 -> has_image -> https://image.msscdn.net/images/goods_img/20240826/4371012/4371012_17255868621694_500.jpg
+  - MUSINSA product 4371012 -> has_image -> https://image.msscdn.net/images/prd_img/20240826/4371012/detail_4371012_17255868709038_500.jpg
+  - MUSINSA product 4371012 -> has_image -> https://image.msscdn.net/images/prd_img/20240826/4371012/detail_4371012_17255868717350_500.jpg
+
+### 파이어버드 트랙탑 - 블랙 / IJ7058
+- Product ID: 3563185
+- Source URL: https://www.musinsa.com/products/3563185
+- Brand: 아디다스 (ADIDAS)
+- Category: 아우터 > 트레이닝 재킷
+- Gender: 남성
+- Price: sale 82990, normal 119000, discount 30%
+- Review: 3912 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20230915/3563185/3563185_16950017775747_500.jpg
+- Ontology triples:
+  - MUSINSA product 3563185 -> has_name -> 파이어버드 트랙탑 - 블랙 / IJ7058
+  - MUSINSA product 3563185 -> belongs_to_brand -> 아디다스
+  - MUSINSA product 3563185 -> belongs_to_category -> 아우터 > 트레이닝 재킷
+  - MUSINSA product 3563185 -> has_sale_price -> 82990
+  - MUSINSA product 3563185 -> has_review_count -> 3912
+  - MUSINSA product 3563185 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 3563185 -> has_product_url -> https://www.musinsa.com/products/3563185
+  - MUSINSA product 3563185 -> has_image -> https://image.msscdn.net/images/goods_img/20230915/3563185/3563185_16950017775747_500.jpg
+  - MUSINSA product 3563185 -> has_image -> https://image.msscdn.net/images/prd_img/20230915/3563185/detail_3563185_16950017822527_500.jpg
+  - MUSINSA product 3563185 -> has_image -> https://image.msscdn.net/images/prd_img/20230915/3563185/detail_3563185_16950017828428_500.jpg
+
+### [보라끌레르X수아레](우먼)캐시미어 100 홀가먼트 터틀넥 니트 - 5 COLOR
+- Product ID: 5321066
+- Source URL: https://www.musinsa.com/products/5321066
+- Brand: 수아레 우먼 (SUARE WOMEN)
+- Category: 상의 > 니트/스웨터
+- Gender: 여성
+- Price: sale 79650, normal 135000, discount 41%
+- Review: 142 reviews, satisfaction 4.7, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20250813/5321066/5321066_17569716578791_500.jpg
+- Ontology triples:
+  - MUSINSA product 5321066 -> has_name -> [보라끌레르X수아레](우먼)캐시미어 100 홀가먼트 터틀넥 니트 - 5 COLOR
+  - MUSINSA product 5321066 -> belongs_to_brand -> 수아레 우먼
+  - MUSINSA product 5321066 -> belongs_to_category -> 상의 > 니트/스웨터
+  - MUSINSA product 5321066 -> has_sale_price -> 79650
+  - MUSINSA product 5321066 -> has_review_count -> 142
+  - MUSINSA product 5321066 -> has_satisfaction_score -> 4.7
+  - MUSINSA product 5321066 -> has_product_url -> https://www.musinsa.com/products/5321066
+  - MUSINSA product 5321066 -> has_image -> https://image.msscdn.net/images/goods_img/20250813/5321066/5321066_17569716578791_500.jpg
+  - MUSINSA product 5321066 -> has_image -> https://image.msscdn.net/images/prd_img/20250813/5321066/detail_5321066_17569716649470_500.jpg
+  - MUSINSA product 5321066 -> has_image -> https://image.msscdn.net/images/prd_img/20250813/5321066/detail_5321066_17569716659721_500.jpg
+
+### 와이드 커브드 다트 코튼 팬츠[베이지]
+- Product ID: 4993414
+- Source URL: https://www.musinsa.com/products/4993414
+- Brand: 시그니처 (SIGNATURE)
+- Category: 바지 > 코튼 팬츠
+- Gender: 남성, 여성
+- Price: sale 22900, normal 53000, discount 57%
+- Review: 4043 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 핏=루즈; 촉감=보통; 신축성=없음; 비침=없음; 두께=보통; 계절=봄/여름/가을
+- Primary image: https://image.msscdn.net/images/goods_img/20250407/4993414/4993414_17443666290084_500.jpg
+- Ontology triples:
+  - MUSINSA product 4993414 -> has_name -> 와이드 커브드 다트 코튼 팬츠[베이지]
+  - MUSINSA product 4993414 -> belongs_to_brand -> 시그니처
+  - MUSINSA product 4993414 -> belongs_to_category -> 바지 > 코튼 팬츠
+  - MUSINSA product 4993414 -> has_sale_price -> 22900
+  - MUSINSA product 4993414 -> has_review_count -> 4043
+  - MUSINSA product 4993414 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 4993414 -> has_product_url -> https://www.musinsa.com/products/4993414
+  - MUSINSA product 4993414 -> has_material_signal_핏 -> 루즈
+  - MUSINSA product 4993414 -> has_material_signal_촉감 -> 보통
+  - MUSINSA product 4993414 -> has_material_signal_신축성 -> 없음
+  - MUSINSA product 4993414 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 4993414 -> has_material_signal_두께 -> 보통
+  - MUSINSA product 4993414 -> has_material_signal_계절 -> 봄, 여름, 가을
+  - MUSINSA product 4993414 -> has_image -> https://image.msscdn.net/images/goods_img/20250407/4993414/4993414_17443666290084_500.jpg
+  - MUSINSA product 4993414 -> has_image -> https://image.msscdn.net/images/prd_img/20250407/4993414/detail_4993414_17788263390223_500.jpg
+  - MUSINSA product 4993414 -> has_image -> https://image.msscdn.net/images/prd_img/20250407/4993414/detail_4993414_17788263397822_500.jpg
+
+### 록 링크 팬츠 [차콜 스트라이프]
+- Product ID: 4761188
+- Source URL: https://www.musinsa.com/products/4761188
+- Brand: 비긴202 (BEGIN202)
+- Category: 바지 > 슈트 팬츠/슬랙스
+- Gender: 남성
+- Price: sale 96850, normal 149000, discount 35%
+- Review: 693 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 핏=루즈/오버|사이즈; 촉감=보통; 신축성=보통; 비침=없음; 두께=약간 얇음; 계절=봄/여름/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20250205/4761188/4761188_17387438502547_500.jpg
+- Ontology triples:
+  - MUSINSA product 4761188 -> has_name -> 록 링크 팬츠 [차콜 스트라이프]
+  - MUSINSA product 4761188 -> belongs_to_brand -> 비긴202
+  - MUSINSA product 4761188 -> belongs_to_category -> 바지 > 슈트 팬츠/슬랙스
+  - MUSINSA product 4761188 -> has_sale_price -> 96850
+  - MUSINSA product 4761188 -> has_review_count -> 693
+  - MUSINSA product 4761188 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 4761188 -> has_product_url -> https://www.musinsa.com/products/4761188
+  - MUSINSA product 4761188 -> has_material_signal_핏 -> 루즈, 오버|사이즈
+  - MUSINSA product 4761188 -> has_material_signal_촉감 -> 보통
+  - MUSINSA product 4761188 -> has_material_signal_신축성 -> 보통
+  - MUSINSA product 4761188 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 4761188 -> has_material_signal_두께 -> 약간 얇음
+  - MUSINSA product 4761188 -> has_material_signal_계절 -> 봄, 여름, 가을, 겨울
+  - MUSINSA product 4761188 -> has_image -> https://image.msscdn.net/images/goods_img/20250205/4761188/4761188_17387438502547_500.jpg
+  - MUSINSA product 4761188 -> has_image -> https://image.msscdn.net/images/prd_img/20250205/4761188/detail_4761188_17387438553012_500.jpg
+
+### [보라끌레르X수아레](우먼)캐시미어 100 케이블 라운드 가디건 - 8 COLOR
+- Product ID: 5321103
+- Source URL: https://www.musinsa.com/products/5321103
+- Brand: 수아레 우먼 (SUARE WOMEN)
+- Category: 아우터 > 카디건
+- Gender: 여성
+- Price: sale 119900, normal 159000, discount 25%
+- Review: 246 reviews, satisfaction 4.7, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20250813/5321103/5321103_17569716124962_500.jpg
+- Ontology triples:
+  - MUSINSA product 5321103 -> has_name -> [보라끌레르X수아레](우먼)캐시미어 100 케이블 라운드 가디건 - 8 COLOR
+  - MUSINSA product 5321103 -> belongs_to_brand -> 수아레 우먼
+  - MUSINSA product 5321103 -> belongs_to_category -> 아우터 > 카디건
+  - MUSINSA product 5321103 -> has_sale_price -> 119900
+  - MUSINSA product 5321103 -> has_review_count -> 246
+  - MUSINSA product 5321103 -> has_satisfaction_score -> 4.7
+  - MUSINSA product 5321103 -> has_product_url -> https://www.musinsa.com/products/5321103
+  - MUSINSA product 5321103 -> has_image -> https://image.msscdn.net/images/goods_img/20250813/5321103/5321103_17569716124962_500.jpg
+  - MUSINSA product 5321103 -> has_image -> https://image.msscdn.net/images/prd_img/20250813/5321103/detail_5321103_17569716183179_500.jpg
+  - MUSINSA product 5321103 -> has_image -> https://image.msscdn.net/images/prd_img/20250813/5321103/detail_5321103_17569716192195_500.jpg
+
+### 져지 트랙 자켓 아이보리
+- Product ID: 4280527
+- Source URL: https://www.musinsa.com/products/4280527
+- Brand: 트래블 (TRAVEL)
+- Category: 아우터 > 트레이닝 재킷
+- Gender: 남성, 여성
+- Price: sale 56000, normal 75000, discount 25%
+- Review: 1699 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20240729/4280527/4280527_17557398230421_500.jpg
+- Ontology triples:
+  - MUSINSA product 4280527 -> has_name -> 져지 트랙 자켓 아이보리
+  - MUSINSA product 4280527 -> belongs_to_brand -> 트래블
+  - MUSINSA product 4280527 -> belongs_to_category -> 아우터 > 트레이닝 재킷
+  - MUSINSA product 4280527 -> has_sale_price -> 56000
+  - MUSINSA product 4280527 -> has_review_count -> 1699
+  - MUSINSA product 4280527 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 4280527 -> has_product_url -> https://www.musinsa.com/products/4280527
+  - MUSINSA product 4280527 -> has_image -> https://image.msscdn.net/images/goods_img/20240729/4280527/4280527_17557398230421_500.jpg
+  - MUSINSA product 4280527 -> has_image -> https://image.msscdn.net/images/prd_img/20240729/4280527/detail_4280527_17693916293723_500.jpg
+
+### 에샤페 초코(FS261OD03X087219)
+- Product ID: 4328804
+- Source URL: https://www.musinsa.com/products/4328804
+- Brand: 휠라 (FILA)
+- Category: 신발 > 스니커즈 > 패션스니커즈화
+- Gender: 남성, 여성
+- Price: sale 119000, normal 119000, discount 0%
+- Review: 2365 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20240814/4328804/4328804_17556712337105_500.jpg
+- Ontology triples:
+  - MUSINSA product 4328804 -> has_name -> 에샤페 초코(FS261OD03X087219)
+  - MUSINSA product 4328804 -> belongs_to_brand -> 휠라
+  - MUSINSA product 4328804 -> belongs_to_category -> 신발 > 스니커즈 > 패션스니커즈화
+  - MUSINSA product 4328804 -> has_sale_price -> 119000
+  - MUSINSA product 4328804 -> has_review_count -> 2365
+  - MUSINSA product 4328804 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 4328804 -> has_product_url -> https://www.musinsa.com/products/4328804
+  - MUSINSA product 4328804 -> has_image -> https://image.msscdn.net/images/goods_img/20240814/4328804/4328804_17556712337105_500.jpg
+  - MUSINSA product 4328804 -> has_image -> https://image.msscdn.net/images/prd_img/20240814/4328804/detail_4328804_17556720835747_500.jpg
+  - MUSINSA product 4328804 -> has_image -> https://image.msscdn.net/images/prd_img/20240814/4328804/detail_4328804_17556720843791_500.jpg
+
+### 워시드 코튼 도비 팬츠 [워시드 블랙]
+- Product ID: 3837367
+- Source URL: https://www.musinsa.com/products/3837367
+- Brand: 비긴202 (BEGIN202)
+- Category: 바지 > 코튼 팬츠
+- Gender: 남성
+- Price: sale 94400, normal 118000, discount 20%
+- Review: 1335 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 핏=루즈/오버|사이즈; 촉감=보통; 신축성=보통; 비침=없음; 두께=보통; 계절=봄/여름/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20240131/3837367/3837367_17066945929716_500.jpg
+- Ontology triples:
+  - MUSINSA product 3837367 -> has_name -> 워시드 코튼 도비 팬츠 [워시드 블랙]
+  - MUSINSA product 3837367 -> belongs_to_brand -> 비긴202
+  - MUSINSA product 3837367 -> belongs_to_category -> 바지 > 코튼 팬츠
+  - MUSINSA product 3837367 -> has_sale_price -> 94400
+  - MUSINSA product 3837367 -> has_review_count -> 1335
+  - MUSINSA product 3837367 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 3837367 -> has_product_url -> https://www.musinsa.com/products/3837367
+  - MUSINSA product 3837367 -> has_material_signal_핏 -> 루즈, 오버|사이즈
+  - MUSINSA product 3837367 -> has_material_signal_촉감 -> 보통
+  - MUSINSA product 3837367 -> has_material_signal_신축성 -> 보통
+  - MUSINSA product 3837367 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 3837367 -> has_material_signal_두께 -> 보통
+  - MUSINSA product 3837367 -> has_material_signal_계절 -> 봄, 여름, 가을, 겨울
+  - MUSINSA product 3837367 -> has_image -> https://image.msscdn.net/images/goods_img/20240131/3837367/3837367_17066945929716_500.jpg
+  - MUSINSA product 3837367 -> has_image -> https://image.msscdn.net/images/prd_img/20240131/3837367/detail_3837367_17447834688872_500.jpg
+
+### [2PACK] 와이드핏 트레이닝 스웨트 팬츠 - 6color
+- Product ID: 1735427
+- Source URL: https://www.musinsa.com/products/1735427
+- Brand: 에스이에스티 (S'EST)
+- Category: 바지 > 트레이닝/조거 팬츠
+- Gender: 남성, 여성
+- Price: sale 34200, normal 116000, discount 71%
+- Review: 13701 reviews, satisfaction 4.7, has_summary=true
+- Material/Fit signals: 핏=루즈/오버|사이즈; 촉감=부드러움; 신축성=약간 있음; 비침=없음; 두께=약간 얇음/약간|두꺼움; 계절=봄/여름/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20210104/1735427/1735427_17401191629880_500.jpg
+- Ontology triples:
+  - MUSINSA product 1735427 -> has_name -> [2PACK] 와이드핏 트레이닝 스웨트 팬츠 - 6color
+  - MUSINSA product 1735427 -> belongs_to_brand -> 에스이에스티
+  - MUSINSA product 1735427 -> belongs_to_category -> 바지 > 트레이닝/조거 팬츠
+  - MUSINSA product 1735427 -> has_sale_price -> 34200
+  - MUSINSA product 1735427 -> has_review_count -> 13701
+  - MUSINSA product 1735427 -> has_satisfaction_score -> 4.7
+  - MUSINSA product 1735427 -> has_product_url -> https://www.musinsa.com/products/1735427
+  - MUSINSA product 1735427 -> has_material_signal_핏 -> 루즈, 오버|사이즈
+  - MUSINSA product 1735427 -> has_material_signal_촉감 -> 부드러움
+  - MUSINSA product 1735427 -> has_material_signal_신축성 -> 약간 있음
+  - MUSINSA product 1735427 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 1735427 -> has_material_signal_두께 -> 약간 얇음, 약간|두꺼움
+  - MUSINSA product 1735427 -> has_material_signal_계절 -> 봄, 여름, 가을, 겨울
+  - MUSINSA product 1735427 -> has_image -> https://image.msscdn.net/images/goods_img/20210104/1735427/1735427_17401191629880_500.jpg
+  - MUSINSA product 1735427 -> has_image -> https://image.msscdn.net/images/prd_img/20210104/1735427/detail_1735427_17401191714969_500.jpg
+  - MUSINSA product 1735427 -> has_image -> https://image.msscdn.net/images/prd_img/20210104/1735427/detail_1735427_17401191743413_500.jpg
+
+### Deep One Tuck Sweat Pants [Grey]
+- Product ID: 1551840
+- Source URL: https://www.musinsa.com/products/1551840
+- Brand: 제로 (XERO)
+- Category: 바지 > 트레이닝/조거 팬츠
+- Gender: 남성, 여성
+- Price: sale 23790, normal 39000, discount 39%
+- Review: 143377 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 핏=오버|사이즈; 촉감=약간|부드러움; 신축성=있음; 비침=없음; 두께=보통; 계절=봄/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20200818/1551840/1551840_1_500.jpg
+- Ontology triples:
+  - MUSINSA product 1551840 -> has_name -> Deep One Tuck Sweat Pants [Grey]
+  - MUSINSA product 1551840 -> belongs_to_brand -> 제로
+  - MUSINSA product 1551840 -> belongs_to_category -> 바지 > 트레이닝/조거 팬츠
+  - MUSINSA product 1551840 -> has_sale_price -> 23790
+  - MUSINSA product 1551840 -> has_review_count -> 143377
+  - MUSINSA product 1551840 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 1551840 -> has_product_url -> https://www.musinsa.com/products/1551840
+  - MUSINSA product 1551840 -> has_material_signal_핏 -> 오버|사이즈
+  - MUSINSA product 1551840 -> has_material_signal_촉감 -> 약간|부드러움
+  - MUSINSA product 1551840 -> has_material_signal_신축성 -> 있음
+  - MUSINSA product 1551840 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 1551840 -> has_material_signal_두께 -> 보통
+  - MUSINSA product 1551840 -> has_material_signal_계절 -> 봄, 가을, 겨울
+  - MUSINSA product 1551840 -> has_image -> https://image.msscdn.net/images/goods_img/20200818/1551840/1551840_1_500.jpg
+
+### 도브 울 블루종 자켓 [BLACK]
+- Product ID: 1760177
+- Source URL: https://www.musinsa.com/products/1760177
+- Brand: 드로우핏 (DRAW FIT)
+- Category: 아우터 > 블루종/MA-1
+- Gender: 남성
+- Price: sale 139200, normal 174000, discount 20%
+- Review: 2023 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20210125/1760177/1760177_17568597040774_500.jpg
+- Ontology triples:
+  - MUSINSA product 1760177 -> has_name -> 도브 울 블루종 자켓 [BLACK]
+  - MUSINSA product 1760177 -> belongs_to_brand -> 드로우핏
+  - MUSINSA product 1760177 -> belongs_to_category -> 아우터 > 블루종/MA-1
+  - MUSINSA product 1760177 -> has_sale_price -> 139200
+  - MUSINSA product 1760177 -> has_review_count -> 2023
+  - MUSINSA product 1760177 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 1760177 -> has_product_url -> https://www.musinsa.com/products/1760177
+  - MUSINSA product 1760177 -> has_image -> https://image.msscdn.net/images/goods_img/20210125/1760177/1760177_17568597040774_500.jpg
+  - MUSINSA product 1760177 -> has_image -> https://image.msscdn.net/images/prd_img/20210125/1760177/detail_1760177_17568596688048_500.jpg
+  - MUSINSA product 1760177 -> has_image -> https://image.msscdn.net/images/prd_img/20210125/1760177/detail_1760177_17364106089614_500.jpg
+
+### 맨티스 16 백팩 - BLACK / ABPFU10636
+- Product ID: 5333555
+- Source URL: https://www.musinsa.com/products/5333555
+- Brand: 아크테릭스 (ARCTERYX)
+- Category: 스포츠/레저 > 가방 > 백팩
+- Gender: 남성, 여성
+- Price: sale 220000, normal 220000, discount 0%
+- Review: 25 reviews, satisfaction 4.6, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20250818/5333555/5333555_17573788208085_500.jpg
+- Ontology triples:
+  - MUSINSA product 5333555 -> has_name -> 맨티스 16 백팩 - BLACK / ABPFU10636
+  - MUSINSA product 5333555 -> belongs_to_brand -> 아크테릭스
+  - MUSINSA product 5333555 -> belongs_to_category -> 스포츠/레저 > 가방 > 백팩
+  - MUSINSA product 5333555 -> has_sale_price -> 220000
+  - MUSINSA product 5333555 -> has_review_count -> 25
+  - MUSINSA product 5333555 -> has_satisfaction_score -> 4.6
+  - MUSINSA product 5333555 -> has_product_url -> https://www.musinsa.com/products/5333555
+  - MUSINSA product 5333555 -> has_image -> https://image.msscdn.net/images/goods_img/20250818/5333555/5333555_17573788208085_500.jpg
+  - MUSINSA product 5333555 -> has_image -> https://image.msscdn.net/images/prd_img/20250818/5333555/detail_5333555_17573788265105_500.jpg
+  - MUSINSA product 5333555 -> has_image -> https://image.msscdn.net/images/prd_img/20250818/5333555/detail_5333555_17573788270916_500.jpg
+
+### (여름원단추가) 투턱 와이드 롱 스웨트 팬츠 [블랙]
+- Product ID: 3674341
+- Source URL: https://www.musinsa.com/products/3674341
+- Brand: 바운더리 (BOUNDARY)
+- Category: 바지 > 트레이닝/조거 팬츠
+- Gender: 남성, 여성
+- Price: sale 37700, normal 94000, discount 60%
+- Review: 6733 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 핏=오버|사이즈; 촉감=부드러움; 신축성=보통; 비침=없음; 두께=약간|두꺼움; 계절=봄/여름/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20231101/3674341/3674341_17042599581270_500.jpg
+- Ontology triples:
+  - MUSINSA product 3674341 -> has_name -> (여름원단추가) 투턱 와이드 롱 스웨트 팬츠 [블랙]
+  - MUSINSA product 3674341 -> belongs_to_brand -> 바운더리
+  - MUSINSA product 3674341 -> belongs_to_category -> 바지 > 트레이닝/조거 팬츠
+  - MUSINSA product 3674341 -> has_sale_price -> 37700
+  - MUSINSA product 3674341 -> has_review_count -> 6733
+  - MUSINSA product 3674341 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 3674341 -> has_product_url -> https://www.musinsa.com/products/3674341
+  - MUSINSA product 3674341 -> has_material_signal_핏 -> 오버|사이즈
+  - MUSINSA product 3674341 -> has_material_signal_촉감 -> 부드러움
+  - MUSINSA product 3674341 -> has_material_signal_신축성 -> 보통
+  - MUSINSA product 3674341 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 3674341 -> has_material_signal_두께 -> 약간|두꺼움
+  - MUSINSA product 3674341 -> has_material_signal_계절 -> 봄, 여름, 가을, 겨울
+  - MUSINSA product 3674341 -> has_image -> https://image.msscdn.net/images/goods_img/20231101/3674341/3674341_17042599581270_500.jpg
+  - MUSINSA product 3674341 -> has_image -> https://image.msscdn.net/images/prd_img/20231101/3674341/detail_3674341_17770060716528_500.jpg
+  - MUSINSA product 3674341 -> has_image -> https://image.msscdn.net/images/prd_img/20231101/3674341/detail_3674341_17770060746376_500.jpg
+
+### 조그 100 T (4E) - 블랙 / 1021A463-001
+- Product ID: 1527073
+- Source URL: https://www.musinsa.com/products/1527073
+- Brand: 아식스 (ASICS)
+- Category: 신발 > 스니커즈 > 패션스니커즈화
+- Gender: 남성
+- Price: sale 99000, normal 99000, discount 0%
+- Review: 5634 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20200724/1527073/1527073_1_500.jpg
+- Ontology triples:
+  - MUSINSA product 1527073 -> has_name -> 조그 100 T (4E) - 블랙 / 1021A463-001
+  - MUSINSA product 1527073 -> belongs_to_brand -> 아식스
+  - MUSINSA product 1527073 -> belongs_to_category -> 신발 > 스니커즈 > 패션스니커즈화
+  - MUSINSA product 1527073 -> has_sale_price -> 99000
+  - MUSINSA product 1527073 -> has_review_count -> 5634
+  - MUSINSA product 1527073 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 1527073 -> has_product_url -> https://www.musinsa.com/products/1527073
+  - MUSINSA product 1527073 -> has_image -> https://image.msscdn.net/images/goods_img/20200724/1527073/1527073_1_500.jpg
+  - MUSINSA product 1527073 -> has_image -> https://image.msscdn.net/images/prd_img/20200724/1527073/detail_1527073_1_500.jpg
+  - MUSINSA product 1527073 -> has_image -> https://image.msscdn.net/images/prd_img/20200724/1527073/detail_1527073_2_500.jpg
+
+### 데미지 워시드 데님 팬츠-미디엄 블루
+- Product ID: 3791988
+- Source URL: https://www.musinsa.com/products/3791988
+- Brand: 필루미네이트 (FILLUMINATE)
+- Category: 바지 > 데님 팬츠
+- Gender: 남성
+- Price: sale 23900, normal 53000, discount 55%
+- Review: 16473 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 핏=오버|사이즈; 촉감=부드러움; 신축성=있음; 비침=없음; 두께=보통; 계절=봄/여름/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20240112/3791988/3791988_17249825786441_500.jpg
+- Ontology triples:
+  - MUSINSA product 3791988 -> has_name -> 데미지 워시드 데님 팬츠-미디엄 블루
+  - MUSINSA product 3791988 -> belongs_to_brand -> 필루미네이트
+  - MUSINSA product 3791988 -> belongs_to_category -> 바지 > 데님 팬츠
+  - MUSINSA product 3791988 -> has_sale_price -> 23900
+  - MUSINSA product 3791988 -> has_review_count -> 16473
+  - MUSINSA product 3791988 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 3791988 -> has_product_url -> https://www.musinsa.com/products/3791988
+  - MUSINSA product 3791988 -> has_material_signal_핏 -> 오버|사이즈
+  - MUSINSA product 3791988 -> has_material_signal_촉감 -> 부드러움
+  - MUSINSA product 3791988 -> has_material_signal_신축성 -> 있음
+  - MUSINSA product 3791988 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 3791988 -> has_material_signal_두께 -> 보통
+  - MUSINSA product 3791988 -> has_material_signal_계절 -> 봄, 여름, 가을, 겨울
+  - MUSINSA product 3791988 -> has_image -> https://image.msscdn.net/images/goods_img/20240112/3791988/3791988_17249825786441_500.jpg
+  - MUSINSA product 3791988 -> has_image -> https://image.msscdn.net/images/prd_img/20240112/3791988/detail_3791988_17466850444267_500.jpg
+  - MUSINSA product 3791988 -> has_image -> https://image.msscdn.net/images/prd_img/20240112/3791988/detail_3791988_17466850421850_500.jpg
+
+### [수아레X오정규] 에센셜 울 새들 니트 - 6 COLOR
+- Product ID: 5352002
+- Source URL: https://www.musinsa.com/products/5352002
+- Brand: 수아레 (SUARE)
+- Category: 상의 > 니트/스웨터
+- Gender: 남성
+- Price: sale 31050, normal 59000, discount 47%
+- Review: 221 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20250821/5352002/5352002_17585097303540_500.jpg
+- Ontology triples:
+  - MUSINSA product 5352002 -> has_name -> [수아레X오정규] 에센셜 울 새들 니트 - 6 COLOR
+  - MUSINSA product 5352002 -> belongs_to_brand -> 수아레
+  - MUSINSA product 5352002 -> belongs_to_category -> 상의 > 니트/스웨터
+  - MUSINSA product 5352002 -> has_sale_price -> 31050
+  - MUSINSA product 5352002 -> has_review_count -> 221
+  - MUSINSA product 5352002 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 5352002 -> has_product_url -> https://www.musinsa.com/products/5352002
+  - MUSINSA product 5352002 -> has_image -> https://image.msscdn.net/images/goods_img/20250821/5352002/5352002_17585097303540_500.jpg
+  - MUSINSA product 5352002 -> has_image -> https://image.msscdn.net/images/prd_img/20250821/5352002/detail_5352002_17585097406463_500.jpg
+  - MUSINSA product 5352002 -> has_image -> https://image.msscdn.net/images/prd_img/20250821/5352002/detail_5352002_17585097413650_500.jpg
+
+### 세미 와이드 히든 밴딩 슬랙스 [블랙]
+- Product ID: 1149329
+- Source URL: https://www.musinsa.com/products/1149329
+- Brand: 무신사 스탠다드 (MUSINSA STANDARD)
+- Category: 바지 > 슈트 팬츠/슬랙스
+- Gender: 남성
+- Price: sale 37890, normal 39900, discount 5%
+- Review: 114113 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 핏=레귤러; 촉감=보통; 신축성=있음; 비침=없음; 두께=보통; 계절=봄/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20190910/1149329/1149329_17518465143526_500.jpg
+- Ontology triples:
+  - MUSINSA product 1149329 -> has_name -> 세미 와이드 히든 밴딩 슬랙스 [블랙]
+  - MUSINSA product 1149329 -> belongs_to_brand -> 무신사 스탠다드
+  - MUSINSA product 1149329 -> belongs_to_category -> 바지 > 슈트 팬츠/슬랙스
+  - MUSINSA product 1149329 -> has_sale_price -> 37890
+  - MUSINSA product 1149329 -> has_review_count -> 114113
+  - MUSINSA product 1149329 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 1149329 -> has_product_url -> https://www.musinsa.com/products/1149329
+  - MUSINSA product 1149329 -> has_material_signal_핏 -> 레귤러
+  - MUSINSA product 1149329 -> has_material_signal_촉감 -> 보통
+  - MUSINSA product 1149329 -> has_material_signal_신축성 -> 있음
+  - MUSINSA product 1149329 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 1149329 -> has_material_signal_두께 -> 보통
+  - MUSINSA product 1149329 -> has_material_signal_계절 -> 봄, 가을, 겨울
+  - MUSINSA product 1149329 -> has_image -> https://image.msscdn.net/images/goods_img/20190910/1149329/1149329_17518465143526_500.jpg
+  - MUSINSA product 1149329 -> has_image -> https://image.msscdn.net/images/prd_img/20190910/1149329/detail_1149329_17775152643234_500.jpg
+  - MUSINSA product 1149329 -> has_image -> https://image.msscdn.net/images/prd_img/20190910/1149329/detail_1149329_17775152650238_500.jpg
+
+### SORANO Basic Logo HOODIE [6Color]
+- Product ID: 4302685
+- Source URL: https://www.musinsa.com/products/4302685
+- Brand: 소라노 (SORANO)
+- Category: 상의 > 후드 티셔츠
+- Gender: 남성, 여성
+- Price: sale 45900, normal 119000, discount 61%
+- Review: 5898 reviews, satisfaction 4.7, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20240807/4302685/4302685_17229675684379_500.jpg
+- Ontology triples:
+  - MUSINSA product 4302685 -> has_name -> SORANO Basic Logo HOODIE [6Color]
+  - MUSINSA product 4302685 -> belongs_to_brand -> 소라노
+  - MUSINSA product 4302685 -> belongs_to_category -> 상의 > 후드 티셔츠
+  - MUSINSA product 4302685 -> has_sale_price -> 45900
+  - MUSINSA product 4302685 -> has_review_count -> 5898
+  - MUSINSA product 4302685 -> has_satisfaction_score -> 4.7
+  - MUSINSA product 4302685 -> has_product_url -> https://www.musinsa.com/products/4302685
+  - MUSINSA product 4302685 -> has_image -> https://image.msscdn.net/images/goods_img/20240807/4302685/4302685_17229675684379_500.jpg
+  - MUSINSA product 4302685 -> has_image -> https://image.msscdn.net/images/prd_img/20240807/4302685/detail_4302685_17229675795389_500.jpg
+  - MUSINSA product 4302685 -> has_image -> https://image.msscdn.net/images/prd_img/20240807/4302685/detail_4302685_17229675822242_500.jpg
+
+### 사피아노 신세틱 레더 벨트_30mm
+- Product ID: 1220731
+- Source URL: https://www.musinsa.com/products/1220731
+- Brand: 무신사 스탠다드 (MUSINSA STANDARD)
+- Category: 소품 > 벨트
+- Gender: 남성, 여성
+- Price: sale 10190, normal 15900, discount 36%
+- Review: 190514 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20191112/1220731/1220731_17073700380718_500.jpg
+- Ontology triples:
+  - MUSINSA product 1220731 -> has_name -> 사피아노 신세틱 레더 벨트_30mm
+  - MUSINSA product 1220731 -> belongs_to_brand -> 무신사 스탠다드
+  - MUSINSA product 1220731 -> belongs_to_category -> 소품 > 벨트
+  - MUSINSA product 1220731 -> has_sale_price -> 10190
+  - MUSINSA product 1220731 -> has_review_count -> 190514
+  - MUSINSA product 1220731 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 1220731 -> has_product_url -> https://www.musinsa.com/products/1220731
+  - MUSINSA product 1220731 -> has_image -> https://image.msscdn.net/images/goods_img/20191112/1220731/1220731_17073700380718_500.jpg
+  - MUSINSA product 1220731 -> has_image -> https://image.msscdn.net/images/prd_img/20191112/1220731/detail_1220731_17816824879114_500.jpg
+  - MUSINSA product 1220731 -> has_image -> https://image.msscdn.net/images/prd_img/20191112/1220731/detail_1220731_17816824888505_500.jpg
+
+### [2-WAY] 슬리브 스타 피그먼트 후드 집업 스모크블랙
+- Product ID: 3697526
+- Source URL: https://www.musinsa.com/products/3697526
+- Brand: 꼼파뇨 (CPGN STUDIO)
+- Category: 아우터 > 후드 집업
+- Gender: 남성, 여성
+- Price: sale 49500, normal 90000, discount 45%
+- Review: 3174 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20231108/3697526/3697526_17002041370481_500.jpg
+- Ontology triples:
+  - MUSINSA product 3697526 -> has_name -> [2-WAY] 슬리브 스타 피그먼트 후드 집업 스모크블랙
+  - MUSINSA product 3697526 -> belongs_to_brand -> 꼼파뇨
+  - MUSINSA product 3697526 -> belongs_to_category -> 아우터 > 후드 집업
+  - MUSINSA product 3697526 -> has_sale_price -> 49500
+  - MUSINSA product 3697526 -> has_review_count -> 3174
+  - MUSINSA product 3697526 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 3697526 -> has_product_url -> https://www.musinsa.com/products/3697526
+  - MUSINSA product 3697526 -> has_image -> https://image.msscdn.net/images/goods_img/20231108/3697526/3697526_17002041370481_500.jpg
+  - MUSINSA product 3697526 -> has_image -> https://image.msscdn.net/images/prd_img/20231108/3697526/detail_3697526_17002042374234_500.jpg
+  - MUSINSA product 3697526 -> has_image -> https://image.msscdn.net/images/prd_img/20231108/3697526/detail_3697526_16999550191258_500.jpg
+
+### 리얼 와이드 히든 밴딩 슬랙스 [블랙]
+- Product ID: 1168922
+- Source URL: https://www.musinsa.com/products/1168922
+- Brand: 무신사 스탠다드 (MUSINSA STANDARD)
+- Category: 바지 > 슈트 팬츠/슬랙스
+- Gender: 남성
+- Price: sale 43590, normal 45900, discount 5%
+- Review: 29719 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 핏=오버|사이즈; 촉감=보통; 신축성=있음; 비침=없음; 두께=보통; 계절=봄/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20190927/1168922/1168922_17569508760902_500.jpg
+- Ontology triples:
+  - MUSINSA product 1168922 -> has_name -> 리얼 와이드 히든 밴딩 슬랙스 [블랙]
+  - MUSINSA product 1168922 -> belongs_to_brand -> 무신사 스탠다드
+  - MUSINSA product 1168922 -> belongs_to_category -> 바지 > 슈트 팬츠/슬랙스
+  - MUSINSA product 1168922 -> has_sale_price -> 43590
+  - MUSINSA product 1168922 -> has_review_count -> 29719
+  - MUSINSA product 1168922 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 1168922 -> has_product_url -> https://www.musinsa.com/products/1168922
+  - MUSINSA product 1168922 -> has_material_signal_핏 -> 오버|사이즈
+  - MUSINSA product 1168922 -> has_material_signal_촉감 -> 보통
+  - MUSINSA product 1168922 -> has_material_signal_신축성 -> 있음
+  - MUSINSA product 1168922 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 1168922 -> has_material_signal_두께 -> 보통
+  - MUSINSA product 1168922 -> has_material_signal_계절 -> 봄, 가을, 겨울
+  - MUSINSA product 1168922 -> has_image -> https://image.msscdn.net/images/goods_img/20190927/1168922/1168922_17569508760902_500.jpg
+  - MUSINSA product 1168922 -> has_image -> https://image.msscdn.net/images/prd_img/20190927/1168922/detail_1168922_17784624828180_500.jpg
+  - MUSINSA product 1168922 -> has_image -> https://image.msscdn.net/images/prd_img/20190927/1168922/detail_1168922_17782050480688_500.jpg
+
+### Deep One Tuck Sweat Pants [Black]
+- Product ID: 1551839
+- Source URL: https://www.musinsa.com/products/1551839
+- Brand: 제로 (XERO)
+- Category: 바지 > 트레이닝/조거 팬츠
+- Gender: 남성, 여성
+- Price: sale 23790, normal 39000, discount 39%
+- Review: 56882 reviews, satisfaction 4.9, has_summary=true
+- Material/Fit signals: 핏=오버|사이즈; 촉감=약간|부드러움; 신축성=있음; 비침=없음; 두께=보통; 계절=봄/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20200818/1551839/1551839_1_500.jpg
+- Ontology triples:
+  - MUSINSA product 1551839 -> has_name -> Deep One Tuck Sweat Pants [Black]
+  - MUSINSA product 1551839 -> belongs_to_brand -> 제로
+  - MUSINSA product 1551839 -> belongs_to_category -> 바지 > 트레이닝/조거 팬츠
+  - MUSINSA product 1551839 -> has_sale_price -> 23790
+  - MUSINSA product 1551839 -> has_review_count -> 56882
+  - MUSINSA product 1551839 -> has_satisfaction_score -> 4.9
+  - MUSINSA product 1551839 -> has_product_url -> https://www.musinsa.com/products/1551839
+  - MUSINSA product 1551839 -> has_material_signal_핏 -> 오버|사이즈
+  - MUSINSA product 1551839 -> has_material_signal_촉감 -> 약간|부드러움
+  - MUSINSA product 1551839 -> has_material_signal_신축성 -> 있음
+  - MUSINSA product 1551839 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 1551839 -> has_material_signal_두께 -> 보통
+  - MUSINSA product 1551839 -> has_material_signal_계절 -> 봄, 가을, 겨울
+  - MUSINSA product 1551839 -> has_image -> https://image.msscdn.net/images/goods_img/20200818/1551839/1551839_1_500.jpg
+
+### 스페이스 헤비코튼 후드 버건디 KMHD6723
+- Product ID: 3533480
+- Source URL: https://www.musinsa.com/products/3533480
+- Brand: 에즈카톤 (EZKATON)
+- Category: 상의 > 후드 티셔츠
+- Gender: 남성, 여성
+- Price: sale 43900, normal 63000, discount 30%
+- Review: 7160 reviews, satisfaction 4.8, has_summary=true
+- Material/Fit signals: 
+- Primary image: https://image.msscdn.net/images/goods_img/20230906/3533480/3533480_16939610292721_500.jpg
+- Ontology triples:
+  - MUSINSA product 3533480 -> has_name -> 스페이스 헤비코튼 후드 버건디 KMHD6723
+  - MUSINSA product 3533480 -> belongs_to_brand -> 에즈카톤
+  - MUSINSA product 3533480 -> belongs_to_category -> 상의 > 후드 티셔츠
+  - MUSINSA product 3533480 -> has_sale_price -> 43900
+  - MUSINSA product 3533480 -> has_review_count -> 7160
+  - MUSINSA product 3533480 -> has_satisfaction_score -> 4.8
+  - MUSINSA product 3533480 -> has_product_url -> https://www.musinsa.com/products/3533480
+  - MUSINSA product 3533480 -> has_image -> https://image.msscdn.net/images/goods_img/20230906/3533480/3533480_16939610292721_500.jpg
+  - MUSINSA product 3533480 -> has_image -> https://image.msscdn.net/images/prd_img/20230906/3533480/detail_3533480_16939628694237_500.jpg
+  - MUSINSA product 3533480 -> has_image -> https://image.msscdn.net/images/prd_img/20230906/3533480/detail_3533480_16939628714517_500.jpg
+
+### [크롭선택] ASI 포시즌 에센셜 후드 집업_스웻 멜란지
+- Product ID: 3783094
+- Source URL: https://www.musinsa.com/products/3783094
+- Brand: 디미트리블랙 (DIMITRI BLACK)
+- Category: 아우터 > 후드 집업
+- Gender: 남성, 여성
+- Price: sale 28500, normal 55900, discount 49%
+- Review: 4437 reviews, satisfaction 4.7, has_summary=true
+- Material/Fit signals: 핏=오버|사이즈; 촉감=약간|부드러움; 신축성=보통; 비침=없음; 두께=보통; 계절=봄/가을/겨울
+- Primary image: https://image.msscdn.net/images/goods_img/20240109/3783094/3783094_17234303008371_500.png
+- Ontology triples:
+  - MUSINSA product 3783094 -> has_name -> [크롭선택] ASI 포시즌 에센셜 후드 집업_스웻 멜란지
+  - MUSINSA product 3783094 -> belongs_to_brand -> 디미트리블랙
+  - MUSINSA product 3783094 -> belongs_to_category -> 아우터 > 후드 집업
+  - MUSINSA product 3783094 -> has_sale_price -> 28500
+  - MUSINSA product 3783094 -> has_review_count -> 4437
+  - MUSINSA product 3783094 -> has_satisfaction_score -> 4.7
+  - MUSINSA product 3783094 -> has_product_url -> https://www.musinsa.com/products/3783094
+  - MUSINSA product 3783094 -> has_material_signal_핏 -> 오버|사이즈
+  - MUSINSA product 3783094 -> has_material_signal_촉감 -> 약간|부드러움
+  - MUSINSA product 3783094 -> has_material_signal_신축성 -> 보통
+  - MUSINSA product 3783094 -> has_material_signal_비침 -> 없음
+  - MUSINSA product 3783094 -> has_material_signal_두께 -> 보통
+  - MUSINSA product 3783094 -> has_material_signal_계절 -> 봄, 가을, 겨울
+  - MUSINSA product 3783094 -> has_image -> https://image.msscdn.net/images/goods_img/20240109/3783094/3783094_17234303008371_500.png
+  - MUSINSA product 3783094 -> has_image -> https://image.msscdn.net/images/prd_img/20240109/3783094/detail_3783094_17234185505343_500.png
+  - MUSINSA product 3783094 -> has_image -> https://image.msscdn.net/images/prd_img/20240109/3783094/detail_3783094_17752014773283_500.jpg
+
+## Claims not verified
+- This sample does not include private inventory, cart, order, payment, or authenticated user data.
+- Review text is not crawled in this MVP; only public aggregate review signals and product material labels are used.

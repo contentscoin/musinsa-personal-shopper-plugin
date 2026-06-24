@@ -1,0 +1,66 @@
+# MUSINSA Personal Shopper Product DB Expanded Snapshot
+Owner tag: hermes-profile:paperclipbase
+Pack intent: musinsa-product-db-personal-shopper-expanded-snapshot
+Crawl status: attempted 50, succeeded 41, failed 9
+Source boundary: public MUSINSA sitemap/product pages fetched with User-Agent ChatGPT-User after robots.txt allow check. Production should use official API/feed authorization.
+
+| product_id | name | brand | category | final_price | sale_price | normal_price | discount | reviews | score | fit/material | image | url |
+|---|---|---|---|---:|---:|---:|---:|---:|---:|---|---|---|
+| 3783092 | [크롭선택] ASI 포시즌 에센셜 후드 집업_피그먼트 차콜 | 디미트리블랙 | 아우터 > 후드 집업 | 39900 | 39900 | 60900 | 34% | 11607 | 4.8 | 핏=오버/사이즈; 촉감=보통; 신축성=보통; 비침=없음; 두께=보통; 계절=봄/가을/겨울 | https://image.msscdn.net/images/goods_img/20240109/3783092/3783092_17164556227922_500.png | https://www.musinsa.com/products/3783092 |
+| 5399594 | [보라끌레르X수아레] 우먼 캐시미어 홀가먼트 니트 2 (단품/2팩) | 수아레 우먼 | 상의 > 니트/스웨터 | 67710 | 79650 | 135000 | 41% | 234 | 4.7 |  | https://image.msscdn.net/images/goods_img/20250903/5399594/5399594_17574011045277_500.jpg | https://www.musinsa.com/products/5399594 |
+| 3771089 | 베켄바우어 트랙탑 - 블랙 / IY8077 | 아디다스 | 아우터 > 트레이닝 재킷 | 83990 | 83990 | 105000 | 20% | 2543 | 4.9 |  | https://image.msscdn.net/images/goods_img/20240102/3771089/3771089_17041852509353_500.jpg | https://www.musinsa.com/products/3771089 |
+| 4240660 | 푸마 클럽 2 에라 - 화이트:블랙  / 397447-07 | 푸마 | 신발 > 스니커즈 > 패션스니커즈화 | 46990 | 46990 | 79000 | 41% | 574 | 4.8 |  | https://image.msscdn.net/images/goods_img/20240709/4240660/4240660_17217004549549_500.jpg | https://www.musinsa.com/products/4240660 |
+| 3392006 | 젤-1130 - 스틸 그레이:퓨어 실버 / 1201A934-020 | 아식스 | 신발 > 스니커즈 > 패션스니커즈화 | 119000 | 119000 | 119000 | 0% | 2889 | 4.9 |  | https://image.msscdn.net/images/goods_img/20230703/3392006/3392006_16890620065956_500.jpg | https://www.musinsa.com/products/3392006 |
+| 4401124 | [보라끌레르X수아레] 우먼 캐시미어 홀가먼트 니트 (단품/2팩) | 수아레 우먼 | 상의 > 니트/스웨터 | 67710 | 79650 | 135000 | 41% | 1247 | 4.7 | 핏=레귤러; 촉감=부드러움; 신축성=있음; 비침=없음; 두께=보통; 계절=봄/가을/겨울 | https://image.msscdn.net/images/goods_img/20240904/4401124/4401124_17585227609519_500.jpg | https://www.musinsa.com/products/4401124 |
+| 5367614 | 아톰 SV 후디 남성 - BLACK / AJPFM09902 | 아크테릭스 | 스포츠/레저 > 아우터 > 기타 점퍼/재킷 | 541500 | 541500 | 570000 | 5% | 180 | 4.9 |  | https://image.msscdn.net/images/goods_img/20250827/5367614/5367614_17573795222252_500.jpg | https://www.musinsa.com/products/5367614 |
+| 1778404 | 2WAY 스웻 후드 집업 (MELANGE GREY) | 토피 | 아우터 > 후드 집업 | 32150 | 32150 | 45000 | 29% | 98207 | 4.8 |  | https://image.msscdn.net/images/goods_img/20210204/1778404/1778404_1_500.jpg | https://www.musinsa.com/products/1778404 |
+| 5329359 | 후드 집업 - 블랙:크림화이트 / KC9315 | 아디다스 | 아우터 > 후드 집업 | 85500 | 94990 | 119000 | 20% | 1266 | 4.9 |  | https://image.msscdn.net/images/goods_img/20250818/5329359/5329359_17569461399483_500.jpg | https://www.musinsa.com/products/5329359 |
+| 4385991 | [보라끌레르X수아레](우먼)캐시미어 100 홀가먼트 니트 - 14 COLOR | 수아레 우먼 | 상의 > 니트/스웨터 | 84920 | 99900 | 135000 | 26% | 1503 | 4.7 | 핏=레귤러; 촉감=부드러움; 신축성=있음; 비침=없음; 두께=보통/약간/두꺼움; 계절=봄/가을/겨울 | https://image.msscdn.net/images/goods_img/20240829/4385991/4385991_17582601007705_500.jpg | https://www.musinsa.com/products/4385991 |
+| 4240657 | 푸마 클럽 2 에라 - 블랙:화이트 / 397447-02 | 푸마 | 신발 > 스니커즈 > 패션스니커즈화 | 34990 | 34990 | 79000 | 56% | 410 | 4.8 |  | https://image.msscdn.net/images/goods_img/20240709/4240657/4240657_17217005570257_500.jpg | https://www.musinsa.com/products/4240657 |
+| 4386012 | [보라끌레르X수아레](우먼)캐시미어 100 라운드 가디건 - 9 COLOR | 수아레 우먼 | 아우터 > 카디건 | 93420 | 109900 | 149000 | 26% | 1083 | 4.7 | 핏=레귤러; 촉감=부드러움; 신축성=있음; 비침=없음; 두께=보통/약간/두꺼움; 계절=봄/가을/겨울 | https://image.msscdn.net/images/goods_img/20240829/4386012/4386012_17572925124747_500.jpg | https://www.musinsa.com/products/4386012 |
+| 3276429 | SHOWER - 808 (a) / BLACK | 킨치 | 신발 > 구두 > 더비 슈즈 | 173400 | 173400 | 289000 | 40% | 9221 | 4.9 |  | https://image.msscdn.net/images/goods_img/20230504/3276429/3276429_16995107122382_500.jpg | https://www.musinsa.com/products/3276429 |
+| 4993411 | 와이드 커브드 다트 코튼 팬츠[블랙] | 시그니처 | 바지 > 코튼 팬츠 | 22900 | 22900 | 53000 | 57% | 1654 | 4.8 | 핏=루즈; 촉감=보통; 신축성=없음; 비침=없음; 두께=보통; 계절=봄/여름/가을 | https://image.msscdn.net/images/goods_img/20250407/4993411/4993411_17443663335178_500.jpg | https://www.musinsa.com/products/4993411 |
+| 2114452 | 아이언 레인저 8111 - 앰버 하니스 / 08111D | 레드윙 | 신발 > 부츠/워커 > 미들/하프 부츠 | 537990 | 537990 | 598000 | 10% | 2268 | 4.9 |  | https://image.msscdn.net/images/goods_img/20210907/2114452/2114452_17331214675016_500.jpg | https://www.musinsa.com/products/2114452 |
+| 4385997 | [보라끌레르X수아레](우먼)캐시미어 100 홀가먼트 브이넥 니트 - 8 COLOR | 수아레 우먼 | 상의 > 니트/스웨터 | 84920 | 99900 | 135000 | 26% | 813 | 4.8 | 핏=레귤러; 촉감=부드러움; 신축성=있음; 비침=없음; 두께=보통/약간/두꺼움; 계절=봄/가을/겨울 | https://image.msscdn.net/images/goods_img/20240829/4385997/4385997_17585225944934_500.jpg | https://www.musinsa.com/products/4385997 |
+| 4371012 | 에어 포스 1 07 WB M - 플랙스:검 라이트 브라운:블랙:위트 / CJ9179-200 | 나이키 | 신발 > 스니커즈 > 패션스니커즈화 | 169000 | 169000 | 169000 | 0% | 2343 | 4.9 |  | https://image.msscdn.net/images/goods_img/20240826/4371012/4371012_17255868621694_500.jpg | https://www.musinsa.com/products/4371012 |
+| 3563185 | 파이어버드 트랙탑 - 블랙 / IJ7058 | 아디다스 | 아우터 > 트레이닝 재킷 | 82990 | 82990 | 119000 | 30% | 3912 | 4.9 |  | https://image.msscdn.net/images/goods_img/20230915/3563185/3563185_16950017775747_500.jpg | https://www.musinsa.com/products/3563185 |
+| 5321066 | [보라끌레르X수아레](우먼)캐시미어 100 홀가먼트 터틀넥 니트 - 5 COLOR | 수아레 우먼 | 상의 > 니트/스웨터 | 67710 | 79650 | 135000 | 41% | 142 | 4.7 |  | https://image.msscdn.net/images/goods_img/20250813/5321066/5321066_17569716578791_500.jpg | https://www.musinsa.com/products/5321066 |
+| 4993414 | 와이드 커브드 다트 코튼 팬츠[베이지] | 시그니처 | 바지 > 코튼 팬츠 | 22900 | 22900 | 53000 | 57% | 4043 | 4.8 | 핏=루즈; 촉감=보통; 신축성=없음; 비침=없음; 두께=보통; 계절=봄/여름/가을 | https://image.msscdn.net/images/goods_img/20250407/4993414/4993414_17443666290084_500.jpg | https://www.musinsa.com/products/4993414 |
+| 4761188 | 록 링크 팬츠 [차콜 스트라이프] | 비긴202 | 바지 > 슈트 팬츠/슬랙스 | 96850 | 96850 | 149000 | 35% | 693 | 4.9 | 핏=루즈/오버/사이즈; 촉감=보통; 신축성=보통; 비침=없음; 두께=약간 얇음; 계절=봄/여름/가을/겨울 | https://image.msscdn.net/images/goods_img/20250205/4761188/4761188_17387438502547_500.jpg | https://www.musinsa.com/products/4761188 |
+| 5321103 | [보라끌레르X수아레](우먼)캐시미어 100 케이블 라운드 가디건 - 8 COLOR | 수아레 우먼 | 아우터 > 카디건 | 101920 | 119900 | 159000 | 25% | 246 | 4.7 |  | https://image.msscdn.net/images/goods_img/20250813/5321103/5321103_17569716124962_500.jpg | https://www.musinsa.com/products/5321103 |
+| 4280527 | 져지 트랙 자켓 아이보리 | 트래블 | 아우터 > 트레이닝 재킷 | 39200 | 56000 | 75000 | 25% | 1699 | 4.8 |  | https://image.msscdn.net/images/goods_img/20240729/4280527/4280527_17557398230421_500.jpg | https://www.musinsa.com/products/4280527 |
+| 4328804 | 에샤페 초코(FS261OD03X087219) | 휠라 | 신발 > 스니커즈 > 패션스니커즈화 | 119000 | 119000 | 119000 | 0% | 2365 | 4.9 |  | https://image.msscdn.net/images/goods_img/20240814/4328804/4328804_17556712337105_500.jpg | https://www.musinsa.com/products/4328804 |
+| 3837367 | 워시드 코튼 도비 팬츠 [워시드 블랙] | 비긴202 | 바지 > 코튼 팬츠 | 83080 | 94400 | 118000 | 20% | 1335 | 4.9 | 핏=루즈/오버/사이즈; 촉감=보통; 신축성=보통; 비침=없음; 두께=보통; 계절=봄/여름/가을/겨울 | https://image.msscdn.net/images/goods_img/20240131/3837367/3837367_17066945929716_500.jpg | https://www.musinsa.com/products/3837367 |
+| 1735427 | [2PACK] 와이드핏 트레이닝 스웨트 팬츠 - 6color | 에스이에스티 | 바지 > 트레이닝/조거 팬츠 | 34200 | 34200 | 116000 | 71% | 13701 | 4.7 | 핏=루즈/오버/사이즈; 촉감=부드러움; 신축성=약간 있음; 비침=없음; 두께=약간 얇음/약간/두꺼움; 계절=봄/여름/가을/겨울 | https://image.msscdn.net/images/goods_img/20210104/1735427/1735427_17401191629880_500.jpg | https://www.musinsa.com/products/1735427 |
+| 1551840 | Deep One Tuck Sweat Pants [Grey] | 제로 | 바지 > 트레이닝/조거 팬츠 | 23790 | 23790 | 39000 | 39% | 143377 | 4.9 | 핏=오버/사이즈; 촉감=약간/부드러움; 신축성=있음; 비침=없음; 두께=보통; 계절=봄/가을/겨울 | https://image.msscdn.net/images/goods_img/20200818/1551840/1551840_1_500.jpg | https://www.musinsa.com/products/1551840 |
+| 1760177 | 도브 울 블루종 자켓 [BLACK] | 드로우핏 | 아우터 > 블루종/MA-1 | 118320 | 139200 | 174000 | 20% | 2023 | 4.9 |  | https://image.msscdn.net/images/goods_img/20210125/1760177/1760177_17568597040774_500.jpg | https://www.musinsa.com/products/1760177 |
+| 5333555 | 맨티스 16 백팩 - BLACK / ABPFU10636 | 아크테릭스 | 스포츠/레저 > 가방 > 백팩 | 220000 | 220000 | 220000 | 0% | 25 | 4.6 |  | https://image.msscdn.net/images/goods_img/20250818/5333555/5333555_17573788208085_500.jpg | https://www.musinsa.com/products/5333555 |
+| 3674341 | (여름원단추가) 투턱 와이드 롱 스웨트 팬츠 [블랙] | 바운더리 | 바지 > 트레이닝/조거 팬츠 | 37700 | 37700 | 94000 | 60% | 6733 | 4.8 | 핏=오버/사이즈; 촉감=부드러움; 신축성=보통; 비침=없음; 두께=약간/두꺼움; 계절=봄/여름/가을/겨울 | https://image.msscdn.net/images/goods_img/20231101/3674341/3674341_17042599581270_500.jpg | https://www.musinsa.com/products/3674341 |
+| 1527073 | 조그 100 T (4E) - 블랙 / 1021A463-001 | 아식스 | 신발 > 스니커즈 > 패션스니커즈화 | 99000 | 99000 | 99000 | 0% | 5634 | 4.9 |  | https://image.msscdn.net/images/goods_img/20200724/1527073/1527073_1_500.jpg | https://www.musinsa.com/products/1527073 |
+| 3791988 | 데미지 워시드 데님 팬츠-미디엄 블루 | 필루미네이트 | 바지 > 데님 팬츠 | 23900 | 23900 | 53000 | 55% | 16473 | 4.8 | 핏=오버/사이즈; 촉감=부드러움; 신축성=있음; 비침=없음; 두께=보통; 계절=봄/여름/가을/겨울 | https://image.msscdn.net/images/goods_img/20240112/3791988/3791988_17249825786441_500.jpg | https://www.musinsa.com/products/3791988 |
+| 5352002 | [수아레X오정규] 에센셜 울 새들 니트 - 6 COLOR | 수아레 | 상의 > 니트/스웨터 | 31050 | 31050 | 59000 | 47% | 221 | 4.8 |  | https://image.msscdn.net/images/goods_img/20250821/5352002/5352002_17585097303540_500.jpg | https://www.musinsa.com/products/5352002 |
+| 1149329 | 세미 와이드 히든 밴딩 슬랙스 [블랙] | 무신사 스탠다드 | 바지 > 슈트 팬츠/슬랙스 | 37890 | 37890 | 39900 | 5% | 114113 | 4.8 | 핏=레귤러; 촉감=보통; 신축성=있음; 비침=없음; 두께=보통; 계절=봄/가을/겨울 | https://image.msscdn.net/images/goods_img/20190910/1149329/1149329_17518465143526_500.jpg | https://www.musinsa.com/products/1149329 |
+| 4302685 | SORANO Basic Logo HOODIE [6Color] | 소라노 | 상의 > 후드 티셔츠 | 32130 | 45900 | 119000 | 61% | 5898 | 4.7 |  | https://image.msscdn.net/images/goods_img/20240807/4302685/4302685_17229675684379_500.jpg | https://www.musinsa.com/products/4302685 |
+| 1220731 | 사피아노 신세틱 레더 벨트_30mm | 무신사 스탠다드 | 소품 > 벨트 | 10190 | 10190 | 15900 | 36% | 190514 | 4.8 |  | https://image.msscdn.net/images/goods_img/20191112/1220731/1220731_17073700380718_500.jpg | https://www.musinsa.com/products/1220731 |
+| 3697526 | [2-WAY] 슬리브 스타 피그먼트 후드 집업 스모크블랙 | 꼼파뇨 | 아우터 > 후드 집업 | 39850 | 49500 | 90000 | 45% | 3174 | 4.9 |  | https://image.msscdn.net/images/goods_img/20231108/3697526/3697526_17002041370481_500.jpg | https://www.musinsa.com/products/3697526 |
+| 1168922 | 리얼 와이드 히든 밴딩 슬랙스 [블랙] | 무신사 스탠다드 | 바지 > 슈트 팬츠/슬랙스 | 43590 | 43590 | 45900 | 5% | 29719 | 4.9 | 핏=오버/사이즈; 촉감=보통; 신축성=있음; 비침=없음; 두께=보통; 계절=봄/가을/겨울 | https://image.msscdn.net/images/goods_img/20190927/1168922/1168922_17569508760902_500.jpg | https://www.musinsa.com/products/1168922 |
+| 1551839 | Deep One Tuck Sweat Pants [Black] | 제로 | 바지 > 트레이닝/조거 팬츠 | 23790 | 23790 | 39000 | 39% | 56882 | 4.9 | 핏=오버/사이즈; 촉감=약간/부드러움; 신축성=있음; 비침=없음; 두께=보통; 계절=봄/가을/겨울 | https://image.msscdn.net/images/goods_img/20200818/1551839/1551839_1_500.jpg | https://www.musinsa.com/products/1551839 |
+| 3533480 | 스페이스 헤비코튼 후드 버건디 KMHD6723 | 에즈카톤 | 상의 > 후드 티셔츠 | 43900 | 43900 | 63000 | 30% | 7160 | 4.8 |  | https://image.msscdn.net/images/goods_img/20230906/3533480/3533480_16939610292721_500.jpg | https://www.musinsa.com/products/3533480 |
+| 3783094 | [크롭선택] ASI 포시즌 에센셜 후드 집업_스웻 멜란지 | 디미트리블랙 | 아우터 > 후드 집업 | 28500 | 28500 | 55900 | 49% | 4437 | 4.7 | 핏=오버/사이즈; 촉감=약간/부드러움; 신축성=보통; 비침=없음; 두께=보통; 계절=봄/가을/겨울 | https://image.msscdn.net/images/goods_img/20240109/3783094/3783094_17234303008371_500.png | https://www.musinsa.com/products/3783094 |
+
+## Crawler failures / skipped URLs
+- https://www.musinsa.com/products/5299767: Missing product meta data
+- https://www.musinsa.com/products/4376737: Fetch failed 429 Too Many Requests: https://www.musinsa.com/products/4376737
+- https://www.musinsa.com/products/1844582: Fetch failed 429 Too Many Requests: https://www.musinsa.com/products/1844582
+- https://www.musinsa.com/products/5160043: Fetch failed 429 Too Many Requests: https://www.musinsa.com/products/5160043
+- https://www.musinsa.com/products/2723218: Fetch failed 429 Too Many Requests: https://www.musinsa.com/products/2723218
+- https://www.musinsa.com/products/1558197: Fetch failed 429 Too Many Requests: https://www.musinsa.com/products/1558197
+- https://www.musinsa.com/products/4757347: Fetch failed 429 Too Many Requests: https://www.musinsa.com/products/4757347
+- https://www.musinsa.com/products/5215536: Fetch failed 429 Too Many Requests: https://www.musinsa.com/products/5215536
+- https://www.musinsa.com/products/4747235: Fetch failed 429 Too Many Requests: https://www.musinsa.com/products/4747235
+
+## Plugin verification
+- Unit tests: npm test -> 3 passed, 0 failed.
+- API health after expanded crawl: products_loaded=41.
+- Query "차콜 후드집업 추천" returns hoodie products first, including product 3783092 and 3697526.
+- Query "화이트 스니커즈 추천" returns Puma sneaker products first, including product 4240660 and 4240657.

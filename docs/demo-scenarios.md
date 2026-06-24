@@ -16,25 +16,9 @@ POST /shopper/recommend
 
 ### Expected behavior
 
-1. `parsed_intent` extracts:
-   - gender: 남성
-   - color: 차콜
-   - category: 후드집업
-   - budget: 50000
+1. `parsed_intent` extracts gender/color/category/budget.
 2. Product ontology search returns matching hoodie products.
-3. Response includes:
-   - `assistant_summary`
-   - recommendation reasons
-   - `decision_badges`
-   - `shortlist`
-   - product URL/image
-
-### Demo output highlight
-
-```text
-상위 후보는 [크롭선택] ASI 포시즌 에센셜 후드 집업_피그먼트 차콜입니다.
-39,900원, 리뷰 11,607개, 만족도 4.8 기준으로 가장 관련도가 높습니다.
-```
+3. Response includes `assistant_summary`, recommendation reasons, `decision_badges`, `recommendation_confidence`, `shortlist`, product URL/image.
 
 ---
 
@@ -61,14 +45,6 @@ POST /shopper/compare
 3. 가격, 리뷰 수, 만족도, 할인율, 핏 신호, URL 비교.
 4. `best_pick`과 `decision_notes` 생성.
 
-### Demo output highlight
-
-```text
-best_pick: [2-WAY] 슬리브 스타 피그먼트 후드 집업 스모크블랙
-가격 우선이면 해당 상품이 가장 유리합니다.
-리뷰 검증 우선이면 ASI 포시즌 후드 집업이 가장 강합니다.
-```
-
 ---
 
 ## Scenario 3. 개인정보 제외 analytics 축적
@@ -90,13 +66,6 @@ GET /analytics/queries
 GET /analytics/intents
 ```
 
-### Expected behavior
-
-1. Query에서 이메일/전화번호/주소/주문번호/카드번호/IP 제거.
-2. Session ID는 hash prefix로 저장.
-3. 이벤트 row와 집계 통계 생성.
-4. Personal Shopper Data 온톨로지팩에 sync.
-
 ### Privacy example
 
 Input:
@@ -109,15 +78,6 @@ Stored:
 
 ```text
 카드 [card_or_long_number] [address] 주문 [order_id] 후드집업
-```
-
-### Dashboard output
-
-```text
-total_events: 11
-CTR: 0.5
-CVR: 0.5
-top_product: 3783092
 ```
 
 ---
@@ -137,9 +97,49 @@ GET /openapi.yaml
 2. Client loads OpenAPI spec.
 3. Client can call recommendation/shortlist/analytics endpoints.
 
-### Verified
+---
+
+## Scenario 5. Marketing insights + ontology gap loop
+
+### User/system behavior
 
 ```text
-/.well-known/ai-plugin.json served, 1,038 bytes
-/openapi.yaml served, 10,695 bytes
+추천 결과가 없거나 신뢰도가 낮은 질문 발생
+예: 비 오는 날 남친룩 추천
+```
+
+### API sequence
+
+```http
+POST /analytics/events
+GET /analytics/insights
+```
+
+### Event example
+
+```json
+{
+  "event_type": "low_confidence_recommendation",
+  "query": "비 오는 날 남친룩 추천",
+  "confidence": 0.2,
+  "missing_ontology_fields": ["occasion_tags", "weather_tags", "style_tags"]
+}
+```
+
+### Expected insight
+
+```text
+추천 신뢰도가 낮은 질문이 있어 상품 태그/상황/핏 온톨로지 보강이 필요합니다.
+```
+
+### Product enrichment command
+
+```bash
+npm run enrich:products
+```
+
+Output:
+
+```text
+docs/ontology/musinsa-product-enrichment.md
 ```

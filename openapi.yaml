@@ -205,6 +205,13 @@ paths:
       responses:
         '200':
           description: Intent analytics
+  /analytics/insights:
+    get:
+      operationId: getAnalyticsInsights
+      summary: Return generated marketing and ontology-gap insights from non-PII shopper analytics
+      responses:
+        '200':
+          description: Analytics insights
   /analytics/export:
     post:
       operationId: exportAnalyticsSummary
@@ -281,6 +288,16 @@ components:
         query_understood: { type: string }
         parsed_intent:
           $ref: '#/components/schemas/ParsedIntent'
+        recommendation_confidence:
+          type: object
+          properties:
+            level: { type: string }
+            top_score: { type: number }
+            low_confidence: { type: boolean }
+            missing_ontology_fields:
+              type: array
+              items: { type: string }
+            recommendation_count: { type: integer }
         assistant_summary: { type: string }
         recommendations:
           type: array
@@ -331,7 +348,7 @@ components:
       properties:
         event_type:
           type: string
-          enum: [search, recommendation, product_click, shortlist_save, compare, purchase_intent, conversion]
+          enum: [search, recommendation, product_click, shortlist_save, compare, purchase_intent, conversion, low_confidence_recommendation]
         session_id:
           type: string
           description: Anonymous session identifier; server stores only a SHA-256 hash prefix.
@@ -344,6 +361,10 @@ components:
         clicked_product_id: { type: string }
         converted_product_id: { type: string }
         rank: { type: integer }
+        confidence: { type: number }
+        missing_ontology_fields:
+          type: array
+          items: { type: string }
         source: { type: string }
         metadata:
           type: object

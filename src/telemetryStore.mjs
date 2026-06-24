@@ -11,14 +11,15 @@ const ALLOWED_EVENT_TYPES = new Set([
   'shortlist_save',
   'compare',
   'purchase_intent',
-  'conversion'
+  'conversion',
+  'low_confidence_recommendation'
 ]);
 
 export const ANALYTICS_NOTICE = {
   title: 'MUSINSA Personal Shopper analytics notice',
   message_ko: '서비스 개선과 추천 품질 향상을 위해 개인식별정보를 제외한 검색어, 추천 결과, 상품 클릭, 비교, shortlist 저장, 구매전환 통계를 수집합니다. 이메일, 전화번호, 주소, 주문번호, IP, 원문 사용자 ID는 저장하지 않습니다.',
   message_en: 'To improve service quality and recommendations, this plugin collects non-PII search, recommendation, product click, comparison, shortlist, and conversion analytics. Emails, phone numbers, addresses, order IDs, IP addresses, and raw user IDs are not stored.',
-  collected: ['event_type', 'sanitized_query', 'parsed_intent', 'product_ids', 'clicked_product_id', 'converted_product_id', 'rank', 'metadata.surface', 'metadata.locale'],
+  collected: ['event_type', 'sanitized_query', 'parsed_intent', 'product_ids', 'clicked_product_id', 'converted_product_id', 'rank', 'confidence', 'missing_ontology_fields', 'metadata.surface', 'metadata.locale'],
   not_collected: ['name', 'email', 'phone', 'address', 'order_id', 'ip_address', 'raw_user_id', 'raw_session_id'],
   owner_visibility: 'Pack owner can view sanitized event-level rows plus aggregate statistics.'
 };
@@ -57,8 +58,9 @@ export async function analyticsDashboard(section = 'summary') {
     top_clicked_products: summary.top_clicked_products,
     top_converted_products: summary.top_converted_products
   };
-  if (section === 'queries') return { generated_at: summary.generated_at, top_queries: summary.top_queries };
+  if (section === 'queries') return { generated_at: summary.generated_at, top_queries: summary.top_queries, low_confidence_queries: summary.low_confidence_queries };
   if (section === 'intents') return { generated_at: summary.generated_at, intent_stats: summary.intent_stats };
+  if (section === 'insights') return { generated_at: summary.generated_at, insights: summary.insights, low_confidence_queries: summary.low_confidence_queries };
   return summary;
 }
 
@@ -76,6 +78,8 @@ export function sanitizeTelemetryEvent(payload = {}) {
     clicked_product_id: payload.clicked_product_id ? String(payload.clicked_product_id) : undefined,
     converted_product_id: payload.converted_product_id ? String(payload.converted_product_id) : undefined,
     rank: Number.isFinite(Number(payload.rank)) ? Number(payload.rank) : undefined,
+    confidence: Number.isFinite(Number(payload.confidence)) ? Number(payload.confidence) : undefined,
+    missing_ontology_fields: Array.isArray(payload.missing_ontology_fields) ? payload.missing_ontology_fields.map(v => sanitizeText(v, 60)).slice(0, 20) : [],
     source: sanitizeText(payload.source || 'plugin', 80),
     metadata: sanitizeMetadata(payload.metadata || {})
   };
@@ -91,6 +95,7 @@ export function summarizeEvents(events) {
   const searchCount = events.filter(e => e.event_type === 'search' || e.event_type === 'recommendation').length;
   const clickCount = events.filter(e => e.event_type === 'product_click').length;
   const conversionCount = events.filter(e => e.event_type === 'conversion').length;
+  const lowConfidenceEvents = events.filter(e => e.event_type === 'low_confidence_recommendation');
   const intentStats = {
     colors: topCounts(events.flatMap(e => e.parsed_intent?.colors ?? []), 20),
     categories: topCounts(events.flatMap(e => e.parsed_intent?.categories ?? []), 20),
@@ -118,6 +123,13 @@ export function summarizeEvents(events) {
     top_clicked_products: topClickedProducts,
     top_converted_products: topConvertedProducts,
     intent_stats: intentStats,
+    low_confidence: {
+      count: lowConfidenceEvents.length,
+      rate: safeRate(lowConfidenceEvents.length, searchCount),
+      missing_ontology_fields: topCounts(lowConfidenceEvents.flatMap(e => e.missing_ontology_fields ?? []), 20)
+    },
+    low_confidence_queries: topCounts(lowConfidenceEvents.map(e => e.query).filter(Boolean), 20),
+    insights: buildInsights({ topQueries, topProducts, topClickedProducts, topConvertedProducts, intentStats, searchCount, clickCount, conversionCount, lowConfidenceEvents }),
     recent_events: events.slice(-50)
   };
 }
@@ -170,6 +182,32 @@ function topCounts(values, limit) {
   const counts = new Map();
   for (const value of values) counts.set(value, (counts.get(value) ?? 0) + 1);
   return [...counts.entries()].sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))).slice(0, limit).map(([value, count]) => ({ value, count }));
+}
+
+function buildInsights({ topQueries, topProducts, topClickedProducts, topConvertedProducts, intentStats, searchCount, clickCount, conversionCount, lowConfidenceEvents }) {
+  const insights = [];
+  const ctr = safeRate(clickCount, searchCount);
+  const cvr = safeRate(conversionCount, searchCount);
+  if (searchCount) insights.push({
+    type: 'funnel_health',
+    summary: `검색/추천 ${searchCount}건 기준 CTR ${ctr}, CVR ${cvr}입니다.`,
+    evidence: { searches_or_recommendations: searchCount, product_clicks: clickCount, conversions: conversionCount, click_through_rate: ctr, conversion_rate: cvr }
+  });
+  if (topQueries[0]) insights.push({ type: 'top_query_pattern', summary: `가장 많이 관찰된 질문 패턴은 "${topQueries[0].value}"입니다.`, evidence: topQueries[0] });
+  if (topProducts[0]) insights.push({ type: 'top_product_interest', summary: `가장 자주 노출/관심을 받은 상품 ID는 ${topProducts[0].value}입니다.`, evidence: topProducts[0] });
+  if (topClickedProducts[0] && topConvertedProducts[0] && topClickedProducts[0].value === topConvertedProducts[0].value) insights.push({
+    type: 'high_conversion_product',
+    summary: `상품 ${topClickedProducts[0].value}는 클릭과 전환 양쪽에서 상위에 있어 우선 캠페인 후보입니다.`,
+    evidence: { clicked: topClickedProducts[0], converted: topConvertedProducts[0] }
+  });
+  if (intentStats.colors?.[0]) insights.push({ type: 'color_demand', summary: `현재 AI 쇼핑 질문에서 ${intentStats.colors[0].value} 색상 수요가 가장 높습니다.`, evidence: intentStats.colors[0] });
+  if (intentStats.categories?.[0]) insights.push({ type: 'category_demand', summary: `현재 AI 쇼핑 질문에서 ${intentStats.categories[0].value} 카테고리 수요가 가장 높습니다.`, evidence: intentStats.categories[0] });
+  if (lowConfidenceEvents.length) insights.push({
+    type: 'ontology_gap',
+    summary: `추천 신뢰도가 낮은 질문 ${lowConfidenceEvents.length}건이 있어 상품 태그/상황/핏 온톨로지 보강이 필요합니다.`,
+    evidence: { count: lowConfidenceEvents.length, missing_ontology_fields: topCounts(lowConfidenceEvents.flatMap(e => e.missing_ontology_fields ?? []), 10) }
+  });
+  return insights;
 }
 
 function safeRate(numerator, denominator) {

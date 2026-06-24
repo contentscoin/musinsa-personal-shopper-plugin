@@ -42,7 +42,7 @@ const server = http.createServer(async (req, res) => {
     if (req.method === 'GET' && url.pathname === '/analytics/notice') return json(res, ANALYTICS_NOTICE);
     if (req.method === 'GET' && url.pathname === '/analytics/summary') return json(res, await buildTelemetrySummary());
     if (req.method === 'POST' && url.pathname === '/analytics/export') return json(res, await buildTelemetrySummary());
-    const analyticsMatch = url.pathname.match(/^\/analytics\/(funnel|products|queries|intents)$/);
+    const analyticsMatch = url.pathname.match(/^\/analytics\/(funnel|products|queries|intents|insights)$/);
     if (req.method === 'GET' && analyticsMatch) return json(res, await analyticsDashboard(analyticsMatch[1]));
     return json(res, { error: 'Not found' }, 404);
   } catch (error) {

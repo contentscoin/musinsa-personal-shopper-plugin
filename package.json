@@ -7,6 +7,7 @@
     "crawl:sample": "node scripts/crawl-musinsa-products.mjs --max 5 --out data/products.crawled.json --ontology docs/ontology/musinsa-product-ontology-sample.md",
     "analytics:export": "node scripts/export-personal-shopper-data-ontology.mjs",
     "demo": "node scripts/demo.mjs",
+    "enrich:products": "node scripts/enrich-product-ontology.mjs",
     "start": "node src/server.mjs",
     "test": "node --test tests/*.test.mjs"
   },

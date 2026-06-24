@@ -1,0 +1,345 @@
+# MUSINSA Product AI Tag Enrichment
+
+Generated at: 2026-06-24T11:18:20.436Z
+
+## Summary
+
+- Products enriched: 41
+- Fields: style_tags, occasion_tags, season_tags, fit_tags, risk_tags
+- Method: deterministic MVP keyword/material/category rules; production should use official taxonomy/review feeds and QA.
+
+## Top Tag Counts
+
+### style
+- 데일리: 41
+- 캐주얼: 30
+- 미니멀: 4
+- 스트릿: 2
+
+### occasion
+- 일상: 41
+- 출근룩: 18
+- 등교: 16
+- 주말: 16
+- 장시간 착용: 6
+- 포멀: 6
+
+### season
+- 간절기: 22
+- 가을: 17
+- 봄: 17
+- 겨울: 15
+- 여름: 7
+
+### fit
+- 오버핏: 12
+- 크롭: 2
+
+### risk
+- 비침 여부 확인 필요: 17
+- 사이즈 리뷰 확인 권장: 10
+- 기장감 확인 필요: 2
+
+## Product triples
+
+- Product:3783092 -> has_style_tag -> 데일리
+- Product:3783092 -> has_style_tag -> 미니멀
+- Product:3783092 -> has_style_tag -> 스트릿
+- Product:3783092 -> has_style_tag -> 캐주얼
+- Product:3783092 -> has_occasion_tag -> 일상
+- Product:3783092 -> has_occasion_tag -> 등교
+- Product:3783092 -> has_occasion_tag -> 주말
+- Product:3783092 -> has_season_tag -> 봄
+- Product:3783092 -> has_season_tag -> 가을
+- Product:3783092 -> has_season_tag -> 겨울
+- Product:3783092 -> has_season_tag -> 간절기
+- Product:3783092 -> has_fit_tag -> 오버핏
+- Product:3783092 -> has_fit_tag -> 크롭
+- Product:3783092 -> has_risk_tag -> 기장감 확인 필요
+- Product:3783092 -> has_risk_tag -> 사이즈 리뷰 확인 권장
+- Product:3783092 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:5399594 -> has_style_tag -> 데일리
+- Product:5399594 -> has_style_tag -> 캐주얼
+- Product:5399594 -> has_occasion_tag -> 일상
+- Product:5399594 -> has_occasion_tag -> 출근룩
+- Product:5399594 -> has_season_tag -> 간절기
+- Product:3771089 -> has_style_tag -> 데일리
+- Product:3771089 -> has_style_tag -> 캐주얼
+- Product:3771089 -> has_occasion_tag -> 일상
+- Product:3771089 -> has_occasion_tag -> 출근룩
+- Product:3771089 -> has_occasion_tag -> 등교
+- Product:3771089 -> has_occasion_tag -> 주말
+- Product:3771089 -> has_season_tag -> 간절기
+- Product:4240660 -> has_style_tag -> 데일리
+- Product:4240660 -> has_style_tag -> 캐주얼
+- Product:4240660 -> has_occasion_tag -> 일상
+- Product:4240660 -> has_occasion_tag -> 등교
+- Product:4240660 -> has_occasion_tag -> 주말
+- Product:4240660 -> has_occasion_tag -> 장시간 착용
+- Product:3392006 -> has_style_tag -> 데일리
+- Product:3392006 -> has_style_tag -> 캐주얼
+- Product:3392006 -> has_occasion_tag -> 일상
+- Product:3392006 -> has_occasion_tag -> 등교
+- Product:3392006 -> has_occasion_tag -> 주말
+- Product:3392006 -> has_occasion_tag -> 장시간 착용
+- Product:4401124 -> has_style_tag -> 데일리
+- Product:4401124 -> has_style_tag -> 캐주얼
+- Product:4401124 -> has_occasion_tag -> 일상
+- Product:4401124 -> has_occasion_tag -> 출근룩
+- Product:4401124 -> has_season_tag -> 봄
+- Product:4401124 -> has_season_tag -> 가을
+- Product:4401124 -> has_season_tag -> 겨울
+- Product:4401124 -> has_season_tag -> 간절기
+- Product:4401124 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:5367614 -> has_style_tag -> 데일리
+- Product:5367614 -> has_style_tag -> 캐주얼
+- Product:5367614 -> has_occasion_tag -> 일상
+- Product:5367614 -> has_occasion_tag -> 출근룩
+- Product:5367614 -> has_season_tag -> 간절기
+- Product:1778404 -> has_style_tag -> 데일리
+- Product:1778404 -> has_style_tag -> 캐주얼
+- Product:1778404 -> has_occasion_tag -> 일상
+- Product:1778404 -> has_occasion_tag -> 등교
+- Product:1778404 -> has_occasion_tag -> 주말
+- Product:1778404 -> has_season_tag -> 간절기
+- Product:5329359 -> has_style_tag -> 데일리
+- Product:5329359 -> has_style_tag -> 캐주얼
+- Product:5329359 -> has_occasion_tag -> 일상
+- Product:5329359 -> has_occasion_tag -> 등교
+- Product:5329359 -> has_occasion_tag -> 주말
+- Product:5329359 -> has_season_tag -> 간절기
+- Product:4385991 -> has_style_tag -> 데일리
+- Product:4385991 -> has_style_tag -> 캐주얼
+- Product:4385991 -> has_occasion_tag -> 일상
+- Product:4385991 -> has_occasion_tag -> 출근룩
+- Product:4385991 -> has_season_tag -> 봄
+- Product:4385991 -> has_season_tag -> 가을
+- Product:4385991 -> has_season_tag -> 겨울
+- Product:4385991 -> has_season_tag -> 간절기
+- Product:4385991 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:4240657 -> has_style_tag -> 데일리
+- Product:4240657 -> has_style_tag -> 캐주얼
+- Product:4240657 -> has_occasion_tag -> 일상
+- Product:4240657 -> has_occasion_tag -> 등교
+- Product:4240657 -> has_occasion_tag -> 주말
+- Product:4240657 -> has_occasion_tag -> 장시간 착용
+- Product:4386012 -> has_style_tag -> 데일리
+- Product:4386012 -> has_style_tag -> 캐주얼
+- Product:4386012 -> has_occasion_tag -> 일상
+- Product:4386012 -> has_occasion_tag -> 출근룩
+- Product:4386012 -> has_season_tag -> 봄
+- Product:4386012 -> has_season_tag -> 가을
+- Product:4386012 -> has_season_tag -> 겨울
+- Product:4386012 -> has_season_tag -> 간절기
+- Product:4386012 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:3276429 -> has_style_tag -> 데일리
+- Product:3276429 -> has_occasion_tag -> 일상
+- Product:4993411 -> has_style_tag -> 데일리
+- Product:4993411 -> has_occasion_tag -> 일상
+- Product:4993411 -> has_season_tag -> 봄
+- Product:4993411 -> has_season_tag -> 여름
+- Product:4993411 -> has_season_tag -> 가을
+- Product:4993411 -> has_fit_tag -> 오버핏
+- Product:4993411 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:2114452 -> has_style_tag -> 데일리
+- Product:2114452 -> has_occasion_tag -> 일상
+- Product:4385997 -> has_style_tag -> 데일리
+- Product:4385997 -> has_style_tag -> 캐주얼
+- Product:4385997 -> has_occasion_tag -> 일상
+- Product:4385997 -> has_occasion_tag -> 출근룩
+- Product:4385997 -> has_season_tag -> 봄
+- Product:4385997 -> has_season_tag -> 가을
+- Product:4385997 -> has_season_tag -> 겨울
+- Product:4385997 -> has_season_tag -> 간절기
+- Product:4385997 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:4371012 -> has_style_tag -> 데일리
+- Product:4371012 -> has_style_tag -> 캐주얼
+- Product:4371012 -> has_occasion_tag -> 일상
+- Product:4371012 -> has_occasion_tag -> 등교
+- Product:4371012 -> has_occasion_tag -> 주말
+- Product:4371012 -> has_occasion_tag -> 장시간 착용
+- Product:3563185 -> has_style_tag -> 데일리
+- Product:3563185 -> has_style_tag -> 캐주얼
+- Product:3563185 -> has_occasion_tag -> 일상
+- Product:3563185 -> has_occasion_tag -> 출근룩
+- Product:3563185 -> has_occasion_tag -> 등교
+- Product:3563185 -> has_occasion_tag -> 주말
+- Product:3563185 -> has_season_tag -> 간절기
+- Product:5321066 -> has_style_tag -> 데일리
+- Product:5321066 -> has_style_tag -> 캐주얼
+- Product:5321066 -> has_occasion_tag -> 일상
+- Product:5321066 -> has_occasion_tag -> 출근룩
+- Product:5321066 -> has_season_tag -> 간절기
+- Product:4993414 -> has_style_tag -> 데일리
+- Product:4993414 -> has_occasion_tag -> 일상
+- Product:4993414 -> has_season_tag -> 봄
+- Product:4993414 -> has_season_tag -> 여름
+- Product:4993414 -> has_season_tag -> 가을
+- Product:4993414 -> has_fit_tag -> 오버핏
+- Product:4993414 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:4761188 -> has_style_tag -> 데일리
+- Product:4761188 -> has_style_tag -> 캐주얼
+- Product:4761188 -> has_occasion_tag -> 일상
+- Product:4761188 -> has_occasion_tag -> 출근룩
+- Product:4761188 -> has_occasion_tag -> 포멀
+- Product:4761188 -> has_season_tag -> 봄
+- Product:4761188 -> has_season_tag -> 여름
+- Product:4761188 -> has_season_tag -> 가을
+- Product:4761188 -> has_season_tag -> 겨울
+- Product:4761188 -> has_fit_tag -> 오버핏
+- Product:4761188 -> has_risk_tag -> 사이즈 리뷰 확인 권장
+- Product:4761188 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:5321103 -> has_style_tag -> 데일리
+- Product:5321103 -> has_style_tag -> 캐주얼
+- Product:5321103 -> has_occasion_tag -> 일상
+- Product:5321103 -> has_occasion_tag -> 출근룩
+- Product:5321103 -> has_season_tag -> 간절기
+- Product:4280527 -> has_style_tag -> 데일리
+- Product:4280527 -> has_style_tag -> 캐주얼
+- Product:4280527 -> has_occasion_tag -> 일상
+- Product:4280527 -> has_occasion_tag -> 출근룩
+- Product:4280527 -> has_season_tag -> 간절기
+- Product:4328804 -> has_style_tag -> 데일리
+- Product:4328804 -> has_style_tag -> 캐주얼
+- Product:4328804 -> has_occasion_tag -> 일상
+- Product:4328804 -> has_occasion_tag -> 등교
+- Product:4328804 -> has_occasion_tag -> 주말
+- Product:4328804 -> has_occasion_tag -> 장시간 착용
+- Product:3837367 -> has_style_tag -> 데일리
+- Product:3837367 -> has_occasion_tag -> 일상
+- Product:3837367 -> has_season_tag -> 봄
+- Product:3837367 -> has_season_tag -> 여름
+- Product:3837367 -> has_season_tag -> 가을
+- Product:3837367 -> has_season_tag -> 겨울
+- Product:3837367 -> has_fit_tag -> 오버핏
+- Product:3837367 -> has_risk_tag -> 사이즈 리뷰 확인 권장
+- Product:3837367 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:1735427 -> has_style_tag -> 데일리
+- Product:1735427 -> has_occasion_tag -> 일상
+- Product:1735427 -> has_season_tag -> 봄
+- Product:1735427 -> has_season_tag -> 여름
+- Product:1735427 -> has_season_tag -> 가을
+- Product:1735427 -> has_season_tag -> 겨울
+- Product:1735427 -> has_season_tag -> 간절기
+- Product:1735427 -> has_fit_tag -> 오버핏
+- Product:1735427 -> has_risk_tag -> 사이즈 리뷰 확인 권장
+- Product:1735427 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:1551840 -> has_style_tag -> 데일리
+- Product:1551840 -> has_occasion_tag -> 일상
+- Product:1551840 -> has_season_tag -> 봄
+- Product:1551840 -> has_season_tag -> 가을
+- Product:1551840 -> has_season_tag -> 겨울
+- Product:1551840 -> has_fit_tag -> 오버핏
+- Product:1551840 -> has_risk_tag -> 사이즈 리뷰 확인 권장
+- Product:1551840 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:1760177 -> has_style_tag -> 데일리
+- Product:1760177 -> has_style_tag -> 캐주얼
+- Product:1760177 -> has_occasion_tag -> 일상
+- Product:1760177 -> has_occasion_tag -> 출근룩
+- Product:1760177 -> has_season_tag -> 간절기
+- Product:5333555 -> has_style_tag -> 데일리
+- Product:5333555 -> has_style_tag -> 캐주얼
+- Product:5333555 -> has_occasion_tag -> 일상
+- Product:5333555 -> has_occasion_tag -> 등교
+- Product:5333555 -> has_occasion_tag -> 주말
+- Product:3674341 -> has_style_tag -> 데일리
+- Product:3674341 -> has_occasion_tag -> 일상
+- Product:3674341 -> has_season_tag -> 봄
+- Product:3674341 -> has_season_tag -> 여름
+- Product:3674341 -> has_season_tag -> 가을
+- Product:3674341 -> has_season_tag -> 겨울
+- Product:3674341 -> has_season_tag -> 간절기
+- Product:3674341 -> has_fit_tag -> 오버핏
+- Product:3674341 -> has_risk_tag -> 사이즈 리뷰 확인 권장
+- Product:3674341 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:1527073 -> has_style_tag -> 데일리
+- Product:1527073 -> has_style_tag -> 캐주얼
+- Product:1527073 -> has_occasion_tag -> 일상
+- Product:1527073 -> has_occasion_tag -> 등교
+- Product:1527073 -> has_occasion_tag -> 주말
+- Product:1527073 -> has_occasion_tag -> 장시간 착용
+- Product:3791988 -> has_style_tag -> 데일리
+- Product:3791988 -> has_occasion_tag -> 일상
+- Product:3791988 -> has_season_tag -> 봄
+- Product:3791988 -> has_season_tag -> 여름
+- Product:3791988 -> has_season_tag -> 가을
+- Product:3791988 -> has_season_tag -> 겨울
+- Product:3791988 -> has_fit_tag -> 오버핏
+- Product:3791988 -> has_risk_tag -> 사이즈 리뷰 확인 권장
+- Product:3791988 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:5352002 -> has_style_tag -> 데일리
+- Product:5352002 -> has_style_tag -> 미니멀
+- Product:5352002 -> has_style_tag -> 캐주얼
+- Product:5352002 -> has_occasion_tag -> 일상
+- Product:5352002 -> has_occasion_tag -> 출근룩
+- Product:5352002 -> has_season_tag -> 간절기
+- Product:1149329 -> has_style_tag -> 데일리
+- Product:1149329 -> has_style_tag -> 캐주얼
+- Product:1149329 -> has_occasion_tag -> 일상
+- Product:1149329 -> has_occasion_tag -> 출근룩
+- Product:1149329 -> has_occasion_tag -> 포멀
+- Product:1149329 -> has_season_tag -> 봄
+- Product:1149329 -> has_season_tag -> 가을
+- Product:1149329 -> has_season_tag -> 겨울
+- Product:1149329 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:4302685 -> has_style_tag -> 데일리
+- Product:4302685 -> has_style_tag -> 미니멀
+- Product:4302685 -> has_style_tag -> 캐주얼
+- Product:4302685 -> has_occasion_tag -> 일상
+- Product:4302685 -> has_occasion_tag -> 출근룩
+- Product:4302685 -> has_occasion_tag -> 등교
+- Product:4302685 -> has_occasion_tag -> 주말
+- Product:4302685 -> has_occasion_tag -> 포멀
+- Product:4302685 -> has_season_tag -> 간절기
+- Product:1220731 -> has_style_tag -> 데일리
+- Product:1220731 -> has_occasion_tag -> 일상
+- Product:1220731 -> has_occasion_tag -> 포멀
+- Product:3697526 -> has_style_tag -> 데일리
+- Product:3697526 -> has_style_tag -> 스트릿
+- Product:3697526 -> has_style_tag -> 캐주얼
+- Product:3697526 -> has_occasion_tag -> 일상
+- Product:3697526 -> has_occasion_tag -> 등교
+- Product:3697526 -> has_occasion_tag -> 주말
+- Product:3697526 -> has_season_tag -> 간절기
+- Product:1168922 -> has_style_tag -> 데일리
+- Product:1168922 -> has_style_tag -> 캐주얼
+- Product:1168922 -> has_occasion_tag -> 일상
+- Product:1168922 -> has_occasion_tag -> 출근룩
+- Product:1168922 -> has_occasion_tag -> 포멀
+- Product:1168922 -> has_season_tag -> 봄
+- Product:1168922 -> has_season_tag -> 가을
+- Product:1168922 -> has_season_tag -> 겨울
+- Product:1168922 -> has_fit_tag -> 오버핏
+- Product:1168922 -> has_risk_tag -> 사이즈 리뷰 확인 권장
+- Product:1168922 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:1551839 -> has_style_tag -> 데일리
+- Product:1551839 -> has_occasion_tag -> 일상
+- Product:1551839 -> has_season_tag -> 봄
+- Product:1551839 -> has_season_tag -> 가을
+- Product:1551839 -> has_season_tag -> 겨울
+- Product:1551839 -> has_fit_tag -> 오버핏
+- Product:1551839 -> has_risk_tag -> 사이즈 리뷰 확인 권장
+- Product:1551839 -> has_risk_tag -> 비침 여부 확인 필요
+- Product:3533480 -> has_style_tag -> 데일리
+- Product:3533480 -> has_style_tag -> 캐주얼
+- Product:3533480 -> has_occasion_tag -> 일상
+- Product:3533480 -> has_occasion_tag -> 출근룩
+- Product:3533480 -> has_occasion_tag -> 등교
+- Product:3533480 -> has_occasion_tag -> 주말
+- Product:3533480 -> has_occasion_tag -> 포멀
+- Product:3533480 -> has_season_tag -> 간절기
+- Product:3783094 -> has_style_tag -> 데일리
+- Product:3783094 -> has_style_tag -> 미니멀
+- Product:3783094 -> has_style_tag -> 캐주얼
+- Product:3783094 -> has_occasion_tag -> 일상
+- Product:3783094 -> has_occasion_tag -> 등교
+- Product:3783094 -> has_occasion_tag -> 주말
+- Product:3783094 -> has_season_tag -> 봄
+- Product:3783094 -> has_season_tag -> 가을
+- Product:3783094 -> has_season_tag -> 겨울
+- Product:3783094 -> has_season_tag -> 간절기
+- Product:3783094 -> has_fit_tag -> 오버핏
+- Product:3783094 -> has_fit_tag -> 크롭
+- Product:3783094 -> has_risk_tag -> 기장감 확인 필요
+- Product:3783094 -> has_risk_tag -> 사이즈 리뷰 확인 권장
+- Product:3783094 -> has_risk_tag -> 비침 여부 확인 필요

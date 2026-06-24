@@ -44,7 +44,10 @@
 | 상품 비교 API | 후보 상품의 가격, 리뷰 수, 만족도, 할인율, 핏 신호 비교 |
 | Shortlist API | 세션별 추천 후보 저장/조회/삭제 |
 | 개인정보 제외 analytics | 검색, 추천, 클릭, 비교, 전환 이벤트 기록 |
-| Analytics dashboard | funnel, products, queries, intents 통계 API 제공 |
+| Analytics dashboard | funnel, products, queries, intents, insights 통계 API 제공 |
+| Marketing insights | CTR/CVR, top query/product, ontology gap 기반 자동 인사이트 생성 |
+| Low-confidence loop | 추천 신뢰도가 낮은 질문을 ontology 개선 seed로 저장 |
+| Product enrichment | style_tags, occasion_tags, season_tags, fit_tags, risk_tags 보강 |
 | OpenCrab sync | analytics export를 Personal Shopper Data 온톨로지팩에 축적 |
 | Plugin packaging | OpenAPI, plugin manifest, demo script, 제출 문서 포함 |
 
@@ -204,6 +207,7 @@ recommend
 | `GET /analytics/products` | top products/clicked/converted products |
 | `GET /analytics/queries` | 상위 sanitized query |
 | `GET /analytics/intents` | 색상/카테고리/성별/예산 intent 통계 |
+| `GET /analytics/insights` | CTR/CVR, top query/product, ontology gap 기반 자동 마케팅 인사이트 |
 | `POST /analytics/export` | export-ready analytics summary 생성 |
 
 ---
@@ -334,7 +338,32 @@ docs/ontology/personal-shopper-data-ontology.md
 
 ---
 
-## 14. 제출/발표 문서
+## 14. AI Commerce Intelligence Loop
+
+이번 고도화에서 플러그인은 단순 추천 API를 넘어 **AI commerce intelligence loop**를 갖도록 확장되었습니다.
+
+```text
+사용자 자연어 질문
+  -> 추천/비교/shortlist
+  -> 개인정보 제외 analytics event
+  -> /analytics/insights 자동 인사이트
+  -> low_confidence_recommendation으로 ontology gap 기록
+  -> 상품 style/occasion/risk tag enrichment
+  -> OpenCrab product/data packs 갱신
+```
+
+추가된 고도화 요소:
+
+| 요소 | 설명 |
+|---|---|
+| `/analytics/insights` | CTR/CVR, top query, top product, 색상/카테고리 수요, ontology gap 자동 요약 |
+| `low_confidence_recommendation` | 추천 신뢰도가 낮은 질문을 저장해 상품 온톨로지 개선 seed로 사용 |
+| `npm run enrich:products` | 상품별 style/occasion/season/fit/risk tag 자동 보강 |
+| `docs/ontology/musinsa-product-enrichment.md` | enrichment 결과를 OpenCrab-ready ontology 문서로 저장 |
+
+---
+
+## 15. 제출/발표 문서
 
 | 문서 | 설명 |
 |---|---|
@@ -346,7 +375,7 @@ docs/ontology/personal-shopper-data-ontology.md
 
 ---
 
-## 15. Hackathon Narrative
+## 16. Hackathon Narrative
 
 **문제:** 무신사에는 풍부한 상품/리뷰/랭킹 데이터가 있지만, 고객은 여전히 검색어·필터·리뷰·사이즈 정보를 직접 조합해야 합니다. AI agent 시대에는 쇼핑도 자연어 대화에서 시작됩니다.
 
@@ -356,7 +385,7 @@ docs/ontology/personal-shopper-data-ontology.md
 
 ---
 
-## 16. 한계와 향후 확장
+## 17. 한계와 향후 확장
 
 현재 한계:
 

@@ -292,7 +292,35 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240109/3783092/detail_3783092_17053864925648_500.png"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "미니멀",
+          "스트릿",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "등교",
+          "주말"
+        ],
+        "season_tags": [
+          "봄",
+          "가을",
+          "겨울",
+          "간절기"
+        ],
+        "fit_tags": [
+          "오버핏",
+          "크롭"
+        ],
+        "risk_tags": [
+          "기장감 확인 필요",
+          "사이즈 리뷰 확인 권장",
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "5399594",
@@ -494,7 +522,22 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20250903/5399594/detail_5399594_17569715672295_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "3771089",
@@ -636,7 +679,24 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240102/3771089/detail_3771089_17041852548511_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩",
+          "등교",
+          "주말"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "4240660",
@@ -790,7 +850,22 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240709/4240660/detail_4240660_17217004616251_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "등교",
+          "주말",
+          "장시간 착용"
+        ],
+        "season_tags": [],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "3392006",
@@ -939,7 +1014,22 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20230703/3392006/detail_3392006_16890620145243_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "등교",
+          "주말",
+          "장시간 착용"
+        ],
+        "season_tags": [],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "4401124",
@@ -1225,7 +1315,27 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240904/4401124/detail_4401124_17255849496883_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩"
+        ],
+        "season_tags": [
+          "봄",
+          "가을",
+          "겨울",
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": [
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "5367614",
@@ -1384,7 +1494,22 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20250827/5367614/detail_5367614_17573795308808_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "1778404",
@@ -1498,7 +1623,23 @@
           "has_image",
           "https://image.msscdn.net/images/goods_img/20210204/1778404/1778404_1_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "등교",
+          "주말"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "5329359",
@@ -1671,7 +1812,23 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20250818/5329359/detail_5329359_17569461466475_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "등교",
+          "주말"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "4385991",
@@ -1933,7 +2090,27 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240829/4385991/detail_4385991_17572926299852_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩"
+        ],
+        "season_tags": [
+          "봄",
+          "가을",
+          "겨울",
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": [
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "4240657",
@@ -2087,7 +2264,22 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240709/4240657/detail_4240657_17217005635342_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "등교",
+          "주말",
+          "장시간 착용"
+        ],
+        "season_tags": [],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "4386012",
@@ -2324,7 +2516,27 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240829/4386012/detail_4386012_17572925355147_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩"
+        ],
+        "season_tags": [
+          "봄",
+          "가을",
+          "겨울",
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": [
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "3276429",
@@ -2468,7 +2680,18 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20230504/3276429/detail_3276429_17770163116531_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리"
+        ],
+        "occasion_tags": [
+          "일상"
+        ],
+        "season_tags": [],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "4993411",
@@ -2691,7 +2914,26 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20250407/4993411/detail_4993411_17822671208106_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리"
+        ],
+        "occasion_tags": [
+          "일상"
+        ],
+        "season_tags": [
+          "봄",
+          "여름",
+          "가을"
+        ],
+        "fit_tags": [
+          "오버핏"
+        ],
+        "risk_tags": [
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "2114452",
@@ -2844,7 +3086,18 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20210907/2114452/detail_2114452_17331214743149_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리"
+        ],
+        "occasion_tags": [
+          "일상"
+        ],
+        "season_tags": [],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "4385997",
@@ -3091,7 +3344,27 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240829/4385997/detail_4385997_17255812825572_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩"
+        ],
+        "season_tags": [
+          "봄",
+          "가을",
+          "겨울",
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": [
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "4371012",
@@ -3244,7 +3517,22 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240826/4371012/detail_4371012_17255868717350_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "등교",
+          "주말",
+          "장시간 착용"
+        ],
+        "season_tags": [],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "3563185",
@@ -3386,7 +3674,24 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20230915/3563185/detail_3563185_16950017828428_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩",
+          "등교",
+          "주말"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "5321066",
@@ -3528,7 +3833,22 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20250813/5321066/detail_5321066_17569716659721_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "4993414",
@@ -3766,7 +4086,26 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20250407/4993414/detail_4993414_17788263397822_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리"
+        ],
+        "occasion_tags": [
+          "일상"
+        ],
+        "season_tags": [
+          "봄",
+          "여름",
+          "가을"
+        ],
+        "fit_tags": [
+          "오버핏"
+        ],
+        "risk_tags": [
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "4761188",
@@ -3954,7 +4293,31 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20250205/4761188/detail_4761188_17387438553012_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩",
+          "포멀"
+        ],
+        "season_tags": [
+          "봄",
+          "여름",
+          "가을",
+          "겨울"
+        ],
+        "fit_tags": [
+          "오버핏"
+        ],
+        "risk_tags": [
+          "사이즈 리뷰 확인 권장",
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "5321103",
@@ -4111,7 +4474,22 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20250813/5321103/detail_5321103_17569716192195_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "4280527",
@@ -4235,7 +4613,22 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240729/4280527/detail_4280527_17693916293723_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "4328804",
@@ -4400,7 +4793,22 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240814/4328804/detail_4328804_17556720843791_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "등교",
+          "주말",
+          "장시간 착용"
+        ],
+        "season_tags": [],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "3837367",
@@ -4588,7 +4996,28 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240131/3837367/detail_3837367_17447834688872_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리"
+        ],
+        "occasion_tags": [
+          "일상"
+        ],
+        "season_tags": [
+          "봄",
+          "여름",
+          "가을",
+          "겨울"
+        ],
+        "fit_tags": [
+          "오버핏"
+        ],
+        "risk_tags": [
+          "사이즈 리뷰 확인 권장",
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "1735427",
@@ -4808,7 +5237,29 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20210104/1735427/detail_1735427_17401191743413_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리"
+        ],
+        "occasion_tags": [
+          "일상"
+        ],
+        "season_tags": [
+          "봄",
+          "여름",
+          "가을",
+          "겨울",
+          "간절기"
+        ],
+        "fit_tags": [
+          "오버핏"
+        ],
+        "risk_tags": [
+          "사이즈 리뷰 확인 권장",
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "1551840",
@@ -4991,7 +5442,27 @@
           "has_image",
           "https://image.msscdn.net/images/goods_img/20200818/1551840/1551840_1_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리"
+        ],
+        "occasion_tags": [
+          "일상"
+        ],
+        "season_tags": [
+          "봄",
+          "가을",
+          "겨울"
+        ],
+        "fit_tags": [
+          "오버핏"
+        ],
+        "risk_tags": [
+          "사이즈 리뷰 확인 권장",
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "1760177",
@@ -5128,7 +5599,22 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20210125/1760177/detail_1760177_17364106089614_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "5333555",
@@ -5267,7 +5753,21 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20250818/5333555/detail_5333555_17573788270916_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "등교",
+          "주말"
+        ],
+        "season_tags": [],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "3674341",
@@ -5465,7 +5965,29 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20231101/3674341/detail_3674341_17770060746376_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리"
+        ],
+        "occasion_tags": [
+          "일상"
+        ],
+        "season_tags": [
+          "봄",
+          "여름",
+          "가을",
+          "겨울",
+          "간절기"
+        ],
+        "fit_tags": [
+          "오버핏"
+        ],
+        "risk_tags": [
+          "사이즈 리뷰 확인 권장",
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "1527073",
@@ -5653,7 +6175,22 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20200724/1527073/detail_1527073_2_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "등교",
+          "주말",
+          "장시간 착용"
+        ],
+        "season_tags": [],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "3791988",
@@ -5886,7 +6423,28 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240112/3791988/detail_3791988_17466850421850_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리"
+        ],
+        "occasion_tags": [
+          "일상"
+        ],
+        "season_tags": [
+          "봄",
+          "여름",
+          "가을",
+          "겨울"
+        ],
+        "fit_tags": [
+          "오버핏"
+        ],
+        "risk_tags": [
+          "사이즈 리뷰 확인 권장",
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "5352002",
@@ -6033,7 +6591,23 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20250821/5352002/detail_5352002_17585097413650_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "미니멀",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "1149329",
@@ -6254,7 +6828,27 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20190910/1149329/detail_1149329_17775152650238_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩",
+          "포멀"
+        ],
+        "season_tags": [
+          "봄",
+          "가을",
+          "겨울"
+        ],
+        "fit_tags": [],
+        "risk_tags": [
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "4302685",
@@ -6397,7 +6991,26 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240807/4302685/detail_4302685_17229675822242_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "미니멀",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩",
+          "등교",
+          "주말",
+          "포멀"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "1220731",
@@ -6560,7 +7173,19 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20191112/1220731/detail_1220731_17816824888505_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리"
+        ],
+        "occasion_tags": [
+          "일상",
+          "포멀"
+        ],
+        "season_tags": [],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "3697526",
@@ -6718,7 +7343,24 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20231108/3697526/detail_3697526_16999550191258_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "스트릿",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "등교",
+          "주말"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "1168922",
@@ -6939,7 +7581,30 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20190927/1168922/detail_1168922_17782050480688_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩",
+          "포멀"
+        ],
+        "season_tags": [
+          "봄",
+          "가을",
+          "겨울"
+        ],
+        "fit_tags": [
+          "오버핏"
+        ],
+        "risk_tags": [
+          "사이즈 리뷰 확인 권장",
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "1551839",
@@ -7122,7 +7787,27 @@
           "has_image",
           "https://image.msscdn.net/images/goods_img/20200818/1551839/1551839_1_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리"
+        ],
+        "occasion_tags": [
+          "일상"
+        ],
+        "season_tags": [
+          "봄",
+          "가을",
+          "겨울"
+        ],
+        "fit_tags": [
+          "오버핏"
+        ],
+        "risk_tags": [
+          "사이즈 리뷰 확인 권장",
+          "비침 여부 확인 필요"
+        ]
+      }
     },
     {
       "product_id": "3533480",
@@ -7260,7 +7945,25 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20230906/3533480/detail_3533480_16939628714517_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "출근룩",
+          "등교",
+          "주말",
+          "포멀"
+        ],
+        "season_tags": [
+          "간절기"
+        ],
+        "fit_tags": [],
+        "risk_tags": []
+      }
     },
     {
       "product_id": "3783094",
@@ -7498,7 +8201,45 @@
           "has_image",
           "https://image.msscdn.net/images/prd_img/20240109/3783094/detail_3783094_17752014773283_500.jpg"
         ]
-      ]
+      ],
+      "ai_tags": {
+        "style_tags": [
+          "데일리",
+          "미니멀",
+          "캐주얼"
+        ],
+        "occasion_tags": [
+          "일상",
+          "등교",
+          "주말"
+        ],
+        "season_tags": [
+          "봄",
+          "가을",
+          "겨울",
+          "간절기"
+        ],
+        "fit_tags": [
+          "오버핏",
+          "크롭"
+        ],
+        "risk_tags": [
+          "기장감 확인 필요",
+          "사이즈 리뷰 확인 권장",
+          "비침 여부 확인 필요"
+        ]
+      }
     }
-  ]
+  ],
+  "enrichment": {
+    "generated_at": "2026-06-24T11:18:20.433Z",
+    "method": "deterministic keyword/material/category rules for MVP; production should use authorized product taxonomy, review APIs, and human QA.",
+    "fields": [
+      "style_tags",
+      "occasion_tags",
+      "season_tags",
+      "fit_tags",
+      "risk_tags"
+    ]
+  }
 }

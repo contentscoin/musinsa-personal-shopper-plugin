@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T08:44:42.219Z",
+  "generated_at": "2026-06-24T11:21:19.304Z",
   "privacy": {
     "notice": {
       "title": "MUSINSA Personal Shopper analytics notice",
@@ -13,6 +13,8 @@
         "clicked_product_id",
         "converted_product_id",
         "rank",
+        "confidence",
+        "missing_ontology_fields",
         "metadata.surface",
         "metadata.locale"
       ],
@@ -31,14 +33,15 @@
     "personal_data_policy": "No names, phone numbers, emails, addresses, order IDs, card numbers, tracking numbers, IP addresses, or raw user identifiers are stored. Session identifiers are SHA-256 hashed and queries are regex-sanitized before storage.",
     "owner_visibility": "Pack owner can view sanitized event-level rows plus aggregate statistics."
   },
-  "total_events": 11,
+  "total_events": 12,
   "event_counts": {
     "conversion": 2,
     "product_click": 2,
     "recommendation": 2,
     "search": 2,
     "shortlist_save": 2,
-    "compare": 1
+    "compare": 1,
+    "low_confidence_recommendation": 1
   },
   "funnel": {
     "searches_or_recommendations": 4,
@@ -54,6 +57,10 @@
     },
     {
       "value": "남성 차콜 후드집업 5만원 이하 추천 [phone]",
+      "count": 1
+    },
+    {
+      "value": "비 오는 날 남친룩 추천 [phone]",
       "count": 1
     },
     {
@@ -133,6 +140,110 @@
       }
     ]
   },
+  "low_confidence": {
+    "count": 1,
+    "rate": 0.25,
+    "missing_ontology_fields": [
+      {
+        "value": "occasion_tags",
+        "count": 1
+      },
+      {
+        "value": "style_tags",
+        "count": 1
+      },
+      {
+        "value": "weather_tags",
+        "count": 1
+      }
+    ]
+  },
+  "low_confidence_queries": [
+    {
+      "value": "비 오는 날 남친룩 추천 [phone]",
+      "count": 1
+    }
+  ],
+  "insights": [
+    {
+      "type": "funnel_health",
+      "summary": "검색/추천 4건 기준 CTR 0.5, CVR 0.5입니다.",
+      "evidence": {
+        "searches_or_recommendations": 4,
+        "product_clicks": 2,
+        "conversions": 2,
+        "click_through_rate": 0.5,
+        "conversion_rate": 0.5
+      }
+    },
+    {
+      "type": "top_query_pattern",
+      "summary": "가장 많이 관찰된 질문 패턴은 \"남성 차콜 후드집업 5만원 이하 추천\"입니다.",
+      "evidence": {
+        "value": "남성 차콜 후드집업 5만원 이하 추천",
+        "count": 3
+      }
+    },
+    {
+      "type": "top_product_interest",
+      "summary": "가장 자주 노출/관심을 받은 상품 ID는 3783092입니다.",
+      "evidence": {
+        "value": "3783092",
+        "count": 9
+      }
+    },
+    {
+      "type": "high_conversion_product",
+      "summary": "상품 3783092는 클릭과 전환 양쪽에서 상위에 있어 우선 캠페인 후보입니다.",
+      "evidence": {
+        "clicked": {
+          "value": "3783092",
+          "count": 2
+        },
+        "converted": {
+          "value": "3783092",
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "color_demand",
+      "summary": "현재 AI 쇼핑 질문에서 차콜 색상 수요가 가장 높습니다.",
+      "evidence": {
+        "value": "차콜",
+        "count": 2
+      }
+    },
+    {
+      "type": "category_demand",
+      "summary": "현재 AI 쇼핑 질문에서 후드집업 카테고리 수요가 가장 높습니다.",
+      "evidence": {
+        "value": "후드집업",
+        "count": 3
+      }
+    },
+    {
+      "type": "ontology_gap",
+      "summary": "추천 신뢰도가 낮은 질문 1건이 있어 상품 태그/상황/핏 온톨로지 보강이 필요합니다.",
+      "evidence": {
+        "count": 1,
+        "missing_ontology_fields": [
+          {
+            "value": "occasion_tags",
+            "count": 1
+          },
+          {
+            "value": "style_tags",
+            "count": 1
+          },
+          {
+            "value": "weather_tags",
+            "count": 1
+          }
+        ]
+      }
+    }
+  ],
   "recent_events": [
     {
       "event_id": "8f54ef8c-19b8-4b21-a2fc-c39b9c209b7d",
@@ -370,6 +481,31 @@
       "source": "plugin",
       "metadata": {
         "surface": "demo-script"
+      }
+    },
+    {
+      "event_id": "725b6b99-2bfb-4006-a476-9f6781e3366d",
+      "event_type": "low_confidence_recommendation",
+      "occurred_at": "2026-06-24T11:20:43.976Z",
+      "session_hash": "3274a3eba4aacaa0f9ded48b",
+      "user_agent_family": "unknown",
+      "query": "비 오는 날 남친룩 추천 [phone]",
+      "parsed_intent": {
+        "colors": [],
+        "categories": [],
+        "seasons": []
+      },
+      "product_ids": [],
+      "confidence": 0.2,
+      "missing_ontology_fields": [
+        "occasion_tags",
+        "weather_tags",
+        "style_tags"
+      ],
+      "source": "plugin",
+      "metadata": {
+        "surface": "api-verify",
+        "locale": "ko-KR"
       }
     }
   ]

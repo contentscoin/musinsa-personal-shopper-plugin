@@ -57,6 +57,7 @@ test('recommend returns assistant summary, shortlist, and shopper insights', () 
   const result = recommend(products, { query: '후드집업 5만원 이하', customer_profile: { usual_size: 'L' } });
   assert.equal(result.recommendations.length, 1);
   assert.equal(result.recommendations[0].shopper_insight.product_id, '1');
+  assert.equal(result.recommendation_confidence.low_confidence, false);
   assert.equal(result.shortlist.length, 1);
   assert.match(result.assistant_summary, /상위 후보/);
 });
@@ -90,6 +91,8 @@ test('openapi includes shortlist and analytics endpoints and upgraded response f
   assert.match(spec, /\/analytics\/products/);
   assert.match(spec, /\/analytics\/queries/);
   assert.match(spec, /\/analytics\/intents/);
+  assert.match(spec, /\/analytics\/insights/);
+  assert.match(spec, /low_confidence_recommendation/);
   assert.match(spec, /\/analytics\/export/);
   assert.match(spec, /parsed_intent/);
   assert.match(spec, /assistant_summary/);
@@ -115,13 +118,17 @@ test('telemetry summary calculates CTR and conversion rate', () => {
   const events = [
     sanitizeTelemetryEvent({ event_type: 'recommendation', session_id: 's1', query: '차콜 후드집업', product_ids: ['3783092'], parsed_intent: { colors: ['차콜'], categories: ['후드집업'], budget: 50000 } }),
     sanitizeTelemetryEvent({ event_type: 'product_click', session_id: 's1', clicked_product_id: '3783092', product_ids: ['3783092'] }),
-    sanitizeTelemetryEvent({ event_type: 'conversion', session_id: 's1', converted_product_id: '3783092', product_ids: ['3783092'] })
+    sanitizeTelemetryEvent({ event_type: 'conversion', session_id: 's1', converted_product_id: '3783092', product_ids: ['3783092'] }),
+    sanitizeTelemetryEvent({ event_type: 'low_confidence_recommendation', session_id: 's2', query: '비 오는 날 남친룩', confidence: 0.2, missing_ontology_fields: ['occasion_tags', 'weather_tags'] })
   ];
   const summary = summarizeEvents(events);
-  assert.equal(summary.total_events, 3);
+  assert.equal(summary.total_events, 4);
   assert.equal(summary.funnel.click_through_rate, 1);
   assert.equal(summary.funnel.conversion_rate, 1);
   assert.equal(summary.top_converted_products[0].value, '3783092');
+  assert.equal(summary.low_confidence.count, 1);
+  assert.equal(summary.low_confidence.missing_ontology_fields[0].value, 'occasion_tags');
+  assert.ok(summary.insights.some(insight => insight.type === 'ontology_gap'));
 });
 
 test('analytics notice explicitly excludes raw personal identifiers', () => {

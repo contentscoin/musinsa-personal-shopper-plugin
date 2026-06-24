@@ -28,6 +28,7 @@ export function searchProducts(products, filters = {}) {
 function scoreProduct(product, f) {
   const haystackRaw = [
     product.name_ko, product.name_en, product.brand?.name_ko, product.brand?.name_en, product.category_path?.join(' '),
+    ...(product.ai_tags?.style_tags ?? []), ...(product.ai_tags?.occasion_tags ?? []), ...(product.ai_tags?.risk_tags ?? []),
     ...(product.materials ?? []).flatMap(m => [m.dimension, ...(m.selected ?? [])])
   ].filter(Boolean).join(' ');
   const haystack = normalize(haystackRaw);
@@ -95,6 +96,7 @@ export function compactProduct(product) {
     review: product.review,
     materials: product.materials,
     primary_image: product.images?.[0]?.url,
+    ai_tags: product.ai_tags,
     source_url: product.source_url
   };
 }

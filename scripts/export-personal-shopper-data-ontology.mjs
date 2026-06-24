@@ -37,11 +37,17 @@ writeTop(lines, 'Top converted products', summary.top_converted_products);
 writeTop(lines, 'Top colors', summary.intent_stats.colors);
 writeTop(lines, 'Top categories', summary.intent_stats.categories);
 writeTop(lines, 'Top budgets', summary.intent_stats.budgets);
+writeTop(lines, 'Low-confidence queries', summary.low_confidence_queries ?? []);
+writeTop(lines, 'Missing ontology fields', summary.low_confidence?.missing_ontology_fields ?? []);
+lines.push('## Generated marketing and ontology insights');
+if (!summary.insights?.length) lines.push('- none');
+for (const insight of summary.insights ?? []) lines.push(`- ${insight.type}: ${insight.summary}`);
+lines.push('');
 lines.push('## Sanitized event rows');
-lines.push('| occurred_at | event_type | session_hash | query | product_ids | clicked_product_id | converted_product_id | rank | source |');
-lines.push('|---|---|---|---|---|---|---|---:|---|');
+lines.push('| occurred_at | event_type | session_hash | query | product_ids | clicked_product_id | converted_product_id | rank | confidence | missing_ontology_fields | source |');
+lines.push('|---|---|---|---|---|---|---|---:|---:|---|---|');
 for (const e of events.slice(-500)) {
-  lines.push(`| ${esc(e.occurred_at)} | ${esc(e.event_type)} | ${esc(e.session_hash)} | ${esc(e.query)} | ${esc((e.product_ids ?? []).join(','))} | ${esc(e.clicked_product_id ?? '')} | ${esc(e.converted_product_id ?? '')} | ${e.rank ?? ''} | ${esc(e.source)} |`);
+  lines.push(`| ${esc(e.occurred_at)} | ${esc(e.event_type)} | ${esc(e.session_hash)} | ${esc(e.query)} | ${esc((e.product_ids ?? []).join(','))} | ${esc(e.clicked_product_id ?? '')} | ${esc(e.converted_product_id ?? '')} | ${e.rank ?? ''} | ${e.confidence ?? ''} | ${esc((e.missing_ontology_fields ?? []).join(','))} | ${esc(e.source)} |`);
 }
 lines.push('');
 lines.push('## Ontology triples');
@@ -50,8 +56,10 @@ lines.push('- PersonalShopperDataPack -> has_privacy_policy -> sanitized_non_pii
 lines.push(`- PersonalShopperDataPack -> has_total_events -> ${summary.total_events}`);
 lines.push(`- PersonalShopperDataPack -> has_click_through_rate -> ${summary.funnel.click_through_rate}`);
 lines.push(`- PersonalShopperDataPack -> has_conversion_rate -> ${summary.funnel.conversion_rate}`);
+lines.push(`- PersonalShopperDataPack -> has_low_confidence_count -> ${summary.low_confidence?.count ?? 0}`);
 for (const q of summary.top_queries.slice(0, 10)) lines.push(`- PersonalShopperDataPack -> has_top_query -> ${q.value} (${q.count})`);
 for (const p of summary.top_products.slice(0, 10)) lines.push(`- PersonalShopperDataPack -> has_top_product -> ${p.value} (${p.count})`);
+for (const insight of (summary.insights ?? []).slice(0, 10)) lines.push(`- PersonalShopperDataPack -> has_generated_insight -> ${insight.type}`);
 
 await mkdir(dirname(out), { recursive: true });
 await writeFile(out, lines.join('\n'));

@@ -58,6 +58,9 @@ MUSINSA product data
 | Shortlist API | 세션별 후보 저장/조회/삭제 | 구현 |
 | Non-PII analytics | 검색/추천/클릭/전환/비교 이벤트 수집 | 구현 |
 | Analytics dashboard | funnel/products/queries/intents 통계 API | 구현 |
+| Marketing insights | CTR/CVR, top query/product, ontology gap 자동 인사이트 | 구현 |
+| Low-confidence loop | 신뢰도 낮은 질문을 온톨로지 개선 seed로 축적 | 구현 |
+| Product enrichment | style/occasion/season/fit/risk tags 자동 보강 | 구현 |
 | OpenCrab sync | Personal Shopper Data 온톨로지팩 자동 축적 | 구현 |
 | Plugin packaging | OpenAPI + ai-plugin manifest + demo script + ZIP | 구현 |
 
@@ -89,6 +92,7 @@ MUSINSA product data
 - `GET /analytics/products`
 - `GET /analytics/queries`
 - `GET /analytics/intents`
+- `GET /analytics/insights`
 - `POST /analytics/export`
 
 ## 7. 데모 시나리오
@@ -206,6 +210,9 @@ MUSINSA product data
 
 5. **무신사 마케팅 자산화**  
    사용자 질문/클릭/전환 패턴을 Personal Shopper Data 팩으로 축적해 AI 학습자료와 마케팅 통계자료로 사용할 수 있습니다.
+
+6. **AI commerce intelligence loop**  
+   `/analytics/insights`와 `low_confidence_recommendation` 이벤트로 전환율이 높은 질문/상품과 온톨로지 공백을 자동 발견하고, `style_tags`, `occasion_tags`, `risk_tags` enrichment로 상품 DB를 계속 개선합니다.
 
 ## 13. 향후 확장
 

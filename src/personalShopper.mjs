@@ -86,9 +86,11 @@ export function recommend(products, request) {
     };
   });
 
+  const recommendationConfidence = buildRecommendationConfidence(recommendations, intent);
   return {
     query_understood: intent.raw_query,
     parsed_intent: intent,
+    recommendation_confidence: recommendationConfidence,
     assistant_summary: buildAssistantSummary(recommendations, intent),
     recommendations,
     shortlist: recommendations.slice(0, 3).map(item => ({
@@ -187,6 +189,23 @@ function nextQuestions(intent) {
   if (!intent.categories.length) questions.push('원하는 카테고리를 더 좁힐까요? 예: 후드집업, 스니커즈, 니트');
   questions.push('정핏/루즈/오버핏 중 어떤 핏을 선호하나요?');
   return questions.slice(0, 3);
+}
+
+function buildRecommendationConfidence(recommendations, intent) {
+  const topScore = recommendations[0]?.score ?? 0;
+  const missing = [];
+  if (!intent.categories.length) missing.push('category');
+  if (!intent.colors.length) missing.push('color');
+  if (!intent.budget) missing.push('budget');
+  if (!recommendations.length) missing.push('product_match');
+  const level = !recommendations.length || topScore < 4 ? 'low' : topScore < 7 ? 'medium' : 'high';
+  return {
+    level,
+    top_score: Number(topScore.toFixed?.(3) ?? topScore),
+    low_confidence: level === 'low',
+    missing_ontology_fields: missing,
+    recommendation_count: recommendations.length
+  };
 }
 
 function chooseBestPick(rows) {

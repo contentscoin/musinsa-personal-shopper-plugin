@@ -16,6 +16,30 @@
 
 플러그인은 상품 추천뿐 아니라 **개인정보를 제외한 사용패턴/질문/클릭/전환 통계**도 수집해 `Personal Shopper Data` 온톨로지팩으로 축적합니다. 이 데이터는 AI 추천 품질 개선과 무신사 마케팅 통계자료로 활용할 수 있습니다.
 
+## ChatGPT 앱/플러그인 등록 바로가기
+
+ChatGPT Custom GPT / GPT Actions에 등록하는 절차는 README 안에서도 바로 확인할 수 있고, 전체 매뉴얼은 별도 문서로 정리되어 있습니다.
+
+| 목적 | 위치 |
+|---|---|
+| 전체 등록 매뉴얼 | [`docs/chatgpt-app-registration.md`](docs/chatgpt-app-registration.md) |
+| README 내 요약 절차 | [6. 빠른 실행 → ChatGPT 앱/GPT Actions 등록](#chatgpt-앱gpt-actions-등록) |
+| OpenAPI schema | [`openapi.yaml`](openapi.yaml) / `GET /openapi.yaml` |
+| Legacy plugin manifest | [`.well-known/ai-plugin.json`](.well-known/ai-plugin.json) / `GET /.well-known/ai-plugin.json` |
+| 개인정보/Legal URL | `GET /analytics/notice` |
+
+핵심 등록 흐름:
+
+```text
+public HTTPS endpoint 준비
+  -> openapi.yaml servers.url을 public host로 변경
+  -> .well-known/ai-plugin.json URL들을 public host로 변경
+  -> ChatGPT GPT Builder > Configure > Actions
+  -> https://YOUR_PUBLIC_HOST/openapi.yaml import
+  -> Authentication: None
+  -> Preview에서 health/search/recommend/compare 테스트
+```
+
 ---
 
 ## 2. 현재 MVP 상태
@@ -36,6 +60,7 @@
 | Search index | 2,050 products / 1,416 brand tokens / 436 category terms / 549 lexicon terms |
 | 검증 리포트 | product search 320/320, OpenAPI/manifest 0 failure, dashboard live/fallback, OpenCrab bridge |
 | Plugin contract | OpenAPI 3.1 + `/.well-known/ai-plugin.json` |
+| ChatGPT 앱 등록 매뉴얼 | README 상단 바로가기 + `docs/chatgpt-app-registration.md` |
 | Demo script | `npm run demo` |
 | GitHub repo | public |
 | CI | GitHub Actions workflow included |

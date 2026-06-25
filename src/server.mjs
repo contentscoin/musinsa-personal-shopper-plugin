@@ -5,6 +5,7 @@ import { compare, recommend, summarizeProduct } from './personalShopper.mjs';
 import { clearShortlist, getShortlist, saveShortlist } from './shortlistStore.mjs';
 import { ANALYTICS_NOTICE, analyticsDashboard, buildTelemetrySummary, recordTelemetryEvent } from './telemetryStore.mjs';
 import { HttpError, corsHeaders, readJsonBody, safeErrorPayload } from './httpUtils.mjs';
+import { resolveOpenCrabCandidates } from './opencrabRetrieval.mjs';
 
 const products = await loadProducts().catch(() => []);
 const port = Number(process.env.PORT ?? 8787);
@@ -44,7 +45,26 @@ const server = http.createServer(async (req, res) => {
     if (req.method === 'GET' && url.pathname === '/.well-known/ai-plugin.json') return text(res, await readFile(new URL('../.well-known/ai-plugin.json', import.meta.url), 'utf8'), 'application/json; charset=utf-8');
     if (req.method === 'GET' && (url.pathname === '/dashboard' || url.pathname === '/dashboard.html')) return text(res, await readFile(new URL('../docs/dashboard-mock.html', import.meta.url), 'utf8'), 'text/html; charset=utf-8');
     if (req.method === 'GET' && url.pathname === '/logo.png') return text(res, '', 'image/png');
-    if (req.method === 'POST' && url.pathname === '/products/search') return json(res, searchProductsWithRetrieval(products, await body(req)));
+    if (req.method === 'POST' && url.pathname === '/products/search') {
+      const payload = await body(req);
+      const opencrab = await resolveOpenCrabCandidates(payload);
+      const response = searchProductsWithRetrieval(products, {
+        ...payload,
+        opencrab_candidate_product_ids: payload.opencrab_candidate_product_ids ?? payload.candidate_product_ids ?? opencrab.product_ids
+      });
+      response.retrieval.opencrab_adapter = {
+        source: opencrab.source,
+        skipped: opencrab.skipped,
+        cache_hit: opencrab.cache_hit,
+        product_id_count: opencrab.product_ids.length,
+        raw_count: opencrab.raw_count,
+        latency_ms: opencrab.latency_ms,
+        error: opencrab.error
+      };
+      response.retrieval.latency_ms.candidate_retrieval = opencrab.latency_ms;
+      response.retrieval.latency_ms.total = Number((response.retrieval.latency_ms.total + opencrab.latency_ms).toFixed(3));
+      return json(res, response);
+    }
 
     const productMatch = url.pathname.match(/^\/products\/([^/]+)$/);
     if (req.method === 'GET' && productMatch) {

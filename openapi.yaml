@@ -269,6 +269,13 @@ components:
           type: array
           description: Alias for candidate_product_ids when candidates came from OpenCrab ontology-pack retrieval.
           items: { type: string }
+        opencrab_top_k:
+          type: integer
+          default: 80
+          description: Optional top-k hint for configured OpenCrab retrieval adapter.
+        candidate_limit:
+          type: integer
+          description: Alias top-k hint for ontology candidate retrieval adapters.
     ProductSearchResponse:
       type: object
       properties:
@@ -292,6 +299,17 @@ components:
               type: object
             latency_ms:
               type: object
+            opencrab_adapter:
+              type: object
+              description: Adapter status when OPENCRAB_RETRIEVAL_URL or OPENCRAB_RETRIEVAL_CACHE_PATH is configured.
+              properties:
+                source: { type: string }
+                skipped: { type: boolean }
+                cache_hit: { type: boolean }
+                product_id_count: { type: integer }
+                raw_count: { type: integer }
+                latency_ms: { type: number }
+                error: { type: string }
     CustomerProfile:
       type: object
       properties:

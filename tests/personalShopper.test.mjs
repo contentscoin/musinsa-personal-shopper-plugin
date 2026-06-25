@@ -72,6 +72,14 @@ test('parseShoppingIntent extracts budget, category, color, and gender hints', (
   assert.equal(intent.gender, '남성');
 });
 
+test('parseShoppingIntent uses catalog lexicon for brand and category discovery', () => {
+  const lexicon = getCatalogLexicon(products);
+  const intent = parseShoppingIntent({ query: '테스트브랜드 차콜 후드 집업 추천' }, lexicon);
+  assert.equal(intent.lexicon_used, true);
+  assert.equal(intent.brand, '테스트브랜드');
+  assert.ok(intent.categories.some(category => category.includes('후드')));
+});
+
 test('summarizeProduct extracts fit and risk signals', () => {
   const summary = summarizeProduct(products[0], { usual_size: 'L', fit_preference: '오버핏' });
   assert.match(summary.fit_summary, /오버/);

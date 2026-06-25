@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-06-25T03:39:58.320Z",
-  "completed_at": "2026-06-25T03:39:59.364Z",
+  "started_at": "2026-06-25T04:00:34.547Z",
+  "completed_at": "2026-06-25T04:00:38.629Z",
   "base_url": "http://127.0.0.1:8792",
   "health": {
     "ok": true,
@@ -21,16 +21,16 @@
     "passed": 160,
     "failed": 0,
     "nonempty_scenarios": 160,
-    "p50_latency_ms": 4.38,
-    "p95_latency_ms": 6.64,
-    "max_latency_ms": 26.92
+    "p50_latency_ms": 8.98,
+    "p95_latency_ms": 14.41,
+    "max_latency_ms": 369.57
   },
   "by_scenario": {
     "category_general": {
       "count": 80,
       "pass": 80,
       "nonempty": 80,
-      "avg_latency_ms": 4.86,
+      "avg_latency_ms": 9.79,
       "avg_exact_matches": 4.8,
       "avg_unique_brands": 3.99
     },
@@ -38,7 +38,7 @@
       "count": 80,
       "pass": 80,
       "nonempty": 80,
-      "avg_latency_ms": 4.54,
+      "avg_latency_ms": 16.5,
       "avg_exact_matches": 4.55,
       "avg_unique_brands": 3.59
     }
@@ -65,14 +65,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 26.92,
+      "latency_ms": 34.93,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.68,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -88,7 +87,7 @@
         "category": "상의 > 반소매 티셔츠",
         "final_price": 36600,
         "score": 23.68,
-        "score_total": 4.18
+        "score_total": 11.38
       },
       "validation_failures": []
     },
@@ -113,14 +112,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.41,
+      "latency_ms": 14.78,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 24.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -135,7 +133,7 @@
         "category": "상의 > 반소매 티셔츠",
         "final_price": 21900,
         "score": 24.66,
-        "score_total": 5.622
+        "score_total": 12.822
       },
       "validation_failures": []
     },
@@ -159,14 +157,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.98,
+      "latency_ms": 14.41,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -182,7 +179,7 @@
         "category": "상의 > 셔츠/블라우스",
         "final_price": 29400,
         "score": 22.48,
-        "score_total": 4.039
+        "score_total": 7.639
       },
       "validation_failures": []
     },
@@ -207,14 +204,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.5,
+      "latency_ms": 12.06,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -229,7 +225,7 @@
         "category": "상의 > 셔츠/블라우스",
         "final_price": 29400,
         "score": 22.48,
-        "score_total": 5.739
+        "score_total": 9.339
       },
       "validation_failures": []
     },
@@ -253,7 +249,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.03,
+      "latency_ms": 11.24,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -275,7 +271,7 @@
         "category": "바지 > 데님 팬츠",
         "final_price": 71400,
         "score": 21.28,
-        "score_total": 5.228
+        "score_total": 10.028
       },
       "validation_failures": []
     },
@@ -300,7 +296,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.57,
+      "latency_ms": 10.6,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -321,7 +317,7 @@
         "category": "바지 > 데님 팬츠",
         "final_price": 34900,
         "score": 21.26,
-        "score_total": 6.956
+        "score_total": 11.756
       },
       "validation_failures": []
     },
@@ -345,7 +341,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.73,
+      "latency_ms": 16.67,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -367,7 +363,7 @@
         "category": "신발 > 스니커즈 > 패션스니커즈화",
         "final_price": 68990,
         "score": 22.48,
-        "score_total": 5.138
+        "score_total": 7.538
       },
       "validation_failures": []
     },
@@ -392,7 +388,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.13,
+      "latency_ms": 11.43,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -413,7 +409,7 @@
         "category": "신발 > 스니커즈 > 패션스니커즈화",
         "final_price": 68990,
         "score": 22.48,
-        "score_total": 6.838
+        "score_total": 9.238
       },
       "validation_failures": []
     },
@@ -437,7 +433,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.64,
+      "latency_ms": 13.94,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -459,7 +455,7 @@
         "category": "바지 > 코튼 팬츠",
         "final_price": 55500,
         "score": 21.28,
-        "score_total": 5.143
+        "score_total": 9.943
       },
       "validation_failures": []
     },
@@ -484,7 +480,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.36,
+      "latency_ms": 10.22,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -505,7 +501,7 @@
         "category": "바지 > 코튼 팬츠",
         "final_price": 43900,
         "score": 21.26,
-        "score_total": 7.031
+        "score_total": 11.831
       },
       "validation_failures": []
     },
@@ -529,7 +525,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.07,
+      "latency_ms": 10.96,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -551,7 +547,7 @@
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 23900,
         "score": 28.46,
-        "score_total": 5.36
+        "score_total": 11.36
       },
       "validation_failures": []
     },
@@ -576,7 +572,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.99,
+      "latency_ms": 10.36,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -597,7 +593,7 @@
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 23900,
         "score": 28.46,
-        "score_total": 7.04
+        "score_total": 13.04
       },
       "validation_failures": []
     },
@@ -621,14 +617,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.15,
+      "latency_ms": 14.48,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -644,7 +639,7 @@
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 39900,
         "score": 23.66,
-        "score_total": 4.321
+        "score_total": 11.521
       },
       "validation_failures": []
     },
@@ -669,14 +664,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.94,
+      "latency_ms": 9.52,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -691,7 +685,7 @@
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 39900,
         "score": 23.66,
-        "score_total": 5.739
+        "score_total": 12.939
       },
       "validation_failures": []
     },
@@ -715,7 +709,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.3,
+      "latency_ms": 9.48,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -737,7 +731,7 @@
         "category": "아우터 > 후드 집업",
         "final_price": 75000,
         "score": 24.88,
-        "score_total": 5.38
+        "score_total": 10.18
       },
       "validation_failures": []
     },
@@ -762,7 +756,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.07,
+      "latency_ms": 9.64,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -783,7 +777,7 @@
         "category": "아우터 > 후드 집업",
         "final_price": 39150,
         "score": 24.86,
-        "score_total": 6.709
+        "score_total": 11.509
       },
       "validation_failures": []
     },
@@ -807,7 +801,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.32,
+      "latency_ms": 12.32,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -829,7 +823,7 @@
         "category": "상의 > 니트/스웨터",
         "final_price": 22500,
         "score": 22.46,
-        "score_total": 6.71
+        "score_total": 7.91
       },
       "validation_failures": []
     },
@@ -854,7 +848,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.94,
+      "latency_ms": 9.64,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -875,7 +869,7 @@
         "category": "상의 > 니트/스웨터",
         "final_price": 22500,
         "score": 22.46,
-        "score_total": 8.41
+        "score_total": 9.61
       },
       "validation_failures": []
     },
@@ -899,7 +893,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.31,
+      "latency_ms": 10.44,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -921,7 +915,7 @@
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 29700,
         "score": 24.86,
-        "score_total": 6.81
+        "score_total": 9.21
       },
       "validation_failures": []
     },
@@ -946,7 +940,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.56,
+      "latency_ms": 111.83,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -967,7 +961,7 @@
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 29700,
         "score": 24.86,
-        "score_total": 8.439
+        "score_total": 10.839
       },
       "validation_failures": []
     }
@@ -993,14 +987,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 26.92,
+      "latency_ms": 34.93,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.68,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -1016,7 +1009,7 @@
         "category": "상의 > 반소매 티셔츠",
         "final_price": 36600,
         "score": 23.68,
-        "score_total": 4.18
+        "score_total": 11.38
       },
       "validation_failures": []
     },
@@ -1041,14 +1034,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.41,
+      "latency_ms": 14.78,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 24.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -1063,7 +1055,7 @@
         "category": "상의 > 반소매 티셔츠",
         "final_price": 21900,
         "score": 24.66,
-        "score_total": 5.622
+        "score_total": 12.822
       },
       "validation_failures": []
     },
@@ -1087,14 +1079,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.98,
+      "latency_ms": 14.41,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -1110,7 +1101,7 @@
         "category": "상의 > 셔츠/블라우스",
         "final_price": 29400,
         "score": 22.48,
-        "score_total": 4.039
+        "score_total": 7.639
       },
       "validation_failures": []
     },
@@ -1135,14 +1126,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.5,
+      "latency_ms": 12.06,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -1157,7 +1147,7 @@
         "category": "상의 > 셔츠/블라우스",
         "final_price": 29400,
         "score": 22.48,
-        "score_total": 5.739
+        "score_total": 9.339
       },
       "validation_failures": []
     },
@@ -1181,7 +1171,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.03,
+      "latency_ms": 11.24,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1203,7 +1193,7 @@
         "category": "바지 > 데님 팬츠",
         "final_price": 71400,
         "score": 21.28,
-        "score_total": 5.228
+        "score_total": 10.028
       },
       "validation_failures": []
     },
@@ -1228,7 +1218,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.57,
+      "latency_ms": 10.6,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1249,7 +1239,7 @@
         "category": "바지 > 데님 팬츠",
         "final_price": 34900,
         "score": 21.26,
-        "score_total": 6.956
+        "score_total": 11.756
       },
       "validation_failures": []
     },
@@ -1273,7 +1263,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.73,
+      "latency_ms": 16.67,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1295,7 +1285,7 @@
         "category": "신발 > 스니커즈 > 패션스니커즈화",
         "final_price": 68990,
         "score": 22.48,
-        "score_total": 5.138
+        "score_total": 7.538
       },
       "validation_failures": []
     },
@@ -1320,7 +1310,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.13,
+      "latency_ms": 11.43,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1341,7 +1331,7 @@
         "category": "신발 > 스니커즈 > 패션스니커즈화",
         "final_price": 68990,
         "score": 22.48,
-        "score_total": 6.838
+        "score_total": 9.238
       },
       "validation_failures": []
     },
@@ -1365,7 +1355,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.64,
+      "latency_ms": 13.94,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1387,7 +1377,7 @@
         "category": "바지 > 코튼 팬츠",
         "final_price": 55500,
         "score": 21.28,
-        "score_total": 5.143
+        "score_total": 9.943
       },
       "validation_failures": []
     },
@@ -1412,7 +1402,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.36,
+      "latency_ms": 10.22,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1433,7 +1423,7 @@
         "category": "바지 > 코튼 팬츠",
         "final_price": 43900,
         "score": 21.26,
-        "score_total": 7.031
+        "score_total": 11.831
       },
       "validation_failures": []
     },
@@ -1457,7 +1447,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.07,
+      "latency_ms": 10.96,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1479,7 +1469,7 @@
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 23900,
         "score": 28.46,
-        "score_total": 5.36
+        "score_total": 11.36
       },
       "validation_failures": []
     },
@@ -1504,7 +1494,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.99,
+      "latency_ms": 10.36,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1525,7 +1515,7 @@
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 23900,
         "score": 28.46,
-        "score_total": 7.04
+        "score_total": 13.04
       },
       "validation_failures": []
     },
@@ -1549,14 +1539,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.15,
+      "latency_ms": 14.48,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -1572,7 +1561,7 @@
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 39900,
         "score": 23.66,
-        "score_total": 4.321
+        "score_total": 11.521
       },
       "validation_failures": []
     },
@@ -1597,14 +1586,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.94,
+      "latency_ms": 9.52,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -1619,7 +1607,7 @@
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 39900,
         "score": 23.66,
-        "score_total": 5.739
+        "score_total": 12.939
       },
       "validation_failures": []
     },
@@ -1643,7 +1631,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.3,
+      "latency_ms": 9.48,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1665,7 +1653,7 @@
         "category": "아우터 > 후드 집업",
         "final_price": 75000,
         "score": 24.88,
-        "score_total": 5.38
+        "score_total": 10.18
       },
       "validation_failures": []
     },
@@ -1690,7 +1678,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.07,
+      "latency_ms": 9.64,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1711,7 +1699,7 @@
         "category": "아우터 > 후드 집업",
         "final_price": 39150,
         "score": 24.86,
-        "score_total": 6.709
+        "score_total": 11.509
       },
       "validation_failures": []
     },
@@ -1735,7 +1723,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.32,
+      "latency_ms": 12.32,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1757,7 +1745,7 @@
         "category": "상의 > 니트/스웨터",
         "final_price": 22500,
         "score": 22.46,
-        "score_total": 6.71
+        "score_total": 7.91
       },
       "validation_failures": []
     },
@@ -1782,7 +1770,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.94,
+      "latency_ms": 9.64,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1803,7 +1791,7 @@
         "category": "상의 > 니트/스웨터",
         "final_price": 22500,
         "score": 22.46,
-        "score_total": 8.41
+        "score_total": 9.61
       },
       "validation_failures": []
     },
@@ -1827,7 +1815,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.31,
+      "latency_ms": 10.44,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1849,7 +1837,7 @@
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 29700,
         "score": 24.86,
-        "score_total": 6.81
+        "score_total": 9.21
       },
       "validation_failures": []
     },
@@ -1874,7 +1862,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.56,
+      "latency_ms": 111.83,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1895,7 +1883,7 @@
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 29700,
         "score": 24.86,
-        "score_total": 8.439
+        "score_total": 10.839
       },
       "validation_failures": []
     },
@@ -1919,7 +1907,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.43,
+      "latency_ms": 9.7,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1941,7 +1929,7 @@
         "category": "바지 > 숏 팬츠",
         "final_price": 19800,
         "score": 25.86,
-        "score_total": 5.36
+        "score_total": 8.96
       },
       "validation_failures": []
     },
@@ -1966,7 +1954,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.46,
+      "latency_ms": 9.82,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1987,7 +1975,7 @@
         "category": "바지 > 숏 팬츠",
         "final_price": 19800,
         "score": 25.86,
-        "score_total": 7.06
+        "score_total": 10.66
       },
       "validation_failures": []
     },
@@ -2011,14 +1999,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.95,
+      "latency_ms": 9.6,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -2034,7 +2021,7 @@
         "category": "아우터 > 카디건",
         "final_price": 39900,
         "score": 14.46,
-        "score_total": 4.216
+        "score_total": 6.616
       },
       "validation_failures": []
     },
@@ -2059,14 +2046,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.69,
+      "latency_ms": 9.37,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -2081,7 +2067,7 @@
         "category": "아우터 > 카디건",
         "final_price": 39900,
         "score": 14.46,
-        "score_total": 5.751
+        "score_total": 8.151
       },
       "validation_failures": []
     },
@@ -2105,14 +2091,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.39,
+      "latency_ms": 9.68,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 24.88,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -2128,7 +2113,7 @@
         "category": "소품 > 모자 > 캡/야구모자",
         "final_price": 44000,
         "score": 24.88,
-        "score_total": 4.013
+        "score_total": 7.613
       },
       "validation_failures": []
     },
@@ -2153,14 +2138,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.17,
+      "latency_ms": 9.54,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 24.84,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -2175,7 +2159,7 @@
         "category": "소품 > 모자 > 캡/야구모자",
         "final_price": 11600,
         "score": 24.84,
-        "score_total": 5.691
+        "score_total": 9.291
       },
       "validation_failures": []
     },
@@ -2199,7 +2183,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.94,
+      "latency_ms": 9.14,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2221,7 +2205,7 @@
         "category": "상의 > 후드 티셔츠",
         "final_price": 68400,
         "score": 22.48,
-        "score_total": 5.38
+        "score_total": 12.58
       },
       "validation_failures": []
     },
@@ -2246,7 +2230,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.63,
+      "latency_ms": 9.26,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2267,7 +2251,7 @@
         "category": "상의 > 후드 티셔츠",
         "final_price": 29900,
         "score": 22.46,
-        "score_total": 7.07
+        "score_total": 14.27
       },
       "validation_failures": []
     },
@@ -2291,7 +2275,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.59,
+      "latency_ms": 9.88,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2313,7 +2297,7 @@
         "category": "아우터 > 나일론/코치 재킷",
         "final_price": 44900,
         "score": 25.86,
-        "score_total": 5.51
+        "score_total": 9.11
       },
       "validation_failures": []
     },
@@ -2338,7 +2322,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.29,
+      "latency_ms": 9.69,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2359,7 +2343,7 @@
         "category": "아우터 > 나일론/코치 재킷",
         "final_price": 44900,
         "score": 25.86,
-        "score_total": 7.059
+        "score_total": 10.659
       },
       "validation_failures": []
     },
@@ -2383,14 +2367,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.3,
+      "latency_ms": 9.99,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -2406,7 +2389,7 @@
         "category": "가방 > 숄더백",
         "final_price": 49800,
         "score": 14.46,
-        "score_total": 3.66
+        "score_total": 6.06
       },
       "validation_failures": []
     },
@@ -2431,14 +2414,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.11,
+      "latency_ms": 8.48,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -2453,7 +2435,7 @@
         "category": "가방 > 숄더백",
         "final_price": 49800,
         "score": 14.46,
-        "score_total": 5.36
+        "score_total": 7.76
       },
       "validation_failures": []
     },
@@ -2477,14 +2459,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.08,
+      "latency_ms": 10.04,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.68,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -2500,7 +2481,7 @@
         "category": "스포츠/레저 > 상의 > 반소매 티셔츠",
         "final_price": 59000,
         "score": 23.68,
-        "score_total": 4.308
+        "score_total": 11.508
       },
       "validation_failures": []
     },
@@ -2525,14 +2506,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.18,
+      "latency_ms": 9.83,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.68,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -2547,7 +2527,7 @@
         "category": "스포츠/레저 > 상의 > 반소매 티셔츠",
         "final_price": 24000,
         "score": 23.68,
-        "score_total": 5.913
+        "score_total": 13.113
       },
       "validation_failures": []
     },
@@ -2571,14 +2551,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.89,
+      "latency_ms": 10.29,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 21.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -2594,7 +2573,7 @@
         "category": "신발 > 구두 > 더비 슈즈",
         "final_price": 31900,
         "score": 21.26,
-        "score_total": 4.449
+        "score_total": 10.449
       },
       "validation_failures": []
     },
@@ -2619,14 +2598,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.72,
+      "latency_ms": 9.42,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 21.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -2641,7 +2619,7 @@
         "category": "신발 > 구두 > 더비 슈즈",
         "final_price": 31900,
         "score": 21.26,
-        "score_total": 6.149
+        "score_total": 12.149
       },
       "validation_failures": []
     },
@@ -2665,14 +2643,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.9,
+      "latency_ms": 10.08,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 24.64,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -2688,7 +2665,7 @@
         "category": "상의 > 맨투맨/스웨트",
         "final_price": 59900,
         "score": 24.64,
-        "score_total": 4.84
+        "score_total": 8.44
       },
       "validation_failures": []
     },
@@ -2713,14 +2690,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.76,
+      "latency_ms": 9.37,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 24.64,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -2735,7 +2711,7 @@
         "category": "상의 > 맨투맨/스웨트",
         "final_price": 59900,
         "score": 24.64,
-        "score_total": 6.104
+        "score_total": 9.704
       },
       "validation_failures": []
     },
@@ -2759,7 +2735,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.52,
+      "latency_ms": 10.12,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2781,7 +2757,7 @@
         "category": "아우터 > 슈트/블레이저 재킷",
         "final_price": 79800,
         "score": 24.84,
-        "score_total": 5.241
+        "score_total": 8.841
       },
       "validation_failures": []
     },
@@ -2806,7 +2782,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.08,
+      "latency_ms": 9.74,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2827,7 +2803,7 @@
         "category": "아우터 > 슈트/블레이저 재킷",
         "final_price": 79800,
         "score": 24.84,
-        "score_total": 6.941
+        "score_total": 10.541
       },
       "validation_failures": []
     },
@@ -2851,14 +2827,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.39,
+      "latency_ms": 10.48,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 27.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "budget"
         ],
         "recommendation_count": 5
@@ -2873,7 +2848,7 @@
         "category": "아우터 > 블루종/MA-1",
         "final_price": 39900,
         "score": 27.26,
-        "score_total": 5.46
+        "score_total": 7.86
       },
       "validation_failures": []
     },
@@ -2898,15 +2873,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.3,
+      "latency_ms": 10.03,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 27.26,
         "low_confidence": false,
-        "missing_ontology_fields": [
-          "category"
-        ],
+        "missing_ontology_fields": [],
         "recommendation_count": 5
       },
       "exact_category_matches": 5,
@@ -2919,7 +2892,7 @@
         "category": "아우터 > 블루종/MA-1",
         "final_price": 39900,
         "score": 27.26,
-        "score_total": 7.16
+        "score_total": 9.56
       },
       "validation_failures": []
     },
@@ -2943,7 +2916,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.32,
+      "latency_ms": 8.71,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2965,7 +2938,7 @@
         "category": "가방 > 백팩",
         "final_price": 49900,
         "score": 13.26,
-        "score_total": 5.044
+        "score_total": 6.244
       },
       "validation_failures": []
     },
@@ -2990,7 +2963,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.3,
+      "latency_ms": 8.64,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3011,7 +2984,7 @@
         "category": "가방 > 백팩",
         "final_price": 49900,
         "score": 13.26,
-        "score_total": 6.744
+        "score_total": 7.944
       },
       "validation_failures": []
     },
@@ -3035,7 +3008,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.85,
+      "latency_ms": 9.29,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3057,7 +3030,7 @@
         "category": "아우터 > 트레이닝 재킷",
         "final_price": 56000,
         "score": 23.46,
-        "score_total": 5.153
+        "score_total": 9.953
       },
       "validation_failures": []
     },
@@ -3082,7 +3055,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.75,
+      "latency_ms": 9.48,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3103,7 +3076,7 @@
         "category": "아우터 > 트레이닝 재킷",
         "final_price": 56000,
         "score": 23.46,
-        "score_total": 6.853
+        "score_total": 11.653
       },
       "validation_failures": []
     },
@@ -3127,7 +3100,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.27,
+      "latency_ms": 10.28,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3149,7 +3122,7 @@
         "category": "아우터 > 레더/라이더스 재킷",
         "final_price": 119000,
         "score": 25.88,
-        "score_total": 5.356
+        "score_total": 8.956
       },
       "validation_failures": []
     },
@@ -3174,7 +3147,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.2,
+      "latency_ms": 11.91,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3195,7 +3168,7 @@
         "category": "아우터 > 레더/라이더스 재킷",
         "final_price": 69500,
         "score": 24.86,
-        "score_total": 6.943
+        "score_total": 10.543
       },
       "validation_failures": []
     },
@@ -3219,14 +3192,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.17,
+      "latency_ms": 9.89,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -3242,7 +3214,7 @@
         "category": "상의 > 민소매 티셔츠",
         "final_price": 39900,
         "score": 23.66,
-        "score_total": 4.005
+        "score_total": 11.205
       },
       "validation_failures": []
     },
@@ -3267,14 +3239,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.52,
+      "latency_ms": 369.57,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.68,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -3289,7 +3260,7 @@
         "category": "상의 > 민소매 티셔츠",
         "final_price": 15890,
         "score": 23.68,
-        "score_total": 5.28
+        "score_total": 12.48
       },
       "validation_failures": []
     },
@@ -3313,14 +3284,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.88,
+      "latency_ms": 9.89,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 21.24,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -3336,7 +3306,7 @@
         "category": "바지 > 기타 하의",
         "final_price": 24900,
         "score": 21.24,
-        "score_total": 3.93
+        "score_total": 9.93
       },
       "validation_failures": []
     },
@@ -3361,14 +3331,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.45,
+      "latency_ms": 129.49,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 21.24,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -3383,7 +3352,7 @@
         "category": "바지 > 기타 하의",
         "final_price": 24900,
         "score": 21.24,
-        "score_total": 5.63
+        "score_total": 11.63
       },
       "validation_failures": []
     },
@@ -3407,14 +3376,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.01,
+      "latency_ms": 9.38,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 24.86,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -3430,7 +3398,7 @@
         "category": "상의 > 피케/카라 티셔츠",
         "final_price": 34380,
         "score": 24.86,
-        "score_total": 3.893
+        "score_total": 9.893
       },
       "validation_failures": []
     },
@@ -3455,14 +3423,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.71,
+      "latency_ms": 13.5,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 24.86,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -3477,7 +3444,7 @@
         "category": "상의 > 피케/카라 티셔츠",
         "final_price": 34380,
         "score": 24.86,
-        "score_total": 5.587
+        "score_total": 11.587
       },
       "validation_failures": []
     },
@@ -3501,14 +3468,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.49,
+      "latency_ms": 9.15,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -3524,7 +3490,7 @@
         "category": "신발 > 스포츠화 > 러닝화",
         "final_price": 89000,
         "score": 14.46,
-        "score_total": 3.596
+        "score_total": 5.996
       },
       "validation_failures": []
     },
@@ -3549,14 +3515,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.31,
+      "latency_ms": 8.75,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -3571,7 +3536,7 @@
         "category": "신발 > 스포츠화 > 러닝화",
         "final_price": 89000,
         "score": 14.46,
-        "score_total": 5.296
+        "score_total": 7.696
       },
       "validation_failures": []
     },
@@ -3595,7 +3560,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.99,
+      "latency_ms": 8.43,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3617,7 +3582,7 @@
         "category": "소품 > 벨트",
         "final_price": 29800,
         "score": 13.28,
-        "score_total": 5.363
+        "score_total": 6.563
       },
       "validation_failures": []
     },
@@ -3642,7 +3607,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.92,
+      "latency_ms": 8.8,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3663,7 +3628,7 @@
         "category": "소품 > 벨트",
         "final_price": 13520,
         "score": 13.26,
-        "score_total": 6.893
+        "score_total": 8.093
       },
       "validation_failures": []
     },
@@ -3687,14 +3652,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.41,
+      "latency_ms": 10.09,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 21.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -3710,7 +3674,7 @@
         "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
         "final_price": 29900,
         "score": 21.26,
-        "score_total": 4.16
+        "score_total": 10.16
       },
       "validation_failures": []
     },
@@ -3735,14 +3699,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.34,
+      "latency_ms": 10.49,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 21.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -3757,7 +3720,7 @@
         "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
         "final_price": 29900,
         "score": 21.26,
-        "score_total": 5.86
+        "score_total": 11.86
       },
       "validation_failures": []
     },
@@ -3781,14 +3744,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.13,
+      "latency_ms": 8.31,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 13.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -3804,7 +3766,7 @@
         "category": "소품 > 주얼리 > 팔찌",
         "final_price": 18600,
         "score": 13.26,
-        "score_total": 4.327
+        "score_total": 6.727
       },
       "validation_failures": []
     },
@@ -3829,14 +3791,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.07,
+      "latency_ms": 8.98,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 13.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -3851,7 +3812,7 @@
         "category": "소품 > 주얼리 > 팔찌",
         "final_price": 18600,
         "score": 13.26,
-        "score_total": 6.027
+        "score_total": 8.427
       },
       "validation_failures": []
     },
@@ -3875,14 +3836,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.95,
+      "latency_ms": 8.34,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 13.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -3898,7 +3858,7 @@
         "category": "신발 > 구두 > 로퍼",
         "final_price": 104390,
         "score": 13.26,
-        "score_total": 3.611
+        "score_total": 6.011
       },
       "validation_failures": []
     },
@@ -3923,14 +3883,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.75,
+      "latency_ms": 8.26,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 13.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -3945,7 +3904,7 @@
         "category": "신발 > 구두 > 로퍼",
         "final_price": 104390,
         "score": 13.26,
-        "score_total": 5.294
+        "score_total": 7.694
       },
       "validation_failures": []
     },
@@ -3969,14 +3928,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.15,
+      "latency_ms": 9,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 26.06,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -3992,7 +3950,7 @@
         "category": "가방 > 메신저/크로스 백",
         "final_price": 39200,
         "score": 26.06,
-        "score_total": 4.16
+        "score_total": 7.76
       },
       "validation_failures": []
     },
@@ -4017,14 +3975,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.1,
+      "latency_ms": 8.6,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 26.06,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -4039,7 +3996,7 @@
         "category": "가방 > 메신저/크로스 백",
         "final_price": 39200,
         "score": 26.06,
-        "score_total": 5.86
+        "score_total": 9.46
       },
       "validation_failures": []
     },
@@ -4063,14 +4020,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.26,
+      "latency_ms": 9.01,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -4086,7 +4042,7 @@
         "category": "신발 > 스니커즈 > 캔버스/단화",
         "final_price": 59900,
         "score": 22.46,
-        "score_total": 4.41
+        "score_total": 8.01
       },
       "validation_failures": []
     },
@@ -4111,14 +4067,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.39,
+      "latency_ms": 9.11,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -4133,7 +4088,7 @@
         "category": "신발 > 스니커즈 > 캔버스/단화",
         "final_price": 59900,
         "score": 22.46,
-        "score_total": 6.028
+        "score_total": 9.628
       },
       "validation_failures": []
     },
@@ -4157,14 +4112,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.29,
+      "latency_ms": 9.19,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 13.28,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -4180,7 +4134,7 @@
         "category": "소품 > 양말/레그웨어 > 양말",
         "final_price": 15900,
         "score": 13.28,
-        "score_total": 3.863
+        "score_total": 6.263
       },
       "validation_failures": []
     },
@@ -4205,14 +4159,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.19,
+      "latency_ms": 10.46,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 13.28,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -4227,7 +4180,7 @@
         "category": "소품 > 양말/레그웨어 > 양말",
         "final_price": 15900,
         "score": 13.28,
-        "score_total": 5.306
+        "score_total": 7.706
       },
       "validation_failures": []
     },
@@ -4251,14 +4204,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.05,
+      "latency_ms": 9,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.28,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -4274,7 +4226,7 @@
         "category": "속옷/홈웨어 > 남성 속옷",
         "final_price": 30900,
         "score": 22.28,
-        "score_total": 4.34
+        "score_total": 10.34
       },
       "validation_failures": []
     },
@@ -4299,14 +4251,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.87,
+      "latency_ms": 8.91,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.28,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -4321,7 +4272,7 @@
         "category": "속옷/홈웨어 > 남성 속옷",
         "final_price": 30900,
         "score": 22.28,
-        "score_total": 5.978
+        "score_total": 11.978
       },
       "validation_failures": []
     },
@@ -4345,7 +4296,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.9,
+      "latency_ms": 8.86,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4367,7 +4318,7 @@
         "category": "스포츠/레저 > 가방 > 백팩",
         "final_price": 71200,
         "score": 13.28,
-        "score_total": 4.625
+        "score_total": 5.825
       },
       "validation_failures": []
     },
@@ -4392,7 +4343,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.36,
+      "latency_ms": 8.7,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4413,7 +4364,7 @@
         "category": "스포츠/레저 > 가방 > 백팩",
         "final_price": 71200,
         "score": 13.28,
-        "score_total": 6.325
+        "score_total": 7.525
       },
       "validation_failures": []
     },
@@ -4437,7 +4388,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.82,
+      "latency_ms": 8.56,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4459,7 +4410,7 @@
         "category": "아우터 > 트러커 재킷",
         "final_price": 54900,
         "score": 23.44,
-        "score_total": 5.113
+        "score_total": 9.913
       },
       "validation_failures": []
     },
@@ -4484,7 +4435,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.66,
+      "latency_ms": 8.42,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4505,7 +4456,7 @@
         "category": "아우터 > 트러커 재킷",
         "final_price": 54900,
         "score": 23.44,
-        "score_total": 6.813
+        "score_total": 11.613
       },
       "validation_failures": []
     },
@@ -4529,14 +4480,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.92,
+      "latency_ms": 9.16,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -4552,7 +4502,7 @@
         "category": "소품 > 선글라스/안경테 > 선글라스",
         "final_price": 25920,
         "score": 14.48,
-        "score_total": 3.747
+        "score_total": 6.147
       },
       "validation_failures": []
     },
@@ -4577,14 +4527,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.91,
+      "latency_ms": 8.54,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -4599,7 +4548,7 @@
         "category": "소품 > 선글라스/안경테 > 선글라스",
         "final_price": 25920,
         "score": 14.48,
-        "score_total": 5.447
+        "score_total": 7.847
       },
       "validation_failures": []
     },
@@ -4623,14 +4572,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.98,
+      "latency_ms": 9.09,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -4646,7 +4594,7 @@
         "category": "신발 > 샌들/슬리퍼 > 슬라이드",
         "final_price": 18910,
         "score": 14.46,
-        "score_total": 3.443
+        "score_total": 5.843
       },
       "validation_failures": []
     },
@@ -4671,14 +4619,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.84,
+      "latency_ms": 8.81,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -4693,7 +4640,7 @@
         "category": "신발 > 샌들/슬리퍼 > 슬라이드",
         "final_price": 18910,
         "score": 14.46,
-        "score_total": 5.143
+        "score_total": 7.543
       },
       "validation_failures": []
     },
@@ -4717,14 +4664,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.38,
+      "latency_ms": 9.96,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 26.08,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -4740,7 +4686,7 @@
         "category": "신발 > 샌들/슬리퍼 > 스포츠/캐주얼 샌들",
         "final_price": 169000,
         "score": 26.08,
-        "score_total": 3.325
+        "score_total": 8.125
       },
       "validation_failures": []
     },
@@ -4765,14 +4711,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.69,
+      "latency_ms": 9.33,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 26.06,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -4787,7 +4732,7 @@
         "category": "신발 > 샌들/슬리퍼 > 스포츠/캐주얼 샌들",
         "final_price": 89900,
         "score": 26.06,
-        "score_total": 4.673
+        "score_total": 9.473
       },
       "validation_failures": []
     },
@@ -4811,7 +4756,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.39,
+      "latency_ms": 8.85,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4833,7 +4778,7 @@
         "category": "스포츠/레저 > 하의 > 숏팬츠",
         "final_price": 23900,
         "score": 25.88,
-        "score_total": 4.93
+        "score_total": 8.53
       },
       "validation_failures": []
     },
@@ -4858,7 +4803,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.42,
+      "latency_ms": 8.98,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4879,7 +4824,7 @@
         "category": "스포츠/레저 > 하의 > 숏팬츠",
         "final_price": 23900,
         "score": 25.88,
-        "score_total": 6.63
+        "score_total": 10.23
       },
       "validation_failures": []
     },
@@ -4903,14 +4848,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.21,
+      "latency_ms": 8.92,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -4926,7 +4870,7 @@
         "category": "신발 > 스니커즈 > 라이프스타일화",
         "final_price": 119900,
         "score": 14.48,
-        "score_total": 3.585
+        "score_total": 7.185
       },
       "validation_failures": []
     },
@@ -4951,14 +4895,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.1,
+      "latency_ms": 8.91,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -4973,7 +4916,7 @@
         "category": "신발 > 스니커즈 > 라이프스타일화",
         "final_price": 56910,
         "score": 14.48,
-        "score_total": 5.163
+        "score_total": 8.763
       },
       "validation_failures": []
     },
@@ -4997,14 +4940,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.53,
+      "latency_ms": 8.09,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -5020,7 +4962,7 @@
         "category": "가방 > 토트백",
         "final_price": 59900,
         "score": 14.46,
-        "score_total": 3.802
+        "score_total": 6.202
       },
       "validation_failures": []
     },
@@ -5045,14 +4987,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.72,
+      "latency_ms": 8.68,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -5067,7 +5008,7 @@
         "category": "가방 > 토트백",
         "final_price": 59900,
         "score": 14.46,
-        "score_total": 5.502
+        "score_total": 7.902
       },
       "validation_failures": []
     },
@@ -5091,7 +5032,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.93,
+      "latency_ms": 9.38,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5113,7 +5054,7 @@
         "category": "스포츠/레저 > 아우터 > 나일론/코치 재킷",
         "final_price": 40420,
         "score": 24.88,
-        "score_total": 4.747
+        "score_total": 8.347
       },
       "validation_failures": []
     },
@@ -5138,7 +5079,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.66,
+      "latency_ms": 9.93,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5159,7 +5100,7 @@
         "category": "스포츠/레저 > 아우터 > 나일론/코치 재킷",
         "final_price": 40420,
         "score": 24.88,
-        "score_total": 6.447
+        "score_total": 10.047
       },
       "validation_failures": []
     },
@@ -5183,14 +5124,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.41,
+      "latency_ms": 7.89,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -5206,7 +5146,7 @@
         "category": "가방 > 캐리어",
         "final_price": 139000,
         "score": 14.46,
-        "score_total": 3.632
+        "score_total": 6.032
       },
       "validation_failures": []
     },
@@ -5231,14 +5171,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.31,
+      "latency_ms": 8.04,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -5253,7 +5192,7 @@
         "category": "가방 > 캐리어",
         "final_price": 139000,
         "score": 14.46,
-        "score_total": 5.251
+        "score_total": 7.651
       },
       "validation_failures": []
     },
@@ -5277,14 +5216,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.02,
+      "latency_ms": 8.92,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -5300,7 +5238,7 @@
         "category": "소품 > 주얼리 > 목걸이/펜던트",
         "final_price": 19900,
         "score": 23.66,
-        "score_total": 3.454
+        "score_total": 7.054
       },
       "validation_failures": []
     },
@@ -5325,14 +5263,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.91,
+      "latency_ms": 9.02,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -5347,7 +5284,7 @@
         "category": "소품 > 주얼리 > 목걸이/펜던트",
         "final_price": 19900,
         "score": 23.66,
-        "score_total": 5.154
+        "score_total": 8.754
       },
       "validation_failures": []
     },
@@ -5371,14 +5308,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.18,
+      "latency_ms": 8.94,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -5394,7 +5330,7 @@
         "category": "신발 > 샌들/슬리퍼 > 쪼리/플립플랍",
         "final_price": 69000,
         "score": 22.46,
-        "score_total": 4.064
+        "score_total": 7.664
       },
       "validation_failures": []
     },
@@ -5419,14 +5355,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.12,
+      "latency_ms": 8.94,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -5441,7 +5376,7 @@
         "category": "신발 > 샌들/슬리퍼 > 쪼리/플립플랍",
         "final_price": 69000,
         "score": 22.46,
-        "score_total": 5.764
+        "score_total": 9.364
       },
       "validation_failures": []
     },
@@ -5465,14 +5400,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.58,
+      "latency_ms": 8.54,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -5488,7 +5422,7 @@
         "category": "아우터 > 기타 아우터",
         "final_price": 104300,
         "score": 22.48,
-        "score_total": 3.835
+        "score_total": 9.835
       },
       "validation_failures": []
     },
@@ -5513,14 +5447,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.67,
+      "latency_ms": 8.3,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -5535,7 +5468,7 @@
         "category": "아우터 > 기타 아우터",
         "final_price": 104300,
         "score": 22.48,
-        "score_total": 5.529
+        "score_total": 11.529
       },
       "validation_failures": []
     },
@@ -5559,14 +5492,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.65,
+      "latency_ms": 8.7,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -5582,7 +5514,7 @@
         "category": "속옷/홈웨어 > 홈웨어",
         "final_price": 36900,
         "score": 14.48,
-        "score_total": 3.783
+        "score_total": 6.183
       },
       "validation_failures": []
     },
@@ -5607,14 +5539,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.85,
+      "latency_ms": 8.68,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -5629,7 +5560,7 @@
         "category": "속옷/홈웨어 > 홈웨어",
         "final_price": 36900,
         "score": 14.48,
-        "score_total": 5.125
+        "score_total": 7.525
       },
       "validation_failures": []
     },
@@ -5653,14 +5584,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.23,
+      "latency_ms": 9.48,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 24.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -5676,7 +5606,7 @@
         "category": "속옷/홈웨어 > 여성 속옷 상의",
         "final_price": 39900,
         "score": 24.66,
-        "score_total": 4.128
+        "score_total": 11.328
       },
       "validation_failures": []
     },
@@ -5701,14 +5631,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.17,
+      "latency_ms": 8.91,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 24.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -5723,7 +5652,7 @@
         "category": "속옷/홈웨어 > 여성 속옷 상의",
         "final_price": 39900,
         "score": 24.66,
-        "score_total": 5.461
+        "score_total": 12.661
       },
       "validation_failures": []
     },
@@ -5747,7 +5676,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.16,
+      "latency_ms": 8.91,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5769,7 +5698,7 @@
         "category": "스포츠/레저 > 아우터 > 트레이닝 재킷",
         "final_price": 86000,
         "score": 23,
-        "score_total": 4.226
+        "score_total": 9.026
       },
       "validation_failures": []
     },
@@ -5794,7 +5723,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.41,
+      "latency_ms": 8.72,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -5815,7 +5744,7 @@
         "category": "스포츠/레저 > 아우터 > 트레이닝 재킷",
         "final_price": 86000,
         "score": 23,
-        "score_total": 5.888
+        "score_total": 10.688
       },
       "validation_failures": []
     },
@@ -5839,14 +5768,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.47,
+      "latency_ms": 9.36,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -5862,7 +5790,7 @@
         "category": "신발 > 샌들/슬리퍼 > 스트랩 샌들",
         "final_price": 85800,
         "score": 22.46,
-        "score_total": 3.634
+        "score_total": 9.634
       },
       "validation_failures": []
     },
@@ -5887,14 +5815,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.59,
+      "latency_ms": 8.95,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -5909,7 +5836,7 @@
         "category": "신발 > 샌들/슬리퍼 > 스트랩 샌들",
         "final_price": 85800,
         "score": 22.46,
-        "score_total": 4.967
+        "score_total": 10.967
       },
       "validation_failures": []
     },
@@ -5933,7 +5860,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.81,
+      "latency_ms": 13.22,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5955,7 +5882,7 @@
         "category": "스포츠/레저 > 아우터 > 기타 점퍼/재킷",
         "final_price": 132000,
         "score": 23.2,
-        "score_total": 4.448
+        "score_total": 8.048
       },
       "validation_failures": []
     },
@@ -5980,7 +5907,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.74,
+      "latency_ms": 9.69,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -6001,7 +5928,7 @@
         "category": "스포츠/레저 > 아우터 > 기타 점퍼/재킷",
         "final_price": 132000,
         "score": 23.2,
-        "score_total": 6.148
+        "score_total": 9.748
       },
       "validation_failures": []
     },
@@ -6025,14 +5952,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.84,
+      "latency_ms": 8.95,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -6048,7 +5974,7 @@
         "category": "신발 > 부츠/워커 > 미들/하프 부츠",
         "final_price": 242100,
         "score": 23.66,
-        "score_total": 3.35
+        "score_total": 8.15
       },
       "validation_failures": []
     },
@@ -6073,14 +5999,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.78,
+      "latency_ms": 9.17,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -6095,7 +6020,7 @@
         "category": "신발 > 부츠/워커 > 미들/하프 부츠",
         "final_price": 242100,
         "score": 23.66,
-        "score_total": 4.64
+        "score_total": 9.44
       },
       "validation_failures": []
     },
@@ -6119,14 +6044,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.55,
+      "latency_ms": 9,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.42,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -6142,7 +6066,7 @@
         "category": "신발 > 샌들/슬리퍼 > 클로그",
         "final_price": 26910,
         "score": 14.42,
-        "score_total": 3.468
+        "score_total": 5.868
       },
       "validation_failures": []
     },
@@ -6167,14 +6091,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.36,
+      "latency_ms": 8.66,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.42,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -6189,7 +6112,7 @@
         "category": "신발 > 샌들/슬리퍼 > 클로그",
         "final_price": 26910,
         "score": 14.42,
-        "score_total": 5.168
+        "score_total": 7.568
       },
       "validation_failures": []
     },
@@ -6213,14 +6136,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.35,
+      "latency_ms": 8.62,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -6236,7 +6158,7 @@
         "category": "신발 > 구두 > 메리제인 슈즈",
         "final_price": 59080,
         "score": 22.46,
-        "score_total": 3.442
+        "score_total": 9.442
       },
       "validation_failures": []
     },
@@ -6261,14 +6183,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.36,
+      "latency_ms": 8.6,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 22.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 5
@@ -6283,7 +6204,7 @@
         "category": "신발 > 구두 > 메리제인 슈즈",
         "final_price": 59080,
         "score": 22.46,
-        "score_total": 5.142
+        "score_total": 11.142
       },
       "validation_failures": []
     },
@@ -6307,14 +6228,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.11,
+      "latency_ms": 8.23,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 13.96,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -6330,7 +6250,7 @@
         "category": "원피스/스커트 > 롱스커트",
         "final_price": 39130,
         "score": 13.96,
-        "score_total": 3.498
+        "score_total": 7.098
       },
       "validation_failures": []
     },
@@ -6355,14 +6275,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.03,
+      "latency_ms": 8.4,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 13.96,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -6377,7 +6296,7 @@
         "category": "원피스/스커트 > 롱스커트",
         "final_price": 39130,
         "score": 13.96,
-        "score_total": 5.198
+        "score_total": 8.798
       },
       "validation_failures": []
     },
@@ -6401,14 +6320,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.32,
+      "latency_ms": 9.05,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 21.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -6424,7 +6342,7 @@
         "category": "신발 > 부츠/워커 > 레인 부츠",
         "final_price": 29000,
         "score": 21.26,
-        "score_total": 4.287
+        "score_total": 10.287
       },
       "validation_failures": []
     },
@@ -6449,14 +6367,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.82,
+      "latency_ms": 8.95,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 21.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -6471,7 +6388,7 @@
         "category": "신발 > 부츠/워커 > 레인 부츠",
         "final_price": 29000,
         "score": 21.26,
-        "score_total": 5.987
+        "score_total": 11.987
       },
       "validation_failures": []
     },
@@ -6495,14 +6412,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.87,
+      "latency_ms": 8.63,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 24.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -6518,7 +6434,7 @@
         "category": "속옷/홈웨어 > 여성 속옷 세트",
         "final_price": 35000,
         "score": 24.66,
-        "score_total": 4.229
+        "score_total": 11.429
       },
       "validation_failures": []
     },
@@ -6543,14 +6459,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.8,
+      "latency_ms": 10.95,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
         "top_score": 24.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 3
@@ -6565,7 +6480,7 @@
         "category": "속옷/홈웨어 > 여성 속옷 세트",
         "final_price": 35000,
         "score": 24.66,
-        "score_total": 5.684
+        "score_total": 12.884
       },
       "validation_failures": []
     },
@@ -6589,14 +6504,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.82,
+      "latency_ms": 8.99,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 29.64,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -6612,7 +6526,7 @@
         "category": "스포츠/레저 > 상의 > 나시/민소매 티셔츠",
         "final_price": 9900,
         "score": 29.64,
-        "score_total": 3.962
+        "score_total": 12.362
       },
       "validation_failures": []
     },
@@ -6637,14 +6551,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.63,
+      "latency_ms": 8.98,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 29.64,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -6659,7 +6572,7 @@
         "category": "스포츠/레저 > 상의 > 나시/민소매 티셔츠",
         "final_price": 9900,
         "score": 29.64,
-        "score_total": 5.662
+        "score_total": 14.062
       },
       "validation_failures": []
     },
@@ -6683,14 +6596,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.84,
+      "latency_ms": 8.13,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 13.24,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -6706,7 +6618,7 @@
         "category": "뷰티 > 프레그런스 > 향수",
         "final_price": 40900,
         "score": 13.24,
-        "score_total": 3.862
+        "score_total": 6.262
       },
       "validation_failures": []
     },
@@ -6731,14 +6643,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.73,
+      "latency_ms": 8.02,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 13.24,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -6753,7 +6664,7 @@
         "category": "뷰티 > 프레그런스 > 향수",
         "final_price": 40900,
         "score": 13.24,
-        "score_total": 5.562
+        "score_total": 7.962
       },
       "validation_failures": []
     },
@@ -6777,14 +6688,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.79,
+      "latency_ms": 8.77,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 23.68,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -6800,7 +6710,7 @@
         "category": "스포츠/레저 > 상의 > 긴소매 티셔츠",
         "final_price": 25900,
         "score": 23.68,
-        "score_total": 3.945
+        "score_total": 11.145
       },
       "validation_failures": []
     },
@@ -6825,14 +6735,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.56,
+      "latency_ms": 8.62,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
         "top_score": 23.68,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 3
@@ -6847,7 +6756,7 @@
         "category": "스포츠/레저 > 상의 > 긴소매 티셔츠",
         "final_price": 25900,
         "score": 23.68,
-        "score_total": 5.645
+        "score_total": 12.845
       },
       "validation_failures": []
     },
@@ -6871,14 +6780,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.77,
+      "latency_ms": 12.59,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 14.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -6894,7 +6802,7 @@
         "category": "소품 > 액세서리 > 넥타이",
         "final_price": 6900,
         "score": 14.48,
-        "score_total": 4.153
+        "score_total": 6.553
       },
       "validation_failures": []
     },
@@ -6919,14 +6827,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.64,
+      "latency_ms": 8.04,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 14.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -6941,7 +6848,7 @@
         "category": "소품 > 액세서리 > 넥타이",
         "final_price": 6900,
         "score": 14.48,
-        "score_total": 5.853
+        "score_total": 8.253
       },
       "validation_failures": []
     },
@@ -6965,14 +6872,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.02,
+      "latency_ms": 8.44,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 13.28,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -6988,7 +6894,7 @@
         "category": "신발 > 부츠/워커 > 워커",
         "final_price": 250990,
         "score": 13.28,
-        "score_total": 3.336
+        "score_total": 5.736
       },
       "validation_failures": []
     },
@@ -7013,14 +6919,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.85,
+      "latency_ms": 8.95,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 13.28,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -7035,7 +6940,7 @@
         "category": "신발 > 부츠/워커 > 워커",
         "final_price": 250990,
         "score": 13.28,
-        "score_total": 4.752
+        "score_total": 7.152
       },
       "validation_failures": []
     },
@@ -7059,14 +6964,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.8,
+      "latency_ms": 7.98,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
         "top_score": 21.54,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -7082,7 +6986,7 @@
         "category": "가방 > 지갑/머니클립",
         "final_price": 251990,
         "score": 21.54,
-        "score_total": 2.191
+        "score_total": 5.791
       },
       "validation_failures": []
     },
@@ -7107,14 +7011,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.71,
+      "latency_ms": 8.43,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 21.54,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -7129,7 +7032,7 @@
         "category": "가방 > 지갑/머니클립",
         "final_price": 251990,
         "score": 21.54,
-        "score_total": 3.522
+        "score_total": 7.122
       },
       "validation_failures": []
     },
@@ -7153,14 +7056,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.37,
+      "latency_ms": 8.33,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 13.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -7176,7 +7078,7 @@
         "category": "뷰티 > 스킨케어 > 크림/아이크림 > 크림",
         "final_price": 18900,
         "score": 13.26,
-        "score_total": 3.855
+        "score_total": 6.255
       },
       "validation_failures": []
     },
@@ -7201,14 +7103,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.55,
+      "latency_ms": 8.36,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 13.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -7223,7 +7124,7 @@
         "category": "뷰티 > 스킨케어 > 크림/아이크림 > 크림",
         "final_price": 18900,
         "score": 13.26,
-        "score_total": 5.404
+        "score_total": 7.804
       },
       "validation_failures": []
     },
@@ -7247,14 +7148,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.17,
+      "latency_ms": 8.16,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 13.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -7270,7 +7170,7 @@
         "category": "소품 > 선글라스/안경테 > 안경",
         "final_price": 23310,
         "score": 13.26,
-        "score_total": 3.543
+        "score_total": 5.943
       },
       "validation_failures": []
     },
@@ -7295,14 +7195,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.23,
+      "latency_ms": 8.25,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 13.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -7317,7 +7216,7 @@
         "category": "소품 > 선글라스/안경테 > 안경",
         "final_price": 23310,
         "score": 13.26,
-        "score_total": 5.243
+        "score_total": 7.643
       },
       "validation_failures": []
     },
@@ -7341,14 +7240,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.97,
+      "latency_ms": 8.23,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 21.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -7364,7 +7262,7 @@
         "category": "신발 > 구두 > 플랫 슈즈",
         "final_price": 49900,
         "score": 21.26,
-        "score_total": 3.703
+        "score_total": 9.703
       },
       "validation_failures": []
     },
@@ -7389,14 +7287,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.94,
+      "latency_ms": 8.19,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
         "top_score": 21.26,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 3
@@ -7411,7 +7308,7 @@
         "category": "신발 > 구두 > 플랫 슈즈",
         "final_price": 49900,
         "score": 21.26,
-        "score_total": 5.403
+        "score_total": 11.403
       },
       "validation_failures": []
     },
@@ -7435,14 +7332,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.66,
+      "latency_ms": 8.33,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 23.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -7458,7 +7354,7 @@
         "category": "아우터 > 플리스/뽀글이",
         "final_price": 41900,
         "score": 23.66,
-        "score_total": 3.995
+        "score_total": 7.595
       },
       "validation_failures": []
     },
@@ -7483,14 +7379,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.89,
+      "latency_ms": 8.37,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 23.66,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -7505,7 +7400,7 @@
         "category": "아우터 > 플리스/뽀글이",
         "final_price": 19900,
         "score": 23.66,
-        "score_total": 5.61
+        "score_total": 9.21
       },
       "validation_failures": []
     },
@@ -7529,7 +7424,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.44,
+      "latency_ms": 8.97,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7551,7 +7446,7 @@
         "category": "스포츠/레저 > 하의 > 트레이닝 팬츠",
         "final_price": 58000,
         "score": 22.48,
-        "score_total": 4.815
+        "score_total": 9.615
       },
       "validation_failures": []
     },
@@ -7576,7 +7471,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.33,
+      "latency_ms": 8.4,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
@@ -7597,7 +7492,7 @@
         "category": "스포츠/레저 > 하의 > 트레이닝 팬츠",
         "final_price": 58000,
         "score": 22.48,
-        "score_total": 6.15
+        "score_total": 10.95
       },
       "validation_failures": []
     },
@@ -7621,14 +7516,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.21,
+      "latency_ms": 7.66,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 14.48,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -7644,7 +7538,7 @@
         "category": "가방 > 에코백",
         "final_price": 89000,
         "score": 14.48,
-        "score_total": 3.354
+        "score_total": 5.754
       },
       "validation_failures": []
     },
@@ -7669,14 +7563,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.2,
+      "latency_ms": 7.36,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
         "top_score": 14.46,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 3
@@ -7691,7 +7584,7 @@
         "category": "가방 > 에코백",
         "final_price": 32000,
         "score": 14.46,
-        "score_total": 4.9
+        "score_total": 7.3
       },
       "validation_failures": []
     },
@@ -7715,14 +7608,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.7,
+      "latency_ms": 8.06,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 13.96,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -7738,7 +7630,7 @@
         "category": "원피스/스커트 > 미니스커트",
         "final_price": 32130,
         "score": 13.96,
-        "score_total": 3.048
+        "score_total": 6.648
       },
       "validation_failures": []
     },
@@ -7763,14 +7655,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.58,
+      "latency_ms": 7.99,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
         "top_score": 13.96,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 3
@@ -7785,7 +7676,7 @@
         "category": "원피스/스커트 > 미니스커트",
         "final_price": 32130,
         "score": 13.96,
-        "score_total": 4.748
+        "score_total": 8.348
       },
       "validation_failures": []
     },
@@ -7809,14 +7700,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.37,
+      "latency_ms": 7.75,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 17.88,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -7832,7 +7722,7 @@
         "category": "뷰티 > 선케어 > 선크림",
         "final_price": 26560,
         "score": 17.88,
-        "score_total": 4.066
+        "score_total": 7.666
       },
       "validation_failures": []
     },
@@ -7857,14 +7747,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.31,
+      "latency_ms": 8.21,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
         "top_score": 17.88,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 3
@@ -7879,7 +7768,7 @@
         "category": "뷰티 > 선케어 > 선크림",
         "final_price": 26560,
         "score": 17.88,
-        "score_total": 5.41
+        "score_total": 9.01
       },
       "validation_failures": []
     },
@@ -7903,14 +7792,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.44,
+      "latency_ms": 8.31,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 24.64,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -7926,7 +7814,7 @@
         "category": "속옷/홈웨어 > 여성 속옷 하의",
         "final_price": 35100,
         "score": 24.64,
-        "score_total": 3.515
+        "score_total": 10.715
       },
       "validation_failures": []
     },
@@ -7951,14 +7839,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.09,
+      "latency_ms": 8.86,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 24.16,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -7973,7 +7860,7 @@
         "category": "속옷/홈웨어 > 여성 속옷 하의",
         "final_price": 18900,
         "score": 24.16,
-        "score_total": 4.937
+        "score_total": 12.137
       },
       "validation_failures": []
     },
@@ -7997,7 +7884,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.14,
+      "latency_ms": 8.39,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -8019,7 +7906,7 @@
         "category": "스포츠/레저 > 하의 > 일자 팬츠",
         "final_price": 135090,
         "score": 20.8,
-        "score_total": 3.25
+        "score_total": 8.05
       },
       "validation_failures": []
     },
@@ -8044,7 +7931,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4.1,
+      "latency_ms": 8.5,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -8065,7 +7952,7 @@
         "category": "스포츠/레저 > 하의 > 일자 팬츠",
         "final_price": 135090,
         "score": 20.8,
-        "score_total": 4.812
+        "score_total": 9.612
       },
       "validation_failures": []
     },
@@ -8089,14 +7976,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.98,
+      "latency_ms": 8.26,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 23.18,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -8112,7 +7998,7 @@
         "category": "키즈 > 상의 > 반소매 티셔츠",
         "final_price": 14930,
         "score": 23.18,
-        "score_total": 3.269
+        "score_total": 10.469
       },
       "validation_failures": []
     },
@@ -8137,14 +8023,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 4,
+      "latency_ms": 8.5,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 23.18,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -8159,7 +8044,7 @@
         "category": "키즈 > 상의 > 반소매 티셔츠",
         "final_price": 14930,
         "score": 23.18,
-        "score_total": 4.969
+        "score_total": 12.169
       },
       "validation_failures": []
     },
@@ -8183,14 +8068,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.71,
+      "latency_ms": 8.5,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 13.98,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -8206,7 +8090,7 @@
         "category": "스포츠/레저 > 상의 > 유니폼",
         "final_price": 169000,
         "score": 13.98,
-        "score_total": 2.77
+        "score_total": 5.17
       },
       "validation_failures": []
     },
@@ -8231,14 +8115,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.86,
+      "latency_ms": 8.33,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
         "top_score": 13.98,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 4
@@ -8253,7 +8136,7 @@
         "category": "스포츠/레저 > 상의 > 유니폼",
         "final_price": 169000,
         "score": 13.98,
-        "score_total": 4.104
+        "score_total": 6.504
       },
       "validation_failures": []
     },
@@ -8277,7 +8160,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.77,
+      "latency_ms": 8.36,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
@@ -8299,7 +8182,7 @@
         "category": "아우터 > 사파리/헌팅 재킷",
         "final_price": 78900,
         "score": 25.88,
-        "score_total": 4.862
+        "score_total": 8.462
       },
       "validation_failures": []
     },
@@ -8324,7 +8207,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.7,
+      "latency_ms": 8.25,
       "recommendation_count": 2,
       "confidence": {
         "level": "high",
@@ -8345,7 +8228,7 @@
         "category": "아우터 > 사파리/헌팅 재킷",
         "final_price": 78900,
         "score": 25.88,
-        "score_total": 6.562
+        "score_total": 10.162
       },
       "validation_failures": []
     },
@@ -8369,14 +8252,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.29,
+      "latency_ms": 7.95,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
         "top_score": 13.96,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color",
           "budget"
         ],
@@ -8392,7 +8274,7 @@
         "category": "신발 > 스포츠화 > 등산화",
         "final_price": 184000,
         "score": 13.96,
-        "score_total": 3.157
+        "score_total": 5.557
       },
       "validation_failures": []
     },
@@ -8417,14 +8299,13 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 3.22,
+      "latency_ms": 7.76,
       "recommendation_count": 2,
       "confidence": {
         "level": "high",
         "top_score": 13.98,
         "low_confidence": false,
         "missing_ontology_fields": [
-          "category",
           "color"
         ],
         "recommendation_count": 2
@@ -8439,7 +8320,7 @@
         "category": "신발 > 스포츠화 > 등산화",
         "final_price": 79000,
         "score": 13.98,
-        "score_total": 4.448
+        "score_total": 6.848
       },
       "validation_failures": []
     }

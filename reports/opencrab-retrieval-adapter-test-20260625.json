@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "product_id": "3783092",
+      "name_ko": "[크롭선택] ASI 포시즌 에센셜 후드 집업_피그먼트 차콜",
+      "score": 20.66,
+      "source_url": "https://www.musinsa.com/products/3783092"
+    },
+    {
+      "product_id": "4567792",
+      "name_ko": "VLAD 컷오프 아플리케 후드 집업_차콜",
+      "score": 20.66,
+      "source_url": "https://www.musinsa.com/products/4567792"
+    }
+  ],
+  "retrieval": {
+    "mode": "hybrid",
+    "candidate_source": [
+      "opencrab_candidates"
+    ],
+    "local_index_used": true,
+    "opencrab_candidates_used": true,
+    "candidate_count": 3,
+    "matched_count": 2,
+    "cache_hit": true,
+    "lexicon": {
+      "brands": 1416,
+      "categories": 436,
+      "terms": 549
+    },
+    "latency_ms": {
+      "total": 17.917,
+      "candidate_retrieval": 16.422,
+      "rerank": 1.495
+    },
+    "opencrab_adapter": {
+      "source": "opencrab_http",
+      "skipped": false,
+      "cache_hit": false,
+      "product_id_count": 3,
+      "raw_count": 3,
+      "latency_ms": 16.422
+    }
+  },
+  "server_output": [
+    "MUSINSA Personal Shopper Plugin listening on :8796 (2050 products loaded)"
+  ]
+}

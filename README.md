@@ -29,7 +29,7 @@
 | Owner dashboard Convex/Vercel pack | OpenCrab private pack `6bc1f3e9-9c69-4ad6-96f0-0c8b40b3f930` |
 | Convex DB/backend | Production deployment `veracious-albatross-267` |
 | Vercel Owner Dashboard | **https://owner-dashboard-snowy.vercel.app** |
-| 테스트 | **19개 통과** |
+| 테스트 | **24개 통과** |
 | P0 hardening | API safe errors/body limit, analytics consent metadata, Convex HTTP ingest sync, Convex audit events |
 | Hybrid retrieval | Precomputed local search index + catalog-derived lexicon + OpenCrab candidate reranking hook |
 | Search index | 2,050 products / 1,416 brand tokens / 436 category terms / 549 lexicon terms |
@@ -128,8 +128,8 @@ npm test
 예상 결과:
 
 ```text
-# tests 19
-# pass 19
+# tests 24
+# pass 24
 # fail 0
 ```
 
@@ -169,6 +169,28 @@ curl -s -X POST http://localhost:8787/products/search \
 
 `opencrab_candidate_product_ids`는 OpenCrab 온톨로지팩 semantic retrieval이 반환한 후보 ID를 plugin hot path에서 재랭킹하기 위한 hook입니다. 후보 ID가 없으면 precomputed local index 전체에서 검색합니다.
 
+OpenCrab retrieval adapter를 직접 붙일 때는 plugin server 환경변수에 아래 값을 설정합니다.
+
+```bash
+OPENCRAB_RETRIEVAL_URL=https://your-adapter.example/retrieve
+OPENCRAB_RETRIEVAL_TIMEOUT_MS=1200
+OPENCRAB_PROJECT_NAME=paperclipbase
+OPENCRAB_OWNER_TAG=hermes-profile:paperclipbase
+# 선택: OPENCRAB_RETRIEVAL_API_KEY=...
+```
+
+Adapter contract:
+
+- request: `{ query, top_k, project_name, owner_tag, purpose, require_product_ids }`
+- response: JSON 안의 `product_id`, `productId`, `source_url` 또는 `https://www.musinsa.com/products/{id}`에서 product ID를 추출
+- 실패/timeout 시 plugin은 local index로 fallback
+
+검증:
+
+```bash
+npm run test:opencrab-adapter
+```
+
 ### End-to-end demo 실행
 
 ```bash
@@ -198,6 +220,7 @@ recommend
 | `openapi.yaml` | OpenAPI 3.1 API contract |
 | `src/server.mjs` | HTTP JSON API server + static plugin files |
 | `src/productStore.mjs` | 상품 DB 로드/검색 + precomputed local search index + hybrid candidate rerank |
+| `src/opencrabRetrieval.mjs` | OpenCrab/ontology retrieval adapter: HTTP/cache candidates -> product_id extraction |
 | `src/personalShopper.mjs` | intent 파싱, 추천, 비교, 상품 인사이트 |
 | `src/shortlistStore.mjs` | 세션별 shortlist 저장소 |
 | `src/telemetryStore.mjs` | 개인정보 제외 telemetry sanitizer/summary/dashboard + consent metadata + optional Convex sync |
@@ -205,6 +228,7 @@ recommend
 | `scripts/demo.mjs` | end-to-end demo script |
 | `scripts/build-search-index.mjs` | hot-path local search index/lexicon export |
 | `scripts/benchmark-search-index.mjs` | local-index latency benchmark |
+| `scripts/test-opencrab-retrieval-adapter.mjs` | mock OpenCrab retrieval adapter integration test |
 | `scripts/crawl-musinsa-products.mjs` | 공개 상품 크롤러 |
 | `scripts/export-personal-shopper-data-ontology.mjs` | analytics ontology export |
 | `SUBMISSION.md` | 제출용 한국어 문서 |

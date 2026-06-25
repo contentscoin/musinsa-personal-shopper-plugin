@@ -29,7 +29,11 @@ const tools = [
         price_min: { type: 'number' },
         price_max: { type: 'number' },
         gender: { type: 'string' },
-        limit: { type: 'integer', default: 10 }
+        limit: { type: 'integer', default: 10 },
+        retrieval_mode: { type: 'string', enum: ['local_index', 'hybrid', 'opencrab_first'], default: 'local_index' },
+        opencrab_candidate_product_ids: { type: 'array', items: { type: 'string' } },
+        candidate_product_ids: { type: 'array', items: { type: 'string' } },
+        opencrab_top_k: { type: 'integer', default: 80 }
       }
     }
   },

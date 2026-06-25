@@ -1,18 +1,25 @@
-import { compactProduct, searchProducts, getProduct } from './productStore.mjs';
+import { compactProduct, searchProducts, getProduct, getCatalogLexicon } from './productStore.mjs';
 
 const COLOR_WORDS = ['차콜', '그레이', '회색', '블랙', '검정', '화이트', '흰색', '아이보리', '베이지', '브라운', '카키', '네이비', '블루', '버건디'];
 const CATEGORY_WORDS = ['후드집업', '후드 집업', '후드티', '후드 티셔츠', '스니커즈', '운동화', '니트', '스웨터', '가디건', '슬랙스', '팬츠', '바지', '트랙탑', '재킷', '자켓', '벨트', '백팩'];
 const SEASON_WORDS = ['봄', '여름', '가을', '겨울'];
 const GENDER_WORDS = ['남성', '여성', '남자', '여자', '우먼', '맨'];
 
-export function parseShoppingIntent(request = {}) {
+export function parseShoppingIntent(request = {}, catalogLexicon = null) {
   const query = [request.query, request.occasion, ...(request.customer_profile?.style_preference ?? [])].filter(Boolean).join(' ');
+  const queryTight = tight(query);
   const budget = request.budget ?? parseBudget(query);
-  const colors = COLOR_WORDS.filter(word => query.includes(word));
-  const categories = CATEGORY_WORDS.filter(word => query.includes(word));
+  const colorWords = unique([...COLOR_WORDS, ...(catalogLexicon?.colors ?? [])]);
+  const categoryWords = unique([...CATEGORY_WORDS, ...(catalogLexicon?.categories ?? []), ...(catalogLexicon?.terms ?? [])])
+    .filter(word => word.length >= 2)
+    .sort((a, b) => tight(b).length - tight(a).length);
+  const brandWords = unique(catalogLexicon?.brands ?? []).sort((a, b) => tight(b).length - tight(a).length);
+  const colors = colorWords.filter(word => queryTight.includes(tight(word)) || query.includes(word));
+  const categories = categoryWords.filter(word => queryTight.includes(tight(word)) || query.includes(word)).slice(0, 8);
   const seasons = SEASON_WORDS.filter(word => query.includes(word));
   const genderHint = GENDER_WORDS.find(word => query.includes(word));
-  const brandHint = request.brand ?? null;
+  const detectedBrand = brandWords.find(word => queryTight.includes(tight(word)) || query.includes(word));
+  const brandHint = request.brand ?? detectedBrand ?? null;
   return {
     raw_query: query,
     budget,
@@ -26,7 +33,8 @@ export function parseShoppingIntent(request = {}) {
       price_max: budget,
       gender: normalizeGender(genderHint),
       brand: brandHint
-    }
+    },
+    lexicon_used: Boolean(catalogLexicon)
   };
 }
 
@@ -65,7 +73,7 @@ export function summarizeProduct(product, customerProfile = {}) {
 }
 
 export function recommend(products, request) {
-  const intent = parseShoppingIntent(request);
+  const intent = parseShoppingIntent(request, getCatalogLexicon(products));
   const filters = {
     query: intent.raw_query,
     category: request.category,
@@ -319,7 +327,11 @@ function productText(product) {
 }
 
 function tight(value) {
-  return String(value ?? '').replace(/\s+/g, '');
+  return String(value ?? '').toLowerCase().replace(/\s+/g, '');
+}
+
+function unique(values) {
+  return [...new Set(values.map(value => String(value ?? '').trim()).filter(Boolean))];
 }
 
 function round(value) {

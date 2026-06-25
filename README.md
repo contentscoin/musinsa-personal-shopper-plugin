@@ -231,6 +231,21 @@ recommend
   -> analytics summary
 ```
 
+### ChatGPT 앱/GPT Actions 등록
+
+ChatGPT에 이 repo를 앱/액션으로 등록하려면 먼저 public HTTPS endpoint를 준비하고, `openapi.yaml`의 `servers.url`과 `.well-known/ai-plugin.json`의 URL들을 public host로 바꾼 뒤 GPT Builder의 **Actions**에서 OpenAPI schema를 import합니다.
+
+자세한 절차는 [`docs/chatgpt-app-registration.md`](docs/chatgpt-app-registration.md)를 참고하세요.
+
+핵심 체크:
+
+```bash
+curl -s https://YOUR_PUBLIC_HOST/health
+curl -s https://YOUR_PUBLIC_HOST/openapi.yaml
+curl -s https://YOUR_PUBLIC_HOST/.well-known/ai-plugin.json
+curl -s https://YOUR_PUBLIC_HOST/analytics/notice
+```
+
 ---
 
 ## 7. 주요 파일 구조
@@ -261,6 +276,7 @@ recommend
 | `scripts/crawl-musinsa-products.mjs` | 공개 상품 크롤러 |
 | `scripts/export-personal-shopper-data-ontology.mjs` | analytics ontology export |
 | `SUBMISSION.md` | 제출용 한국어 문서 |
+| `docs/chatgpt-app-registration.md` | ChatGPT Custom GPT / Actions 등록 매뉴얼 |
 | `docs/pitch-summary.md` | 한 장짜리 pitch summary |
 | `docs/demo-scenarios.md` | 심사/발표용 demo scenarios |
 | `docs/ontology/*.md` | OpenCrab-ready ontology artifacts |

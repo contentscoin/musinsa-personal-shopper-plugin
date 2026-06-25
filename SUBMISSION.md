@@ -242,3 +242,21 @@ Plugin endpoints:
 http://localhost:8787/openapi.yaml
 http://localhost:8787/.well-known/ai-plugin.json
 ```
+
+## 15. ChatGPT 앱/GPT Actions 등록
+
+ChatGPT 등록은 Custom GPT Builder의 **Actions**에서 `openapi.yaml`을 import하는 방식으로 진행합니다. 로컬 `localhost`는 ChatGPT에서 직접 호출할 수 없으므로, 제출/심사 전 public HTTPS host를 준비하고 아래 URL들이 공개 접근 가능해야 합니다.
+
+```text
+https://YOUR_PUBLIC_HOST/health
+https://YOUR_PUBLIC_HOST/openapi.yaml
+https://YOUR_PUBLIC_HOST/.well-known/ai-plugin.json
+https://YOUR_PUBLIC_HOST/analytics/notice
+https://YOUR_PUBLIC_HOST/logo.png
+```
+
+등록 절차, GPT Instructions 예시, Action 테스트 프롬프트, 실패 대응표는 아래 문서에 정리했습니다.
+
+```text
+docs/chatgpt-app-registration.md
+```

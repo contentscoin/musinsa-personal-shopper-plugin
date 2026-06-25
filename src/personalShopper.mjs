@@ -68,25 +68,27 @@ export function recommend(products, request) {
   const intent = parseShoppingIntent(request);
   const filters = {
     query: intent.raw_query,
+    category: request.category,
     price_max: intent.budget,
     gender: intent.gender,
     brand: intent.brand,
-    limit: request.limit ?? 5
+    limit: Math.max((request.limit ?? 5) * 4, 20)
   };
   const results = searchProducts(products, filters);
-  const recommendations = results.map((r, index) => {
+  const recommendations = results.map((r) => {
     const full = getProduct(products, r.product_id);
     const shopperInsight = summarizeProduct(full, request.customer_profile ?? {});
     const scoreBreakdown = buildScoreBreakdown(full, intent, request.customer_profile ?? {}, r.score, shopperInsight);
     return {
       ...r,
-      rank: index + 1,
       score_breakdown: scoreBreakdown,
       why_recommended: buildRecommendationReason(full, intent, shopperInsight),
       decision_badges: buildDecisionBadges(full, intent),
       shopper_insight: shopperInsight
     };
-  });
+  }).sort((a, b) => b.score_breakdown.total - a.score_breakdown.total || b.score - a.score)
+    .slice(0, request.limit ?? 5)
+    .map((item, index) => ({ ...item, rank: index + 1 }));
 
   const recommendationConfidence = buildRecommendationConfidence(recommendations, intent);
   return {
@@ -183,7 +185,9 @@ function buildScoreBreakdown(product, intent, customerProfile, searchScore, insi
 
   const intentMatch = matchedCategories.length * 1.2 + matchedColors.length * 1 + matchedSeasons.length * 0.6 + (genderMatched ? 0.4 : 0) + (brandMatched ? 0.8 : 0);
   const priceFit = intent.budget ? (price <= intent.budget ? 1.5 + Math.min((intent.budget - price) / intent.budget, 0.5) : -Math.min((price - intent.budget) / intent.budget, 2)) : 0.3;
-  const reviewTrust = Math.min(Math.log10(reviewCount + 1) / 3, 1.2) + (satisfaction ? satisfaction / 5 : 0);
+  const reviewIntent = /리뷰|검증|후기|만족/.test(intent.raw_query) || stylePreferences.some(term => /리뷰|검증|후기|만족/.test(String(term)));
+  const baseReviewTrust = Math.min(Math.log10(reviewCount + 1) / 3, 1.2) + (satisfaction ? satisfaction / 5 : 0);
+  const reviewTrust = baseReviewTrust + (reviewIntent ? Math.min(Math.log10(reviewCount + 1) / 2, 2.0) : 0);
   const tagText = [...(aiTags.style_tags ?? []), ...(aiTags.occasion_tags ?? []), ...(aiTags.season_tags ?? []), ...(aiTags.fit_tags ?? [])].join(' ');
   const contextTerms = [intent.raw_query, ...stylePreferences, customerProfile.purchase_context].filter(Boolean);
   const contextMatches = contextTerms.flatMap(term => String(term).split(/\s+/)).filter(term => term.length >= 2 && tagText.includes(term)).length;

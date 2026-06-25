@@ -1,0 +1,453 @@
+{"id":"doc:overview","title":"MUSINSA 2050 product ontology overview","source_type":"crab_agent_derived","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:상의_반소매_티셔츠","title":"Category ontology: 상의 > 반소매 티셔츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:상의_셔츠_블라우스","title":"Category ontology: 상의 > 셔츠/블라우스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:바지_데님_팬츠","title":"Category ontology: 바지 > 데님 팬츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_스니커즈_패션스니커즈화","title":"Category ontology: 신발 > 스니커즈 > 패션스니커즈화","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:바지_코튼_팬츠","title":"Category ontology: 바지 > 코튼 팬츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:바지_트레이닝_조거_팬츠","title":"Category ontology: 바지 > 트레이닝/조거 팬츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:상의_긴소매_티셔츠","title":"Category ontology: 상의 > 긴소매 티셔츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_후드_집업","title":"Category ontology: 아우터 > 후드 집업","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:상의_니트_스웨터","title":"Category ontology: 상의 > 니트/스웨터","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:바지_슈트_팬츠_슬랙스","title":"Category ontology: 바지 > 슈트 팬츠/슬랙스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:바지_숏_팬츠","title":"Category ontology: 바지 > 숏 팬츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_카디건","title":"Category ontology: 아우터 > 카디건","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_모자_캡_야구모자","title":"Category ontology: 소품 > 모자 > 캡/야구모자","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:상의_후드_티셔츠","title":"Category ontology: 상의 > 후드 티셔츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_나일론_코치_재킷","title":"Category ontology: 아우터 > 나일론/코치 재킷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:가방_숄더백","title":"Category ontology: 가방 > 숄더백","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_상의_반소매_티셔츠","title":"Category ontology: 스포츠/레저 > 상의 > 반소매 티셔츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_구두_더비_슈즈","title":"Category ontology: 신발 > 구두 > 더비 슈즈","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:상의_맨투맨_스웨트","title":"Category ontology: 상의 > 맨투맨/스웨트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_슈트_블레이저_재킷","title":"Category ontology: 아우터 > 슈트/블레이저 재킷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_블루종_MA-1","title":"Category ontology: 아우터 > 블루종/MA-1","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:가방_백팩","title":"Category ontology: 가방 > 백팩","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_트레이닝_재킷","title":"Category ontology: 아우터 > 트레이닝 재킷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_레더_라이더스_재킷","title":"Category ontology: 아우터 > 레더/라이더스 재킷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:상의_민소매_티셔츠","title":"Category ontology: 상의 > 민소매 티셔츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:바지_기타_하의","title":"Category ontology: 바지 > 기타 하의","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:상의_피케_카라_티셔츠","title":"Category ontology: 상의 > 피케/카라 티셔츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_스포츠화_러닝화","title":"Category ontology: 신발 > 스포츠화 > 러닝화","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_벨트","title":"Category ontology: 소품 > 벨트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_경량_패딩_패딩_베스트_경량_패딩","title":"Category ontology: 아우터 > 경량 패딩/패딩 베스트 > 경량 패딩","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_주얼리_팔찌","title":"Category ontology: 소품 > 주얼리 > 팔찌","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_구두_로퍼","title":"Category ontology: 신발 > 구두 > 로퍼","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:가방_메신저_크로스_백","title":"Category ontology: 가방 > 메신저/크로스 백","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_스니커즈_캔버스_단화","title":"Category ontology: 신발 > 스니커즈 > 캔버스/단화","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_양말_레그웨어_양말","title":"Category ontology: 소품 > 양말/레그웨어 > 양말","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:속옷_홈웨어_남성_속옷","title":"Category ontology: 속옷/홈웨어 > 남성 속옷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_가방_백팩","title":"Category ontology: 스포츠/레저 > 가방 > 백팩","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_트러커_재킷","title":"Category ontology: 아우터 > 트러커 재킷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_선글라스_안경테_선글라스","title":"Category ontology: 소품 > 선글라스/안경테 > 선글라스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_샌들_슬리퍼_슬라이드","title":"Category ontology: 신발 > 샌들/슬리퍼 > 슬라이드","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_샌들_슬리퍼_스포츠_캐주얼_샌들","title":"Category ontology: 신발 > 샌들/슬리퍼 > 스포츠/캐주얼 샌들","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_하의_숏팬츠","title":"Category ontology: 스포츠/레저 > 하의 > 숏팬츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_스니커즈_라이프스타일화","title":"Category ontology: 신발 > 스니커즈 > 라이프스타일화","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:가방_토트백","title":"Category ontology: 가방 > 토트백","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_아우터_나일론_코치_재킷","title":"Category ontology: 스포츠/레저 > 아우터 > 나일론/코치 재킷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:가방_캐리어","title":"Category ontology: 가방 > 캐리어","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_주얼리_목걸이_펜던트","title":"Category ontology: 소품 > 주얼리 > 목걸이/펜던트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_샌들_슬리퍼_쪼리_플립플랍","title":"Category ontology: 신발 > 샌들/슬리퍼 > 쪼리/플립플랍","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_기타_아우터","title":"Category ontology: 아우터 > 기타 아우터","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:속옷_홈웨어_홈웨어","title":"Category ontology: 속옷/홈웨어 > 홈웨어","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:속옷_홈웨어_여성_속옷_상의","title":"Category ontology: 속옷/홈웨어 > 여성 속옷 상의","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_아우터_트레이닝_재킷","title":"Category ontology: 스포츠/레저 > 아우터 > 트레이닝 재킷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_샌들_슬리퍼_스트랩_샌들","title":"Category ontology: 신발 > 샌들/슬리퍼 > 스트랩 샌들","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_아우터_기타_점퍼_재킷","title":"Category ontology: 스포츠/레저 > 아우터 > 기타 점퍼/재킷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_부츠_워커_미들_하프_부츠","title":"Category ontology: 신발 > 부츠/워커 > 미들/하프 부츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_샌들_슬리퍼_클로그","title":"Category ontology: 신발 > 샌들/슬리퍼 > 클로그","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_구두_메리제인_슈즈","title":"Category ontology: 신발 > 구두 > 메리제인 슈즈","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:원피스_스커트_롱스커트","title":"Category ontology: 원피스/스커트 > 롱스커트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_부츠_워커_레인_부츠","title":"Category ontology: 신발 > 부츠/워커 > 레인 부츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:속옷_홈웨어_여성_속옷_세트","title":"Category ontology: 속옷/홈웨어 > 여성 속옷 세트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_상의_나시_민소매_티셔츠","title":"Category ontology: 스포츠/레저 > 상의 > 나시/민소매 티셔츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_프레그런스_향수","title":"Category ontology: 뷰티 > 프레그런스 > 향수","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_상의_긴소매_티셔츠","title":"Category ontology: 스포츠/레저 > 상의 > 긴소매 티셔츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_액세서리_넥타이","title":"Category ontology: 소품 > 액세서리 > 넥타이","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_부츠_워커_워커","title":"Category ontology: 신발 > 부츠/워커 > 워커","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:가방_지갑_머니클립","title":"Category ontology: 가방 > 지갑/머니클립","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_스킨케어_크림_아이크림_크림","title":"Category ontology: 뷰티 > 스킨케어 > 크림/아이크림 > 크림","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_선글라스_안경테_안경","title":"Category ontology: 소품 > 선글라스/안경테 > 안경","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_구두_플랫_슈즈","title":"Category ontology: 신발 > 구두 > 플랫 슈즈","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_플리스_뽀글이","title":"Category ontology: 아우터 > 플리스/뽀글이","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_하의_트레이닝_팬츠","title":"Category ontology: 스포츠/레저 > 하의 > 트레이닝 팬츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:가방_에코백","title":"Category ontology: 가방 > 에코백","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:원피스_스커트_미니스커트","title":"Category ontology: 원피스/스커트 > 미니스커트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_선케어_선크림","title":"Category ontology: 뷰티 > 선케어 > 선크림","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:속옷_홈웨어_여성_속옷_하의","title":"Category ontology: 속옷/홈웨어 > 여성 속옷 하의","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_하의_일자_팬츠","title":"Category ontology: 스포츠/레저 > 하의 > 일자 팬츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:키즈_상의_반소매_티셔츠","title":"Category ontology: 키즈 > 상의 > 반소매 티셔츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_상의_유니폼","title":"Category ontology: 스포츠/레저 > 상의 > 유니폼","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_사파리_헌팅_재킷","title":"Category ontology: 아우터 > 사파리/헌팅 재킷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_스포츠화_등산화","title":"Category ontology: 신발 > 스포츠화 > 등산화","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_아우터_레인코트","title":"Category ontology: 스포츠/레저 > 아우터 > 레인코트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_액세서리_키링_키케이스","title":"Category ontology: 소품 > 액세서리 > 키링/키케이스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_샌들_슬리퍼_기타_샌들","title":"Category ontology: 신발 > 샌들/슬리퍼 > 기타 샌들","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_부츠_워커_롱_부츠","title":"Category ontology: 신발 > 부츠/워커 > 롱 부츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_상의_맨투맨_스웨트","title":"Category ontology: 스포츠/레저 > 상의 > 맨투맨/스웨트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_립메이크업_립틴트","title":"Category ontology: 뷰티 > 립메이크업 > 립틴트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_기구_용품_장비_캠핑용품","title":"Category ontology: 스포츠/레저 > 기구/용품/장비 > 캠핑용품","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_베이스메이크업_파우더_팩트_파우더","title":"Category ontology: 뷰티 > 베이스메이크업 > 파우더/팩트 > 파우더","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_경량_패딩_패딩_베스트_패딩_베스트","title":"Category ontology: 아우터 > 경량 패딩/패딩 베스트 > 패딩 베스트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:원피스_스커트_미디원피스","title":"Category ontology: 원피스/스커트 > 미디원피스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_클렌징_필링_클렌징로션_크림","title":"Category ontology: 뷰티 > 클렌징/필링 > 클렌징로션/크림","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_스포츠화_기타_운동화","title":"Category ontology: 신발 > 스포츠화 > 기타 운동화","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_주얼리_반지","title":"Category ontology: 소품 > 주얼리 > 반지","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_스니커즈_스니커즈_뮬","title":"Category ontology: 신발 > 스니커즈 > 스니커즈 뮬","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:원피스_스커트_미니원피스","title":"Category ontology: 원피스/스커트 > 미니원피스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:키즈_바지_숏_팬츠","title":"Category ontology: 키즈 > 바지 > 숏 팬츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_부츠_워커_앵클_숏_부츠","title":"Category ontology: 신발 > 부츠/워커 > 앵클/숏 부츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_립메이크업_립밤","title":"Category ontology: 뷰티 > 립메이크업 > 립밤","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_상의_기타상의","title":"Category ontology: 스포츠/레저 > 상의 > 기타상의","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_아우터_플리스","title":"Category ontology: 스포츠/레저 > 아우터 > 플리스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_구두_모카신","title":"Category ontology: 신발 > 구두 > 모카신","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_베이스메이크업_쿠션","title":"Category ontology: 뷰티 > 베이스메이크업 > 쿠션","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_헬스_푸드_헬스_보충제_프로틴","title":"Category ontology: 뷰티 > 헬스/푸드 > 헬스 보충제 > 프로틴","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_하의_조거_팬츠","title":"Category ontology: 스포츠/레저 > 하의 > 조거 팬츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_수영복_비치웨어_래시가드_상의","title":"Category ontology: 스포츠/레저 > 수영복/비치웨어 > 래시가드 상의","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_스킨케어_스킨_토너_패드_패드","title":"Category ontology: 뷰티 > 스킨케어 > 스킨/토너/패드 > 패드","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_아우터_스타디움_재킷","title":"Category ontology: 스포츠/레저 > 아우터 > 스타디움 재킷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_스킨케어_로션_에멀젼_올인원_로션_에멀젼","title":"Category ontology: 뷰티 > 스킨케어 > 로션/에멀젼/올인원 > 로션/에멀젼","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_스킨케어_에센스_세럼_앰플","title":"Category ontology: 뷰티 > 스킨케어 > 에센스/세럼/앰플","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_부츠_워커_기타_부츠","title":"Category ontology: 신발 > 부츠/워커 > 기타 부츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_상의_피케_카라_티셔츠","title":"Category ontology: 스포츠/레저 > 상의 > 피케/카라 티셔츠","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_시계_디지털","title":"Category ontology: 소품 > 시계 > 디지털","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_클렌징_필링_클렌징폼_젤_비누_클렌징폼","title":"Category ontology: 뷰티 > 클렌징/필링 > 클렌징폼/젤/비누 > 클렌징폼","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_구두_슬링백","title":"Category ontology: 신발 > 구두 > 슬링백","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_하의_레깅스","title":"Category ontology: 스포츠/레저 > 하의 > 레깅스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:디지털_라이프_생활_주방_주방용품_식기_그릇","title":"Category ontology: 디지털/라이프 > 생활/주방 > 주방용품 > 식기/그릇","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_헤어케어_헤어기기_헤어스타일러","title":"Category ontology: 뷰티 > 헤어케어 > 헤어기기 > 헤어스타일러","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:원피스_스커트_맥시원피스","title":"Category ontology: 원피스/스커트 > 맥시원피스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:디지털_라이프_디지털_가전_계절가전_선풍기_서큘레이터","title":"Category ontology: 디지털/라이프 > 디지털/가전 > 계절가전 > 선풍기/서큘레이터","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_바디케어_바디미스트","title":"Category ontology: 뷰티 > 바디케어 > 바디미스트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_하의_기타_바지","title":"Category ontology: 스포츠/레저 > 하의 > 기타 바지","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_구두_기타_구두","title":"Category ontology: 신발 > 구두 > 기타 구두","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_가방_골프가방","title":"Category ontology: 스포츠/레저 > 가방 > 골프가방","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_헤어케어_헤어오일_에센스_헤어에센스","title":"Category ontology: 뷰티 > 헤어케어 > 헤어오일/에센스 > 헤어에센스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:가방_브리프_케이스","title":"Category ontology: 가방 > 브리프 케이스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:키즈_신발_구두","title":"Category ontology: 키즈 > 신발 > 구두","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_신발용품_깔창","title":"Category ontology: 신발 > 신발용품 > 깔창","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_베이스메이크업_메이크업베이스_프라이머_메이크업베이스","title":"Category ontology: 뷰티 > 베이스메이크업 > 메이크업베이스/프라이머 > 메이크업베이스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_바디케어_샤워_입욕_바디_스크럽","title":"Category ontology: 뷰티 > 바디케어 > 샤워/입욕 > 바디 스크럽","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_마스크팩_시트마스크_시트팩_","title":"Category ontology: 뷰티 > 마스크팩 > 시트마스크(시트팩)","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:디지털_라이프_가구_인테리어_침구_담요_블랭킷","title":"Category ontology: 디지털/라이프 > 가구/인테리어 > 침구 > 담요/블랭킷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_아우터_숏_패딩_숏_헤비_아우터","title":"Category ontology: 스포츠/레저 > 아우터 > 숏 패딩/숏 헤비 아우터","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:가방_보스턴_더플백","title":"Category ontology: 가방 > 보스턴/더플백","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:키즈_신발_운동화","title":"Category ontology: 키즈 > 신발 > 운동화","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_모자_비니","title":"Category ontology: 소품 > 모자 > 비니","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_주얼리_귀걸이","title":"Category ontology: 소품 > 주얼리 > 귀걸이","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_스타디움_재킷","title":"Category ontology: 아우터 > 스타디움 재킷","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_바디케어_샤워_입욕_바디클렌저","title":"Category ontology: 뷰티 > 바디케어 > 샤워/입욕 > 바디클렌저","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_수영복_비치웨어_래시가드_하의","title":"Category ontology: 스포츠/레저 > 수영복/비치웨어 > 래시가드 하의","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_스킨케어_스킨케어_세트","title":"Category ontology: 뷰티 > 스킨케어 > 스킨케어 세트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:원피스_스커트_미디스커트","title":"Category ontology: 원피스/스커트 > 미디스커트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_립메이크업_립라이너","title":"Category ontology: 뷰티 > 립메이크업 > 립라이너","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_모자_트루퍼","title":"Category ontology: 소품 > 모자 > 트루퍼","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:디지털_라이프_생활_주방_생활용품_우산_양산","title":"Category ontology: 디지털/라이프 > 생활/주방 > 생활용품 > 우산/양산","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_가방_보스턴_더플백","title":"Category ontology: 스포츠/레저 > 가방 > 보스턴/더플백","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_뷰티_디바이스_소품_피부관리기기_기타_피부관리기기","title":"Category ontology: 뷰티 > 뷰티 디바이스/소품 > 피부관리기기 > 기타 피부관리기기","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:디지털_라이프_디지털_가전_생활가전_안마_찜질기","title":"Category ontology: 디지털/라이프 > 디지털/가전 > 생활가전 > 안마/찜질기","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_숏패딩_헤비_아우터","title":"Category ontology: 아우터 > 숏패딩/헤비 아우터","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:상의_기타_상의","title":"Category ontology: 상의 > 기타 상의","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_베이스메이크업_메이크업베이스_프라이머_프라이머","title":"Category ontology: 뷰티 > 베이스메이크업 > 메이크업베이스/프라이머 > 프라이머","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_신발용품_기타_신발용품","title":"Category ontology: 신발 > 신발용품 > 기타 신발용품","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_원피스_미디_원피스","title":"Category ontology: 스포츠/레저 > 원피스 > 미디 원피스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_쉐이빙_제모_코털정리기","title":"Category ontology: 뷰티 > 쉐이빙/제모 > 코털정리기","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_샌들_슬리퍼_스트랩_슬리퍼","title":"Category ontology: 신발 > 샌들/슬리퍼 > 스트랩 슬리퍼","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_샌들_슬리퍼_기타_슬리퍼","title":"Category ontology: 신발 > 샌들/슬리퍼 > 기타 슬리퍼","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:키즈_신발_기타_신발","title":"Category ontology: 키즈 > 신발 > 기타 신발","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:키즈_장난감_승용_완구_기타_승용_완구","title":"Category ontology: 키즈 > 장난감 > 승용 완구 > 기타 승용 완구","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_잡화_반다나_헤어밴드_거트","title":"Category ontology: 스포츠/레저 > 잡화 > 반다나/헤어밴드/거트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_구두_힐_펌프스","title":"Category ontology: 신발 > 구두 > 힐/펌프스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_아이메이크업_아이브로우","title":"Category ontology: 뷰티 > 아이메이크업 > 아이브로우","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_아우터_롱_패딩_롱_헤비_아우터","title":"Category ontology: 스포츠/레저 > 아우터 > 롱 패딩/롱 헤비 아우터","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_모자_기타_모자","title":"Category ontology: 소품 > 모자 > 기타 모자","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_베이스메이크업_하이라이터","title":"Category ontology: 뷰티 > 베이스메이크업 > 하이라이터","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:디지털_라이프_디지털_가전_휴대폰_기타_휴대폰_액세서리","title":"Category ontology: 디지털/라이프 > 디지털/가전 > 휴대폰 > 기타 휴대폰 액세서리","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_환절기_코트","title":"Category ontology: 아우터 > 환절기 코트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_베이스메이크업_블러셔","title":"Category ontology: 뷰티 > 베이스메이크업 > 블러셔","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_신발_라이프스타일화","title":"Category ontology: 스포츠/레저 > 신발 > 라이프스타일화","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:디지털_라이프_디지털_가전_휴대폰_휴대폰_케이스","title":"Category ontology: 디지털/라이프 > 디지털/가전 > 휴대폰 > 휴대폰 케이스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_기구_용품_장비_수영_서핑_다이빙_용품","title":"Category ontology: 스포츠/레저 > 기구/용품/장비 > 수영/서핑/다이빙 용품","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_기구_용품_장비_기타_스포츠_용품","title":"Category ontology: 스포츠/레저 > 기구/용품/장비 > 기타 스포츠 용품","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_헬스_푸드_이너뷰티","title":"Category ontology: 뷰티 > 헬스/푸드 > 이너뷰티","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:디지털_라이프_컬처_취미_소품_상품권","title":"Category ontology: 디지털/라이프 > 컬처/취미/소품 > 상품권","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_시계_쿼츠_아날로그","title":"Category ontology: 소품 > 시계 > 쿼츠 아날로그","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:키즈_상의_셔츠_블라우스","title":"Category ontology: 키즈 > 상의 > 셔츠/블라우스","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:디지털_라이프_생활_주방_욕실용품_수건_타올","title":"Category ontology: 디지털/라이프 > 생활/주방 > 욕실용품 > 수건/타올","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_베이스메이크업_컨실러","title":"Category ontology: 뷰티 > 베이스메이크업 > 컨실러","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_헤어케어_헤어스타일링_헤어스프레이","title":"Category ontology: 뷰티 > 헤어케어 > 헤어스타일링 > 헤어스프레이","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:아우터_무스탕_퍼","title":"Category ontology: 아우터 > 무스탕/퍼","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:바지_점프_슈트_오버올","title":"Category ontology: 바지 > 점프 슈트/오버올","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_뷰티_디바이스_소품_피부관리기기_페이셜_마사지기","title":"Category ontology: 뷰티 > 뷰티 디바이스/소품 > 피부관리기기 > 페이셜 마사지기","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_스포츠화_축구화","title":"Category ontology: 신발 > 스포츠화 > 축구화","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_뷰티_디바이스_소품_메이크업소품_기타_소품","title":"Category ontology: 뷰티 > 뷰티 디바이스/소품 > 메이크업소품 > 기타 소품","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_상의_니트_스웨터","title":"Category ontology: 스포츠/레저 > 상의 > 니트/스웨터","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:스포츠_레저_상하의세트","title":"Category ontology: 스포츠/레저 > 상하의세트","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:키즈_장난감_승용_완구_킥보드","title":"Category ontology: 키즈 > 장난감 > 승용 완구 > 킥보드","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_선케어_선스틱_선스프레이_선스틱","title":"Category ontology: 뷰티 > 선케어 > 선스틱/선스프레이 > 선스틱","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:뷰티_베이스메이크업_셰이딩_컨투어링","title":"Category ontology: 뷰티 > 베이스메이크업 > 셰이딩/컨투어링","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:디지털_라이프_디지털_가전_컴퓨터_컴퓨터_주변기기","title":"Category ontology: 디지털/라이프 > 디지털/가전 > 컴퓨터 > 컴퓨터 주변기기","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:소품_시계_시계용품","title":"Category ontology: 소품 > 시계 > 시계용품","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:category:신발_구두_스트레이트_팁","title":"Category ontology: 신발 > 구두 > 스트레이트 팁","source_type":"crab_agent_derived_category","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:무신사_스탠다드","title":"Brand ontology: 무신사 스탠다드","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:아디다스","title":"Brand ontology: 아디다스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:무신사_스탠다드_우먼","title":"Brand ontology: 무신사 스탠다드 우먼","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:디미트리블랙","title":"Brand ontology: 디미트리블랙","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:나이키","title":"Brand ontology: 나이키","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:언탭트_스튜디오","title":"Brand ontology: 언탭트 스튜디오","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:트릴리온","title":"Brand ontology: 트릴리온","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:드로우핏","title":"Brand ontology: 드로우핏","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:폴로_랄프_로렌","title":"Brand ontology: 폴로 랄프 로렌","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:시그니처","title":"Brand ontology: 시그니처","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:무센트","title":"Brand ontology: 무센트","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:스파오","title":"Brand ontology: 스파오","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:브렌슨","title":"Brand ontology: 브렌슨","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:토피","title":"Brand ontology: 토피","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:필루미네이트","title":"Brand ontology: 필루미네이트","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:알리스","title":"Brand ontology: 알리스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:더콜디스트모먼트","title":"Brand ontology: 더콜디스트모먼트","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:르아르","title":"Brand ontology: 르아르","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:푸마","title":"Brand ontology: 푸마","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:수아레","title":"Brand ontology: 수아레","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:뉴발란스","title":"Brand ontology: 뉴발란스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:브론슨","title":"Brand ontology: 브론슨","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:탄산마그네슘","title":"Brand ontology: 탄산마그네슘","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:스켈리웩","title":"Brand ontology: 스켈리웩","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:지프","title":"Brand ontology: 지프","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:비긴202","title":"Brand ontology: 비긴202","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:엑스컨테이너","title":"Brand ontology: 엑스컨테이너","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:닥터마틴","title":"Brand ontology: 닥터마틴","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:고스트리퍼블릭","title":"Brand ontology: 고스트리퍼블릭","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:효지","title":"Brand ontology: 효지","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:브라운브레스","title":"Brand ontology: 브라운브레스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:리메인세컨드","title":"Brand ontology: 리메인세컨드","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:마뗑킴","title":"Brand ontology: 마뗑킴","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:캘빈클라인_진","title":"Brand ontology: 캘빈클라인 진","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:디키즈","title":"Brand ontology: 디키즈","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:에잇세컨즈","title":"Brand ontology: 에잇세컨즈","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:캘빈클라인_언더웨어","title":"Brand ontology: 캘빈클라인 언더웨어","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:오니츠카타이거","title":"Brand ontology: 오니츠카타이거","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:노스페이스","title":"Brand ontology: 노스페이스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:제너럴아이디어","title":"Brand ontology: 제너럴아이디어","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:휠라","title":"Brand ontology: 휠라","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:반스","title":"Brand ontology: 반스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:엄브로","title":"Brand ontology: 엄브로","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:유니온블루","title":"Brand ontology: 유니온블루","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:데상트","title":"Brand ontology: 데상트","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:룰루레몬","title":"Brand ontology: 룰루레몬","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:수아레_우먼","title":"Brand ontology: 수아레 우먼","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:리복","title":"Brand ontology: 리복","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:밀로_아카이브","title":"Brand ontology: 밀로 아카이브","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:아캄","title":"Brand ontology: 아캄","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:꼼파뇨","title":"Brand ontology: 꼼파뇨","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:후브스","title":"Brand ontology: 후브스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:데꼬로소","title":"Brand ontology: 데꼬로소","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:무신사_스탠다드_키즈","title":"Brand ontology: 무신사 스탠다드 키즈","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:소버먼트","title":"Brand ontology: 소버먼트","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:조셉트","title":"Brand ontology: 조셉트","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:에스피오나지","title":"Brand ontology: 에스피오나지","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:내셔널지오그래픽","title":"Brand ontology: 내셔널지오그래픽","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:드릭스","title":"Brand ontology: 드릭스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:도프제이슨","title":"Brand ontology: 도프제이슨","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:엠엘비","title":"Brand ontology: 엠엘비","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:키뮤어","title":"Brand ontology: 키뮤어","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:에이지오디","title":"Brand ontology: 에이지오디","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:배드블러드","title":"Brand ontology: 배드블러드","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:킨","title":"Brand ontology: 킨","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:아식스","title":"Brand ontology: 아식스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:아크테릭스","title":"Brand ontology: 아크테릭스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:로템버","title":"Brand ontology: 로템버","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:피그앤헨","title":"Brand ontology: 피그앤헨","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:피렌체_아뜨리에","title":"Brand ontology: 피렌체 아뜨리에","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:에이치덱스","title":"Brand ontology: 에이치덱스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:버버리","title":"Brand ontology: 버버리","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:토마스모어","title":"Brand ontology: 토마스모어","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:니티드","title":"Brand ontology: 니티드","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:티엔지티","title":"Brand ontology: 티엔지티","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:미쏘","title":"Brand ontology: 미쏘","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:파브레가","title":"Brand ontology: 파브레가","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:세컨모놀로그","title":"Brand ontology: 세컨모놀로그","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:요세미티","title":"Brand ontology: 요세미티","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:무신사_스탠다드_스포츠","title":"Brand ontology: 무신사 스탠다드 스포츠","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:워크온바디오프","title":"Brand ontology: 워크온바디오프","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:플레이스_스튜디오","title":"Brand ontology: 플레이스 스튜디오","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:말본_골프","title":"Brand ontology: 말본 골프","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:엘무드","title":"Brand ontology: 엘무드","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:디스이즈네버댓","title":"Brand ontology: 디스이즈네버댓","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:로스트가든","title":"Brand ontology: 로스트가든","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:넌블랭크","title":"Brand ontology: 넌블랭크","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:어반디타입","title":"Brand ontology: 어반디타입","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:다이브인","title":"Brand ontology: 다이브인","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:쿠어","title":"Brand ontology: 쿠어","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:크록스","title":"Brand ontology: 크록스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:베리시","title":"Brand ontology: 베리시","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:본투윈","title":"Brand ontology: 본투윈","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:트래블","title":"Brand ontology: 트래블","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:컨버스","title":"Brand ontology: 컨버스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:코오롱스포츠","title":"Brand ontology: 코오롱스포츠","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:무드인사이드","title":"Brand ontology: 무드인사이드","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:노매뉴얼","title":"Brand ontology: 노매뉴얼","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:어반드레스","title":"Brand ontology: 어반드레스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:살로몬","title":"Brand ontology: 살로몬","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:팀버랜드","title":"Brand ontology: 팀버랜드","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:라이크더모스트","title":"Brand ontology: 라이크더모스트","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:가까이_유니언즈","title":"Brand ontology: 가까이 유니언즈","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:슈펜","title":"Brand ontology: 슈펜","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:로맨틱무브","title":"Brand ontology: 로맨틱무브","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:위캔더스","title":"Brand ontology: 위캔더스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:파타고니아","title":"Brand ontology: 파타고니아","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:후아유","title":"Brand ontology: 후아유","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:식스핏","title":"Brand ontology: 식스핏","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:락피쉬웨더웨어","title":"Brand ontology: 락피쉬웨더웨어","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:23_65","title":"Brand ontology: 23.65","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:블랙_퍼플","title":"Brand ontology: 블랙 퍼플","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:인템포무드","title":"Brand ontology: 인템포무드","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:마인드브릿지","title":"Brand ontology: 마인드브릿지","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:굿라이프웍스","title":"Brand ontology: 굿라이프웍스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:로우로우","title":"Brand ontology: 로우로우","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:아워데이즈","title":"Brand ontology: 아워데이즈","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:커버낫","title":"Brand ontology: 커버낫","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:제이엘브","title":"Brand ontology: 제이엘브","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:미나브","title":"Brand ontology: 미나브","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:와르","title":"Brand ontology: 와르","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:아일랜드_슬리퍼","title":"Brand ontology: 아일랜드 슬리퍼","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:잔스포츠","title":"Brand ontology: 잔스포츠","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:블랙모먼트","title":"Brand ontology: 블랙모먼트","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:이미스","title":"Brand ontology: 이미스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:슈퍼서브","title":"Brand ontology: 슈퍼서브","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:퍼스텝","title":"Brand ontology: 퍼스텝","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:디스커버리_익스페디션","title":"Brand ontology: 디스커버리 익스페디션","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:마크모크","title":"Brand ontology: 마크모크","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:여밈","title":"Brand ontology: 여밈","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:앤더슨벨","title":"Brand ontology: 앤더슨벨","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:엘리자베스_스튜어트","title":"Brand ontology: 엘리자베스 스튜어트","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:비헤비어","title":"Brand ontology: 비헤비어","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:킨치","title":"Brand ontology: 킨치","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:에즈카톤","title":"Brand ontology: 에즈카톤","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:언타이틀_서울","title":"Brand ontology: 언타이틀 서울","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:마스마룰즈","title":"Brand ontology: 마스마룰즈","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:팬시클럽","title":"Brand ontology: 팬시클럽","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:뉴에라","title":"Brand ontology: 뉴에라","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:마하그리드","title":"Brand ontology: 마하그리드","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:제로","title":"Brand ontology: 제로","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:무르","title":"Brand ontology: 무르","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:예일","title":"Brand ontology: 예일","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:레더리","title":"Brand ontology: 레더리","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:언지미크","title":"Brand ontology: 언지미크","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:분트","title":"Brand ontology: 분트","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:이알티알","title":"Brand ontology: 이알티알","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:테이크이지","title":"Brand ontology: 테이크이지","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:허그본","title":"Brand ontology: 허그본","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:기호","title":"Brand ontology: 기호","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:댄꼼마","title":"Brand ontology: 댄꼼마","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:지오다노","title":"Brand ontology: 지오다노","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:어반스터프","title":"Brand ontology: 어반스터프","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:스웨이드","title":"Brand ontology: 스웨이드","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:몽돌","title":"Brand ontology: 몽돌","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:아웃스탠딩","title":"Brand ontology: 아웃스탠딩","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:어반에이지","title":"Brand ontology: 어반에이지","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:어나더_아카이브","title":"Brand ontology: 어나더 아카이브","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:더마일","title":"Brand ontology: 더마일","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:나이키스윔","title":"Brand ontology: 나이키스윔","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:루나키후","title":"Brand ontology: 루나키후","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:애프터프레이","title":"Brand ontology: 애프터프레이","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:모즈모즈","title":"Brand ontology: 모즈모즈","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:피노키","title":"Brand ontology: 피노키","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:가니","title":"Brand ontology: 가니","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:와이이이엘","title":"Brand ontology: 와이이이엘","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:야세","title":"Brand ontology: 야세","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:미드나잇_무브","title":"Brand ontology: 미드나잇 무브","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:하_아카이브","title":"Brand ontology: 하 아카이브","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:썸플레이스","title":"Brand ontology: 썸플레이스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:위더로드","title":"Brand ontology: 위더로드","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:헬로_선라이즈","title":"Brand ontology: 헬로 선라이즈","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:피지컬가먼츠","title":"Brand ontology: 피지컬가먼츠","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:바우프","title":"Brand ontology: 바우프","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:카시오","title":"Brand ontology: 카시오","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:리","title":"Brand ontology: 리","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:컴포트랩","title":"Brand ontology: 컴포트랩","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:메종미네드","title":"Brand ontology: 메종미네드","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:헬레네파리스","title":"Brand ontology: 헬레네파리스","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:brand:그루브라임","title":"Brand ontology: 그루브라임","source_type":"crab_agent_derived_brand","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:001","title":"Product facts batch 1-25","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:002","title":"Product facts batch 26-50","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:003","title":"Product facts batch 51-75","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:004","title":"Product facts batch 76-100","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:005","title":"Product facts batch 101-125","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:006","title":"Product facts batch 126-150","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:007","title":"Product facts batch 151-175","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:008","title":"Product facts batch 176-200","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:009","title":"Product facts batch 201-225","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:010","title":"Product facts batch 226-250","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:011","title":"Product facts batch 251-275","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:012","title":"Product facts batch 276-300","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:013","title":"Product facts batch 301-325","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:014","title":"Product facts batch 326-350","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:015","title":"Product facts batch 351-375","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:016","title":"Product facts batch 376-400","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:017","title":"Product facts batch 401-425","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:018","title":"Product facts batch 426-450","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:019","title":"Product facts batch 451-475","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:020","title":"Product facts batch 476-500","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:021","title":"Product facts batch 501-525","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:022","title":"Product facts batch 526-550","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:023","title":"Product facts batch 551-575","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:024","title":"Product facts batch 576-600","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:025","title":"Product facts batch 601-625","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:026","title":"Product facts batch 626-650","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:027","title":"Product facts batch 651-675","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:028","title":"Product facts batch 676-700","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:029","title":"Product facts batch 701-725","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:030","title":"Product facts batch 726-750","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:031","title":"Product facts batch 751-775","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:032","title":"Product facts batch 776-800","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:033","title":"Product facts batch 801-825","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:034","title":"Product facts batch 826-850","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:035","title":"Product facts batch 851-875","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:036","title":"Product facts batch 876-900","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:037","title":"Product facts batch 901-925","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:038","title":"Product facts batch 926-950","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:039","title":"Product facts batch 951-975","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:040","title":"Product facts batch 976-1000","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:041","title":"Product facts batch 1001-1025","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:042","title":"Product facts batch 1026-1050","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:043","title":"Product facts batch 1051-1075","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:044","title":"Product facts batch 1076-1100","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:045","title":"Product facts batch 1101-1125","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:046","title":"Product facts batch 1126-1150","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:047","title":"Product facts batch 1151-1175","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:048","title":"Product facts batch 1176-1200","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:049","title":"Product facts batch 1201-1225","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:050","title":"Product facts batch 1226-1250","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:051","title":"Product facts batch 1251-1275","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:052","title":"Product facts batch 1276-1300","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:053","title":"Product facts batch 1301-1325","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:054","title":"Product facts batch 1326-1350","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:055","title":"Product facts batch 1351-1375","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:056","title":"Product facts batch 1376-1400","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:057","title":"Product facts batch 1401-1425","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:058","title":"Product facts batch 1426-1450","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:059","title":"Product facts batch 1451-1475","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:060","title":"Product facts batch 1476-1500","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:061","title":"Product facts batch 1501-1525","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:062","title":"Product facts batch 1526-1550","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:063","title":"Product facts batch 1551-1575","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:064","title":"Product facts batch 1576-1600","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:065","title":"Product facts batch 1601-1625","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:066","title":"Product facts batch 1626-1650","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:067","title":"Product facts batch 1651-1675","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:068","title":"Product facts batch 1676-1700","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:069","title":"Product facts batch 1701-1725","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:070","title":"Product facts batch 1726-1750","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:071","title":"Product facts batch 1751-1775","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:072","title":"Product facts batch 1776-1800","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:073","title":"Product facts batch 1801-1825","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:074","title":"Product facts batch 1826-1850","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:075","title":"Product facts batch 1851-1875","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:076","title":"Product facts batch 1876-1900","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:077","title":"Product facts batch 1901-1925","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:078","title":"Product facts batch 1926-1950","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:079","title":"Product facts batch 1951-1975","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:080","title":"Product facts batch 1976-2000","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:081","title":"Product facts batch 2001-2025","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}
+{"id":"doc:product_batch:082","title":"Product facts batch 2026-2050","source_type":"crab_agent_derived_product_facts","owner_tag":"hermes-profile:paperclipbase","original_document_stored":false}

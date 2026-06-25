@@ -250,6 +250,9 @@ components:
         query: { type: string }
         occasion: { type: string }
         budget: { type: number }
+        category:
+          type: string
+          description: Optional exact category path constraint, e.g. '상의 > 후드 티셔츠'.
         brand: { type: string }
         customer_profile:
           $ref: '#/components/schemas/CustomerProfile'

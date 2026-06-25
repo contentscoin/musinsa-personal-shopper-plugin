@@ -1,0 +1,7005 @@
+{
+  "started_at": "2026-06-25T01:29:01.068Z",
+  "completed_at": "2026-06-25T01:29:17.392Z",
+  "base_url": "http://127.0.0.1:8791",
+  "health": {
+    "ok": true,
+    "products_loaded": 2050
+  },
+  "dataset": {
+    "products": 2050,
+    "distinct_brands": 713,
+    "distinct_category_paths": 190
+  },
+  "summary": {
+    "total_queries": 320,
+    "passed": 320,
+    "failed": 0,
+    "nonempty_queries": 319,
+    "empty_queries": 1,
+    "p50_latency_ms": 48.35,
+    "p95_latency_ms": 62.68,
+    "max_latency_ms": 70.72
+  },
+  "by_type": {
+    "category_structured": {
+      "count": 50,
+      "pass": 50,
+      "nonempty": 50,
+      "avg_latency_ms": 42.76
+    },
+    "category_leaf_query": {
+      "count": 50,
+      "pass": 50,
+      "nonempty": 50,
+      "avg_latency_ms": 50.2
+    },
+    "brand_structured": {
+      "count": 45,
+      "pass": 45,
+      "nonempty": 45,
+      "avg_latency_ms": 45.19
+    },
+    "natural_color_category": {
+      "count": 90,
+      "pass": 90,
+      "nonempty": 90,
+      "avg_latency_ms": 58.52
+    },
+    "brand_category_natural": {
+      "count": 25,
+      "pass": 25,
+      "nonempty": 25,
+      "avg_latency_ms": 51.19
+    },
+    "budget_category": {
+      "count": 60,
+      "pass": 60,
+      "nonempty": 59,
+      "avg_latency_ms": 46.64
+    }
+  },
+  "failure_samples": [],
+  "sample_successes": [
+    {
+      "index": 1,
+      "type": "category_structured",
+      "request": {
+        "category": "상의 > 반소매 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 64.45,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2086653",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [화이트]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 14590,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 2,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "반소매 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 58.72,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2086653",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [화이트]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 14590,
+        "score": 22.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 3,
+      "type": "category_structured",
+      "request": {
+        "category": "상의 > 셔츠/블라우스",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 47.31,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3562068",
+        "name_ko": "KENSINGTON SHIRT",
+        "brand": "유니온블루",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 77900,
+        "score": 7.7
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 4,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "셔츠/블라우스",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 57.52,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3562068",
+        "name_ko": "KENSINGTON SHIRT",
+        "brand": "유니온블루",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 77900,
+        "score": 21.7
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 5,
+      "type": "category_structured",
+      "request": {
+        "category": "바지 > 데님 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 42.94,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3663072",
+        "name_ko": "모어 와이드 데님 팬츠 (WASHED RAW BLACK)",
+        "brand": "토피",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 39200,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 6,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "데님 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 49.47,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3663072",
+        "name_ko": "모어 와이드 데님 팬츠 (WASHED RAW BLACK)",
+        "brand": "토피",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 39200,
+        "score": 20.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 7,
+      "type": "category_structured",
+      "request": {
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 43.16,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1163169",
+        "name_ko": "삼바 OG - 화이트:블랙 / B75806",
+        "brand": "아디다스",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 149000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 8,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "패션스니커즈화",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 58.2,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1163169",
+        "name_ko": "삼바 OG - 화이트:블랙 / B75806",
+        "brand": "아디다스",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 149000,
+        "score": 26.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 9,
+      "type": "category_structured",
+      "request": {
+        "category": "바지 > 코튼 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.73,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1627892",
+        "name_ko": "레플리카 퍼티그 팬츠 [카키]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 44890,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 10,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "코튼 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 48.23,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1627892",
+        "name_ko": "레플리카 퍼티그 팬츠 [카키]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 44890,
+        "score": 20.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 11,
+      "type": "category_structured",
+      "request": {
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.84,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1551840",
+        "name_ko": "Deep One Tuck Sweat Pants [Grey]",
+        "brand": "제로",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 31200,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 12,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "트레이닝/조거 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 55.18,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1551840",
+        "name_ko": "Deep One Tuck Sweat Pants [Grey]",
+        "brand": "제로",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 31200,
+        "score": 25.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 13,
+      "type": "category_structured",
+      "request": {
+        "category": "상의 > 긴소매 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.65,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2149254",
+        "name_ko": "베이식 긴소매 티셔츠 2팩",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 31390,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 14,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "긴소매 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 54.27,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2149254",
+        "name_ko": "베이식 긴소매 티셔츠 2팩",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 31390,
+        "score": 22.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 15,
+      "type": "category_structured",
+      "request": {
+        "category": "아우터 > 후드 집업",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 40.66,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2273084",
+        "name_ko": "Signature Patch Hood Zip-up / WHMZG1111U",
+        "brand": "후아유",
+        "category": "아우터 > 후드 집업",
+        "final_price": 48930,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 16,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "후드 집업",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 47.52,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2273084",
+        "name_ko": "Signature Patch Hood Zip-up / WHMZG1111U",
+        "brand": "후아유",
+        "category": "아우터 > 후드 집업",
+        "final_price": 48930,
+        "score": 25.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 17,
+      "type": "category_structured",
+      "request": {
+        "category": "상의 > 니트/스웨터",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 40.58,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2702397",
+        "name_ko": "워셔블 하찌 벌키 크루넥 니트_8 COLOR",
+        "brand": "키뮤어",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 56050,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 18,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "니트/스웨터",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 48.08,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2702397",
+        "name_ko": "워셔블 하찌 벌키 크루넥 니트_8 COLOR",
+        "brand": "키뮤어",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 56050,
+        "score": 21.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 19,
+      "type": "category_structured",
+      "request": {
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 42.45,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1168906",
+        "name_ko": "와이드 히든 밴딩 슬랙스 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 45900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 20,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "슈트 팬츠/슬랙스",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 50.83,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1168906",
+        "name_ko": "와이드 히든 밴딩 슬랙스 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 45900,
+        "score": 25.08
+      },
+      "validation_failures": []
+    }
+  ],
+  "all_records": [
+    {
+      "index": 1,
+      "type": "category_structured",
+      "request": {
+        "category": "상의 > 반소매 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 64.45,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2086653",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [화이트]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 14590,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 2,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "반소매 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 58.72,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2086653",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [화이트]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 14590,
+        "score": 22.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 3,
+      "type": "category_structured",
+      "request": {
+        "category": "상의 > 셔츠/블라우스",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 47.31,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3562068",
+        "name_ko": "KENSINGTON SHIRT",
+        "brand": "유니온블루",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 77900,
+        "score": 7.7
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 4,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "셔츠/블라우스",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 57.52,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3562068",
+        "name_ko": "KENSINGTON SHIRT",
+        "brand": "유니온블루",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 77900,
+        "score": 21.7
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 5,
+      "type": "category_structured",
+      "request": {
+        "category": "바지 > 데님 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 42.94,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3663072",
+        "name_ko": "모어 와이드 데님 팬츠 (WASHED RAW BLACK)",
+        "brand": "토피",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 39200,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 6,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "데님 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 49.47,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3663072",
+        "name_ko": "모어 와이드 데님 팬츠 (WASHED RAW BLACK)",
+        "brand": "토피",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 39200,
+        "score": 20.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 7,
+      "type": "category_structured",
+      "request": {
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 43.16,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1163169",
+        "name_ko": "삼바 OG - 화이트:블랙 / B75806",
+        "brand": "아디다스",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 149000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 8,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "패션스니커즈화",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 58.2,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1163169",
+        "name_ko": "삼바 OG - 화이트:블랙 / B75806",
+        "brand": "아디다스",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 149000,
+        "score": 26.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 9,
+      "type": "category_structured",
+      "request": {
+        "category": "바지 > 코튼 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.73,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1627892",
+        "name_ko": "레플리카 퍼티그 팬츠 [카키]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 44890,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 10,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "코튼 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 48.23,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1627892",
+        "name_ko": "레플리카 퍼티그 팬츠 [카키]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 44890,
+        "score": 20.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 11,
+      "type": "category_structured",
+      "request": {
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.84,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1551840",
+        "name_ko": "Deep One Tuck Sweat Pants [Grey]",
+        "brand": "제로",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 31200,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 12,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "트레이닝/조거 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 55.18,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1551840",
+        "name_ko": "Deep One Tuck Sweat Pants [Grey]",
+        "brand": "제로",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 31200,
+        "score": 25.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 13,
+      "type": "category_structured",
+      "request": {
+        "category": "상의 > 긴소매 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.65,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2149254",
+        "name_ko": "베이식 긴소매 티셔츠 2팩",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 31390,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 14,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "긴소매 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 54.27,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2149254",
+        "name_ko": "베이식 긴소매 티셔츠 2팩",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 31390,
+        "score": 22.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 15,
+      "type": "category_structured",
+      "request": {
+        "category": "아우터 > 후드 집업",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 40.66,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2273084",
+        "name_ko": "Signature Patch Hood Zip-up / WHMZG1111U",
+        "brand": "후아유",
+        "category": "아우터 > 후드 집업",
+        "final_price": 48930,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 16,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "후드 집업",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 47.52,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2273084",
+        "name_ko": "Signature Patch Hood Zip-up / WHMZG1111U",
+        "brand": "후아유",
+        "category": "아우터 > 후드 집업",
+        "final_price": 48930,
+        "score": 25.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 17,
+      "type": "category_structured",
+      "request": {
+        "category": "상의 > 니트/스웨터",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 40.58,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2702397",
+        "name_ko": "워셔블 하찌 벌키 크루넥 니트_8 COLOR",
+        "brand": "키뮤어",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 56050,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 18,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "니트/스웨터",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 48.08,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2702397",
+        "name_ko": "워셔블 하찌 벌키 크루넥 니트_8 COLOR",
+        "brand": "키뮤어",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 56050,
+        "score": 21.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 19,
+      "type": "category_structured",
+      "request": {
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 42.45,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1168906",
+        "name_ko": "와이드 히든 밴딩 슬랙스 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 45900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 20,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "슈트 팬츠/슬랙스",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 50.83,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1168906",
+        "name_ko": "와이드 히든 밴딩 슬랙스 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 45900,
+        "score": 25.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 21,
+      "type": "category_structured",
+      "request": {
+        "category": "바지 > 숏 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.47,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1926048",
+        "name_ko": "Deep One Tuck Sweat Shorts [Grey]",
+        "brand": "제로",
+        "category": "바지 > 숏 팬츠",
+        "final_price": 32000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 22,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "숏 팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 51.79,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4655528",
+        "name_ko": "스포츠 반바지 쇼츠 프로 (2IN1)",
+        "brand": "러닝라이프",
+        "category": "스포츠/레저 > 하의 > 숏팬츠",
+        "final_price": 27650,
+        "score": 29.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 23,
+      "type": "category_structured",
+      "request": {
+        "category": "아우터 > 카디건",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 40.42,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3434621",
+        "name_ko": "GNRL 에센셜 가디건 [6COL] / WBD3L04503",
+        "brand": "제너럴아이디어",
+        "category": "아우터 > 카디건",
+        "final_price": 49000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 24,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "카디건",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 43.79,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3434621",
+        "name_ko": "GNRL 에센셜 가디건 [6COL] / WBD3L04503",
+        "brand": "제너럴아이디어",
+        "category": "아우터 > 카디건",
+        "final_price": 49000,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 25,
+      "type": "category_structured",
+      "request": {
+        "category": "소품 > 모자 > 캡/야구모자",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 42.07,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2134140",
+        "name_ko": "Typeservice Web Cap [Dark Gray]",
+        "brand": "타입서비스",
+        "category": "소품 > 모자 > 캡/야구모자",
+        "final_price": 37050,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 26,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "캡/야구모자",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 47.69,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2134140",
+        "name_ko": "Typeservice Web Cap [Dark Gray]",
+        "brand": "타입서비스",
+        "category": "소품 > 모자 > 캡/야구모자",
+        "final_price": 37050,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 27,
+      "type": "category_structured",
+      "request": {
+        "category": "상의 > 후드 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 42.39,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2058188",
+        "name_ko": "TAG OG HOODIE - BLACK",
+        "brand": "브라운브레스",
+        "category": "상의 > 후드 티셔츠",
+        "final_price": 89000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 28,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "후드 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 62.68,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2058188",
+        "name_ko": "TAG OG HOODIE - BLACK",
+        "brand": "브라운브레스",
+        "category": "상의 > 후드 티셔츠",
+        "final_price": 89000,
+        "score": 21.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 29,
+      "type": "category_structured",
+      "request": {
+        "category": "아우터 > 나일론/코치 재킷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 42.24,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3800080",
+        "name_ko": "슈퍼 라이트 바람막이(10colors)",
+        "brand": "무신사 스탠다드 스포츠",
+        "category": "스포츠/레저 > 아우터 > 나일론/코치 재킷",
+        "final_price": 40420,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 30,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "나일론/코치 재킷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 55.17,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3800080",
+        "name_ko": "슈퍼 라이트 바람막이(10colors)",
+        "brand": "무신사 스탠다드 스포츠",
+        "category": "스포츠/레저 > 아우터 > 나일론/코치 재킷",
+        "final_price": 40420,
+        "score": 25.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 31,
+      "type": "category_structured",
+      "request": {
+        "category": "가방 > 숄더백",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 40.76,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2235274",
+        "name_ko": "SPORTY TOTE BAG IN BLACK",
+        "brand": "마뗑킴",
+        "category": "가방 > 숄더백",
+        "final_price": 145000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 32,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "숄더백",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 44.22,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2235274",
+        "name_ko": "SPORTY TOTE BAG IN BLACK",
+        "brand": "마뗑킴",
+        "category": "가방 > 숄더백",
+        "final_price": 145000,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 33,
+      "type": "category_structured",
+      "request": {
+        "category": "스포츠/레저 > 상의 > 반소매 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 42.04,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2690691",
+        "name_ko": "무지 머슬핏 반팔 5컬러",
+        "brand": "허그본",
+        "category": "스포츠/레저 > 상의 > 반소매 티셔츠",
+        "final_price": 23750,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 34,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "반소매 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 48.96,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2086653",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [화이트]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 14590,
+        "score": 22.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 35,
+      "type": "category_structured",
+      "request": {
+        "category": "신발 > 구두 > 더비 슈즈",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.49,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3276429",
+        "name_ko": "SHOWER - 808 (a) / BLACK",
+        "brand": "킨치",
+        "category": "신발 > 구두 > 더비 슈즈",
+        "final_price": 289000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 36,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "더비 슈즈",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 46.89,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3276429",
+        "name_ko": "SHOWER - 808 (a) / BLACK",
+        "brand": "킨치",
+        "category": "신발 > 구두 > 더비 슈즈",
+        "final_price": 289000,
+        "score": 20.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 37,
+      "type": "category_structured",
+      "request": {
+        "category": "상의 > 맨투맨/스웨트",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 40.87,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2090950",
+        "name_ko": "[360g] M-Logo 반집업 맨투맨 (JR5TSU838DA)",
+        "brand": "지프",
+        "category": "상의 > 맨투맨/스웨트",
+        "final_price": 54900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 38,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "맨투맨/스웨트",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 47,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2090950",
+        "name_ko": "[360g] M-Logo 반집업 맨투맨 (JR5TSU838DA)",
+        "brand": "지프",
+        "category": "상의 > 맨투맨/스웨트",
+        "final_price": 54900,
+        "score": 22.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 39,
+      "type": "category_structured",
+      "request": {
+        "category": "아우터 > 슈트/블레이저 재킷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.31,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1558197",
+        "name_ko": "릴렉스드 베이식 블레이저 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 슈트/블레이저 재킷",
+        "final_price": 85490,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 40,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "슈트/블레이저 재킷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 56.18,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1558197",
+        "name_ko": "릴렉스드 베이식 블레이저 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 슈트/블레이저 재킷",
+        "final_price": 85490,
+        "score": 25.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 41,
+      "type": "category_structured",
+      "request": {
+        "category": "아우터 > 블루종/MA-1",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 42.29,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1760177",
+        "name_ko": "도브 울 블루종 자켓 [BLACK]",
+        "brand": "드로우핏",
+        "category": "아우터 > 블루종/MA-1",
+        "final_price": 139200,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 42,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "블루종/MA-1",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 49.72,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1760177",
+        "name_ko": "도브 울 블루종 자켓 [BLACK]",
+        "brand": "드로우핏",
+        "category": "아우터 > 블루종/MA-1",
+        "final_price": 139200,
+        "score": 21.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 43,
+      "type": "category_structured",
+      "request": {
+        "category": "가방 > 백팩",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 40.88,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1034480",
+        "name_ko": "NM2DR50A 빅 샷_BLACK",
+        "brand": "노스페이스",
+        "category": "스포츠/레저 > 가방 > 백팩",
+        "final_price": 169000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 44,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "백팩",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 49.53,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1034480",
+        "name_ko": "NM2DR50A 빅 샷_BLACK",
+        "brand": "노스페이스",
+        "category": "스포츠/레저 > 가방 > 백팩",
+        "final_price": 169000,
+        "score": 7.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 45,
+      "type": "category_structured",
+      "request": {
+        "category": "아우터 > 트레이닝 재킷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.43,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "5992665",
+        "name_ko": "플레더 3S 트랙탑 - 아우라커피 / KQ5473",
+        "brand": "아디다스",
+        "category": "아우터 > 트레이닝 재킷",
+        "final_price": 169000,
+        "score": 7.7
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 46,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "트레이닝 재킷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 50.65,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "5992665",
+        "name_ko": "플레더 3S 트랙탑 - 아우라커피 / KQ5473",
+        "brand": "아디다스",
+        "category": "아우터 > 트레이닝 재킷",
+        "final_price": 169000,
+        "score": 24.9
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 47,
+      "type": "category_structured",
+      "request": {
+        "category": "아우터 > 레더/라이더스 재킷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.41,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2086731",
+        "name_ko": "오버핏 비건레더 보머 자켓",
+        "brand": "도프제이슨",
+        "category": "아우터 > 레더/라이더스 재킷",
+        "final_price": 119000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 48,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "레더/라이더스 재킷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 60.46,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2086731",
+        "name_ko": "오버핏 비건레더 보머 자켓",
+        "brand": "도프제이슨",
+        "category": "아우터 > 레더/라이더스 재킷",
+        "final_price": 119000,
+        "score": 25.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 49,
+      "type": "category_structured",
+      "request": {
+        "category": "상의 > 민소매 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 48.4,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "5159260",
+        "name_ko": "UNIFORM SLEEVELESS (6COLOR)",
+        "brand": "다이브인",
+        "category": "상의 > 민소매 티셔츠",
+        "final_price": 21000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 50,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "민소매 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 53.32,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "5159260",
+        "name_ko": "UNIFORM SLEEVELESS (6COLOR)",
+        "brand": "다이브인",
+        "category": "상의 > 민소매 티셔츠",
+        "final_price": 21000,
+        "score": 22.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 51,
+      "type": "category_structured",
+      "request": {
+        "category": "바지 > 기타 하의",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.95,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3404705",
+        "name_ko": "[시티 레저] CN 와이드 벨티드 파라슈트 팬츠 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 기타 하의",
+        "final_price": 62890,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 52,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "기타 하의",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 51.39,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3404705",
+        "name_ko": "[시티 레저] CN 와이드 벨티드 파라슈트 팬츠 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 기타 하의",
+        "final_price": 62890,
+        "score": 20.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 53,
+      "type": "category_structured",
+      "request": {
+        "category": "상의 > 피케/카라 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 40.77,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1404736",
+        "name_ko": "[쿨탠다드] 피케 폴로 셔츠 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 피케/카라 티셔츠",
+        "final_price": 31190,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 54,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "피케/카라 티셔츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 50.13,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1404736",
+        "name_ko": "[쿨탠다드] 피케 폴로 셔츠 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 피케/카라 티셔츠",
+        "final_price": 31190,
+        "score": 25.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 55,
+      "type": "category_structured",
+      "request": {
+        "category": "신발 > 스포츠화 > 러닝화",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 40.01,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4703345",
+        "name_ko": "(여성) 본디 9 와이드 - 블랙:블랙 / 1162014-BBLC",
+        "brand": "호카",
+        "category": "신발 > 스포츠화 > 러닝화",
+        "final_price": 229000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 56,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "러닝화",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 43.19,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4703345",
+        "name_ko": "(여성) 본디 9 와이드 - 블랙:블랙 / 1162014-BBLC",
+        "brand": "호카",
+        "category": "신발 > 스포츠화 > 러닝화",
+        "final_price": 229000,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 57,
+      "type": "category_structured",
+      "request": {
+        "category": "소품 > 벨트",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.53,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2086104",
+        "name_ko": "심플 웨스턴 하드레더 벨트",
+        "brand": "도프제이슨",
+        "category": "소품 > 벨트",
+        "final_price": 29800,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 58,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "벨트",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 43.29,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2086104",
+        "name_ko": "심플 웨스턴 하드레더 벨트",
+        "brand": "도프제이슨",
+        "category": "소품 > 벨트",
+        "final_price": 29800,
+        "score": 7.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 59,
+      "type": "category_structured",
+      "request": {
+        "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.72,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4356794",
+        "name_ko": "[시티 레저] 후디드 라이트 다운 재킷 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
+        "final_price": 109900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 60,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "경량 패딩",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 47.21,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4356794",
+        "name_ko": "[시티 레저] 후디드 라이트 다운 재킷 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
+        "final_price": 109900,
+        "score": 20.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 61,
+      "type": "category_structured",
+      "request": {
+        "category": "소품 > 주얼리 > 팔찌",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.39,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3600203",
+        "name_ko": "라피스 멀티 비즈 팔찌 _ 블랙",
+        "brand": "아차",
+        "category": "소품 > 주얼리 > 팔찌",
+        "final_price": 26100,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 62,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "팔찌",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 46.28,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3600203",
+        "name_ko": "라피스 멀티 비즈 팔찌 _ 블랙",
+        "brand": "아차",
+        "category": "소품 > 주얼리 > 팔찌",
+        "final_price": 26100,
+        "score": 7.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 63,
+      "type": "category_structured",
+      "request": {
+        "category": "신발 > 구두 > 로퍼",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.57,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4321804",
+        "name_ko": "뉴 미니멀 로퍼 R24M050 (리얼브라운 스웨이드)",
+        "brand": "로맨틱무브",
+        "category": "신발 > 구두 > 로퍼",
+        "final_price": 178000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 64,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "로퍼",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 44.35,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4321804",
+        "name_ko": "뉴 미니멀 로퍼 R24M050 (리얼브라운 스웨이드)",
+        "brand": "로맨틱무브",
+        "category": "신발 > 구두 > 로퍼",
+        "final_price": 178000,
+        "score": 7.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 65,
+      "type": "category_structured",
+      "request": {
+        "category": "가방 > 메신저/크로스 백",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.43,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1789507",
+        "name_ko": "아크 블랙 메신저백",
+        "brand": "하 아카이브",
+        "category": "가방 > 메신저/크로스 백",
+        "final_price": 56880,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 66,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "메신저/크로스 백",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 49.27,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1789507",
+        "name_ko": "아크 블랙 메신저백",
+        "brand": "하 아카이브",
+        "category": "가방 > 메신저/크로스 백",
+        "final_price": 56880,
+        "score": 22.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 67,
+      "type": "category_structured",
+      "request": {
+        "category": "신발 > 스니커즈 > 캔버스/단화",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.14,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "810034",
+        "name_ko": "[스탠다드] 척 70 클래식  블랙 162058C",
+        "brand": "컨버스",
+        "category": "신발 > 스니커즈 > 캔버스/단화",
+        "final_price": 95000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 68,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "캔버스/단화",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 46.09,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "810034",
+        "name_ko": "[스탠다드] 척 70 클래식  블랙 162058C",
+        "brand": "컨버스",
+        "category": "신발 > 스니커즈 > 캔버스/단화",
+        "final_price": 95000,
+        "score": 21.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 69,
+      "type": "category_structured",
+      "request": {
+        "category": "소품 > 양말/레그웨어 > 양말",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.98,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "998051",
+        "name_ko": "[10PACK] 1507 모노 트라우져 하프 삭스 _ 스노우화이트/화이트/블랙",
+        "brand": "일오공칠",
+        "category": "소품 > 양말/레그웨어 > 양말",
+        "final_price": 15900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 70,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "양말",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 46.73,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "998051",
+        "name_ko": "[10PACK] 1507 모노 트라우져 하프 삭스 _ 스노우화이트/화이트/블랙",
+        "brand": "일오공칠",
+        "category": "소품 > 양말/레그웨어 > 양말",
+        "final_price": 15900,
+        "score": 7.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 71,
+      "type": "category_structured",
+      "request": {
+        "category": "속옷/홈웨어 > 남성 속옷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 44.09,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4512936",
+        "name_ko": "데일리 극세사밴드 에어로쿨 드로즈 5PACK",
+        "brand": "코데즈컴바인 이너웨어",
+        "category": "속옷/홈웨어 > 남성 속옷",
+        "final_price": 60000,
+        "score": 7.7
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 72,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "남성 속옷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 46.81,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4512936",
+        "name_ko": "데일리 극세사밴드 에어로쿨 드로즈 5PACK",
+        "brand": "코데즈컴바인 이너웨어",
+        "category": "속옷/홈웨어 > 남성 속옷",
+        "final_price": 60000,
+        "score": 20.5
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 73,
+      "type": "category_structured",
+      "request": {
+        "category": "스포츠/레저 > 가방 > 백팩",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.25,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1034480",
+        "name_ko": "NM2DR50A 빅 샷_BLACK",
+        "brand": "노스페이스",
+        "category": "스포츠/레저 > 가방 > 백팩",
+        "final_price": 169000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 74,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "백팩",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 44.52,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1034480",
+        "name_ko": "NM2DR50A 빅 샷_BLACK",
+        "brand": "노스페이스",
+        "category": "스포츠/레저 > 가방 > 백팩",
+        "final_price": 169000,
+        "score": 7.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 75,
+      "type": "category_structured",
+      "request": {
+        "category": "아우터 > 트러커 재킷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.49,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3622977",
+        "name_ko": "페이드 워싱 바이커 데님 자켓 (BLACK)",
+        "brand": "트릴리온",
+        "category": "아우터 > 트러커 재킷",
+        "final_price": 54900,
+        "score": 7.64
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 76,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "트러커 재킷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 52.89,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3622977",
+        "name_ko": "페이드 워싱 바이커 데님 자켓 (BLACK)",
+        "brand": "트릴리온",
+        "category": "아우터 > 트러커 재킷",
+        "final_price": 54900,
+        "score": 21.64
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 77,
+      "type": "category_structured",
+      "request": {
+        "category": "소품 > 선글라스/안경테 > 선글라스",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 45.13,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3123085",
+        "name_ko": "MOMO",
+        "brand": "비브이에이치",
+        "category": "소품 > 선글라스/안경테 > 선글라스",
+        "final_price": 25920,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 78,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "선글라스",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 52.23,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3123085",
+        "name_ko": "MOMO",
+        "brand": "비브이에이치",
+        "category": "소품 > 선글라스/안경테 > 선글라스",
+        "final_price": 25920,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 79,
+      "type": "category_structured",
+      "request": {
+        "category": "신발 > 샌들/슬리퍼 > 슬라이드",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.9,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2440039",
+        "name_ko": "논슬립 베이직 리커버리 쪼리 HPCV5GS601",
+        "brand": "슈펜",
+        "category": "신발 > 샌들/슬리퍼 > 슬라이드",
+        "final_price": 18910,
+        "score": 7.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 80,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "슬라이드",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 45.21,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2440039",
+        "name_ko": "논슬립 베이직 리커버리 쪼리 HPCV5GS601",
+        "brand": "슈펜",
+        "category": "신발 > 샌들/슬리퍼 > 슬라이드",
+        "final_price": 18910,
+        "score": 18.26
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 81,
+      "type": "category_structured",
+      "request": {
+        "category": "신발 > 샌들/슬리퍼 > 스포츠/캐주얼 샌들",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 42.49,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2378989",
+        "name_ko": "뉴포트 H2 샌들 Triple Black",
+        "brand": "킨",
+        "category": "신발 > 샌들/슬리퍼 > 스포츠/캐주얼 샌들",
+        "final_price": 169000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 82,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "스포츠/캐주얼 샌들",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 54.06,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2378989",
+        "name_ko": "뉴포트 H2 샌들 Triple Black",
+        "brand": "킨",
+        "category": "신발 > 샌들/슬리퍼 > 스포츠/캐주얼 샌들",
+        "final_price": 169000,
+        "score": 26.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 83,
+      "type": "category_structured",
+      "request": {
+        "category": "스포츠/레저 > 하의 > 숏팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.17,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2508821",
+        "name_ko": "[카고 옵션 추가] 에어스트레치 쇼츠_블랙 트레이닝",
+        "brand": "어프레쉬",
+        "category": "스포츠/레저 > 하의 > 숏팬츠",
+        "final_price": 23900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 84,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "숏팬츠",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 47.76,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4655528",
+        "name_ko": "스포츠 반바지 쇼츠 프로 (2IN1)",
+        "brand": "러닝라이프",
+        "category": "스포츠/레저 > 하의 > 숏팬츠",
+        "final_price": 27650,
+        "score": 26.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 85,
+      "type": "category_structured",
+      "request": {
+        "category": "신발 > 스니커즈 > 라이프스타일화",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.81,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4319321",
+        "name_ko": "유니 레더 v2 스웨이드 독일군 HPMR6EA301",
+        "brand": "슈펜",
+        "category": "신발 > 스니커즈 > 라이프스타일화",
+        "final_price": 56910,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 86,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "라이프스타일화",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 60.29,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4319321",
+        "name_ko": "유니 레더 v2 스웨이드 독일군 HPMR6EA301",
+        "brand": "슈펜",
+        "category": "신발 > 스니커즈 > 라이프스타일화",
+        "final_price": 56910,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 87,
+      "type": "category_structured",
+      "request": {
+        "category": "가방 > 토트백",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.56,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2408213",
+        "name_ko": "시티워커 토트백 010 Black",
+        "brand": "로우로우",
+        "category": "가방 > 토트백",
+        "final_price": 89100,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 88,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "토트백",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 45.32,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2408213",
+        "name_ko": "시티워커 토트백 010 Black",
+        "brand": "로우로우",
+        "category": "가방 > 토트백",
+        "final_price": 89100,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 89,
+      "type": "category_structured",
+      "request": {
+        "category": "스포츠/레저 > 아우터 > 나일론/코치 재킷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 50.32,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3800080",
+        "name_ko": "슈퍼 라이트 바람막이(10colors)",
+        "brand": "무신사 스탠다드 스포츠",
+        "category": "스포츠/레저 > 아우터 > 나일론/코치 재킷",
+        "final_price": 40420,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 90,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "나일론/코치 재킷",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 54.66,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3800080",
+        "name_ko": "슈퍼 라이트 바람막이(10colors)",
+        "brand": "무신사 스탠다드 스포츠",
+        "category": "스포츠/레저 > 아우터 > 나일론/코치 재킷",
+        "final_price": 40420,
+        "score": 25.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 91,
+      "type": "category_structured",
+      "request": {
+        "category": "가방 > 캐리어",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 40.57,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "5378319",
+        "name_ko": "쿼디 캐리어 28인치(4COLOR)",
+        "brand": "리드볼트",
+        "category": "가방 > 캐리어",
+        "final_price": 364700,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 92,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "캐리어",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 45.05,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "5378319",
+        "name_ko": "쿼디 캐리어 28인치(4COLOR)",
+        "brand": "리드볼트",
+        "category": "가방 > 캐리어",
+        "final_price": 364700,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 93,
+      "type": "category_structured",
+      "request": {
+        "category": "소품 > 주얼리 > 목걸이/펜던트",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 42.89,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4403002",
+        "name_ko": "DX1477040 D 로고 체인 목걸이",
+        "brand": "디젤 악세사리",
+        "category": "소품 > 주얼리 > 목걸이/펜던트",
+        "final_price": 210000,
+        "score": 7.7
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 94,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "목걸이/펜던트",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 47.67,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4403002",
+        "name_ko": "DX1477040 D 로고 체인 목걸이",
+        "brand": "디젤 악세사리",
+        "category": "소품 > 주얼리 > 목걸이/펜던트",
+        "final_price": 210000,
+        "score": 22.9
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 95,
+      "type": "category_structured",
+      "request": {
+        "category": "신발 > 샌들/슬리퍼 > 쪼리/플립플랍",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 41.74,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2476724",
+        "name_ko": "Zerovity OG 웜그레이",
+        "brand": "토앤토",
+        "category": "신발 > 샌들/슬리퍼 > 쪼리/플립플랍",
+        "final_price": 56000,
+        "score": 7.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 96,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "쪼리/플립플랍",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 56.5,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "2476724",
+        "name_ko": "Zerovity OG 웜그레이",
+        "brand": "토앤토",
+        "category": "신발 > 샌들/슬리퍼 > 쪼리/플립플랍",
+        "final_price": 56000,
+        "score": 21.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 97,
+      "type": "category_structured",
+      "request": {
+        "category": "아우터 > 기타 아우터",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 40.91,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1882525",
+        "name_ko": "클래식 웜업 자켓 블랙(UQ321CJK93)",
+        "brand": "엄브로",
+        "category": "아우터 > 기타 아우터",
+        "final_price": 104300,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 98,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "기타 아우터",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 48,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "1882525",
+        "name_ko": "클래식 웜업 자켓 블랙(UQ321CJK93)",
+        "brand": "엄브로",
+        "category": "아우터 > 기타 아우터",
+        "final_price": 104300,
+        "score": 21.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 99,
+      "type": "category_structured",
+      "request": {
+        "category": "속옷/홈웨어 > 홈웨어",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 51.01,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "3198730",
+        "name_ko": "실크핏 클린 반팔 커플 잠옷 세트",
+        "brand": "도씨",
+        "category": "속옷/홈웨어 > 홈웨어",
+        "final_price": 36900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 100,
+      "type": "category_leaf_query",
+      "request": {
+        "query": "홈웨어",
+        "limit": 8
+      },
+      "status": 200,
+      "latency_ms": 45.16,
+      "result_count": 8,
+      "top_result": {
+        "product_id": "4512936",
+        "name_ko": "데일리 극세사밴드 에어로쿨 드로즈 5PACK",
+        "brand": "코데즈컴바인 이너웨어",
+        "category": "속옷/홈웨어 > 남성 속옷",
+        "final_price": 60000,
+        "score": 18.3
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 101,
+      "type": "brand_structured",
+      "request": {
+        "brand": "무신사 스탠다드",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 47.6,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "991339",
+        "name_ko": "라이트웨이트 크루 삭스 7팩 [화이트]",
+        "brand": "무신사 스탠다드",
+        "category": "소품 > 양말/레그웨어 > 양말",
+        "final_price": 17990,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 102,
+      "type": "brand_structured",
+      "request": {
+        "brand": "아디다스",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 47.74,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "5992665",
+        "name_ko": "플레더 3S 트랙탑 - 아우라커피 / KQ5473",
+        "brand": "아디다스",
+        "category": "아우터 > 트레이닝 재킷",
+        "final_price": 169000,
+        "score": 7.7
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 103,
+      "type": "brand_structured",
+      "request": {
+        "brand": "무신사 스탠다드 우먼",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 47.23,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "1618312",
+        "name_ko": "우먼즈 오버사이즈 블레이저 [블랙]",
+        "brand": "무신사 스탠다드 우먼",
+        "category": "아우터 > 슈트/블레이저 재킷",
+        "final_price": 71920,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 104,
+      "type": "brand_structured",
+      "request": {
+        "brand": "디미트리블랙",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.64,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "3783089",
+        "name_ko": "VLAD 2WAY 레글런 아트웍 집업 니트_네이비",
+        "brand": "디미트리블랙",
+        "category": "아우터 > 카디건",
+        "final_price": 43900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 105,
+      "type": "brand_structured",
+      "request": {
+        "brand": "나이키",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.99,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "3976350",
+        "name_ko": "에어 포스 1 07 M - 화이트 / CW2288-111",
+        "brand": "나이키",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 149000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 106,
+      "type": "brand_structured",
+      "request": {
+        "brand": "언탭트 스튜디오",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 44.87,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "4164429",
+        "name_ko": "빈티지 프론트 워싱 와이드 청바지 데님 팬츠",
+        "brand": "언탭트 스튜디오",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 34970,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 107,
+      "type": "brand_structured",
+      "request": {
+        "brand": "트릴리온",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.5,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "2351467",
+        "name_ko": "바이오스톤 워싱 와이드 데님 팬츠 (BLUE GRAY)",
+        "brand": "트릴리온",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 34900,
+        "score": 7.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 108,
+      "type": "brand_structured",
+      "request": {
+        "brand": "드로우핏",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.43,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "1456515",
+        "name_ko": "멀티 스트랩 미니 백 [MATT BLACK]",
+        "brand": "드로우핏",
+        "category": "가방 > 메신저/크로스 백",
+        "final_price": 49500,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 109,
+      "type": "brand_structured",
+      "request": {
+        "brand": "폴로 랄프 로렌",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 44.03,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "1706633",
+        "name_ko": "커스텀핏 옥스포드 셔츠 - 화이트",
+        "brand": "폴로 랄프 로렌",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 239000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 110,
+      "type": "brand_structured",
+      "request": {
+        "brand": "시그니처",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 42.73,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "2578996",
+        "name_ko": "[여름원단추가]더블턱 와이드 슬랙스[블랙]",
+        "brand": "시그니처",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 32900,
+        "score": 7.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 111,
+      "type": "brand_structured",
+      "request": {
+        "brand": "무센트",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.39,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "3369141",
+        "name_ko": "시그니처 볼캡 (다잉 그레이 데님)",
+        "brand": "무센트",
+        "category": "소품 > 모자 > 캡/야구모자",
+        "final_price": 29900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 112,
+      "type": "brand_structured",
+      "request": {
+        "brand": "스파오",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.33,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "5921634",
+        "name_ko": "[산리오캐릭터즈] 헬로키티 레오파드 잠옷바지(BROWN)_SPPPG23U07",
+        "brand": "스파오",
+        "category": "속옷/홈웨어 > 홈웨어",
+        "final_price": 29900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 113,
+      "type": "brand_structured",
+      "request": {
+        "brand": "브렌슨",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 45.7,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "5167907",
+        "name_ko": "[건조기가능] 컴포트 크롭 반팔티 ( 8Color )",
+        "brand": "브렌슨",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 23900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 114,
+      "type": "brand_structured",
+      "request": {
+        "brand": "토피",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 58.1,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "3663072",
+        "name_ko": "모어 와이드 데님 팬츠 (WASHED RAW BLACK)",
+        "brand": "토피",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 39200,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 115,
+      "type": "brand_structured",
+      "request": {
+        "brand": "필루미네이트",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 44.82,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "3791988",
+        "name_ko": "데미지 워시드 데님 팬츠-미디엄 블루",
+        "brand": "필루미네이트",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 35900,
+        "score": 7.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 116,
+      "type": "brand_structured",
+      "request": {
+        "brand": "알리스",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 46.19,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "4729601",
+        "name_ko": "믹스드 크롭 니트 가디건 [오트밀]",
+        "brand": "알리스",
+        "category": "아우터 > 카디건",
+        "final_price": 76000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 117,
+      "type": "brand_structured",
+      "request": {
+        "brand": "더콜디스트모먼트",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 44.46,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "4175389",
+        "name_ko": "TCM restaurant T (black)",
+        "brand": "더콜디스트모먼트",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 41400,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 118,
+      "type": "brand_structured",
+      "request": {
+        "brand": "르아르",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.8,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "4989733",
+        "name_ko": "링클 시어서커 체크 반팔 셔츠 [차콜]",
+        "brand": "르아르",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 29400,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 119,
+      "type": "brand_structured",
+      "request": {
+        "brand": "푸마",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.87,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "4201442",
+        "name_ko": "스피드캣 OG - 블랙 / 398846-01",
+        "brand": "푸마",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 149000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 120,
+      "type": "brand_structured",
+      "request": {
+        "brand": "수아레",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.25,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "3025211",
+        "name_ko": "에센셜 라운드 니트 가디건 - 8 COLOR",
+        "brand": "수아레",
+        "category": "아우터 > 카디건",
+        "final_price": 39900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 121,
+      "type": "brand_structured",
+      "request": {
+        "brand": "뉴발란스",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 44.67,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "4727091",
+        "name_ko": "NBPDGS114S / MR530LG (SILVER)",
+        "brand": "뉴발란스",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 129000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 122,
+      "type": "brand_structured",
+      "request": {
+        "brand": "브론슨",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 48.35,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "3269419",
+        "name_ko": "10.6 oz Cotton Short Sleeve Henley Tee Dark Grey",
+        "brand": "브론슨",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 42930,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 123,
+      "type": "brand_structured",
+      "request": {
+        "brand": "탄산마그네슘",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 44.81,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "5432652",
+        "name_ko": "마운틴 롱슬리브 (화이트/레드)",
+        "brand": "탄산마그네슘",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 52440,
+        "score": 7.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 124,
+      "type": "brand_structured",
+      "request": {
+        "brand": "스켈리웩",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 47.4,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "5146932",
+        "name_ko": "WAAG 버뮤다 스웨트 팬츠[블랙]",
+        "brand": "스켈리웩",
+        "category": "바지 > 숏 팬츠",
+        "final_price": 34900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 125,
+      "type": "brand_structured",
+      "request": {
+        "brand": "지프",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 45.1,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "2090950",
+        "name_ko": "[360g] M-Logo 반집업 맨투맨 (JR5TSU838DA)",
+        "brand": "지프",
+        "category": "상의 > 맨투맨/스웨트",
+        "final_price": 54900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 126,
+      "type": "brand_structured",
+      "request": {
+        "brand": "비긴202",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.28,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "3837367",
+        "name_ko": "워시드 코튼 도비 팬츠 [워시드 블랙]",
+        "brand": "비긴202",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 106200,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 127,
+      "type": "brand_structured",
+      "request": {
+        "brand": "엑스컨테이너",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.95,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "4336624",
+        "name_ko": "미니멀 버튼 라운드넥 크롭 가디건 (DARK RED)",
+        "brand": "엑스컨테이너",
+        "category": "아우터 > 카디건",
+        "final_price": 51900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 128,
+      "type": "brand_structured",
+      "request": {
+        "brand": "닥터마틴",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 44.49,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "595039",
+        "name_ko": "1461 3홀 블랙 스무스 / 11838002",
+        "brand": "닥터마틴",
+        "category": "신발 > 구두 > 더비 슈즈",
+        "final_price": 229000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 129,
+      "type": "brand_structured",
+      "request": {
+        "brand": "고스트리퍼블릭",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.81,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "6224315",
+        "name_ko": "커브드 사이드 핀턱 벌룬 버뮤다 스웻 반바지 GP-512_블랙",
+        "brand": "고스트리퍼블릭",
+        "category": "바지 > 숏 팬츠",
+        "final_price": 32900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 130,
+      "type": "brand_structured",
+      "request": {
+        "brand": "효지",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.79,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "5020231",
+        "name_ko": "SS 루즈핏 유넥 반팔 티셔츠 ( 3컬러 )",
+        "brand": "효지",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 25900,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 131,
+      "type": "brand_structured",
+      "request": {
+        "brand": "브라운브레스",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 44.18,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "2058188",
+        "name_ko": "TAG OG HOODIE - BLACK",
+        "brand": "브라운브레스",
+        "category": "상의 > 후드 티셔츠",
+        "final_price": 89000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 132,
+      "type": "brand_structured",
+      "request": {
+        "brand": "리메인세컨드",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.69,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "4274049",
+        "name_ko": "빈티지 캣워싱 와이드 데님 팬츠 [옐로우 워싱]",
+        "brand": "리메인세컨드",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 38900,
+        "score": 7.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 133,
+      "type": "brand_structured",
+      "request": {
+        "brand": "마뗑킴",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 45.47,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "2235274",
+        "name_ko": "SPORTY TOTE BAG IN BLACK",
+        "brand": "마뗑킴",
+        "category": "가방 > 숄더백",
+        "final_price": 145000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 134,
+      "type": "brand_structured",
+      "request": {
+        "brand": "캘빈클라인 진",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 44.45,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "1856360",
+        "name_ko": "[2PACK] 남녀공용 로고 솔리드 반팔 티셔츠 4RAB217 3GE",
+        "brand": "캘빈클라인 진",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 46530,
+        "score": 7.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 135,
+      "type": "brand_structured",
+      "request": {
+        "brand": "디키즈",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 53.9,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "3880598",
+        "name_ko": "42283 루즈핏 워크쇼츠 Black",
+        "brand": "디키즈",
+        "category": "바지 > 숏 팬츠",
+        "final_price": 55000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 136,
+      "type": "brand_structured",
+      "request": {
+        "brand": "에잇세컨즈",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 49.78,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "6471680",
+        "name_ko": "텐셀 블랜디드 와이드핏 밴딩 팬츠  애쉬",
+        "brand": "에잇세컨즈",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 27540,
+        "score": 7.2
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 137,
+      "type": "brand_structured",
+      "request": {
+        "brand": "캘빈클라인 언더웨어",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 46.21,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "4240890",
+        "name_ko": "남성 CK 마이크로 플러스 로우 라이즈 트렁크 3PK_NP2752O001",
+        "brand": "캘빈클라인 언더웨어",
+        "category": "속옷/홈웨어 > 남성 속옷",
+        "final_price": 65100,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 138,
+      "type": "brand_structured",
+      "request": {
+        "brand": "오니츠카타이거",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 45.28,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "2632730",
+        "name_ko": "멕시코 66  1183C102_200",
+        "brand": "오니츠카타이거",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 196000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 139,
+      "type": "brand_structured",
+      "request": {
+        "brand": "노스페이스",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.87,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "1034480",
+        "name_ko": "NM2DR50A 빅 샷_BLACK",
+        "brand": "노스페이스",
+        "category": "스포츠/레저 > 가방 > 백팩",
+        "final_price": 169000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 140,
+      "type": "brand_structured",
+      "request": {
+        "brand": "제너럴아이디어",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.16,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "3434621",
+        "name_ko": "GNRL 에센셜 가디건 [6COL] / WBD3L04503",
+        "brand": "제너럴아이디어",
+        "category": "아우터 > 카디건",
+        "final_price": 49000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 141,
+      "type": "brand_structured",
+      "request": {
+        "brand": "휠라",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.72,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "4328804",
+        "name_ko": "에샤페 초코(FS261OD03X087219)",
+        "brand": "휠라",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 119000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 142,
+      "type": "brand_structured",
+      "request": {
+        "brand": "반스",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.41,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "102622",
+        "name_ko": "어센틱 - 블랙 / VN000EE3BLK1",
+        "brand": "반스",
+        "category": "신발 > 스니커즈 > 캔버스/단화",
+        "final_price": 69000,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 143,
+      "type": "brand_structured",
+      "request": {
+        "brand": "엄브로",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.21,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "1882525",
+        "name_ko": "클래식 웜업 자켓 블랙(UQ321CJK93)",
+        "brand": "엄브로",
+        "category": "아우터 > 기타 아우터",
+        "final_price": 104300,
+        "score": 7.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 144,
+      "type": "brand_structured",
+      "request": {
+        "brand": "유니온블루",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 43.89,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "3562068",
+        "name_ko": "KENSINGTON SHIRT",
+        "brand": "유니온블루",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 77900,
+        "score": 7.7
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 145,
+      "type": "brand_structured",
+      "request": {
+        "brand": "데상트",
+        "limit": 6
+      },
+      "status": 200,
+      "latency_ms": 44.16,
+      "result_count": 6,
+      "top_result": {
+        "product_id": "5200037",
+        "name_ko": "엣지 코트 피치 화이트 SR323LSN72",
+        "brand": "데상트",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 113050,
+        "score": 7.2
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 146,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 반소매 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.91,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1388775",
+        "name_ko": "[쿨탠다드] 릴렉스 핏 크루 넥 티셔츠 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 18890,
+        "score": 14.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 147,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 반소매 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 58.2,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2086656",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [다크 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 13490,
+        "score": 16.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 148,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 반소매 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.18,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2086656",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [다크 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 13490,
+        "score": 16.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 149,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 셔츠/블라우스 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 57.62,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5627635",
+        "name_ko": "릴렉스드 시어서커 테터솔 체크 반소매 셔츠 [다크 그레이/블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 49900,
+        "score": 13.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 150,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 셔츠/블라우스 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 57.78,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1973481",
+        "name_ko": "스테디 셔츠 - 라이트 그레이",
+        "brand": "애습",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 58400,
+        "score": 14.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 151,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 셔츠/블라우스 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.5,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1973481",
+        "name_ko": "스테디 셔츠 - 라이트 그레이",
+        "brand": "애습",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 58400,
+        "score": 14.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 152,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 데님 팬츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 55.37,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3051700",
+        "name_ko": "루즈 스트레이트 데님 팬츠 [워시드 블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 37390,
+        "score": 12.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 153,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 데님 팬츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 55.44,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5937440",
+        "name_ko": "워시드 엔지니어 데님 팬츠 (워시드블루그레이)",
+        "brand": "쿠어",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 169200,
+        "score": 13.16
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 154,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 데님 팬츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.66,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5937440",
+        "name_ko": "워시드 엔지니어 데님 팬츠 (워시드블루그레이)",
+        "brand": "쿠어",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 169200,
+        "score": 13.16
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 155,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 패션스니커즈화 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 64.7,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1163169",
+        "name_ko": "삼바 OG - 화이트:블랙 / B75806",
+        "brand": "아디다스",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 149000,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 156,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 패션스니커즈화 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 59.51,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3392006",
+        "name_ko": "젤-1130 - 스틸 그레이:퓨어 실버 / 1201A934-020",
+        "brand": "아식스",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 119000,
+        "score": 19.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 157,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 패션스니커즈화 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 58.15,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3392006",
+        "name_ko": "젤-1130 - 스틸 그레이:퓨어 실버 / 1201A934-020",
+        "brand": "아식스",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 119000,
+        "score": 19.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 158,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 코튼 팬츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.27,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3837367",
+        "name_ko": "워시드 코튼 도비 팬츠 [워시드 블랙]",
+        "brand": "비긴202",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 106200,
+        "score": 12.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 159,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 코튼 팬츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 55.91,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5113094",
+        "name_ko": "커브드 트윈 다트 코튼 팬츠[그레이]",
+        "brand": "시그니처",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 39900,
+        "score": 13.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 160,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 코튼 팬츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 55.23,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5113094",
+        "name_ko": "커브드 트윈 다트 코튼 팬츠[그레이]",
+        "brand": "시그니처",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 39900,
+        "score": 13.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 161,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 트레이닝/조거 팬츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 61.53,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2112061",
+        "name_ko": "[여름 or 기모 or 사계절 원단 선택] 원턱 와이드 스웨트팬츠 블랙",
+        "brand": "가까이 유니언즈",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 31200,
+        "score": 17.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 162,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 트레이닝/조거 팬츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 62.26,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2112059",
+        "name_ko": "[여름 or 기모 or 사계절 원단 선택] 원턱 와이드 스웨트팬츠 그레이",
+        "brand": "가까이 유니언즈",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 31200,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 163,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 트레이닝/조거 팬츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 64.09,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2112059",
+        "name_ko": "[여름 or 기모 or 사계절 원단 선택] 원턱 와이드 스웨트팬츠 그레이",
+        "brand": "가까이 유니언즈",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 31200,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 164,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 긴소매 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 58.05,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4757913",
+        "name_ko": "와플 링 스냅 헨리넥 롱 슬리브 [블랙]",
+        "brand": "트릴리온",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 29800,
+        "score": 14.86
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 165,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 긴소매 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.76,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5318901",
+        "name_ko": "VTG 인터록 헨리넥 롱슬리브 [그레이]",
+        "brand": "후브스",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 39200,
+        "score": 16.06
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 166,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 긴소매 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.84,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5318901",
+        "name_ko": "VTG 인터록 헨리넥 롱슬리브 [그레이]",
+        "brand": "후브스",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 39200,
+        "score": 16.06
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 167,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 후드 집업 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 58.26,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3697526",
+        "name_ko": "[2-WAY] 슬리브 스타 피그먼트 후드 집업 스모크블랙",
+        "brand": "꼼파뇨",
+        "category": "아우터 > 후드 집업",
+        "final_price": 59400,
+        "score": 17.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 168,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 후드 집업 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.34,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2372450",
+        "name_ko": "980G 피그먼트 컷 후디 집업-문그레이-",
+        "brand": "소버먼트",
+        "category": "아우터 > 후드 집업",
+        "final_price": 75000,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 169,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 후드 집업 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.99,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2372450",
+        "name_ko": "980G 피그먼트 컷 후디 집업-문그레이-",
+        "brand": "소버먼트",
+        "category": "아우터 > 후드 집업",
+        "final_price": 75000,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 170,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 니트/스웨터 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 57.56,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4871107",
+        "name_ko": "베일 헨리넥 니트 [블랙]",
+        "brand": "데꼬로소",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 58600,
+        "score": 13.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 171,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 니트/스웨터 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 57.06,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2100417",
+        "name_ko": "미니멀 크루 넥 니트 [라이트 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 59390,
+        "score": 14.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 172,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 니트/스웨터 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.98,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2100417",
+        "name_ko": "미니멀 크루 넥 니트 [라이트 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 59390,
+        "score": 14.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 173,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 슈트 팬츠/슬랙스 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 66.19,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1168906",
+        "name_ko": "와이드 히든 밴딩 슬랙스 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 45900,
+        "score": 17.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 174,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 슈트 팬츠/슬랙스 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 60.29,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5371345",
+        "name_ko": "스트라이프 원턱 와이드 슬랙스 - 차콜 그레이",
+        "brand": "애습",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 69000,
+        "score": 19.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 175,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 슈트 팬츠/슬랙스 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 58.92,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5371345",
+        "name_ko": "스트라이프 원턱 와이드 슬랙스 - 차콜 그레이",
+        "brand": "애습",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 69000,
+        "score": 19.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 176,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 숏 팬츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 58.65,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4655528",
+        "name_ko": "스포츠 반바지 쇼츠 프로 (2IN1)",
+        "brand": "러닝라이프",
+        "category": "스포츠/레저 > 하의 > 숏팬츠",
+        "final_price": 27650,
+        "score": 19.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 177,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 숏 팬츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 58.95,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4655528",
+        "name_ko": "스포츠 반바지 쇼츠 프로 (2IN1)",
+        "brand": "러닝라이프",
+        "category": "스포츠/레저 > 하의 > 숏팬츠",
+        "final_price": 27650,
+        "score": 19.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 178,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 숏 팬츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 58.59,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4655528",
+        "name_ko": "스포츠 반바지 쇼츠 프로 (2IN1)",
+        "brand": "러닝라이프",
+        "category": "스포츠/레저 > 하의 > 숏팬츠",
+        "final_price": 27650,
+        "score": 19.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 179,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 카디건 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 54.1,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3981315",
+        "name_ko": "크롭 무브 가디건 [블랙]",
+        "brand": "밀로 아카이브",
+        "category": "아우터 > 카디건",
+        "final_price": 86400,
+        "score": 10.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 180,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 카디건 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 58.06,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3881573",
+        "name_ko": "크롭 무브 가디건 [블루 그레이]",
+        "brand": "밀로 아카이브",
+        "category": "아우터 > 카디건",
+        "final_price": 86400,
+        "score": 11.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 181,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 카디건 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 53.15,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3881573",
+        "name_ko": "크롭 무브 가디건 [블루 그레이]",
+        "brand": "밀로 아카이브",
+        "category": "아우터 > 카디건",
+        "final_price": 86400,
+        "score": 11.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 182,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 캡/야구모자 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 54.5,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2879419",
+        "name_ko": "B LOGO 볼캡 [블랙]",
+        "brand": "바우프",
+        "category": "소품 > 모자 > 캡/야구모자",
+        "final_price": 44000,
+        "score": 10.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 183,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 캡/야구모자 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 54.62,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3369141",
+        "name_ko": "시그니처 볼캡 (다잉 그레이 데님)",
+        "brand": "무센트",
+        "category": "소품 > 모자 > 캡/야구모자",
+        "final_price": 29900,
+        "score": 11.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 184,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 캡/야구모자 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 53.97,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3369141",
+        "name_ko": "시그니처 볼캡 (다잉 그레이 데님)",
+        "brand": "무센트",
+        "category": "소품 > 모자 > 캡/야구모자",
+        "final_price": 29900,
+        "score": 11.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 185,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 후드 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 58.74,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3697526",
+        "name_ko": "[2-WAY] 슬리브 스타 피그먼트 후드 집업 스모크블랙",
+        "brand": "꼼파뇨",
+        "category": "아우터 > 후드 집업",
+        "final_price": 59400,
+        "score": 17.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 186,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 후드 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 59.02,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2372450",
+        "name_ko": "980G 피그먼트 컷 후디 집업-문그레이-",
+        "brand": "소버먼트",
+        "category": "아우터 > 후드 집업",
+        "final_price": 75000,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 187,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 후드 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 57.82,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2372450",
+        "name_ko": "980G 피그먼트 컷 후디 집업-문그레이-",
+        "brand": "소버먼트",
+        "category": "아우터 > 후드 집업",
+        "final_price": 75000,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 188,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 나일론/코치 재킷 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 61.01,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3758212",
+        "name_ko": "[시티 레저] 라이트웨이트 패커블 윈드브레이커 재킷 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 나일론/코치 재킷",
+        "final_price": 33890,
+        "score": 17.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 189,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 나일론/코치 재킷 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 64.38,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3758213",
+        "name_ko": "[시티 레저] 라이트웨이트 패커블 윈드브레이커 재킷 [그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 나일론/코치 재킷",
+        "final_price": 39900,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 190,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 나일론/코치 재킷 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 62.56,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3758213",
+        "name_ko": "[시티 레저] 라이트웨이트 패커블 윈드브레이커 재킷 [그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 나일론/코치 재킷",
+        "final_price": 39900,
+        "score": 18.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 191,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 숄더백 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 53.09,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4683157",
+        "name_ko": "Hh 벨티드 백 2way (블랙)",
+        "brand": "하 아카이브",
+        "category": "가방 > 숄더백",
+        "final_price": 95200,
+        "score": 10.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 192,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 숄더백 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 52.91,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3092776",
+        "name_ko": "썸머울 릴렉스드 베이식 블레이저 [차콜 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 슈트/블레이저 재킷",
+        "final_price": 139900,
+        "score": 8.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 193,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 숄더백 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 52.24,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3092776",
+        "name_ko": "썸머울 릴렉스드 베이식 블레이저 [차콜 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 슈트/블레이저 재킷",
+        "final_price": 139900,
+        "score": 8.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 194,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 반소매 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.78,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1388775",
+        "name_ko": "[쿨탠다드] 릴렉스 핏 크루 넥 티셔츠 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 18890,
+        "score": 14.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 195,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 반소매 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 55.85,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2086656",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [다크 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 13490,
+        "score": 16.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 196,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 반소매 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.63,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2086656",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [다크 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 13490,
+        "score": 16.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 197,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 더비 슈즈 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 55.37,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "595039",
+        "name_ko": "1461 3홀 블랙 스무스 / 11838002",
+        "brand": "닥터마틴",
+        "category": "신발 > 구두 > 더비 슈즈",
+        "final_price": 229000,
+        "score": 12.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 198,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 더비 슈즈 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 55.27,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3276429",
+        "name_ko": "SHOWER - 808 (a) / BLACK",
+        "brand": "킨치",
+        "category": "신발 > 구두 > 더비 슈즈",
+        "final_price": 289000,
+        "score": 10.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 199,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 더비 슈즈 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 65.95,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3276429",
+        "name_ko": "SHOWER - 808 (a) / BLACK",
+        "brand": "킨치",
+        "category": "신발 > 구두 > 더비 슈즈",
+        "final_price": 289000,
+        "score": 10.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 200,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 맨투맨/스웨트 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 60.57,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4655076",
+        "name_ko": "[쿨탠다드] 레귤러 스웨트셔츠 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 맨투맨/스웨트",
+        "final_price": 37490,
+        "score": 14.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 201,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 맨투맨/스웨트 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.7,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3832068",
+        "name_ko": "슈퍼벤틸레이션 스탠넥 아노락 애스폴트 그레이(UP121SWT12)",
+        "brand": "엄브로",
+        "category": "상의 > 맨투맨/스웨트",
+        "final_price": 63600,
+        "score": 15.6
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 202,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 맨투맨/스웨트 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 60.01,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3832068",
+        "name_ko": "슈퍼벤틸레이션 스탠넥 아노락 애스폴트 그레이(UP121SWT12)",
+        "brand": "엄브로",
+        "category": "상의 > 맨투맨/스웨트",
+        "final_price": 63600,
+        "score": 15.6
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 203,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 슈트/블레이저 재킷 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 62.22,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1558197",
+        "name_ko": "릴렉스드 베이식 블레이저 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 슈트/블레이저 재킷",
+        "final_price": 85490,
+        "score": 17.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 204,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 슈트/블레이저 재킷 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 64.37,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3092776",
+        "name_ko": "썸머울 릴렉스드 베이식 블레이저 [차콜 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 슈트/블레이저 재킷",
+        "final_price": 139900,
+        "score": 19.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 205,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 슈트/블레이저 재킷 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 65.31,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3092776",
+        "name_ko": "썸머울 릴렉스드 베이식 블레이저 [차콜 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 슈트/블레이저 재킷",
+        "final_price": 139900,
+        "score": 19.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 206,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 블루종/MA-1 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 58.89,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4278938",
+        "name_ko": "아이코닉 울 블루종 자켓 MAINE 블랙",
+        "brand": "엘무드",
+        "category": "아우터 > 블루종/MA-1",
+        "final_price": 241200,
+        "score": 13.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 207,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 블루종/MA-1 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 60.53,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5386037",
+        "name_ko": "[데일리룸X알리스] 페이디드 그레인 코튼 블루종 자켓 [빈티지그레이]",
+        "brand": "알리스",
+        "category": "아우터 > 블루종/MA-1",
+        "final_price": 164000,
+        "score": 14.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 208,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 블루종/MA-1 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 65.93,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5386037",
+        "name_ko": "[데일리룸X알리스] 페이디드 그레인 코튼 블루종 자켓 [빈티지그레이]",
+        "brand": "알리스",
+        "category": "아우터 > 블루종/MA-1",
+        "final_price": 164000,
+        "score": 14.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 209,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 백팩 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 54.19,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4128817",
+        "name_ko": "미니 플랩백팩_블랙",
+        "brand": "마스마룰즈",
+        "category": "가방 > 백팩",
+        "final_price": 52000,
+        "score": 9.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 210,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 백팩 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 57.81,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4363895",
+        "name_ko": "NOI1389 나일론 데일리 백팩 (차콜)",
+        "brand": "노이아고",
+        "category": "가방 > 백팩",
+        "final_price": 69000,
+        "score": 9.06
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 211,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 백팩 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 57.51,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4363895",
+        "name_ko": "NOI1389 나일론 데일리 백팩 (차콜)",
+        "brand": "노이아고",
+        "category": "가방 > 백팩",
+        "final_price": 69000,
+        "score": 9.06
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 212,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 트레이닝 재킷 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 59.35,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3563185",
+        "name_ko": "파이어버드 트랙탑 - 블랙 / IJ7058",
+        "brand": "아디다스",
+        "category": "아우터 > 트레이닝 재킷",
+        "final_price": 119000,
+        "score": 16.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 213,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 트레이닝 재킷 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 60.44,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5992665",
+        "name_ko": "플레더 3S 트랙탑 - 아우라커피 / KQ5473",
+        "brand": "아디다스",
+        "category": "아우터 > 트레이닝 재킷",
+        "final_price": 169000,
+        "score": 14.9
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 214,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 트레이닝 재킷 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 58.27,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5992665",
+        "name_ko": "플레더 3S 트랙탑 - 아우라커피 / KQ5473",
+        "brand": "아디다스",
+        "category": "아우터 > 트레이닝 재킷",
+        "final_price": 169000,
+        "score": 14.9
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 215,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 레더/라이더스 재킷 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 63.02,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2670700",
+        "name_ko": "서킷 레이서 자켓 블랙",
+        "brand": "엘무드",
+        "category": "아우터 > 레더/라이더스 재킷",
+        "final_price": 268200,
+        "score": 17.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 216,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 레더/라이더스 재킷 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 63.86,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5992665",
+        "name_ko": "플레더 3S 트랙탑 - 아우라커피 / KQ5473",
+        "brand": "아디다스",
+        "category": "아우터 > 트레이닝 재킷",
+        "final_price": 169000,
+        "score": 16.9
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 217,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 레더/라이더스 재킷 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 67.94,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5992665",
+        "name_ko": "플레더 3S 트랙탑 - 아우라커피 / KQ5473",
+        "brand": "아디다스",
+        "category": "아우터 > 트레이닝 재킷",
+        "final_price": 169000,
+        "score": 16.9
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 218,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 민소매 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 59.48,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4057918",
+        "name_ko": "에센셜 탱크 탑 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 민소매 티셔츠",
+        "final_price": 18890,
+        "score": 14.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 219,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 민소매 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 57.82,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2341474",
+        "name_ko": "[쿨탠다드] 릴렉스드 슬리브리스 탑 [다크 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 민소매 티셔츠",
+        "final_price": 15890,
+        "score": 16.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 220,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 민소매 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.97,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2341474",
+        "name_ko": "[쿨탠다드] 릴렉스드 슬리브리스 탑 [다크 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 민소매 티셔츠",
+        "final_price": 15890,
+        "score": 16.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 221,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 기타 하의 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 55.86,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3404705",
+        "name_ko": "[시티 레저] CN 와이드 벨티드 파라슈트 팬츠 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 기타 하의",
+        "final_price": 62890,
+        "score": 12.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 222,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 기타 하의 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 59.47,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4210133",
+        "name_ko": "[시티 레저] CN 벨티드 유틸리티 팬츠 [그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 기타 하의",
+        "final_price": 69900,
+        "score": 13.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 223,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 기타 하의 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 70.72,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4210133",
+        "name_ko": "[시티 레저] CN 벨티드 유틸리티 팬츠 [그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 기타 하의",
+        "final_price": 69900,
+        "score": 13.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 224,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 피케/카라 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 65.68,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1404736",
+        "name_ko": "[쿨탠다드] 피케 폴로 셔츠 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 피케/카라 티셔츠",
+        "final_price": 31190,
+        "score": 17.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 225,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 피케/카라 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 62.08,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1404736",
+        "name_ko": "[쿨탠다드] 피케 폴로 셔츠 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 피케/카라 티셔츠",
+        "final_price": 31190,
+        "score": 15.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 226,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 피케/카라 티셔츠 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 68.07,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1404736",
+        "name_ko": "[쿨탠다드] 피케 폴로 셔츠 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 피케/카라 티셔츠",
+        "final_price": 31190,
+        "score": 15.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 227,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 러닝화 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 55.25,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4703345",
+        "name_ko": "(여성) 본디 9 와이드 - 블랙:블랙 / 1162014-BBLC",
+        "brand": "호카",
+        "category": "신발 > 스포츠화 > 러닝화",
+        "final_price": 229000,
+        "score": 10.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 228,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 러닝화 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 53.75,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5408953",
+        "name_ko": "보메로 플러스 M - 블랙:메탈릭 다크 그레이:쿨 그레이:다크 스모크 그레이 / HV8150-003",
+        "brand": "나이키",
+        "category": "신발 > 스포츠화 > 러닝화",
+        "final_price": 219000,
+        "score": 11.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 229,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 러닝화 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 53.29,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5408953",
+        "name_ko": "보메로 플러스 M - 블랙:메탈릭 다크 그레이:쿨 그레이:다크 스모크 그레이 / HV8150-003",
+        "brand": "나이키",
+        "category": "신발 > 스포츠화 > 러닝화",
+        "final_price": 219000,
+        "score": 11.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 230,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 벨트 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 53.46,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3830420",
+        "name_ko": "미니멀 리얼 레더 벨트 [블랙]",
+        "brand": "미나브",
+        "category": "소품 > 벨트",
+        "final_price": 27300,
+        "score": 9.06
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 231,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 벨트 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 53.53,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3092776",
+        "name_ko": "썸머울 릴렉스드 베이식 블레이저 [차콜 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 슈트/블레이저 재킷",
+        "final_price": 139900,
+        "score": 8.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 232,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 벨트 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 53.15,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3092776",
+        "name_ko": "썸머울 릴렉스드 베이식 블레이저 [차콜 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 슈트/블레이저 재킷",
+        "final_price": 139900,
+        "score": 8.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 233,
+      "type": "natural_color_category",
+      "request": {
+        "query": "블랙 경량 패딩 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.9,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4356794",
+        "name_ko": "[시티 레저] 후디드 라이트 다운 재킷 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
+        "final_price": 109900,
+        "score": 12.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 234,
+      "type": "natural_color_category",
+      "request": {
+        "query": "그레이 경량 패딩 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 57.26,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5215534",
+        "name_ko": "[시티 레저] 시어 립스탑 후디드 라이트 다운 재킷 [라이트 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
+        "final_price": 129900,
+        "score": 13.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 235,
+      "type": "natural_color_category",
+      "request": {
+        "query": "차콜 경량 패딩 추천",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.66,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5215534",
+        "name_ko": "[시티 레저] 시어 립스탑 후디드 라이트 다운 재킷 [라이트 그레이]",
+        "brand": "무신사 스탠다드",
+        "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
+        "final_price": 129900,
+        "score": 13.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 236,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "무신사 스탠다드 벨트",
+        "brand": "무신사 스탠다드",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 54.02,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1640887",
+        "name_ko": "사피아노 레더 벨트_30mm",
+        "brand": "무신사 스탠다드",
+        "category": "소품 > 벨트",
+        "final_price": 25490,
+        "score": 16.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 237,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "아디다스 트레이닝 재킷",
+        "brand": "아디다스",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 53.08,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5992665",
+        "name_ko": "플레더 3S 트랙탑 - 아우라커피 / KQ5473",
+        "brand": "아디다스",
+        "category": "아우터 > 트레이닝 재킷",
+        "final_price": 169000,
+        "score": 21.1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 238,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "무신사 스탠다드 우먼 경량 패딩",
+        "brand": "무신사 스탠다드 우먼",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 57.86,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5162177",
+        "name_ko": "[시티 레저] 우먼즈 후디드 라이트 다운 재킷 [블랙]",
+        "brand": "무신사 스탠다드 우먼",
+        "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
+        "final_price": 109900,
+        "score": 20.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 239,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "디미트리블랙 후드 집업",
+        "brand": "디미트리블랙",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 51.21,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3783092",
+        "name_ko": "[크롭선택] ASI 포시즌 에센셜 후드 집업_피그먼트 차콜",
+        "brand": "디미트리블랙",
+        "category": "아우터 > 후드 집업",
+        "final_price": 39900,
+        "score": 22.26
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 240,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "나이키 패션스니커즈화",
+        "brand": "나이키",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 48.34,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3976350",
+        "name_ko": "에어 포스 1 07 M - 화이트 / CW2288-111",
+        "brand": "나이키",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 149000,
+        "score": 22.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 241,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "언탭트 스튜디오 블루종/MA-1",
+        "brand": "언탭트 스튜디오",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 59.87,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5311114",
+        "name_ko": "2WAY 비건 스웨이드 블루종 자켓 3Color",
+        "brand": "언탭트 스튜디오",
+        "category": "아우터 > 블루종/MA-1",
+        "final_price": 64960,
+        "score": 21.06
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 242,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "트릴리온 맨투맨/스웨트",
+        "brand": "트릴리온",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 49.65,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5276013",
+        "name_ko": "레더 패치 데님 카라 럭비 맨투맨_네이비",
+        "brand": "트릴리온",
+        "category": "상의 > 맨투맨/스웨트",
+        "final_price": 37800,
+        "score": 19.06
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 243,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "드로우핏 셔츠/블라우스",
+        "brand": "드로우핏",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 48.82,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "6237008",
+        "name_ko": "시어서커 체크 롤업 하프 셔츠 [GREY]",
+        "brand": "드로우핏",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 49500,
+        "score": 17.38
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 244,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "폴로 랄프 로렌 후드 집업",
+        "brand": "폴로 랄프 로렌",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 53.34,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2831374",
+        "name_ko": "더블 니트 풀 지퍼 후디 - 네이비",
+        "brand": "폴로 랄프 로렌",
+        "category": "아우터 > 후드 집업",
+        "final_price": 239000,
+        "score": 22.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 245,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "시그니처 코튼 팬츠",
+        "brand": "시그니처",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 48.34,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4993414",
+        "name_ko": "와이드 커브드 다트 코튼 팬츠[베이지]",
+        "brand": "시그니처",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 34900,
+        "score": 16.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 246,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "무센트 후드 티셔츠",
+        "brand": "무센트",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 49.68,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5324355",
+        "name_ko": "러브릿츠 미니 하트 로고 후드 집업 남녀공용 (2컬러)",
+        "brand": "무센트",
+        "category": "아우터 > 후드 집업",
+        "final_price": 59900,
+        "score": 20.76
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 247,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "스파오 경량 패딩",
+        "brand": "스파오",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 47.77,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5360472",
+        "name_ko": "[씬라이트] 후드 재킷_SPJPF4TC24",
+        "brand": "스파오",
+        "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
+        "final_price": 29900,
+        "score": 16.66
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 248,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "브렌슨 트레이닝/조거 팬츠",
+        "brand": "브렌슨",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 51.42,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1844582",
+        "name_ko": "(Renew Ver.) 원턱 와이드 스웨트 팬츠 ( 8Color ) ( 기모선택 )",
+        "brand": "브렌슨",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 32900,
+        "score": 21.26
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 249,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "토피 후드 집업",
+        "brand": "토피",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 48.83,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "1778404",
+        "name_ko": "2WAY 스웻 후드 집업 (MELANGE GREY)",
+        "brand": "토피",
+        "category": "아우터 > 후드 집업",
+        "final_price": 39150,
+        "score": 20.06
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 250,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "필루미네이트 나일론/코치 재킷",
+        "brand": "필루미네이트",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 51.63,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3455892",
+        "name_ko": "타슬란 윈드 테이커 자켓-블랙",
+        "brand": "필루미네이트",
+        "category": "아우터 > 나일론/코치 재킷",
+        "final_price": 49900,
+        "score": 21.26
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 251,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "알리스 블루종/MA-1",
+        "brand": "알리스",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 48.09,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5386037",
+        "name_ko": "[데일리룸X알리스] 페이디드 그레인 코튼 블루종 자켓 [빈티지그레이]",
+        "brand": "알리스",
+        "category": "아우터 > 블루종/MA-1",
+        "final_price": 164000,
+        "score": 17.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 252,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "더콜디스트모먼트 코튼 팬츠",
+        "brand": "더콜디스트모먼트",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 48.93,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5404586",
+        "name_ko": "TCM multi cargo pants (beige)",
+        "brand": "더콜디스트모먼트",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 116100,
+        "score": 16.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 253,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "르아르 코튼 팬츠",
+        "brand": "르아르",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 48.39,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4747235",
+        "name_ko": "커브드 코튼 치노 팬츠 [블랙]",
+        "brand": "르아르",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 38900,
+        "score": 16.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 254,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "푸마 패션스니커즈화",
+        "brand": "푸마",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 52.8,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4201442",
+        "name_ko": "스피드캣 OG - 블랙 / 398846-01",
+        "brand": "푸마",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 149000,
+        "score": 21.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 255,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "수아레 니트/스웨터",
+        "brand": "수아레",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 48.91,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5351938",
+        "name_ko": "[핏더사이즈 콜라보] 울 워셔블 헨리넥 크롭 니트 - 8 COLOR",
+        "brand": "수아레",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 49900,
+        "score": 17.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 256,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "뉴발란스 패션스니커즈화",
+        "brand": "뉴발란스",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 49.86,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4727091",
+        "name_ko": "NBPDGS114S / MR530LG (SILVER)",
+        "brand": "뉴발란스",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 129000,
+        "score": 22.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 257,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "브론슨 긴소매 티셔츠",
+        "brand": "브론슨",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 54.54,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3268569",
+        "name_ko": "Vintage Long Sleeve Henley Shirt Apricot",
+        "brand": "브론슨",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 50150,
+        "score": 19.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 258,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "탄산마그네슘 긴소매 티셔츠",
+        "brand": "탄산마그네슘",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 49.71,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "5432652",
+        "name_ko": "마운틴 롱슬리브 (화이트/레드)",
+        "brand": "탄산마그네슘",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 52440,
+        "score": 19.06
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 259,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "스켈리웩 트레이닝/조거 팬츠",
+        "brand": "스켈리웩",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 56.22,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4556449",
+        "name_ko": "썸머 벌룬핏 스웨트 팬츠[라이트그레이]",
+        "brand": "스켈리웩",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 29900,
+        "score": 21.26
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 260,
+      "type": "brand_category_natural",
+      "request": {
+        "query": "지프 반소매 티셔츠",
+        "brand": "지프",
+        "limit": 5
+      },
+      "status": 200,
+      "latency_ms": 48.44,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "2518417",
+        "name_ko": "[2PACK] 190g 싱글 더 레거시 반팔 티셔츠 (JR5TSU153BK)",
+        "brand": "지프",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 37900,
+        "score": 17.86
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 261,
+      "type": "budget_category",
+      "request": {
+        "query": "반소매 티셔츠",
+        "category": "상의 > 반소매 티셔츠",
+        "price_max": 30000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 49.2,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2086653",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [화이트]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 14590,
+        "score": 25.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 262,
+      "type": "budget_category",
+      "request": {
+        "query": "셔츠/블라우스",
+        "category": "상의 > 셔츠/블라우스",
+        "price_max": 30000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 48.87,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "4989733",
+        "name_ko": "링클 시어서커 체크 반팔 셔츠 [차콜]",
+        "brand": "르아르",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 29400,
+        "score": 24.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 263,
+      "type": "budget_category",
+      "request": {
+        "query": "데님 팬츠",
+        "category": "바지 > 데님 팬츠",
+        "price_max": 30000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 47.39,
+      "result_count": 2,
+      "top_result": {
+        "product_id": "3467226",
+        "name_ko": "와이드 데님 팬츠 [블랙]",
+        "brand": "에이지오디",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 29500,
+        "score": 23.46
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 264,
+      "type": "budget_category",
+      "request": {
+        "query": "패션스니커즈화",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "price_max": 30000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 45.02,
+      "result_count": 0,
+      "top_result": null,
+      "validation_failures": []
+    },
+    {
+      "index": 265,
+      "type": "budget_category",
+      "request": {
+        "query": "코튼 팬츠",
+        "category": "바지 > 코튼 팬츠",
+        "price_max": 30000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.84,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4319523",
+        "name_ko": "카펜터 퍼티그 워크 코튼 팬츠 (SAND GREY)",
+        "brand": "토피",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 19900,
+        "score": 23.46
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 266,
+      "type": "budget_category",
+      "request": {
+        "query": "트레이닝/조거 팬츠",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "price_max": 30000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 47.36,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "4939569",
+        "name_ko": "버뮤다 원턱 와이드 트레이닝 반바지 2Color",
+        "brand": "언탭트 스튜디오",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 24900,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 267,
+      "type": "budget_category",
+      "request": {
+        "query": "긴소매 티셔츠",
+        "category": "상의 > 긴소매 티셔츠",
+        "price_max": 30000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.56,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "4886714",
+        "name_ko": "(건조기가능) 특양면 오버핏 롱 슬리브 티셔츠_5color",
+        "brand": "드릭스",
+        "category": "스포츠/레저 > 상의 > 긴소매 티셔츠",
+        "final_price": 25900,
+        "score": 25.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 268,
+      "type": "budget_category",
+      "request": {
+        "query": "후드 집업",
+        "category": "아우터 > 후드 집업",
+        "price_max": 30000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 45.16,
+      "result_count": 2,
+      "top_result": {
+        "product_id": "5355364",
+        "name_ko": "스트라이프 후드집업_MIWJMF921C",
+        "brand": "미쏘",
+        "category": "아우터 > 후드 집업",
+        "final_price": 29900,
+        "score": 28.06
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 269,
+      "type": "budget_category",
+      "request": {
+        "query": "니트/스웨터",
+        "category": "상의 > 니트/스웨터",
+        "price_max": 30000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.23,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "3451036",
+        "name_ko": "스탠다드 래글런 케이블 니트 : 13컬러",
+        "brand": "인템포무드",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 28500,
+        "score": 24.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 270,
+      "type": "budget_category",
+      "request": {
+        "query": "슈트 팬츠/슬랙스",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "price_max": 30000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 45.43,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "750908",
+        "name_ko": "[여름원단추가] 유니섹스 세미 와이드 밴딩 슬랙스 블랙",
+        "brand": "후러브스아트",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 29700,
+        "score": 28.06
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 271,
+      "type": "budget_category",
+      "request": {
+        "query": "숏 팬츠",
+        "category": "바지 > 숏 팬츠",
+        "price_max": 30000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 43.88,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2574822",
+        "name_ko": "(Renew Ver.) 원턱 와이드 반바지 ( 7Color )",
+        "brand": "브렌슨",
+        "category": "바지 > 숏 팬츠",
+        "final_price": 26900,
+        "score": 31.26
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 272,
+      "type": "budget_category",
+      "request": {
+        "query": "카디건",
+        "category": "아우터 > 카디건",
+        "price_max": 30000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 41.4,
+      "result_count": 2,
+      "top_result": {
+        "product_id": "5795972",
+        "name_ko": "우먼즈 레이스 트림 반소매 저지 가디건 [미디엄 그레이]",
+        "brand": "무신사 스탠다드 우먼",
+        "category": "아우터 > 카디건",
+        "final_price": 23310,
+        "score": 20.76
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 273,
+      "type": "budget_category",
+      "request": {
+        "query": "반소매 티셔츠",
+        "category": "상의 > 반소매 티셔츠",
+        "price_max": 50000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 45,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2086653",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [화이트]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 14590,
+        "score": 25.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 274,
+      "type": "budget_category",
+      "request": {
+        "query": "셔츠/블라우스",
+        "category": "상의 > 셔츠/블라우스",
+        "price_max": 50000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.61,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3880012",
+        "name_ko": "페이퍼셔츠 (12co)",
+        "brand": "토마스모어",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 47760,
+        "score": 24.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 275,
+      "type": "budget_category",
+      "request": {
+        "query": "데님 팬츠",
+        "category": "바지 > 데님 팬츠",
+        "price_max": 50000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 45.23,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3663072",
+        "name_ko": "모어 와이드 데님 팬츠 (WASHED RAW BLACK)",
+        "brand": "토피",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 39200,
+        "score": 23.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 276,
+      "type": "budget_category",
+      "request": {
+        "query": "패션스니커즈화",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "price_max": 50000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 50.16,
+      "result_count": 5,
+      "top_result": {
+        "product_id": "4225425",
+        "name_ko": "힙노틱 LS - 화이트:그레이 / 395295-03",
+        "brand": "푸마",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 48990,
+        "score": 29.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 277,
+      "type": "budget_category",
+      "request": {
+        "query": "코튼 팬츠",
+        "category": "바지 > 코튼 팬츠",
+        "price_max": 50000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 45.09,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1627892",
+        "name_ko": "레플리카 퍼티그 팬츠 [카키]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 44890,
+        "score": 23.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 278,
+      "type": "budget_category",
+      "request": {
+        "query": "트레이닝/조거 팬츠",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "price_max": 50000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 51.12,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1551840",
+        "name_ko": "Deep One Tuck Sweat Pants [Grey]",
+        "brand": "제로",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 31200,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 279,
+      "type": "budget_category",
+      "request": {
+        "query": "긴소매 티셔츠",
+        "category": "상의 > 긴소매 티셔츠",
+        "price_max": 50000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.34,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2149254",
+        "name_ko": "베이식 긴소매 티셔츠 2팩",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 31390,
+        "score": 25.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 280,
+      "type": "budget_category",
+      "request": {
+        "query": "후드 집업",
+        "category": "아우터 > 후드 집업",
+        "price_max": 50000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 48.08,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2273084",
+        "name_ko": "Signature Patch Hood Zip-up / WHMZG1111U",
+        "brand": "후아유",
+        "category": "아우터 > 후드 집업",
+        "final_price": 48930,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 281,
+      "type": "budget_category",
+      "request": {
+        "query": "니트/스웨터",
+        "category": "상의 > 니트/스웨터",
+        "price_max": 50000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 46.54,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3451036",
+        "name_ko": "스탠다드 래글런 케이블 니트 : 13컬러",
+        "brand": "인템포무드",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 28500,
+        "score": 24.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 282,
+      "type": "budget_category",
+      "request": {
+        "query": "슈트 팬츠/슬랙스",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "price_max": 50000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 46.65,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1168906",
+        "name_ko": "와이드 히든 밴딩 슬랙스 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 45900,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 283,
+      "type": "budget_category",
+      "request": {
+        "query": "숏 팬츠",
+        "category": "바지 > 숏 팬츠",
+        "price_max": 50000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 45.18,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "6224315",
+        "name_ko": "커브드 사이드 핀턱 벌룬 버뮤다 스웻 반바지 GP-512_블랙",
+        "brand": "고스트리퍼블릭",
+        "category": "바지 > 숏 팬츠",
+        "final_price": 32900,
+        "score": 31.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 284,
+      "type": "budget_category",
+      "request": {
+        "query": "카디건",
+        "category": "아우터 > 카디건",
+        "price_max": 50000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 43.79,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3434621",
+        "name_ko": "GNRL 에센셜 가디건 [6COL] / WBD3L04503",
+        "brand": "제너럴아이디어",
+        "category": "아우터 > 카디건",
+        "final_price": 49000,
+        "score": 21.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 285,
+      "type": "budget_category",
+      "request": {
+        "query": "반소매 티셔츠",
+        "category": "상의 > 반소매 티셔츠",
+        "price_max": 80000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 45.07,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2086653",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [화이트]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 14590,
+        "score": 25.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 286,
+      "type": "budget_category",
+      "request": {
+        "query": "셔츠/블라우스",
+        "category": "상의 > 셔츠/블라우스",
+        "price_max": 80000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.81,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3562068",
+        "name_ko": "KENSINGTON SHIRT",
+        "brand": "유니온블루",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 77900,
+        "score": 24.7
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 287,
+      "type": "budget_category",
+      "request": {
+        "query": "데님 팬츠",
+        "category": "바지 > 데님 팬츠",
+        "price_max": 80000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 45.06,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3663072",
+        "name_ko": "모어 와이드 데님 팬츠 (WASHED RAW BLACK)",
+        "brand": "토피",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 39200,
+        "score": 23.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 288,
+      "type": "budget_category",
+      "request": {
+        "query": "패션스니커즈화",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "price_max": 80000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 49.38,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2440110",
+        "name_ko": "유니 레더 독일군 HPMR6DA03M",
+        "brand": "슈펜",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 53910,
+        "score": 29.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 289,
+      "type": "budget_category",
+      "request": {
+        "query": "코튼 팬츠",
+        "category": "바지 > 코튼 팬츠",
+        "price_max": 80000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 49.12,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1627892",
+        "name_ko": "레플리카 퍼티그 팬츠 [카키]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 44890,
+        "score": 23.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 290,
+      "type": "budget_category",
+      "request": {
+        "query": "트레이닝/조거 팬츠",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "price_max": 80000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 49.34,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1551840",
+        "name_ko": "Deep One Tuck Sweat Pants [Grey]",
+        "brand": "제로",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 31200,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 291,
+      "type": "budget_category",
+      "request": {
+        "query": "긴소매 티셔츠",
+        "category": "상의 > 긴소매 티셔츠",
+        "price_max": 80000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 48.23,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2149254",
+        "name_ko": "베이식 긴소매 티셔츠 2팩",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 31390,
+        "score": 25.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 292,
+      "type": "budget_category",
+      "request": {
+        "query": "후드 집업",
+        "category": "아우터 > 후드 집업",
+        "price_max": 80000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 49.05,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2273084",
+        "name_ko": "Signature Patch Hood Zip-up / WHMZG1111U",
+        "brand": "후아유",
+        "category": "아우터 > 후드 집업",
+        "final_price": 48930,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 293,
+      "type": "budget_category",
+      "request": {
+        "query": "니트/스웨터",
+        "category": "상의 > 니트/스웨터",
+        "price_max": 80000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 49.38,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2702397",
+        "name_ko": "워셔블 하찌 벌키 크루넥 니트_8 COLOR",
+        "brand": "키뮤어",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 56050,
+        "score": 24.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 294,
+      "type": "budget_category",
+      "request": {
+        "query": "슈트 팬츠/슬랙스",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "price_max": 80000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 58.23,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1168906",
+        "name_ko": "와이드 히든 밴딩 슬랙스 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 45900,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 295,
+      "type": "budget_category",
+      "request": {
+        "query": "숏 팬츠",
+        "category": "바지 > 숏 팬츠",
+        "price_max": 80000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 46.25,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "6224315",
+        "name_ko": "커브드 사이드 핀턱 벌룬 버뮤다 스웻 반바지 GP-512_블랙",
+        "brand": "고스트리퍼블릭",
+        "category": "바지 > 숏 팬츠",
+        "final_price": 32900,
+        "score": 31.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 296,
+      "type": "budget_category",
+      "request": {
+        "query": "카디건",
+        "category": "아우터 > 카디건",
+        "price_max": 80000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 43.09,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3434621",
+        "name_ko": "GNRL 에센셜 가디건 [6COL] / WBD3L04503",
+        "brand": "제너럴아이디어",
+        "category": "아우터 > 카디건",
+        "final_price": 49000,
+        "score": 21.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 297,
+      "type": "budget_category",
+      "request": {
+        "query": "반소매 티셔츠",
+        "category": "상의 > 반소매 티셔츠",
+        "price_max": 120000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 46.42,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2086653",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [화이트]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 14590,
+        "score": 25.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 298,
+      "type": "budget_category",
+      "request": {
+        "query": "셔츠/블라우스",
+        "category": "상의 > 셔츠/블라우스",
+        "price_max": 120000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 45.08,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3562068",
+        "name_ko": "KENSINGTON SHIRT",
+        "brand": "유니온블루",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 77900,
+        "score": 24.7
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 299,
+      "type": "budget_category",
+      "request": {
+        "query": "데님 팬츠",
+        "category": "바지 > 데님 팬츠",
+        "price_max": 120000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.86,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3663072",
+        "name_ko": "모어 와이드 데님 팬츠 (WASHED RAW BLACK)",
+        "brand": "토피",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 39200,
+        "score": 23.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 300,
+      "type": "budget_category",
+      "request": {
+        "query": "패션스니커즈화",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "price_max": 120000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 45.23,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2440110",
+        "name_ko": "유니 레더 독일군 HPMR6DA03M",
+        "brand": "슈펜",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 53910,
+        "score": 29.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 301,
+      "type": "budget_category",
+      "request": {
+        "query": "코튼 팬츠",
+        "category": "바지 > 코튼 팬츠",
+        "price_max": 120000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.3,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1627892",
+        "name_ko": "레플리카 퍼티그 팬츠 [카키]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 44890,
+        "score": 23.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 302,
+      "type": "budget_category",
+      "request": {
+        "query": "트레이닝/조거 팬츠",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "price_max": 120000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 48.23,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1551840",
+        "name_ko": "Deep One Tuck Sweat Pants [Grey]",
+        "brand": "제로",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 31200,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 303,
+      "type": "budget_category",
+      "request": {
+        "query": "긴소매 티셔츠",
+        "category": "상의 > 긴소매 티셔츠",
+        "price_max": 120000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 51.93,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2149254",
+        "name_ko": "베이식 긴소매 티셔츠 2팩",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 31390,
+        "score": 25.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 304,
+      "type": "budget_category",
+      "request": {
+        "query": "후드 집업",
+        "category": "아우터 > 후드 집업",
+        "price_max": 120000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 52.02,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2273084",
+        "name_ko": "Signature Patch Hood Zip-up / WHMZG1111U",
+        "brand": "후아유",
+        "category": "아우터 > 후드 집업",
+        "final_price": 48930,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 305,
+      "type": "budget_category",
+      "request": {
+        "query": "니트/스웨터",
+        "category": "상의 > 니트/스웨터",
+        "price_max": 120000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 51.53,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2702397",
+        "name_ko": "워셔블 하찌 벌키 크루넥 니트_8 COLOR",
+        "brand": "키뮤어",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 56050,
+        "score": 24.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 306,
+      "type": "budget_category",
+      "request": {
+        "query": "슈트 팬츠/슬랙스",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "price_max": 120000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 46.98,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1168906",
+        "name_ko": "와이드 히든 밴딩 슬랙스 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 45900,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 307,
+      "type": "budget_category",
+      "request": {
+        "query": "숏 팬츠",
+        "category": "바지 > 숏 팬츠",
+        "price_max": 120000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.51,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "6224315",
+        "name_ko": "커브드 사이드 핀턱 벌룬 버뮤다 스웻 반바지 GP-512_블랙",
+        "brand": "고스트리퍼블릭",
+        "category": "바지 > 숏 팬츠",
+        "final_price": 32900,
+        "score": 31.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 308,
+      "type": "budget_category",
+      "request": {
+        "query": "카디건",
+        "category": "아우터 > 카디건",
+        "price_max": 120000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 42.23,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3434621",
+        "name_ko": "GNRL 에센셜 가디건 [6COL] / WBD3L04503",
+        "brand": "제너럴아이디어",
+        "category": "아우터 > 카디건",
+        "final_price": 49000,
+        "score": 21.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 309,
+      "type": "budget_category",
+      "request": {
+        "query": "반소매 티셔츠",
+        "category": "상의 > 반소매 티셔츠",
+        "price_max": 200000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.95,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2086653",
+        "name_ko": "레이어드 크루 넥 티셔츠_일반 기장 [화이트]",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 반소매 티셔츠",
+        "final_price": 14590,
+        "score": 25.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 310,
+      "type": "budget_category",
+      "request": {
+        "query": "셔츠/블라우스",
+        "category": "상의 > 셔츠/블라우스",
+        "price_max": 200000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.79,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3562068",
+        "name_ko": "KENSINGTON SHIRT",
+        "brand": "유니온블루",
+        "category": "상의 > 셔츠/블라우스",
+        "final_price": 77900,
+        "score": 24.7
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 311,
+      "type": "budget_category",
+      "request": {
+        "query": "데님 팬츠",
+        "category": "바지 > 데님 팬츠",
+        "price_max": 200000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 43.87,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3663072",
+        "name_ko": "모어 와이드 데님 팬츠 (WASHED RAW BLACK)",
+        "brand": "토피",
+        "category": "바지 > 데님 팬츠",
+        "final_price": 39200,
+        "score": 23.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 312,
+      "type": "budget_category",
+      "request": {
+        "query": "패션스니커즈화",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "price_max": 200000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.29,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1163169",
+        "name_ko": "삼바 OG - 화이트:블랙 / B75806",
+        "brand": "아디다스",
+        "category": "신발 > 스니커즈 > 패션스니커즈화",
+        "final_price": 149000,
+        "score": 29.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 313,
+      "type": "budget_category",
+      "request": {
+        "query": "코튼 팬츠",
+        "category": "바지 > 코튼 팬츠",
+        "price_max": 200000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.22,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1627892",
+        "name_ko": "레플리카 퍼티그 팬츠 [카키]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 코튼 팬츠",
+        "final_price": 44890,
+        "score": 23.48
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 314,
+      "type": "budget_category",
+      "request": {
+        "query": "트레이닝/조거 팬츠",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "price_max": 200000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 47.85,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1551840",
+        "name_ko": "Deep One Tuck Sweat Pants [Grey]",
+        "brand": "제로",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "final_price": 31200,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 315,
+      "type": "budget_category",
+      "request": {
+        "query": "긴소매 티셔츠",
+        "category": "상의 > 긴소매 티셔츠",
+        "price_max": 200000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.03,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2149254",
+        "name_ko": "베이식 긴소매 티셔츠 2팩",
+        "brand": "무신사 스탠다드",
+        "category": "상의 > 긴소매 티셔츠",
+        "final_price": 31390,
+        "score": 25.88
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 316,
+      "type": "budget_category",
+      "request": {
+        "query": "후드 집업",
+        "category": "아우터 > 후드 집업",
+        "price_max": 200000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 46.54,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2273084",
+        "name_ko": "Signature Patch Hood Zip-up / WHMZG1111U",
+        "brand": "후아유",
+        "category": "아우터 > 후드 집업",
+        "final_price": 48930,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 317,
+      "type": "budget_category",
+      "request": {
+        "query": "니트/스웨터",
+        "category": "상의 > 니트/스웨터",
+        "price_max": 200000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 47.17,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "2702397",
+        "name_ko": "워셔블 하찌 벌키 크루넥 니트_8 COLOR",
+        "brand": "키뮤어",
+        "category": "상의 > 니트/스웨터",
+        "final_price": 56050,
+        "score": 24.68
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 318,
+      "type": "budget_category",
+      "request": {
+        "query": "슈트 팬츠/슬랙스",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "price_max": 200000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 51.93,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "1168906",
+        "name_ko": "와이드 히든 밴딩 슬랙스 [블랙]",
+        "brand": "무신사 스탠다드",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "final_price": 45900,
+        "score": 28.08
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 319,
+      "type": "budget_category",
+      "request": {
+        "query": "숏 팬츠",
+        "category": "바지 > 숏 팬츠",
+        "price_max": 200000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 51.12,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "6224315",
+        "name_ko": "커브드 사이드 핀턱 벌룬 버뮤다 스웻 반바지 GP-512_블랙",
+        "brand": "고스트리퍼블릭",
+        "category": "바지 > 숏 팬츠",
+        "final_price": 32900,
+        "score": 31.28
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 320,
+      "type": "budget_category",
+      "request": {
+        "query": "카디건",
+        "category": "아우터 > 카디건",
+        "price_max": 200000,
+        "limit": 7
+      },
+      "status": 200,
+      "latency_ms": 44.25,
+      "result_count": 7,
+      "top_result": {
+        "product_id": "3434621",
+        "name_ko": "GNRL 에센셜 가디건 [6COL] / WBD3L04503",
+        "brand": "제너럴아이디어",
+        "category": "아우터 > 카디건",
+        "final_price": 49000,
+        "score": 21.28
+      },
+      "validation_failures": []
+    }
+  ]
+}

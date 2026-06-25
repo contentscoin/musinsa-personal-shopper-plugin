@@ -1,0 +1,371 @@
+[
+  {
+    "eventId": "8f54ef8c-19b8-4b21-a2fc-c39b9c209b7d",
+    "eventType": "recommendation",
+    "occurredAt": "2026-06-24T07:08:34.211Z",
+    "sessionHash": "147a1836ff126398dd86d621",
+    "userAgentFamily": "unknown",
+    "query": "남성 차콜 후드집업 5만원 이하 추천 [phone]",
+    "parsedIntent": {
+      "budget": 50000,
+      "colors": [
+        "차콜"
+      ],
+      "categories": [
+        "후드집업"
+      ],
+      "seasons": [],
+      "gender": "남성"
+    },
+    "productIds": [
+      "3783092",
+      "3697526"
+    ],
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {
+      "surface": "chatgpt",
+      "locale": "ko-KR",
+      "result_count": 2
+    }
+  },
+  {
+    "eventId": "20d85d45-2930-4318-bfb6-c7a88029d3f5",
+    "eventType": "product_click",
+    "occurredAt": "2026-06-24T07:08:34.216Z",
+    "sessionHash": "147a1836ff126398dd86d621",
+    "userAgentFamily": "unknown",
+    "query": "남성 차콜 후드집업 5만원 이하 추천",
+    "parsedIntent": {
+      "colors": [],
+      "categories": [],
+      "seasons": []
+    },
+    "productIds": [
+      "3783092"
+    ],
+    "clickedProductId": "3783092",
+    "rank": 1,
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {
+      "surface": "chatgpt"
+    }
+  },
+  {
+    "eventId": "fd15140d-360f-411d-a819-47f6254ff5e3",
+    "eventType": "shortlist_save",
+    "occurredAt": "2026-06-24T07:08:34.218Z",
+    "sessionHash": "147a1836ff126398dd86d621",
+    "userAgentFamily": "unknown",
+    "parsedIntent": {
+      "colors": [],
+      "categories": [],
+      "seasons": []
+    },
+    "productIds": [
+      "3783092",
+      "3697526"
+    ],
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {}
+  },
+  {
+    "eventId": "8ea36ba7-2b2a-4877-8b3b-87d84bb91e67",
+    "eventType": "compare",
+    "occurredAt": "2026-06-24T07:08:34.220Z",
+    "sessionHash": "147a1836ff126398dd86d621",
+    "userAgentFamily": "unknown",
+    "parsedIntent": {
+      "colors": [],
+      "categories": [],
+      "seasons": []
+    },
+    "productIds": [
+      "3783092",
+      "3697526"
+    ],
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {}
+  },
+  {
+    "eventId": "058b38d1-f2fa-4ece-ac32-9b29108c4002",
+    "eventType": "conversion",
+    "occurredAt": "2026-06-24T07:08:34.222Z",
+    "sessionHash": "147a1836ff126398dd86d621",
+    "userAgentFamily": "unknown",
+    "parsedIntent": {
+      "colors": [],
+      "categories": [],
+      "seasons": []
+    },
+    "productIds": [
+      "3783092"
+    ],
+    "convertedProductId": "3783092",
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {}
+  },
+  {
+    "eventId": "330fd8d2-07b6-4c5d-b768-5809246486c5",
+    "eventType": "search",
+    "occurredAt": "2026-06-24T07:08:34.224Z",
+    "sessionHash": "34aaf82a09b4686756d87fc3",
+    "userAgentFamily": "unknown",
+    "query": "화이트 스니커즈 7만원 이하 추천 [email]",
+    "parsedIntent": {
+      "budget": 70000,
+      "colors": [
+        "화이트"
+      ],
+      "categories": [
+        "스니커즈"
+      ],
+      "seasons": []
+    },
+    "productIds": [
+      "4240660",
+      "4240657"
+    ],
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {}
+  },
+  {
+    "eventId": "f2a5284e-4855-428c-a492-14849d5d0b9d",
+    "eventType": "search",
+    "occurredAt": "2026-06-24T07:40:44.400Z",
+    "sessionHash": "03edd19af979ed90103d49c2",
+    "userAgentFamily": "unknown",
+    "query": "카드 [card_or_long_number] [address] 주문 [order_id] 후드집업",
+    "parsedIntent": {
+      "colors": [],
+      "categories": [
+        "후드집업"
+      ],
+      "seasons": []
+    },
+    "productIds": [],
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {}
+  },
+  {
+    "eventId": "f351df44-3707-4820-9397-9f4ed760e963",
+    "eventType": "recommendation",
+    "occurredAt": "2026-06-24T07:56:01.629Z",
+    "sessionHash": "34655f39a6569d58e19260b5",
+    "userAgentFamily": "unknown",
+    "query": "남성 차콜 후드집업 5만원 이하 추천",
+    "parsedIntent": {
+      "budget": 50000,
+      "colors": [
+        "차콜"
+      ],
+      "categories": [
+        "후드집업"
+      ],
+      "seasons": [],
+      "gender": "남성"
+    },
+    "productIds": [
+      "3783092",
+      "3697526"
+    ],
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {
+      "surface": "demo-script",
+      "locale": "ko-KR",
+      "result_count": 2
+    }
+  },
+  {
+    "eventId": "5c609577-c549-4750-ab59-64ab0db6e45c",
+    "eventType": "shortlist_save",
+    "occurredAt": "2026-06-24T07:56:01.636Z",
+    "sessionHash": "34655f39a6569d58e19260b5",
+    "userAgentFamily": "unknown",
+    "parsedIntent": {
+      "colors": [],
+      "categories": [],
+      "seasons": []
+    },
+    "productIds": [
+      "3783092",
+      "3697526"
+    ],
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {
+      "surface": "demo-script"
+    }
+  },
+  {
+    "eventId": "a576a1fa-0292-4a96-8243-a9926b06a7e6",
+    "eventType": "product_click",
+    "occurredAt": "2026-06-24T07:56:01.644Z",
+    "sessionHash": "34655f39a6569d58e19260b5",
+    "userAgentFamily": "unknown",
+    "query": "남성 차콜 후드집업 5만원 이하 추천",
+    "parsedIntent": {
+      "colors": [],
+      "categories": [],
+      "seasons": []
+    },
+    "productIds": [
+      "3783092"
+    ],
+    "clickedProductId": "3783092",
+    "rank": 1,
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {
+      "surface": "demo-script"
+    }
+  },
+  {
+    "eventId": "08bced36-c747-4ad3-9e25-6fcaae4afe16",
+    "eventType": "conversion",
+    "occurredAt": "2026-06-24T07:56:01.648Z",
+    "sessionHash": "34655f39a6569d58e19260b5",
+    "userAgentFamily": "unknown",
+    "parsedIntent": {
+      "colors": [],
+      "categories": [],
+      "seasons": []
+    },
+    "productIds": [
+      "3783092"
+    ],
+    "convertedProductId": "3783092",
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {
+      "surface": "demo-script"
+    }
+  },
+  {
+    "eventId": "725b6b99-2bfb-4006-a476-9f6781e3366d",
+    "eventType": "low_confidence_recommendation",
+    "occurredAt": "2026-06-24T11:20:43.976Z",
+    "sessionHash": "3274a3eba4aacaa0f9ded48b",
+    "userAgentFamily": "unknown",
+    "query": "비 오는 날 남친룩 추천 [phone]",
+    "parsedIntent": {
+      "colors": [],
+      "categories": [],
+      "seasons": []
+    },
+    "productIds": [],
+    "confidence": 0.2,
+    "missingOntologyFields": [
+      "occasion_tags",
+      "weather_tags",
+      "style_tags"
+    ],
+    "source": "plugin",
+    "metadata": {
+      "surface": "api-verify",
+      "locale": "ko-KR"
+    }
+  },
+  {
+    "eventId": "8b3bc85c-9eec-41e0-b888-144d6e925f75",
+    "eventType": "recommendation",
+    "occurredAt": "2026-06-24T15:44:11.071Z",
+    "sessionHash": "34655f39a6569d58e19260b5",
+    "userAgentFamily": "unknown",
+    "query": "남성 차콜 후드집업 5만원 이하 추천",
+    "parsedIntent": {
+      "budget": 50000,
+      "colors": [
+        "차콜"
+      ],
+      "categories": [
+        "후드집업"
+      ],
+      "seasons": [],
+      "gender": "남성"
+    },
+    "productIds": [
+      "3783092",
+      "3697526"
+    ],
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {
+      "surface": "demo-script",
+      "locale": "ko-KR",
+      "result_count": 2
+    }
+  },
+  {
+    "eventId": "0ce79ae5-0b73-401c-ab1a-6d778e6db1fb",
+    "eventType": "shortlist_save",
+    "occurredAt": "2026-06-24T15:44:11.078Z",
+    "sessionHash": "34655f39a6569d58e19260b5",
+    "userAgentFamily": "unknown",
+    "parsedIntent": {
+      "colors": [],
+      "categories": [],
+      "seasons": []
+    },
+    "productIds": [
+      "3783092",
+      "3697526"
+    ],
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {
+      "surface": "demo-script"
+    }
+  },
+  {
+    "eventId": "4f6c4469-4edb-4994-9242-ad27d5b72a17",
+    "eventType": "product_click",
+    "occurredAt": "2026-06-24T15:44:11.083Z",
+    "sessionHash": "34655f39a6569d58e19260b5",
+    "userAgentFamily": "unknown",
+    "query": "남성 차콜 후드집업 5만원 이하 추천",
+    "parsedIntent": {
+      "colors": [],
+      "categories": [],
+      "seasons": []
+    },
+    "productIds": [
+      "3783092"
+    ],
+    "clickedProductId": "3783092",
+    "rank": 1,
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {
+      "surface": "demo-script"
+    }
+  },
+  {
+    "eventId": "96a90d06-fa5e-4161-9e31-8b6504fe0ad8",
+    "eventType": "conversion",
+    "occurredAt": "2026-06-24T15:44:11.086Z",
+    "sessionHash": "34655f39a6569d58e19260b5",
+    "userAgentFamily": "unknown",
+    "parsedIntent": {
+      "colors": [],
+      "categories": [],
+      "seasons": []
+    },
+    "productIds": [
+      "3783092"
+    ],
+    "convertedProductId": "3783092",
+    "missingOntologyFields": [],
+    "source": "plugin",
+    "metadata": {
+      "surface": "demo-script"
+    }
+  }
+]

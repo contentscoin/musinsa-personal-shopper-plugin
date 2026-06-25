@@ -1,0 +1,257 @@
+{
+  "products": 2050,
+  "distinct_brands": 713,
+  "distinct_category_paths": 190,
+  "top_category_paths": [
+    [
+      "상의 > 반소매 티셔츠",
+      219
+    ],
+    [
+      "상의 > 셔츠/블라우스",
+      112
+    ],
+    [
+      "바지 > 데님 팬츠",
+      109
+    ],
+    [
+      "신발 > 스니커즈 > 패션스니커즈화",
+      94
+    ],
+    [
+      "바지 > 코튼 팬츠",
+      89
+    ],
+    [
+      "바지 > 트레이닝/조거 팬츠",
+      80
+    ],
+    [
+      "상의 > 긴소매 티셔츠",
+      76
+    ],
+    [
+      "아우터 > 후드 집업",
+      72
+    ],
+    [
+      "상의 > 니트/스웨터",
+      52
+    ],
+    [
+      "바지 > 슈트 팬츠/슬랙스",
+      52
+    ],
+    [
+      "바지 > 숏 팬츠",
+      52
+    ],
+    [
+      "아우터 > 카디건",
+      49
+    ],
+    [
+      "소품 > 모자 > 캡/야구모자",
+      44
+    ],
+    [
+      "상의 > 후드 티셔츠",
+      37
+    ],
+    [
+      "아우터 > 나일론/코치 재킷",
+      35
+    ],
+    [
+      "가방 > 숄더백",
+      34
+    ],
+    [
+      "스포츠/레저 > 상의 > 반소매 티셔츠",
+      30
+    ],
+    [
+      "신발 > 구두 > 더비 슈즈",
+      29
+    ],
+    [
+      "상의 > 맨투맨/스웨트",
+      25
+    ],
+    [
+      "아우터 > 슈트/블레이저 재킷",
+      25
+    ],
+    [
+      "아우터 > 블루종/MA-1",
+      24
+    ],
+    [
+      "가방 > 백팩",
+      24
+    ],
+    [
+      "아우터 > 트레이닝 재킷",
+      23
+    ],
+    [
+      "아우터 > 레더/라이더스 재킷",
+      23
+    ],
+    [
+      "상의 > 민소매 티셔츠",
+      23
+    ],
+    [
+      "바지 > 기타 하의",
+      21
+    ],
+    [
+      "상의 > 피케/카라 티셔츠",
+      18
+    ],
+    [
+      "신발 > 스포츠화 > 러닝화",
+      17
+    ],
+    [
+      "소품 > 벨트",
+      14
+    ],
+    [
+      "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
+      14
+    ],
+    [
+      "소품 > 주얼리 > 팔찌",
+      14
+    ],
+    [
+      "신발 > 구두 > 로퍼",
+      14
+    ],
+    [
+      "가방 > 메신저/크로스 백",
+      14
+    ],
+    [
+      "신발 > 스니커즈 > 캔버스/단화",
+      13
+    ],
+    [
+      "소품 > 양말/레그웨어 > 양말",
+      13
+    ],
+    [
+      "속옷/홈웨어 > 남성 속옷",
+      12
+    ],
+    [
+      "스포츠/레저 > 가방 > 백팩",
+      11
+    ],
+    [
+      "아우터 > 트러커 재킷",
+      11
+    ],
+    [
+      "소품 > 선글라스/안경테 > 선글라스",
+      11
+    ],
+    [
+      "신발 > 샌들/슬리퍼 > 슬라이드",
+      11
+    ],
+    [
+      "신발 > 샌들/슬리퍼 > 스포츠/캐주얼 샌들",
+      11
+    ],
+    [
+      "스포츠/레저 > 하의 > 숏팬츠",
+      10
+    ],
+    [
+      "신발 > 스니커즈 > 라이프스타일화",
+      10
+    ],
+    [
+      "가방 > 토트백",
+      10
+    ],
+    [
+      "스포츠/레저 > 아우터 > 나일론/코치 재킷",
+      9
+    ],
+    [
+      "가방 > 캐리어",
+      9
+    ],
+    [
+      "소품 > 주얼리 > 목걸이/펜던트",
+      9
+    ],
+    [
+      "신발 > 샌들/슬리퍼 > 쪼리/플립플랍",
+      9
+    ],
+    [
+      "아우터 > 기타 아우터",
+      8
+    ],
+    [
+      "속옷/홈웨어 > 홈웨어",
+      8
+    ]
+  ],
+  "crawler": {
+    "user_agent": "ChatGPT-User",
+    "robots_url": "https://www.musinsa.com/robots.txt",
+    "target": 2050,
+    "started_at": "2026-06-24T23:39:30.565Z",
+    "completed_at": "2026-06-24T23:57:39.816Z",
+    "attempted": 1428,
+    "succeeded_this_run": 1419,
+    "succeeded_total": 2050,
+    "failed": 9,
+    "failures": [
+      {
+        "url": "https://www.musinsa.com/products/5299767",
+        "error": "Missing product meta data"
+      },
+      {
+        "url": "https://www.musinsa.com/products/4761660",
+        "error": "Missing product meta data"
+      },
+      {
+        "url": "https://www.musinsa.com/products/3825639",
+        "error": "Missing product meta data"
+      },
+      {
+        "url": "https://www.musinsa.com/products/3451070",
+        "error": "Missing product meta data"
+      },
+      {
+        "url": "https://www.musinsa.com/products/5077778",
+        "error": "Missing product meta data"
+      },
+      {
+        "url": "https://www.musinsa.com/products/2118102",
+        "error": "Missing product meta data"
+      },
+      {
+        "url": "https://www.musinsa.com/products/5016732",
+        "error": "Missing product meta data"
+      },
+      {
+        "url": "https://www.musinsa.com/products/5268485",
+        "error": "Missing product meta data"
+      },
+      {
+        "url": "https://www.musinsa.com/products/3876548",
+        "error": "Missing product meta data"
+      }
+    ]
+  },
+  "generated_at": "2026-06-24T23:58:19.806033+00:00"
+}

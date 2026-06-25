@@ -1,16 +1,20 @@
 #!/usr/bin/env node
-import { writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname } from 'node:path';
 
 const UA = 'ChatGPT-User';
 const ROBOTS_URL = 'https://www.musinsa.com/robots.txt';
-const SITEMAP_URL = 'https://www.musinsa.com/static/sitemap/sitemap-goods-1.xml';
+const DEFAULT_SITEMAP_URL = 'https://www.musinsa.com/static/sitemap/sitemap-goods-1.xml';
 
 const args = parseArgs(process.argv.slice(2));
 const max = Number(args.max ?? 5);
 const outPath = args.out ?? 'data/products.crawled.json';
 const ontologyPath = args.ontology ?? 'docs/ontology/musinsa-product-ontology-sample.md';
 const delayMs = Number(args.delay ?? 600);
+const offset = Number(args.offset ?? 0);
+const retryCount = Number(args.retries ?? 2);
+const sitemapUrl = args.sitemap ?? DEFAULT_SITEMAP_URL;
+const append = Boolean(args.append);
 
 function parseArgs(argv) {
   const result = {};
@@ -20,9 +24,16 @@ function parseArgs(argv) {
   return result;
 }
 
-async function fetchText(url) {
+async function fetchText(url, attempts = retryCount + 1) {
   const res = await fetch(url, { headers: { 'user-agent': UA, accept: 'text/html,application/xml,*/*' } });
-  if (!res.ok) throw new Error(`Fetch failed ${res.status} ${res.statusText}: ${url}`);
+  if (!res.ok) {
+    if ((res.status === 429 || res.status >= 500) && attempts > 1) {
+      const backoffMs = delayMs * (retryCount + 2 - attempts) + 1500;
+      await sleep(backoffMs);
+      return fetchText(url, attempts - 1);
+    }
+    throw new Error(`Fetch failed ${res.status} ${res.statusText}: ${url}`);
+  }
   return await res.text();
 }
 
@@ -34,9 +45,9 @@ function assertRobotsAllows(robotsText) {
   }
 }
 
-function extractSitemapEntries(xml, limit) {
+function extractSitemapEntries(xml, limit, start = 0) {
   const urlBlocks = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].map(m => m[1]);
-  return urlBlocks.slice(0, limit).map(block => ({
+  return urlBlocks.slice(start, start + limit).map(block => ({
     url: textBetween(block, '<loc>', '</loc>'),
     lastmod: textBetween(block, '<lastmod>', '</lastmod>'),
     image: textBetween(block, '<image:loc>', '</image:loc>'),
@@ -192,29 +203,64 @@ async function main() {
   console.log(`Checking robots: ${ROBOTS_URL}`);
   const robots = await fetchText(ROBOTS_URL);
   assertRobotsAllows(robots);
-  console.log(`Fetching sitemap: ${SITEMAP_URL}`);
-  const sitemap = await fetchText(SITEMAP_URL);
-  const entries = extractSitemapEntries(sitemap, max);
-  const products = [];
+  console.log(`Fetching sitemap: ${sitemapUrl}`);
+  const sitemap = await fetchText(sitemapUrl);
+  const entries = extractSitemapEntries(sitemap, max, offset);
+  const existingProducts = append ? await loadExistingProducts(outPath) : [];
+  const existingIds = new Set(existingProducts.map(p => String(p.product_id)));
+  const products = [...existingProducts];
   const failures = [];
+  let skippedExisting = 0;
   for (const entry of entries) {
+    const entryProductId = entry.url.match(/\/products\/(\d+)/)?.[1];
+    if (entryProductId && existingIds.has(entryProductId)) {
+      skippedExisting += 1;
+      continue;
+    }
     console.log(`Crawling ${entry.url}`);
     await sleep(delayMs);
     try {
       const html = await fetchText(entry.url);
       const nextData = extractNextData(html);
-      products.push(productToOntology(nextData, entry.url, entry));
+      const product = productToOntology(nextData, entry.url, entry);
+      if (!existingIds.has(String(product.product_id))) {
+        products.push(product);
+        existingIds.add(String(product.product_id));
+      }
     } catch (error) {
       failures.push({ url: entry.url, error: error.message });
       console.warn(`Skipping ${entry.url}: ${error.message}`);
     }
   }
   await mkdir(dirname(outPath), { recursive: true });
-  await writeFile(outPath, JSON.stringify({ crawler: { user_agent: UA, source_sitemap: SITEMAP_URL, robots_url: ROBOTS_URL, attempted: entries.length, succeeded: products.length, failed: failures.length, failures }, products }, null, 2));
+  await writeFile(outPath, JSON.stringify({
+    crawler: {
+      user_agent: UA,
+      source_sitemap: sitemapUrl,
+      robots_url: ROBOTS_URL,
+      offset,
+      attempted: entries.length,
+      skipped_existing: skippedExisting,
+      succeeded_this_run: products.length - existingProducts.length,
+      succeeded_total: products.length,
+      failed: failures.length,
+      failures
+    },
+    products
+  }, null, 2));
   await mkdir(dirname(ontologyPath), { recursive: true });
   await writeFile(ontologyPath, ontologyMarkdown(products));
   console.log(`Wrote ${products.length} products to ${outPath}`);
   console.log(`Wrote ontology markdown to ${ontologyPath}`);
+}
+
+async function loadExistingProducts(path) {
+  try {
+    const parsed = JSON.parse(await readFile(path, 'utf8'));
+    return Array.isArray(parsed.products) ? parsed.products : [];
+  } catch {
+    return [];
+  }
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

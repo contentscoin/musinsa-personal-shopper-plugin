@@ -1,0 +1,530 @@
+{
+  "started_at": "2026-06-25T01:28:45.166Z",
+  "completed_at": "2026-06-25T01:28:45.967Z",
+  "base_url": "http://127.0.0.1:8795",
+  "health": {
+    "ok": true,
+    "products_loaded": 2050
+  },
+  "telemetry_restored_after_test": true,
+  "summary": {
+    "total_gap_scenarios": 6,
+    "passed": 6,
+    "failed": 0,
+    "recorded_low_confidence_events_in_test_summary": 7,
+    "ontology_gap_insight_present": true,
+    "top_missing_fields": [
+      {
+        "value": "color",
+        "count": 6
+      },
+      {
+        "value": "budget",
+        "count": 5
+      },
+      {
+        "value": "occasion_tags",
+        "count": 5
+      },
+      {
+        "value": "category",
+        "count": 4
+      },
+      {
+        "value": "weather_tags",
+        "count": 3
+      },
+      {
+        "value": "activity_tags",
+        "count": 1
+      },
+      {
+        "value": "body_context_tags",
+        "count": 1
+      },
+      {
+        "value": "breathability_tags",
+        "count": 1
+      },
+      {
+        "value": "capacity_tags",
+        "count": 1
+      },
+      {
+        "value": "comfort_tags",
+        "count": 1
+      },
+      {
+        "value": "cushioning_tags",
+        "count": 1
+      },
+      {
+        "value": "dress_code_tags",
+        "count": 1
+      },
+      {
+        "value": "fit_risk_tags",
+        "count": 1
+      },
+      {
+        "value": "formality_tags",
+        "count": 1
+      },
+      {
+        "value": "functional_material_tags",
+        "count": 1
+      },
+      {
+        "value": "performance_fit_tags",
+        "count": 1
+      },
+      {
+        "value": "season_function_tags",
+        "count": 1
+      },
+      {
+        "value": "storage_tags",
+        "count": 1
+      },
+      {
+        "value": "style_tags",
+        "count": 1
+      },
+      {
+        "value": "support_level_tags",
+        "count": 1
+      }
+    ]
+  },
+  "gap_insight": {
+    "type": "ontology_gap",
+    "summary": "추천 신뢰도가 낮은 질문 7건이 있어 상품 태그/상황/핏 온톨로지 보강이 필요합니다.",
+    "evidence": {
+      "count": 7,
+      "missing_ontology_fields": [
+        {
+          "value": "color",
+          "count": 6
+        },
+        {
+          "value": "budget",
+          "count": 5
+        },
+        {
+          "value": "occasion_tags",
+          "count": 5
+        },
+        {
+          "value": "category",
+          "count": 4
+        },
+        {
+          "value": "weather_tags",
+          "count": 3
+        },
+        {
+          "value": "activity_tags",
+          "count": 1
+        },
+        {
+          "value": "body_context_tags",
+          "count": 1
+        },
+        {
+          "value": "breathability_tags",
+          "count": 1
+        },
+        {
+          "value": "capacity_tags",
+          "count": 1
+        },
+        {
+          "value": "comfort_tags",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "failure_samples": [],
+  "all_records": [
+    {
+      "index": 1,
+      "scenario": "rain_commute_weather_gap",
+      "raw_query": "비 오는 날 출근룩 방수 아우터 추천 010-1234-5678",
+      "recommendation_latency_ms": 119.33,
+      "event_latency_ms": 4.71,
+      "recommendation_confidence": {
+        "level": "high",
+        "top_score": 11.48,
+        "low_confidence": false,
+        "missing_ontology_fields": [
+          "category",
+          "color",
+          "budget"
+        ],
+        "recommendation_count": 5
+      },
+      "top_recommendation": {
+        "product_id": "3025211",
+        "name_ko": "에센셜 라운드 니트 가디건 - 8 COLOR",
+        "brand": "수아레",
+        "category": "아우터 > 카디건",
+        "score": 11.48,
+        "score_total": 3.863
+      },
+      "recorded_event": {
+        "event_id": "6c78a7ba-4519-4e92-b4ca-cf6ea086909f",
+        "event_type": "low_confidence_recommendation",
+        "occurred_at": "2026-06-25T01:28:45.578Z",
+        "session_hash": "f1e865016e6c3e53ad550e54",
+        "user_agent_family": "unknown",
+        "query": "비 오는 날 출근룩 방수 아우터 추천 [phone]",
+        "parsed_intent": {
+          "colors": [],
+          "categories": [],
+          "seasons": []
+        },
+        "product_ids": [
+          "3025211",
+          "2086731",
+          "3434621",
+          "1882525",
+          "3758212"
+        ],
+        "confidence": 0.25,
+        "missing_ontology_fields": [
+          "category",
+          "color",
+          "budget",
+          "weather_tags",
+          "occasion_tags",
+          "functional_material_tags"
+        ],
+        "source": "low-confidence-gap-test",
+        "metadata": {
+          "surface": "api-test",
+          "locale": "ko-KR",
+          "result_count": 5
+        }
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 2,
+      "scenario": "wedding_guest_formality_gap",
+      "raw_query": "하객룩 격식있는 원피스 10만원 이하 추천 test@example.com",
+      "recommendation_latency_ms": 74.46,
+      "event_latency_ms": 3.04,
+      "recommendation_confidence": {
+        "level": "medium",
+        "top_score": 6.86,
+        "low_confidence": false,
+        "missing_ontology_fields": [
+          "category",
+          "color"
+        ],
+        "recommendation_count": 5
+      },
+      "top_recommendation": {
+        "product_id": "276256",
+        "name_ko": "COMPOUND MESSENGER BAG SERIES /  메신저백",
+        "brand": "몬스터리퍼블릭",
+        "category": "가방 > 메신저/크로스 백",
+        "score": 6.86,
+        "score_total": 5.16
+      },
+      "recorded_event": {
+        "event_id": "97e7c616-34fa-48ff-89b3-cd484674ee3b",
+        "event_type": "low_confidence_recommendation",
+        "occurred_at": "2026-06-25T01:28:45.658Z",
+        "session_hash": "3a635818e651d35a7634f704",
+        "user_agent_family": "unknown",
+        "query": "하객룩 격식있는 원피스 10만원 이하 추천 [email]",
+        "parsed_intent": {
+          "budget": 100000,
+          "colors": [],
+          "categories": [],
+          "seasons": []
+        },
+        "product_ids": [
+          "276256",
+          "4512577",
+          "4512936",
+          "3876972",
+          "3483542"
+        ],
+        "confidence": 0.25,
+        "missing_ontology_fields": [
+          "category",
+          "color",
+          "occasion_tags",
+          "formality_tags",
+          "dress_code_tags"
+        ],
+        "source": "low-confidence-gap-test",
+        "metadata": {
+          "surface": "api-test",
+          "locale": "ko-KR",
+          "result_count": 5
+        }
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 3,
+      "scenario": "beginner_running_support_gap",
+      "raw_query": "러닝 초보 무릎 보호 쿠션화 추천 주문 ABCD123456",
+      "recommendation_latency_ms": 71.44,
+      "event_latency_ms": 1.73,
+      "recommendation_confidence": {
+        "level": "medium",
+        "top_score": 5.66,
+        "low_confidence": false,
+        "missing_ontology_fields": [
+          "category",
+          "color",
+          "budget"
+        ],
+        "recommendation_count": 5
+      },
+      "top_recommendation": {
+        "product_id": "3483542",
+        "name_ko": "울트라서포트 제로무브 쿨러닝 스포츠브라 단품 (후크형)",
+        "brand": "컴포트랩",
+        "category": "스포츠/레저 > 상의 > 기타상의",
+        "score": 5.66,
+        "score_total": 2.966
+      },
+      "recorded_event": {
+        "event_id": "225d672b-83ff-4a38-9d22-492b39fc47a0",
+        "event_type": "low_confidence_recommendation",
+        "occurred_at": "2026-06-25T01:28:45.733Z",
+        "session_hash": "a5962b73c2824abcedc6db29",
+        "user_agent_family": "unknown",
+        "query": "러닝 초보 무릎 보호 쿠션화 추천 주문 [order_id]",
+        "parsed_intent": {
+          "colors": [],
+          "categories": [],
+          "seasons": []
+        },
+        "product_ids": [
+          "3483542",
+          "2502974",
+          "4377523",
+          "4290137",
+          "4655528"
+        ],
+        "confidence": 0.25,
+        "missing_ontology_fields": [
+          "category",
+          "color",
+          "budget",
+          "activity_tags",
+          "support_level_tags",
+          "cushioning_tags",
+          "occasion_tags",
+          "performance_fit_tags"
+        ],
+        "source": "low-confidence-gap-test",
+        "metadata": {
+          "surface": "api-test",
+          "locale": "ko-KR",
+          "result_count": 5
+        }
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 4,
+      "scenario": "maternity_fit_gap",
+      "raw_query": "임산부 편한 와이드팬츠 추천 서울 강남구 테헤란로 123",
+      "recommendation_latency_ms": 67.87,
+      "event_latency_ms": 2.72,
+      "recommendation_confidence": {
+        "level": "medium",
+        "top_score": 6.86,
+        "low_confidence": false,
+        "missing_ontology_fields": [
+          "color",
+          "budget"
+        ],
+        "recommendation_count": 5
+      },
+      "top_recommendation": {
+        "product_id": "1156323",
+        "name_ko": "탄체크 와이드 팬츠 (블랙)",
+        "brand": "덴아워",
+        "category": "바지 > 슈트 팬츠/슬랙스",
+        "score": 6.86,
+        "score_total": 4.21
+      },
+      "recorded_event": {
+        "event_id": "ad16811c-bf76-4a5d-aede-622be2a7d9c3",
+        "event_type": "low_confidence_recommendation",
+        "occurred_at": "2026-06-25T01:28:45.804Z",
+        "session_hash": "597686c95298d0577db5fb70",
+        "user_agent_family": "unknown",
+        "query": "임산부 편한 와이드팬츠 추천 [address]",
+        "parsed_intent": {
+          "colors": [],
+          "categories": [
+            "팬츠"
+          ],
+          "seasons": []
+        },
+        "product_ids": [
+          "1156323",
+          "3983035",
+          "5251742",
+          "5044496",
+          "2310689"
+        ],
+        "confidence": 0.25,
+        "missing_ontology_fields": [
+          "color",
+          "budget",
+          "body_context_tags",
+          "comfort_tags",
+          "fit_risk_tags"
+        ],
+        "source": "low-confidence-gap-test",
+        "metadata": {
+          "surface": "api-test",
+          "locale": "ko-KR",
+          "result_count": 5
+        }
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 5,
+      "scenario": "travel_capacity_gap",
+      "raw_query": "2박3일 여행용 수납 좋은 백팩 추천 송장 1234567890",
+      "recommendation_latency_ms": 66.95,
+      "event_latency_ms": 1.84,
+      "recommendation_confidence": {
+        "level": "high",
+        "top_score": 7.06,
+        "low_confidence": false,
+        "missing_ontology_fields": [
+          "color",
+          "budget"
+        ],
+        "recommendation_count": 5
+      },
+      "top_recommendation": {
+        "product_id": "4271270",
+        "name_ko": "뮤트 미니 백팩 (5컬러)",
+        "brand": "무센트",
+        "category": "가방 > 백팩",
+        "score": 7.06,
+        "score_total": 4.344
+      },
+      "recorded_event": {
+        "event_id": "fcb27282-d942-44c8-86ea-1cd511ec8938",
+        "event_type": "low_confidence_recommendation",
+        "occurred_at": "2026-06-25T01:28:45.873Z",
+        "session_hash": "54e53bd5998893df6c9c9303",
+        "user_agent_family": "unknown",
+        "query": "2박3일 여행용 수납 좋은 백팩 추천 송장 [phone]",
+        "parsed_intent": {
+          "colors": [],
+          "categories": [
+            "백팩"
+          ],
+          "seasons": []
+        },
+        "product_ids": [
+          "4271270",
+          "4363895",
+          "1744100",
+          "1323612",
+          "1740936"
+        ],
+        "confidence": 0.25,
+        "missing_ontology_fields": [
+          "color",
+          "budget",
+          "capacity_tags",
+          "travel_duration_tags",
+          "storage_tags",
+          "occasion_tags"
+        ],
+        "source": "low-confidence-gap-test",
+        "metadata": {
+          "surface": "api-test",
+          "locale": "ko-KR",
+          "result_count": 5
+        }
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 6,
+      "scenario": "monsoon_breathable_shoe_gap",
+      "raw_query": "여름 장마 통풍 잘 되는 신발 추천 카드 4111111111111111",
+      "recommendation_latency_ms": 81,
+      "event_latency_ms": 1.74,
+      "recommendation_confidence": {
+        "level": "high",
+        "top_score": 11.68,
+        "low_confidence": false,
+        "missing_ontology_fields": [
+          "category",
+          "color",
+          "budget"
+        ],
+        "recommendation_count": 5
+      },
+      "top_recommendation": {
+        "product_id": "930951",
+        "name_ko": "어센틱 - (Golden Coast) 체커보드 블랙:화이트 / VN000W4NDI01",
+        "brand": "반스",
+        "category": "신발 > 스니커즈 > 캔버스/단화",
+        "score": 11.68,
+        "score_total": 3.48
+      },
+      "recorded_event": {
+        "event_id": "00e81214-c142-4abf-b138-d267177dd34a",
+        "event_type": "low_confidence_recommendation",
+        "occurred_at": "2026-06-25T01:28:45.957Z",
+        "session_hash": "538ab326f5f03ba7469f07ef",
+        "user_agent_family": "unknown",
+        "query": "여름 장마 통풍 잘 되는 신발 추천 카드 [card_or_long_number]",
+        "parsed_intent": {
+          "colors": [],
+          "categories": [],
+          "seasons": [
+            "여름"
+          ]
+        },
+        "product_ids": [
+          "930951",
+          "3347848",
+          "6033901",
+          "2440110",
+          "4319321"
+        ],
+        "confidence": 0.25,
+        "missing_ontology_fields": [
+          "category",
+          "color",
+          "budget",
+          "weather_tags",
+          "breathability_tags",
+          "season_function_tags"
+        ],
+        "source": "low-confidence-gap-test",
+        "metadata": {
+          "surface": "api-test",
+          "locale": "ko-KR",
+          "result_count": 5
+        }
+      },
+      "validation_failures": []
+    }
+  ],
+  "server_output": [
+    "MUSINSA Personal Shopper Plugin listening on :8795 (2050 products loaded)"
+  ]
+}

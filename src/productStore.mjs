@@ -33,27 +33,46 @@ function scoreProduct(product, f) {
   ].filter(Boolean).join(' ');
   const haystack = normalize(haystackRaw);
   const haystackTight = tight(haystack);
+  const categoryText = normalize(product.category_path?.join(' '));
+  const categoryTight = tight(categoryText);
+  const brandText = normalize([product.brand?.name_ko, product.brand?.name_en].filter(Boolean).join(' '));
   const queryTokens = expandQueryTokens(f.q);
   let score = 0;
 
+  // Structured filters are hard constraints. Without this, an empty or broad query can rank
+  // unrelated high-review products above the requested brand/category.
+  if (f.category && !(categoryText.includes(f.category) || categoryTight.includes(tight(f.category)))) return 0;
+  if (f.brand && !brandMatches(brandText, f.brand)) return 0;
+  if (f.gender && !normalize((product.gender ?? []).join(' ')).includes(f.gender)) return 0;
+
   if (queryTokens.length) {
     let matched = 0;
+    let specificMatched = 0;
+    const exactQuery = normalize(f.q);
+    const exactQueryTight = tight(f.q);
+    if (exactQuery.length >= 3 && (haystack.includes(exactQuery) || haystackTight.includes(exactQueryTight))) score += 4;
+    if (exactQuery.length >= 3 && (categoryText.includes(exactQuery) || categoryTight.includes(exactQueryTight))) score += 6;
     for (const token of queryTokens) {
       if (haystack.includes(token) || haystackTight.includes(tight(token))) {
         matched += 1;
+        if (!isGenericQueryToken(token)) specificMatched += 1;
         score += token.length >= 3 ? 2.2 : 1;
+        if (categoryText.includes(token) || categoryTight.includes(tight(token))) score += 1.4;
       }
     }
     // Natural-language shopping should not return unrelated products just because the price matches.
     if (matched === 0) return 0;
+    // For broad category phrases like "데님 팬츠" or "트러커 재킷", avoid returning
+    // anything that only matched the generic tail word (팬츠/재킷/티셔츠/etc.).
+    if (queryTokens.some(token => isGenericQueryToken(token)) && queryTokens.some(token => !isGenericQueryToken(token)) && specificMatched === 0) return 0;
     score += Math.min(matched, 4);
   } else {
     score += 1;
   }
 
-  if (f.category && (haystack.includes(f.category) || haystackTight.includes(tight(f.category)))) score += 3;
-  if (f.brand && (haystack.includes(f.brand) || haystackTight.includes(tight(f.brand)))) score += 3;
-  if (f.gender && normalize((product.gender ?? []).join(' ')).includes(f.gender)) score += 1;
+  if (f.category) score += 3;
+  if (f.brand) score += 3;
+  if (f.gender) score += 1;
   const price = product.price?.final_price ?? product.price?.sale_price ?? Number.POSITIVE_INFINITY;
   if (price >= f.min && price <= f.max) score += 2; else return 0;
   if (product.review?.satisfaction_score) score += product.review.satisfaction_score / 5;
@@ -68,6 +87,7 @@ function expandQueryTokens(query) {
   const synonyms = [];
   const lexicon = [
     ['후드집업', '후드', '집업'],
+    ['숏팬츠', '숏', '쇼츠', '반바지'],
     ['트랙탑', '트레이닝', '재킷'],
     ['스니커즈', '운동화', '신발'],
     ['니트', '스웨터'],
@@ -99,6 +119,20 @@ export function compactProduct(product) {
     ai_tags: product.ai_tags,
     source_url: product.source_url
   };
+}
+
+function brandMatches(brandText, requestedBrand) {
+  const brand = normalize(brandText);
+  const requested = normalize(requestedBrand);
+  if (!requested) return true;
+  if (brand === requested) return true;
+  // Allow sub-line brands such as "무신사 스탠다드 우먼" for "무신사 스탠다드"
+  // and "푸마 바디웨어" for "푸마", but avoid false positives like "어반스터프" for "반스".
+  return brand.startsWith(`${requested} `) || tight(brand).startsWith(tight(requested));
+}
+
+function isGenericQueryToken(token) {
+  return new Set(['팬츠', '바지', '재킷', '자켓', '티셔츠', '셔츠', '상의', '신발', '운동화', '집업']).has(normalize(token));
 }
 
 function normalize(value) {

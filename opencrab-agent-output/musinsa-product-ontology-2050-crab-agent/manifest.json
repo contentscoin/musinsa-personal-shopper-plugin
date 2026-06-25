@@ -1,0 +1,20 @@
+{
+  "title": "musinsa-product-ontology-2050-crab-agent",
+  "version": "1.0.0-crab-agent-local",
+  "owner_tag": "hermes-profile:paperclipbase",
+  "project_name": "paperclipbase",
+  "storage_mode": "ontology",
+  "source_type": "data_zip",
+  "original_documents_stored": false,
+  "purpose": "MUSINSA Personal Shopper Plugin ontology pack enhanced by CrabAgent-style local build.",
+  "created_at": "2026-06-25T00:18:43.964Z",
+  "metrics": {
+    "documents": 453,
+    "chunks": 453,
+    "nodes": 2971,
+    "edges": 15951,
+    "products": 2050,
+    "distinct_brands": 713,
+    "distinct_category_paths": 190
+  }
+}

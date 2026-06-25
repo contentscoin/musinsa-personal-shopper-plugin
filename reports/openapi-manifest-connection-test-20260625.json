@@ -1,0 +1,163 @@
+{
+  "started_at": "2026-06-25T01:28:33.450Z",
+  "completed_at": "2026-06-25T01:28:33.877Z",
+  "base_url": "http://127.0.0.1:8787",
+  "public_base_url": "http://localhost:8787",
+  "summary": {
+    "passed": true,
+    "failure_count": 0,
+    "products_loaded": 2050,
+    "openapi_paths": 17,
+    "schemas": 11,
+    "operation_ids": 18,
+    "unresolved_refs": 0
+  },
+  "checks": {
+    "health": {
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body": {
+        "ok": true,
+        "products_loaded": 2050
+      },
+      "latency_ms": 8.22
+    },
+    "manifest": {
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body": {
+        "schema_version": "v1",
+        "name_for_human": "MUSINSA Personal Shopper",
+        "name_for_model": "musinsa_personal_shopper",
+        "description_for_human": "Conversational MUSINSA shopping assistant for product recommendations, comparisons, shortlists, and non-PII analytics.",
+        "description_for_model": "Use this plugin to search MUSINSA products, recommend products from natural-language shopping intent, compare candidate products, save shortlists, summarize fit/review/material signals, and record sanitized non-PII analytics events for marketing and model-improvement ontology packs. Do not send names, emails, phone numbers, addresses, order IDs, IP addresses, raw user IDs, or other personal data to analytics endpoints.",
+        "auth": {
+          "type": "none"
+        },
+        "api": {
+          "type": "openapi",
+          "url": "http://localhost:8787/openapi.yaml",
+          "is_user_authenticated": false
+        },
+        "logo_url": "http://localhost:8787/logo.png",
+        "contact_email": "devnull@example.com",
+        "legal_info_url": "http://localhost:8787/analytics/notice"
+      },
+      "latency_ms": 2.66
+    },
+    "openapi": {
+      "status": 200,
+      "content_type": "application/yaml; charset=utf-8",
+      "paths": [
+        "/health",
+        "/products/search",
+        "/products/{productId}",
+        "/products/{productId}/reviews/summary",
+        "/shopper/recommend",
+        "/shopper/compare",
+        "/shopper/shortlist",
+        "/shopper/shortlist/{sessionId}",
+        "/analytics/events",
+        "/analytics/summary",
+        "/analytics/notice",
+        "/analytics/funnel",
+        "/analytics/products",
+        "/analytics/queries",
+        "/analytics/intents",
+        "/analytics/insights",
+        "/analytics/export"
+      ],
+      "schemas": [
+        "ProductSearchRequest",
+        "CustomerProfile",
+        "RecommendRequest",
+        "ParsedIntent",
+        "ProductCard",
+        "ScoreBreakdown",
+        "RecommendResponse",
+        "CompareResponse",
+        "SaveShortlistRequest",
+        "Shortlist",
+        "AnalyticsEventRequest"
+      ],
+      "operation_ids": [
+        "health",
+        "searchProducts",
+        "getProductDetail",
+        "summarizeProductReviews",
+        "recommendByProfile",
+        "compareProducts",
+        "saveShortlist",
+        "getShortlist",
+        "clearShortlist",
+        "recordAnalyticsEvent",
+        "getAnalyticsSummary",
+        "getAnalyticsNotice",
+        "getAnalyticsFunnel",
+        "getAnalyticsProducts",
+        "getAnalyticsQueries",
+        "getAnalyticsIntents",
+        "getAnalyticsInsights",
+        "exportAnalyticsSummary"
+      ],
+      "latency_ms": 1.51
+    },
+    "legal_notice": {
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body": {
+        "title": "MUSINSA Personal Shopper analytics notice",
+        "message_ko": "서비스 개선과 추천 품질 향상을 위해 개인식별정보를 제외한 검색어, 추천 결과, 상품 클릭, 비교, shortlist 저장, 구매전환 통계를 수집합니다. 이메일, 전화번호, 주소, 주문번호, IP, 원문 사용자 ID는 저장하지 않습니다.",
+        "message_en": "To improve service quality and recommendations, this plugin collects non-PII search, recommendation, product click, comparison, shortlist, and conversion analytics. Emails, phone numbers, addresses, order IDs, IP addresses, and raw user IDs are not stored.",
+        "collected": [
+          "event_type",
+          "sanitized_query",
+          "parsed_intent",
+          "product_ids",
+          "clicked_product_id",
+          "converted_product_id",
+          "rank",
+          "confidence",
+          "missing_ontology_fields",
+          "metadata.surface",
+          "metadata.locale"
+        ],
+        "not_collected": [
+          "name",
+          "email",
+          "phone",
+          "address",
+          "order_id",
+          "ip_address",
+          "raw_user_id",
+          "raw_session_id"
+        ],
+        "owner_visibility": "Pack owner can view sanitized event-level rows plus aggregate statistics."
+      },
+      "latency_ms": 0.95
+    },
+    "logo": {
+      "status": 200,
+      "content_type": "image/png",
+      "body_bytes": 0,
+      "latency_ms": 0.91
+    },
+    "recommend_runtime": {
+      "status": 200,
+      "result_count": 3,
+      "top_product": "3783092",
+      "has_score_breakdown": true,
+      "latency_ms": 87.06
+    },
+    "search_runtime": {
+      "status": 200,
+      "result_count": 3,
+      "top_product": "1163169",
+      "latency_ms": 46.65
+    }
+  },
+  "failures": [],
+  "server_output": [
+    "MUSINSA Personal Shopper Plugin listening on :8787 (2050 products loaded)"
+  ]
+}

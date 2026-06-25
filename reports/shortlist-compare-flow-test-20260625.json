@@ -1,10 +1,16 @@
 {
-  "started_at": "2026-06-25T01:28:46.081Z",
-  "completed_at": "2026-06-25T01:28:46.697Z",
+  "started_at": "2026-06-25T03:40:09.028Z",
+  "completed_at": "2026-06-25T03:40:09.386Z",
   "base_url": "http://127.0.0.1:8794",
   "health": {
     "ok": true,
-    "products_loaded": 2050
+    "products_loaded": 2050,
+    "search_index": {
+      "enabled": true,
+      "brands": 1416,
+      "categories": 436,
+      "terms": 549
+    }
   },
   "dataset": {
     "products": 2050
@@ -14,9 +20,9 @@
     "passed": 4,
     "failed": 0,
     "total_endpoint_calls": 28,
-    "p50_endpoint_latency_ms": 1,
-    "p95_endpoint_latency_ms": 65.32,
-    "max_endpoint_latency_ms": 90.73
+    "p50_endpoint_latency_ms": 1.03,
+    "p95_endpoint_latency_ms": 7.38,
+    "max_endpoint_latency_ms": 24.3
   },
   "failure_samples": [],
   "sample_successes": [
@@ -29,13 +35,13 @@
         "리뷰 검증 우선이면 [크롭선택] ASI 포시즌 에센셜 후드 집업_피그먼트 차콜이 가장 강합니다."
       ],
       "latencies": {
-        "recommend_ms": 90.73,
-        "save_ms": 2.18,
-        "dedupe_save_ms": 1.61,
-        "get_ms": 1,
-        "compare_ms": 1.88,
+        "recommend_ms": 24.3,
+        "save_ms": 2.08,
+        "dedupe_save_ms": 1.47,
+        "get_ms": 1.03,
+        "compare_ms": 1.85,
         "clear_ms": 0.85,
-        "after_clear_get_ms": 1.15
+        "after_clear_get_ms": 1.1
       }
     },
     {
@@ -47,13 +53,13 @@
         "리뷰 검증 우선이면 삼바 OG - 화이트:블랙 / B75806이 가장 강합니다."
       ],
       "latencies": {
-        "recommend_ms": 65.32,
-        "save_ms": 1.74,
-        "dedupe_save_ms": 1.29,
-        "get_ms": 0.59,
-        "compare_ms": 1.06,
-        "clear_ms": 0.55,
-        "after_clear_get_ms": 0.48
+        "recommend_ms": 7.38,
+        "save_ms": 1.53,
+        "dedupe_save_ms": 1.11,
+        "get_ms": 0.6,
+        "compare_ms": 1.05,
+        "clear_ms": 0.64,
+        "after_clear_get_ms": 0.54
       }
     },
     {
@@ -65,13 +71,13 @@
         "리뷰 검증 우선이면 바이오스톤 워싱 와이드 데님 팬츠 (BLUE GRAY)이 가장 강합니다."
       ],
       "latencies": {
-        "recommend_ms": 59.53,
-        "save_ms": 1.17,
-        "dedupe_save_ms": 0.95,
-        "get_ms": 0.51,
-        "compare_ms": 0.94,
-        "clear_ms": 0.5,
-        "after_clear_get_ms": 0.51
+        "recommend_ms": 6.25,
+        "save_ms": 1.38,
+        "dedupe_save_ms": 1.04,
+        "get_ms": 0.61,
+        "compare_ms": 0.9,
+        "clear_ms": 0.55,
+        "after_clear_get_ms": 0.55
       }
     },
     {
@@ -83,13 +89,13 @@
         "리뷰 검증 우선이면 엔보이 DESERT BEIGE이 가장 강합니다."
       ],
       "latencies": {
-        "recommend_ms": 48.63,
-        "save_ms": 1.13,
-        "dedupe_save_ms": 0.81,
+        "recommend_ms": 4.25,
+        "save_ms": 1.03,
+        "dedupe_save_ms": 0.8,
         "get_ms": 0.55,
-        "compare_ms": 0.86,
-        "clear_ms": 0.52,
-        "after_clear_get_ms": 0.57
+        "compare_ms": 0.83,
+        "clear_ms": 0.57,
+        "after_clear_get_ms": 0.52
       }
     }
   ],
@@ -97,7 +103,7 @@
     {
       "index": 1,
       "scenario": "hoodie_budget_flow",
-      "session_id": "shortlist-compare-1782350926404-0",
+      "session_id": "shortlist-compare-1782358809315-0",
       "request": {
         "query": "남성 차콜 후드집업 5만원 이하 추천",
         "category": "아우터 > 후드 집업",
@@ -106,19 +112,19 @@
       },
       "expected_unique_saved": 3,
       "latencies": {
-        "recommend_ms": 90.73,
-        "save_ms": 2.18,
-        "dedupe_save_ms": 1.61,
-        "get_ms": 1,
-        "compare_ms": 1.88,
+        "recommend_ms": 24.3,
+        "save_ms": 2.08,
+        "dedupe_save_ms": 1.47,
+        "get_ms": 1.03,
+        "compare_ms": 1.85,
         "clear_ms": 0.85,
-        "after_clear_get_ms": 1.15
+        "after_clear_get_ms": 1.1
       },
       "recommendation": {
         "assistant_summary": "상위 후보는 [크롭선택] ASI 포시즌 에센셜 후드 집업_피그먼트 차콜입니다. 39,900원, 리뷰 11,609개, 만족도 4.8 기준으로 가장 관련도가 높습니다.",
         "recommendation_confidence": {
           "level": "high",
-          "top_score": 25.46,
+          "top_score": 29.06,
           "low_confidence": false,
           "missing_ontology_fields": [],
           "recommendation_count": 5
@@ -206,7 +212,7 @@
         ]
       },
       "saved_shortlist": {
-        "session_id": "shortlist-compare-1782350926404-0",
+        "session_id": "shortlist-compare-1782358809315-0",
         "item_count": 3,
         "items": [
           {
@@ -239,7 +245,7 @@
         ]
       },
       "saved_after_duplicate": {
-        "session_id": "shortlist-compare-1782350926404-0",
+        "session_id": "shortlist-compare-1782358809315-0",
         "item_count": 3,
         "items": [
           {
@@ -272,7 +278,7 @@
         ]
       },
       "loaded_shortlist": {
-        "session_id": "shortlist-compare-1782350926404-0",
+        "session_id": "shortlist-compare-1782358809315-0",
         "item_count": 3,
         "items": [
           {
@@ -373,11 +379,11 @@
         ]
       },
       "clear_result": {
-        "session_id": "shortlist-compare-1782350926404-0",
+        "session_id": "shortlist-compare-1782358809315-0",
         "cleared": true
       },
       "after_clear": {
-        "session_id": "shortlist-compare-1782350926404-0",
+        "session_id": "shortlist-compare-1782358809315-0",
         "items": [],
         "item_count": 0
       },
@@ -387,7 +393,7 @@
     {
       "index": 2,
       "scenario": "sneaker_review_flow",
-      "session_id": "shortlist-compare-1782350926506-1",
+      "session_id": "shortlist-compare-1782358809350-1",
       "request": {
         "query": "리뷰 많은 스니커즈 추천",
         "category": "신발 > 스니커즈 > 패션스니커즈화",
@@ -395,13 +401,13 @@
       },
       "expected_unique_saved": 3,
       "latencies": {
-        "recommend_ms": 65.32,
-        "save_ms": 1.74,
-        "dedupe_save_ms": 1.29,
-        "get_ms": 0.59,
-        "compare_ms": 1.06,
-        "clear_ms": 0.55,
-        "after_clear_get_ms": 0.48
+        "recommend_ms": 7.38,
+        "save_ms": 1.53,
+        "dedupe_save_ms": 1.11,
+        "get_ms": 0.6,
+        "compare_ms": 1.05,
+        "clear_ms": 0.64,
+        "after_clear_get_ms": 0.54
       },
       "recommendation": {
         "assistant_summary": "상위 후보는 유니 레더 독일군 HPMR6DA03M입니다. 53,910원, 리뷰 12,118개, 만족도 4.9 기준으로 가장 관련도가 높습니다.",
@@ -498,7 +504,7 @@
         ]
       },
       "saved_shortlist": {
-        "session_id": "shortlist-compare-1782350926506-1",
+        "session_id": "shortlist-compare-1782358809350-1",
         "item_count": 3,
         "items": [
           {
@@ -531,7 +537,7 @@
         ]
       },
       "saved_after_duplicate": {
-        "session_id": "shortlist-compare-1782350926506-1",
+        "session_id": "shortlist-compare-1782358809350-1",
         "item_count": 3,
         "items": [
           {
@@ -564,7 +570,7 @@
         ]
       },
       "loaded_shortlist": {
-        "session_id": "shortlist-compare-1782350926506-1",
+        "session_id": "shortlist-compare-1782358809350-1",
         "item_count": 3,
         "items": [
           {
@@ -665,11 +671,11 @@
         ]
       },
       "clear_result": {
-        "session_id": "shortlist-compare-1782350926506-1",
+        "session_id": "shortlist-compare-1782358809350-1",
         "cleared": true
       },
       "after_clear": {
-        "session_id": "shortlist-compare-1782350926506-1",
+        "session_id": "shortlist-compare-1782358809350-1",
         "items": [],
         "item_count": 0
       },
@@ -679,7 +685,7 @@
     {
       "index": 3,
       "scenario": "denim_price_flow",
-      "session_id": "shortlist-compare-1782350926578-2",
+      "session_id": "shortlist-compare-1782358809364-2",
       "request": {
         "query": "데님 팬츠 7만원 이하 추천",
         "category": "바지 > 데님 팬츠",
@@ -688,19 +694,19 @@
       },
       "expected_unique_saved": 3,
       "latencies": {
-        "recommend_ms": 59.53,
-        "save_ms": 1.17,
-        "dedupe_save_ms": 0.95,
-        "get_ms": 0.51,
-        "compare_ms": 0.94,
-        "clear_ms": 0.5,
-        "after_clear_get_ms": 0.51
+        "recommend_ms": 6.25,
+        "save_ms": 1.38,
+        "dedupe_save_ms": 1.04,
+        "get_ms": 0.61,
+        "compare_ms": 0.9,
+        "clear_ms": 0.55,
+        "after_clear_get_ms": 0.55
       },
       "recommendation": {
         "assistant_summary": "상위 후보는 바이오스톤 워싱 와이드 데님 팬츠 (BLUE GRAY)입니다. 34,900원, 리뷰 17,057개, 만족도 4.8 기준으로 가장 관련도가 높습니다.",
         "recommendation_confidence": {
           "level": "high",
-          "top_score": 16.66,
+          "top_score": 21.26,
           "low_confidence": false,
           "missing_ontology_fields": [
             "color"
@@ -790,7 +796,7 @@
         ]
       },
       "saved_shortlist": {
-        "session_id": "shortlist-compare-1782350926578-2",
+        "session_id": "shortlist-compare-1782358809364-2",
         "item_count": 3,
         "items": [
           {
@@ -823,7 +829,7 @@
         ]
       },
       "saved_after_duplicate": {
-        "session_id": "shortlist-compare-1782350926578-2",
+        "session_id": "shortlist-compare-1782358809364-2",
         "item_count": 3,
         "items": [
           {
@@ -856,7 +862,7 @@
         ]
       },
       "loaded_shortlist": {
-        "session_id": "shortlist-compare-1782350926578-2",
+        "session_id": "shortlist-compare-1782358809364-2",
         "item_count": 3,
         "items": [
           {
@@ -957,11 +963,11 @@
         ]
       },
       "clear_result": {
-        "session_id": "shortlist-compare-1782350926578-2",
+        "session_id": "shortlist-compare-1782358809364-2",
         "cleared": true
       },
       "after_clear": {
-        "session_id": "shortlist-compare-1782350926578-2",
+        "session_id": "shortlist-compare-1782358809364-2",
         "items": [],
         "item_count": 0
       },
@@ -971,7 +977,7 @@
     {
       "index": 4,
       "scenario": "bag_compare_flow",
-      "session_id": "shortlist-compare-1782350926643-3",
+      "session_id": "shortlist-compare-1782358809376-3",
       "request": {
         "query": "백팩 추천",
         "category": "가방 > 백팩",
@@ -979,13 +985,13 @@
       },
       "expected_unique_saved": 3,
       "latencies": {
-        "recommend_ms": 48.63,
-        "save_ms": 1.13,
-        "dedupe_save_ms": 0.81,
+        "recommend_ms": 4.25,
+        "save_ms": 1.03,
+        "dedupe_save_ms": 0.8,
         "get_ms": 0.55,
-        "compare_ms": 0.86,
-        "clear_ms": 0.52,
-        "after_clear_get_ms": 0.57
+        "compare_ms": 0.83,
+        "clear_ms": 0.57,
+        "after_clear_get_ms": 0.52
       },
       "recommendation": {
         "assistant_summary": "상위 후보는 뮤트 미니 백팩 (5컬러)입니다. 49,900원, 리뷰 1,130개, 만족도 4.8 기준으로 가장 관련도가 높습니다.",
@@ -1082,7 +1088,7 @@
         ]
       },
       "saved_shortlist": {
-        "session_id": "shortlist-compare-1782350926643-3",
+        "session_id": "shortlist-compare-1782358809376-3",
         "item_count": 3,
         "items": [
           {
@@ -1115,7 +1121,7 @@
         ]
       },
       "saved_after_duplicate": {
-        "session_id": "shortlist-compare-1782350926643-3",
+        "session_id": "shortlist-compare-1782358809376-3",
         "item_count": 3,
         "items": [
           {
@@ -1148,7 +1154,7 @@
         ]
       },
       "loaded_shortlist": {
-        "session_id": "shortlist-compare-1782350926643-3",
+        "session_id": "shortlist-compare-1782358809376-3",
         "item_count": 3,
         "items": [
           {
@@ -1249,11 +1255,11 @@
         ]
       },
       "clear_result": {
-        "session_id": "shortlist-compare-1782350926643-3",
+        "session_id": "shortlist-compare-1782358809376-3",
         "cleared": true
       },
       "after_clear": {
-        "session_id": "shortlist-compare-1782350926643-3",
+        "session_id": "shortlist-compare-1782358809376-3",
         "items": [],
         "item_count": 0
       },

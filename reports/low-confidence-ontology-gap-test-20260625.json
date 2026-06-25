@@ -1,10 +1,16 @@
 {
-  "started_at": "2026-06-25T01:28:45.166Z",
-  "completed_at": "2026-06-25T01:28:45.967Z",
+  "started_at": "2026-06-25T03:40:10.811Z",
+  "completed_at": "2026-06-25T03:40:11.223Z",
   "base_url": "http://127.0.0.1:8795",
   "health": {
     "ok": true,
-    "products_loaded": 2050
+    "products_loaded": 2050,
+    "search_index": {
+      "enabled": true,
+      "brands": 1416,
+      "categories": 436,
+      "terms": 549
+    }
   },
   "telemetry_restored_after_test": true,
   "summary": {
@@ -151,8 +157,8 @@
       "index": 1,
       "scenario": "rain_commute_weather_gap",
       "raw_query": "비 오는 날 출근룩 방수 아우터 추천 010-1234-5678",
-      "recommendation_latency_ms": 119.33,
-      "event_latency_ms": 4.71,
+      "recommendation_latency_ms": 39.83,
+      "event_latency_ms": 4.59,
       "recommendation_confidence": {
         "level": "high",
         "top_score": 11.48,
@@ -173,9 +179,9 @@
         "score_total": 3.863
       },
       "recorded_event": {
-        "event_id": "6c78a7ba-4519-4e92-b4ca-cf6ea086909f",
+        "event_id": "1d4577ac-2134-4669-a81f-f5faf7d44cac",
         "event_type": "low_confidence_recommendation",
-        "occurred_at": "2026-06-25T01:28:45.578Z",
+        "occurred_at": "2026-06-25T03:40:11.139Z",
         "session_hash": "f1e865016e6c3e53ad550e54",
         "user_agent_family": "unknown",
         "query": "비 오는 날 출근룩 방수 아우터 추천 [phone]",
@@ -188,8 +194,8 @@
           "3025211",
           "2086731",
           "3434621",
-          "1882525",
-          "3758212"
+          "3758212",
+          "1618312"
         ],
         "confidence": 0.25,
         "missing_ontology_fields": [
@@ -200,6 +206,11 @@
           "occasion_tags",
           "functional_material_tags"
         ],
+        "consent": {
+          "granted": false,
+          "notice_version": "2026-06-25.p0-consent-convex-sync",
+          "mode": "notice_only"
+        },
         "source": "low-confidence-gap-test",
         "metadata": {
           "surface": "api-test",
@@ -213,8 +224,8 @@
       "index": 2,
       "scenario": "wedding_guest_formality_gap",
       "raw_query": "하객룩 격식있는 원피스 10만원 이하 추천 test@example.com",
-      "recommendation_latency_ms": 74.46,
-      "event_latency_ms": 3.04,
+      "recommendation_latency_ms": 11.4,
+      "event_latency_ms": 2.68,
       "recommendation_confidence": {
         "level": "medium",
         "top_score": 6.86,
@@ -234,9 +245,9 @@
         "score_total": 5.16
       },
       "recorded_event": {
-        "event_id": "97e7c616-34fa-48ff-89b3-cd484674ee3b",
+        "event_id": "2d650595-4b59-4c3a-835d-fa8fd85cbe14",
         "event_type": "low_confidence_recommendation",
-        "occurred_at": "2026-06-25T01:28:45.658Z",
+        "occurred_at": "2026-06-25T03:40:11.156Z",
         "session_hash": "3a635818e651d35a7634f704",
         "user_agent_family": "unknown",
         "query": "하객룩 격식있는 원피스 10만원 이하 추천 [email]",
@@ -261,6 +272,11 @@
           "formality_tags",
           "dress_code_tags"
         ],
+        "consent": {
+          "granted": false,
+          "notice_version": "2026-06-25.p0-consent-convex-sync",
+          "mode": "notice_only"
+        },
         "source": "low-confidence-gap-test",
         "metadata": {
           "surface": "api-test",
@@ -274,11 +290,11 @@
       "index": 3,
       "scenario": "beginner_running_support_gap",
       "raw_query": "러닝 초보 무릎 보호 쿠션화 추천 주문 ABCD123456",
-      "recommendation_latency_ms": 71.44,
-      "event_latency_ms": 1.73,
+      "recommendation_latency_ms": 10.32,
+      "event_latency_ms": 2.13,
       "recommendation_confidence": {
-        "level": "medium",
-        "top_score": 5.66,
+        "level": "high",
+        "top_score": 7.06,
         "low_confidence": false,
         "missing_ontology_fields": [
           "category",
@@ -288,17 +304,17 @@
         "recommendation_count": 5
       },
       "top_recommendation": {
-        "product_id": "3483542",
-        "name_ko": "울트라서포트 제로무브 쿨러닝 스포츠브라 단품 (후크형)",
-        "brand": "컴포트랩",
-        "category": "스포츠/레저 > 상의 > 기타상의",
-        "score": 5.66,
-        "score_total": 2.966
+        "product_id": "4377523",
+        "name_ko": "범퍼 트레이너 페일 라이트 그린",
+        "brand": "아키클래식",
+        "category": "신발 > 스포츠화 > 러닝화",
+        "score": 7.06,
+        "score_total": 2.896
       },
       "recorded_event": {
-        "event_id": "225d672b-83ff-4a38-9d22-492b39fc47a0",
+        "event_id": "815b84e2-cc86-4db8-8bbd-3fba2f3f5ab3",
         "event_type": "low_confidence_recommendation",
-        "occurred_at": "2026-06-25T01:28:45.733Z",
+        "occurred_at": "2026-06-25T03:40:11.170Z",
         "session_hash": "a5962b73c2824abcedc6db29",
         "user_agent_family": "unknown",
         "query": "러닝 초보 무릎 보호 쿠션화 추천 주문 [order_id]",
@@ -308,11 +324,11 @@
           "seasons": []
         },
         "product_ids": [
-          "3483542",
-          "2502974",
           "4377523",
+          "5171559",
+          "1867509",
           "4290137",
-          "4655528"
+          "1163169"
         ],
         "confidence": 0.25,
         "missing_ontology_fields": [
@@ -325,6 +341,11 @@
           "occasion_tags",
           "performance_fit_tags"
         ],
+        "consent": {
+          "granted": false,
+          "notice_version": "2026-06-25.p0-consent-convex-sync",
+          "mode": "notice_only"
+        },
         "source": "low-confidence-gap-test",
         "metadata": {
           "surface": "api-test",
@@ -338,11 +359,11 @@
       "index": 4,
       "scenario": "maternity_fit_gap",
       "raw_query": "임산부 편한 와이드팬츠 추천 서울 강남구 테헤란로 123",
-      "recommendation_latency_ms": 67.87,
-      "event_latency_ms": 2.72,
+      "recommendation_latency_ms": 10.69,
+      "event_latency_ms": 2.63,
       "recommendation_confidence": {
         "level": "medium",
-        "top_score": 6.86,
+        "top_score": 6.88,
         "low_confidence": false,
         "missing_ontology_fields": [
           "color",
@@ -351,17 +372,17 @@
         "recommendation_count": 5
       },
       "top_recommendation": {
-        "product_id": "1156323",
-        "name_ko": "탄체크 와이드 팬츠 (블랙)",
-        "brand": "덴아워",
-        "category": "바지 > 슈트 팬츠/슬랙스",
-        "score": 6.86,
-        "score_total": 4.21
+        "product_id": "2978123",
+        "name_ko": "우먼즈 파라슈트 팬츠 [블랙]",
+        "brand": "무신사 스탠다드 우먼",
+        "category": "바지 > 트레이닝/조거 팬츠",
+        "score": 6.88,
+        "score_total": 4.222
       },
       "recorded_event": {
-        "event_id": "ad16811c-bf76-4a5d-aede-622be2a7d9c3",
+        "event_id": "eb514789-c95c-4b43-82d1-6bcecacf1067",
         "event_type": "low_confidence_recommendation",
-        "occurred_at": "2026-06-25T01:28:45.804Z",
+        "occurred_at": "2026-06-25T03:40:11.183Z",
         "session_hash": "597686c95298d0577db5fb70",
         "user_agent_family": "unknown",
         "query": "임산부 편한 와이드팬츠 추천 [address]",
@@ -373,9 +394,9 @@
           "seasons": []
         },
         "product_ids": [
+          "2978123",
           "1156323",
           "3983035",
-          "5251742",
           "5044496",
           "2310689"
         ],
@@ -387,6 +408,11 @@
           "comfort_tags",
           "fit_risk_tags"
         ],
+        "consent": {
+          "granted": false,
+          "notice_version": "2026-06-25.p0-consent-convex-sync",
+          "mode": "notice_only"
+        },
         "source": "low-confidence-gap-test",
         "metadata": {
           "surface": "api-test",
@@ -400,8 +426,8 @@
       "index": 5,
       "scenario": "travel_capacity_gap",
       "raw_query": "2박3일 여행용 수납 좋은 백팩 추천 송장 1234567890",
-      "recommendation_latency_ms": 66.95,
-      "event_latency_ms": 1.84,
+      "recommendation_latency_ms": 9.77,
+      "event_latency_ms": 1.4,
       "recommendation_confidence": {
         "level": "high",
         "top_score": 7.06,
@@ -421,9 +447,9 @@
         "score_total": 4.344
       },
       "recorded_event": {
-        "event_id": "fcb27282-d942-44c8-86ea-1cd511ec8938",
+        "event_id": "58b850cb-86ad-44a1-b6ae-fc01644d5960",
         "event_type": "low_confidence_recommendation",
-        "occurred_at": "2026-06-25T01:28:45.873Z",
+        "occurred_at": "2026-06-25T03:40:11.196Z",
         "session_hash": "54e53bd5998893df6c9c9303",
         "user_agent_family": "unknown",
         "query": "2박3일 여행용 수납 좋은 백팩 추천 송장 [phone]",
@@ -450,6 +476,11 @@
           "storage_tags",
           "occasion_tags"
         ],
+        "consent": {
+          "granted": false,
+          "notice_version": "2026-06-25.p0-consent-convex-sync",
+          "mode": "notice_only"
+        },
         "source": "low-confidence-gap-test",
         "metadata": {
           "surface": "api-test",
@@ -463,7 +494,7 @@
       "index": 6,
       "scenario": "monsoon_breathable_shoe_gap",
       "raw_query": "여름 장마 통풍 잘 되는 신발 추천 카드 4111111111111111",
-      "recommendation_latency_ms": 81,
+      "recommendation_latency_ms": 15.94,
       "event_latency_ms": 1.74,
       "recommendation_confidence": {
         "level": "high",
@@ -485,9 +516,9 @@
         "score_total": 3.48
       },
       "recorded_event": {
-        "event_id": "00e81214-c142-4abf-b138-d267177dd34a",
+        "event_id": "08322bc6-6606-4150-804a-7d724ff8836f",
         "event_type": "low_confidence_recommendation",
-        "occurred_at": "2026-06-25T01:28:45.957Z",
+        "occurred_at": "2026-06-25T03:40:11.214Z",
         "session_hash": "538ab326f5f03ba7469f07ef",
         "user_agent_family": "unknown",
         "query": "여름 장마 통풍 잘 되는 신발 추천 카드 [card_or_long_number]",
@@ -514,6 +545,11 @@
           "breathability_tags",
           "season_function_tags"
         ],
+        "consent": {
+          "granted": false,
+          "notice_version": "2026-06-25.p0-consent-convex-sync",
+          "mode": "notice_only"
+        },
         "source": "low-confidence-gap-test",
         "metadata": {
           "surface": "api-test",

@@ -11,7 +11,7 @@
 | Passed | true |
 | Failure count | 0 |
 | OpenAPI paths | 17 |
-| Schemas | 12 |
+| Schemas | 13 |
 | Operation IDs | 18 |
 | Unresolved refs | 0 |
 
@@ -19,13 +19,13 @@
 
 | Endpoint | Status | Content-Type | Latency ms |
 |---|---:|---|---:|
-| /health | 200 | application/json; charset=utf-8 | 41.99 |
-| /.well-known/ai-plugin.json | 200 | application/json; charset=utf-8 | 12.35 |
-| /openapi.yaml | 200 | application/yaml; charset=utf-8 | 2.48 |
-| /analytics/notice | 200 | application/json; charset=utf-8 | 1.17 |
-| /logo.png | 200 | image/png | 2.23 |
-| /shopper/recommend runtime | 200 | application/json | 146.87 |
-| /products/search runtime | 200 | application/json | 58.23 |
+| /health | 200 | application/json; charset=utf-8 | 28.13 |
+| /.well-known/ai-plugin.json | 200 | application/json; charset=utf-8 | 2.81 |
+| /openapi.yaml | 200 | application/yaml; charset=utf-8 | 1.53 |
+| /analytics/notice | 200 | application/json; charset=utf-8 | 0.79 |
+| /logo.png | 200 | image/png | 0.69 |
+| /shopper/recommend runtime | 200 | application/json | 64.35 |
+| /products/search runtime | 200 | application/json | 51.96 |
 
 ## Failures
 

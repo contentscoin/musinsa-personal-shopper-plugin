@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { searchProducts } from '../src/productStore.mjs';
+import { getCatalogLexicon, searchProducts, searchProductsWithRetrieval } from '../src/productStore.mjs';
 import { compare, parseShoppingIntent, recommend, summarizeProduct } from '../src/personalShopper.mjs';
 import { clearShortlist, getShortlist, saveShortlist } from '../src/shortlistStore.mjs';
 import { ANALYTICS_NOTICE, analyticsDashboard, sanitizeQuery, sanitizeTelemetryEvent, summarizeEvents } from '../src/telemetryStore.mjs';
@@ -38,6 +38,30 @@ test('searchProducts ranks matching affordable products', () => {
   const results = searchProducts(products, { query: '차콜 후드집업', price_max: 50000 });
   assert.equal(results.length, 1);
   assert.equal(results[0].product_id, '1');
+});
+
+test('searchProductsWithRetrieval exposes local index retrieval metadata', () => {
+  const response = searchProductsWithRetrieval(products, { query: '차콜 후드집업', price_max: 50000, retrieval_mode: 'local_index' });
+  assert.equal(response.results[0].product_id, '1');
+  assert.equal(response.retrieval.mode, 'local_index');
+  assert.equal(response.retrieval.local_index_used, true);
+  assert.equal(response.retrieval.candidate_count, products.length);
+  assert.ok(response.retrieval.lexicon.categories >= 2);
+});
+
+test('hybrid retrieval reranks OpenCrab candidate product ids locally', () => {
+  const response = searchProductsWithRetrieval(products, { query: '차콜 후드집업', retrieval_mode: 'hybrid', opencrab_candidate_product_ids: ['2', '1'], price_max: 50000 });
+  assert.equal(response.results.length, 1);
+  assert.equal(response.results[0].product_id, '1');
+  assert.equal(response.retrieval.opencrab_candidates_used, true);
+  assert.equal(response.retrieval.candidate_source[0], 'opencrab_candidates');
+});
+
+test('catalog-derived lexicon includes category, brand, and alias terms', () => {
+  const lexicon = getCatalogLexicon(products);
+  assert.ok(lexicon.brands.includes('테스트브랜드'));
+  assert.ok(lexicon.categories.some(category => category.includes('후드')));
+  assert.ok(lexicon.terms.includes('후드집업') || lexicon.terms.includes('후드'));
 });
 
 test('parseShoppingIntent extracts budget, category, color, and gender hints', () => {

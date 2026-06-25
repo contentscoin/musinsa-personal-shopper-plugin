@@ -1,6 +1,6 @@
 import http from 'node:http';
 import { readFile } from 'node:fs/promises';
-import { loadProducts, searchProducts, getProduct } from './productStore.mjs';
+import { loadProducts, searchProductsWithRetrieval, getProduct, getCatalogLexicon } from './productStore.mjs';
 import { compare, recommend, summarizeProduct } from './personalShopper.mjs';
 import { clearShortlist, getShortlist, saveShortlist } from './shortlistStore.mjs';
 import { ANALYTICS_NOTICE, analyticsDashboard, buildTelemetrySummary, recordTelemetryEvent } from './telemetryStore.mjs';
@@ -36,12 +36,15 @@ const server = http.createServer(async (req, res) => {
     const url = new URL(req.url, `http://${req.headers.host}`);
     if (req.method === 'OPTIONS') return empty(res, 204);
     enforceKnownRouteMethod(url.pathname, req.method);
-    if (req.method === 'GET' && url.pathname === '/health') return json(res, { ok: true, products_loaded: products.length });
+    if (req.method === 'GET' && url.pathname === '/health') {
+      const lexicon = getCatalogLexicon(products);
+      return json(res, { ok: true, products_loaded: products.length, search_index: { enabled: true, brands: lexicon.brands.length, categories: lexicon.categories.length, terms: lexicon.terms.length } });
+    }
     if (req.method === 'GET' && url.pathname === '/openapi.yaml') return text(res, await readFile(new URL('../openapi.yaml', import.meta.url), 'utf8'), 'application/yaml; charset=utf-8');
     if (req.method === 'GET' && url.pathname === '/.well-known/ai-plugin.json') return text(res, await readFile(new URL('../.well-known/ai-plugin.json', import.meta.url), 'utf8'), 'application/json; charset=utf-8');
     if (req.method === 'GET' && (url.pathname === '/dashboard' || url.pathname === '/dashboard.html')) return text(res, await readFile(new URL('../docs/dashboard-mock.html', import.meta.url), 'utf8'), 'text/html; charset=utf-8');
     if (req.method === 'GET' && url.pathname === '/logo.png') return text(res, '', 'image/png');
-    if (req.method === 'POST' && url.pathname === '/products/search') return json(res, { results: searchProducts(products, await body(req)) });
+    if (req.method === 'POST' && url.pathname === '/products/search') return json(res, searchProductsWithRetrieval(products, await body(req)));
 
     const productMatch = url.pathname.match(/^\/products\/([^/]+)$/);
     if (req.method === 'GET' && productMatch) {

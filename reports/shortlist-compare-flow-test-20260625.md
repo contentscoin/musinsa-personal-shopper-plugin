@@ -12,9 +12,9 @@
 | Passed | 4 |
 | Failed | 0 |
 | Endpoint calls | 28 |
-| p50 endpoint latency ms | 1 |
-| p95 endpoint latency ms | 65.32 |
-| max endpoint latency ms | 90.73 |
+| p50 endpoint latency ms | 1.03 |
+| p95 endpoint latency ms | 7.38 |
+| max endpoint latency ms | 24.3 |
 
 ## Failure samples
 

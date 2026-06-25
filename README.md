@@ -29,8 +29,10 @@
 | Owner dashboard Convex/Vercel pack | OpenCrab private pack `6bc1f3e9-9c69-4ad6-96f0-0c8b40b3f930` |
 | Convex DB/backend | Production deployment `veracious-albatross-267` |
 | Vercel Owner Dashboard | **https://owner-dashboard-snowy.vercel.app** |
-| 테스트 | **16개 통과** |
+| 테스트 | **19개 통과** |
 | P0 hardening | API safe errors/body limit, analytics consent metadata, Convex HTTP ingest sync, Convex audit events |
+| Hybrid retrieval | Precomputed local search index + catalog-derived lexicon + OpenCrab candidate reranking hook |
+| Search index | 2,050 products / 1,416 brand tokens / 436 category terms / 549 lexicon terms |
 | 검증 리포트 | product search 320/320, OpenAPI/manifest 0 failure |
 | Plugin contract | OpenAPI 3.1 + `/.well-known/ai-plugin.json` |
 | Demo script | `npm run demo` |
@@ -90,9 +92,12 @@
 MUSINSA sitemap/product pages
   -> scripts/crawl-musinsa-products.mjs
   -> data/products.crawled.json
+  -> scripts/build-search-index.mjs
+  -> data/index/products.search-index.json
   -> docs/ontology/musinsa-product-ontology-sample.md
   -> OpenCrab product ontology pack
-  -> src/server.mjs OpenAPI-compatible plugin server
+  -> OpenCrab semantic candidate product_ids
+  -> src/server.mjs local index/cache + hybrid reranker
   -> ChatGPT/Codex 또는 외부 앱
 
 사용자 plugin 행동
@@ -123,8 +128,8 @@ npm test
 예상 결과:
 
 ```text
-# tests 16
-# pass 16
+# tests 19
+# pass 19
 # fail 0
 ```
 
@@ -145,7 +150,24 @@ curl -s http://localhost:8787/.well-known/ai-plugin.json
 curl -s http://localhost:8787/dashboard
 ```
 
-현재 `/health` 기준 로컬 상품 로드 수는 **2,050개**입니다.
+현재 `/health` 기준 로컬 상품 로드 수는 **2,050개**이고, search index/lexicon 카운트도 함께 반환됩니다.
+
+### Search index / hybrid retrieval
+
+```bash
+npm run index:build
+npm run benchmark:search
+```
+
+Hybrid rerank 예시:
+
+```bash
+curl -s -X POST http://localhost:8787/products/search \
+  -H 'content-type: application/json' \
+  -d '{"query":"남성 차콜 후드집업 5만원 이하","retrieval_mode":"hybrid","opencrab_candidate_product_ids":["3783092","4567792"],"price_max":50000,"limit":3}'
+```
+
+`opencrab_candidate_product_ids`는 OpenCrab 온톨로지팩 semantic retrieval이 반환한 후보 ID를 plugin hot path에서 재랭킹하기 위한 hook입니다. 후보 ID가 없으면 precomputed local index 전체에서 검색합니다.
 
 ### End-to-end demo 실행
 
@@ -175,12 +197,14 @@ recommend
 | `.well-known/ai-plugin.json` | ChatGPT-style plugin manifest |
 | `openapi.yaml` | OpenAPI 3.1 API contract |
 | `src/server.mjs` | HTTP JSON API server + static plugin files |
-| `src/productStore.mjs` | 상품 DB 로드/검색 |
+| `src/productStore.mjs` | 상품 DB 로드/검색 + precomputed local search index + hybrid candidate rerank |
 | `src/personalShopper.mjs` | intent 파싱, 추천, 비교, 상품 인사이트 |
 | `src/shortlistStore.mjs` | 세션별 shortlist 저장소 |
 | `src/telemetryStore.mjs` | 개인정보 제외 telemetry sanitizer/summary/dashboard + consent metadata + optional Convex sync |
 | `src/httpUtils.mjs` | request body limit, invalid JSON, CORS, safe error response utilities |
 | `scripts/demo.mjs` | end-to-end demo script |
+| `scripts/build-search-index.mjs` | hot-path local search index/lexicon export |
+| `scripts/benchmark-search-index.mjs` | local-index latency benchmark |
 | `scripts/crawl-musinsa-products.mjs` | 공개 상품 크롤러 |
 | `scripts/export-personal-shopper-data-ontology.mjs` | analytics ontology export |
 | `SUBMISSION.md` | 제출용 한국어 문서 |

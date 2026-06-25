@@ -25,7 +25,11 @@ paths:
               $ref: '#/components/schemas/ProductSearchRequest'
       responses:
         '200':
-          description: Product search results
+          description: Product search results with retrieval metadata
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductSearchResponse'
   /products/{productId}:
     get:
       operationId: getProductDetail
@@ -252,6 +256,42 @@ components:
           type: array
           items: { type: string }
         limit: { type: integer, default: 10 }
+        retrieval_mode:
+          type: string
+          enum: [local_index, hybrid, opencrab_first]
+          default: local_index
+          description: local_index uses the precomputed in-memory catalog index; hybrid reranks OpenCrab/ontology candidate ids when provided.
+        candidate_product_ids:
+          type: array
+          description: Candidate IDs from an external ontology retrieval step to rerank locally.
+          items: { type: string }
+        opencrab_candidate_product_ids:
+          type: array
+          description: Alias for candidate_product_ids when candidates came from OpenCrab ontology-pack retrieval.
+          items: { type: string }
+    ProductSearchResponse:
+      type: object
+      properties:
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProductCard'
+        retrieval:
+          type: object
+          properties:
+            mode: { type: string }
+            candidate_source:
+              type: array
+              items: { type: string }
+            local_index_used: { type: boolean }
+            opencrab_candidates_used: { type: boolean }
+            candidate_count: { type: integer }
+            matched_count: { type: integer }
+            cache_hit: { type: boolean }
+            lexicon:
+              type: object
+            latency_ms:
+              type: object
     CustomerProfile:
       type: object
       properties:

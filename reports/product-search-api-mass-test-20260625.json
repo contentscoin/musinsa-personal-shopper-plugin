@@ -1,10 +1,16 @@
 {
-  "started_at": "2026-06-25T01:29:01.068Z",
-  "completed_at": "2026-06-25T01:29:17.392Z",
+  "started_at": "2026-06-25T03:39:54.467Z",
+  "completed_at": "2026-06-25T03:39:56.731Z",
   "base_url": "http://127.0.0.1:8791",
   "health": {
     "ok": true,
-    "products_loaded": 2050
+    "products_loaded": 2050,
+    "search_index": {
+      "enabled": true,
+      "brands": 1416,
+      "categories": 436,
+      "terms": 549
+    }
   },
   "dataset": {
     "products": 2050,
@@ -17,46 +23,46 @@
     "failed": 0,
     "nonempty_queries": 319,
     "empty_queries": 1,
-    "p50_latency_ms": 48.35,
-    "p95_latency_ms": 62.68,
-    "max_latency_ms": 70.72
+    "p50_latency_ms": 5.43,
+    "p95_latency_ms": 12.26,
+    "max_latency_ms": 18.68
   },
   "by_type": {
     "category_structured": {
       "count": 50,
       "pass": 50,
       "nonempty": 50,
-      "avg_latency_ms": 42.76
+      "avg_latency_ms": 3.69
     },
     "category_leaf_query": {
       "count": 50,
       "pass": 50,
       "nonempty": 50,
-      "avg_latency_ms": 50.2
+      "avg_latency_ms": 5.8
     },
     "brand_structured": {
       "count": 45,
       "pass": 45,
       "nonempty": 45,
-      "avg_latency_ms": 45.19
+      "avg_latency_ms": 5.52
     },
     "natural_color_category": {
       "count": 90,
       "pass": 90,
       "nonempty": 90,
-      "avg_latency_ms": 58.52
+      "avg_latency_ms": 9.62
     },
     "brand_category_natural": {
       "count": 25,
       "pass": 25,
       "nonempty": 25,
-      "avg_latency_ms": 51.19
+      "avg_latency_ms": 5.96
     },
     "budget_category": {
       "count": 60,
       "pass": 60,
       "nonempty": 59,
-      "avg_latency_ms": 46.64
+      "avg_latency_ms": 3.86
     }
   },
   "failure_samples": [],
@@ -69,7 +75,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 64.45,
+      "latency_ms": 9.67,
       "result_count": 8,
       "top_result": {
         "product_id": "2086653",
@@ -89,7 +95,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 58.72,
+      "latency_ms": 12.07,
       "result_count": 8,
       "top_result": {
         "product_id": "2086653",
@@ -97,7 +103,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 14590,
-        "score": 22.88
+        "score": 27.48
       },
       "validation_failures": []
     },
@@ -109,7 +115,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 47.31,
+      "latency_ms": 5.34,
       "result_count": 8,
       "top_result": {
         "product_id": "3562068",
@@ -129,7 +135,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 57.52,
+      "latency_ms": 8.93,
       "result_count": 8,
       "top_result": {
         "product_id": "3562068",
@@ -137,7 +143,7 @@
         "brand": "유니온블루",
         "category": "상의 > 셔츠/블라우스",
         "final_price": 77900,
-        "score": 21.7
+        "score": 26.3
       },
       "validation_failures": []
     },
@@ -149,7 +155,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 42.94,
+      "latency_ms": 4.67,
       "result_count": 8,
       "top_result": {
         "product_id": "3663072",
@@ -169,7 +175,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 49.47,
+      "latency_ms": 6.4,
       "result_count": 8,
       "top_result": {
         "product_id": "3663072",
@@ -177,7 +183,7 @@
         "brand": "토피",
         "category": "바지 > 데님 팬츠",
         "final_price": 39200,
-        "score": 20.48
+        "score": 25.08
       },
       "validation_failures": []
     },
@@ -189,7 +195,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 43.16,
+      "latency_ms": 4.72,
       "result_count": 8,
       "top_result": {
         "product_id": "1163169",
@@ -209,7 +215,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 58.2,
+      "latency_ms": 7.57,
       "result_count": 8,
       "top_result": {
         "product_id": "1163169",
@@ -229,7 +235,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.73,
+      "latency_ms": 4.45,
       "result_count": 8,
       "top_result": {
         "product_id": "1627892",
@@ -249,7 +255,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 48.23,
+      "latency_ms": 5.71,
       "result_count": 8,
       "top_result": {
         "product_id": "1627892",
@@ -257,7 +263,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 코튼 팬츠",
         "final_price": 44890,
-        "score": 20.48
+        "score": 25.08
       },
       "validation_failures": []
     },
@@ -269,7 +275,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.84,
+      "latency_ms": 3.79,
       "result_count": 8,
       "top_result": {
         "product_id": "1551840",
@@ -289,7 +295,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 55.18,
+      "latency_ms": 11.85,
       "result_count": 8,
       "top_result": {
         "product_id": "1551840",
@@ -297,7 +303,7 @@
         "brand": "제로",
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 31200,
-        "score": 25.08
+        "score": 33.28
       },
       "validation_failures": []
     },
@@ -309,7 +315,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.65,
+      "latency_ms": 3.47,
       "result_count": 8,
       "top_result": {
         "product_id": "2149254",
@@ -329,7 +335,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 54.27,
+      "latency_ms": 5.32,
       "result_count": 8,
       "top_result": {
         "product_id": "2149254",
@@ -337,7 +343,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 31390,
-        "score": 22.88
+        "score": 27.48
       },
       "validation_failures": []
     },
@@ -349,7 +355,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 40.66,
+      "latency_ms": 3.35,
       "result_count": 8,
       "top_result": {
         "product_id": "2273084",
@@ -369,7 +375,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 47.52,
+      "latency_ms": 5.51,
       "result_count": 8,
       "top_result": {
         "product_id": "2273084",
@@ -377,7 +383,7 @@
         "brand": "후아유",
         "category": "아우터 > 후드 집업",
         "final_price": 48930,
-        "score": 25.08
+        "score": 29.68
       },
       "validation_failures": []
     },
@@ -389,7 +395,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 40.58,
+      "latency_ms": 3.6,
       "result_count": 8,
       "top_result": {
         "product_id": "2702397",
@@ -409,7 +415,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 48.08,
+      "latency_ms": 5.31,
       "result_count": 8,
       "top_result": {
         "product_id": "2702397",
@@ -417,7 +423,7 @@
         "brand": "키뮤어",
         "category": "상의 > 니트/스웨터",
         "final_price": 56050,
-        "score": 21.68
+        "score": 26.28
       },
       "validation_failures": []
     },
@@ -429,7 +435,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 42.45,
+      "latency_ms": 3.86,
       "result_count": 8,
       "top_result": {
         "product_id": "1168906",
@@ -449,7 +455,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 50.83,
+      "latency_ms": 7.38,
       "result_count": 8,
       "top_result": {
         "product_id": "1168906",
@@ -457,7 +463,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 45900,
-        "score": 25.08
+        "score": 29.68
       },
       "validation_failures": []
     }
@@ -471,7 +477,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 64.45,
+      "latency_ms": 9.67,
       "result_count": 8,
       "top_result": {
         "product_id": "2086653",
@@ -491,7 +497,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 58.72,
+      "latency_ms": 12.07,
       "result_count": 8,
       "top_result": {
         "product_id": "2086653",
@@ -499,7 +505,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 14590,
-        "score": 22.88
+        "score": 27.48
       },
       "validation_failures": []
     },
@@ -511,7 +517,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 47.31,
+      "latency_ms": 5.34,
       "result_count": 8,
       "top_result": {
         "product_id": "3562068",
@@ -531,7 +537,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 57.52,
+      "latency_ms": 8.93,
       "result_count": 8,
       "top_result": {
         "product_id": "3562068",
@@ -539,7 +545,7 @@
         "brand": "유니온블루",
         "category": "상의 > 셔츠/블라우스",
         "final_price": 77900,
-        "score": 21.7
+        "score": 26.3
       },
       "validation_failures": []
     },
@@ -551,7 +557,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 42.94,
+      "latency_ms": 4.67,
       "result_count": 8,
       "top_result": {
         "product_id": "3663072",
@@ -571,7 +577,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 49.47,
+      "latency_ms": 6.4,
       "result_count": 8,
       "top_result": {
         "product_id": "3663072",
@@ -579,7 +585,7 @@
         "brand": "토피",
         "category": "바지 > 데님 팬츠",
         "final_price": 39200,
-        "score": 20.48
+        "score": 25.08
       },
       "validation_failures": []
     },
@@ -591,7 +597,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 43.16,
+      "latency_ms": 4.72,
       "result_count": 8,
       "top_result": {
         "product_id": "1163169",
@@ -611,7 +617,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 58.2,
+      "latency_ms": 7.57,
       "result_count": 8,
       "top_result": {
         "product_id": "1163169",
@@ -631,7 +637,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.73,
+      "latency_ms": 4.45,
       "result_count": 8,
       "top_result": {
         "product_id": "1627892",
@@ -651,7 +657,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 48.23,
+      "latency_ms": 5.71,
       "result_count": 8,
       "top_result": {
         "product_id": "1627892",
@@ -659,7 +665,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 코튼 팬츠",
         "final_price": 44890,
-        "score": 20.48
+        "score": 25.08
       },
       "validation_failures": []
     },
@@ -671,7 +677,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.84,
+      "latency_ms": 3.79,
       "result_count": 8,
       "top_result": {
         "product_id": "1551840",
@@ -691,7 +697,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 55.18,
+      "latency_ms": 11.85,
       "result_count": 8,
       "top_result": {
         "product_id": "1551840",
@@ -699,7 +705,7 @@
         "brand": "제로",
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 31200,
-        "score": 25.08
+        "score": 33.28
       },
       "validation_failures": []
     },
@@ -711,7 +717,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.65,
+      "latency_ms": 3.47,
       "result_count": 8,
       "top_result": {
         "product_id": "2149254",
@@ -731,7 +737,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 54.27,
+      "latency_ms": 5.32,
       "result_count": 8,
       "top_result": {
         "product_id": "2149254",
@@ -739,7 +745,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 31390,
-        "score": 22.88
+        "score": 27.48
       },
       "validation_failures": []
     },
@@ -751,7 +757,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 40.66,
+      "latency_ms": 3.35,
       "result_count": 8,
       "top_result": {
         "product_id": "2273084",
@@ -771,7 +777,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 47.52,
+      "latency_ms": 5.51,
       "result_count": 8,
       "top_result": {
         "product_id": "2273084",
@@ -779,7 +785,7 @@
         "brand": "후아유",
         "category": "아우터 > 후드 집업",
         "final_price": 48930,
-        "score": 25.08
+        "score": 29.68
       },
       "validation_failures": []
     },
@@ -791,7 +797,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 40.58,
+      "latency_ms": 3.6,
       "result_count": 8,
       "top_result": {
         "product_id": "2702397",
@@ -811,7 +817,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 48.08,
+      "latency_ms": 5.31,
       "result_count": 8,
       "top_result": {
         "product_id": "2702397",
@@ -819,7 +825,7 @@
         "brand": "키뮤어",
         "category": "상의 > 니트/스웨터",
         "final_price": 56050,
-        "score": 21.68
+        "score": 26.28
       },
       "validation_failures": []
     },
@@ -831,7 +837,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 42.45,
+      "latency_ms": 3.86,
       "result_count": 8,
       "top_result": {
         "product_id": "1168906",
@@ -851,7 +857,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 50.83,
+      "latency_ms": 7.38,
       "result_count": 8,
       "top_result": {
         "product_id": "1168906",
@@ -859,7 +865,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 45900,
-        "score": 25.08
+        "score": 29.68
       },
       "validation_failures": []
     },
@@ -871,7 +877,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.47,
+      "latency_ms": 3.51,
       "result_count": 8,
       "top_result": {
         "product_id": "1926048",
@@ -891,7 +897,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 51.79,
+      "latency_ms": 7.96,
       "result_count": 8,
       "top_result": {
         "product_id": "4655528",
@@ -899,7 +905,7 @@
         "brand": "러닝라이프",
         "category": "스포츠/레저 > 하의 > 숏팬츠",
         "final_price": 27650,
-        "score": 29.28
+        "score": 32.88
       },
       "validation_failures": []
     },
@@ -911,7 +917,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 40.42,
+      "latency_ms": 3.06,
       "result_count": 8,
       "top_result": {
         "product_id": "3434621",
@@ -931,7 +937,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 43.79,
+      "latency_ms": 3.18,
       "result_count": 8,
       "top_result": {
         "product_id": "3434621",
@@ -951,7 +957,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 42.07,
+      "latency_ms": 3.49,
       "result_count": 8,
       "top_result": {
         "product_id": "2134140",
@@ -971,7 +977,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 47.69,
+      "latency_ms": 5.72,
       "result_count": 8,
       "top_result": {
         "product_id": "2134140",
@@ -979,7 +985,7 @@
         "brand": "타입서비스",
         "category": "소품 > 모자 > 캡/야구모자",
         "final_price": 37050,
-        "score": 18.28
+        "score": 29.68
       },
       "validation_failures": []
     },
@@ -991,7 +997,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 42.39,
+      "latency_ms": 3.29,
       "result_count": 8,
       "top_result": {
         "product_id": "2058188",
@@ -1011,7 +1017,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 62.68,
+      "latency_ms": 7.91,
       "result_count": 8,
       "top_result": {
         "product_id": "2058188",
@@ -1019,7 +1025,7 @@
         "brand": "브라운브레스",
         "category": "상의 > 후드 티셔츠",
         "final_price": 89000,
-        "score": 21.68
+        "score": 26.28
       },
       "validation_failures": []
     },
@@ -1031,7 +1037,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 42.24,
+      "latency_ms": 3.77,
       "result_count": 8,
       "top_result": {
         "product_id": "3800080",
@@ -1051,15 +1057,15 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 55.17,
+      "latency_ms": 9.41,
       "result_count": 8,
       "top_result": {
-        "product_id": "3800080",
-        "name_ko": "슈퍼 라이트 바람막이(10colors)",
-        "brand": "무신사 스탠다드 스포츠",
+        "product_id": "4296687",
+        "name_ko": "NBNAG21403 / UNI 헤리티지 스탠넥 웜업 자켓 (BLACK)",
+        "brand": "뉴발란스",
         "category": "스포츠/레저 > 아우터 > 나일론/코치 재킷",
-        "final_price": 40420,
-        "score": 25.08
+        "final_price": 139000,
+        "score": 30.68
       },
       "validation_failures": []
     },
@@ -1071,7 +1077,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 40.76,
+      "latency_ms": 3,
       "result_count": 8,
       "top_result": {
         "product_id": "2235274",
@@ -1091,7 +1097,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 44.22,
+      "latency_ms": 3.09,
       "result_count": 8,
       "top_result": {
         "product_id": "2235274",
@@ -1111,7 +1117,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 42.04,
+      "latency_ms": 3.85,
       "result_count": 8,
       "top_result": {
         "product_id": "2690691",
@@ -1131,7 +1137,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 48.96,
+      "latency_ms": 5.86,
       "result_count": 8,
       "top_result": {
         "product_id": "2086653",
@@ -1139,7 +1145,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 14590,
-        "score": 22.88
+        "score": 27.48
       },
       "validation_failures": []
     },
@@ -1151,7 +1157,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.49,
+      "latency_ms": 3.51,
       "result_count": 8,
       "top_result": {
         "product_id": "3276429",
@@ -1171,7 +1177,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 46.89,
+      "latency_ms": 4.65,
       "result_count": 8,
       "top_result": {
         "product_id": "3276429",
@@ -1179,7 +1185,7 @@
         "brand": "킨치",
         "category": "신발 > 구두 > 더비 슈즈",
         "final_price": 289000,
-        "score": 20.48
+        "score": 25.08
       },
       "validation_failures": []
     },
@@ -1191,7 +1197,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 40.87,
+      "latency_ms": 3.34,
       "result_count": 8,
       "top_result": {
         "product_id": "2090950",
@@ -1211,7 +1217,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 47,
+      "latency_ms": 5.07,
       "result_count": 8,
       "top_result": {
         "product_id": "2090950",
@@ -1219,7 +1225,7 @@
         "brand": "지프",
         "category": "상의 > 맨투맨/스웨트",
         "final_price": 54900,
-        "score": 22.88
+        "score": 27.48
       },
       "validation_failures": []
     },
@@ -1231,7 +1237,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.31,
+      "latency_ms": 3.99,
       "result_count": 8,
       "top_result": {
         "product_id": "1558197",
@@ -1251,15 +1257,15 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 56.18,
+      "latency_ms": 10.11,
       "result_count": 8,
       "top_result": {
-        "product_id": "1558197",
-        "name_ko": "릴렉스드 베이식 블레이저 [블랙]",
-        "brand": "무신사 스탠다드",
+        "product_id": "3845890",
+        "name_ko": "루즈핏 사선 절개 싱글 자켓_GREY",
+        "brand": "시티브리즈",
         "category": "아우터 > 슈트/블레이저 재킷",
-        "final_price": 85490,
-        "score": 25.08
+        "final_price": 149400,
+        "score": 30.68
       },
       "validation_failures": []
     },
@@ -1271,7 +1277,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 42.29,
+      "latency_ms": 3.95,
       "result_count": 8,
       "top_result": {
         "product_id": "1760177",
@@ -1291,7 +1297,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 49.72,
+      "latency_ms": 11.18,
       "result_count": 8,
       "top_result": {
         "product_id": "1760177",
@@ -1299,7 +1305,7 @@
         "brand": "드로우핏",
         "category": "아우터 > 블루종/MA-1",
         "final_price": 139200,
-        "score": 21.68
+        "score": 32.08
       },
       "validation_failures": []
     },
@@ -1311,7 +1317,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 40.88,
+      "latency_ms": 3.07,
       "result_count": 8,
       "top_result": {
         "product_id": "1034480",
@@ -1331,7 +1337,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 49.53,
+      "latency_ms": 2.82,
       "result_count": 8,
       "top_result": {
         "product_id": "1034480",
@@ -1351,7 +1357,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.43,
+      "latency_ms": 3.32,
       "result_count": 8,
       "top_result": {
         "product_id": "5992665",
@@ -1371,7 +1377,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 50.65,
+      "latency_ms": 7.03,
       "result_count": 8,
       "top_result": {
         "product_id": "5992665",
@@ -1379,7 +1385,7 @@
         "brand": "아디다스",
         "category": "아우터 > 트레이닝 재킷",
         "final_price": 169000,
-        "score": 24.9
+        "score": 29.5
       },
       "validation_failures": []
     },
@@ -1391,7 +1397,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.41,
+      "latency_ms": 3.86,
       "result_count": 8,
       "top_result": {
         "product_id": "2086731",
@@ -1411,7 +1417,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 60.46,
+      "latency_ms": 9.79,
       "result_count": 8,
       "top_result": {
         "product_id": "2086731",
@@ -1419,7 +1425,7 @@
         "brand": "도프제이슨",
         "category": "아우터 > 레더/라이더스 재킷",
         "final_price": 119000,
-        "score": 25.08
+        "score": 30.68
       },
       "validation_failures": []
     },
@@ -1431,7 +1437,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 48.4,
+      "latency_ms": 3.25,
       "result_count": 8,
       "top_result": {
         "product_id": "5159260",
@@ -1451,7 +1457,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 53.32,
+      "latency_ms": 5.43,
       "result_count": 8,
       "top_result": {
         "product_id": "5159260",
@@ -1459,7 +1465,7 @@
         "brand": "다이브인",
         "category": "상의 > 민소매 티셔츠",
         "final_price": 21000,
-        "score": 22.88
+        "score": 27.48
       },
       "validation_failures": []
     },
@@ -1471,7 +1477,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.95,
+      "latency_ms": 3.44,
       "result_count": 8,
       "top_result": {
         "product_id": "3404705",
@@ -1491,7 +1497,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 51.39,
+      "latency_ms": 4.7,
       "result_count": 8,
       "top_result": {
         "product_id": "3404705",
@@ -1499,7 +1505,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 기타 하의",
         "final_price": 62890,
-        "score": 20.48
+        "score": 25.08
       },
       "validation_failures": []
     },
@@ -1511,7 +1517,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 40.77,
+      "latency_ms": 3.48,
       "result_count": 8,
       "top_result": {
         "product_id": "1404736",
@@ -1531,7 +1537,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 50.13,
+      "latency_ms": 6.68,
       "result_count": 8,
       "top_result": {
         "product_id": "1404736",
@@ -1539,7 +1545,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 피케/카라 티셔츠",
         "final_price": 31190,
-        "score": 25.08
+        "score": 29.68
       },
       "validation_failures": []
     },
@@ -1551,7 +1557,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 40.01,
+      "latency_ms": 3.3,
       "result_count": 8,
       "top_result": {
         "product_id": "4703345",
@@ -1571,7 +1577,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 43.19,
+      "latency_ms": 3.01,
       "result_count": 8,
       "top_result": {
         "product_id": "4703345",
@@ -1591,7 +1597,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.53,
+      "latency_ms": 2.92,
       "result_count": 8,
       "top_result": {
         "product_id": "2086104",
@@ -1611,7 +1617,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 43.29,
+      "latency_ms": 3.38,
       "result_count": 8,
       "top_result": {
         "product_id": "2086104",
@@ -1631,7 +1637,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.72,
+      "latency_ms": 4.61,
       "result_count": 8,
       "top_result": {
         "product_id": "4356794",
@@ -1651,7 +1657,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 47.21,
+      "latency_ms": 4.9,
       "result_count": 8,
       "top_result": {
         "product_id": "4356794",
@@ -1659,7 +1665,7 @@
         "brand": "무신사 스탠다드",
         "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
         "final_price": 109900,
-        "score": 20.48
+        "score": 25.08
       },
       "validation_failures": []
     },
@@ -1671,7 +1677,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.39,
+      "latency_ms": 3.62,
       "result_count": 8,
       "top_result": {
         "product_id": "3600203",
@@ -1691,7 +1697,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 46.28,
+      "latency_ms": 3.07,
       "result_count": 8,
       "top_result": {
         "product_id": "3600203",
@@ -1711,7 +1717,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.57,
+      "latency_ms": 3.15,
       "result_count": 8,
       "top_result": {
         "product_id": "4321804",
@@ -1731,7 +1737,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 44.35,
+      "latency_ms": 2.57,
       "result_count": 8,
       "top_result": {
         "product_id": "4321804",
@@ -1751,7 +1757,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.43,
+      "latency_ms": 3.38,
       "result_count": 8,
       "top_result": {
         "product_id": "1789507",
@@ -1771,7 +1777,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 49.27,
+      "latency_ms": 5.91,
       "result_count": 8,
       "top_result": {
         "product_id": "1789507",
@@ -1779,7 +1785,7 @@
         "brand": "하 아카이브",
         "category": "가방 > 메신저/크로스 백",
         "final_price": 56880,
-        "score": 22.88
+        "score": 30.88
       },
       "validation_failures": []
     },
@@ -1791,7 +1797,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.14,
+      "latency_ms": 3.53,
       "result_count": 8,
       "top_result": {
         "product_id": "810034",
@@ -1811,7 +1817,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 46.09,
+      "latency_ms": 4.79,
       "result_count": 8,
       "top_result": {
         "product_id": "810034",
@@ -1819,7 +1825,7 @@
         "brand": "컨버스",
         "category": "신발 > 스니커즈 > 캔버스/단화",
         "final_price": 95000,
-        "score": 21.68
+        "score": 26.28
       },
       "validation_failures": []
     },
@@ -1831,7 +1837,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.98,
+      "latency_ms": 3.6,
       "result_count": 8,
       "top_result": {
         "product_id": "998051",
@@ -1851,7 +1857,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 46.73,
+      "latency_ms": 2.72,
       "result_count": 8,
       "top_result": {
         "product_id": "998051",
@@ -1871,7 +1877,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 44.09,
+      "latency_ms": 3.44,
       "result_count": 8,
       "top_result": {
         "product_id": "4512936",
@@ -1891,7 +1897,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 46.81,
+      "latency_ms": 4.51,
       "result_count": 8,
       "top_result": {
         "product_id": "4512936",
@@ -1899,7 +1905,7 @@
         "brand": "코데즈컴바인 이너웨어",
         "category": "속옷/홈웨어 > 남성 속옷",
         "final_price": 60000,
-        "score": 20.5
+        "score": 25.1
       },
       "validation_failures": []
     },
@@ -1911,7 +1917,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.25,
+      "latency_ms": 3.36,
       "result_count": 8,
       "top_result": {
         "product_id": "1034480",
@@ -1931,7 +1937,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 44.52,
+      "latency_ms": 2.62,
       "result_count": 8,
       "top_result": {
         "product_id": "1034480",
@@ -1951,7 +1957,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.49,
+      "latency_ms": 3.09,
       "result_count": 8,
       "top_result": {
         "product_id": "3622977",
@@ -1971,7 +1977,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 52.89,
+      "latency_ms": 7.49,
       "result_count": 8,
       "top_result": {
         "product_id": "3622977",
@@ -1979,7 +1985,7 @@
         "brand": "트릴리온",
         "category": "아우터 > 트러커 재킷",
         "final_price": 54900,
-        "score": 21.64
+        "score": 28.24
       },
       "validation_failures": []
     },
@@ -1991,7 +1997,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 45.13,
+      "latency_ms": 3.6,
       "result_count": 8,
       "top_result": {
         "product_id": "3123085",
@@ -2011,7 +2017,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 52.23,
+      "latency_ms": 2.95,
       "result_count": 8,
       "top_result": {
         "product_id": "3123085",
@@ -2031,7 +2037,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.9,
+      "latency_ms": 3.4,
       "result_count": 8,
       "top_result": {
         "product_id": "2440039",
@@ -2051,7 +2057,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 45.21,
+      "latency_ms": 2.94,
       "result_count": 8,
       "top_result": {
         "product_id": "2440039",
@@ -2071,7 +2077,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 42.49,
+      "latency_ms": 3.95,
       "result_count": 8,
       "top_result": {
         "product_id": "2378989",
@@ -2091,7 +2097,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 54.06,
+      "latency_ms": 9.63,
       "result_count": 8,
       "top_result": {
         "product_id": "2378989",
@@ -2099,7 +2105,7 @@
         "brand": "킨",
         "category": "신발 > 샌들/슬리퍼 > 스포츠/캐주얼 샌들",
         "final_price": 169000,
-        "score": 26.28
+        "score": 30.88
       },
       "validation_failures": []
     },
@@ -2111,7 +2117,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.17,
+      "latency_ms": 3.88,
       "result_count": 8,
       "top_result": {
         "product_id": "2508821",
@@ -2131,7 +2137,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 47.76,
+      "latency_ms": 9.18,
       "result_count": 8,
       "top_result": {
         "product_id": "4655528",
@@ -2139,7 +2145,7 @@
         "brand": "러닝라이프",
         "category": "스포츠/레저 > 하의 > 숏팬츠",
         "final_price": 27650,
-        "score": 26.88
+        "score": 32.88
       },
       "validation_failures": []
     },
@@ -2151,7 +2157,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.81,
+      "latency_ms": 3.27,
       "result_count": 8,
       "top_result": {
         "product_id": "4319321",
@@ -2171,7 +2177,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 60.29,
+      "latency_ms": 2.83,
       "result_count": 8,
       "top_result": {
         "product_id": "4319321",
@@ -2191,7 +2197,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.56,
+      "latency_ms": 2.6,
       "result_count": 8,
       "top_result": {
         "product_id": "2408213",
@@ -2211,7 +2217,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 45.32,
+      "latency_ms": 2.86,
       "result_count": 8,
       "top_result": {
         "product_id": "2408213",
@@ -2231,7 +2237,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 50.32,
+      "latency_ms": 4.07,
       "result_count": 8,
       "top_result": {
         "product_id": "3800080",
@@ -2251,15 +2257,15 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 54.66,
+      "latency_ms": 8.55,
       "result_count": 8,
       "top_result": {
-        "product_id": "3800080",
-        "name_ko": "슈퍼 라이트 바람막이(10colors)",
-        "brand": "무신사 스탠다드 스포츠",
+        "product_id": "4296687",
+        "name_ko": "NBNAG21403 / UNI 헤리티지 스탠넥 웜업 자켓 (BLACK)",
+        "brand": "뉴발란스",
         "category": "스포츠/레저 > 아우터 > 나일론/코치 재킷",
-        "final_price": 40420,
-        "score": 25.08
+        "final_price": 139000,
+        "score": 30.68
       },
       "validation_failures": []
     },
@@ -2271,7 +2277,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 40.57,
+      "latency_ms": 2.78,
       "result_count": 8,
       "top_result": {
         "product_id": "5378319",
@@ -2291,7 +2297,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 45.05,
+      "latency_ms": 2.86,
       "result_count": 8,
       "top_result": {
         "product_id": "5378319",
@@ -2311,7 +2317,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 42.89,
+      "latency_ms": 3.25,
       "result_count": 8,
       "top_result": {
         "product_id": "4403002",
@@ -2331,7 +2337,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 47.67,
+      "latency_ms": 4.54,
       "result_count": 8,
       "top_result": {
         "product_id": "4403002",
@@ -2339,7 +2345,7 @@
         "brand": "디젤 악세사리",
         "category": "소품 > 주얼리 > 목걸이/펜던트",
         "final_price": 210000,
-        "score": 22.9
+        "score": 27.5
       },
       "validation_failures": []
     },
@@ -2351,7 +2357,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 41.74,
+      "latency_ms": 3.56,
       "result_count": 8,
       "top_result": {
         "product_id": "2476724",
@@ -2371,7 +2377,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 56.5,
+      "latency_ms": 4.2,
       "result_count": 8,
       "top_result": {
         "product_id": "2476724",
@@ -2379,7 +2385,7 @@
         "brand": "토앤토",
         "category": "신발 > 샌들/슬리퍼 > 쪼리/플립플랍",
         "final_price": 56000,
-        "score": 21.66
+        "score": 26.26
       },
       "validation_failures": []
     },
@@ -2391,7 +2397,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 40.91,
+      "latency_ms": 2.97,
       "result_count": 8,
       "top_result": {
         "product_id": "1882525",
@@ -2411,7 +2417,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 48,
+      "latency_ms": 5.22,
       "result_count": 8,
       "top_result": {
         "product_id": "1882525",
@@ -2419,7 +2425,7 @@
         "brand": "엄브로",
         "category": "아우터 > 기타 아우터",
         "final_price": 104300,
-        "score": 21.68
+        "score": 26.28
       },
       "validation_failures": []
     },
@@ -2431,7 +2437,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 51.01,
+      "latency_ms": 3.16,
       "result_count": 8,
       "top_result": {
         "product_id": "3198730",
@@ -2451,7 +2457,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 45.16,
+      "latency_ms": 2.76,
       "result_count": 8,
       "top_result": {
         "product_id": "4512936",
@@ -2471,7 +2477,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 47.6,
+      "latency_ms": 6.09,
       "result_count": 6,
       "top_result": {
         "product_id": "991339",
@@ -2491,7 +2497,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 47.74,
+      "latency_ms": 5.8,
       "result_count": 6,
       "top_result": {
         "product_id": "5992665",
@@ -2511,7 +2517,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 47.23,
+      "latency_ms": 7.1,
       "result_count": 6,
       "top_result": {
         "product_id": "1618312",
@@ -2531,7 +2537,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.64,
+      "latency_ms": 5.52,
       "result_count": 6,
       "top_result": {
         "product_id": "3783089",
@@ -2551,7 +2557,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.99,
+      "latency_ms": 5.18,
       "result_count": 6,
       "top_result": {
         "product_id": "3976350",
@@ -2571,7 +2577,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 44.87,
+      "latency_ms": 5.9,
       "result_count": 6,
       "top_result": {
         "product_id": "4164429",
@@ -2591,7 +2597,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.5,
+      "latency_ms": 5.46,
       "result_count": 6,
       "top_result": {
         "product_id": "2351467",
@@ -2611,7 +2617,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.43,
+      "latency_ms": 5.32,
       "result_count": 6,
       "top_result": {
         "product_id": "1456515",
@@ -2631,7 +2637,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 44.03,
+      "latency_ms": 6.36,
       "result_count": 6,
       "top_result": {
         "product_id": "1706633",
@@ -2651,7 +2657,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 42.73,
+      "latency_ms": 5.37,
       "result_count": 6,
       "top_result": {
         "product_id": "2578996",
@@ -2671,7 +2677,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.39,
+      "latency_ms": 5.62,
       "result_count": 6,
       "top_result": {
         "product_id": "3369141",
@@ -2691,7 +2697,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.33,
+      "latency_ms": 5.34,
       "result_count": 6,
       "top_result": {
         "product_id": "5921634",
@@ -2711,7 +2717,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 45.7,
+      "latency_ms": 5.45,
       "result_count": 6,
       "top_result": {
         "product_id": "5167907",
@@ -2731,7 +2737,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 58.1,
+      "latency_ms": 5.2,
       "result_count": 6,
       "top_result": {
         "product_id": "3663072",
@@ -2751,7 +2757,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 44.82,
+      "latency_ms": 5.56,
       "result_count": 6,
       "top_result": {
         "product_id": "3791988",
@@ -2771,7 +2777,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 46.19,
+      "latency_ms": 5.5,
       "result_count": 6,
       "top_result": {
         "product_id": "4729601",
@@ -2791,7 +2797,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 44.46,
+      "latency_ms": 5.3,
       "result_count": 6,
       "top_result": {
         "product_id": "4175389",
@@ -2811,7 +2817,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.8,
+      "latency_ms": 5.31,
       "result_count": 6,
       "top_result": {
         "product_id": "4989733",
@@ -2831,7 +2837,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.87,
+      "latency_ms": 5.21,
       "result_count": 6,
       "top_result": {
         "product_id": "4201442",
@@ -2851,7 +2857,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.25,
+      "latency_ms": 5.43,
       "result_count": 6,
       "top_result": {
         "product_id": "3025211",
@@ -2871,7 +2877,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 44.67,
+      "latency_ms": 5.39,
       "result_count": 6,
       "top_result": {
         "product_id": "4727091",
@@ -2891,7 +2897,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 48.35,
+      "latency_ms": 5.27,
       "result_count": 6,
       "top_result": {
         "product_id": "3269419",
@@ -2911,7 +2917,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 44.81,
+      "latency_ms": 5.43,
       "result_count": 6,
       "top_result": {
         "product_id": "5432652",
@@ -2931,7 +2937,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 47.4,
+      "latency_ms": 5.4,
       "result_count": 6,
       "top_result": {
         "product_id": "5146932",
@@ -2951,7 +2957,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 45.1,
+      "latency_ms": 5.23,
       "result_count": 6,
       "top_result": {
         "product_id": "2090950",
@@ -2971,7 +2977,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.28,
+      "latency_ms": 5.34,
       "result_count": 6,
       "top_result": {
         "product_id": "3837367",
@@ -2991,7 +2997,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.95,
+      "latency_ms": 5.31,
       "result_count": 6,
       "top_result": {
         "product_id": "4336624",
@@ -3011,7 +3017,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 44.49,
+      "latency_ms": 5.14,
       "result_count": 6,
       "top_result": {
         "product_id": "595039",
@@ -3031,7 +3037,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.81,
+      "latency_ms": 5.67,
       "result_count": 6,
       "top_result": {
         "product_id": "6224315",
@@ -3051,7 +3057,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.79,
+      "latency_ms": 5.62,
       "result_count": 6,
       "top_result": {
         "product_id": "5020231",
@@ -3071,7 +3077,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 44.18,
+      "latency_ms": 5.61,
       "result_count": 6,
       "top_result": {
         "product_id": "2058188",
@@ -3091,7 +3097,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.69,
+      "latency_ms": 5.7,
       "result_count": 6,
       "top_result": {
         "product_id": "4274049",
@@ -3111,7 +3117,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 45.47,
+      "latency_ms": 5.64,
       "result_count": 6,
       "top_result": {
         "product_id": "2235274",
@@ -3131,7 +3137,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 44.45,
+      "latency_ms": 6.23,
       "result_count": 6,
       "top_result": {
         "product_id": "1856360",
@@ -3151,7 +3157,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 53.9,
+      "latency_ms": 5.35,
       "result_count": 6,
       "top_result": {
         "product_id": "3880598",
@@ -3171,7 +3177,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 49.78,
+      "latency_ms": 5.29,
       "result_count": 6,
       "top_result": {
         "product_id": "6471680",
@@ -3191,7 +3197,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 46.21,
+      "latency_ms": 6.01,
       "result_count": 6,
       "top_result": {
         "product_id": "4240890",
@@ -3211,7 +3217,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 45.28,
+      "latency_ms": 5.34,
       "result_count": 6,
       "top_result": {
         "product_id": "2632730",
@@ -3231,7 +3237,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.87,
+      "latency_ms": 5.18,
       "result_count": 6,
       "top_result": {
         "product_id": "1034480",
@@ -3251,7 +3257,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.16,
+      "latency_ms": 5.33,
       "result_count": 6,
       "top_result": {
         "product_id": "3434621",
@@ -3271,7 +3277,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.72,
+      "latency_ms": 5.31,
       "result_count": 6,
       "top_result": {
         "product_id": "4328804",
@@ -3291,7 +3297,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.41,
+      "latency_ms": 5.44,
       "result_count": 6,
       "top_result": {
         "product_id": "102622",
@@ -3311,7 +3317,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.21,
+      "latency_ms": 5.36,
       "result_count": 6,
       "top_result": {
         "product_id": "1882525",
@@ -3331,7 +3337,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 43.89,
+      "latency_ms": 5.32,
       "result_count": 6,
       "top_result": {
         "product_id": "3562068",
@@ -3351,7 +3357,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 44.16,
+      "latency_ms": 5.25,
       "result_count": 6,
       "top_result": {
         "product_id": "5200037",
@@ -3371,7 +3377,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.91,
+      "latency_ms": 8.91,
       "result_count": 5,
       "top_result": {
         "product_id": "1388775",
@@ -3379,7 +3385,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 18890,
-        "score": 14.88
+        "score": 19.48
       },
       "validation_failures": []
     },
@@ -3391,7 +3397,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 58.2,
+      "latency_ms": 8.61,
       "result_count": 5,
       "top_result": {
         "product_id": "2086656",
@@ -3399,7 +3405,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 13490,
-        "score": 16.08
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -3411,7 +3417,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.18,
+      "latency_ms": 8.52,
       "result_count": 5,
       "top_result": {
         "product_id": "2086656",
@@ -3419,7 +3425,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 13490,
-        "score": 16.08
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -3431,7 +3437,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 57.62,
+      "latency_ms": 8.94,
       "result_count": 5,
       "top_result": {
         "product_id": "5627635",
@@ -3439,7 +3445,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 셔츠/블라우스",
         "final_price": 49900,
-        "score": 13.68
+        "score": 18.28
       },
       "validation_failures": []
     },
@@ -3451,7 +3457,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 57.78,
+      "latency_ms": 8.81,
       "result_count": 5,
       "top_result": {
         "product_id": "1973481",
@@ -3459,7 +3465,7 @@
         "brand": "애습",
         "category": "상의 > 셔츠/블라우스",
         "final_price": 58400,
-        "score": 14.88
+        "score": 19.48
       },
       "validation_failures": []
     },
@@ -3471,7 +3477,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.5,
+      "latency_ms": 8.57,
       "result_count": 5,
       "top_result": {
         "product_id": "1973481",
@@ -3479,7 +3485,7 @@
         "brand": "애습",
         "category": "상의 > 셔츠/블라우스",
         "final_price": 58400,
-        "score": 14.88
+        "score": 19.48
       },
       "validation_failures": []
     },
@@ -3491,7 +3497,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 55.37,
+      "latency_ms": 8.94,
       "result_count": 5,
       "top_result": {
         "product_id": "3051700",
@@ -3499,7 +3505,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 데님 팬츠",
         "final_price": 37390,
-        "score": 12.48
+        "score": 17.08
       },
       "validation_failures": []
     },
@@ -3511,7 +3517,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 55.44,
+      "latency_ms": 8.49,
       "result_count": 5,
       "top_result": {
         "product_id": "5937440",
@@ -3519,7 +3525,7 @@
         "brand": "쿠어",
         "category": "바지 > 데님 팬츠",
         "final_price": 169200,
-        "score": 13.16
+        "score": 17.76
       },
       "validation_failures": []
     },
@@ -3531,7 +3537,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.66,
+      "latency_ms": 8.35,
       "result_count": 5,
       "top_result": {
         "product_id": "5937440",
@@ -3539,7 +3545,7 @@
         "brand": "쿠어",
         "category": "바지 > 데님 팬츠",
         "final_price": 169200,
-        "score": 13.16
+        "score": 17.76
       },
       "validation_failures": []
     },
@@ -3551,7 +3557,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 64.7,
+      "latency_ms": 9.53,
       "result_count": 5,
       "top_result": {
         "product_id": "1163169",
@@ -3571,7 +3577,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 59.51,
+      "latency_ms": 9.05,
       "result_count": 5,
       "top_result": {
         "product_id": "3392006",
@@ -3591,7 +3597,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 58.15,
+      "latency_ms": 9.14,
       "result_count": 5,
       "top_result": {
         "product_id": "3392006",
@@ -3611,7 +3617,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.27,
+      "latency_ms": 8.68,
       "result_count": 5,
       "top_result": {
         "product_id": "3837367",
@@ -3619,7 +3625,7 @@
         "brand": "비긴202",
         "category": "바지 > 코튼 팬츠",
         "final_price": 106200,
-        "score": 12.48
+        "score": 17.08
       },
       "validation_failures": []
     },
@@ -3631,7 +3637,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 55.91,
+      "latency_ms": 8.25,
       "result_count": 5,
       "top_result": {
         "product_id": "5113094",
@@ -3639,7 +3645,7 @@
         "brand": "시그니처",
         "category": "바지 > 코튼 팬츠",
         "final_price": 39900,
-        "score": 13.66
+        "score": 18.26
       },
       "validation_failures": []
     },
@@ -3651,7 +3657,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 55.23,
+      "latency_ms": 8.13,
       "result_count": 5,
       "top_result": {
         "product_id": "5113094",
@@ -3659,7 +3665,7 @@
         "brand": "시그니처",
         "category": "바지 > 코튼 팬츠",
         "final_price": 39900,
-        "score": 13.66
+        "score": 18.26
       },
       "validation_failures": []
     },
@@ -3671,7 +3677,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 61.53,
+      "latency_ms": 13.96,
       "result_count": 5,
       "top_result": {
         "product_id": "2112061",
@@ -3679,7 +3685,7 @@
         "brand": "가까이 유니언즈",
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 31200,
-        "score": 17.08
+        "score": 24.28
       },
       "validation_failures": []
     },
@@ -3691,7 +3697,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 62.26,
+      "latency_ms": 14.45,
       "result_count": 5,
       "top_result": {
         "product_id": "2112059",
@@ -3699,7 +3705,7 @@
         "brand": "가까이 유니언즈",
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 31200,
-        "score": 18.28
+        "score": 25.48
       },
       "validation_failures": []
     },
@@ -3711,7 +3717,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 64.09,
+      "latency_ms": 18.68,
       "result_count": 5,
       "top_result": {
         "product_id": "2112059",
@@ -3719,7 +3725,7 @@
         "brand": "가까이 유니언즈",
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 31200,
-        "score": 18.28
+        "score": 25.48
       },
       "validation_failures": []
     },
@@ -3731,7 +3737,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 58.05,
+      "latency_ms": 9.03,
       "result_count": 5,
       "top_result": {
         "product_id": "4757913",
@@ -3739,7 +3745,7 @@
         "brand": "트릴리온",
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 29800,
-        "score": 14.86
+        "score": 19.46
       },
       "validation_failures": []
     },
@@ -3751,7 +3757,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.76,
+      "latency_ms": 9.09,
       "result_count": 5,
       "top_result": {
         "product_id": "5318901",
@@ -3759,7 +3765,7 @@
         "brand": "후브스",
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 39200,
-        "score": 16.06
+        "score": 20.66
       },
       "validation_failures": []
     },
@@ -3771,7 +3777,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.84,
+      "latency_ms": 8.62,
       "result_count": 5,
       "top_result": {
         "product_id": "5318901",
@@ -3779,7 +3785,7 @@
         "brand": "후브스",
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 39200,
-        "score": 16.06
+        "score": 20.66
       },
       "validation_failures": []
     },
@@ -3791,7 +3797,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 58.26,
+      "latency_ms": 12.77,
       "result_count": 5,
       "top_result": {
         "product_id": "3697526",
@@ -3799,7 +3805,7 @@
         "brand": "꼼파뇨",
         "category": "아우터 > 후드 집업",
         "final_price": 59400,
-        "score": 17.08
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -3811,7 +3817,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.34,
+      "latency_ms": 10.5,
       "result_count": 5,
       "top_result": {
         "product_id": "2372450",
@@ -3819,7 +3825,7 @@
         "brand": "소버먼트",
         "category": "아우터 > 후드 집업",
         "final_price": 75000,
-        "score": 18.28
+        "score": 21.88
       },
       "validation_failures": []
     },
@@ -3831,7 +3837,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.99,
+      "latency_ms": 8.7,
       "result_count": 5,
       "top_result": {
         "product_id": "2372450",
@@ -3839,7 +3845,7 @@
         "brand": "소버먼트",
         "category": "아우터 > 후드 집업",
         "final_price": 75000,
-        "score": 18.28
+        "score": 21.88
       },
       "validation_failures": []
     },
@@ -3851,7 +3857,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 57.56,
+      "latency_ms": 9.3,
       "result_count": 5,
       "top_result": {
         "product_id": "4871107",
@@ -3859,7 +3865,7 @@
         "brand": "데꼬로소",
         "category": "상의 > 니트/스웨터",
         "final_price": 58600,
-        "score": 13.66
+        "score": 18.26
       },
       "validation_failures": []
     },
@@ -3871,7 +3877,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 57.06,
+      "latency_ms": 8.29,
       "result_count": 5,
       "top_result": {
         "product_id": "2100417",
@@ -3879,7 +3885,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 니트/스웨터",
         "final_price": 59390,
-        "score": 14.88
+        "score": 19.48
       },
       "validation_failures": []
     },
@@ -3891,7 +3897,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.98,
+      "latency_ms": 9.06,
       "result_count": 5,
       "top_result": {
         "product_id": "2100417",
@@ -3899,7 +3905,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 니트/스웨터",
         "final_price": 59390,
-        "score": 14.88
+        "score": 19.48
       },
       "validation_failures": []
     },
@@ -3911,7 +3917,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 66.19,
+      "latency_ms": 10.44,
       "result_count": 5,
       "top_result": {
         "product_id": "1168906",
@@ -3919,7 +3925,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 45900,
-        "score": 17.08
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -3931,7 +3937,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 60.29,
+      "latency_ms": 10.76,
       "result_count": 5,
       "top_result": {
         "product_id": "5371345",
@@ -3939,7 +3945,7 @@
         "brand": "애습",
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 69000,
-        "score": 19.28
+        "score": 22.88
       },
       "validation_failures": []
     },
@@ -3951,7 +3957,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 58.92,
+      "latency_ms": 10,
       "result_count": 5,
       "top_result": {
         "product_id": "5371345",
@@ -3959,7 +3965,7 @@
         "brand": "애습",
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 69000,
-        "score": 19.28
+        "score": 22.88
       },
       "validation_failures": []
     },
@@ -3971,7 +3977,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 58.65,
+      "latency_ms": 11.26,
       "result_count": 5,
       "top_result": {
         "product_id": "4655528",
@@ -3979,7 +3985,7 @@
         "brand": "러닝라이프",
         "category": "스포츠/레저 > 하의 > 숏팬츠",
         "final_price": 27650,
-        "score": 19.28
+        "score": 22.88
       },
       "validation_failures": []
     },
@@ -3991,7 +3997,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 58.95,
+      "latency_ms": 10.88,
       "result_count": 5,
       "top_result": {
         "product_id": "4655528",
@@ -3999,7 +4005,7 @@
         "brand": "러닝라이프",
         "category": "스포츠/레저 > 하의 > 숏팬츠",
         "final_price": 27650,
-        "score": 19.28
+        "score": 22.88
       },
       "validation_failures": []
     },
@@ -4011,7 +4017,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 58.59,
+      "latency_ms": 11.07,
       "result_count": 5,
       "top_result": {
         "product_id": "4655528",
@@ -4019,7 +4025,7 @@
         "brand": "러닝라이프",
         "category": "스포츠/레저 > 하의 > 숏팬츠",
         "final_price": 27650,
-        "score": 19.28
+        "score": 22.88
       },
       "validation_failures": []
     },
@@ -4031,7 +4037,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 54.1,
+      "latency_ms": 6.54,
       "result_count": 5,
       "top_result": {
         "product_id": "3981315",
@@ -4051,7 +4057,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 58.06,
+      "latency_ms": 6.18,
       "result_count": 5,
       "top_result": {
         "product_id": "3881573",
@@ -4071,7 +4077,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 53.15,
+      "latency_ms": 6.14,
       "result_count": 5,
       "top_result": {
         "product_id": "3881573",
@@ -4091,7 +4097,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 54.5,
+      "latency_ms": 9.9,
       "result_count": 5,
       "top_result": {
         "product_id": "2879419",
@@ -4099,7 +4105,7 @@
         "brand": "바우프",
         "category": "소품 > 모자 > 캡/야구모자",
         "final_price": 44000,
-        "score": 10.28
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -4111,7 +4117,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 54.62,
+      "latency_ms": 9.28,
       "result_count": 5,
       "top_result": {
         "product_id": "3369141",
@@ -4119,7 +4125,7 @@
         "brand": "무센트",
         "category": "소품 > 모자 > 캡/야구모자",
         "final_price": 29900,
-        "score": 11.48
+        "score": 21.88
       },
       "validation_failures": []
     },
@@ -4131,7 +4137,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 53.97,
+      "latency_ms": 9.32,
       "result_count": 5,
       "top_result": {
         "product_id": "3369141",
@@ -4139,7 +4145,7 @@
         "brand": "무센트",
         "category": "소품 > 모자 > 캡/야구모자",
         "final_price": 29900,
-        "score": 11.48
+        "score": 21.88
       },
       "validation_failures": []
     },
@@ -4151,7 +4157,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 58.74,
+      "latency_ms": 12.23,
       "result_count": 5,
       "top_result": {
         "product_id": "3697526",
@@ -4159,7 +4165,7 @@
         "brand": "꼼파뇨",
         "category": "아우터 > 후드 집업",
         "final_price": 59400,
-        "score": 17.08
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -4171,7 +4177,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 59.02,
+      "latency_ms": 11.51,
       "result_count": 5,
       "top_result": {
         "product_id": "2372450",
@@ -4179,7 +4185,7 @@
         "brand": "소버먼트",
         "category": "아우터 > 후드 집업",
         "final_price": 75000,
-        "score": 18.28
+        "score": 21.88
       },
       "validation_failures": []
     },
@@ -4191,7 +4197,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 57.82,
+      "latency_ms": 11.59,
       "result_count": 5,
       "top_result": {
         "product_id": "2372450",
@@ -4199,7 +4205,7 @@
         "brand": "소버먼트",
         "category": "아우터 > 후드 집업",
         "final_price": 75000,
-        "score": 18.28
+        "score": 21.88
       },
       "validation_failures": []
     },
@@ -4211,15 +4217,15 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 61.01,
+      "latency_ms": 12.32,
       "result_count": 5,
       "top_result": {
-        "product_id": "3758212",
-        "name_ko": "[시티 레저] 라이트웨이트 패커블 윈드브레이커 재킷 [블랙]",
-        "brand": "무신사 스탠다드",
+        "product_id": "2723218",
+        "name_ko": "ASI 2WAY 어센틱 후드 윈드브레이커 자켓_블랙",
+        "brand": "디미트리블랙",
         "category": "아우터 > 나일론/코치 재킷",
-        "final_price": 33890,
-        "score": 17.08
+        "final_price": 44900,
+        "score": 21.66
       },
       "validation_failures": []
     },
@@ -4231,7 +4237,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 64.38,
+      "latency_ms": 12.19,
       "result_count": 5,
       "top_result": {
         "product_id": "3758213",
@@ -4239,7 +4245,7 @@
         "brand": "무신사 스탠다드",
         "category": "아우터 > 나일론/코치 재킷",
         "final_price": 39900,
-        "score": 18.28
+        "score": 21.88
       },
       "validation_failures": []
     },
@@ -4251,7 +4257,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 62.56,
+      "latency_ms": 11.75,
       "result_count": 5,
       "top_result": {
         "product_id": "3758213",
@@ -4259,7 +4265,7 @@
         "brand": "무신사 스탠다드",
         "category": "아우터 > 나일론/코치 재킷",
         "final_price": 39900,
-        "score": 18.28
+        "score": 21.88
       },
       "validation_failures": []
     },
@@ -4271,7 +4277,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 53.09,
+      "latency_ms": 6.46,
       "result_count": 5,
       "top_result": {
         "product_id": "4683157",
@@ -4291,7 +4297,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 52.91,
+      "latency_ms": 5.86,
       "result_count": 5,
       "top_result": {
         "product_id": "3092776",
@@ -4311,7 +4317,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 52.24,
+      "latency_ms": 5.94,
       "result_count": 5,
       "top_result": {
         "product_id": "3092776",
@@ -4331,7 +4337,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.78,
+      "latency_ms": 8.94,
       "result_count": 5,
       "top_result": {
         "product_id": "1388775",
@@ -4339,7 +4345,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 18890,
-        "score": 14.88
+        "score": 19.48
       },
       "validation_failures": []
     },
@@ -4351,7 +4357,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 55.85,
+      "latency_ms": 12.7,
       "result_count": 5,
       "top_result": {
         "product_id": "2086656",
@@ -4359,7 +4365,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 13490,
-        "score": 16.08
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -4371,7 +4377,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.63,
+      "latency_ms": 8.74,
       "result_count": 5,
       "top_result": {
         "product_id": "2086656",
@@ -4379,7 +4385,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 13490,
-        "score": 16.08
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -4391,7 +4397,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 55.37,
+      "latency_ms": 8.38,
       "result_count": 5,
       "top_result": {
         "product_id": "595039",
@@ -4399,7 +4405,7 @@
         "brand": "닥터마틴",
         "category": "신발 > 구두 > 더비 슈즈",
         "final_price": 229000,
-        "score": 12.48
+        "score": 17.08
       },
       "validation_failures": []
     },
@@ -4411,7 +4417,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 55.27,
+      "latency_ms": 7.78,
       "result_count": 5,
       "top_result": {
         "product_id": "3276429",
@@ -4419,7 +4425,7 @@
         "brand": "킨치",
         "category": "신발 > 구두 > 더비 슈즈",
         "final_price": 289000,
-        "score": 10.48
+        "score": 15.08
       },
       "validation_failures": []
     },
@@ -4431,7 +4437,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 65.95,
+      "latency_ms": 7.8,
       "result_count": 5,
       "top_result": {
         "product_id": "3276429",
@@ -4439,7 +4445,7 @@
         "brand": "킨치",
         "category": "신발 > 구두 > 더비 슈즈",
         "final_price": 289000,
-        "score": 10.48
+        "score": 15.08
       },
       "validation_failures": []
     },
@@ -4451,7 +4457,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 60.57,
+      "latency_ms": 9.24,
       "result_count": 5,
       "top_result": {
         "product_id": "4655076",
@@ -4459,7 +4465,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 맨투맨/스웨트",
         "final_price": 37490,
-        "score": 14.88
+        "score": 19.48
       },
       "validation_failures": []
     },
@@ -4471,7 +4477,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.7,
+      "latency_ms": 8.13,
       "result_count": 5,
       "top_result": {
         "product_id": "3832068",
@@ -4479,7 +4485,7 @@
         "brand": "엄브로",
         "category": "상의 > 맨투맨/스웨트",
         "final_price": 63600,
-        "score": 15.6
+        "score": 20.2
       },
       "validation_failures": []
     },
@@ -4491,7 +4497,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 60.01,
+      "latency_ms": 8.15,
       "result_count": 5,
       "top_result": {
         "product_id": "3832068",
@@ -4499,7 +4505,7 @@
         "brand": "엄브로",
         "category": "상의 > 맨투맨/스웨트",
         "final_price": 63600,
-        "score": 15.6
+        "score": 20.2
       },
       "validation_failures": []
     },
@@ -4511,15 +4517,15 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 62.22,
+      "latency_ms": 12.47,
       "result_count": 5,
       "top_result": {
-        "product_id": "1558197",
-        "name_ko": "릴렉스드 베이식 블레이저 [블랙]",
-        "brand": "무신사 스탠다드",
+        "product_id": "4297241",
+        "name_ko": "블랙 대디핏 피크드 더블 트윌 셋업자켓 (TNJA4F102BK)",
+        "brand": "티엔지티",
         "category": "아우터 > 슈트/블레이저 재킷",
-        "final_price": 85490,
-        "score": 17.08
+        "final_price": 101400,
+        "score": 21.18
       },
       "validation_failures": []
     },
@@ -4531,7 +4537,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 64.37,
+      "latency_ms": 12.85,
       "result_count": 5,
       "top_result": {
         "product_id": "3092776",
@@ -4539,7 +4545,7 @@
         "brand": "무신사 스탠다드",
         "category": "아우터 > 슈트/블레이저 재킷",
         "final_price": 139900,
-        "score": 19.28
+        "score": 22.88
       },
       "validation_failures": []
     },
@@ -4551,7 +4557,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 65.31,
+      "latency_ms": 12.26,
       "result_count": 5,
       "top_result": {
         "product_id": "3092776",
@@ -4559,7 +4565,7 @@
         "brand": "무신사 스탠다드",
         "category": "아우터 > 슈트/블레이저 재킷",
         "final_price": 139900,
-        "score": 19.28
+        "score": 22.88
       },
       "validation_failures": []
     },
@@ -4571,7 +4577,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 58.89,
+      "latency_ms": 16.52,
       "result_count": 5,
       "top_result": {
         "product_id": "4278938",
@@ -4579,7 +4585,7 @@
         "brand": "엘무드",
         "category": "아우터 > 블루종/MA-1",
         "final_price": 241200,
-        "score": 13.68
+        "score": 23.08
       },
       "validation_failures": []
     },
@@ -4591,7 +4597,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 60.53,
+      "latency_ms": 17.26,
       "result_count": 5,
       "top_result": {
         "product_id": "5386037",
@@ -4599,7 +4605,7 @@
         "brand": "알리스",
         "category": "아우터 > 블루종/MA-1",
         "final_price": 164000,
-        "score": 14.88
+        "score": 24.28
       },
       "validation_failures": []
     },
@@ -4611,7 +4617,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 65.93,
+      "latency_ms": 17.2,
       "result_count": 5,
       "top_result": {
         "product_id": "5386037",
@@ -4619,7 +4625,7 @@
         "brand": "알리스",
         "category": "아우터 > 블루종/MA-1",
         "final_price": 164000,
-        "score": 14.88
+        "score": 24.28
       },
       "validation_failures": []
     },
@@ -4631,7 +4637,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 54.19,
+      "latency_ms": 7.17,
       "result_count": 5,
       "top_result": {
         "product_id": "4128817",
@@ -4651,7 +4657,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 57.81,
+      "latency_ms": 6.02,
       "result_count": 5,
       "top_result": {
         "product_id": "4363895",
@@ -4671,7 +4677,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 57.51,
+      "latency_ms": 5.86,
       "result_count": 5,
       "top_result": {
         "product_id": "4363895",
@@ -4691,7 +4697,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 59.35,
+      "latency_ms": 10.15,
       "result_count": 5,
       "top_result": {
         "product_id": "3563185",
@@ -4699,7 +4705,7 @@
         "brand": "아디다스",
         "category": "아우터 > 트레이닝 재킷",
         "final_price": 119000,
-        "score": 16.88
+        "score": 20.48
       },
       "validation_failures": []
     },
@@ -4711,7 +4717,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 60.44,
+      "latency_ms": 9.79,
       "result_count": 5,
       "top_result": {
         "product_id": "5992665",
@@ -4719,7 +4725,7 @@
         "brand": "아디다스",
         "category": "아우터 > 트레이닝 재킷",
         "final_price": 169000,
-        "score": 14.9
+        "score": 19.5
       },
       "validation_failures": []
     },
@@ -4731,7 +4737,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 58.27,
+      "latency_ms": 13.42,
       "result_count": 5,
       "top_result": {
         "product_id": "5992665",
@@ -4739,7 +4745,7 @@
         "brand": "아디다스",
         "category": "아우터 > 트레이닝 재킷",
         "final_price": 169000,
-        "score": 14.9
+        "score": 19.5
       },
       "validation_failures": []
     },
@@ -4751,7 +4757,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 63.02,
+      "latency_ms": 13.47,
       "result_count": 5,
       "top_result": {
         "product_id": "2670700",
@@ -4759,7 +4765,7 @@
         "brand": "엘무드",
         "category": "아우터 > 레더/라이더스 재킷",
         "final_price": 268200,
-        "score": 17.08
+        "score": 21.68
       },
       "validation_failures": []
     },
@@ -4771,15 +4777,15 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 63.86,
+      "latency_ms": 12.45,
       "result_count": 5,
       "top_result": {
-        "product_id": "5992665",
-        "name_ko": "플레더 3S 트랙탑 - 아우라커피 / KQ5473",
-        "brand": "아디다스",
-        "category": "아우터 > 트레이닝 재킷",
-        "final_price": 169000,
-        "score": 16.9
+        "product_id": "2086731",
+        "name_ko": "오버핏 비건레더 보머 자켓",
+        "brand": "도프제이슨",
+        "category": "아우터 > 레더/라이더스 재킷",
+        "final_price": 119000,
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -4791,15 +4797,15 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 67.94,
+      "latency_ms": 12.8,
       "result_count": 5,
       "top_result": {
-        "product_id": "5992665",
-        "name_ko": "플레더 3S 트랙탑 - 아우라커피 / KQ5473",
-        "brand": "아디다스",
-        "category": "아우터 > 트레이닝 재킷",
-        "final_price": 169000,
-        "score": 16.9
+        "product_id": "2086731",
+        "name_ko": "오버핏 비건레더 보머 자켓",
+        "brand": "도프제이슨",
+        "category": "아우터 > 레더/라이더스 재킷",
+        "final_price": 119000,
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -4811,7 +4817,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 59.48,
+      "latency_ms": 9.1,
       "result_count": 5,
       "top_result": {
         "product_id": "4057918",
@@ -4819,7 +4825,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 민소매 티셔츠",
         "final_price": 18890,
-        "score": 14.88
+        "score": 19.48
       },
       "validation_failures": []
     },
@@ -4831,7 +4837,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 57.82,
+      "latency_ms": 9.11,
       "result_count": 5,
       "top_result": {
         "product_id": "2341474",
@@ -4839,7 +4845,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 민소매 티셔츠",
         "final_price": 15890,
-        "score": 16.08
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -4851,7 +4857,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.97,
+      "latency_ms": 8.81,
       "result_count": 5,
       "top_result": {
         "product_id": "2341474",
@@ -4859,7 +4865,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 민소매 티셔츠",
         "final_price": 15890,
-        "score": 16.08
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -4871,7 +4877,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 55.86,
+      "latency_ms": 8.71,
       "result_count": 5,
       "top_result": {
         "product_id": "3404705",
@@ -4879,7 +4885,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 기타 하의",
         "final_price": 62890,
-        "score": 12.48
+        "score": 17.08
       },
       "validation_failures": []
     },
@@ -4891,7 +4897,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 59.47,
+      "latency_ms": 8.25,
       "result_count": 5,
       "top_result": {
         "product_id": "4210133",
@@ -4899,7 +4905,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 기타 하의",
         "final_price": 69900,
-        "score": 13.68
+        "score": 18.28
       },
       "validation_failures": []
     },
@@ -4911,7 +4917,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 70.72,
+      "latency_ms": 8.08,
       "result_count": 5,
       "top_result": {
         "product_id": "4210133",
@@ -4919,7 +4925,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 기타 하의",
         "final_price": 69900,
-        "score": 13.68
+        "score": 18.28
       },
       "validation_failures": []
     },
@@ -4931,7 +4937,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 65.68,
+      "latency_ms": 10.82,
       "result_count": 5,
       "top_result": {
         "product_id": "1404736",
@@ -4939,7 +4945,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 피케/카라 티셔츠",
         "final_price": 31190,
-        "score": 17.08
+        "score": 20.68
       },
       "validation_failures": []
     },
@@ -4951,7 +4957,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 62.08,
+      "latency_ms": 9.57,
       "result_count": 5,
       "top_result": {
         "product_id": "1404736",
@@ -4959,7 +4965,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 피케/카라 티셔츠",
         "final_price": 31190,
-        "score": 15.08
+        "score": 19.68
       },
       "validation_failures": []
     },
@@ -4971,7 +4977,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 68.07,
+      "latency_ms": 9.52,
       "result_count": 5,
       "top_result": {
         "product_id": "1404736",
@@ -4979,7 +4985,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 피케/카라 티셔츠",
         "final_price": 31190,
-        "score": 15.08
+        "score": 19.68
       },
       "validation_failures": []
     },
@@ -4991,7 +4997,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 55.25,
+      "latency_ms": 6.1,
       "result_count": 5,
       "top_result": {
         "product_id": "4703345",
@@ -5011,7 +5017,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 53.75,
+      "latency_ms": 6.26,
       "result_count": 5,
       "top_result": {
         "product_id": "5408953",
@@ -5031,7 +5037,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 53.29,
+      "latency_ms": 5.75,
       "result_count": 5,
       "top_result": {
         "product_id": "5408953",
@@ -5051,7 +5057,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 53.46,
+      "latency_ms": 6.04,
       "result_count": 5,
       "top_result": {
         "product_id": "3830420",
@@ -5071,7 +5077,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 53.53,
+      "latency_ms": 5.84,
       "result_count": 5,
       "top_result": {
         "product_id": "3092776",
@@ -5091,7 +5097,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 53.15,
+      "latency_ms": 5.92,
       "result_count": 5,
       "top_result": {
         "product_id": "3092776",
@@ -5111,7 +5117,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.9,
+      "latency_ms": 8.25,
       "result_count": 5,
       "top_result": {
         "product_id": "4356794",
@@ -5119,7 +5125,7 @@
         "brand": "무신사 스탠다드",
         "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
         "final_price": 109900,
-        "score": 12.48
+        "score": 17.08
       },
       "validation_failures": []
     },
@@ -5131,7 +5137,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 57.26,
+      "latency_ms": 7.96,
       "result_count": 5,
       "top_result": {
         "product_id": "5215534",
@@ -5139,7 +5145,7 @@
         "brand": "무신사 스탠다드",
         "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
         "final_price": 129900,
-        "score": 13.68
+        "score": 18.28
       },
       "validation_failures": []
     },
@@ -5151,7 +5157,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.66,
+      "latency_ms": 7.53,
       "result_count": 5,
       "top_result": {
         "product_id": "5215534",
@@ -5159,7 +5165,7 @@
         "brand": "무신사 스탠다드",
         "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
         "final_price": 129900,
-        "score": 13.68
+        "score": 18.28
       },
       "validation_failures": []
     },
@@ -5172,7 +5178,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 54.02,
+      "latency_ms": 7.01,
       "result_count": 5,
       "top_result": {
         "product_id": "1640887",
@@ -5180,7 +5186,7 @@
         "brand": "무신사 스탠다드",
         "category": "소품 > 벨트",
         "final_price": 25490,
-        "score": 16.48
+        "score": 19.68
       },
       "validation_failures": []
     },
@@ -5193,7 +5199,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 53.08,
+      "latency_ms": 6.1,
       "result_count": 5,
       "top_result": {
         "product_id": "5992665",
@@ -5201,7 +5207,7 @@
         "brand": "아디다스",
         "category": "아우터 > 트레이닝 재킷",
         "final_price": 169000,
-        "score": 21.1
+        "score": 24.7
       },
       "validation_failures": []
     },
@@ -5214,7 +5220,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 57.86,
+      "latency_ms": 7.06,
       "result_count": 5,
       "top_result": {
         "product_id": "5162177",
@@ -5222,7 +5228,7 @@
         "brand": "무신사 스탠다드 우먼",
         "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
         "final_price": 109900,
-        "score": 20.88
+        "score": 28.88
       },
       "validation_failures": []
     },
@@ -5235,7 +5241,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 51.21,
+      "latency_ms": 5.71,
       "result_count": 5,
       "top_result": {
         "product_id": "3783092",
@@ -5243,7 +5249,7 @@
         "brand": "디미트리블랙",
         "category": "아우터 > 후드 집업",
         "final_price": 39900,
-        "score": 22.26
+        "score": 25.86
       },
       "validation_failures": []
     },
@@ -5256,7 +5262,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 48.34,
+      "latency_ms": 5.55,
       "result_count": 5,
       "top_result": {
         "product_id": "3976350",
@@ -5277,7 +5283,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 59.87,
+      "latency_ms": 6.43,
       "result_count": 5,
       "top_result": {
         "product_id": "5311114",
@@ -5285,7 +5291,7 @@
         "brand": "언탭트 스튜디오",
         "category": "아우터 > 블루종/MA-1",
         "final_price": 64960,
-        "score": 21.06
+        "score": 31.66
       },
       "validation_failures": []
     },
@@ -5298,7 +5304,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 49.65,
+      "latency_ms": 5.49,
       "result_count": 5,
       "top_result": {
         "product_id": "5276013",
@@ -5306,7 +5312,7 @@
         "brand": "트릴리온",
         "category": "상의 > 맨투맨/스웨트",
         "final_price": 37800,
-        "score": 19.06
+        "score": 23.66
       },
       "validation_failures": []
     },
@@ -5319,7 +5325,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 48.82,
+      "latency_ms": 5.39,
       "result_count": 5,
       "top_result": {
         "product_id": "6237008",
@@ -5327,7 +5333,7 @@
         "brand": "드로우핏",
         "category": "상의 > 셔츠/블라우스",
         "final_price": 49500,
-        "score": 17.38
+        "score": 21.98
       },
       "validation_failures": []
     },
@@ -5340,7 +5346,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 53.34,
+      "latency_ms": 7.17,
       "result_count": 5,
       "top_result": {
         "product_id": "2831374",
@@ -5348,7 +5354,7 @@
         "brand": "폴로 랄프 로렌",
         "category": "아우터 > 후드 집업",
         "final_price": 239000,
-        "score": 22.08
+        "score": 27.88
       },
       "validation_failures": []
     },
@@ -5361,7 +5367,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 48.34,
+      "latency_ms": 5.81,
       "result_count": 5,
       "top_result": {
         "product_id": "4993414",
@@ -5369,7 +5375,7 @@
         "brand": "시그니처",
         "category": "바지 > 코튼 팬츠",
         "final_price": 34900,
-        "score": 16.66
+        "score": 21.26
       },
       "validation_failures": []
     },
@@ -5382,7 +5388,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 49.68,
+      "latency_ms": 5.82,
       "result_count": 5,
       "top_result": {
         "product_id": "5324355",
@@ -5390,7 +5396,7 @@
         "brand": "무센트",
         "category": "아우터 > 후드 집업",
         "final_price": 59900,
-        "score": 20.76
+        "score": 24.36
       },
       "validation_failures": []
     },
@@ -5403,7 +5409,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 47.77,
+      "latency_ms": 5.84,
       "result_count": 5,
       "top_result": {
         "product_id": "5360472",
@@ -5411,7 +5417,7 @@
         "brand": "스파오",
         "category": "아우터 > 경량 패딩/패딩 베스트 > 경량 패딩",
         "final_price": 29900,
-        "score": 16.66
+        "score": 21.26
       },
       "validation_failures": []
     },
@@ -5424,7 +5430,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 51.42,
+      "latency_ms": 5.95,
       "result_count": 5,
       "top_result": {
         "product_id": "1844582",
@@ -5432,7 +5438,7 @@
         "brand": "브렌슨",
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 32900,
-        "score": 21.26
+        "score": 28.46
       },
       "validation_failures": []
     },
@@ -5445,7 +5451,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 48.83,
+      "latency_ms": 5.48,
       "result_count": 5,
       "top_result": {
         "product_id": "1778404",
@@ -5453,7 +5459,7 @@
         "brand": "토피",
         "category": "아우터 > 후드 집업",
         "final_price": 39150,
-        "score": 20.06
+        "score": 23.66
       },
       "validation_failures": []
     },
@@ -5466,7 +5472,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 51.63,
+      "latency_ms": 5.64,
       "result_count": 5,
       "top_result": {
         "product_id": "3455892",
@@ -5474,7 +5480,7 @@
         "brand": "필루미네이트",
         "category": "아우터 > 나일론/코치 재킷",
         "final_price": 49900,
-        "score": 21.26
+        "score": 25.86
       },
       "validation_failures": []
     },
@@ -5487,7 +5493,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 48.09,
+      "latency_ms": 5.62,
       "result_count": 5,
       "top_result": {
         "product_id": "5386037",
@@ -5495,7 +5501,7 @@
         "brand": "알리스",
         "category": "아우터 > 블루종/MA-1",
         "final_price": 164000,
-        "score": 17.88
+        "score": 27.28
       },
       "validation_failures": []
     },
@@ -5508,7 +5514,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 48.93,
+      "latency_ms": 5.95,
       "result_count": 5,
       "top_result": {
         "product_id": "5404586",
@@ -5516,7 +5522,7 @@
         "brand": "더콜디스트모먼트",
         "category": "바지 > 코튼 팬츠",
         "final_price": 116100,
-        "score": 16.68
+        "score": 21.28
       },
       "validation_failures": []
     },
@@ -5529,7 +5535,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 48.39,
+      "latency_ms": 6.54,
       "result_count": 5,
       "top_result": {
         "product_id": "4747235",
@@ -5537,7 +5543,7 @@
         "brand": "르아르",
         "category": "바지 > 코튼 팬츠",
         "final_price": 38900,
-        "score": 16.68
+        "score": 21.28
       },
       "validation_failures": []
     },
@@ -5550,7 +5556,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 52.8,
+      "latency_ms": 6.01,
       "result_count": 5,
       "top_result": {
         "product_id": "4201442",
@@ -5571,7 +5577,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 48.91,
+      "latency_ms": 6.13,
       "result_count": 5,
       "top_result": {
         "product_id": "5351938",
@@ -5579,7 +5585,7 @@
         "brand": "수아레",
         "category": "상의 > 니트/스웨터",
         "final_price": 49900,
-        "score": 17.88
+        "score": 22.48
       },
       "validation_failures": []
     },
@@ -5592,7 +5598,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 49.86,
+      "latency_ms": 5.54,
       "result_count": 5,
       "top_result": {
         "product_id": "4727091",
@@ -5613,7 +5619,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 54.54,
+      "latency_ms": 5.58,
       "result_count": 5,
       "top_result": {
         "product_id": "3268569",
@@ -5621,7 +5627,7 @@
         "brand": "브론슨",
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 50150,
-        "score": 19.08
+        "score": 23.68
       },
       "validation_failures": []
     },
@@ -5634,7 +5640,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 49.71,
+      "latency_ms": 5.9,
       "result_count": 5,
       "top_result": {
         "product_id": "5432652",
@@ -5642,7 +5648,7 @@
         "brand": "탄산마그네슘",
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 52440,
-        "score": 19.06
+        "score": 23.66
       },
       "validation_failures": []
     },
@@ -5655,7 +5661,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 56.22,
+      "latency_ms": 5.7,
       "result_count": 5,
       "top_result": {
         "product_id": "4556449",
@@ -5663,7 +5669,7 @@
         "brand": "스켈리웩",
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 29900,
-        "score": 21.26
+        "score": 28.46
       },
       "validation_failures": []
     },
@@ -5676,7 +5682,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 48.44,
+      "latency_ms": 5.58,
       "result_count": 5,
       "top_result": {
         "product_id": "2518417",
@@ -5684,7 +5690,7 @@
         "brand": "지프",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 37900,
-        "score": 17.86
+        "score": 22.46
       },
       "validation_failures": []
     },
@@ -5698,7 +5704,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 49.2,
+      "latency_ms": 5.74,
       "result_count": 7,
       "top_result": {
         "product_id": "2086653",
@@ -5706,7 +5712,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 14590,
-        "score": 25.88
+        "score": 30.48
       },
       "validation_failures": []
     },
@@ -5720,7 +5726,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 48.87,
+      "latency_ms": 4.02,
       "result_count": 7,
       "top_result": {
         "product_id": "4989733",
@@ -5728,7 +5734,7 @@
         "brand": "르아르",
         "category": "상의 > 셔츠/블라우스",
         "final_price": 29400,
-        "score": 24.68
+        "score": 29.28
       },
       "validation_failures": []
     },
@@ -5742,7 +5748,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 47.39,
+      "latency_ms": 3.75,
       "result_count": 2,
       "top_result": {
         "product_id": "3467226",
@@ -5750,7 +5756,7 @@
         "brand": "에이지오디",
         "category": "바지 > 데님 팬츠",
         "final_price": 29500,
-        "score": 23.46
+        "score": 28.06
       },
       "validation_failures": []
     },
@@ -5764,7 +5770,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 45.02,
+      "latency_ms": 3.87,
       "result_count": 0,
       "top_result": null,
       "validation_failures": []
@@ -5779,7 +5785,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.84,
+      "latency_ms": 3.71,
       "result_count": 5,
       "top_result": {
         "product_id": "4319523",
@@ -5787,7 +5793,7 @@
         "brand": "토피",
         "category": "바지 > 코튼 팬츠",
         "final_price": 19900,
-        "score": 23.46
+        "score": 28.06
       },
       "validation_failures": []
     },
@@ -5801,7 +5807,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 47.36,
+      "latency_ms": 4.41,
       "result_count": 7,
       "top_result": {
         "product_id": "4939569",
@@ -5809,7 +5815,7 @@
         "brand": "언탭트 스튜디오",
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 24900,
-        "score": 28.08
+        "score": 36.28
       },
       "validation_failures": []
     },
@@ -5823,7 +5829,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.56,
+      "latency_ms": 3.76,
       "result_count": 7,
       "top_result": {
         "product_id": "4886714",
@@ -5831,7 +5837,7 @@
         "brand": "드릭스",
         "category": "스포츠/레저 > 상의 > 긴소매 티셔츠",
         "final_price": 25900,
-        "score": 25.88
+        "score": 30.48
       },
       "validation_failures": []
     },
@@ -5845,7 +5851,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 45.16,
+      "latency_ms": 3.83,
       "result_count": 2,
       "top_result": {
         "product_id": "5355364",
@@ -5853,7 +5859,7 @@
         "brand": "미쏘",
         "category": "아우터 > 후드 집업",
         "final_price": 29900,
-        "score": 28.06
+        "score": 32.66
       },
       "validation_failures": []
     },
@@ -5867,7 +5873,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.23,
+      "latency_ms": 3.8,
       "result_count": 5,
       "top_result": {
         "product_id": "3451036",
@@ -5875,7 +5881,7 @@
         "brand": "인템포무드",
         "category": "상의 > 니트/스웨터",
         "final_price": 28500,
-        "score": 24.68
+        "score": 29.28
       },
       "validation_failures": []
     },
@@ -5889,7 +5895,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 45.43,
+      "latency_ms": 4.18,
       "result_count": 5,
       "top_result": {
         "product_id": "750908",
@@ -5897,7 +5903,7 @@
         "brand": "후러브스아트",
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 29700,
-        "score": 28.06
+        "score": 32.66
       },
       "validation_failures": []
     },
@@ -5911,7 +5917,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 43.88,
+      "latency_ms": 4.17,
       "result_count": 7,
       "top_result": {
         "product_id": "2574822",
@@ -5919,7 +5925,7 @@
         "brand": "브렌슨",
         "category": "바지 > 숏 팬츠",
         "final_price": 26900,
-        "score": 31.26
+        "score": 34.86
       },
       "validation_failures": []
     },
@@ -5933,7 +5939,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 41.4,
+      "latency_ms": 3.14,
       "result_count": 2,
       "top_result": {
         "product_id": "5795972",
@@ -5955,7 +5961,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 45,
+      "latency_ms": 4.47,
       "result_count": 7,
       "top_result": {
         "product_id": "2086653",
@@ -5963,7 +5969,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 14590,
-        "score": 25.88
+        "score": 30.48
       },
       "validation_failures": []
     },
@@ -5977,7 +5983,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.61,
+      "latency_ms": 3.96,
       "result_count": 7,
       "top_result": {
         "product_id": "3880012",
@@ -5985,7 +5991,7 @@
         "brand": "토마스모어",
         "category": "상의 > 셔츠/블라우스",
         "final_price": 47760,
-        "score": 24.68
+        "score": 29.28
       },
       "validation_failures": []
     },
@@ -5999,7 +6005,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 45.23,
+      "latency_ms": 3.7,
       "result_count": 7,
       "top_result": {
         "product_id": "3663072",
@@ -6007,7 +6013,7 @@
         "brand": "토피",
         "category": "바지 > 데님 팬츠",
         "final_price": 39200,
-        "score": 23.48
+        "score": 28.08
       },
       "validation_failures": []
     },
@@ -6021,7 +6027,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 50.16,
+      "latency_ms": 4.04,
       "result_count": 5,
       "top_result": {
         "product_id": "4225425",
@@ -6043,7 +6049,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 45.09,
+      "latency_ms": 3.68,
       "result_count": 7,
       "top_result": {
         "product_id": "1627892",
@@ -6051,7 +6057,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 코튼 팬츠",
         "final_price": 44890,
-        "score": 23.48
+        "score": 28.08
       },
       "validation_failures": []
     },
@@ -6065,7 +6071,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 51.12,
+      "latency_ms": 4.65,
       "result_count": 7,
       "top_result": {
         "product_id": "1551840",
@@ -6073,7 +6079,7 @@
         "brand": "제로",
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 31200,
-        "score": 28.08
+        "score": 36.28
       },
       "validation_failures": []
     },
@@ -6087,7 +6093,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.34,
+      "latency_ms": 3.82,
       "result_count": 7,
       "top_result": {
         "product_id": "2149254",
@@ -6095,7 +6101,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 31390,
-        "score": 25.88
+        "score": 30.48
       },
       "validation_failures": []
     },
@@ -6109,7 +6115,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 48.08,
+      "latency_ms": 3.75,
       "result_count": 7,
       "top_result": {
         "product_id": "2273084",
@@ -6117,7 +6123,7 @@
         "brand": "후아유",
         "category": "아우터 > 후드 집업",
         "final_price": 48930,
-        "score": 28.08
+        "score": 32.68
       },
       "validation_failures": []
     },
@@ -6131,7 +6137,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 46.54,
+      "latency_ms": 3.7,
       "result_count": 7,
       "top_result": {
         "product_id": "3451036",
@@ -6139,7 +6145,7 @@
         "brand": "인템포무드",
         "category": "상의 > 니트/스웨터",
         "final_price": 28500,
-        "score": 24.68
+        "score": 29.28
       },
       "validation_failures": []
     },
@@ -6153,7 +6159,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 46.65,
+      "latency_ms": 3.96,
       "result_count": 7,
       "top_result": {
         "product_id": "1168906",
@@ -6161,7 +6167,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 45900,
-        "score": 28.08
+        "score": 32.68
       },
       "validation_failures": []
     },
@@ -6175,7 +6181,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 45.18,
+      "latency_ms": 3.8,
       "result_count": 7,
       "top_result": {
         "product_id": "6224315",
@@ -6183,7 +6189,7 @@
         "brand": "고스트리퍼블릭",
         "category": "바지 > 숏 팬츠",
         "final_price": 32900,
-        "score": 31.28
+        "score": 34.88
       },
       "validation_failures": []
     },
@@ -6197,7 +6203,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 43.79,
+      "latency_ms": 3.1,
       "result_count": 7,
       "top_result": {
         "product_id": "3434621",
@@ -6219,7 +6225,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 45.07,
+      "latency_ms": 4.17,
       "result_count": 7,
       "top_result": {
         "product_id": "2086653",
@@ -6227,7 +6233,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 14590,
-        "score": 25.88
+        "score": 30.48
       },
       "validation_failures": []
     },
@@ -6241,7 +6247,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.81,
+      "latency_ms": 3.76,
       "result_count": 7,
       "top_result": {
         "product_id": "3562068",
@@ -6249,7 +6255,7 @@
         "brand": "유니온블루",
         "category": "상의 > 셔츠/블라우스",
         "final_price": 77900,
-        "score": 24.7
+        "score": 29.3
       },
       "validation_failures": []
     },
@@ -6263,7 +6269,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 45.06,
+      "latency_ms": 3.7,
       "result_count": 7,
       "top_result": {
         "product_id": "3663072",
@@ -6271,7 +6277,7 @@
         "brand": "토피",
         "category": "바지 > 데님 팬츠",
         "final_price": 39200,
-        "score": 23.48
+        "score": 28.08
       },
       "validation_failures": []
     },
@@ -6285,7 +6291,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 49.38,
+      "latency_ms": 3.88,
       "result_count": 7,
       "top_result": {
         "product_id": "2440110",
@@ -6307,7 +6313,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 49.12,
+      "latency_ms": 3.81,
       "result_count": 7,
       "top_result": {
         "product_id": "1627892",
@@ -6315,7 +6321,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 코튼 팬츠",
         "final_price": 44890,
-        "score": 23.48
+        "score": 28.08
       },
       "validation_failures": []
     },
@@ -6329,7 +6335,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 49.34,
+      "latency_ms": 4.46,
       "result_count": 7,
       "top_result": {
         "product_id": "1551840",
@@ -6337,7 +6343,7 @@
         "brand": "제로",
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 31200,
-        "score": 28.08
+        "score": 36.28
       },
       "validation_failures": []
     },
@@ -6351,7 +6357,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 48.23,
+      "latency_ms": 3.85,
       "result_count": 7,
       "top_result": {
         "product_id": "2149254",
@@ -6359,7 +6365,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 31390,
-        "score": 25.88
+        "score": 30.48
       },
       "validation_failures": []
     },
@@ -6373,7 +6379,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 49.05,
+      "latency_ms": 3.85,
       "result_count": 7,
       "top_result": {
         "product_id": "2273084",
@@ -6381,7 +6387,7 @@
         "brand": "후아유",
         "category": "아우터 > 후드 집업",
         "final_price": 48930,
-        "score": 28.08
+        "score": 32.68
       },
       "validation_failures": []
     },
@@ -6395,7 +6401,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 49.38,
+      "latency_ms": 3.68,
       "result_count": 7,
       "top_result": {
         "product_id": "2702397",
@@ -6403,7 +6409,7 @@
         "brand": "키뮤어",
         "category": "상의 > 니트/스웨터",
         "final_price": 56050,
-        "score": 24.68
+        "score": 29.28
       },
       "validation_failures": []
     },
@@ -6417,7 +6423,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 58.23,
+      "latency_ms": 3.91,
       "result_count": 7,
       "top_result": {
         "product_id": "1168906",
@@ -6425,7 +6431,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 45900,
-        "score": 28.08
+        "score": 32.68
       },
       "validation_failures": []
     },
@@ -6439,7 +6445,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 46.25,
+      "latency_ms": 4.62,
       "result_count": 7,
       "top_result": {
         "product_id": "6224315",
@@ -6447,7 +6453,7 @@
         "brand": "고스트리퍼블릭",
         "category": "바지 > 숏 팬츠",
         "final_price": 32900,
-        "score": 31.28
+        "score": 34.88
       },
       "validation_failures": []
     },
@@ -6461,7 +6467,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 43.09,
+      "latency_ms": 3.39,
       "result_count": 7,
       "top_result": {
         "product_id": "3434621",
@@ -6483,7 +6489,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 46.42,
+      "latency_ms": 4.36,
       "result_count": 7,
       "top_result": {
         "product_id": "2086653",
@@ -6491,7 +6497,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 14590,
-        "score": 25.88
+        "score": 30.48
       },
       "validation_failures": []
     },
@@ -6505,7 +6511,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 45.08,
+      "latency_ms": 3.78,
       "result_count": 7,
       "top_result": {
         "product_id": "3562068",
@@ -6513,7 +6519,7 @@
         "brand": "유니온블루",
         "category": "상의 > 셔츠/블라우스",
         "final_price": 77900,
-        "score": 24.7
+        "score": 29.3
       },
       "validation_failures": []
     },
@@ -6527,7 +6533,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.86,
+      "latency_ms": 3.7,
       "result_count": 7,
       "top_result": {
         "product_id": "3663072",
@@ -6535,7 +6541,7 @@
         "brand": "토피",
         "category": "바지 > 데님 팬츠",
         "final_price": 39200,
-        "score": 23.48
+        "score": 28.08
       },
       "validation_failures": []
     },
@@ -6549,7 +6555,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 45.23,
+      "latency_ms": 4.44,
       "result_count": 7,
       "top_result": {
         "product_id": "2440110",
@@ -6571,7 +6577,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.3,
+      "latency_ms": 3.6,
       "result_count": 7,
       "top_result": {
         "product_id": "1627892",
@@ -6579,7 +6585,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 코튼 팬츠",
         "final_price": 44890,
-        "score": 23.48
+        "score": 28.08
       },
       "validation_failures": []
     },
@@ -6593,7 +6599,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 48.23,
+      "latency_ms": 4.29,
       "result_count": 7,
       "top_result": {
         "product_id": "1551840",
@@ -6601,7 +6607,7 @@
         "brand": "제로",
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 31200,
-        "score": 28.08
+        "score": 36.28
       },
       "validation_failures": []
     },
@@ -6615,7 +6621,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 51.93,
+      "latency_ms": 3.59,
       "result_count": 7,
       "top_result": {
         "product_id": "2149254",
@@ -6623,7 +6629,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 31390,
-        "score": 25.88
+        "score": 30.48
       },
       "validation_failures": []
     },
@@ -6637,7 +6643,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 52.02,
+      "latency_ms": 3.96,
       "result_count": 7,
       "top_result": {
         "product_id": "2273084",
@@ -6645,7 +6651,7 @@
         "brand": "후아유",
         "category": "아우터 > 후드 집업",
         "final_price": 48930,
-        "score": 28.08
+        "score": 32.68
       },
       "validation_failures": []
     },
@@ -6659,7 +6665,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 51.53,
+      "latency_ms": 3.64,
       "result_count": 7,
       "top_result": {
         "product_id": "2702397",
@@ -6667,7 +6673,7 @@
         "brand": "키뮤어",
         "category": "상의 > 니트/스웨터",
         "final_price": 56050,
-        "score": 24.68
+        "score": 29.28
       },
       "validation_failures": []
     },
@@ -6681,7 +6687,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 46.98,
+      "latency_ms": 3.87,
       "result_count": 7,
       "top_result": {
         "product_id": "1168906",
@@ -6689,7 +6695,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 45900,
-        "score": 28.08
+        "score": 32.68
       },
       "validation_failures": []
     },
@@ -6703,7 +6709,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.51,
+      "latency_ms": 3.62,
       "result_count": 7,
       "top_result": {
         "product_id": "6224315",
@@ -6711,7 +6717,7 @@
         "brand": "고스트리퍼블릭",
         "category": "바지 > 숏 팬츠",
         "final_price": 32900,
-        "score": 31.28
+        "score": 34.88
       },
       "validation_failures": []
     },
@@ -6725,7 +6731,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 42.23,
+      "latency_ms": 3.01,
       "result_count": 7,
       "top_result": {
         "product_id": "3434621",
@@ -6747,7 +6753,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.95,
+      "latency_ms": 3.99,
       "result_count": 7,
       "top_result": {
         "product_id": "2086653",
@@ -6755,7 +6761,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 반소매 티셔츠",
         "final_price": 14590,
-        "score": 25.88
+        "score": 30.48
       },
       "validation_failures": []
     },
@@ -6769,7 +6775,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.79,
+      "latency_ms": 3.58,
       "result_count": 7,
       "top_result": {
         "product_id": "3562068",
@@ -6777,7 +6783,7 @@
         "brand": "유니온블루",
         "category": "상의 > 셔츠/블라우스",
         "final_price": 77900,
-        "score": 24.7
+        "score": 29.3
       },
       "validation_failures": []
     },
@@ -6791,7 +6797,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 43.87,
+      "latency_ms": 3.51,
       "result_count": 7,
       "top_result": {
         "product_id": "3663072",
@@ -6799,7 +6805,7 @@
         "brand": "토피",
         "category": "바지 > 데님 팬츠",
         "final_price": 39200,
-        "score": 23.48
+        "score": 28.08
       },
       "validation_failures": []
     },
@@ -6813,7 +6819,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.29,
+      "latency_ms": 3.76,
       "result_count": 7,
       "top_result": {
         "product_id": "1163169",
@@ -6835,7 +6841,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.22,
+      "latency_ms": 3.42,
       "result_count": 7,
       "top_result": {
         "product_id": "1627892",
@@ -6843,7 +6849,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 코튼 팬츠",
         "final_price": 44890,
-        "score": 23.48
+        "score": 28.08
       },
       "validation_failures": []
     },
@@ -6857,7 +6863,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 47.85,
+      "latency_ms": 4.13,
       "result_count": 7,
       "top_result": {
         "product_id": "1551840",
@@ -6865,7 +6871,7 @@
         "brand": "제로",
         "category": "바지 > 트레이닝/조거 팬츠",
         "final_price": 31200,
-        "score": 28.08
+        "score": 36.28
       },
       "validation_failures": []
     },
@@ -6879,7 +6885,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.03,
+      "latency_ms": 3.64,
       "result_count": 7,
       "top_result": {
         "product_id": "2149254",
@@ -6887,7 +6893,7 @@
         "brand": "무신사 스탠다드",
         "category": "상의 > 긴소매 티셔츠",
         "final_price": 31390,
-        "score": 25.88
+        "score": 30.48
       },
       "validation_failures": []
     },
@@ -6901,7 +6907,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 46.54,
+      "latency_ms": 3.88,
       "result_count": 7,
       "top_result": {
         "product_id": "2273084",
@@ -6909,7 +6915,7 @@
         "brand": "후아유",
         "category": "아우터 > 후드 집업",
         "final_price": 48930,
-        "score": 28.08
+        "score": 32.68
       },
       "validation_failures": []
     },
@@ -6923,7 +6929,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 47.17,
+      "latency_ms": 3.45,
       "result_count": 7,
       "top_result": {
         "product_id": "2702397",
@@ -6931,7 +6937,7 @@
         "brand": "키뮤어",
         "category": "상의 > 니트/스웨터",
         "final_price": 56050,
-        "score": 24.68
+        "score": 29.28
       },
       "validation_failures": []
     },
@@ -6945,7 +6951,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 51.93,
+      "latency_ms": 3.71,
       "result_count": 7,
       "top_result": {
         "product_id": "1168906",
@@ -6953,7 +6959,7 @@
         "brand": "무신사 스탠다드",
         "category": "바지 > 슈트 팬츠/슬랙스",
         "final_price": 45900,
-        "score": 28.08
+        "score": 32.68
       },
       "validation_failures": []
     },
@@ -6967,7 +6973,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 51.12,
+      "latency_ms": 3.44,
       "result_count": 7,
       "top_result": {
         "product_id": "6224315",
@@ -6975,7 +6981,7 @@
         "brand": "고스트리퍼블릭",
         "category": "바지 > 숏 팬츠",
         "final_price": 32900,
-        "score": 31.28
+        "score": 34.88
       },
       "validation_failures": []
     },
@@ -6989,7 +6995,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 44.25,
+      "latency_ms": 2.94,
       "result_count": 7,
       "top_result": {
         "product_id": "3434621",

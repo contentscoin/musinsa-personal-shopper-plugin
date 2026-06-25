@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-06-25T02:56:22.744Z",
-  "completed_at": "2026-06-25T02:56:23.014Z",
+  "started_at": "2026-06-25T03:35:12.480Z",
+  "completed_at": "2026-06-25T03:35:12.636Z",
   "base_url": "http://127.0.0.1:8787",
   "public_base_url": "http://localhost:8787",
   "summary": {
@@ -8,7 +8,7 @@
     "failure_count": 0,
     "products_loaded": 2050,
     "openapi_paths": 17,
-    "schemas": 12,
+    "schemas": 13,
     "operation_ids": 18,
     "unresolved_refs": 0
   },
@@ -20,7 +20,7 @@
         "ok": true,
         "products_loaded": 2050
       },
-      "latency_ms": 41.99
+      "latency_ms": 28.13
     },
     "manifest": {
       "status": 200,
@@ -43,7 +43,7 @@
         "contact_email": "devnull@example.com",
         "legal_info_url": "http://localhost:8787/analytics/notice"
       },
-      "latency_ms": 12.35
+      "latency_ms": 2.81
     },
     "openapi": {
       "status": 200,
@@ -69,6 +69,7 @@
       ],
       "schemas": [
         "ProductSearchRequest",
+        "ProductSearchResponse",
         "CustomerProfile",
         "RecommendRequest",
         "ParsedIntent",
@@ -101,7 +102,7 @@
         "getAnalyticsInsights",
         "exportAnalyticsSummary"
       ],
-      "latency_ms": 2.48
+      "latency_ms": 1.53
     },
     "legal_notice": {
       "status": 200,
@@ -135,34 +136,30 @@
         ],
         "owner_visibility": "Pack owner can view sanitized event-level rows plus aggregate statistics."
       },
-      "latency_ms": 1.17
+      "latency_ms": 0.79
     },
     "logo": {
       "status": 200,
       "content_type": "image/png",
       "body_bytes": 0,
-      "latency_ms": 2.23
+      "latency_ms": 0.69
     },
     "recommend_runtime": {
       "status": 200,
       "result_count": 3,
       "top_product": "3783092",
       "has_score_breakdown": true,
-      "latency_ms": 146.87
+      "latency_ms": 64.35
     },
     "search_runtime": {
       "status": 200,
       "result_count": 3,
       "top_product": "1163169",
-      "latency_ms": 58.23
+      "latency_ms": 51.96
     }
   },
   "failures": [],
   "server_output": [
-    "  address: '::',",
-    "  port: 8787",
-    "}",
-    "",
-    "Node.js v22.22.3"
+    ""
   ]
 }

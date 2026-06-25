@@ -13,7 +13,7 @@ export const DEFAULT_MAX_JSON_BYTES = Number(process.env.MAX_JSON_BODY_BYTES ?? 
 export function corsHeaders(extra = {}) {
   return {
     'access-control-allow-origin': process.env.CORS_ALLOW_ORIGIN ?? '*',
-    'access-control-allow-methods': 'GET,POST,DELETE,OPTIONS',
+    'access-control-allow-methods': 'GET,HEAD,POST,DELETE,OPTIONS',
     'access-control-allow-headers': 'content-type,authorization,x-requested-with',
     'access-control-max-age': '86400',
     ...extra

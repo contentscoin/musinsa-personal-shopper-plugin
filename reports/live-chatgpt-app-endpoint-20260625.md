@@ -6,10 +6,12 @@
 https://musinsa-personal-shopper-plugin.vercel.app
 ```
 
-## ChatGPT Actions import URL
+## ChatGPT Plugin App registration endpoints
 
 ```text
-https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
+Plugin app base URL: https://musinsa-personal-shopper-plugin.vercel.app
+Plugin manifest URL: https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json
+OpenAPI URL: https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
 ```
 
 ## Required plugin/app URLs
@@ -17,8 +19,8 @@ https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
 | URL | Purpose | Verified |
 |---|---|---:|
 | `https://musinsa-personal-shopper-plugin.vercel.app/health` | health/product count | yes |
-| `https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml` | GPT Actions OpenAPI schema | yes |
-| `https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json` | legacy plugin manifest | yes |
+| `https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml` | OpenAPI schema referenced by manifest | yes |
+| `https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json` | Plugin App manifest | yes |
 | `https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice` | privacy/legal notice | yes |
 | `https://musinsa-personal-shopper-plugin.vercel.app/logo.png` | plugin logo | yes |
 | `https://musinsa-personal-shopper-plugin.vercel.app/dashboard` | live/fallback analytics dashboard | yes |
@@ -75,19 +77,21 @@ Local verification before deploy:
 ```text
 node --check src/server.mjs
 node --check api/index.mjs
-npm test => 30 pass / 0 fail
+npm test => 31 pass / 0 fail
 ```
 
-## ChatGPT registration steps
+## ChatGPT Plugin App registration steps
 
-1. Open ChatGPT GPT Builder.
-2. Configure → Actions → Create new action.
-3. Authentication: None.
-4. Import schema URL:
+1. Open the ChatGPT Plugin App registration flow.
+2. If the form asks for App URL / Website URL / Domain / Base URL, submit:
+   `https://musinsa-personal-shopper-plugin.vercel.app`
+3. If the form asks for Manifest URL, submit:
+   `https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json`
+4. Confirm the manifest `api.url` points to:
    `https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml`
 5. Set privacy/legal URL if prompted:
    `https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice`
-6. Preview test prompts:
+6. Registration smoke-test prompts:
    - `서버 상태 확인해줘.`
    - `175cm 88kg이고 안 끼는 릴렉스핏으로 10만원 이하 옷 추천해줘.`
    - `추천한 후보 2개 비교해줘.`

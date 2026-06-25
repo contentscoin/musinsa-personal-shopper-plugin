@@ -26,24 +26,23 @@
 
 ## ChatGPT 앱/플러그인 등록 바로가기
 
-ChatGPT Custom GPT / GPT Actions에 등록하는 절차는 README 안에서도 바로 확인할 수 있고, 전체 매뉴얼은 별도 문서로 정리되어 있습니다.
+ChatGPT Plugin App으로 등록하는 절차는 README 안에서도 바로 확인할 수 있고, 전체 매뉴얼은 별도 문서로 정리되어 있습니다.
 
 | 목적 | 위치 |
 |---|---|
 | 전체 등록 매뉴얼 | [`docs/chatgpt-app-registration.md`](docs/chatgpt-app-registration.md) |
-| README 내 요약 절차 | [6. 빠른 실행 → ChatGPT 앱/GPT Actions 등록](#chatgpt-앱gpt-actions-등록) |
+| README 내 요약 절차 | [ChatGPT Plugin App 등록](../README.md#chatgpt-plugin-app-등록) |
 | OpenAPI schema | [`openapi.yaml`](openapi.yaml) / `GET /openapi.yaml` |
-| Legacy plugin manifest | [`.well-known/ai-plugin.json`](.well-known/ai-plugin.json) / `GET /.well-known/ai-plugin.json` |
+| Plugin app manifest | [`.well-known/ai-plugin.json`](../.well-known/ai-plugin.json) / `GET /.well-known/ai-plugin.json` |
 | 개인정보/Legal URL | `GET /analytics/notice` |
 
 핵심 등록 흐름:
 
 ```text
 public HTTPS endpoint 준비
-  -> openapi.yaml servers.url을 public host로 변경
   -> .well-known/ai-plugin.json URL들을 public host로 변경
-  -> ChatGPT GPT Builder > Configure > Actions
-  -> https://YOUR_PUBLIC_HOST/openapi.yaml import
+  -> manifest의 api.url이 openapi.yaml public URL을 가리키는지 확인
+  -> Plugin App 등록 화면에 base URL 또는 manifest URL 제출
   -> Authentication: None
   -> Preview에서 health/search/recommend/compare 테스트
 ```
@@ -264,9 +263,9 @@ recommend
   -> analytics summary
 ```
 
-### ChatGPT 앱/GPT Actions 등록
+### ChatGPT Plugin App 등록
 
-ChatGPT에 이 repo를 앱/액션으로 등록하려면 먼저 public HTTPS endpoint를 준비하고, `openapi.yaml`의 `servers.url`과 `.well-known/ai-plugin.json`의 URL들을 public host로 바꾼 뒤 GPT Builder의 **Actions**에서 OpenAPI schema를 import합니다.
+ChatGPT에 이 repo를 Plugin App으로 등록하려면 public HTTPS endpoint를 준비하고, `.well-known/ai-plugin.json`이 public host에서 열리며 manifest의 `api.url`이 `openapi.yaml` public URL을 가리키게 합니다. 등록 화면에는 base URL 또는 manifest URL을 제출합니다.
 
 자세한 절차는 [`docs/chatgpt-app-registration.md`](docs/chatgpt-app-registration.md)를 참고하세요.
 
@@ -309,7 +308,7 @@ curl -s https://YOUR_PUBLIC_HOST/analytics/notice
 | `scripts/crawl-musinsa-products.mjs` | 공개 상품 크롤러 |
 | `scripts/export-personal-shopper-data-ontology.mjs` | analytics ontology export |
 | `SUBMISSION.md` | 제출용 한국어 문서 |
-| `docs/chatgpt-app-registration.md` | ChatGPT Custom GPT / Actions 등록 매뉴얼 |
+| `docs/chatgpt-app-registration.md` | ChatGPT Plugin App 등록 매뉴얼 |
 | `docs/pitch-summary.md` | 한 장짜리 pitch summary |
 | `docs/demo-scenarios.md` | 심사/발표용 demo scenarios |
 | `docs/ontology/*.md` | OpenCrab-ready ontology artifacts |

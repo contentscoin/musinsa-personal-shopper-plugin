@@ -39,6 +39,7 @@ export async function handleRequest(req, res) {
     const url = new URL(req.url, `http://${req.headers.host}`);
     if (req.method === 'OPTIONS') return empty(res, 204);
     enforceKnownRouteMethod(url.pathname, req.method);
+    if (req.method === 'HEAD') return head(res, url.pathname);
     if (req.method === 'GET' && url.pathname === '/health') {
       const lexicon = getCatalogLexicon(products);
       return json(res, { ok: true, products_loaded: products.length, search_index: { enabled: true, brands: lexicon.brands.length, categories: lexicon.categories.length, terms: lexicon.terms.length } });
@@ -118,8 +119,10 @@ async function body(req) {
 
 function enforceKnownRouteMethod(pathname, method) {
   const methods = ROUTES.get(pathname);
-  if (methods && !methods.includes(method)) {
-    throw new HttpError(405, 'method_not_allowed', `Method ${method} is not allowed for ${pathname}`, { allowed_methods: methods });
+  const effectiveMethod = method === 'HEAD' && methods?.includes('GET') ? 'GET' : method;
+  if (methods && !methods.includes(effectiveMethod)) {
+    const allowedMethods = methods.includes('GET') ? [...methods, 'HEAD'] : methods;
+    throw new HttpError(405, 'method_not_allowed', `Method ${method} is not allowed for ${pathname}`, { allowed_methods: allowedMethods });
   }
 }
 
@@ -136,6 +139,30 @@ function text(res, payload, contentType, status = 200) {
 function binary(res, payload, contentType, status = 200) {
   res.writeHead(status, corsHeaders({ 'content-type': contentType, 'content-length': String(payload.length) }));
   res.end(payload);
+}
+
+function head(res, pathname) {
+  const contentTypes = {
+    '/health': 'application/json; charset=utf-8',
+    '/openapi.yaml': 'application/yaml; charset=utf-8',
+    '/.well-known/ai-plugin.json': 'application/json; charset=utf-8',
+    '/dashboard': 'text/html; charset=utf-8',
+    '/dashboard.html': 'text/html; charset=utf-8',
+    '/logo.png': 'image/png',
+    '/analytics/notice': 'application/json; charset=utf-8',
+    '/analytics/summary': 'application/json; charset=utf-8',
+    '/analytics/funnel': 'application/json; charset=utf-8',
+    '/analytics/products': 'application/json; charset=utf-8',
+    '/analytics/queries': 'application/json; charset=utf-8',
+    '/analytics/intents': 'application/json; charset=utf-8',
+    '/analytics/insights': 'application/json; charset=utf-8'
+  };
+  const contentType = contentTypes[pathname];
+  if (!contentType) return json(res, { error: { code: 'not_found', message: 'Not found' } }, 404);
+  const headers = { 'content-type': contentType };
+  if (pathname === '/logo.png') headers['content-length'] = String(LOGO_PNG.length);
+  res.writeHead(200, corsHeaders(headers));
+  res.end();
 }
 
 function empty(res, status = 204) {

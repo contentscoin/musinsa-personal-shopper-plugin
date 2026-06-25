@@ -1,6 +1,6 @@
 # MUSINSA Personal Shopper Plugin
 
-무신사 상품 데이터를 OpenAPI/ChatGPT Actions로 연결해 **자연어 상품 검색, 추천, 비교, shortlist, 비식별 analytics, OpenCrab 온톨로지 기반 provenance 검색**을 제공하는 AI commerce plugin prototype입니다.
+무신사 상품 데이터를 **ChatGPT Plugin App / OpenAPI plugin endpoint**로 연결해 **자연어 상품 검색, 추천, 비교, shortlist, 비식별 analytics, OpenCrab 온톨로지 기반 provenance 검색**을 제공하는 AI commerce plugin prototype입니다.
 
 ## 핵심 요약
 
@@ -13,7 +13,7 @@
 | ChatGPT 등록 매뉴얼 | [`docs/chatgpt-app-registration.md`](docs/chatgpt-app-registration.md) |
 | OpenCrab product pack | `0b3c79f7-1861-4466-ba20-2cbaa736de66` v3.8.0 |
 | Hybrid retrieval gate | 60/60 pass, provenance coverage 60/60 |
-| Tests | 30 pass / 0 fail |
+| Tests | 31 pass / 0 fail |
 | Owner dashboard | https://owner-dashboard-snowy.vercel.app |
 | 상세 기술 문서 | [`docs/project-details.md`](docs/project-details.md) |
 
@@ -48,36 +48,34 @@ curl -s http://localhost:8787/dashboard
 예상 테스트 결과:
 
 ```text
-# tests 30
-# pass 30
+# tests 31
+# pass 31
 # fail 0
 ```
 
-## ChatGPT 앱 / GPT Actions 등록
+## ChatGPT Plugin App 등록
 
-ChatGPT에 연결할 public HTTPS endpoint는 이미 live 상태입니다.
-
-```text
-https://musinsa-personal-shopper-plugin.vercel.app
-```
-
-GPT Builder의 **Actions**에는 아래 OpenAPI schema URL을 import하면 됩니다.
+ChatGPT의 **플러그인 앱 등록**에는 GPT Builder Actions URL이 아니라, public plugin app endpoint를 기준으로 제출합니다.
 
 ```text
-https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
+Plugin app base URL: https://musinsa-personal-shopper-plugin.vercel.app
+Plugin manifest URL: https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json
+OpenAPI URL: https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
 ```
+
+등록 화면에서 단일 endpoint/domain을 요구하면 **base URL**을, manifest URL을 요구하면 **`/.well-known/ai-plugin.json`**을 넣습니다. OpenAPI URL은 manifest의 `api.url`에서 자동 참조됩니다.
 
 필수 URL:
 
 ```text
 https://musinsa-personal-shopper-plugin.vercel.app/health
-https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
 https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json
+https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
 https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice
 https://musinsa-personal-shopper-plugin.vercel.app/logo.png
 ```
 
-전체 등록 절차, GPT Instructions 예시, 테스트 프롬프트, 실패 대응표는 아래 문서에 정리했습니다.
+전체 Plugin App 등록 절차, 제출 필드, 테스트 프롬프트, 실패 대응표는 아래 문서에 정리했습니다.
 
 - [`docs/chatgpt-app-registration.md`](docs/chatgpt-app-registration.md)
 
@@ -87,7 +85,7 @@ https://musinsa-personal-shopper-plugin.vercel.app/logo.png
 |---|---|---|
 | GET | `/health` | 서버 상태/상품 수 확인 |
 | GET | `/openapi.yaml` | OpenAPI schema |
-| GET | `/.well-known/ai-plugin.json` | ChatGPT-style legacy plugin manifest |
+| GET | `/.well-known/ai-plugin.json` | ChatGPT Plugin App manifest |
 | POST | `/products/search` | 자연어/필터 기반 상품 검색 |
 | GET | `/products/:productId` | 상품 상세 조회 |
 | POST | `/products/:productId/reviews/summary` | 리뷰/핏/소재 인사이트 |
@@ -142,7 +140,7 @@ npm run test:hybrid-opencrab
 
 | Gate | 결과 |
 |---|---:|
-| Unit tests | 30/30 pass |
+| Unit tests | 31/31 pass |
 | Product search mass test | 320/320 pass |
 | Hybrid OpenCrab quality gate | 60/60 pass |
 | OpenAPI/manifest connection | 0 failures |
@@ -186,7 +184,7 @@ OpenCrab ontology packs
 
 | 문서 | 내용 |
 |---|---|
-| [`docs/chatgpt-app-registration.md`](docs/chatgpt-app-registration.md) | ChatGPT Custom GPT / Actions 등록 매뉴얼 |
+| [`docs/chatgpt-app-registration.md`](docs/chatgpt-app-registration.md) | ChatGPT Plugin App 등록 매뉴얼 |
 | [`docs/project-details.md`](docs/project-details.md) | 아키텍처/API/OpenCrab/analytics/dashboard 상세 설명 |
 | [`SUBMISSION.md`](SUBMISSION.md) | 제출용 한국어 문서 |
 | [`docs/demo-scenarios.md`](docs/demo-scenarios.md) | 심사/발표용 demo scenarios |
@@ -204,7 +202,7 @@ OpenCrab ontology packs
 | `src/personalShopper.mjs` | intent parsing, 추천, 비교, 상품 인사이트 |
 | `src/telemetryStore.mjs` | 개인정보 제외 telemetry sanitizer/summary/dashboard |
 | `openapi.yaml` | OpenAPI 3.1 API contract |
-| `.well-known/ai-plugin.json` | ChatGPT-style manifest |
+| `.well-known/ai-plugin.json` | ChatGPT Plugin App manifest |
 | `scripts/opencrab-retrieval-bridge.mjs` | OpenCrab evidence bridge |
 | `scripts/opencrab-live-command.mjs` | OpenCrab project_run command adapter |
 | `owner-dashboard/` | Vercel + Convex owner analytics dashboard |

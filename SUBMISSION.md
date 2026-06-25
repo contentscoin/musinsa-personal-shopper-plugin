@@ -243,13 +243,17 @@ http://localhost:8787/openapi.yaml
 http://localhost:8787/.well-known/ai-plugin.json
 ```
 
-## 15. ChatGPT 앱/GPT Actions 등록
+## 15. ChatGPT Plugin App 등록
 
-ChatGPT 등록은 Custom GPT Builder의 **Actions**에서 live OpenAPI endpoint를 import하는 방식으로 진행합니다.
+ChatGPT 플러그인 앱 등록은 GPT Builder Actions import가 아니라, live plugin endpoint/manifest 기준으로 진행합니다.
 
 ```text
-https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
+Plugin app base URL: https://musinsa-personal-shopper-plugin.vercel.app
+Plugin manifest URL: https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json
+OpenAPI URL: https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
 ```
+
+등록 화면에서 단일 endpoint/domain을 요구하면 base URL을, manifest URL을 요구하면 `/.well-known/ai-plugin.json`을 제출합니다. OpenAPI URL은 manifest의 `api.url`에서 연결됩니다.
 
 필수 public endpoints:
 
@@ -261,7 +265,7 @@ https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice
 https://musinsa-personal-shopper-plugin.vercel.app/logo.png
 ```
 
-등록 절차, GPT Instructions 예시, Action 테스트 프롬프트, 실패 대응표는 아래 문서에 정리했습니다.
+등록 절차, 제출 필드, 테스트 프롬프트, 실패 대응표는 아래 문서에 정리했습니다.
 
 ```text
 docs/chatgpt-app-registration.md

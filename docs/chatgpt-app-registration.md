@@ -1,154 +1,79 @@
-# ChatGPT 앱 등록 / GPT Actions 연결 매뉴얼
+# ChatGPT Plugin App 등록 매뉴얼
 
-이 문서는 **MUSINSA Personal Shopper Plugin**을 ChatGPT에서 호출 가능한 앱/액션으로 등록하는 절차를 정리합니다.
+이 문서는 **MUSINSA Personal Shopper Plugin**을 GPT Builder Actions가 아니라 **ChatGPT 플러그인 앱 등록 흐름**에 맞춰 제출하는 절차를 정리합니다.
 
-> 현재 repo는 OpenAPI 기반 HTTP plugin/action 서버입니다. ChatGPT의 최신 등록 흐름에서는 보통 **Custom GPT → Actions → OpenAPI schema import** 방식으로 연결합니다. `.well-known/ai-plugin.json`은 ChatGPT-style legacy plugin 호환/리뷰 설명용으로 계속 제공합니다.
-
----
-
-## 1. 등록 전 체크리스트
-
-현재 live plugin endpoint:
-
-```text
-https://musinsa-personal-shopper-plugin.vercel.app
-```
-
-ChatGPT GPT Builder의 Actions에는 아래 URL을 import합니다.
-
-```text
-https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
-```
-
-| 항목 | 필요 여부 | 현재 repo 상태 |
-|---|---:|---|
-| OpenAPI 3.1 spec | 필수 | `GET /openapi.yaml` 제공 |
-| 공개 HTTPS endpoint | 필수 | 로컬 기본값은 `http://localhost:8787`; 등록 전 배포 또는 tunnel 필요 |
-| 인증 방식 | 필요 시 | MVP는 `auth: none` / Actions schema는 인증 없음 |
-| Privacy / Legal URL | 권장/사실상 필수 | `GET /analytics/notice` 제공 |
-| 로고 URL | 권장 | `GET /logo.png` 제공 |
-| API 동작 검증 | 필수 | `npm test`, `npm run demo`, quality gates 제공 |
-| 개인정보 처리 경계 | 필수 | non-PII analytics, sanitizer, consent metadata 구현 |
+핵심은 OpenAPI URL을 직접 import하는 것이 아니라, **public plugin app endpoint와 manifest**를 기준으로 등록하는 것입니다.
 
 ---
 
-## 2. 로컬 서버 실행 및 기본 검증
+## 1. 제출할 endpoint
 
-```bash
-npm install
-npm start
-```
-
-기본 포트는 `8787`입니다.
-
-```bash
-curl -s http://localhost:8787/health
-curl -s http://localhost:8787/openapi.yaml
-curl -s http://localhost:8787/.well-known/ai-plugin.json
-curl -s http://localhost:8787/analytics/notice
-curl -s http://localhost:8787/dashboard
-```
-
-추천 검증 명령:
-
-```bash
-npm test
-npm run verify:dashboard
-npm run verify:opencrab-bridge
-npm run verify:opencrab-live-bridge
-npm run test:hybrid-opencrab
-```
-
-현재 기준 핵심 기대값:
+현재 live plugin app endpoint:
 
 ```text
-npm test -> 30 pass / 0 fail
-/products/search -> 2,050개 상품 catalog 기반 검색
-hybrid OpenCrab gate -> 60/60 pass, provenance coverage 60/60
+Plugin app base URL: https://musinsa-personal-shopper-plugin.vercel.app
+Plugin manifest URL: https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json
+OpenAPI URL: https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
+Privacy / Legal URL: https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice
+Logo URL: https://musinsa-personal-shopper-plugin.vercel.app/logo.png
+```
+
+등록 화면에서:
+
+| 등록 화면 입력란 | 넣을 값 |
+|---|---|
+| App URL / Website URL / Domain / Base URL | `https://musinsa-personal-shopper-plugin.vercel.app` |
+| Manifest URL을 요구하는 경우 | `https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json` |
+| OpenAPI URL을 별도로 요구하는 경우 | `https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml` |
+| Privacy policy / Legal URL | `https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice` |
+| Logo URL | `https://musinsa-personal-shopper-plugin.vercel.app/logo.png` |
+
+> 정리: **Plugin App 등록의 1차 기준은 base URL 또는 manifest URL**입니다. OpenAPI schema는 manifest 내부 `api.url`에서 자동 연결됩니다.
+
+---
+
+## 2. 등록 전 필수 체크리스트
+
+| 항목 | 현재 상태 |
+|---|---|
+| Public HTTPS endpoint | `https://musinsa-personal-shopper-plugin.vercel.app` live |
+| Manifest | `GET /.well-known/ai-plugin.json` live |
+| OpenAPI 3.1 spec | `GET /openapi.yaml` live |
+| Authentication | `auth.type: none` |
+| Privacy / Legal notice | `GET /analytics/notice` live |
+| Logo | `GET /logo.png` live PNG |
+| CORS | `Access-Control-Allow-Origin: *` |
+| Product catalog | 2,050 products |
+| Unit tests | 31 pass / 0 fail |
+
+검증 명령:
+
+```bash
+curl -fsS https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json
+curl -fsS https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
+curl -fsS https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice
+curl -fsS https://musinsa-personal-shopper-plugin.vercel.app/logo.png --output /tmp/musinsa-plugin-logo.png
+curl -fsS https://musinsa-personal-shopper-plugin.vercel.app/health
 ```
 
 ---
 
-## 3. ChatGPT 등록용 공개 URL 준비
+## 3. Manifest 확인
 
-ChatGPT Actions는 로컬 `localhost`를 직접 호출할 수 없으므로 **공개 HTTPS URL**이 필요합니다.
-
-### 옵션 A — 빠른 개발 테스트: tunnel
-
-예시:
-
-```bash
-npm start
-# 다른 터미널에서 cloudflared/ngrok/localtunnel 등으로 8787 포트 공개
-# 예: https://musinsa-personal-shopper-dev.example.trycloudflare.com
-```
-
-### 옵션 B — 제출/심사용: 배포
-
-Vercel/Render/Fly.io/Cloud Run/Railway 등 Node.js 서버 실행이 가능한 곳에 배포합니다.
-
-배포 후 반드시 아래가 HTTPS로 열려야 합니다. 현재 live endpoint 기준:
+Plugin App 등록 시스템은 보통 base URL에서 아래 manifest를 찾거나, manifest URL을 직접 입력받습니다.
 
 ```text
-https://musinsa-personal-shopper-plugin.vercel.app/health
-https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
 https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json
-https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice
-https://musinsa-personal-shopper-plugin.vercel.app/logo.png
 ```
 
----
-
-## 4. OpenAPI 서버 URL 변경
-
-`openapi.yaml`의 `servers[0].url`은 ChatGPT가 실제 호출할 공개 URL이어야 합니다.
-
-현재 로컬 기본값:
-
-```yaml
-servers:
-  - url: http://localhost:8787
-```
-
-현재 live 기준:
-
-```yaml
-servers:
-  - url: https://musinsa-personal-shopper-plugin.vercel.app
-```
-
-검증:
-
-```bash
-curl -s https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml | head
-```
-
-> 주의: schema 안의 server URL이 `localhost`로 남아 있으면 ChatGPT Actions 등록 후 테스트 호출이 실패합니다.
-
----
-
-## 5. Legacy plugin manifest URL 변경
-
-`.well-known/ai-plugin.json`도 공개 URL 기준으로 맞춥니다.
-
-현재 로컬 기본값:
+현재 manifest 핵심값:
 
 ```json
 {
-  "api": {
-    "type": "openapi",
-    "url": "http://localhost:8787/openapi.yaml",
-    "is_user_authenticated": false
-  },
-  "logo_url": "http://localhost:8787/logo.png",
-  "legal_info_url": "http://localhost:8787/analytics/notice"
-}
-```
-
-현재 live 기준:
-
-```json
-{
+  "schema_version": "v1",
+  "name_for_human": "MUSINSA Personal Shopper",
+  "name_for_model": "musinsa_personal_shopper",
+  "auth": { "type": "none" },
   "api": {
     "type": "openapi",
     "url": "https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml",
@@ -159,218 +84,175 @@ curl -s https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml | head
 }
 ```
 
-> Custom GPT Actions는 보통 manifest를 직접 요구하지 않고 OpenAPI schema를 import합니다. 그래도 manifest는 심사용/호환성/문서화에 유용합니다.
+주의할 점:
+
+- `api.url`이 `localhost`가 아니라 public HTTPS URL이어야 합니다.
+- `logo_url`, `legal_info_url`도 public HTTPS URL이어야 합니다.
+- 인증이 없는 MVP이므로 `auth.type`은 `none`입니다.
 
 ---
 
-## 6. ChatGPT에서 Custom GPT + Actions 등록
+## 4. OpenAPI 확인
 
-### 6.1 GPT 생성
-
-1. ChatGPT 접속
-2. **Explore GPTs** 또는 **Create a GPT** 진입
-3. GPT 이름 입력
-   - 추천: `MUSINSA Personal Shopper`
-4. 설명 입력
-   - 예: `무신사 상품 온톨로지 기반 자연어 추천, 비교, shortlist, 비식별 analytics 액션`
-5. Instructions에 아래 운영 지침 입력
-
-권장 Instructions:
+Manifest의 `api.url`은 아래 OpenAPI spec을 가리킵니다.
 
 ```text
-You are MUSINSA Personal Shopper. Help users find and compare MUSINSA products using the connected Actions.
-
-Use searchProducts for broad product search, recommendByProfile for natural-language outfit/product recommendations, compareProducts for comparing candidate product IDs, and shortlist endpoints when users ask to save or revisit candidates.
-
-Respect privacy boundaries: do not send names, emails, phone numbers, addresses, order IDs, tracking IDs, IPs, or raw user IDs to analytics. If analytics events are recorded, send only sanitized query text, product IDs, event type, and consent metadata.
-
-When results include source_url or retrieval.opencrab_adapter.candidate_rows, show original MUSINSA product links and briefly mention the OpenCrab evidence/provenance when relevant.
-
-If the user asks for an outfit under a budget, apply the budget strictly where the API supports it and explain tradeoffs.
+https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
 ```
 
-### 6.2 Action 추가
+`servers[0].url`도 public endpoint입니다.
 
-1. GPT Builder의 **Configure** 탭으로 이동
-2. **Actions** 섹션 선택
-3. **Create new action** 클릭
-4. Authentication은 MVP 기준 **None** 선택
-5. Schema 입력 방식 선택
-   - URL import가 가능하면: `https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml`
-   - 안 되면 `openapi.yaml` 내용을 복사해 붙여넣기
-6. Schema validation error가 없는지 확인
-7. 저장
-
-### 6.3 Privacy policy / Legal URL
-
-가능하면 GPT 설정의 Privacy/Legal URL에 아래를 사용합니다.
-
-```text
-https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice
+```yaml
+servers:
+  - url: https://musinsa-personal-shopper-plugin.vercel.app
 ```
 
-현재 notice는 다음을 명시합니다.
+주요 operation:
 
-- 수집: event_type, sanitized_query, product_ids, parsed_intent, non-PII statistics
-- 미수집: 이름, 이메일, 전화번호, 주소, 주문번호, 송장번호, 카드번호, IP, raw user/session ID
-- session id는 hash 처리
+| Operation | Endpoint | 용도 |
+|---|---|---|
+| `health` | `GET /health` | 서버/상품 catalog 상태 확인 |
+| `searchProducts` | `POST /products/search` | 상품 검색 |
+| `recommendByProfile` | `POST /shopper/recommend` | 자연어 추천 |
+| `compareProducts` | `POST /shopper/compare` | 후보 비교 |
+| `saveShortlist` | `POST /shopper/shortlist` | shortlist 저장 |
+| `recordAnalyticsEvent` | `POST /analytics/events` | 비식별 analytics 기록 |
 
 ---
 
-## 7. 등록 후 Actions 테스트 프롬프트
+## 5. Plugin App 등록 절차
 
-ChatGPT GPT Preview에서 아래 순서로 테스트합니다.
+1. ChatGPT / OpenAI의 **Plugin App 등록** 화면으로 이동합니다.
+2. 앱 이름을 입력합니다.
+   - `MUSINSA Personal Shopper`
+3. 앱 설명을 입력합니다.
+   - `무신사 상품 온톨로지 기반 자연어 추천, 비교, shortlist, 비식별 analytics plugin app`
+4. Endpoint 입력란에 요구 형식에 맞게 아래 중 하나를 넣습니다.
+   - Base URL: `https://musinsa-personal-shopper-plugin.vercel.app`
+   - Manifest URL: `https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json`
+5. OpenAPI URL을 별도로 요구하면 아래를 넣습니다.
+   - `https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml`
+6. Privacy/Legal URL을 요구하면 아래를 넣습니다.
+   - `https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice`
+7. 인증 방식은 MVP 기준 `None` / `No auth`로 설정합니다.
+8. 저장 후 manifest/OpenAPI validation을 통과하는지 확인합니다.
 
-### 7.1 Health check
+---
+
+## 6. 등록 후 테스트 프롬프트
+
+### 6.1 Health check
 
 ```text
 서버 상태 확인해줘.
 ```
 
-예상 Action:
+확인값:
+
+- `products_loaded: 2050`
+- OpenCrab/cache/search index metadata 반환
+
+### 6.2 상품 추천
 
 ```text
-health
+남성 차콜 후드집업 5만원 이하로 추천해줘. 평소 L 입고 오버핏 좋아해.
 ```
 
-확인:
+확인값:
 
-- products_loaded: `2050`
-- search index/lexicon 정보 반환
+- `recommendByProfile` 또는 `searchProducts` 호출
+- 상품명, 가격, product_id 반환
+- MUSINSA 원본 `source_url` 포함
+- 추천 이유/score breakdown 포함
 
-### 7.2 상품 검색
+### 6.3 OpenCrab provenance 검색
 
 ```text
-남성 차콜 후드집업 5만원 이하 추천해줘.
+175cm 88kg 남성, 너무 달라붙지 않는 릴렉스핏 상의 추천해줘. 원본 링크도 보여줘.
 ```
 
-예상 Action:
+확인값:
+
+- hybrid retrieval 사용 가능
+- `retrieval.opencrab_adapter.candidate_rows`에 provenance row 포함
+- 원본 MUSINSA 링크 제공
+
+### 6.4 비교
 
 ```text
-searchProducts 또는 recommendByProfile
+추천한 후보 두 개 비교해서 뭐가 더 나은지 알려줘.
 ```
 
-확인:
+확인값:
 
-- 가격 조건을 초과하지 않는 후보
-- product_id
-- 원본 MUSINSA `source_url`
-- retrieval metadata
-
-### 7.3 사용자 프로필 기반 추천
-
-```text
-나는 175cm 88kg이고 부드러운 소재, 안 끼는 여유핏을 좋아해. 10만원 이하로 입을 옷 추천해줘.
-```
-
-예상 Action:
-
-```text
-recommendByProfile
-```
-
-확인:
-
-- relaxed/oversized/soft/non-tight 취향 반영
-- `assistant_summary`
-- `score_breakdown`
-- `recommendation_confidence`
-- OpenCrab hybrid 후보가 있으면 provenance rows/source_url 노출
-
-### 7.4 비교
-
-```text
-추천한 후보 2~3개를 가격, 리뷰, 핏 기준으로 비교해줘.
-```
-
-예상 Action:
-
-```text
-compareProducts
-```
-
-확인:
-
-- comparison_table
-- best_pick
-- decision_notes
-
-### 7.5 Shortlist
-
-```text
-첫 번째와 두 번째 후보를 저장해두고 나중에 비교할 수 있게 해줘.
-```
-
-예상 Action:
-
-```text
-saveShortlist
-```
-
-확인:
-
-- session_id
-- saved product_ids
+- `compareProducts` 호출
+- 가격/리뷰/핏/리스크 기준 비교표와 best pick 반환
 
 ---
 
-## 8. 등록 실패/심사 전 오류 체크
+## 7. 개인정보/데이터 경계
+
+이 plugin app은 개인정보를 저장하지 않는 MVP입니다.
+
+수집하지 않음:
+
+- 이름
+- 이메일
+- 전화번호
+- 주소
+- 주문번호
+- 송장번호
+- 카드번호/긴 숫자열
+- IP
+- raw user/session ID
+
+수집 가능:
+
+- sanitized query
+- parsed intent
+- product IDs
+- event type
+- aggregate CTR/CVR
+- ontology gap fields
+
+고지 URL:
+
+```text
+https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice
+```
+
+---
+
+## 8. 실패 대응표
 
 | 증상 | 원인 | 해결 |
 |---|---|---|
-| Action import 실패 | OpenAPI YAML 문법 오류 | `curl https://YOUR_PUBLIC_HOST/openapi.yaml` 후 YAML lint |
-| ChatGPT가 호출 실패 | `servers.url`이 localhost | `openapi.yaml`의 server URL을 HTTPS public host로 변경 |
-| logo/legal URL 실패 | manifest가 localhost | `.well-known/ai-plugin.json` URL들을 public host로 변경 |
-| CORS/OPTIONS 오류 | preflight 처리 누락 | 서버의 `OPTIONS`/CORS 응답 확인 |
-| 400 invalid JSON | Action schema와 request body 불일치 | OpenAPI schema와 실제 endpoint request를 맞춤 |
-| 413 payload too large | request body limit 초과 | 요청 payload 축소 또는 body limit 조정 |
-| Analytics consent 403 | `ANALYTICS_CONSENT_REQUIRED=true` | consent_granted 전달 또는 제출/데모에서는 설정 확인 |
-| 추천 결과 없음 | OpenCrab/local index candidate mismatch | `npm run test:hybrid-opencrab` 재실행, candidate_rows 확인 |
-| 원본 링크 없음 | product/source_url 누락 | `retrieval.opencrab_adapter.candidate_rows`와 product `source_url` 확인 |
+| Manifest fetch 실패 | base URL에서 `/.well-known/ai-plugin.json` 접근 실패 | `https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json` GET 200 확인 |
+| OpenAPI fetch 실패 | manifest `api.url` 오류 | manifest의 `api.url`이 `https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml`인지 확인 |
+| localhost 호출 오류 | OpenAPI `servers.url`이 localhost | `servers[0].url`을 `https://musinsa-personal-shopper-plugin.vercel.app`로 변경 |
+| logo/legal URL 오류 | public URL이 아니거나 404 | `/logo.png`, `/analytics/notice` GET 확인 |
+| 인증 오류 | 등록 화면에서 auth를 요구 | MVP는 no auth. 필요 시 API key/OAuth로 후속 확장 |
+| HEAD 요청 405 | 서버가 GET/OPTIONS 중심으로 구현됨 | 등록/검증은 GET 기준으로 확인. 필요하면 HEAD handler 추가 가능 |
 
 ---
 
-## 9. 제출/데모용 최종 체크리스트
+## 9. 현재 live 검증 결과
 
-- [ ] Public HTTPS host 준비
-- [ ] `openapi.yaml` server URL public host로 변경
-- [ ] `.well-known/ai-plugin.json` URL public host로 변경
-- [ ] `GET /health` 정상
-- [ ] `GET /openapi.yaml` 정상
-- [ ] `GET /.well-known/ai-plugin.json` 정상
-- [ ] `GET /analytics/notice` 정상
-- [ ] `GET /dashboard` 정상
-- [ ] `npm test` pass
-- [ ] `npm run verify:dashboard` pass
-- [ ] `npm run verify:opencrab-bridge` pass
-- [ ] `npm run verify:opencrab-live-bridge` pass
-- [ ] `npm run test:hybrid-opencrab` pass
-- [ ] ChatGPT GPT Builder Actions schema import 성공
-- [ ] Preview에서 health/search/recommend/compare/shortlist 테스트 성공
-- [ ] README/SUBMISSION에 public URL, 테스트 결과, privacy boundary, OpenCrab pack IDs 반영
+최근 확인 기준:
+
+```text
+GET /.well-known/ai-plugin.json -> 200, application/json
+GET /openapi.yaml -> 200, application/yaml
+GET /analytics/notice -> 200
+GET /logo.png -> 200, PNG
+GET /health -> products_loaded: 2050
+npm test -> 31 pass / 0 fail
+```
 
 ---
 
-## 10. 현재 repo 기준 참고 값
+## 10. 제출용 한 줄 요약
 
-| 항목 | 값 |
-|---|---|
-| 상품 수 | 2,050 |
-| 테스트 | 30 pass / 0 fail |
-| Product DB pack | `0b3c79f7-1861-4466-ba20-2cbaa736de66` v3.8.0 |
-| Hybrid quality gate | 60/60 pass |
-| Dashboard verifier | live/fallback/refresh markers pass |
-| Local server | `http://localhost:8787` |
-| OpenAPI | `/openapi.yaml` |
-| Legacy manifest | `/.well-known/ai-plugin.json` |
-| Privacy notice | `/analytics/notice` |
-| Dashboard | `/dashboard` |
-
----
-
-## 11. 운영 메모
-
-- 심사용 GPT Actions 연결에서는 `auth: none`이 가장 단순합니다.
-- 실제 상용 운영에서는 API key, OAuth, rate limit, request logging policy, explicit data retention policy를 추가해야 합니다.
-- MUSINSA 데이터는 MVP/데모용 공개 페이지 기반 샘플입니다. production은 공식/인가 API 또는 feed로 전환해야 합니다.
-- OpenCrab은 hot path 전체를 대체하기보다 semantic candidate/provenance layer로 사용하고, plugin server가 local index/cache로 rerank하는 구조를 유지합니다.
+```text
+MUSINSA Personal Shopper is a public HTTPS ChatGPT Plugin App endpoint with a v1 plugin manifest, OpenAPI 3.1 schema, no-auth MVP, privacy notice, product recommendation/search/compare APIs, and OpenCrab provenance-backed MUSINSA source links.
+```

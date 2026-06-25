@@ -7,6 +7,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { HttpError, readJsonBody, safeErrorPayload } from '../src/httpUtils.mjs';
+import { handleRequest } from '../src/server.mjs';
 import { recordTelemetryEvent, sanitizeTelemetryEvent } from '../src/telemetryStore.mjs';
 
 function reqFrom(text) {
@@ -53,6 +54,22 @@ test('dashboard marks live API versus fallback mock data and supports manual ref
   assert.match(html, /fetch\('\/analytics\/summary'/);
   assert.match(html, /fetch\('\/analytics\/insights'/);
   assert.match(html, /cache: 'no-store'/);
+});
+
+test('plugin app registration endpoints support HEAD preflight checks', async () => {
+  const server = http.createServer(handleRequest);
+  await new Promise(resolve => server.listen(0, resolve));
+  const base = `http://127.0.0.1:${server.address().port}`;
+  try {
+    for (const path of ['/.well-known/ai-plugin.json', '/openapi.yaml', '/analytics/notice', '/logo.png']) {
+      const response = await fetch(`${base}${path}`, { method: 'HEAD' });
+      assert.equal(response.status, 200, `${path} should support HEAD`);
+      assert.ok(response.headers.get('content-type'), `${path} should expose content-type`);
+      assert.match(response.headers.get('access-control-allow-methods') ?? '', /HEAD/);
+    }
+  } finally {
+    await new Promise(resolve => server.close(resolve));
+  }
 });
 
 test('recordTelemetryEvent syncs sanitized event to configured Convex ingest URL', async () => {

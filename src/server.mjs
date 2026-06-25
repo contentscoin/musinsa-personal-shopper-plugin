@@ -4,13 +4,38 @@ import { loadProducts, searchProducts, getProduct } from './productStore.mjs';
 import { compare, recommend, summarizeProduct } from './personalShopper.mjs';
 import { clearShortlist, getShortlist, saveShortlist } from './shortlistStore.mjs';
 import { ANALYTICS_NOTICE, analyticsDashboard, buildTelemetrySummary, recordTelemetryEvent } from './telemetryStore.mjs';
+import { HttpError, corsHeaders, readJsonBody, safeErrorPayload } from './httpUtils.mjs';
 
 const products = await loadProducts().catch(() => []);
 const port = Number(process.env.PORT ?? 8787);
 
+const ROUTES = new Map([
+  ['/health', ['GET']],
+  ['/openapi.yaml', ['GET']],
+  ['/.well-known/ai-plugin.json', ['GET']],
+  ['/dashboard', ['GET']],
+  ['/dashboard.html', ['GET']],
+  ['/logo.png', ['GET']],
+  ['/products/search', ['POST']],
+  ['/shopper/recommend', ['POST']],
+  ['/shopper/shortlist', ['POST']],
+  ['/shopper/compare', ['POST']],
+  ['/analytics/events', ['POST']],
+  ['/analytics/notice', ['GET']],
+  ['/analytics/summary', ['GET']],
+  ['/analytics/export', ['POST']],
+  ['/analytics/funnel', ['GET']],
+  ['/analytics/products', ['GET']],
+  ['/analytics/queries', ['GET']],
+  ['/analytics/intents', ['GET']],
+  ['/analytics/insights', ['GET']]
+]);
+
 const server = http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url, `http://${req.headers.host}`);
+    if (req.method === 'OPTIONS') return empty(res, 204);
+    enforceKnownRouteMethod(url.pathname, req.method);
     if (req.method === 'GET' && url.pathname === '/health') return json(res, { ok: true, products_loaded: products.length });
     if (req.method === 'GET' && url.pathname === '/openapi.yaml') return text(res, await readFile(new URL('../openapi.yaml', import.meta.url), 'utf8'), 'application/yaml; charset=utf-8');
     if (req.method === 'GET' && url.pathname === '/.well-known/ai-plugin.json') return text(res, await readFile(new URL('../.well-known/ai-plugin.json', import.meta.url), 'utf8'), 'application/json; charset=utf-8');
@@ -45,27 +70,37 @@ const server = http.createServer(async (req, res) => {
     if (req.method === 'POST' && url.pathname === '/analytics/export') return json(res, await buildTelemetrySummary());
     const analyticsMatch = url.pathname.match(/^\/analytics\/(funnel|products|queries|intents|insights)$/);
     if (req.method === 'GET' && analyticsMatch) return json(res, await analyticsDashboard(analyticsMatch[1]));
-    return json(res, { error: 'Not found' }, 404);
+    return json(res, { error: { code: 'not_found', message: 'Not found' } }, 404);
   } catch (error) {
-    return json(res, { error: error.message }, 500);
+    const status = Number(error?.status ?? 500);
+    return json(res, safeErrorPayload(error), status);
   }
 });
 
 server.listen(port, () => console.log(`MUSINSA Personal Shopper Plugin listening on :${port} (${products.length} products loaded)`));
 
 async function body(req) {
-  const chunks = [];
-  for await (const chunk of req) chunks.push(chunk);
-  const text = Buffer.concat(chunks).toString('utf8') || '{}';
-  return JSON.parse(text);
+  return readJsonBody(req);
+}
+
+function enforceKnownRouteMethod(pathname, method) {
+  const methods = ROUTES.get(pathname);
+  if (methods && !methods.includes(method)) {
+    throw new HttpError(405, 'method_not_allowed', `Method ${method} is not allowed for ${pathname}`, { allowed_methods: methods });
+  }
 }
 
 function json(res, payload, status = 200) {
-  res.writeHead(status, { 'content-type': 'application/json; charset=utf-8' });
+  res.writeHead(status, corsHeaders({ 'content-type': 'application/json; charset=utf-8' }));
   res.end(JSON.stringify(payload, null, 2));
 }
 
 function text(res, payload, contentType, status = 200) {
-  res.writeHead(status, { 'content-type': contentType });
+  res.writeHead(status, corsHeaders({ 'content-type': contentType }));
   res.end(payload);
+}
+
+function empty(res, status = 204) {
+  res.writeHead(status, corsHeaders());
+  res.end();
 }

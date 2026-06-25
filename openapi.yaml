@@ -163,6 +163,24 @@ paths:
       responses:
         '200':
           description: Sanitized event accepted
+        '400':
+          description: Invalid JSON or event payload
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Analytics consent required when ANALYTICS_CONSENT_REQUIRED is enabled
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '413':
+          description: Request body too large
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
   /analytics/summary:
     get:
       operationId: getAnalyticsSummary
@@ -388,6 +406,18 @@ components:
           type: array
           items: { type: string }
         source: { type: string }
+        consent_granted:
+          type: boolean
+          description: Set true after the user has accepted the analytics notice. Required when ANALYTICS_CONSENT_REQUIRED=true.
+        consent_notice_version:
+          type: string
+          description: Analytics notice version shown to the user.
+        consent:
+          type: object
+          properties:
+            granted: { type: boolean }
+            notice_version: { type: string }
+            mode: { type: string }
         metadata:
           type: object
           properties:
@@ -396,3 +426,13 @@ components:
             experiment: { type: string }
             result_count: { type: number }
             latency_ms: { type: number }
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: object
+          required: [code, message]
+          properties:
+            code: { type: string }
+            message: { type: string }
+            details: { type: object }

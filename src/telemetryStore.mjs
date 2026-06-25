@@ -4,6 +4,10 @@ import { dirname } from 'node:path';
 
 const DEFAULT_EVENT_PATH = new URL('../data/telemetry/events.jsonl', import.meta.url);
 const DEFAULT_SUMMARY_PATH = new URL('../data/telemetry/summary.json', import.meta.url);
+const ANALYTICS_NOTICE_VERSION = '2026-06-25.p0-consent-convex-sync';
+const CONSENT_REQUIRED = /^(1|true|yes)$/i.test(process.env.ANALYTICS_CONSENT_REQUIRED ?? 'false');
+const CONVEX_TELEMETRY_URL = process.env.CONVEX_TELEMETRY_URL;
+const CONVEX_TELEMETRY_SECRET = process.env.CONVEX_TELEMETRY_SECRET;
 const ALLOWED_EVENT_TYPES = new Set([
   'search',
   'recommendation',
@@ -16,19 +20,24 @@ const ALLOWED_EVENT_TYPES = new Set([
 ]);
 
 export const ANALYTICS_NOTICE = {
+  version: ANALYTICS_NOTICE_VERSION,
+  consent_required: CONSENT_REQUIRED,
   title: 'MUSINSA Personal Shopper analytics notice',
-  message_ko: '서비스 개선과 추천 품질 향상을 위해 개인식별정보를 제외한 검색어, 추천 결과, 상품 클릭, 비교, shortlist 저장, 구매전환 통계를 수집합니다. 이메일, 전화번호, 주소, 주문번호, IP, 원문 사용자 ID는 저장하지 않습니다.',
-  message_en: 'To improve service quality and recommendations, this plugin collects non-PII search, recommendation, product click, comparison, shortlist, and conversion analytics. Emails, phone numbers, addresses, order IDs, IP addresses, and raw user IDs are not stored.',
-  collected: ['event_type', 'sanitized_query', 'parsed_intent', 'product_ids', 'clicked_product_id', 'converted_product_id', 'rank', 'confidence', 'missing_ontology_fields', 'metadata.surface', 'metadata.locale'],
+  message_ko: '서비스 개선과 추천 품질 향상을 위해 동의가 있는 경우에만 개인식별정보를 제외한 검색어, 추천 결과, 상품 클릭, 비교, shortlist 저장, 구매전환 통계를 수집합니다. 이메일, 전화번호, 주소, 주문번호, IP, 원문 사용자 ID는 저장하지 않습니다.',
+  message_en: 'With consent, this plugin collects non-PII search, recommendation, product click, comparison, shortlist, and conversion analytics to improve service quality and recommendations. Emails, phone numbers, addresses, order IDs, IP addresses, and raw user IDs are not stored.',
+  collected: ['event_type', 'sanitized_query', 'parsed_intent', 'product_ids', 'clicked_product_id', 'converted_product_id', 'rank', 'confidence', 'missing_ontology_fields', 'metadata.surface', 'metadata.locale', 'consent.granted', 'consent.notice_version'],
   not_collected: ['name', 'email', 'phone', 'address', 'order_id', 'ip_address', 'raw_user_id', 'raw_session_id'],
-  owner_visibility: 'Pack owner can view sanitized event-level rows plus aggregate statistics.'
+  owner_visibility: 'Pack owner can view sanitized event-level rows plus aggregate statistics.',
+  retention_note: 'Prototype local JSON retention is repository-controlled; production should define an explicit retention window before collecting live traffic.'
 };
 
 export async function recordTelemetryEvent(payload = {}, path = DEFAULT_EVENT_PATH) {
+  enforceConsent(payload);
   const event = sanitizeTelemetryEvent(payload);
   await mkdir(dirname(path.pathname), { recursive: true });
   await appendFile(path, JSON.stringify(event) + '\n');
-  return event;
+  const convex_sync = await syncTelemetryEventToConvex(event);
+  return convex_sync ? { ...event, convex_sync } : event;
 }
 
 export async function loadTelemetryEvents(path = DEFAULT_EVENT_PATH) {
@@ -80,6 +89,7 @@ export function sanitizeTelemetryEvent(payload = {}) {
     rank: Number.isFinite(Number(payload.rank)) ? Number(payload.rank) : undefined,
     confidence: Number.isFinite(Number(payload.confidence)) ? Number(payload.confidence) : undefined,
     missing_ontology_fields: Array.isArray(payload.missing_ontology_fields) ? payload.missing_ontology_fields.map(v => sanitizeText(v, 60)).slice(0, 20) : [],
+    consent: sanitizeConsent(payload),
     source: sanitizeText(payload.source || 'plugin', 80),
     metadata: sanitizeMetadata(payload.metadata || {})
   };
@@ -164,6 +174,73 @@ function sanitizeMetadata(metadata) {
     if (metadata[key] !== undefined) allowed[key] = typeof metadata[key] === 'number' ? metadata[key] : sanitizeText(metadata[key], 80);
   }
   return allowed;
+}
+
+function sanitizeConsent(payload) {
+  const granted = payload.consent_granted === true || payload.analytics_consent === true || payload.consent?.granted === true;
+  return {
+    granted,
+    notice_version: sanitizeText(payload.consent_notice_version || payload.consent?.notice_version || ANALYTICS_NOTICE_VERSION, 80),
+    mode: CONSENT_REQUIRED ? 'required' : 'notice_only'
+  };
+}
+
+function enforceConsent(payload) {
+  if (!CONSENT_REQUIRED) return;
+  const consent = sanitizeConsent(payload);
+  if (!consent.granted) {
+    const error = new Error('Analytics consent is required before recording this event');
+    error.status = 403;
+    error.code = 'analytics_consent_required';
+    error.details = { notice_version: ANALYTICS_NOTICE_VERSION };
+    throw error;
+  }
+}
+
+async function syncTelemetryEventToConvex(event) {
+  if (!CONVEX_TELEMETRY_URL) return null;
+  try {
+    const response = await fetch(CONVEX_TELEMETRY_URL, {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        ...(CONVEX_TELEMETRY_SECRET ? { authorization: `Bearer ${CONVEX_TELEMETRY_SECRET}` } : {})
+      },
+      body: JSON.stringify({ event: toConvexEvent(event) })
+    });
+    const payload = await response.json().catch(() => ({}));
+    return { ok: response.ok, status: response.status, ...payload };
+  } catch (error) {
+    return { ok: false, status: 0, error: sanitizeText(error.message, 160) };
+  }
+}
+
+function toConvexEvent(event) {
+  return {
+    eventId: event.event_id,
+    eventType: event.event_type,
+    occurredAt: event.occurred_at,
+    sessionHash: event.session_hash,
+    userAgentFamily: event.user_agent_family,
+    query: event.query,
+    parsedIntent: {
+      budget: event.parsed_intent?.budget,
+      colors: event.parsed_intent?.colors ?? [],
+      categories: event.parsed_intent?.categories ?? [],
+      seasons: event.parsed_intent?.seasons ?? [],
+      gender: event.parsed_intent?.gender,
+      brand: event.parsed_intent?.brand
+    },
+    productIds: event.product_ids ?? [],
+    clickedProductId: event.clicked_product_id,
+    convertedProductId: event.converted_product_id,
+    rank: event.rank,
+    confidence: event.confidence,
+    missingOntologyFields: event.missing_ontology_fields ?? [],
+    consent: event.consent,
+    source: event.source,
+    metadata: event.metadata ?? {}
+  };
 }
 
 function sanitizeText(text, maxLength) {

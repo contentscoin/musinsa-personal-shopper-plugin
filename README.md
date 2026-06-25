@@ -29,7 +29,8 @@
 | Owner dashboard Convex/Vercel pack | OpenCrab private pack `6bc1f3e9-9c69-4ad6-96f0-0c8b40b3f930` |
 | Convex DB/backend | Production deployment `veracious-albatross-267` |
 | Vercel Owner Dashboard | **https://owner-dashboard-snowy.vercel.app** |
-| 테스트 | **11개 통과** |
+| 테스트 | **16개 통과** |
+| P0 hardening | API safe errors/body limit, analytics consent metadata, Convex HTTP ingest sync, Convex audit events |
 | 검증 리포트 | product search 320/320, OpenAPI/manifest 0 failure |
 | Plugin contract | OpenAPI 3.1 + `/.well-known/ai-plugin.json` |
 | Demo script | `npm run demo` |
@@ -122,8 +123,8 @@ npm test
 예상 결과:
 
 ```text
-# tests 11
-# pass 11
+# tests 16
+# pass 16
 # fail 0
 ```
 
@@ -177,7 +178,8 @@ recommend
 | `src/productStore.mjs` | 상품 DB 로드/검색 |
 | `src/personalShopper.mjs` | intent 파싱, 추천, 비교, 상품 인사이트 |
 | `src/shortlistStore.mjs` | 세션별 shortlist 저장소 |
-| `src/telemetryStore.mjs` | 개인정보 제외 telemetry sanitizer/summary/dashboard |
+| `src/telemetryStore.mjs` | 개인정보 제외 telemetry sanitizer/summary/dashboard + consent metadata + optional Convex sync |
+| `src/httpUtils.mjs` | request body limit, invalid JSON, CORS, safe error response utilities |
 | `scripts/demo.mjs` | end-to-end demo script |
 | `scripts/crawl-musinsa-products.mjs` | 공개 상품 크롤러 |
 | `scripts/export-personal-shopper-data-ontology.mjs` | analytics ontology export |
@@ -431,7 +433,8 @@ Convex tables:
 
 | Table | Purpose | Indexes |
 |---|---|---|
-| `telemetryEvents` | 검색/추천/클릭/전환/low-confidence 등 비식별 commerce event 저장 | `by_event_id`, `by_type`, `by_occurred_at` |
+| `telemetryEvents` | 검색/추천/클릭/전환/low-confidence 등 비식별 commerce event 저장, consent metadata 포함 | `by_event_id`, `by_type`, `by_occurred_at` |
+| `auditEvents` | telemetry insert/seed 및 향후 운영 actions의 actor/timestamp/result audit trail | `by_action`, `by_occurred_at` |
 | `dashboardSnapshots` | 오너 대시보드 요약 snapshot 저장 | `by_snapshot_id`, `by_generated_at` |
 
 현재 seed 검증:
@@ -462,6 +465,24 @@ npm run dev
 cd owner-dashboard
 npx convex deploy --env-file .env.production.local
 npx vercel deploy --prod
+```
+
+Plugin telemetry를 Convex owner dashboard로 직접 sync하려면 plugin server 환경변수에 아래 값을 설정합니다.
+
+```bash
+CONVEX_TELEMETRY_URL=https://veracious-albatross-267.convex.site/telemetry/ingest
+# 선택: Convex 환경변수 TELEMETRY_INGEST_SECRET을 설정한 경우만 필요
+CONVEX_TELEMETRY_SECRET=...
+# 선택: true면 /analytics/events 호출 시 consent_granted=true 필요
+ANALYTICS_CONSENT_REQUIRED=true
+```
+
+P0 hardening 검증:
+
+```text
+npm test => 16 pass / 0 fail
+Convex HTTP ingest => {"ok":true,"inserted":true}
+Vercel dashboard => HTTP 200
 ```
 
 ---

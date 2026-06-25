@@ -22,6 +22,11 @@ const eventArg = v.object({
   rank: v.optional(v.number()),
   confidence: v.optional(v.number()),
   missingOntologyFields: v.optional(v.array(v.string())),
+  consent: v.optional(v.object({
+    granted: v.boolean(),
+    notice_version: v.string(),
+    mode: v.string()
+  })),
   source: v.optional(v.string()),
   metadata: v.optional(v.any())
 });
@@ -33,6 +38,14 @@ export const recordEvent = mutation({
     const existing = await ctx.db.query("telemetryEvents").withIndex("by_event_id", q => q.eq("eventId", event.eventId)).first();
     if (existing) return { inserted: false, id: existing._id };
     const id = await ctx.db.insert("telemetryEvents", event);
+    await ctx.db.insert("auditEvents", {
+      action: "telemetry.recordEvent",
+      occurredAt: new Date().toISOString(),
+      actor: event.source,
+      target: event.eventId,
+      result: "inserted",
+      metadata: { eventType: event.eventType, consent: event.consent ?? null }
+    });
     return { inserted: true, id };
   }
 });
@@ -47,6 +60,14 @@ export const seedEvents = mutation({
       const existing = await ctx.db.query("telemetryEvents").withIndex("by_event_id", q => q.eq("eventId", event.eventId)).first();
       if (existing) { skipped++; continue; }
       await ctx.db.insert("telemetryEvents", event);
+      await ctx.db.insert("auditEvents", {
+        action: "telemetry.seedEvents",
+        occurredAt: new Date().toISOString(),
+        actor: event.source,
+        target: event.eventId,
+        result: "inserted",
+        metadata: { eventType: event.eventType, consent: event.consent ?? null }
+      });
       inserted++;
     }
     return { inserted, skipped };
@@ -113,6 +134,11 @@ function normalizeEvent(raw: any) {
     rank: typeof raw.rank === "number" ? raw.rank : undefined,
     confidence: typeof raw.confidence === "number" ? raw.confidence : undefined,
     missingOntologyFields: arrayStrings(raw.missingOntologyFields, 20),
+    consent: raw.consent ? {
+      granted: raw.consent.granted === true,
+      notice_version: sanitize(raw.consent.notice_version || "unknown", 80),
+      mode: sanitize(raw.consent.mode || "notice_only", 40)
+    } : undefined,
     source: sanitize(raw.source || "owner-dashboard", 80),
     metadata: raw.metadata ?? {}
   };

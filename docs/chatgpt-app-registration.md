@@ -8,6 +8,18 @@
 
 ## 1. 등록 전 체크리스트
 
+현재 live plugin endpoint:
+
+```text
+https://musinsa-personal-shopper-plugin.vercel.app
+```
+
+ChatGPT GPT Builder의 Actions에는 아래 URL을 import합니다.
+
+```text
+https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
+```
+
 | 항목 | 필요 여부 | 현재 repo 상태 |
 |---|---:|---|
 | OpenAPI 3.1 spec | 필수 | `GET /openapi.yaml` 제공 |
@@ -75,14 +87,14 @@ npm start
 
 Vercel/Render/Fly.io/Cloud Run/Railway 등 Node.js 서버 실행이 가능한 곳에 배포합니다.
 
-배포 후 반드시 아래가 HTTPS로 열려야 합니다.
+배포 후 반드시 아래가 HTTPS로 열려야 합니다. 현재 live endpoint 기준:
 
 ```text
-https://YOUR_PUBLIC_HOST/health
-https://YOUR_PUBLIC_HOST/openapi.yaml
-https://YOUR_PUBLIC_HOST/.well-known/ai-plugin.json
-https://YOUR_PUBLIC_HOST/analytics/notice
-https://YOUR_PUBLIC_HOST/logo.png
+https://musinsa-personal-shopper-plugin.vercel.app/health
+https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
+https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json
+https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice
+https://musinsa-personal-shopper-plugin.vercel.app/logo.png
 ```
 
 ---
@@ -98,17 +110,17 @@ servers:
   - url: http://localhost:8787
 ```
 
-등록 전 예시:
+현재 live 기준:
 
 ```yaml
 servers:
-  - url: https://YOUR_PUBLIC_HOST
+  - url: https://musinsa-personal-shopper-plugin.vercel.app
 ```
 
 검증:
 
 ```bash
-curl -s https://YOUR_PUBLIC_HOST/openapi.yaml | head
+curl -s https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml | head
 ```
 
 > 주의: schema 안의 server URL이 `localhost`로 남아 있으면 ChatGPT Actions 등록 후 테스트 호출이 실패합니다.
@@ -133,17 +145,17 @@ curl -s https://YOUR_PUBLIC_HOST/openapi.yaml | head
 }
 ```
 
-등록 전 예시:
+현재 live 기준:
 
 ```json
 {
   "api": {
     "type": "openapi",
-    "url": "https://YOUR_PUBLIC_HOST/openapi.yaml",
+    "url": "https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml",
     "is_user_authenticated": false
   },
-  "logo_url": "https://YOUR_PUBLIC_HOST/logo.png",
-  "legal_info_url": "https://YOUR_PUBLIC_HOST/analytics/notice"
+  "logo_url": "https://musinsa-personal-shopper-plugin.vercel.app/logo.png",
+  "legal_info_url": "https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice"
 }
 ```
 
@@ -184,7 +196,7 @@ If the user asks for an outfit under a budget, apply the budget strictly where t
 3. **Create new action** 클릭
 4. Authentication은 MVP 기준 **None** 선택
 5. Schema 입력 방식 선택
-   - URL import가 가능하면: `https://YOUR_PUBLIC_HOST/openapi.yaml`
+   - URL import가 가능하면: `https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml`
    - 안 되면 `openapi.yaml` 내용을 복사해 붙여넣기
 6. Schema validation error가 없는지 확인
 7. 저장
@@ -194,7 +206,7 @@ If the user asks for an outfit under a budget, apply the budget strictly where t
 가능하면 GPT 설정의 Privacy/Legal URL에 아래를 사용합니다.
 
 ```text
-https://YOUR_PUBLIC_HOST/analytics/notice
+https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice
 ```
 
 현재 notice는 다음을 명시합니다.

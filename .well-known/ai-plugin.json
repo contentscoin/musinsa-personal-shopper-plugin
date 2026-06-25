@@ -9,10 +9,10 @@
   },
   "api": {
     "type": "openapi",
-    "url": "http://localhost:8787/openapi.yaml",
+    "url": "https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml",
     "is_user_authenticated": false
   },
-  "logo_url": "http://localhost:8787/logo.png",
+  "logo_url": "https://musinsa-personal-shopper-plugin.vercel.app/logo.png",
   "contact_email": "devnull@example.com",
-  "legal_info_url": "http://localhost:8787/analytics/notice"
+  "legal_info_url": "https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice"
 }

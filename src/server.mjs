@@ -1,5 +1,6 @@
 import http from 'node:http';
 import { readFile } from 'node:fs/promises';
+import { pathToFileURL } from 'node:url';
 import { loadProducts, searchProductsWithRetrieval, getProduct, getCatalogLexicon } from './productStore.mjs';
 import { compare, recommend, summarizeProduct } from './personalShopper.mjs';
 import { clearShortlist, getShortlist, saveShortlist } from './shortlistStore.mjs';
@@ -9,6 +10,7 @@ import { resolveOpenCrabCandidates } from './opencrabRetrieval.mjs';
 
 const products = await loadProducts().catch(() => []);
 const port = Number(process.env.PORT ?? 8787);
+const LOGO_PNG = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAGXRFWHRTb2Z0d2FyZQBNVVNJTlNBIFBTIGxvZ28t/7d8AAAAK0lEQVR4nO3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAAAAAAAAAAAA4GkYQAAAAR5p7+0AAAAASUVORK5CYII=', 'base64');
 
 const ROUTES = new Map([
   ['/health', ['GET']],
@@ -32,7 +34,7 @@ const ROUTES = new Map([
   ['/analytics/insights', ['GET']]
 ]);
 
-const server = http.createServer(async (req, res) => {
+export async function handleRequest(req, res) {
   try {
     const url = new URL(req.url, `http://${req.headers.host}`);
     if (req.method === 'OPTIONS') return empty(res, 204);
@@ -41,10 +43,10 @@ const server = http.createServer(async (req, res) => {
       const lexicon = getCatalogLexicon(products);
       return json(res, { ok: true, products_loaded: products.length, search_index: { enabled: true, brands: lexicon.brands.length, categories: lexicon.categories.length, terms: lexicon.terms.length } });
     }
-    if (req.method === 'GET' && url.pathname === '/openapi.yaml') return text(res, await readFile(new URL('../openapi.yaml', import.meta.url), 'utf8'), 'application/yaml; charset=utf-8');
-    if (req.method === 'GET' && url.pathname === '/.well-known/ai-plugin.json') return text(res, await readFile(new URL('../.well-known/ai-plugin.json', import.meta.url), 'utf8'), 'application/json; charset=utf-8');
+    if (req.method === 'GET' && url.pathname === '/openapi.yaml') return text(res, withPublicBaseUrl(await readFile(new URL('../openapi.yaml', import.meta.url), 'utf8'), publicBaseUrl(req)), 'application/yaml; charset=utf-8');
+    if (req.method === 'GET' && url.pathname === '/.well-known/ai-plugin.json') return text(res, withPublicBaseUrl(await readFile(new URL('../.well-known/ai-plugin.json', import.meta.url), 'utf8'), publicBaseUrl(req)), 'application/json; charset=utf-8');
     if (req.method === 'GET' && (url.pathname === '/dashboard' || url.pathname === '/dashboard.html')) return text(res, await readFile(new URL('../docs/dashboard-mock.html', import.meta.url), 'utf8'), 'text/html; charset=utf-8');
-    if (req.method === 'GET' && url.pathname === '/logo.png') return text(res, '', 'image/png');
+    if (req.method === 'GET' && url.pathname === '/logo.png') return binary(res, LOGO_PNG, 'image/png');
     if (req.method === 'POST' && url.pathname === '/products/search') {
       const payload = await body(req);
       const opencrab = await resolveOpenCrabCandidates(payload);
@@ -101,9 +103,14 @@ const server = http.createServer(async (req, res) => {
     const status = Number(error?.status ?? 500);
     return json(res, safeErrorPayload(error), status);
   }
-});
+}
 
-server.listen(port, () => console.log(`MUSINSA Personal Shopper Plugin listening on :${port} (${products.length} products loaded)`));
+if (isDirectRun()) {
+  const server = http.createServer(handleRequest);
+  server.listen(port, () => console.log(`MUSINSA Personal Shopper Plugin listening on :${port} (${products.length} products loaded)`));
+}
+
+export default handleRequest;
 
 async function body(req) {
   return readJsonBody(req);
@@ -126,7 +133,30 @@ function text(res, payload, contentType, status = 200) {
   res.end(payload);
 }
 
+function binary(res, payload, contentType, status = 200) {
+  res.writeHead(status, corsHeaders({ 'content-type': contentType, 'content-length': String(payload.length) }));
+  res.end(payload);
+}
+
 function empty(res, status = 204) {
   res.writeHead(status, corsHeaders());
   res.end();
+}
+
+function publicBaseUrl(req) {
+  if (process.env.PUBLIC_BASE_URL) return process.env.PUBLIC_BASE_URL.replace(/\/$/, '');
+  const forwardedProto = String(req.headers['x-forwarded-proto'] ?? '').split(',')[0].trim();
+  const proto = forwardedProto || (process.env.VERCEL ? 'https' : 'http');
+  const host = req.headers['x-forwarded-host'] || req.headers.host || `localhost:${port}`;
+  return `${proto}://${host}`.replace(/\/$/, '');
+}
+
+function withPublicBaseUrl(content, baseUrl) {
+  return content
+    .replaceAll('http://localhost:8787', baseUrl)
+    .replaceAll('https://YOUR_PUBLIC_HOST', baseUrl);
+}
+
+function isDirectRun() {
+  return process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 }

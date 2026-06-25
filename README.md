@@ -6,6 +6,7 @@
 
 | 항목 | 현재 상태 |
 |---|---:|
+| Live plugin endpoint | **https://musinsa-personal-shopper-plugin.vercel.app** |
 | 상품 catalog | **2,050개 상품** |
 | 브랜드/카테고리 | **713개 브랜드 / 190개 카테고리 경로** |
 | API contract | OpenAPI 3.1 + `/.well-known/ai-plugin.json` |
@@ -54,26 +55,26 @@ curl -s http://localhost:8787/dashboard
 
 ## ChatGPT 앱 / GPT Actions 등록
 
-ChatGPT에 연결하려면 public HTTPS endpoint를 준비한 뒤 `openapi.yaml`을 GPT Builder의 **Actions**에 import합니다.
+ChatGPT에 연결할 public HTTPS endpoint는 이미 live 상태입니다.
 
 ```text
-public HTTPS endpoint 준비
-  -> openapi.yaml servers.url을 public host로 변경
-  -> .well-known/ai-plugin.json URL들을 public host로 변경
-  -> ChatGPT GPT Builder > Configure > Actions
-  -> https://YOUR_PUBLIC_HOST/openapi.yaml import
-  -> Authentication: None
-  -> Preview에서 health/search/recommend/compare 테스트
+https://musinsa-personal-shopper-plugin.vercel.app
+```
+
+GPT Builder의 **Actions**에는 아래 OpenAPI schema URL을 import하면 됩니다.
+
+```text
+https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
 ```
 
 필수 URL:
 
 ```text
-https://YOUR_PUBLIC_HOST/health
-https://YOUR_PUBLIC_HOST/openapi.yaml
-https://YOUR_PUBLIC_HOST/.well-known/ai-plugin.json
-https://YOUR_PUBLIC_HOST/analytics/notice
-https://YOUR_PUBLIC_HOST/logo.png
+https://musinsa-personal-shopper-plugin.vercel.app/health
+https://musinsa-personal-shopper-plugin.vercel.app/openapi.yaml
+https://musinsa-personal-shopper-plugin.vercel.app/.well-known/ai-plugin.json
+https://musinsa-personal-shopper-plugin.vercel.app/analytics/notice
+https://musinsa-personal-shopper-plugin.vercel.app/logo.png
 ```
 
 전체 등록 절차, GPT Instructions 예시, 테스트 프롬프트, 실패 대응표는 아래 문서에 정리했습니다.
@@ -219,7 +220,6 @@ OpenCrab ontology packs
 
 다음 단계:
 
-- public HTTPS 배포 URL 기준으로 `openapi.yaml` / manifest 자동 rewrite 스크립트 추가
 - 실제 OpenCrab `project_run` HTTP endpoint 연결
 - 공식 MUSINSA API/feed 연동
 - owner dashboard 권한/로그인/role 기반 접근제어

@@ -10,7 +10,7 @@
     body { margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: radial-gradient(circle at top left, #1b1240 0, #0b0f17 32rem); color:var(--text); }
     header { padding:40px 28px 16px; max-width:1200px; margin:0 auto; }
     h1 { margin:0 0 10px; font-size: clamp(28px, 4vw, 48px); letter-spacing:-0.04em; }
-    .subtitle { color:var(--muted); max-width:860px; line-height:1.6; }
+    .subtitle { color:var(--muted); max-width:900px; line-height:1.6; }
     main { max-width:1200px; margin:0 auto; padding:16px 28px 60px; }
     .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap:16px; }
     .card { background:linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02)); border:1px solid var(--line); border-radius:20px; padding:20px; box-shadow: 0 20px 60px rgba(0,0,0,.22); }
@@ -26,7 +26,16 @@
     th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); }
     th { color:var(--muted); font-weight:600; }
     .pill { display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px; background:rgba(124,58,237,.18); color:#d9ccff; border:1px solid rgba(124,58,237,.35); font-size:13px; margin:4px 6px 0 0; }
+    .pill.live { background:rgba(34,197,94,.16); border-color:rgba(34,197,94,.42); color:#bbf7d0; }
+    .pill.fallback { background:rgba(245,158,11,.16); border-color:rgba(245,158,11,.44); color:#fde68a; }
+    .pill.error { background:rgba(239,68,68,.16); border-color:rgba(239,68,68,.44); color:#fecaca; }
     .source { font-size:13px; color:var(--muted); }
+    .toolbar { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin:8px 0 16px; }
+    .toolbar-left, .toolbar-right { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+    button { background:var(--accent); color:white; border:0; border-radius:999px; padding:9px 14px; cursor:pointer; font-weight:700; }
+    button[disabled] { opacity:.55; cursor:not-allowed; }
+    .tiny { color:var(--muted); font-size:12px; }
+    .notice { margin-top:10px; color:var(--muted); font-size:13px; line-height:1.5; }
     a { color:#a78bfa; }
     @media (max-width: 900px) { .metric, .wide, .side { grid-column: 1 / -1; } }
   </style>
@@ -35,11 +44,25 @@
   <header>
     <div class="pill">MUSINSA Personal Shopper</div>
     <h1>Owner Analytics Dashboard</h1>
-    <p class="subtitle">개인정보를 제외한 쇼핑 질문, 추천, 클릭, 전환, low-confidence ontology gap을 시각화하는 오너용 대시보드 mock입니다. 서버에서 열면 실시간 API를 시도하고, 실패하면 포함된 샘플 데이터를 표시합니다.</p>
+    <p class="subtitle">개인정보를 제외한 쇼핑 질문, 추천, 클릭, 전환, low-confidence ontology gap을 시각화하는 오너용 대시보드입니다. 서버에서 열면 실제 analytics API를 호출하고, API가 실패하거나 정적 파일로 열면 샘플 목업 데이터를 표시합니다.</p>
   </header>
 
   <main>
-    <section class="grid" id="metrics"></section>
+    <section class="card full">
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <span id="data-status" class="pill fallback">Loading API…</span>
+          <span id="last-updated" class="tiny">Last updated: -</span>
+        </div>
+        <div class="toolbar-right">
+          <label class="tiny"><input type="checkbox" id="auto-refresh" /> Auto refresh 30s</label>
+          <button id="refresh-btn" type="button">Refresh live data</button>
+        </div>
+      </div>
+      <div id="data-note" class="notice">새로고침 또는 버튼 클릭 시 `/analytics/summary`와 `/analytics/insights`를 다시 호출합니다.</div>
+    </section>
+
+    <section class="grid" id="metrics" style="margin-top:16px"></section>
     <section class="grid" style="margin-top:16px">
       <div class="card wide">
         <div class="label">Generated insights</div>
@@ -90,26 +113,56 @@
       ]
     };
 
+    const state = { autoTimer: null };
+    const els = {
+      status: document.getElementById('data-status'),
+      note: document.getElementById('data-note'),
+      updated: document.getElementById('last-updated'),
+      refresh: document.getElementById('refresh-btn'),
+      auto: document.getElementById('auto-refresh')
+    };
+
     async function loadData() {
       try {
         const [summary, insight] = await Promise.all([
-          fetch('/analytics/summary').then(r => r.ok ? r.json() : Promise.reject(r.status)),
-          fetch('/analytics/insights').then(r => r.ok ? r.json() : Promise.reject(r.status))
+          fetch('/analytics/summary', { cache: 'no-store' }).then(r => r.ok ? r.json() : Promise.reject(new Error(`summary ${r.status}`))),
+          fetch('/analytics/insights', { cache: 'no-store' }).then(r => r.ok ? r.json() : Promise.reject(new Error(`insights ${r.status}`)))
         ]);
-        return { ...summary, insights: insight.insights || summary.insights || [] };
-      } catch (_) { return fallback; }
+        return { ...summary, insights: insight.insights || summary.insights || [], __source: 'live_api' };
+      } catch (error) {
+        return { ...fallback, __source: 'fallback_mock', __error: String(error?.message || error) };
+      }
     }
 
     function metric(label, value, cls='') { return `<div class="card metric"><div class="label">${label}</div><div class="value ${cls}">${value}</div></div>`; }
     function rows(items=[]) { return '<tr><th>Value</th><th>Count</th></tr>' + items.map(x => `<tr><td>${escapeHtml(x.value)}</td><td>${x.count}</td></tr>`).join(''); }
-    function pills(items=[]) { return items.map(x => `<span class="pill">${escapeHtml(x.value)} · ${x.count}</span>`).join(''); }
+    function pills(items=[]) { return items.length ? items.map(x => `<span class="pill">${escapeHtml(x.value)} · ${x.count}</span>`).join('') : '<span class="tiny">No data</span>'; }
     function escapeHtml(s) { return String(s ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch])); }
+    function fmtRate(value) { return Number.isFinite(Number(value)) ? Number(value).toFixed(2) : '0.00'; }
 
-    loadData().then(data => {
+    function renderStatus(data) {
+      const at = new Date();
+      els.updated.textContent = `Last updated: ${at.toLocaleString()}`;
+      if (data.__source === 'live_api') {
+        const empty = Number(data.total_events ?? 0) === 0;
+        els.status.className = `pill ${empty ? 'fallback' : 'live'}`;
+        els.status.textContent = empty ? 'Live API · no events yet' : 'Live API data';
+        els.note.textContent = empty
+          ? '실제 analytics API 연결은 성공했지만 아직 이벤트가 없습니다. 검색/추천/클릭 이벤트가 쌓이면 refresh 시 이 화면에 반영됩니다.'
+          : '실제 `/analytics/summary`와 `/analytics/insights` 응답을 표시 중입니다. 버튼이나 브라우저 새로고침으로 최신 집계를 다시 불러옵니다.';
+      } else {
+        els.status.className = 'pill fallback';
+        els.status.textContent = 'Fallback mock data';
+        els.note.textContent = `API 호출 실패 또는 정적 파일 실행으로 샘플 데이터를 표시 중입니다. 원인: ${data.__error || 'unknown'}`;
+      }
+    }
+
+    function render(data) {
+      renderStatus(data);
       document.getElementById('metrics').innerHTML = [
-        metric('Total events', data.total_events ?? 0),
-        metric('CTR', data.funnel?.click_through_rate ?? 0, 'good'),
-        metric('CVR', data.funnel?.conversion_rate ?? 0, 'good'),
+        metric('Total events', data.total_events ?? 0, data.__source === 'live_api' ? 'good' : 'warn'),
+        metric('CTR', fmtRate(data.funnel?.click_through_rate), 'good'),
+        metric('CVR', fmtRate(data.funnel?.conversion_rate), 'good'),
         metric('Ontology gaps', data.low_confidence?.count ?? 0, (data.low_confidence?.count ?? 0) ? 'warn' : 'good')
       ].join('');
       document.getElementById('insights').innerHTML = (data.insights || []).map(i => `<li><strong>${escapeHtml(i.type)}</strong>: ${escapeHtml(i.summary)}</li>`).join('') || '<li>인사이트 없음</li>';
@@ -117,7 +170,25 @@
       document.getElementById('queries').innerHTML = rows(data.top_queries || []);
       document.getElementById('products').innerHTML = rows(data.top_products || []);
       document.getElementById('intents').innerHTML = `<p>Colors</p>${pills(data.intent_stats?.colors || [])}<p>Categories</p>${pills(data.intent_stats?.categories || [])}<p>Budgets</p>${pills(data.intent_stats?.budgets || [])}`;
+    }
+
+    async function refreshDashboard() {
+      els.refresh.disabled = true;
+      els.refresh.textContent = 'Refreshing…';
+      try { render(await loadData()); }
+      finally {
+        els.refresh.disabled = false;
+        els.refresh.textContent = 'Refresh live data';
+      }
+    }
+
+    els.refresh.addEventListener('click', refreshDashboard);
+    els.auto.addEventListener('change', () => {
+      if (state.autoTimer) clearInterval(state.autoTimer);
+      state.autoTimer = els.auto.checked ? setInterval(refreshDashboard, 30000) : null;
     });
+
+    refreshDashboard();
   </script>
 </body>
 </html>

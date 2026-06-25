@@ -43,6 +43,18 @@ test('sanitizeTelemetryEvent records consent metadata without storing raw sessio
   assert.notEqual(event.session_hash, 'raw-session');
 });
 
+test('dashboard marks live API versus fallback mock data and supports manual refresh', async () => {
+  const html = await readFile(new URL('../docs/dashboard-mock.html', import.meta.url), 'utf8');
+  assert.match(html, /id="data-status"/);
+  assert.match(html, /Live API data/);
+  assert.match(html, /Fallback mock data/);
+  assert.match(html, /Refresh live data/);
+  assert.match(html, /Auto refresh 30s/);
+  assert.match(html, /fetch\('\/analytics\/summary'/);
+  assert.match(html, /fetch\('\/analytics\/insights'/);
+  assert.match(html, /cache: 'no-store'/);
+});
+
 test('recordTelemetryEvent syncs sanitized event to configured Convex ingest URL', async () => {
   const received = [];
   const server = http.createServer(async (req, res) => {

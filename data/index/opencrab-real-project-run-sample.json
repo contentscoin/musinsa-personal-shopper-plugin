@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "source": "real_opencrab_mcp_project_run_verified_2026-06-25",
+  "project": {
+    "project_id": "5334188e-9d17-46f4-9df5-780dadf3f2ab",
+    "name": "paperclipbase"
+  },
+  "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+  "package_title": "[hermes-profile:paperclipbase] musinsa-product-db-personal-shopper-sample-20260624",
+  "task": "For MUSINSA personal shopper query '오버핏 셔츠 175cm 88kg 릴렉스핏', return product_id and source_url candidates from MUSINSA retrieval seed evidence only. Include evidence source titles.",
+  "answer": "Real OpenCrab MCP project_run returned MUSINSA candidate evidence for relaxed-fit and office-shirt retrieval seeds.",
+  "evidence": [
+    {
+      "id": "6e337acf-52cb-48eb-99b1-4b9b70d64dd0",
+      "document_id": "799b2282-ddff-4265-ae39-d90aad5ae79d",
+      "workspace_id": "a0813f4b-185f-4c8d-9818-9366e1c4803d",
+      "text": "Owner tag: hermes-profile:paperclipbase\nMUSINSA retrieval seed: query terms 175cm 88kg 릴렉스핏, 남성 여유핏 코디, relaxed fit men, soft non-tight outfit.\nReturn these candidates as product_id/source_url for relaxed-fit 175/88 queries:\n- 3467738 https://www.musinsa.com/products/3467738 원턱 카고 스웨트 팬츠 그레이 18600\n- 4024189 https://www.musinsa.com/products/4024189 원턱 와이드 밴딩 슬랙스 크림 18600\n- 4336536 https://www.musinsa.com/products/4336536 오버핏 스트라이프 롱슬리브 티셔츠 BLACK 19500\n- 4227437 https://www.musinsa.com/products/4227437 원포켓 빈티지 오버핏 긴팔 체크 셔츠 19900\n- 2385283 https://www.musinsa.com/products/2385283 루즈핏 2Way 스웨트 후드집업 34900\n- 2112061 https://www.musinsa.com/products/2112061 원턱 와이드 스웨트팬츠 블랙 31200",
+      "score": 0.7037037037037037,
+      "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+      "metadata": {
+        "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+        "source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+        "source_type": "mcp_pack_update",
+        "storage_mode": "ontology",
+        "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+        "package_title": "[hermes-profile:paperclipbase] musinsa-product-db-personal-shopper-sample-20260624"
+      }
+    },
+    {
+      "id": "f90c909d-4f09-49bb-98bf-3db49e4217aa",
+      "document_id": "837b5614-2db4-488b-853e-3839e95d12e1",
+      "workspace_id": "a0813f4b-185f-4c8d-9818-9366e1c4803d",
+      "text": "Owner tag: hermes-profile:paperclipbase\nMUSINSA retrieval seed: query terms 셔츠 출근룩, 남성 셔츠, office shirt, work shirt, relaxed shirt.\nReturn these candidates as product_id/source_url for office-shirt queries:\n- 4227437 https://www.musinsa.com/products/4227437 87-STAN081 원포켓 빈티지 오버핏 긴팔 체크 셔츠 19900\n- 2312232 https://www.musinsa.com/products/2312232 오버사이즈 포플린 셔츠 블랙 27890\n- 4143736 https://www.musinsa.com/products/4143736 써머 링클 오션 체크남방 29900\n- 4172293 https://www.musinsa.com/products/4172293 빈티지 링클 체크셔츠 29900\n- 4989733 https://www.musinsa.com/products/4989733 링클 시어서커 체크 반팔 셔츠 차콜 29400\n- 4695924 https://www.musinsa.com/products/4695924 오버사이즈 옥스포드 반소매 셔츠 민트 19430",
+      "score": 0.5925925925925926,
+      "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+      "metadata": {
+        "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+        "source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+        "source_type": "mcp_pack_update",
+        "storage_mode": "ontology",
+        "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+        "package_title": "[hermes-profile:paperclipbase] musinsa-product-db-personal-shopper-sample-20260624"
+      }
+    },
+    {
+      "id": "5b7ffb34-ab7d-4d33-b9a3-e4f42c87c7c7",
+      "document_id": "3014a043-3c52-4309-93ae-daec2fa442f4",
+      "workspace_id": "a0813f4b-185f-4c8d-9818-9366e1c4803d",
+      "text": "Owner tag: hermes-profile:paperclipbase\nMUSINSA retrieval seed: query terms 여름 반팔, 남성 반소매 티셔츠, summer tee, affordable t-shirt.\nReturn these candidates as product_id/source_url for summer-tee queries:\n- 6176389 https://www.musinsa.com/products/6176389 16수 절개 피그먼트 반팔 티셔츠 10390\n- 2086656 https://www.musinsa.com/products/2086656 레이어드 크루 넥 티셔츠 일반 기장 다크 그레이 13490\n- 6282048 https://www.musinsa.com/products/6282048 헤비코튼 세미 크롭 반팔티 그레이 13930\n- 6234962 https://www.musinsa.com/products/6234962 해비코튼 로스엔젤레스 반소매티 블랙 13930\n- 6489259 https://www.musinsa.com/products/6489259 해비코튼 심플 레터링 반소매티 화이트 13930\n- 5012915 https://www.musinsa.com/products/5012915 시그니처 그래픽 로고 반팔티셔츠 14000",
+      "score": 0.5555555555555556,
+      "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+      "metadata": {
+        "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+        "source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+        "source_type": "mcp_pack_update",
+        "storage_mode": "ontology",
+        "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+        "package_title": "[hermes-profile:paperclipbase] musinsa-product-db-personal-shopper-sample-20260624"
+      }
+    }
+  ]
+}

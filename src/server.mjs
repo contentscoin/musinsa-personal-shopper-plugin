@@ -57,6 +57,9 @@ const server = http.createServer(async (req, res) => {
         skipped: opencrab.skipped,
         cache_hit: opencrab.cache_hit,
         product_id_count: opencrab.product_ids.length,
+        candidate_rows: opencrab.candidate_rows?.slice(0, 20) ?? [],
+        evidence_count: opencrab.evidence_count,
+        source_titles: opencrab.source_titles ?? [],
         raw_count: opencrab.raw_count,
         latency_ms: opencrab.latency_ms,
         error: opencrab.error

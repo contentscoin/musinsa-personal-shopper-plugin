@@ -3,6 +3,8 @@ import { readFile } from 'node:fs/promises';
 const DEFAULT_TIMEOUT_MS = 1200;
 const DEFAULT_CACHE_URL = new URL('../data/index/opencrab-candidate-cache.json', import.meta.url);
 const PRODUCT_ID_RE = /(?:products\/|product[_-]?id["'\s:=]+)(\d{4,})/gi;
+const MUSINSA_PRODUCT_URL_RE = /https?:\/\/www\.musinsa\.com\/products\/(\d{4,})/gi;
+const EVIDENCE_ROW_RE = /(?:^|\n)\s*(?:[-*]|\d+[.)]|\|)?\s*(\d{4,})\s*(?:[-|—: ]+)\s*(https?:\/\/www\.musinsa\.com\/products\/(\d{4,}))/gi;
 
 export async function resolveOpenCrabCandidates(request = {}, options = {}) {
   const started = now();
@@ -35,8 +37,16 @@ export async function resolveOpenCrabCandidates(request = {}, options = {}) {
     const text = await res.text();
     if (!res.ok) return result({ source: 'opencrab_http', product_ids: [], started, error: `HTTP ${res.status}` });
     const json = tryJson(text);
-    const ids = normalizeIds(extractProductIds(json ?? text));
-    return result({ source: 'opencrab_http', product_ids: ids, started, raw_count: Array.isArray(json?.results) ? json.results.length : undefined });
+    const candidates = extractOpenCrabCandidates(json ?? text);
+    return result({
+      source: 'opencrab_http',
+      product_ids: candidates.product_ids,
+      candidate_rows: candidates.rows,
+      evidence_count: candidates.evidence_count,
+      source_titles: candidates.source_titles,
+      started,
+      raw_count: candidates.raw_count ?? (Array.isArray(json?.results) ? json.results.length : undefined)
+    });
   } catch (error) {
     return result({ source: 'opencrab_http', product_ids: [], started, error: String(error?.message ?? error) });
   }
@@ -80,6 +90,119 @@ export function extractProductIds(value) {
   }
 }
 
+export function extractOpenCrabCandidates(value) {
+  const rows = [];
+  const sourceTitles = new Set();
+  let evidenceCount = 0;
+  let rawCount;
+
+  visit(value, {});
+  const product_ids = normalizeIds(rows.map(row => row.product_id));
+  const fallbackIds = normalizeIds(extractProductIds(value));
+  for (const id of fallbackIds) {
+    if (!product_ids.includes(id)) {
+      rows.push({ product_id: id, source_url: `https://www.musinsa.com/products/${id}`, extraction: 'fallback_id' });
+      product_ids.push(id);
+    }
+  }
+  return {
+    product_ids,
+    rows: dedupeRows(rows),
+    evidence_count: evidenceCount || undefined,
+    source_titles: [...sourceTitles].slice(0, 8),
+    raw_count: rawCount
+  };
+
+  function visit(node, context) {
+    if (node == null) return;
+    if (typeof node === 'string') {
+      const parsed = tryJson(node);
+      if (parsed && parsed !== node) {
+        visit(parsed, context);
+        return;
+      }
+      parseCandidateText(node, context);
+      return;
+    }
+    if (typeof node === 'number') return;
+    if (Array.isArray(node)) {
+      for (const item of node) visit(item, context);
+      return;
+    }
+    if (typeof node === 'object') {
+      if (Array.isArray(node.evidence)) {
+        rawCount ??= node.evidence.length;
+        for (const item of node.evidence) visit(item, { ...context, evidence: true });
+      }
+      if (Array.isArray(node.results)) {
+        rawCount ??= node.results.length;
+        for (const item of node.results) visit(item, context);
+      }
+      const directProductId = node.product_id ?? node.productId;
+      const directSourceUrl = node.source_url ?? node.sourceUrl;
+      if (directProductId || directSourceUrl) {
+        const sourceUrlText = typeof directSourceUrl === 'string' ? directSourceUrl : undefined;
+        const urlId = sourceUrlText ? [...sourceUrlText.matchAll(MUSINSA_PRODUCT_URL_RE)][0]?.[1] : undefined;
+        const productId = directProductId ?? urlId;
+        if (productId) addRow(productId, sourceUrlText ?? `https://www.musinsa.com/products/${productId}`, context, 'structured');
+      }
+      const source = node.source ?? node.metadata?.source;
+      const packageId = node.package_id ?? node.metadata?.package_id;
+      const sourceUrl = node.source_url ?? node.metadata?.source_url;
+      const evidenceContext = {
+        ...context,
+        source: typeof source === 'string' ? source : context.source,
+        package_id: typeof packageId === 'string' ? packageId : context.package_id,
+        source_url: typeof sourceUrl === 'string' ? sourceUrl : context.source_url,
+        evidence: context.evidence || Boolean(node.text && (source || node.metadata))
+      };
+      if (evidenceContext.source) sourceTitles.add(evidenceContext.source);
+      if (evidenceContext.evidence && typeof node.text === 'string') evidenceCount += 1;
+      for (const [key, item] of Object.entries(node)) {
+        if (['metadata', 'evidence', 'results'].includes(key)) continue;
+        visit(item, evidenceContext);
+      }
+    }
+  }
+
+  function parseCandidateText(text, context) {
+    for (const match of text.matchAll(EVIDENCE_ROW_RE)) {
+      const productId = match[1] === match[3] ? match[1] : match[3];
+      addRow(productId, match[2], context, 'evidence_row');
+    }
+    for (const match of text.matchAll(MUSINSA_PRODUCT_URL_RE)) {
+      addRow(match[1], match[0], context, context.evidence ? 'evidence_url' : 'url');
+    }
+    for (const match of text.matchAll(PRODUCT_ID_RE)) {
+      addRow(match[1], `https://www.musinsa.com/products/${match[1]}`, context, context.evidence ? 'evidence_product_id' : 'product_id');
+    }
+  }
+
+  function addRow(productId, sourceUrl, context, extraction) {
+    if (!/^\d{4,}$/.test(String(productId))) return;
+    rows.push({
+      product_id: String(productId),
+      source_url: sourceUrl,
+      source: context.source,
+      package_id: context.package_id,
+      evidence_source_url: context.source_url,
+      extraction
+    });
+  }
+}
+
+function dedupeRows(rows) {
+  const seen = new Set();
+  const output = [];
+  for (const row of rows) {
+    const key = row.product_id;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    output.push(row);
+  }
+  return output;
+}
+
 async function readCacheCandidates(cachePath, request) {
   try {
     const parsed = JSON.parse(await readFile(cachePath, 'utf8'));
@@ -109,10 +232,13 @@ function tryJson(text) {
   try { return JSON.parse(text); } catch { return null; }
 }
 
-function result({ source, product_ids, started, skipped = false, cache_hit = false, error, raw_count }) {
+function result({ source, product_ids, started, skipped = false, cache_hit = false, error, raw_count, candidate_rows = [], evidence_count, source_titles = [] }) {
   return {
     source,
     product_ids: normalizeIds(product_ids),
+    candidate_rows: dedupeRows(candidate_rows),
+    evidence_count,
+    source_titles,
     skipped,
     cache_hit,
     error,

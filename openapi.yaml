@@ -307,6 +307,22 @@ components:
                 skipped: { type: boolean }
                 cache_hit: { type: boolean }
                 product_id_count: { type: integer }
+                candidate_rows:
+                  type: array
+                  description: Parsed evidence/provenance rows from OpenCrab evidence text, capped in API responses.
+                  items:
+                    type: object
+                    properties:
+                      product_id: { type: string }
+                      source_url: { type: string }
+                      source: { type: string }
+                      package_id: { type: string }
+                      evidence_source_url: { type: string }
+                      extraction: { type: string }
+                evidence_count: { type: integer }
+                source_titles:
+                  type: array
+                  items: { type: string }
                 raw_count: { type: integer }
                 latency_ms: { type: number }
                 error: { type: string }

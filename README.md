@@ -22,15 +22,19 @@
 
 | 항목 | 상태 |
 |---|---:|
-| 무신사 상품 샘플 DB | 41개 상품 |
-| 상품 온톨로지팩 | OpenCrab private pack 생성 |
-| Personal Shopper Data 팩 | OpenCrab private pack 생성 |
-| 테스트 | 11개 통과 |
+| 무신사 상품 샘플 DB | **2,050개 상품** |
+| 고유 브랜드/카테고리 | **713개 브랜드 / 190개 카테고리 경로** |
+| 상품 온톨로지팩 | OpenCrab private pack `0b3c79f7-1861-4466-ba20-2cbaa736de66` v2.1.0 |
+| 상품 온톨로지 확장 seed pack | OpenCrab private pack `98c2c29e-c16f-4440-b98a-21ed45c75e9e` |
+| Owner dashboard Convex/Vercel pack | OpenCrab private pack `6bc1f3e9-9c69-4ad6-96f0-0c8b40b3f930` |
+| Convex DB/backend | Production deployment `veracious-albatross-267` |
+| Vercel Owner Dashboard | **https://owner-dashboard-snowy.vercel.app** |
+| 테스트 | **11개 통과** |
+| 검증 리포트 | product search 320/320, OpenAPI/manifest 0 failure |
 | Plugin contract | OpenAPI 3.1 + `/.well-known/ai-plugin.json` |
 | Demo script | `npm run demo` |
 | GitHub repo | public |
 | CI | GitHub Actions workflow included |
-| Owner dashboard mock | `GET /dashboard` |
 
 ---
 
@@ -97,6 +101,12 @@ MUSINSA sitemap/product pages
   -> analytics summary/dashboard APIs
   -> scripts/export-personal-shopper-data-ontology.mjs
   -> OpenCrab personal-shopper-data ontology pack
+
+Owner/운영 분석
+  -> owner-dashboard/ React app
+  -> Convex telemetryEvents/dashboardSnapshots
+  -> Vercel production dashboard
+  -> OpenCrab owner-dashboard Convex/Vercel ontology pack
 ```
 
 ---
@@ -133,6 +143,8 @@ curl -s http://localhost:8787/openapi.yaml
 curl -s http://localhost:8787/.well-known/ai-plugin.json
 curl -s http://localhost:8787/dashboard
 ```
+
+현재 `/health` 기준 로컬 상품 로드 수는 **2,050개**입니다.
 
 ### End-to-end demo 실행
 
@@ -173,6 +185,11 @@ recommend
 | `docs/pitch-summary.md` | 한 장짜리 pitch summary |
 | `docs/demo-scenarios.md` | 심사/발표용 demo scenarios |
 | `docs/ontology/*.md` | OpenCrab-ready ontology artifacts |
+| `docs/ontology/musinsa-product-2050-stats.json` | 2,050개 상품/브랜드/카테고리 통계 |
+| `reports/*.md` | 대량 검색/카테고리/랭킹/shortlist/OpenAPI 검증 리포트 |
+| `owner-dashboard/` | Vercel + Convex 기반 오너용 analytics dashboard |
+| `owner-dashboard/convex/schema.ts` | Convex `telemetryEvents`, `dashboardSnapshots` 스키마 |
+| `owner-dashboard/convex/analytics.ts` | Convex analytics query/mutation 함수 |
 
 ---
 
@@ -185,8 +202,8 @@ recommend
 | `GET /health` | 서버 상태와 로드된 상품 수 확인 |
 | `GET /openapi.yaml` | OpenAPI spec 제공 |
 | `GET /.well-known/ai-plugin.json` | Plugin manifest 제공 |
-| `GET /dashboard` | 오너용 analytics dashboard mock 제공 |
-| `GET /dashboard.html` | dashboard mock alias |
+| `GET /dashboard` | 로컬 plugin server의 lightweight analytics dashboard 제공 |
+| `GET /dashboard.html` | dashboard alias |
 | `GET /logo.png` | Manifest 호환용 placeholder |
 
 ### Shopping API
@@ -337,12 +354,23 @@ Session ID는 raw 값이 아니라 SHA-256 hash prefix로 저장합니다.
 
 ## 12. OpenCrab 온톨로지팩
 
-| Pack | 목적 | Package ID |
+| Pack | 목적 | Package ID / 상태 |
 |---|---|---|
-| MUSINSA product DB ontology | 상품 데이터, 링크, 이미지 URL, 가격/리뷰/소재 신호 | `0b3c79f7-1861-4466-ba20-2cbaa736de66` |
+| MUSINSA product DB ontology | 2,050개 상품 데이터, 링크, 이미지 URL, 가격/리뷰/소재/핏 신호 | `0b3c79f7-1861-4466-ba20-2cbaa736de66` / v2.1.0 |
+| MUSINSA product sample ontology expansion | 2,050개 확장 요약 seed, category coverage, source boundary | `98c2c29e-c16f-4440-b98a-21ed45c75e9e` |
+| MUSINSA owner dashboard Convex/Vercel deployment | Convex DB schema/storage, Vercel URL, sanitized telemetry facts, verification evidence | `6bc1f3e9-9c69-4ad6-96f0-0c8b40b3f930` |
 | Personal Shopper Data | 비식별 사용패턴, 질문, 클릭, 전환, CTR/CVR, 마케팅 통계 | `5b77afa5-2646-4674-88e7-584cddd8f37c` |
 
-Personal Shopper Data pack은 1시간마다 자동 sync되도록 cron job이 설정되어 있습니다.
+모든 private pack은 `Owner tag: hermes-profile:paperclipbase`를 포함합니다.
+
+Owner dashboard pack retrieval 검증 결과:
+
+```text
+Vercel URL: https://owner-dashboard-snowy.vercel.app
+Convex deployment URL: https://veracious-albatross-267.convex.cloud
+telemetryEvents purpose: sanitized non-PII commerce behavior events for owner analytics
+seeded event count: 16
+```
 
 ---
 
@@ -386,7 +414,59 @@ docs/ontology/personal-shopper-data-ontology.md
 
 ---
 
-## 15. 제출/발표 문서
+## 15. Owner Dashboard / Convex / Vercel
+
+오너용 대시보드는 plugin server의 mock dashboard를 넘어, 별도 React 앱으로 배포되어 Convex DB의 sanitized telemetry를 조회합니다.
+
+| 항목 | 값 |
+|---|---|
+| Dashboard URL | https://owner-dashboard-snowy.vercel.app |
+| Vercel project | `owner-dashboard` |
+| Convex project | `sin-taesu / musinsa-owner-dashboard` |
+| Convex deployment | `production / veracious-albatross-267` |
+| Convex client URL | `https://veracious-albatross-267.convex.cloud` |
+| OpenCrab pack | `6bc1f3e9-9c69-4ad6-96f0-0c8b40b3f930` |
+
+Convex tables:
+
+| Table | Purpose | Indexes |
+|---|---|---|
+| `telemetryEvents` | 검색/추천/클릭/전환/low-confidence 등 비식별 commerce event 저장 | `by_event_id`, `by_type`, `by_occurred_at` |
+| `dashboardSnapshots` | 오너 대시보드 요약 snapshot 저장 | `by_snapshot_id`, `by_generated_at` |
+
+현재 seed 검증:
+
+| 지표 | 값 |
+|---|---:|
+| sanitized telemetry rows | 16 |
+| searches/recommendations | 5 |
+| product clicks | 3 |
+| conversions | 3 |
+| CTR | 0.6 |
+| CVR | 0.6 |
+| top query | 남성 차콜 후드집업 5만원 이하 추천 |
+| ontology gap fields | `occasion_tags`, `style_tags`, `weather_tags` |
+
+로컬 실행:
+
+```bash
+cd owner-dashboard
+npm install
+npm run build
+npm run dev
+```
+
+배포/DB 작업:
+
+```bash
+cd owner-dashboard
+npx convex deploy --env-file .env.production.local
+npx vercel deploy --prod
+```
+
+---
+
+## 16. 제출/발표 문서
 
 | 문서 | 설명 |
 |---|---|
@@ -399,7 +479,7 @@ docs/ontology/personal-shopper-data-ontology.md
 
 ---
 
-## 16. 리소스 출처 링크
+## 17. 리소스 출처 링크
 
 핵심 출처 링크는 `RESOURCE_LINKS.md`에 정리되어 있습니다.
 
@@ -412,7 +492,7 @@ docs/ontology/personal-shopper-data-ontology.md
 
 ---
 
-## 17. Hackathon Narrative
+## 18. Hackathon Narrative
 
 **문제:** 무신사에는 풍부한 상품/리뷰/랭킹 데이터가 있지만, 고객은 여전히 검색어·필터·리뷰·사이즈 정보를 직접 조합해야 합니다. AI agent 시대에는 쇼핑도 자연어 대화에서 시작됩니다.
 
@@ -422,11 +502,12 @@ docs/ontology/personal-shopper-data-ontology.md
 
 ---
 
-## 18. 한계와 향후 확장
+## 19. 한계와 향후 확장
 
 현재 한계:
 
-- 현재 shortlist store는 in-memory입니다. 프로덕션에서는 Redis/Postgres가 필요합니다.
+- 현재 plugin shortlist store는 in-memory입니다. 프로덕션에서는 Redis/Postgres/Convex 등 영속 저장소가 필요합니다.
+- 현재 owner dashboard는 Convex production DB를 사용하지만 seed/demo telemetry 중심입니다. 실제 운영 traffic ingestion은 추가 보안/권한 검토가 필요합니다.
 - 현재 crawler는 공개-source prototype입니다. 프로덕션에서는 공식 API/feed 전환이 필요합니다.
 - 실제 장바구니, 결제, 주문 API는 구현하지 않았습니다.
 - 리뷰 원문은 수집하지 않고, 공개 리뷰 집계와 소재/핏 신호를 활용합니다.
@@ -434,6 +515,8 @@ docs/ontology/personal-shopper-data-ontology.md
 향후 확장:
 
 - 공식 MUSINSA API/feed 연동
+- plugin telemetry를 Convex로 직접 동기화하는 production ingestion endpoint
+- owner dashboard 권한/로그인/role 기반 접근제어
 - 실시간 재고/옵션/배송 연동
 - authorized review API 기반 사이즈/핏 분석
 - 장바구니/구매 링크 생성

@@ -102,11 +102,23 @@ export function searchProductsWithRetrieval(products, filters = {}) {
   }
   if (!candidateSource.length) candidateSource.push('local_index');
 
-  const scored = candidateEntries
+  let scored = candidateEntries
     .map(entry => ({ entry, score: scoreIndexedEntry(entry, { q, category, brand, gender, min, max, queryTokens, exactQuery, exactQueryTight }) }))
     .filter(row => row.score > 0)
     .sort((a, b) => b.score - a.score || b.entry.reviewCount - a.entry.reviewCount)
     .slice(0, limit);
+  const opencrabCandidateFallbackUsed = scored.length === 0 && candidateSource.includes('opencrab_candidates') && candidateEntries.length > 0;
+  if (opencrabCandidateFallbackUsed) {
+    // OpenCrab may return semantically relevant evidence for profile/occasion queries whose exact
+    // wording is not present in product names/tags (e.g. "175cm 88kg 릴렉스핏"). In that case,
+    // keep the ontology candidate set trusted and return a deterministic lightweight rerank instead
+    // of falling back to an empty response.
+    scored = candidateEntries
+      .filter(entry => entry.finalPrice >= min && entry.finalPrice <= max)
+      .map(entry => ({ entry, score: 0.6 + (entry.satisfactionScore ? entry.satisfactionScore / 10 : 0) + (entry.reviewCount > 100 ? 0.1 : 0) + (entry.hasImage ? 0.05 : 0) }))
+      .sort((a, b) => b.score - a.score || b.entry.reviewCount - a.entry.reviewCount)
+      .slice(0, limit);
+  }
 
   const results = scored.map(row => ({ ...compactProduct(row.entry.product), score: Number(row.score.toFixed(3)) }));
   const elapsed = performanceNow() - started;
@@ -117,6 +129,7 @@ export function searchProductsWithRetrieval(products, filters = {}) {
       candidate_source: candidateSource,
       local_index_used: true,
       opencrab_candidates_used: candidateSource.includes('opencrab_candidates'),
+      opencrab_candidate_fallback_used: opencrabCandidateFallbackUsed,
       candidate_count: candidateEntries.length,
       matched_count: scored.length,
       cache_hit: true,

@@ -1,0 +1,5316 @@
+{
+  "started_at": "2026-06-25T08:48:36.230Z",
+  "completed_at": "2026-06-25T08:48:37.196Z",
+  "bridge_health": {
+    "ok": true,
+    "mode": "fixture",
+    "port": 8794
+  },
+  "plugin_health": {
+    "ok": true,
+    "products_loaded": 2050,
+    "search_index": {
+      "enabled": true,
+      "brands": 1416,
+      "categories": 436,
+      "terms": 549
+    }
+  },
+  "query_count": 60,
+  "summary": {
+    "passed": 60,
+    "failed": 0,
+    "local_nonempty": 59,
+    "hybrid_nonempty": 60,
+    "opencrab_provenance_coverage": 60,
+    "avg_overlap": 0.28,
+    "local_latency_ms": {
+      "p50": 6.94,
+      "p95": 11.23,
+      "max": 12.66
+    },
+    "hybrid_latency_ms": {
+      "p50": 4.15,
+      "p95": 6.12,
+      "max": 20.86
+    }
+  },
+  "by_family": {
+    "relaxed_fit_175_88": {
+      "count": 12,
+      "pass": 12,
+      "local_nonempty": 12,
+      "hybrid_nonempty": 12,
+      "avg_overlap": 0.42,
+      "avg_hybrid_candidates": 17
+    },
+    "office_shirt": {
+      "count": 12,
+      "pass": 12,
+      "local_nonempty": 12,
+      "hybrid_nonempty": 12,
+      "avg_overlap": 0.58,
+      "avg_hybrid_candidates": 17
+    },
+    "summer_tee": {
+      "count": 12,
+      "pass": 12,
+      "local_nonempty": 12,
+      "hybrid_nonempty": 12,
+      "avg_overlap": 0.33,
+      "avg_hybrid_candidates": 17
+    },
+    "mixed_personal_shopper": {
+      "count": 12,
+      "pass": 12,
+      "local_nonempty": 12,
+      "hybrid_nonempty": 12,
+      "avg_overlap": 0.08,
+      "avg_hybrid_candidates": 17
+    },
+    "provenance_stress": {
+      "count": 12,
+      "pass": 12,
+      "local_nonempty": 11,
+      "hybrid_nonempty": 12,
+      "avg_overlap": 0,
+      "avg_hybrid_candidates": 17
+    }
+  },
+  "failure_samples": [],
+  "sample_records": [
+    {
+      "index": 1,
+      "family": "relaxed_fit_175_88",
+      "query": "175cm 88kg 릴렉스핏",
+      "local": {
+        "status": 200,
+        "latency_ms": 12.66,
+        "result_ids": [
+          "2034137",
+          "2035287",
+          "1388775",
+          "3417714",
+          "996177"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 20.86,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 2,
+      "family": "relaxed_fit_175_88",
+      "query": "175 88 여유핏 남자 코디",
+      "local": {
+        "status": 200,
+        "latency_ms": 9.03,
+        "result_ids": [
+          "1753488",
+          "4175389",
+          "1955217",
+          "4175458",
+          "1821755"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 6.31,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 3,
+      "family": "relaxed_fit_175_88",
+      "query": "부드럽고 안 끼는 남성 여유핏",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.53,
+        "result_ids": [
+          "4512936",
+          "1504726",
+          "1504727",
+          "2603332",
+          "3624956"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 6.12,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 4,
+      "family": "relaxed_fit_175_88",
+      "query": "relaxed fit men soft outfit",
+      "local": {
+        "status": 200,
+        "latency_ms": 9.01,
+        "result_ids": [
+          "3417714",
+          "4900438",
+          "5168051",
+          "2034137",
+          "1558197"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 5.61,
+        "result_ids": [
+          "4227437"
+        ],
+        "result_count": 1,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 5,
+      "family": "relaxed_fit_175_88",
+      "query": "175cm 88kg 오버핏 티셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 9.92,
+        "result_ids": [
+          "2034137",
+          "1848166",
+          "2035287",
+          "1944612",
+          "1388775"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 5.18,
+        "result_ids": [
+          "4336536",
+          "2112061",
+          "2385283",
+          "3467738",
+          "4227437"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 6,
+      "family": "relaxed_fit_175_88",
+      "query": "남성 여유핏 코디 10만원 이하",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.09,
+        "result_ids": [
+          "4512936",
+          "1504726",
+          "1504727",
+          "2603332",
+          "3624956"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.75,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 7,
+      "family": "relaxed_fit_175_88",
+      "query": "편한 와이드 팬츠 오버핏 상의",
+      "local": {
+        "status": 200,
+        "latency_ms": 9.02,
+        "result_ids": [
+          "1168906",
+          "2112059",
+          "2112061",
+          "1168922",
+          "2060759"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.86,
+        "result_ids": [
+          "2112061",
+          "4024189",
+          "3467738",
+          "4227437",
+          "2312232"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "2112061"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 8,
+      "family": "relaxed_fit_175_88",
+      "query": "175 88 루즈핏 후드집업",
+      "local": {
+        "status": 200,
+        "latency_ms": 8.49,
+        "result_ids": [
+          "2385283",
+          "4401751",
+          "4283788",
+          "4288927",
+          "5306830"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 5.16,
+        "result_ids": [
+          "2385283"
+        ],
+        "result_count": 1,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "2385283"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 9,
+      "family": "relaxed_fit_175_88",
+      "query": "175cm 88kg 원턱 와이드 팬츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.96,
+        "result_ids": [
+          "2112059",
+          "2112061",
+          "3908604",
+          "4939569",
+          "4352419"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 5.71,
+        "result_ids": [
+          "2112061",
+          "4024189",
+          "3467738"
+        ],
+        "result_count": 3,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "2112061"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 10,
+      "family": "relaxed_fit_175_88",
+      "query": "soft non-tight outfit men",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.69,
+        "result_ids": [
+          "1504726",
+          "1944612",
+          "1618312",
+          "1504727",
+          "2724650"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.79,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    }
+  ],
+  "records": [
+    {
+      "index": 1,
+      "family": "relaxed_fit_175_88",
+      "query": "175cm 88kg 릴렉스핏",
+      "local": {
+        "status": 200,
+        "latency_ms": 12.66,
+        "result_ids": [
+          "2034137",
+          "2035287",
+          "1388775",
+          "3417714",
+          "996177"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 20.86,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 2,
+      "family": "relaxed_fit_175_88",
+      "query": "175 88 여유핏 남자 코디",
+      "local": {
+        "status": 200,
+        "latency_ms": 9.03,
+        "result_ids": [
+          "1753488",
+          "4175389",
+          "1955217",
+          "4175458",
+          "1821755"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 6.31,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 3,
+      "family": "relaxed_fit_175_88",
+      "query": "부드럽고 안 끼는 남성 여유핏",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.53,
+        "result_ids": [
+          "4512936",
+          "1504726",
+          "1504727",
+          "2603332",
+          "3624956"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 6.12,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 4,
+      "family": "relaxed_fit_175_88",
+      "query": "relaxed fit men soft outfit",
+      "local": {
+        "status": 200,
+        "latency_ms": 9.01,
+        "result_ids": [
+          "3417714",
+          "4900438",
+          "5168051",
+          "2034137",
+          "1558197"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 5.61,
+        "result_ids": [
+          "4227437"
+        ],
+        "result_count": 1,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 5,
+      "family": "relaxed_fit_175_88",
+      "query": "175cm 88kg 오버핏 티셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 9.92,
+        "result_ids": [
+          "2034137",
+          "1848166",
+          "2035287",
+          "1944612",
+          "1388775"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 5.18,
+        "result_ids": [
+          "4336536",
+          "2112061",
+          "2385283",
+          "3467738",
+          "4227437"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 6,
+      "family": "relaxed_fit_175_88",
+      "query": "남성 여유핏 코디 10만원 이하",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.09,
+        "result_ids": [
+          "4512936",
+          "1504726",
+          "1504727",
+          "2603332",
+          "3624956"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.75,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 7,
+      "family": "relaxed_fit_175_88",
+      "query": "편한 와이드 팬츠 오버핏 상의",
+      "local": {
+        "status": 200,
+        "latency_ms": 9.02,
+        "result_ids": [
+          "1168906",
+          "2112059",
+          "2112061",
+          "1168922",
+          "2060759"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.86,
+        "result_ids": [
+          "2112061",
+          "4024189",
+          "3467738",
+          "4227437",
+          "2312232"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "2112061"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 8,
+      "family": "relaxed_fit_175_88",
+      "query": "175 88 루즈핏 후드집업",
+      "local": {
+        "status": 200,
+        "latency_ms": 8.49,
+        "result_ids": [
+          "2385283",
+          "4401751",
+          "4283788",
+          "4288927",
+          "5306830"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 5.16,
+        "result_ids": [
+          "2385283"
+        ],
+        "result_count": 1,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "2385283"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 9,
+      "family": "relaxed_fit_175_88",
+      "query": "175cm 88kg 원턱 와이드 팬츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.96,
+        "result_ids": [
+          "2112059",
+          "2112061",
+          "3908604",
+          "4939569",
+          "4352419"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 5.71,
+        "result_ids": [
+          "2112061",
+          "4024189",
+          "3467738"
+        ],
+        "result_count": 3,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "2112061"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 10,
+      "family": "relaxed_fit_175_88",
+      "query": "soft non-tight outfit men",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.69,
+        "result_ids": [
+          "1504726",
+          "1944612",
+          "1618312",
+          "1504727",
+          "2724650"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.79,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 11,
+      "family": "relaxed_fit_175_88",
+      "query": "릴렉스핏 남성 와이드 팬츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.68,
+        "result_ids": [
+          "1168906",
+          "2112059",
+          "2112061",
+          "1168922",
+          "2060759"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.1,
+        "result_ids": [
+          "2112061",
+          "4024189"
+        ],
+        "result_count": 2,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "2112061"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 12,
+      "family": "relaxed_fit_175_88",
+      "query": "오버핏 스트라이프 롱슬리브",
+      "local": {
+        "status": 200,
+        "latency_ms": 9.3,
+        "result_ids": [
+          "4336536",
+          "4336541",
+          "5249171",
+          "4886714",
+          "4761188"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.99,
+        "result_ids": [
+          "4336536",
+          "2112061",
+          "2385283",
+          "3467738",
+          "4227437"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "4336536"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 13,
+      "family": "office_shirt",
+      "query": "셔츠 출근룩",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.82,
+        "result_ids": [
+          "3562068",
+          "5273190",
+          "5045924",
+          "2149254",
+          "2086653"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.73,
+        "result_ids": [
+          "4989733",
+          "2086656",
+          "4227437",
+          "4143736",
+          "4172293"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 14,
+      "family": "office_shirt",
+      "query": "남성 셔츠 출근룩",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.64,
+        "result_ids": [
+          "6350537",
+          "6036717",
+          "6130553",
+          "6054423",
+          "6163075"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.01,
+        "result_ids": [
+          "4989733",
+          "2086656",
+          "4227437",
+          "4143736",
+          "4172293"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 15,
+      "family": "office_shirt",
+      "query": "office shirt relaxed",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.6,
+        "result_ids": [
+          "3758302",
+          "1841337",
+          "1841336",
+          "5627635",
+          "3753856"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.71,
+        "result_ids": [
+          "4989733",
+          "2086656",
+          "4227437",
+          "2312232",
+          "4695924"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 16,
+      "family": "office_shirt",
+      "query": "work shirt men",
+      "local": {
+        "status": 200,
+        "latency_ms": 4.5,
+        "result_ids": [
+          "4928807",
+          "1944612",
+          "2724650",
+          "3417714",
+          "3753653"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.82,
+        "result_ids": [
+          "4989733",
+          "2086656",
+          "4227437",
+          "2312232",
+          "4695924"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 17,
+      "family": "office_shirt",
+      "query": "오버핏 셔츠 블랙",
+      "local": {
+        "status": 200,
+        "latency_ms": 8.1,
+        "result_ids": [
+          "1388775",
+          "1920860",
+          "5627635",
+          "4187893",
+          "5983378"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.92,
+        "result_ids": [
+          "2312232",
+          "4227437",
+          "4336536",
+          "4695924",
+          "2112061"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 18,
+      "family": "office_shirt",
+      "query": "체크 셔츠 출근룩",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.19,
+        "result_ids": [
+          "4434539",
+          "4989733",
+          "4898927",
+          "5627635",
+          "5983378"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.75,
+        "result_ids": [
+          "4989733",
+          "4227437",
+          "4143736",
+          "4172293",
+          "2086656"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "4989733"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 19,
+      "family": "office_shirt",
+      "query": "반팔 셔츠 차콜",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.88,
+        "result_ids": [
+          "4989733",
+          "6313806",
+          "6154825",
+          "6483674",
+          "6154772"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.89,
+        "result_ids": [
+          "4989733",
+          "6282048",
+          "2086656",
+          "5012915",
+          "6176389"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "4989733"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 20,
+      "family": "office_shirt",
+      "query": "옥스포드 반소매 셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.86,
+        "result_ids": [
+          "4695924",
+          "2086653",
+          "2034137",
+          "1848166",
+          "2690691"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.03,
+        "result_ids": [
+          "4695924",
+          "2086656",
+          "6489259",
+          "5012915",
+          "6282048"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "4695924"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 21,
+      "family": "office_shirt",
+      "query": "빈티지 오버핏 긴팔 체크 셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 8.97,
+        "result_ids": [
+          "4227437",
+          "4788205",
+          "5308429",
+          "4434539",
+          "4898927"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.56,
+        "result_ids": [
+          "4227437",
+          "4172293",
+          "2312232",
+          "4336536",
+          "4695924"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "4227437"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 22,
+      "family": "office_shirt",
+      "query": "남성 포플린 셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.14,
+        "result_ids": [
+          "3758302",
+          "2312232",
+          "5280699",
+          "5551209",
+          "6350537"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.23,
+        "result_ids": [
+          "2312232"
+        ],
+        "result_count": 1,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "2312232"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 23,
+      "family": "office_shirt",
+      "query": "여름 체크 남방",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.32,
+        "result_ids": [
+          "4434539",
+          "4989733",
+          "5627635",
+          "5983378",
+          "3791889"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.95,
+        "result_ids": [
+          "4989733",
+          "4143736",
+          "2112061",
+          "2086656",
+          "2385283"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "4989733"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 24,
+      "family": "office_shirt",
+      "query": "시어서커 체크 반팔 셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.3,
+        "result_ids": [
+          "4989733",
+          "5627635",
+          "6237008",
+          "6237040",
+          "5627639"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.08,
+        "result_ids": [
+          "4989733",
+          "4227437",
+          "4143736",
+          "4172293",
+          "5012915"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "4989733"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 25,
+      "family": "summer_tee",
+      "query": "여름 반팔",
+      "local": {
+        "status": 200,
+        "latency_ms": 4.37,
+        "result_ids": [
+          "2690691",
+          "5167907",
+          "3609916",
+          "3198730",
+          "3245497"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.97,
+        "result_ids": [
+          "4989733",
+          "2112061",
+          "2086656",
+          "2385283",
+          "4024189"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 26,
+      "family": "summer_tee",
+      "query": "남성 반소매 티셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.4,
+        "result_ids": [
+          "6130553",
+          "6163075",
+          "2086653",
+          "2034137",
+          "1848166"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.25,
+        "result_ids": [
+          "2086656",
+          "6489259",
+          "5012915",
+          "6282048",
+          "6176389"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 27,
+      "family": "summer_tee",
+      "query": "summer tee affordable",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.23,
+        "result_ids": [
+          "5015397",
+          "3269419",
+          "1487679",
+          "3392006",
+          "3668711"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.41,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 28,
+      "family": "summer_tee",
+      "query": "저렴한 반팔 티셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.57,
+        "result_ids": [
+          "2690691",
+          "5167907",
+          "3609916",
+          "3886780",
+          "3272603"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.23,
+        "result_ids": [
+          "5012915",
+          "6282048",
+          "6176389",
+          "4989733"
+        ],
+        "result_count": 4,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 29,
+      "family": "summer_tee",
+      "query": "헤비코튼 반팔티",
+      "local": {
+        "status": 200,
+        "latency_ms": 3.95,
+        "result_ids": [
+          "6282048",
+          "5167907",
+          "3609916",
+          "3272603",
+          "3996137"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.61,
+        "result_ids": [
+          "6282048",
+          "5012915",
+          "6176389"
+        ],
+        "result_count": 3,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "6282048"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 30,
+      "family": "summer_tee",
+      "query": "레이어드 크루 넥 티셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.93,
+        "result_ids": [
+          "2086653",
+          "2086656",
+          "6154819",
+          "3223007",
+          "4836621"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.29,
+        "result_ids": [
+          "2086656"
+        ],
+        "result_count": 1,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "2086656"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 31,
+      "family": "summer_tee",
+      "query": "피그먼트 반팔 티셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.65,
+        "result_ids": [
+          "6176389",
+          "4017183",
+          "1955452",
+          "4055771",
+          "4928807"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.2,
+        "result_ids": [
+          "6176389",
+          "5012915",
+          "6282048",
+          "4989733"
+        ],
+        "result_count": 4,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "6176389"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 32,
+      "family": "summer_tee",
+      "query": "반소매 티셔츠 2만원 이하",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.28,
+        "result_ids": [
+          "2086653",
+          "2034137",
+          "1848166",
+          "2690691",
+          "2035287"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.98,
+        "result_ids": [
+          "2086656",
+          "6489259",
+          "5012915",
+          "6282048",
+          "6176389"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 33,
+      "family": "summer_tee",
+      "query": "화이트 반팔티",
+      "local": {
+        "status": 200,
+        "latency_ms": 4.55,
+        "result_ids": [
+          "3245497",
+          "3092901",
+          "2451591",
+          "4771096",
+          "6120682"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.81,
+        "result_ids": [
+          "6489259",
+          "5012915",
+          "6282048",
+          "6176389"
+        ],
+        "result_count": 4,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 34,
+      "family": "summer_tee",
+      "query": "블랙 반소매티",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.95,
+        "result_ids": [
+          "1388775",
+          "1841336",
+          "5044085",
+          "5170644",
+          "5915554"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.11,
+        "result_ids": [
+          "6234962",
+          "2086656",
+          "6489259",
+          "5012915",
+          "6282048"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 35,
+      "family": "summer_tee",
+      "query": "세미 크롭 반팔티",
+      "local": {
+        "status": 200,
+        "latency_ms": 4.65,
+        "result_ids": [
+          "6282048",
+          "6253860",
+          "5167907",
+          "3245497",
+          "6038616"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.79,
+        "result_ids": [
+          "6282048",
+          "5012915",
+          "6176389"
+        ],
+        "result_count": 3,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "6282048"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 36,
+      "family": "summer_tee",
+      "query": "남자 여름 티셔츠 추천",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.14,
+        "result_ids": [
+          "2086653",
+          "2034137",
+          "2690691",
+          "2035287",
+          "2050094"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.04,
+        "result_ids": [
+          "2086656",
+          "4336536",
+          "2112061",
+          "4989733",
+          "2385283"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 37,
+      "family": "mixed_personal_shopper",
+      "query": "오버핏 셔츠 175cm 88kg 릴렉스핏",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.53,
+        "result_ids": [
+          "2034137",
+          "2035287",
+          "1388775",
+          "3417714",
+          "996177"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.94,
+        "result_ids": [
+          "4227437",
+          "2312232",
+          "4336536",
+          "4695924",
+          "2112061"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 38,
+      "family": "mixed_personal_shopper",
+      "query": "175 88 셔츠 출근룩",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.21,
+        "result_ids": [
+          "4175389",
+          "4175458",
+          "1821755",
+          "6175981",
+          "6441754"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.14,
+        "result_ids": [
+          "4989733",
+          "2086656",
+          "4227437",
+          "4143736",
+          "4172293"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 39,
+      "family": "mixed_personal_shopper",
+      "query": "여름 반팔 175cm 88kg",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.05,
+        "result_ids": [
+          "2690691",
+          "5167907",
+          "3609916",
+          "3198730",
+          "3245497"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.44,
+        "result_ids": [
+          "4989733",
+          "2112061",
+          "2086656",
+          "2385283",
+          "4024189"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 40,
+      "family": "mixed_personal_shopper",
+      "query": "남성 오버핏 셔츠 여름",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.64,
+        "result_ids": [
+          "2034137",
+          "2035287",
+          "1388775",
+          "5096810",
+          "5167907"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.24,
+        "result_ids": [
+          "4336536",
+          "4695924",
+          "4227437",
+          "2312232",
+          "4989733"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 41,
+      "family": "mixed_personal_shopper",
+      "query": "릴렉스핏 셔츠 코디",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.34,
+        "result_ids": [
+          "2034137",
+          "2035287",
+          "1388775",
+          "3417714",
+          "996177"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.33,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 42,
+      "family": "mixed_personal_shopper",
+      "query": "남자 여름 출근룩 셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 8.69,
+        "result_ids": [
+          "2086653",
+          "2034137",
+          "2690691",
+          "2035287",
+          "2050094"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.43,
+        "result_ids": [
+          "4989733",
+          "2086656",
+          "4336536",
+          "4695924",
+          "4227437"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 43,
+      "family": "mixed_personal_shopper",
+      "query": "부드러운 반팔 티셔츠 여유핏",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.12,
+        "result_ids": [
+          "2690691",
+          "5167907",
+          "3609916",
+          "3886780",
+          "3272603"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.86,
+        "result_ids": [
+          "5012915",
+          "6282048",
+          "6176389",
+          "4989733"
+        ],
+        "result_count": 4,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 44,
+      "family": "mixed_personal_shopper",
+      "query": "10만원 이하 남자 셔츠 팬츠 코디",
+      "local": {
+        "status": 200,
+        "latency_ms": 9.16,
+        "result_ids": [
+          "4762764",
+          "4522544",
+          "4901585",
+          "4117592",
+          "6239139"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.15,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 45,
+      "family": "mixed_personal_shopper",
+      "query": "여유핏 블랙 셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 11.23,
+        "result_ids": [
+          "1388775",
+          "1404736",
+          "4057918",
+          "1920860",
+          "1498092"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.2,
+        "result_ids": [
+          "2312232",
+          "6234962",
+          "2112061"
+        ],
+        "result_count": 3,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 46,
+      "family": "mixed_personal_shopper",
+      "query": "와이드 팬츠랑 입을 셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.31,
+        "result_ids": [
+          "4655185",
+          "5324346",
+          "1168906",
+          "2112059",
+          "2112061"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.12,
+        "result_ids": [
+          "2112061",
+          "4024189"
+        ],
+        "result_count": 2,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [
+          "2112061"
+        ],
+        "count": 1
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 47,
+      "family": "mixed_personal_shopper",
+      "query": "출근룩 반팔 셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.04,
+        "result_ids": [
+          "2690691",
+          "5167907",
+          "3609916",
+          "3886780",
+          "3272603"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.05,
+        "result_ids": [
+          "4989733",
+          "5012915",
+          "6282048",
+          "6176389",
+          "2086656"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 48,
+      "family": "mixed_personal_shopper",
+      "query": "편한 여름 남자 코디",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.09,
+        "result_ids": [
+          "2112059",
+          "2086653",
+          "1926048",
+          "2034137",
+          "1504726"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.21,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "4024189"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 49,
+      "family": "provenance_stress",
+      "query": "product_id source_url 셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.73,
+        "result_ids": [
+          "5044085",
+          "5043908",
+          "3609916",
+          "4434539",
+          "3425399"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.14,
+        "result_ids": [
+          "4143736",
+          "4172293",
+          "4695924",
+          "4024189"
+        ],
+        "result_count": 4,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 50,
+      "family": "provenance_stress",
+      "query": "무신사 원본 링크 셔츠 추천",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.57,
+        "result_ids": [
+          "2149254",
+          "2086653",
+          "2034137",
+          "2035287",
+          "2050094"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.15,
+        "result_ids": [
+          "2086656",
+          "2312232",
+          "4695924"
+        ],
+        "result_count": 3,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 51,
+      "family": "provenance_stress",
+      "query": "MUSINSA office shirt source_url",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.16,
+        "result_ids": [
+          "2149254",
+          "2086653",
+          "2034137",
+          "2035287",
+          "2050094"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.93,
+        "result_ids": [
+          "2086656",
+          "2312232",
+          "4695924",
+          "4989733",
+          "4227437"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 52,
+      "family": "provenance_stress",
+      "query": "MUSINSA relaxed fit product_id",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.52,
+        "result_ids": [
+          "2032901",
+          "4570534",
+          "2034137",
+          "1558197",
+          "2035287"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.28,
+        "result_ids": [
+          "4695924",
+          "2086656",
+          "4227437",
+          "2312232",
+          "4143736"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 53,
+      "family": "provenance_stress",
+      "query": "원본 링크 있는 반팔 추천",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.42,
+        "result_ids": [
+          "6221180",
+          "2690691",
+          "5104161",
+          "5167907",
+          "3609916"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.51,
+        "result_ids": [
+          "4989733",
+          "5012915",
+          "6282048",
+          "6176389"
+        ],
+        "result_count": 4,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "4227437",
+            "source_url": "https://www.musinsa.com/products/4227437",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2312232",
+            "source_url": "https://www.musinsa.com/products/2312232",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4143736",
+            "source_url": "https://www.musinsa.com/products/4143736",
+            "source": "2026-06-25 MUSINSA office shirt retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365163279",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 54,
+      "family": "provenance_stress",
+      "query": "상품 링크 포함 여름 티셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 8.47,
+        "result_ids": [
+          "2086653",
+          "2034137",
+          "2690691",
+          "2035287",
+          "2050094"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.44,
+        "result_ids": [
+          "2086656",
+          "4336536",
+          "2112061",
+          "4989733",
+          "2385283"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 55,
+      "family": "provenance_stress",
+      "query": "출처 있는 남성 셔츠",
+      "local": {
+        "status": 200,
+        "latency_ms": 11.56,
+        "result_ids": [
+          "6350537",
+          "6036717",
+          "6130553",
+          "6054423",
+          "6163075"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.27,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 56,
+      "family": "provenance_stress",
+      "query": "OpenCrab 셔츠 후보",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.29,
+        "result_ids": [],
+        "result_count": 0,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.1,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 57,
+      "family": "provenance_stress",
+      "query": "온톨로지팩 릴렉스핏 후보",
+      "local": {
+        "status": 200,
+        "latency_ms": 4.44,
+        "result_ids": [
+          "2034137",
+          "2035287",
+          "1388775",
+          "3417714",
+          "996177"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4.18,
+        "result_ids": [
+          "2112061",
+          "4989733",
+          "2086656",
+          "2385283",
+          "3467738"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 58,
+      "family": "provenance_stress",
+      "query": "source_url relaxed fit men",
+      "local": {
+        "status": 200,
+        "latency_ms": 6.94,
+        "result_ids": [
+          "3417714",
+          "4900438",
+          "5168051",
+          "2034137",
+          "1558197"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 4,
+        "result_ids": [
+          "4227437"
+        ],
+        "result_count": 1,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA summer tee retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "3467738",
+            "source_url": "https://www.musinsa.com/products/3467738",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4024189",
+            "source_url": "https://www.musinsa.com/products/4024189",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "4336536",
+            "source_url": "https://www.musinsa.com/products/4336536",
+            "source": "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365232937",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 59,
+      "family": "provenance_stress",
+      "query": "product_id summer tee",
+      "local": {
+        "status": 200,
+        "latency_ms": 5.54,
+        "result_ids": [
+          "5044085",
+          "5043908",
+          "3134710",
+          "3425399",
+          "3134711"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.69,
+        "result_ids": [
+          "4143736",
+          "4172293",
+          "4024189",
+          "4695924"
+        ],
+        "result_count": 4,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    },
+    {
+      "index": 60,
+      "family": "provenance_stress",
+      "query": "OpenCrab 여름 반팔 후보",
+      "local": {
+        "status": 200,
+        "latency_ms": 7.17,
+        "result_ids": [
+          "2690691",
+          "5167907",
+          "3609916",
+          "3198730",
+          "3245497"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "local_index"
+        ]
+      },
+      "hybrid": {
+        "status": 200,
+        "latency_ms": 3.64,
+        "result_ids": [
+          "4989733",
+          "2112061",
+          "2086656",
+          "2385283",
+          "4024189"
+        ],
+        "result_count": 5,
+        "candidate_source": [
+          "opencrab_candidates"
+        ],
+        "adapter_source": "opencrab_http",
+        "product_id_count": 17,
+        "evidence_count": 3,
+        "source_titles": [
+          "2026-06-25 MUSINSA summer tee retrieval seed rows",
+          "2026-06-25 MUSINSA office shirt retrieval seed rows",
+          "2026-06-25 MUSINSA relaxed fit 175 88 retrieval seed rows"
+        ],
+        "candidate_rows_count": 17,
+        "sample_candidate_rows": [
+          {
+            "product_id": "6176389",
+            "source_url": "https://www.musinsa.com/products/6176389",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "2086656",
+            "source_url": "https://www.musinsa.com/products/2086656",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          },
+          {
+            "product_id": "6282048",
+            "source_url": "https://www.musinsa.com/products/6282048",
+            "source": "2026-06-25 MUSINSA summer tee retrieval seed rows",
+            "package_id": "0b3c79f7-1861-4466-ba20-2cbaa736de66",
+            "evidence_source_url": "mcp-pack-update:0b3c79f7-1861-4466-ba20-2cbaa736de66:1782365183765",
+            "extraction": "evidence_row"
+          }
+        ]
+      },
+      "overlap": {
+        "ids": [],
+        "count": 0
+      },
+      "validation_failures": []
+    }
+  ]
+}

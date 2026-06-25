@@ -57,6 +57,14 @@ test('hybrid retrieval reranks OpenCrab candidate product ids locally', () => {
   assert.equal(response.retrieval.candidate_source[0], 'opencrab_candidates');
 });
 
+test('hybrid retrieval returns trusted OpenCrab candidates when local lexical rerank has no matches', () => {
+  const response = searchProductsWithRetrieval(products, { query: '175cm 88kg 릴렉스핏', retrieval_mode: 'hybrid', opencrab_candidate_product_ids: ['2', '1'], price_max: 50000 });
+  assert.equal(response.results.length, 2);
+  assert.equal(response.retrieval.opencrab_candidates_used, true);
+  assert.equal(response.retrieval.opencrab_candidate_fallback_used, true);
+  assert.deepEqual(response.retrieval.candidate_source, ['opencrab_candidates']);
+});
+
 test('catalog-derived lexicon includes category, brand, and alias terms', () => {
   const lexicon = getCatalogLexicon(products);
   assert.ok(lexicon.brands.includes('테스트브랜드'));

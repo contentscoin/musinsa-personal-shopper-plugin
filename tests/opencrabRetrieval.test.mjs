@@ -30,6 +30,15 @@ test('resolveOpenCrabCandidates skips remote retrieval outside hybrid/opencrab_f
   assert.deepEqual(result.product_ids, []);
 });
 
+test('resolveOpenCrabCandidates uses the default generated candidate cache in hybrid mode', async () => {
+  delete process.env.OPENCRAB_RETRIEVAL_URL;
+  delete process.env.OPENCRAB_RETRIEVAL_CACHE_PATH;
+  const result = await resolveOpenCrabCandidates({ query: '남성 차콜 후드집업 5만원 이하', retrieval_mode: 'hybrid' });
+  assert.equal(result.source, 'opencrab_cache');
+  assert.equal(result.cache_hit, true);
+  assert.ok(result.product_ids.length >= 3);
+});
+
 test('resolveOpenCrabCandidates calls configured adapter and extracts product ids', async () => {
   const server = http.createServer(async (req, res) => {
     assert.equal(req.method, 'POST');
@@ -45,7 +54,7 @@ test('resolveOpenCrabCandidates calls configured adapter and extracts product id
   process.env.OPENCRAB_RETRIEVAL_URL = `http://127.0.0.1:${port}/retrieve`;
   process.env.OPENCRAB_RETRIEVAL_TIMEOUT_MS = '1000';
   try {
-    const result = await resolveOpenCrabCandidates({ query: '남성 차콜 후드집업', retrieval_mode: 'hybrid' });
+    const result = await resolveOpenCrabCandidates({ query: '남성 차콜 후드집업', retrieval_mode: 'hybrid' }, { cachePath: '' });
     assert.equal(result.source, 'opencrab_http');
     assert.deepEqual(result.product_ids, ['3783092', '4567792']);
   } finally {

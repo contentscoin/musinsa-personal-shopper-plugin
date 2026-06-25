@@ -7,7 +7,7 @@
 | Adapter source | opencrab_http |
 | Candidate count | 3 |
 | Result count | 2 |
-| Candidate retrieval ms | 16.422 |
+| Candidate retrieval ms | 15.598 |
 
 ## Results
 

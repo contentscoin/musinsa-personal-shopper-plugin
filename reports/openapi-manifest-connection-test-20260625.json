@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-06-25T04:00:18.991Z",
-  "completed_at": "2026-06-25T04:00:19.137Z",
+  "started_at": "2026-06-25T04:54:55.653Z",
+  "completed_at": "2026-06-25T04:54:55.811Z",
   "base_url": "http://127.0.0.1:8787",
   "public_base_url": "http://localhost:8787",
   "summary": {
@@ -20,7 +20,7 @@
         "ok": true,
         "products_loaded": 2050
       },
-      "latency_ms": 27.79
+      "latency_ms": 27.5
     },
     "manifest": {
       "status": 200,
@@ -43,7 +43,7 @@
         "contact_email": "devnull@example.com",
         "legal_info_url": "http://localhost:8787/analytics/notice"
       },
-      "latency_ms": 2.78
+      "latency_ms": 2.87
     },
     "openapi": {
       "status": 200,
@@ -102,7 +102,7 @@
         "getAnalyticsInsights",
         "exportAnalyticsSummary"
       ],
-      "latency_ms": 1.72
+      "latency_ms": 1.52
     },
     "legal_notice": {
       "status": 200,
@@ -136,26 +136,26 @@
         ],
         "owner_visibility": "Pack owner can view sanitized event-level rows plus aggregate statistics."
       },
-      "latency_ms": 0.86
+      "latency_ms": 0.99
     },
     "logo": {
       "status": 200,
       "content_type": "image/png",
       "body_bytes": 0,
-      "latency_ms": 0.82
+      "latency_ms": 1.05
     },
     "recommend_runtime": {
       "status": 200,
       "result_count": 3,
       "top_product": "3783092",
       "has_score_breakdown": true,
-      "latency_ms": 59.06
+      "latency_ms": 63.5
     },
     "search_runtime": {
       "status": 200,
       "result_count": 3,
       "top_product": "1163169",
-      "latency_ms": 47.6
+      "latency_ms": 55.39
     }
   },
   "failures": [],

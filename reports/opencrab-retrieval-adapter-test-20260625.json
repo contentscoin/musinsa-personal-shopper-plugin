@@ -30,9 +30,9 @@
       "terms": 549
     },
     "latency_ms": {
-      "total": 17.917,
-      "candidate_retrieval": 16.422,
-      "rerank": 1.495
+      "total": 17.014,
+      "candidate_retrieval": 15.598,
+      "rerank": 1.416
     },
     "opencrab_adapter": {
       "source": "opencrab_http",
@@ -40,7 +40,7 @@
       "cache_hit": false,
       "product_id_count": 3,
       "raw_count": 3,
-      "latency_ms": 16.422
+      "latency_ms": 15.598
     }
   },
   "server_output": [

@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-06-25T04:00:34.547Z",
-  "completed_at": "2026-06-25T04:00:38.629Z",
+  "started_at": "2026-06-25T04:56:35.339Z",
+  "completed_at": "2026-06-25T04:56:37.109Z",
   "base_url": "http://127.0.0.1:8792",
   "health": {
     "ok": true,
@@ -21,16 +21,16 @@
     "passed": 160,
     "failed": 0,
     "nonempty_scenarios": 160,
-    "p50_latency_ms": 8.98,
-    "p95_latency_ms": 14.41,
-    "max_latency_ms": 369.57
+    "p50_latency_ms": 8.8,
+    "p95_latency_ms": 11.55,
+    "max_latency_ms": 32.13
   },
   "by_scenario": {
     "category_general": {
       "count": 80,
       "pass": 80,
       "nonempty": 80,
-      "avg_latency_ms": 9.79,
+      "avg_latency_ms": 9.4,
       "avg_exact_matches": 4.8,
       "avg_unique_brands": 3.99
     },
@@ -38,7 +38,7 @@
       "count": 80,
       "pass": 80,
       "nonempty": 80,
-      "avg_latency_ms": 16.5,
+      "avg_latency_ms": 9.06,
       "avg_exact_matches": 4.55,
       "avg_unique_brands": 3.59
     }
@@ -65,7 +65,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 34.93,
+      "latency_ms": 32.13,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -112,7 +112,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 14.78,
+      "latency_ms": 14.15,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -157,7 +157,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 14.41,
+      "latency_ms": 14.34,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -204,7 +204,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.06,
+      "latency_ms": 11.55,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -249,7 +249,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 11.24,
+      "latency_ms": 11.17,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -296,7 +296,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.6,
+      "latency_ms": 10.02,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -341,7 +341,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 16.67,
+      "latency_ms": 10.54,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -388,7 +388,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 11.43,
+      "latency_ms": 10.8,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -433,7 +433,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 13.94,
+      "latency_ms": 10.51,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -480,7 +480,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.22,
+      "latency_ms": 9.35,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -525,7 +525,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.96,
+      "latency_ms": 10.12,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -572,7 +572,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.36,
+      "latency_ms": 9.79,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -617,7 +617,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 14.48,
+      "latency_ms": 9.41,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -664,7 +664,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.52,
+      "latency_ms": 10.02,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -709,7 +709,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.48,
+      "latency_ms": 10.08,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -756,7 +756,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.64,
+      "latency_ms": 9.49,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -801,7 +801,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.32,
+      "latency_ms": 9.28,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -848,7 +848,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.64,
+      "latency_ms": 9.18,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -893,7 +893,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.44,
+      "latency_ms": 9.47,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -940,7 +940,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 111.83,
+      "latency_ms": 9.26,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -987,7 +987,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 34.93,
+      "latency_ms": 32.13,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1034,7 +1034,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 14.78,
+      "latency_ms": 14.15,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1079,7 +1079,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 14.41,
+      "latency_ms": 14.34,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1126,7 +1126,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.06,
+      "latency_ms": 11.55,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1171,7 +1171,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 11.24,
+      "latency_ms": 11.17,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1218,7 +1218,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.6,
+      "latency_ms": 10.02,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1263,7 +1263,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 16.67,
+      "latency_ms": 10.54,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1310,7 +1310,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 11.43,
+      "latency_ms": 10.8,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1355,7 +1355,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 13.94,
+      "latency_ms": 10.51,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1402,7 +1402,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.22,
+      "latency_ms": 9.35,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1447,7 +1447,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.96,
+      "latency_ms": 10.12,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1494,7 +1494,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.36,
+      "latency_ms": 9.79,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1539,7 +1539,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 14.48,
+      "latency_ms": 9.41,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1586,7 +1586,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.52,
+      "latency_ms": 10.02,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1631,7 +1631,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.48,
+      "latency_ms": 10.08,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1678,7 +1678,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.64,
+      "latency_ms": 9.49,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1723,7 +1723,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.32,
+      "latency_ms": 9.28,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1770,7 +1770,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.64,
+      "latency_ms": 9.18,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1815,7 +1815,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.44,
+      "latency_ms": 9.47,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1862,7 +1862,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 111.83,
+      "latency_ms": 9.26,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1907,7 +1907,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.7,
+      "latency_ms": 8.95,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1954,7 +1954,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.82,
+      "latency_ms": 9.03,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -1999,7 +1999,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.6,
+      "latency_ms": 8.73,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2046,7 +2046,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.37,
+      "latency_ms": 8.66,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2091,7 +2091,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.68,
+      "latency_ms": 9.14,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2138,7 +2138,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.54,
+      "latency_ms": 9.22,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2183,7 +2183,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.14,
+      "latency_ms": 8.89,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2230,7 +2230,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.26,
+      "latency_ms": 8.75,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2275,7 +2275,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.88,
+      "latency_ms": 9.34,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2322,7 +2322,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.69,
+      "latency_ms": 9.32,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2367,7 +2367,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.99,
+      "latency_ms": 8.19,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2414,7 +2414,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.48,
+      "latency_ms": 8.03,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2459,7 +2459,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.04,
+      "latency_ms": 9.61,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2506,7 +2506,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.83,
+      "latency_ms": 9.25,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2551,7 +2551,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.29,
+      "latency_ms": 9.26,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2598,7 +2598,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.42,
+      "latency_ms": 8.92,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2643,7 +2643,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.08,
+      "latency_ms": 9.51,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2690,7 +2690,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.37,
+      "latency_ms": 9.02,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2735,7 +2735,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.12,
+      "latency_ms": 9.68,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2782,7 +2782,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.74,
+      "latency_ms": 9.2,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2827,7 +2827,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.48,
+      "latency_ms": 9.67,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2873,7 +2873,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.03,
+      "latency_ms": 9.71,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2916,7 +2916,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.71,
+      "latency_ms": 8.3,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -2963,7 +2963,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.64,
+      "latency_ms": 8.43,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3008,7 +3008,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.29,
+      "latency_ms": 8.98,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3055,7 +3055,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.48,
+      "latency_ms": 8.86,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3100,7 +3100,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.28,
+      "latency_ms": 9.2,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3147,7 +3147,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 11.91,
+      "latency_ms": 9.24,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3192,7 +3192,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.89,
+      "latency_ms": 9.05,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3239,7 +3239,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 369.57,
+      "latency_ms": 8.65,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3284,7 +3284,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.89,
+      "latency_ms": 8.82,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3331,7 +3331,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 129.49,
+      "latency_ms": 8.57,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3376,7 +3376,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.38,
+      "latency_ms": 9.1,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3423,7 +3423,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 13.5,
+      "latency_ms": 8.73,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3468,7 +3468,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.15,
+      "latency_ms": 8.55,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3515,7 +3515,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.75,
+      "latency_ms": 8.21,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3560,7 +3560,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.43,
+      "latency_ms": 7.99,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3607,7 +3607,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.8,
+      "latency_ms": 8.37,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3652,7 +3652,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.09,
+      "latency_ms": 9.7,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3699,7 +3699,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.49,
+      "latency_ms": 10.25,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3744,7 +3744,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.31,
+      "latency_ms": 8.58,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3791,7 +3791,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.98,
+      "latency_ms": 9.19,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3836,7 +3836,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.34,
+      "latency_ms": 8.67,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3883,7 +3883,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.26,
+      "latency_ms": 8.33,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3928,7 +3928,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9,
+      "latency_ms": 8.72,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -3975,7 +3975,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.6,
+      "latency_ms": 14.08,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4020,7 +4020,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.01,
+      "latency_ms": 8.8,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4067,7 +4067,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.11,
+      "latency_ms": 8.71,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4112,7 +4112,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.19,
+      "latency_ms": 9.32,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4159,7 +4159,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.46,
+      "latency_ms": 9.43,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4204,7 +4204,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9,
+      "latency_ms": 8.61,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4251,7 +4251,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.91,
+      "latency_ms": 8.63,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4296,7 +4296,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.86,
+      "latency_ms": 8.57,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4343,7 +4343,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.7,
+      "latency_ms": 8.8,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4388,7 +4388,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.56,
+      "latency_ms": 8.39,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4435,7 +4435,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.42,
+      "latency_ms": 8.24,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4480,7 +4480,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.16,
+      "latency_ms": 9.13,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4527,7 +4527,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.54,
+      "latency_ms": 8.49,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4572,7 +4572,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.09,
+      "latency_ms": 13.24,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4619,7 +4619,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.81,
+      "latency_ms": 8.49,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4664,7 +4664,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.96,
+      "latency_ms": 9.44,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4711,7 +4711,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.33,
+      "latency_ms": 9.4,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4756,7 +4756,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.85,
+      "latency_ms": 8.97,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4803,7 +4803,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.98,
+      "latency_ms": 8.81,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4848,7 +4848,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.92,
+      "latency_ms": 8.53,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4895,7 +4895,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.91,
+      "latency_ms": 8.3,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4940,7 +4940,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.09,
+      "latency_ms": 7.72,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -4987,7 +4987,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.68,
+      "latency_ms": 8.28,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5032,7 +5032,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.38,
+      "latency_ms": 9.01,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5079,7 +5079,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.93,
+      "latency_ms": 9.48,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5124,7 +5124,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.89,
+      "latency_ms": 7.71,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5171,7 +5171,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.04,
+      "latency_ms": 7.85,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5216,7 +5216,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.92,
+      "latency_ms": 8.39,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5263,7 +5263,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.02,
+      "latency_ms": 8.49,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5308,7 +5308,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.94,
+      "latency_ms": 8.66,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5355,7 +5355,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.94,
+      "latency_ms": 8.67,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5400,7 +5400,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.54,
+      "latency_ms": 9.16,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5447,7 +5447,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.3,
+      "latency_ms": 8.03,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5492,7 +5492,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.7,
+      "latency_ms": 8.66,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5539,7 +5539,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.68,
+      "latency_ms": 8.11,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5584,7 +5584,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.48,
+      "latency_ms": 10.15,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5631,7 +5631,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.91,
+      "latency_ms": 9.05,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5676,7 +5676,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.91,
+      "latency_ms": 9.19,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5723,7 +5723,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.72,
+      "latency_ms": 8.87,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -5768,7 +5768,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.36,
+      "latency_ms": 8.76,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5815,7 +5815,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.95,
+      "latency_ms": 15.11,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5860,7 +5860,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 13.22,
+      "latency_ms": 9.24,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5907,7 +5907,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.69,
+      "latency_ms": 9.03,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -5952,7 +5952,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.95,
+      "latency_ms": 9.04,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -5999,7 +5999,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.17,
+      "latency_ms": 9.15,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -6044,7 +6044,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9,
+      "latency_ms": 8.69,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -6091,7 +6091,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.66,
+      "latency_ms": 8.58,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -6136,7 +6136,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.62,
+      "latency_ms": 9.24,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -6183,7 +6183,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.6,
+      "latency_ms": 8.35,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -6228,7 +6228,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.23,
+      "latency_ms": 8.43,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -6275,7 +6275,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.4,
+      "latency_ms": 8.43,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -6320,7 +6320,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.05,
+      "latency_ms": 8.8,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -6367,7 +6367,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.95,
+      "latency_ms": 8.56,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -6412,7 +6412,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.63,
+      "latency_ms": 8.5,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -6459,7 +6459,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.95,
+      "latency_ms": 8.58,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
@@ -6551,7 +6551,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.98,
+      "latency_ms": 8.92,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -6596,7 +6596,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.13,
+      "latency_ms": 7.89,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -6643,7 +6643,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.02,
+      "latency_ms": 7.96,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -6688,7 +6688,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.77,
+      "latency_ms": 8.67,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -6735,7 +6735,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.62,
+      "latency_ms": 9.13,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
@@ -6780,7 +6780,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.59,
+      "latency_ms": 8.61,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -6827,7 +6827,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.04,
+      "latency_ms": 8.71,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -6872,7 +6872,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.44,
+      "latency_ms": 9.06,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -6919,7 +6919,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.95,
+      "latency_ms": 8.65,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -6964,7 +6964,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.98,
+      "latency_ms": 8.36,
       "recommendation_count": 5,
       "confidence": {
         "level": "high",
@@ -7011,7 +7011,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.43,
+      "latency_ms": 8.77,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7056,7 +7056,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.33,
+      "latency_ms": 8.87,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7103,7 +7103,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.36,
+      "latency_ms": 9.35,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7148,7 +7148,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.16,
+      "latency_ms": 8.51,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7195,7 +7195,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.25,
+      "latency_ms": 8.55,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7240,7 +7240,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.23,
+      "latency_ms": 8.5,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7287,7 +7287,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.19,
+      "latency_ms": 8.48,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
@@ -7332,7 +7332,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.33,
+      "latency_ms": 8.64,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7379,7 +7379,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.37,
+      "latency_ms": 8.39,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7424,7 +7424,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.97,
+      "latency_ms": 9.15,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7471,7 +7471,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.4,
+      "latency_ms": 8.8,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
@@ -7516,7 +7516,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.66,
+      "latency_ms": 13.67,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7563,7 +7563,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.36,
+      "latency_ms": 7.72,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
@@ -7608,7 +7608,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.06,
+      "latency_ms": 8.13,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7655,7 +7655,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.99,
+      "latency_ms": 8.12,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
@@ -7700,7 +7700,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.75,
+      "latency_ms": 7.94,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7747,7 +7747,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.21,
+      "latency_ms": 8.4,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
@@ -7792,7 +7792,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.31,
+      "latency_ms": 8.94,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7839,7 +7839,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.86,
+      "latency_ms": 9.3,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7884,7 +7884,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.39,
+      "latency_ms": 8.67,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7931,7 +7931,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.5,
+      "latency_ms": 8.62,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -7976,7 +7976,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.26,
+      "latency_ms": 8.47,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -8023,7 +8023,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.5,
+      "latency_ms": 8.57,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -8068,7 +8068,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.5,
+      "latency_ms": 8.45,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -8115,7 +8115,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.33,
+      "latency_ms": 8.56,
       "recommendation_count": 4,
       "confidence": {
         "level": "high",
@@ -8160,7 +8160,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.36,
+      "latency_ms": 8.64,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
@@ -8207,7 +8207,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.25,
+      "latency_ms": 8.62,
       "recommendation_count": 2,
       "confidence": {
         "level": "high",
@@ -8252,7 +8252,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.95,
+      "latency_ms": 7.92,
       "recommendation_count": 3,
       "confidence": {
         "level": "high",
@@ -8299,7 +8299,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.76,
+      "latency_ms": 7.99,
       "recommendation_count": 2,
       "confidence": {
         "level": "high",

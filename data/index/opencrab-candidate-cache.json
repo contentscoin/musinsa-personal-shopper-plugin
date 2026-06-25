@@ -1,0 +1,924 @@
+{
+  "generated_at": "2026-06-25T04:18:11.506Z",
+  "owner_tag": "hermes-profile:paperclipbase",
+  "project_name": "paperclipbase",
+  "source": "local product index fallback cache for OpenCrab retrieval adapter; replace/sync with OpenCrab project-run results when available",
+  "queries": {
+    "남성 차콜 후드집업 5만원 이하": [
+      {
+        "product_id": "2712417",
+        "source_url": "https://www.musinsa.com/products/2712417",
+        "score": 22.86,
+        "name": "투웨이 에센셜 후드 집업-그레이"
+      },
+      {
+        "product_id": "4671560",
+        "source_url": "https://www.musinsa.com/products/4671560",
+        "score": 22.86,
+        "name": "VLAD 스트라이프 로고 후드 집업_블랙&그레이"
+      },
+      {
+        "product_id": "5276035",
+        "source_url": "https://www.musinsa.com/products/5276035",
+        "score": 22.86,
+        "name": "빈티지 워싱 데님 워크 후드 집업_라이트 그레이"
+      },
+      {
+        "product_id": "3783092",
+        "source_url": "https://www.musinsa.com/products/3783092",
+        "score": 21.66,
+        "name": "[크롭선택] ASI 포시즌 에센셜 후드 집업_피그먼트 차콜"
+      },
+      {
+        "product_id": "4567792",
+        "source_url": "https://www.musinsa.com/products/4567792",
+        "score": 21.66,
+        "name": "VLAD 컷오프 아플리케 후드 집업_차콜"
+      },
+      {
+        "product_id": "2273084",
+        "source_url": "https://www.musinsa.com/products/2273084",
+        "score": 20.68,
+        "name": "Signature Patch Hood Zip-up / WHMZG1111U"
+      },
+      {
+        "product_id": "1778404",
+        "source_url": "https://www.musinsa.com/products/1778404",
+        "score": 20.66,
+        "name": "2WAY 스웻 후드 집업 (MELANGE GREY)"
+      },
+      {
+        "product_id": "1778408",
+        "source_url": "https://www.musinsa.com/products/1778408",
+        "score": 20.66,
+        "name": "2WAY 스웻 후드 집업 (BLACK)"
+      },
+      {
+        "product_id": "2385283",
+        "source_url": "https://www.musinsa.com/products/2385283",
+        "score": 20.66,
+        "name": "(Renew Ver.) 루즈핏 2Way 스웨트 후드집업 ( 5Color ) ( 기모선택 )"
+      },
+      {
+        "product_id": "2122594",
+        "source_url": "https://www.musinsa.com/products/2122594",
+        "score": 20.66,
+        "name": "유스풀 벌룬 후드집업 네이비 SJHD1327"
+      },
+      {
+        "product_id": "2897002",
+        "source_url": "https://www.musinsa.com/products/2897002",
+        "score": 20.66,
+        "name": "2WAY 오버핏 스몰 지프 후드집업 (JR5TZU051MG)"
+      },
+      {
+        "product_id": "5231584",
+        "source_url": "https://www.musinsa.com/products/5231584",
+        "score": 20.66,
+        "name": "2WAY 그래피티 후드 집업_블랙"
+      },
+      {
+        "product_id": "2200191",
+        "source_url": "https://www.musinsa.com/products/2200191",
+        "score": 20.66,
+        "name": "투 파인더 후드집업 네이비 JUHD4453"
+      },
+      {
+        "product_id": "2897004",
+        "source_url": "https://www.musinsa.com/products/2897004",
+        "score": 20.66,
+        "name": "2WAY 오버핏 스몰 지프 후드집업 (JR5TZU051BK)"
+      },
+      {
+        "product_id": "4796679",
+        "source_url": "https://www.musinsa.com/products/4796679",
+        "score": 20.66,
+        "name": "2WAY OG 에센셜 디트로이트 후드 집업_데님 더스트 인디고"
+      },
+      {
+        "product_id": "4323724",
+        "source_url": "https://www.musinsa.com/products/4323724",
+        "score": 20.66,
+        "name": "자이언트핏 솔리드 후드집업 (카모베이지)"
+      },
+      {
+        "product_id": "2569095",
+        "source_url": "https://www.musinsa.com/products/2569095",
+        "score": 20.66,
+        "name": "Signature hood zip-up - CHARCOAL"
+      },
+      {
+        "product_id": "3783094",
+        "source_url": "https://www.musinsa.com/products/3783094",
+        "score": 20.64,
+        "name": "[크롭선택] ASI 포시즌 에센셜 후드 집업_스웻 멜란지"
+      },
+      {
+        "product_id": "3783086",
+        "source_url": "https://www.musinsa.com/products/3783086",
+        "score": 20.64,
+        "name": "VLAD TYPE-B 아트웍 자수 후드 집업_네이비"
+      },
+      {
+        "product_id": "3783093",
+        "source_url": "https://www.musinsa.com/products/3783093",
+        "score": 20.64,
+        "name": "ASI 포시즌 에센셜 후드 집업_피그먼트 네이비"
+      }
+    ],
+    "차콜 후드집업": [
+      {
+        "product_id": "2712417",
+        "source_url": "https://www.musinsa.com/products/2712417",
+        "score": 21.86,
+        "name": "투웨이 에센셜 후드 집업-그레이"
+      },
+      {
+        "product_id": "4671560",
+        "source_url": "https://www.musinsa.com/products/4671560",
+        "score": 21.86,
+        "name": "VLAD 스트라이프 로고 후드 집업_블랙&그레이"
+      },
+      {
+        "product_id": "5276035",
+        "source_url": "https://www.musinsa.com/products/5276035",
+        "score": 21.86,
+        "name": "빈티지 워싱 데님 워크 후드 집업_라이트 그레이"
+      },
+      {
+        "product_id": "4374257",
+        "source_url": "https://www.musinsa.com/products/4374257",
+        "score": 21.86,
+        "name": "ESCF 로고 콜라주 프린트 투웨이 후드집업 그레이"
+      },
+      {
+        "product_id": "3783092",
+        "source_url": "https://www.musinsa.com/products/3783092",
+        "score": 20.66,
+        "name": "[크롭선택] ASI 포시즌 에센셜 후드 집업_피그먼트 차콜"
+      },
+      {
+        "product_id": "4567792",
+        "source_url": "https://www.musinsa.com/products/4567792",
+        "score": 20.66,
+        "name": "VLAD 컷오프 아플리케 후드 집업_차콜"
+      },
+      {
+        "product_id": "5329084",
+        "source_url": "https://www.musinsa.com/products/5329084",
+        "score": 20.04,
+        "name": "절개 라인 오버핏 큐빅 리벳 포인트 스웨트 후드집업 [차콜]"
+      },
+      {
+        "product_id": "2273084",
+        "source_url": "https://www.musinsa.com/products/2273084",
+        "score": 19.68,
+        "name": "Signature Patch Hood Zip-up / WHMZG1111U"
+      },
+      {
+        "product_id": "3697526",
+        "source_url": "https://www.musinsa.com/products/3697526",
+        "score": 19.68,
+        "name": "[2-WAY] 슬리브 스타 피그먼트 후드 집업 스모크블랙"
+      },
+      {
+        "product_id": "3767728",
+        "source_url": "https://www.musinsa.com/products/3767728",
+        "score": 19.68,
+        "name": "투톤아치 후드집업_블랙"
+      },
+      {
+        "product_id": "5316275",
+        "source_url": "https://www.musinsa.com/products/5316275",
+        "score": 19.68,
+        "name": "780G 솔리드 크롭 후디 집업-딥 블랙-"
+      },
+      {
+        "product_id": "3778690",
+        "source_url": "https://www.musinsa.com/products/3778690",
+        "score": 19.68,
+        "name": "TCM 1972 hooded zip-up (dark brown)"
+      },
+      {
+        "product_id": "1778404",
+        "source_url": "https://www.musinsa.com/products/1778404",
+        "score": 19.66,
+        "name": "2WAY 스웻 후드 집업 (MELANGE GREY)"
+      },
+      {
+        "product_id": "1778408",
+        "source_url": "https://www.musinsa.com/products/1778408",
+        "score": 19.66,
+        "name": "2WAY 스웻 후드 집업 (BLACK)"
+      },
+      {
+        "product_id": "2385283",
+        "source_url": "https://www.musinsa.com/products/2385283",
+        "score": 19.66,
+        "name": "(Renew Ver.) 루즈핏 2Way 스웨트 후드집업 ( 5Color ) ( 기모선택 )"
+      },
+      {
+        "product_id": "2122594",
+        "source_url": "https://www.musinsa.com/products/2122594",
+        "score": 19.66,
+        "name": "유스풀 벌룬 후드집업 네이비 SJHD1327"
+      },
+      {
+        "product_id": "5264797",
+        "source_url": "https://www.musinsa.com/products/5264797",
+        "score": 19.66,
+        "name": "언타이틀 스테리나잇 스트라이프 후드집업 블랙"
+      },
+      {
+        "product_id": "3466424",
+        "source_url": "https://www.musinsa.com/products/3466424",
+        "score": 19.66,
+        "name": "FLOWER ZIP UP HOOD(WINE)"
+      },
+      {
+        "product_id": "2897002",
+        "source_url": "https://www.musinsa.com/products/2897002",
+        "score": 19.66,
+        "name": "2WAY 오버핏 스몰 지프 후드집업 (JR5TZU051MG)"
+      },
+      {
+        "product_id": "5231584",
+        "source_url": "https://www.musinsa.com/products/5231584",
+        "score": 19.66,
+        "name": "2WAY 그래피티 후드 집업_블랙"
+      }
+    ],
+    "화이트 스니커즈": [
+      {
+        "product_id": "1163169",
+        "source_url": "https://www.musinsa.com/products/1163169",
+        "score": 17.88,
+        "name": "삼바 OG - 화이트:블랙 / B75806"
+      },
+      {
+        "product_id": "957758",
+        "source_url": "https://www.musinsa.com/products/957758",
+        "score": 17.88,
+        "name": "컴피쿠시 올드스쿨 - (클래식) 블랙:트루 화이트/VN0A3WMAVNE1"
+      },
+      {
+        "product_id": "3976350",
+        "source_url": "https://www.musinsa.com/products/3976350",
+        "score": 17.88,
+        "name": "에어 포스 1 07 M - 화이트 / CW2288-111"
+      },
+      {
+        "product_id": "930951",
+        "source_url": "https://www.musinsa.com/products/930951",
+        "score": 17.88,
+        "name": "어센틱 - (Golden Coast) 체커보드 블랙:화이트 / VN000W4NDI01"
+      },
+      {
+        "product_id": "3905837",
+        "source_url": "https://www.musinsa.com/products/3905837",
+        "score": 17.88,
+        "name": "핸드볼 스페지알 - 브라운:화이트 / IF6490"
+      },
+      {
+        "product_id": "4225425",
+        "source_url": "https://www.musinsa.com/products/4225425",
+        "score": 17.88,
+        "name": "힙노틱 LS - 화이트:그레이 / 395295-03"
+      },
+      {
+        "product_id": "5206468",
+        "source_url": "https://www.musinsa.com/products/5206468",
+        "score": 17.88,
+        "name": "핸드볼 스페지알 - 크림화이트:블루 / JS3865"
+      },
+      {
+        "product_id": "5993065",
+        "source_url": "https://www.musinsa.com/products/5993065",
+        "score": 17.88,
+        "name": "에어 맥스 95 빅 버블 OG M - 블랙:미디엄 애쉬:다크 퓨터:화이트 / HM4740-007"
+      },
+      {
+        "product_id": "6002028",
+        "source_url": "https://www.musinsa.com/products/6002028",
+        "score": 17.88,
+        "name": "스피드캣 고 우먼스 - 페르시안 블루:웜화이트 / 403589-05"
+      },
+      {
+        "product_id": "4240660",
+        "source_url": "https://www.musinsa.com/products/4240660",
+        "score": 17.86,
+        "name": "푸마 클럽 2 에라 - 화이트:블랙  / 397447-07"
+      },
+      {
+        "product_id": "4240657",
+        "source_url": "https://www.musinsa.com/products/4240657",
+        "score": 17.86,
+        "name": "푸마 클럽 2 에라 - 블랙:화이트 / 397447-02"
+      },
+      {
+        "product_id": "5329354",
+        "source_url": "https://www.musinsa.com/products/5329354",
+        "score": 17.86,
+        "name": "이탈리아 70s - 크림화이트:블랙 / HQ9348"
+      },
+      {
+        "product_id": "5253556",
+        "source_url": "https://www.musinsa.com/products/5253556",
+        "score": 17.86,
+        "name": "슈퍼스타 82 - 블랙:화이트 / JI2026"
+      },
+      {
+        "product_id": "4904194",
+        "source_url": "https://www.musinsa.com/products/4904194",
+        "score": 17.86,
+        "name": "푸마 클럽 II 에라 - 화이트 / 397447-22"
+      },
+      {
+        "product_id": "5477318",
+        "source_url": "https://www.musinsa.com/products/5477318",
+        "score": 17.86,
+        "name": "가젤 로우 프로  - 레드:화이트 / JR5744"
+      },
+      {
+        "product_id": "5354808",
+        "source_url": "https://www.musinsa.com/products/5354808",
+        "score": 17.4,
+        "name": "에어 조던 1 로우 M - 블랙:화이트:파티클 그레이 / 553558-040"
+      },
+      {
+        "product_id": "4854740",
+        "source_url": "https://www.musinsa.com/products/4854740",
+        "score": 17.4,
+        "name": "가젤 인도어 - 오트:클라우드화이트 / JI3523"
+      },
+      {
+        "product_id": "6245012",
+        "source_url": "https://www.musinsa.com/products/6245012",
+        "score": 17.4,
+        "name": "페가수스 42 W - 화이트:울프 그레이:쿨 그레이:메탈릭 실버 / IB1881-102"
+      },
+      {
+        "product_id": "6092243",
+        "source_url": "https://www.musinsa.com/products/6092243",
+        "score": 17.4,
+        "name": "포에버런 나이트로 2 - 화이트:프레쉬워터 / 310109-24"
+      },
+      {
+        "product_id": "5200037",
+        "source_url": "https://www.musinsa.com/products/5200037",
+        "score": 17.4,
+        "name": "엣지 코트 피치 화이트 SR323LSN72"
+      }
+    ],
+    "여름 반팔 티셔츠": [
+      {
+        "product_id": "2690691",
+        "source_url": "https://www.musinsa.com/products/2690691",
+        "score": 15.28,
+        "name": "무지 머슬핏 반팔 5컬러"
+      },
+      {
+        "product_id": "5167907",
+        "source_url": "https://www.musinsa.com/products/5167907",
+        "score": 15.28,
+        "name": "[건조기가능] 컴포트 크롭 반팔티 ( 8Color )"
+      },
+      {
+        "product_id": "3609916",
+        "source_url": "https://www.musinsa.com/products/3609916",
+        "score": 15.28,
+        "name": "퍼펙트 특양면 오버핏 숄더 2중절개 무지 반팔 티셔츠_10Color"
+      },
+      {
+        "product_id": "3245497",
+        "source_url": "https://www.musinsa.com/products/3245497",
+        "score": 15.28,
+        "name": "[프리미엄 CP20] 세미오버핏 반팔티 (화이트)"
+      },
+      {
+        "product_id": "5044085",
+        "source_url": "https://www.musinsa.com/products/5044085",
+        "score": 15.28,
+        "name": "패턴 머슬 헨리넥 반팔 니트티 [블랙]"
+      },
+      {
+        "product_id": "4017183",
+        "source_url": "https://www.musinsa.com/products/4017183",
+        "score": 15.28,
+        "name": "[SET] 그래픽 피그먼트 오버핏 반팔티셔츠 PART01"
+      },
+      {
+        "product_id": "5020231",
+        "source_url": "https://www.musinsa.com/products/5020231",
+        "score": 15.28,
+        "name": "SS 루즈핏 유넥 반팔 티셔츠 ( 3컬러 )"
+      },
+      {
+        "product_id": "5043908",
+        "source_url": "https://www.musinsa.com/products/5043908",
+        "score": 15.28,
+        "name": "패턴 머슬 헨리넥 반팔 니트티 [차콜]"
+      },
+      {
+        "product_id": "4850075",
+        "source_url": "https://www.musinsa.com/products/4850075",
+        "score": 15.28,
+        "name": "[4PACK] 14수 7.4oz 헤비웨이트 라운드 오버핏 무지 반팔 티셔츠"
+      },
+      {
+        "product_id": "6038616",
+        "source_url": "https://www.musinsa.com/products/6038616",
+        "score": 15.28,
+        "name": "26 SS 크롭 반팔 티셔츠 (라운드/유넥)"
+      },
+      {
+        "product_id": "6154819",
+        "source_url": "https://www.musinsa.com/products/6154819",
+        "score": 15.28,
+        "name": "[크롭] 스트라이프 레이어드 헨리넥 반팔 티셔츠_블랙"
+      },
+      {
+        "product_id": "2518417",
+        "source_url": "https://www.musinsa.com/products/2518417",
+        "score": 15.26,
+        "name": "[2PACK] 190g 싱글 더 레거시 반팔 티셔츠 (JR5TSU153BK)"
+      },
+      {
+        "product_id": "3223006",
+        "source_url": "https://www.musinsa.com/products/3223006",
+        "score": 15.26,
+        "name": "( 2PACK ) 퓨어코튼 루즈핏 체인 반팔티"
+      },
+      {
+        "product_id": "3223007",
+        "source_url": "https://www.musinsa.com/products/3223007",
+        "score": 15.26,
+        "name": "( 2PACK ) 퓨어코튼 레이어드 체인 반팔티"
+      },
+      {
+        "product_id": "4838119",
+        "source_url": "https://www.musinsa.com/products/4838119",
+        "score": 15.26,
+        "name": "[2PACK] 14수 7.4oz 헤비웨이트 라운드 오버핏 무지 반팔 티셔츠"
+      },
+      {
+        "product_id": "4055771",
+        "source_url": "https://www.musinsa.com/products/4055771",
+        "score": 15.26,
+        "name": "VLAD 피그먼트 슬래쉬 반팔 티셔츠_차콜"
+      },
+      {
+        "product_id": "4881044",
+        "source_url": "https://www.musinsa.com/products/4881044",
+        "score": 15.26,
+        "name": "Restchill 반팔 티셔츠"
+      },
+      {
+        "product_id": "3927554",
+        "source_url": "https://www.musinsa.com/products/3927554",
+        "score": 15.26,
+        "name": "퍼펙트 특양면 무지 머슬핏 반팔 티셔츠_7Color"
+      },
+      {
+        "product_id": "3214223",
+        "source_url": "https://www.musinsa.com/products/3214223",
+        "score": 15.26,
+        "name": "[2PACK] 키홀 릴렉스드 쿨 코튼 반팔 티셔츠_SETS005TWOPACK"
+      },
+      {
+        "product_id": "5171983",
+        "source_url": "https://www.musinsa.com/products/5171983",
+        "score": 15.26,
+        "name": "코튼 크롭 반팔 티셔츠- 머슬핏"
+      }
+    ],
+    "블랙 코튼 팬츠": [
+      {
+        "product_id": "3837367",
+        "source_url": "https://www.musinsa.com/products/3837367",
+        "score": 20.08,
+        "name": "워시드 코튼 도비 팬츠 [워시드 블랙]"
+      },
+      {
+        "product_id": "4747235",
+        "source_url": "https://www.musinsa.com/products/4747235",
+        "score": 20.08,
+        "name": "커브드 코튼 치노 팬츠 [블랙]"
+      },
+      {
+        "product_id": "5945001",
+        "source_url": "https://www.musinsa.com/products/5945001",
+        "score": 20.08,
+        "name": "엣지 워크 라보 팬츠 [페이드 블랙]"
+      },
+      {
+        "product_id": "4865214",
+        "source_url": "https://www.musinsa.com/products/4865214",
+        "score": 20.08,
+        "name": "가먼트 워시드 투턱 팬츠[블랙]"
+      },
+      {
+        "product_id": "4676395",
+        "source_url": "https://www.musinsa.com/products/4676395",
+        "score": 20.08,
+        "name": "캔버스 레귤러 핏 워크 팬츠 [블랙]"
+      },
+      {
+        "product_id": "4993411",
+        "source_url": "https://www.musinsa.com/products/4993411",
+        "score": 20.06,
+        "name": "와이드 커브드 다트 코튼 팬츠[블랙]"
+      },
+      {
+        "product_id": "2310689",
+        "source_url": "https://www.musinsa.com/products/2310689",
+        "score": 20.06,
+        "name": "코튼 린넨 투 턱 와이드 팬츠 [블랙]"
+      },
+      {
+        "product_id": "4250214",
+        "source_url": "https://www.musinsa.com/products/4250214",
+        "score": 20.06,
+        "name": "홈보이 벌룬 워크 팬츠_블랙"
+      },
+      {
+        "product_id": "5313017",
+        "source_url": "https://www.musinsa.com/products/5313017",
+        "score": 20.06,
+        "name": "피그먼트 스터드 부츠컷 팬츠 [블랙]"
+      },
+      {
+        "product_id": "5313497",
+        "source_url": "https://www.musinsa.com/products/5313497",
+        "score": 20.06,
+        "name": "트위스트 커브드 코튼 팬츠[블랙]"
+      },
+      {
+        "product_id": "6238770",
+        "source_url": "https://www.musinsa.com/products/6238770",
+        "score": 20.06,
+        "name": "[10주년기획] ©  모두의 린넨 100% 커브드 팬츠_3 COLOR"
+      },
+      {
+        "product_id": "5959096",
+        "source_url": "https://www.musinsa.com/products/5959096",
+        "score": 20.06,
+        "name": "루터스 새깅 플레어 팬츠_솔리드 블랙"
+      },
+      {
+        "product_id": "4522682",
+        "source_url": "https://www.musinsa.com/products/4522682",
+        "score": 20.04,
+        "name": "커브드 라인 다트 벌룬 코튼 팬츠 - 블랙"
+      },
+      {
+        "product_id": "5341424",
+        "source_url": "https://www.musinsa.com/products/5341424",
+        "score": 20.02,
+        "name": "어드저스트 투턱 와이드 슬랙스_코튼 치노 블랙"
+      },
+      {
+        "product_id": "5158807",
+        "source_url": "https://www.musinsa.com/products/5158807",
+        "score": 19.6,
+        "name": "나일론 와이드 카고 팬츠 (블랙)"
+      },
+      {
+        "product_id": "5873653",
+        "source_url": "https://www.musinsa.com/products/5873653",
+        "score": 19.6,
+        "name": "컨투어 커브드 치노 팬츠 (블랙)"
+      },
+      {
+        "product_id": "5344049",
+        "source_url": "https://www.musinsa.com/products/5344049",
+        "score": 19.58,
+        "name": "[코카콜라] 카고 팬츠(블랙)"
+      },
+      {
+        "product_id": "3582131",
+        "source_url": "https://www.musinsa.com/products/3582131",
+        "score": 19.58,
+        "name": "[AUTHENTIC] 어센틱 수피마 265 레귤러 스트레이트 치노팬츠 BLACK"
+      },
+      {
+        "product_id": "6356705",
+        "source_url": "https://www.musinsa.com/products/6356705",
+        "score": 19.56,
+        "name": "냉감 밴딩 슬랙스  블랙"
+      },
+      {
+        "product_id": "6229206",
+        "source_url": "https://www.musinsa.com/products/6229206",
+        "score": 19.54,
+        "name": "[류정란 × 스켈리웩] PULL UP 스트레이트 코튼 팬츠[블랙]"
+      }
+    ],
+    "오버핏 니트": [
+      {
+        "product_id": "4318436",
+        "source_url": "https://www.musinsa.com/products/4318436",
+        "score": 17.88,
+        "name": "CABLE STRIPE HENLEY NECK KNIT NAVY"
+      },
+      {
+        "product_id": "4285909",
+        "source_url": "https://www.musinsa.com/products/4285909",
+        "score": 17.86,
+        "name": "오버핏 케이블 라운드 니트 6COLOR"
+      },
+      {
+        "product_id": "5336051",
+        "source_url": "https://www.musinsa.com/products/5336051",
+        "score": 17.86,
+        "name": "레이어드 브이넥 니트 풀오버 [MELANGE GREY] / WBE3L05512"
+      },
+      {
+        "product_id": "5311348",
+        "source_url": "https://www.musinsa.com/products/5311348",
+        "score": 17.86,
+        "name": "오버핏 하찌 라운드 니트 6Color"
+      },
+      {
+        "product_id": "4274142",
+        "source_url": "https://www.musinsa.com/products/4274142",
+        "score": 17.86,
+        "name": "오버핏 볼륨 워셔블 크루넥 케이블 니트 [그레이]"
+      },
+      {
+        "product_id": "6037178",
+        "source_url": "https://www.musinsa.com/products/6037178",
+        "score": 17.4,
+        "name": "베이직 쿨 헨리넥 크롭 반팔 니트 [BLACK]"
+      },
+      {
+        "product_id": "5101760",
+        "source_url": "https://www.musinsa.com/products/5101760",
+        "score": 17.4,
+        "name": "[W]케이블 니트 코튼 숏 슬리브 스웨터-레드"
+      },
+      {
+        "product_id": "3010398",
+        "source_url": "https://www.musinsa.com/products/3010398",
+        "score": 17.38,
+        "name": "W 코튼 블렌드 숏 슬리브 스웨터 - 아이보리"
+      },
+      {
+        "product_id": "5662185",
+        "source_url": "https://www.musinsa.com/products/5662185",
+        "score": 17.38,
+        "name": "워셔블 수피마 코튼 슬릿 넥 니티드 폴로 셔츠 [블랙]"
+      },
+      {
+        "product_id": "6320932",
+        "source_url": "https://www.musinsa.com/products/6320932",
+        "score": 17.38,
+        "name": "이지온 세미 오버핏 스트라이프 라운드넥 반팔 니트 [마린 블루]"
+      },
+      {
+        "product_id": "5661401",
+        "source_url": "https://www.musinsa.com/products/5661401",
+        "score": 17.36,
+        "name": "우먼즈 린넨 블렌드 리브드 시어 니트 [미디엄 그레이]"
+      },
+      {
+        "product_id": "6037228",
+        "source_url": "https://www.musinsa.com/products/6037228",
+        "score": 17.36,
+        "name": "베이직 쿨 헨리넥 크롭 반팔 니트 [NAVY ST]"
+      },
+      {
+        "product_id": "2702397",
+        "source_url": "https://www.musinsa.com/products/2702397",
+        "score": 14.68,
+        "name": "워셔블 하찌 벌키 크루넥 니트_8 COLOR"
+      },
+      {
+        "product_id": "3451036",
+        "source_url": "https://www.musinsa.com/products/3451036",
+        "score": 14.68,
+        "name": "스탠다드 래글런 케이블 니트 : 13컬러"
+      },
+      {
+        "product_id": "6104962",
+        "source_url": "https://www.musinsa.com/products/6104962",
+        "score": 14.68,
+        "name": "워셔블 수피마 코튼 헨리 넥 반소매 니트 (5 colors)"
+      },
+      {
+        "product_id": "5290694",
+        "source_url": "https://www.musinsa.com/products/5290694",
+        "score": 14.68,
+        "name": "소프트 울 크롭 라운드 니트 [4color]"
+      },
+      {
+        "product_id": "2100417",
+        "source_url": "https://www.musinsa.com/products/2100417",
+        "score": 14.68,
+        "name": "미니멀 크루 넥 니트 [라이트 그레이]"
+      },
+      {
+        "product_id": "5351938",
+        "source_url": "https://www.musinsa.com/products/5351938",
+        "score": 14.68,
+        "name": "[핏더사이즈 콜라보] 울 워셔블 헨리넥 크롭 니트 - 8 COLOR"
+      },
+      {
+        "product_id": "4871108",
+        "source_url": "https://www.musinsa.com/products/4871108",
+        "score": 14.68,
+        "name": "베일 헨리넥 니트 [그레이]"
+      },
+      {
+        "product_id": "4682255",
+        "source_url": "https://www.musinsa.com/products/4682255",
+        "score": 14.68,
+        "name": "워셔블 수피마 코튼 니티드 폴로 셔츠 [퍼플 그레이]"
+      }
+    ],
+    "가디건 출근룩": [
+      {
+        "product_id": "3434621",
+        "source_url": "https://www.musinsa.com/products/3434621",
+        "score": 13.08,
+        "name": "GNRL 에센셜 가디건 [6COL] / WBD3L04503"
+      },
+      {
+        "product_id": "3025211",
+        "source_url": "https://www.musinsa.com/products/3025211",
+        "score": 13.08,
+        "name": "에센셜 라운드 니트 가디건 - 8 COLOR"
+      },
+      {
+        "product_id": "4336624",
+        "source_url": "https://www.musinsa.com/products/4336624",
+        "score": 13.08,
+        "name": "미니멀 버튼 라운드넥 크롭 가디건 (DARK RED)"
+      },
+      {
+        "product_id": "3881570",
+        "source_url": "https://www.musinsa.com/products/3881570",
+        "score": 13.08,
+        "name": "크롭 무브 가디건 [레드]"
+      },
+      {
+        "product_id": "4336623",
+        "source_url": "https://www.musinsa.com/products/4336623",
+        "score": 13.08,
+        "name": "미니멀 버튼 라운드넥 크롭 가디건 (CHARCOAL)"
+      },
+      {
+        "product_id": "4419822",
+        "source_url": "https://www.musinsa.com/products/4419822",
+        "score": 13.08,
+        "name": "크롭 무브 가디건 [차콜]"
+      },
+      {
+        "product_id": "3981315",
+        "source_url": "https://www.musinsa.com/products/3981315",
+        "score": 13.08,
+        "name": "크롭 무브 가디건 [블랙]"
+      },
+      {
+        "product_id": "4419823",
+        "source_url": "https://www.musinsa.com/products/4419823",
+        "score": 13.08,
+        "name": "크롭 무브 가디건 [네이비]"
+      },
+      {
+        "product_id": "3881573",
+        "source_url": "https://www.musinsa.com/products/3881573",
+        "score": 13.08,
+        "name": "크롭 무브 가디건 [블루 그레이]"
+      },
+      {
+        "product_id": "4729601",
+        "source_url": "https://www.musinsa.com/products/4729601",
+        "score": 13.08,
+        "name": "믹스드 크롭 니트 가디건 [오트밀]"
+      },
+      {
+        "product_id": "4702566",
+        "source_url": "https://www.musinsa.com/products/4702566",
+        "score": 13.08,
+        "name": "미니멀 버튼 라운드넥 크롭 가디건 (MUTE BROWN)"
+      },
+      {
+        "product_id": "4762551",
+        "source_url": "https://www.musinsa.com/products/4762551",
+        "score": 13.08,
+        "name": "에센셜 가디건 2TYPE [SET]"
+      },
+      {
+        "product_id": "4752473",
+        "source_url": "https://www.musinsa.com/products/4752473",
+        "score": 13.08,
+        "name": "오버핏 케이블 카라 니트 가디건 3Color"
+      },
+      {
+        "product_id": "4403731",
+        "source_url": "https://www.musinsa.com/products/4403731",
+        "score": 13.06,
+        "name": "코스에그 자수 투웨이 니트집업 가디건_43CA1763"
+      },
+      {
+        "product_id": "4752550",
+        "source_url": "https://www.musinsa.com/products/4752550",
+        "score": 13.06,
+        "name": "오버핏 케이블 라운드 니트 가디건 4Color"
+      },
+      {
+        "product_id": "4748645",
+        "source_url": "https://www.musinsa.com/products/4748645",
+        "score": 13.06,
+        "name": "크로매틱 워셔블 가디건 - 7 COLOR"
+      },
+      {
+        "product_id": "5020206",
+        "source_url": "https://www.musinsa.com/products/5020206",
+        "score": 13.06,
+        "name": "SS 워셔블 루즈핏 크롭 라운드 하찌 반팔 니트 가디건 ( 8컬러)"
+      },
+      {
+        "product_id": "5301310",
+        "source_url": "https://www.musinsa.com/products/5301310",
+        "score": 13.06,
+        "name": "[데일리룸 X 로템버] 아카이브 코튼 크롭 니트 가디건 [ 8 COLOR ]"
+      },
+      {
+        "product_id": "5351882",
+        "source_url": "https://www.musinsa.com/products/5351882",
+        "score": 13.06,
+        "name": "[핏더사이즈 콜라보] 울 워셔블 크롭 가디건 - 13 COLOR"
+      },
+      {
+        "product_id": "3441716",
+        "source_url": "https://www.musinsa.com/products/3441716",
+        "score": 13.06,
+        "name": "오버핏 라운드넥 니트 가디건 (BROWN)"
+      }
+    ]
+  },
+  "default": [
+    {
+      "product_id": "2712417",
+      "source_url": "https://www.musinsa.com/products/2712417",
+      "score": 22.86,
+      "name": "투웨이 에센셜 후드 집업-그레이"
+    },
+    {
+      "product_id": "4671560",
+      "source_url": "https://www.musinsa.com/products/4671560",
+      "score": 22.86,
+      "name": "VLAD 스트라이프 로고 후드 집업_블랙&그레이"
+    },
+    {
+      "product_id": "5276035",
+      "source_url": "https://www.musinsa.com/products/5276035",
+      "score": 22.86,
+      "name": "빈티지 워싱 데님 워크 후드 집업_라이트 그레이"
+    },
+    {
+      "product_id": "3783092",
+      "source_url": "https://www.musinsa.com/products/3783092",
+      "score": 21.66,
+      "name": "[크롭선택] ASI 포시즌 에센셜 후드 집업_피그먼트 차콜"
+    },
+    {
+      "product_id": "4567792",
+      "source_url": "https://www.musinsa.com/products/4567792",
+      "score": 21.66,
+      "name": "VLAD 컷오프 아플리케 후드 집업_차콜"
+    },
+    {
+      "product_id": "2273084",
+      "source_url": "https://www.musinsa.com/products/2273084",
+      "score": 20.68,
+      "name": "Signature Patch Hood Zip-up / WHMZG1111U"
+    },
+    {
+      "product_id": "1778404",
+      "source_url": "https://www.musinsa.com/products/1778404",
+      "score": 20.66,
+      "name": "2WAY 스웻 후드 집업 (MELANGE GREY)"
+    },
+    {
+      "product_id": "1778408",
+      "source_url": "https://www.musinsa.com/products/1778408",
+      "score": 20.66,
+      "name": "2WAY 스웻 후드 집업 (BLACK)"
+    },
+    {
+      "product_id": "2385283",
+      "source_url": "https://www.musinsa.com/products/2385283",
+      "score": 20.66,
+      "name": "(Renew Ver.) 루즈핏 2Way 스웨트 후드집업 ( 5Color ) ( 기모선택 )"
+    },
+    {
+      "product_id": "2122594",
+      "source_url": "https://www.musinsa.com/products/2122594",
+      "score": 20.66,
+      "name": "유스풀 벌룬 후드집업 네이비 SJHD1327"
+    }
+  ]
+}

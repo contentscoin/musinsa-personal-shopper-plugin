@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-06-25T04:00:29.312Z",
-  "completed_at": "2026-06-25T04:00:31.681Z",
+  "started_at": "2026-06-25T04:56:31.673Z",
+  "completed_at": "2026-06-25T04:56:33.895Z",
   "base_url": "http://127.0.0.1:8791",
   "health": {
     "ok": true,
@@ -23,46 +23,46 @@
     "failed": 0,
     "nonempty_queries": 319,
     "empty_queries": 1,
-    "p50_latency_ms": 5.88,
-    "p95_latency_ms": 12.1,
-    "max_latency_ms": 18.77
+    "p50_latency_ms": 5.38,
+    "p95_latency_ms": 11.76,
+    "max_latency_ms": 16.43
   },
   "by_type": {
     "category_structured": {
       "count": 50,
       "pass": 50,
       "nonempty": 50,
-      "avg_latency_ms": 4.06
+      "avg_latency_ms": 3.81
     },
     "category_leaf_query": {
       "count": 50,
       "pass": 50,
       "nonempty": 50,
-      "avg_latency_ms": 6.2
+      "avg_latency_ms": 5.82
     },
     "brand_structured": {
       "count": 45,
       "pass": 45,
       "nonempty": 45,
-      "avg_latency_ms": 5.97
+      "avg_latency_ms": 5.57
     },
     "natural_color_category": {
       "count": 90,
       "pass": 90,
       "nonempty": 90,
-      "avg_latency_ms": 9.72
+      "avg_latency_ms": 9.28
     },
     "brand_category_natural": {
       "count": 25,
       "pass": 25,
       "nonempty": 25,
-      "avg_latency_ms": 7.36
+      "avg_latency_ms": 5.78
     },
     "budget_category": {
       "count": 60,
       "pass": 60,
       "nonempty": 59,
-      "avg_latency_ms": 3.85
+      "avg_latency_ms": 3.57
     }
   },
   "failure_samples": [],
@@ -75,7 +75,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 9.64,
+      "latency_ms": 9.09,
       "result_count": 8,
       "top_result": {
         "product_id": "2086653",
@@ -95,7 +95,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 11.03,
+      "latency_ms": 11.01,
       "result_count": 8,
       "top_result": {
         "product_id": "2086653",
@@ -115,7 +115,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.87,
+      "latency_ms": 4.74,
       "result_count": 8,
       "top_result": {
         "product_id": "3562068",
@@ -135,7 +135,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 8.31,
+      "latency_ms": 8.27,
       "result_count": 8,
       "top_result": {
         "product_id": "3562068",
@@ -155,7 +155,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.45,
+      "latency_ms": 4.62,
       "result_count": 8,
       "top_result": {
         "product_id": "3663072",
@@ -175,7 +175,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 6.54,
+      "latency_ms": 6.52,
       "result_count": 8,
       "top_result": {
         "product_id": "3663072",
@@ -195,7 +195,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.82,
+      "latency_ms": 4.71,
       "result_count": 8,
       "top_result": {
         "product_id": "1163169",
@@ -215,7 +215,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 8.41,
+      "latency_ms": 7.69,
       "result_count": 8,
       "top_result": {
         "product_id": "1163169",
@@ -235,7 +235,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 5.21,
+      "latency_ms": 4.65,
       "result_count": 8,
       "top_result": {
         "product_id": "1627892",
@@ -255,7 +255,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 6.32,
+      "latency_ms": 5.66,
       "result_count": 8,
       "top_result": {
         "product_id": "1627892",
@@ -275,7 +275,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.43,
+      "latency_ms": 3.99,
       "result_count": 8,
       "top_result": {
         "product_id": "1551840",
@@ -295,7 +295,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 12.4,
+      "latency_ms": 11.76,
       "result_count": 8,
       "top_result": {
         "product_id": "1551840",
@@ -315,7 +315,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.9,
+      "latency_ms": 3.73,
       "result_count": 8,
       "top_result": {
         "product_id": "2149254",
@@ -335,7 +335,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 6.03,
+      "latency_ms": 5.41,
       "result_count": 8,
       "top_result": {
         "product_id": "2149254",
@@ -355,7 +355,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.98,
+      "latency_ms": 3.45,
       "result_count": 8,
       "top_result": {
         "product_id": "2273084",
@@ -375,7 +375,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 6.14,
+      "latency_ms": 5.49,
       "result_count": 8,
       "top_result": {
         "product_id": "2273084",
@@ -395,7 +395,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.15,
+      "latency_ms": 3.56,
       "result_count": 8,
       "top_result": {
         "product_id": "2702397",
@@ -415,7 +415,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 5.83,
+      "latency_ms": 5.2,
       "result_count": 8,
       "top_result": {
         "product_id": "2702397",
@@ -435,7 +435,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.17,
+      "latency_ms": 3.76,
       "result_count": 8,
       "top_result": {
         "product_id": "1168906",
@@ -455,7 +455,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 8.18,
+      "latency_ms": 7.14,
       "result_count": 8,
       "top_result": {
         "product_id": "1168906",
@@ -477,7 +477,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 9.64,
+      "latency_ms": 9.09,
       "result_count": 8,
       "top_result": {
         "product_id": "2086653",
@@ -497,7 +497,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 11.03,
+      "latency_ms": 11.01,
       "result_count": 8,
       "top_result": {
         "product_id": "2086653",
@@ -517,7 +517,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.87,
+      "latency_ms": 4.74,
       "result_count": 8,
       "top_result": {
         "product_id": "3562068",
@@ -537,7 +537,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 8.31,
+      "latency_ms": 8.27,
       "result_count": 8,
       "top_result": {
         "product_id": "3562068",
@@ -557,7 +557,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.45,
+      "latency_ms": 4.62,
       "result_count": 8,
       "top_result": {
         "product_id": "3663072",
@@ -577,7 +577,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 6.54,
+      "latency_ms": 6.52,
       "result_count": 8,
       "top_result": {
         "product_id": "3663072",
@@ -597,7 +597,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.82,
+      "latency_ms": 4.71,
       "result_count": 8,
       "top_result": {
         "product_id": "1163169",
@@ -617,7 +617,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 8.41,
+      "latency_ms": 7.69,
       "result_count": 8,
       "top_result": {
         "product_id": "1163169",
@@ -637,7 +637,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 5.21,
+      "latency_ms": 4.65,
       "result_count": 8,
       "top_result": {
         "product_id": "1627892",
@@ -657,7 +657,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 6.32,
+      "latency_ms": 5.66,
       "result_count": 8,
       "top_result": {
         "product_id": "1627892",
@@ -677,7 +677,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.43,
+      "latency_ms": 3.99,
       "result_count": 8,
       "top_result": {
         "product_id": "1551840",
@@ -697,7 +697,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 12.4,
+      "latency_ms": 11.76,
       "result_count": 8,
       "top_result": {
         "product_id": "1551840",
@@ -717,7 +717,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.9,
+      "latency_ms": 3.73,
       "result_count": 8,
       "top_result": {
         "product_id": "2149254",
@@ -737,7 +737,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 6.03,
+      "latency_ms": 5.41,
       "result_count": 8,
       "top_result": {
         "product_id": "2149254",
@@ -757,7 +757,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.98,
+      "latency_ms": 3.45,
       "result_count": 8,
       "top_result": {
         "product_id": "2273084",
@@ -777,7 +777,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 6.14,
+      "latency_ms": 5.49,
       "result_count": 8,
       "top_result": {
         "product_id": "2273084",
@@ -797,7 +797,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.15,
+      "latency_ms": 3.56,
       "result_count": 8,
       "top_result": {
         "product_id": "2702397",
@@ -817,7 +817,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 5.83,
+      "latency_ms": 5.2,
       "result_count": 8,
       "top_result": {
         "product_id": "2702397",
@@ -837,7 +837,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.17,
+      "latency_ms": 3.76,
       "result_count": 8,
       "top_result": {
         "product_id": "1168906",
@@ -857,7 +857,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 8.18,
+      "latency_ms": 7.14,
       "result_count": 8,
       "top_result": {
         "product_id": "1168906",
@@ -877,7 +877,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.79,
+      "latency_ms": 3.28,
       "result_count": 8,
       "top_result": {
         "product_id": "1926048",
@@ -897,7 +897,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 8.54,
+      "latency_ms": 7.71,
       "result_count": 8,
       "top_result": {
         "product_id": "4655528",
@@ -917,7 +917,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.64,
+      "latency_ms": 3.04,
       "result_count": 8,
       "top_result": {
         "product_id": "3434621",
@@ -937,7 +937,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.66,
+      "latency_ms": 3.12,
       "result_count": 8,
       "top_result": {
         "product_id": "3434621",
@@ -957,7 +957,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.19,
+      "latency_ms": 3.38,
       "result_count": 8,
       "top_result": {
         "product_id": "2134140",
@@ -977,7 +977,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 7.91,
+      "latency_ms": 5.67,
       "result_count": 8,
       "top_result": {
         "product_id": "2134140",
@@ -997,7 +997,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.04,
+      "latency_ms": 3.29,
       "result_count": 8,
       "top_result": {
         "product_id": "2058188",
@@ -1017,7 +1017,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 8.3,
+      "latency_ms": 7.8,
       "result_count": 8,
       "top_result": {
         "product_id": "2058188",
@@ -1037,7 +1037,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.38,
+      "latency_ms": 4.05,
       "result_count": 8,
       "top_result": {
         "product_id": "3800080",
@@ -1057,7 +1057,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 10.31,
+      "latency_ms": 9.26,
       "result_count": 8,
       "top_result": {
         "product_id": "4296687",
@@ -1077,7 +1077,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.5,
+      "latency_ms": 2.96,
       "result_count": 8,
       "top_result": {
         "product_id": "2235274",
@@ -1097,7 +1097,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.51,
+      "latency_ms": 3.1,
       "result_count": 8,
       "top_result": {
         "product_id": "2235274",
@@ -1117,7 +1117,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.4,
+      "latency_ms": 3.84,
       "result_count": 8,
       "top_result": {
         "product_id": "2690691",
@@ -1137,7 +1137,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 6.6,
+      "latency_ms": 5.69,
       "result_count": 8,
       "top_result": {
         "product_id": "2086653",
@@ -1157,7 +1157,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.91,
+      "latency_ms": 3.45,
       "result_count": 8,
       "top_result": {
         "product_id": "3276429",
@@ -1177,7 +1177,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 5.21,
+      "latency_ms": 4.75,
       "result_count": 8,
       "top_result": {
         "product_id": "3276429",
@@ -1197,7 +1197,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.04,
+      "latency_ms": 3.55,
       "result_count": 8,
       "top_result": {
         "product_id": "2090950",
@@ -1217,7 +1217,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 5.77,
+      "latency_ms": 4.9,
       "result_count": 8,
       "top_result": {
         "product_id": "2090950",
@@ -1237,7 +1237,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.37,
+      "latency_ms": 4.13,
       "result_count": 8,
       "top_result": {
         "product_id": "1558197",
@@ -1257,7 +1257,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 11.66,
+      "latency_ms": 10.4,
       "result_count": 8,
       "top_result": {
         "product_id": "3845890",
@@ -1277,7 +1277,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.31,
+      "latency_ms": 4.16,
       "result_count": 8,
       "top_result": {
         "product_id": "1760177",
@@ -1297,7 +1297,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 11.93,
+      "latency_ms": 11.31,
       "result_count": 8,
       "top_result": {
         "product_id": "1760177",
@@ -1317,7 +1317,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.49,
+      "latency_ms": 3.34,
       "result_count": 8,
       "top_result": {
         "product_id": "1034480",
@@ -1337,7 +1337,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.17,
+      "latency_ms": 2.94,
       "result_count": 8,
       "top_result": {
         "product_id": "1034480",
@@ -1357,7 +1357,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.61,
+      "latency_ms": 3.43,
       "result_count": 8,
       "top_result": {
         "product_id": "5992665",
@@ -1377,7 +1377,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 7.61,
+      "latency_ms": 7.21,
       "result_count": 8,
       "top_result": {
         "product_id": "5992665",
@@ -1397,7 +1397,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.16,
+      "latency_ms": 4.15,
       "result_count": 8,
       "top_result": {
         "product_id": "2086731",
@@ -1417,7 +1417,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 9.83,
+      "latency_ms": 10.05,
       "result_count": 8,
       "top_result": {
         "product_id": "2086731",
@@ -1437,7 +1437,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.53,
+      "latency_ms": 3.82,
       "result_count": 8,
       "top_result": {
         "product_id": "5159260",
@@ -1457,7 +1457,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 5.63,
+      "latency_ms": 5.96,
       "result_count": 8,
       "top_result": {
         "product_id": "5159260",
@@ -1477,7 +1477,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.64,
+      "latency_ms": 3.86,
       "result_count": 8,
       "top_result": {
         "product_id": "3404705",
@@ -1517,7 +1517,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.87,
+      "latency_ms": 3.8,
       "result_count": 8,
       "top_result": {
         "product_id": "1404736",
@@ -1537,7 +1537,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 7.07,
+      "latency_ms": 6.82,
       "result_count": 8,
       "top_result": {
         "product_id": "1404736",
@@ -1557,7 +1557,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.69,
+      "latency_ms": 3.51,
       "result_count": 8,
       "top_result": {
         "product_id": "4703345",
@@ -1577,7 +1577,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.21,
+      "latency_ms": 3.22,
       "result_count": 8,
       "top_result": {
         "product_id": "4703345",
@@ -1597,7 +1597,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.1,
+      "latency_ms": 3.05,
       "result_count": 8,
       "top_result": {
         "product_id": "2086104",
@@ -1617,7 +1617,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 2.76,
+      "latency_ms": 2.82,
       "result_count": 8,
       "top_result": {
         "product_id": "2086104",
@@ -1637,7 +1637,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.52,
+      "latency_ms": 4.76,
       "result_count": 8,
       "top_result": {
         "product_id": "4356794",
@@ -1657,7 +1657,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.8,
+      "latency_ms": 5.24,
       "result_count": 8,
       "top_result": {
         "product_id": "4356794",
@@ -1677,7 +1677,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.51,
+      "latency_ms": 3.87,
       "result_count": 8,
       "top_result": {
         "product_id": "3600203",
@@ -1697,7 +1697,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 2.96,
+      "latency_ms": 3.03,
       "result_count": 8,
       "top_result": {
         "product_id": "3600203",
@@ -1717,7 +1717,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.79,
+      "latency_ms": 3.83,
       "result_count": 8,
       "top_result": {
         "product_id": "4321804",
@@ -1737,7 +1737,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 2.91,
+      "latency_ms": 2.87,
       "result_count": 8,
       "top_result": {
         "product_id": "4321804",
@@ -1757,7 +1757,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.87,
+      "latency_ms": 3.6,
       "result_count": 8,
       "top_result": {
         "product_id": "1789507",
@@ -1777,7 +1777,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 6.33,
+      "latency_ms": 6,
       "result_count": 8,
       "top_result": {
         "product_id": "1789507",
@@ -1797,7 +1797,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4,
+      "latency_ms": 3.87,
       "result_count": 8,
       "top_result": {
         "product_id": "810034",
@@ -1817,7 +1817,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 5.17,
+      "latency_ms": 5.07,
       "result_count": 8,
       "top_result": {
         "product_id": "810034",
@@ -1837,7 +1837,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.94,
+      "latency_ms": 3.86,
       "result_count": 8,
       "top_result": {
         "product_id": "998051",
@@ -1857,7 +1857,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.35,
+      "latency_ms": 3.06,
       "result_count": 8,
       "top_result": {
         "product_id": "998051",
@@ -1877,7 +1877,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.86,
+      "latency_ms": 3.68,
       "result_count": 8,
       "top_result": {
         "product_id": "4512936",
@@ -1897,7 +1897,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.94,
+      "latency_ms": 4.73,
       "result_count": 8,
       "top_result": {
         "product_id": "4512936",
@@ -1917,7 +1917,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.84,
+      "latency_ms": 3.63,
       "result_count": 8,
       "top_result": {
         "product_id": "1034480",
@@ -1937,7 +1937,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.12,
+      "latency_ms": 2.97,
       "result_count": 8,
       "top_result": {
         "product_id": "1034480",
@@ -1957,7 +1957,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.71,
+      "latency_ms": 3.45,
       "result_count": 8,
       "top_result": {
         "product_id": "3622977",
@@ -1977,7 +1977,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 8,
+      "latency_ms": 7.77,
       "result_count": 8,
       "top_result": {
         "product_id": "3622977",
@@ -1997,7 +1997,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4,
+      "latency_ms": 3.87,
       "result_count": 8,
       "top_result": {
         "product_id": "3123085",
@@ -2017,7 +2017,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.3,
+      "latency_ms": 3.1,
       "result_count": 8,
       "top_result": {
         "product_id": "3123085",
@@ -2037,7 +2037,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.01,
+      "latency_ms": 3.68,
       "result_count": 8,
       "top_result": {
         "product_id": "2440039",
@@ -2057,7 +2057,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.46,
+      "latency_ms": 3.06,
       "result_count": 8,
       "top_result": {
         "product_id": "2440039",
@@ -2077,7 +2077,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.32,
+      "latency_ms": 4.28,
       "result_count": 8,
       "top_result": {
         "product_id": "2378989",
@@ -2097,7 +2097,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 9.93,
+      "latency_ms": 9.92,
       "result_count": 8,
       "top_result": {
         "product_id": "2378989",
@@ -2117,7 +2117,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.09,
+      "latency_ms": 3.88,
       "result_count": 8,
       "top_result": {
         "product_id": "2508821",
@@ -2137,7 +2137,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 9.16,
+      "latency_ms": 9.09,
       "result_count": 8,
       "top_result": {
         "product_id": "4655528",
@@ -2157,7 +2157,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.5,
+      "latency_ms": 3.21,
       "result_count": 8,
       "top_result": {
         "product_id": "4319321",
@@ -2177,7 +2177,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.2,
+      "latency_ms": 2.77,
       "result_count": 8,
       "top_result": {
         "product_id": "4319321",
@@ -2197,7 +2197,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.05,
+      "latency_ms": 2.79,
       "result_count": 8,
       "top_result": {
         "product_id": "2408213",
@@ -2217,7 +2217,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.22,
+      "latency_ms": 2.78,
       "result_count": 8,
       "top_result": {
         "product_id": "2408213",
@@ -2237,7 +2237,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.39,
+      "latency_ms": 3.81,
       "result_count": 8,
       "top_result": {
         "product_id": "3800080",
@@ -2257,7 +2257,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 8.86,
+      "latency_ms": 8.37,
       "result_count": 8,
       "top_result": {
         "product_id": "4296687",
@@ -2277,7 +2277,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 2.99,
+      "latency_ms": 2.72,
       "result_count": 8,
       "top_result": {
         "product_id": "5378319",
@@ -2297,7 +2297,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 2.93,
+      "latency_ms": 2.8,
       "result_count": 8,
       "top_result": {
         "product_id": "5378319",
@@ -2317,7 +2317,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.65,
+      "latency_ms": 3.28,
       "result_count": 8,
       "top_result": {
         "product_id": "4403002",
@@ -2337,7 +2337,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.65,
+      "latency_ms": 4.27,
       "result_count": 8,
       "top_result": {
         "product_id": "4403002",
@@ -2357,7 +2357,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.94,
+      "latency_ms": 3.63,
       "result_count": 8,
       "top_result": {
         "product_id": "2476724",
@@ -2377,7 +2377,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 4.48,
+      "latency_ms": 4.21,
       "result_count": 8,
       "top_result": {
         "product_id": "2476724",
@@ -2397,7 +2397,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.47,
+      "latency_ms": 3.07,
       "result_count": 8,
       "top_result": {
         "product_id": "1882525",
@@ -2417,7 +2417,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 5.35,
+      "latency_ms": 5.18,
       "result_count": 8,
       "top_result": {
         "product_id": "1882525",
@@ -2437,7 +2437,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.45,
+      "latency_ms": 3.2,
       "result_count": 8,
       "top_result": {
         "product_id": "3198730",
@@ -2457,7 +2457,7 @@
         "limit": 8
       },
       "status": 200,
-      "latency_ms": 3.07,
+      "latency_ms": 2.76,
       "result_count": 8,
       "top_result": {
         "product_id": "4512936",
@@ -2477,7 +2477,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 6.68,
+      "latency_ms": 6.07,
       "result_count": 6,
       "top_result": {
         "product_id": "991339",
@@ -2497,7 +2497,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 6.2,
+      "latency_ms": 5.74,
       "result_count": 6,
       "top_result": {
         "product_id": "5992665",
@@ -2517,7 +2517,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 7.12,
+      "latency_ms": 6.76,
       "result_count": 6,
       "top_result": {
         "product_id": "1618312",
@@ -2537,7 +2537,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.88,
+      "latency_ms": 6.23,
       "result_count": 6,
       "top_result": {
         "product_id": "3783089",
@@ -2557,7 +2557,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 6.06,
+      "latency_ms": 5.55,
       "result_count": 6,
       "top_result": {
         "product_id": "3976350",
@@ -2577,7 +2577,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 7.01,
+      "latency_ms": 6.77,
       "result_count": 6,
       "top_result": {
         "product_id": "4164429",
@@ -2597,7 +2597,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.74,
+      "latency_ms": 5.42,
       "result_count": 6,
       "top_result": {
         "product_id": "2351467",
@@ -2617,7 +2617,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.66,
+      "latency_ms": 5.28,
       "result_count": 6,
       "top_result": {
         "product_id": "1456515",
@@ -2637,7 +2637,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 6.58,
+      "latency_ms": 8.03,
       "result_count": 6,
       "top_result": {
         "product_id": "1706633",
@@ -2657,7 +2657,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.97,
+      "latency_ms": 6.2,
       "result_count": 6,
       "top_result": {
         "product_id": "2578996",
@@ -2677,7 +2677,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.92,
+      "latency_ms": 6.29,
       "result_count": 6,
       "top_result": {
         "product_id": "3369141",
@@ -2697,7 +2697,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.53,
+      "latency_ms": 5.9,
       "result_count": 6,
       "top_result": {
         "product_id": "5921634",
@@ -2717,7 +2717,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.92,
+      "latency_ms": 5.71,
       "result_count": 6,
       "top_result": {
         "product_id": "5167907",
@@ -2737,7 +2737,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.56,
+      "latency_ms": 5.3,
       "result_count": 6,
       "top_result": {
         "product_id": "3663072",
@@ -2757,7 +2757,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 6.03,
+      "latency_ms": 5.56,
       "result_count": 6,
       "top_result": {
         "product_id": "3791988",
@@ -2777,7 +2777,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.97,
+      "latency_ms": 5.39,
       "result_count": 6,
       "top_result": {
         "product_id": "4729601",
@@ -2797,7 +2797,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.91,
+      "latency_ms": 5.37,
       "result_count": 6,
       "top_result": {
         "product_id": "4175389",
@@ -2817,7 +2817,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.66,
+      "latency_ms": 5.16,
       "result_count": 6,
       "top_result": {
         "product_id": "4989733",
@@ -2837,7 +2837,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.51,
+      "latency_ms": 5.1,
       "result_count": 6,
       "top_result": {
         "product_id": "4201442",
@@ -2857,7 +2857,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.64,
+      "latency_ms": 5.19,
       "result_count": 6,
       "top_result": {
         "product_id": "3025211",
@@ -2877,7 +2877,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.62,
+      "latency_ms": 5.32,
       "result_count": 6,
       "top_result": {
         "product_id": "4727091",
@@ -2897,7 +2897,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.49,
+      "latency_ms": 5.23,
       "result_count": 6,
       "top_result": {
         "product_id": "3269419",
@@ -2917,7 +2917,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.75,
+      "latency_ms": 5.31,
       "result_count": 6,
       "top_result": {
         "product_id": "5432652",
@@ -2937,7 +2937,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.77,
+      "latency_ms": 5.29,
       "result_count": 6,
       "top_result": {
         "product_id": "5146932",
@@ -2957,7 +2957,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.62,
+      "latency_ms": 5.24,
       "result_count": 6,
       "top_result": {
         "product_id": "2090950",
@@ -2977,7 +2977,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.88,
+      "latency_ms": 5.26,
       "result_count": 6,
       "top_result": {
         "product_id": "3837367",
@@ -2997,7 +2997,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 6.01,
+      "latency_ms": 5.21,
       "result_count": 6,
       "top_result": {
         "product_id": "4336624",
@@ -3017,7 +3017,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.82,
+      "latency_ms": 5.12,
       "result_count": 6,
       "top_result": {
         "product_id": "595039",
@@ -3037,7 +3037,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 6.22,
+      "latency_ms": 5.39,
       "result_count": 6,
       "top_result": {
         "product_id": "6224315",
@@ -3057,7 +3057,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.75,
+      "latency_ms": 5.18,
       "result_count": 6,
       "top_result": {
         "product_id": "5020231",
@@ -3077,7 +3077,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.9,
+      "latency_ms": 6.03,
       "result_count": 6,
       "top_result": {
         "product_id": "2058188",
@@ -3097,7 +3097,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.8,
+      "latency_ms": 5.63,
       "result_count": 6,
       "top_result": {
         "product_id": "4274049",
@@ -3117,7 +3117,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 6.13,
+      "latency_ms": 5.14,
       "result_count": 6,
       "top_result": {
         "product_id": "2235274",
@@ -3137,7 +3137,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 6.4,
+      "latency_ms": 5.87,
       "result_count": 6,
       "top_result": {
         "product_id": "1856360",
@@ -3157,7 +3157,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.68,
+      "latency_ms": 5.27,
       "result_count": 6,
       "top_result": {
         "product_id": "3880598",
@@ -3177,7 +3177,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 7.59,
+      "latency_ms": 5.41,
       "result_count": 6,
       "top_result": {
         "product_id": "6471680",
@@ -3197,7 +3197,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 6.44,
+      "latency_ms": 5.92,
       "result_count": 6,
       "top_result": {
         "product_id": "4240890",
@@ -3217,7 +3217,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.87,
+      "latency_ms": 5.29,
       "result_count": 6,
       "top_result": {
         "product_id": "2632730",
@@ -3237,7 +3237,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.82,
+      "latency_ms": 5.46,
       "result_count": 6,
       "top_result": {
         "product_id": "1034480",
@@ -3257,7 +3257,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.91,
+      "latency_ms": 5.43,
       "result_count": 6,
       "top_result": {
         "product_id": "3434621",
@@ -3277,7 +3277,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.42,
+      "latency_ms": 5.17,
       "result_count": 6,
       "top_result": {
         "product_id": "4328804",
@@ -3297,7 +3297,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.45,
+      "latency_ms": 5.11,
       "result_count": 6,
       "top_result": {
         "product_id": "102622",
@@ -3317,7 +3317,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 7.01,
+      "latency_ms": 5.13,
       "result_count": 6,
       "top_result": {
         "product_id": "1882525",
@@ -3337,7 +3337,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.5,
+      "latency_ms": 5.13,
       "result_count": 6,
       "top_result": {
         "product_id": "3562068",
@@ -3357,7 +3357,7 @@
         "limit": 6
       },
       "status": 200,
-      "latency_ms": 5.33,
+      "latency_ms": 5.23,
       "result_count": 6,
       "top_result": {
         "product_id": "5200037",
@@ -3377,7 +3377,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.52,
+      "latency_ms": 9.17,
       "result_count": 5,
       "top_result": {
         "product_id": "1388775",
@@ -3397,7 +3397,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.82,
+      "latency_ms": 8.68,
       "result_count": 5,
       "top_result": {
         "product_id": "2086656",
@@ -3417,7 +3417,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.31,
+      "latency_ms": 9.93,
       "result_count": 5,
       "top_result": {
         "product_id": "2086656",
@@ -3437,7 +3437,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.01,
+      "latency_ms": 9.38,
       "result_count": 5,
       "top_result": {
         "product_id": "5627635",
@@ -3457,7 +3457,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.61,
+      "latency_ms": 8.83,
       "result_count": 5,
       "top_result": {
         "product_id": "1973481",
@@ -3477,7 +3477,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.8,
+      "latency_ms": 8.33,
       "result_count": 5,
       "top_result": {
         "product_id": "1973481",
@@ -3497,7 +3497,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.51,
+      "latency_ms": 8.59,
       "result_count": 5,
       "top_result": {
         "product_id": "3051700",
@@ -3517,7 +3517,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.44,
+      "latency_ms": 8.29,
       "result_count": 5,
       "top_result": {
         "product_id": "5937440",
@@ -3537,7 +3537,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.59,
+      "latency_ms": 8.15,
       "result_count": 5,
       "top_result": {
         "product_id": "5937440",
@@ -3557,7 +3557,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.71,
+      "latency_ms": 9.43,
       "result_count": 5,
       "top_result": {
         "product_id": "1163169",
@@ -3577,7 +3577,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.17,
+      "latency_ms": 8.88,
       "result_count": 5,
       "top_result": {
         "product_id": "3392006",
@@ -3597,7 +3597,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.53,
+      "latency_ms": 9.18,
       "result_count": 5,
       "top_result": {
         "product_id": "3392006",
@@ -3617,7 +3617,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.17,
+      "latency_ms": 8.62,
       "result_count": 5,
       "top_result": {
         "product_id": "3837367",
@@ -3637,7 +3637,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.96,
+      "latency_ms": 8.12,
       "result_count": 5,
       "top_result": {
         "product_id": "5113094",
@@ -3657,7 +3657,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.45,
+      "latency_ms": 8.15,
       "result_count": 5,
       "top_result": {
         "product_id": "5113094",
@@ -3677,7 +3677,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 14.77,
+      "latency_ms": 13.58,
       "result_count": 5,
       "top_result": {
         "product_id": "2112061",
@@ -3697,7 +3697,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 14.56,
+      "latency_ms": 13.83,
       "result_count": 5,
       "top_result": {
         "product_id": "2112059",
@@ -3717,7 +3717,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 14.95,
+      "latency_ms": 13.88,
       "result_count": 5,
       "top_result": {
         "product_id": "2112059",
@@ -3737,7 +3737,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.25,
+      "latency_ms": 8.62,
       "result_count": 5,
       "top_result": {
         "product_id": "4757913",
@@ -3757,7 +3757,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.21,
+      "latency_ms": 8.85,
       "result_count": 5,
       "top_result": {
         "product_id": "5318901",
@@ -3777,7 +3777,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.58,
+      "latency_ms": 8.14,
       "result_count": 5,
       "top_result": {
         "product_id": "5318901",
@@ -3797,7 +3797,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.52,
+      "latency_ms": 8.98,
       "result_count": 5,
       "top_result": {
         "product_id": "3697526",
@@ -3817,7 +3817,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.53,
+      "latency_ms": 8.73,
       "result_count": 5,
       "top_result": {
         "product_id": "2372450",
@@ -3837,7 +3837,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.29,
+      "latency_ms": 8.47,
       "result_count": 5,
       "top_result": {
         "product_id": "2372450",
@@ -3857,7 +3857,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.55,
+      "latency_ms": 9.05,
       "result_count": 5,
       "top_result": {
         "product_id": "4871107",
@@ -3877,7 +3877,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.55,
+      "latency_ms": 8.09,
       "result_count": 5,
       "top_result": {
         "product_id": "2100417",
@@ -3897,7 +3897,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.57,
+      "latency_ms": 8.48,
       "result_count": 5,
       "top_result": {
         "product_id": "2100417",
@@ -3917,7 +3917,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.06,
+      "latency_ms": 9.65,
       "result_count": 5,
       "top_result": {
         "product_id": "1168906",
@@ -3937,7 +3937,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.15,
+      "latency_ms": 9.85,
       "result_count": 5,
       "top_result": {
         "product_id": "5371345",
@@ -3957,7 +3957,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.5,
+      "latency_ms": 9.29,
       "result_count": 5,
       "top_result": {
         "product_id": "5371345",
@@ -3977,7 +3977,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 11.92,
+      "latency_ms": 10.93,
       "result_count": 5,
       "top_result": {
         "product_id": "4655528",
@@ -3997,7 +3997,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.61,
+      "latency_ms": 10.23,
       "result_count": 5,
       "top_result": {
         "product_id": "4655528",
@@ -4017,7 +4017,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 17.84,
+      "latency_ms": 10.71,
       "result_count": 5,
       "top_result": {
         "product_id": "4655528",
@@ -4037,7 +4037,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.46,
+      "latency_ms": 6.25,
       "result_count": 5,
       "top_result": {
         "product_id": "3981315",
@@ -4057,7 +4057,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.6,
+      "latency_ms": 5.85,
       "result_count": 5,
       "top_result": {
         "product_id": "3881573",
@@ -4077,7 +4077,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.1,
+      "latency_ms": 6.02,
       "result_count": 5,
       "top_result": {
         "product_id": "3881573",
@@ -4097,7 +4097,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.72,
+      "latency_ms": 9.25,
       "result_count": 5,
       "top_result": {
         "product_id": "2879419",
@@ -4117,7 +4117,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.97,
+      "latency_ms": 8.53,
       "result_count": 5,
       "top_result": {
         "product_id": "3369141",
@@ -4137,7 +4137,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.24,
+      "latency_ms": 8.59,
       "result_count": 5,
       "top_result": {
         "product_id": "3369141",
@@ -4157,7 +4157,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.01,
+      "latency_ms": 11.51,
       "result_count": 5,
       "top_result": {
         "product_id": "3697526",
@@ -4177,7 +4177,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.84,
+      "latency_ms": 10.78,
       "result_count": 5,
       "top_result": {
         "product_id": "2372450",
@@ -4197,7 +4197,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 11.42,
+      "latency_ms": 11,
       "result_count": 5,
       "top_result": {
         "product_id": "2372450",
@@ -4217,7 +4217,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.21,
+      "latency_ms": 11.76,
       "result_count": 5,
       "top_result": {
         "product_id": "2723218",
@@ -4237,7 +4237,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.61,
+      "latency_ms": 12.01,
       "result_count": 5,
       "top_result": {
         "product_id": "3758213",
@@ -4257,7 +4257,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 11.89,
+      "latency_ms": 11.48,
       "result_count": 5,
       "top_result": {
         "product_id": "3758213",
@@ -4277,7 +4277,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.36,
+      "latency_ms": 6.17,
       "result_count": 5,
       "top_result": {
         "product_id": "4683157",
@@ -4297,7 +4297,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.92,
+      "latency_ms": 5.79,
       "result_count": 5,
       "top_result": {
         "product_id": "3092776",
@@ -4317,7 +4317,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.97,
+      "latency_ms": 5.69,
       "result_count": 5,
       "top_result": {
         "product_id": "3092776",
@@ -4337,7 +4337,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.06,
+      "latency_ms": 8.81,
       "result_count": 5,
       "top_result": {
         "product_id": "1388775",
@@ -4357,7 +4357,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.62,
+      "latency_ms": 8.39,
       "result_count": 5,
       "top_result": {
         "product_id": "2086656",
@@ -4377,7 +4377,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.1,
+      "latency_ms": 12.05,
       "result_count": 5,
       "top_result": {
         "product_id": "2086656",
@@ -4397,7 +4397,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.26,
+      "latency_ms": 9.15,
       "result_count": 5,
       "top_result": {
         "product_id": "595039",
@@ -4417,7 +4417,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.78,
+      "latency_ms": 7.84,
       "result_count": 5,
       "top_result": {
         "product_id": "3276429",
@@ -4437,7 +4437,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.89,
+      "latency_ms": 9.96,
       "result_count": 5,
       "top_result": {
         "product_id": "3276429",
@@ -4457,7 +4457,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.36,
+      "latency_ms": 10.18,
       "result_count": 5,
       "top_result": {
         "product_id": "4655076",
@@ -4477,7 +4477,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.19,
+      "latency_ms": 8.25,
       "result_count": 5,
       "top_result": {
         "product_id": "3832068",
@@ -4497,7 +4497,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.18,
+      "latency_ms": 8.28,
       "result_count": 5,
       "top_result": {
         "product_id": "3832068",
@@ -4517,7 +4517,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.51,
+      "latency_ms": 12.53,
       "result_count": 5,
       "top_result": {
         "product_id": "4297241",
@@ -4537,7 +4537,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.76,
+      "latency_ms": 12.79,
       "result_count": 5,
       "top_result": {
         "product_id": "3092776",
@@ -4557,7 +4557,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 11.97,
+      "latency_ms": 12.19,
       "result_count": 5,
       "top_result": {
         "product_id": "3092776",
@@ -4577,7 +4577,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 16.26,
+      "latency_ms": 16.14,
       "result_count": 5,
       "top_result": {
         "product_id": "4278938",
@@ -4597,7 +4597,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 18.77,
+      "latency_ms": 16.19,
       "result_count": 5,
       "top_result": {
         "product_id": "5386037",
@@ -4617,7 +4617,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 17.63,
+      "latency_ms": 16.43,
       "result_count": 5,
       "top_result": {
         "product_id": "5386037",
@@ -4637,7 +4637,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.82,
+      "latency_ms": 6.2,
       "result_count": 5,
       "top_result": {
         "product_id": "4128817",
@@ -4657,7 +4657,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.66,
+      "latency_ms": 5.73,
       "result_count": 5,
       "top_result": {
         "product_id": "4363895",
@@ -4677,7 +4677,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.51,
+      "latency_ms": 5.89,
       "result_count": 5,
       "top_result": {
         "product_id": "4363895",
@@ -4697,7 +4697,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.77,
+      "latency_ms": 9.92,
       "result_count": 5,
       "top_result": {
         "product_id": "3563185",
@@ -4717,7 +4717,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.21,
+      "latency_ms": 9.69,
       "result_count": 5,
       "top_result": {
         "product_id": "5992665",
@@ -4737,7 +4737,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.37,
+      "latency_ms": 9.69,
       "result_count": 5,
       "top_result": {
         "product_id": "5992665",
@@ -4777,7 +4777,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.1,
+      "latency_ms": 12.06,
       "result_count": 5,
       "top_result": {
         "product_id": "2086731",
@@ -4797,7 +4797,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 12.53,
+      "latency_ms": 12.28,
       "result_count": 5,
       "top_result": {
         "product_id": "2086731",
@@ -4817,7 +4817,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.9,
+      "latency_ms": 8.63,
       "result_count": 5,
       "top_result": {
         "product_id": "4057918",
@@ -4837,7 +4837,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9,
+      "latency_ms": 8.72,
       "result_count": 5,
       "top_result": {
         "product_id": "2341474",
@@ -4857,7 +4857,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.42,
+      "latency_ms": 8.26,
       "result_count": 5,
       "top_result": {
         "product_id": "2341474",
@@ -4877,7 +4877,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.59,
+      "latency_ms": 8.27,
       "result_count": 5,
       "top_result": {
         "product_id": "3404705",
@@ -4897,7 +4897,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.85,
+      "latency_ms": 7.73,
       "result_count": 5,
       "top_result": {
         "product_id": "4210133",
@@ -4917,7 +4917,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.96,
+      "latency_ms": 7.72,
       "result_count": 5,
       "top_result": {
         "product_id": "4210133",
@@ -4937,7 +4937,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 11.17,
+      "latency_ms": 10.25,
       "result_count": 5,
       "top_result": {
         "product_id": "1404736",
@@ -4957,7 +4957,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.14,
+      "latency_ms": 9.63,
       "result_count": 5,
       "top_result": {
         "product_id": "1404736",
@@ -4977,7 +4977,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.51,
+      "latency_ms": 9.52,
       "result_count": 5,
       "top_result": {
         "product_id": "1404736",
@@ -4997,7 +4997,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.59,
+      "latency_ms": 6.14,
       "result_count": 5,
       "top_result": {
         "product_id": "4703345",
@@ -5017,7 +5017,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.74,
+      "latency_ms": 6.49,
       "result_count": 5,
       "top_result": {
         "product_id": "5408953",
@@ -5037,7 +5037,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.21,
+      "latency_ms": 5.8,
       "result_count": 5,
       "top_result": {
         "product_id": "5408953",
@@ -5057,7 +5057,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.63,
+      "latency_ms": 6.07,
       "result_count": 5,
       "top_result": {
         "product_id": "3830420",
@@ -5077,7 +5077,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.27,
+      "latency_ms": 5.74,
       "result_count": 5,
       "top_result": {
         "product_id": "3092776",
@@ -5097,7 +5097,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.31,
+      "latency_ms": 6.09,
       "result_count": 5,
       "top_result": {
         "product_id": "3092776",
@@ -5117,7 +5117,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.28,
+      "latency_ms": 8.53,
       "result_count": 5,
       "top_result": {
         "product_id": "4356794",
@@ -5137,7 +5137,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.42,
+      "latency_ms": 8.31,
       "result_count": 5,
       "top_result": {
         "product_id": "5215534",
@@ -5157,7 +5157,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.1,
+      "latency_ms": 7.67,
       "result_count": 5,
       "top_result": {
         "product_id": "5215534",
@@ -5178,7 +5178,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.78,
+      "latency_ms": 7.06,
       "result_count": 5,
       "top_result": {
         "product_id": "1640887",
@@ -5199,7 +5199,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.35,
+      "latency_ms": 6.29,
       "result_count": 5,
       "top_result": {
         "product_id": "5992665",
@@ -5220,7 +5220,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.66,
+      "latency_ms": 7.03,
       "result_count": 5,
       "top_result": {
         "product_id": "5162177",
@@ -5241,7 +5241,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.31,
+      "latency_ms": 5.65,
       "result_count": 5,
       "top_result": {
         "product_id": "3783092",
@@ -5262,7 +5262,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.54,
+      "latency_ms": 5.51,
       "result_count": 5,
       "top_result": {
         "product_id": "3976350",
@@ -5283,7 +5283,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.96,
+      "latency_ms": 6.23,
       "result_count": 5,
       "top_result": {
         "product_id": "5311114",
@@ -5304,7 +5304,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.05,
+      "latency_ms": 5.39,
       "result_count": 5,
       "top_result": {
         "product_id": "5276013",
@@ -5325,7 +5325,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.21,
+      "latency_ms": 5.3,
       "result_count": 5,
       "top_result": {
         "product_id": "6237008",
@@ -5346,7 +5346,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.43,
+      "latency_ms": 7.11,
       "result_count": 5,
       "top_result": {
         "product_id": "2831374",
@@ -5367,7 +5367,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.27,
+      "latency_ms": 6.04,
       "result_count": 5,
       "top_result": {
         "product_id": "4993414",
@@ -5388,7 +5388,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.7,
+      "latency_ms": 5.69,
       "result_count": 5,
       "top_result": {
         "product_id": "5324355",
@@ -5409,7 +5409,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.86,
+      "latency_ms": 5.41,
       "result_count": 5,
       "top_result": {
         "product_id": "5360472",
@@ -5430,7 +5430,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.18,
+      "latency_ms": 5.39,
       "result_count": 5,
       "top_result": {
         "product_id": "1844582",
@@ -5451,7 +5451,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.14,
+      "latency_ms": 5.35,
       "result_count": 5,
       "top_result": {
         "product_id": "1778404",
@@ -5472,7 +5472,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.65,
+      "latency_ms": 5.94,
       "result_count": 5,
       "top_result": {
         "product_id": "3455892",
@@ -5493,7 +5493,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.19,
+      "latency_ms": 5.61,
       "result_count": 5,
       "top_result": {
         "product_id": "5386037",
@@ -5514,7 +5514,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 9.58,
+      "latency_ms": 5.57,
       "result_count": 5,
       "top_result": {
         "product_id": "5404586",
@@ -5535,7 +5535,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 10.09,
+      "latency_ms": 5.54,
       "result_count": 5,
       "top_result": {
         "product_id": "4747235",
@@ -5556,7 +5556,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 7.62,
+      "latency_ms": 5.45,
       "result_count": 5,
       "top_result": {
         "product_id": "4201442",
@@ -5577,7 +5577,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.01,
+      "latency_ms": 5.49,
       "result_count": 5,
       "top_result": {
         "product_id": "5351938",
@@ -5598,7 +5598,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 8.23,
+      "latency_ms": 5.79,
       "result_count": 5,
       "top_result": {
         "product_id": "4727091",
@@ -5619,7 +5619,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.93,
+      "latency_ms": 5.38,
       "result_count": 5,
       "top_result": {
         "product_id": "3268569",
@@ -5640,7 +5640,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.92,
+      "latency_ms": 5.5,
       "result_count": 5,
       "top_result": {
         "product_id": "5432652",
@@ -5661,7 +5661,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 6.8,
+      "latency_ms": 5.45,
       "result_count": 5,
       "top_result": {
         "product_id": "4556449",
@@ -5682,7 +5682,7 @@
         "limit": 5
       },
       "status": 200,
-      "latency_ms": 5.6,
+      "latency_ms": 5.23,
       "result_count": 5,
       "top_result": {
         "product_id": "2518417",
@@ -5704,7 +5704,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.54,
+      "latency_ms": 4.2,
       "result_count": 7,
       "top_result": {
         "product_id": "2086653",
@@ -5726,7 +5726,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.82,
+      "latency_ms": 3.62,
       "result_count": 7,
       "top_result": {
         "product_id": "4989733",
@@ -5748,7 +5748,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.69,
+      "latency_ms": 3.4,
       "result_count": 2,
       "top_result": {
         "product_id": "3467226",
@@ -5770,7 +5770,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.74,
+      "latency_ms": 3.52,
       "result_count": 0,
       "top_result": null,
       "validation_failures": []
@@ -5785,7 +5785,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.66,
+      "latency_ms": 3.32,
       "result_count": 5,
       "top_result": {
         "product_id": "4319523",
@@ -5807,7 +5807,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.57,
+      "latency_ms": 4.23,
       "result_count": 7,
       "top_result": {
         "product_id": "4939569",
@@ -5829,7 +5829,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.95,
+      "latency_ms": 3.62,
       "result_count": 7,
       "top_result": {
         "product_id": "4886714",
@@ -5851,7 +5851,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.05,
+      "latency_ms": 3.67,
       "result_count": 2,
       "top_result": {
         "product_id": "5355364",
@@ -5873,7 +5873,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.28,
+      "latency_ms": 3.6,
       "result_count": 5,
       "top_result": {
         "product_id": "3451036",
@@ -5895,7 +5895,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.07,
+      "latency_ms": 3.93,
       "result_count": 5,
       "top_result": {
         "product_id": "750908",
@@ -5917,7 +5917,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.79,
+      "latency_ms": 3.63,
       "result_count": 7,
       "top_result": {
         "product_id": "2574822",
@@ -5939,7 +5939,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.29,
+      "latency_ms": 2.77,
       "result_count": 2,
       "top_result": {
         "product_id": "5795972",
@@ -5961,7 +5961,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.45,
+      "latency_ms": 3.99,
       "result_count": 7,
       "top_result": {
         "product_id": "2086653",
@@ -5983,7 +5983,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.86,
+      "latency_ms": 4.34,
       "result_count": 7,
       "top_result": {
         "product_id": "3880012",
@@ -6005,7 +6005,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.59,
+      "latency_ms": 3.67,
       "result_count": 7,
       "top_result": {
         "product_id": "3663072",
@@ -6027,7 +6027,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.63,
+      "latency_ms": 3.7,
       "result_count": 5,
       "top_result": {
         "product_id": "4225425",
@@ -6049,7 +6049,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.58,
+      "latency_ms": 3.6,
       "result_count": 7,
       "top_result": {
         "product_id": "1627892",
@@ -6071,7 +6071,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.37,
+      "latency_ms": 4.62,
       "result_count": 7,
       "top_result": {
         "product_id": "1551840",
@@ -6093,7 +6093,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.52,
+      "latency_ms": 3.85,
       "result_count": 7,
       "top_result": {
         "product_id": "2149254",
@@ -6115,7 +6115,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.5,
+      "latency_ms": 3.9,
       "result_count": 7,
       "top_result": {
         "product_id": "2273084",
@@ -6137,7 +6137,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.66,
+      "latency_ms": 3.65,
       "result_count": 7,
       "top_result": {
         "product_id": "3451036",
@@ -6159,7 +6159,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.81,
+      "latency_ms": 3.89,
       "result_count": 7,
       "top_result": {
         "product_id": "1168906",
@@ -6181,7 +6181,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.52,
+      "latency_ms": 3.51,
       "result_count": 7,
       "top_result": {
         "product_id": "6224315",
@@ -6203,7 +6203,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 2.87,
+      "latency_ms": 2.96,
       "result_count": 7,
       "top_result": {
         "product_id": "3434621",
@@ -6225,7 +6225,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.12,
+      "latency_ms": 4,
       "result_count": 7,
       "top_result": {
         "product_id": "2086653",
@@ -6247,7 +6247,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.65,
+      "latency_ms": 3.68,
       "result_count": 7,
       "top_result": {
         "product_id": "3562068",
@@ -6269,7 +6269,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.71,
+      "latency_ms": 3.52,
       "result_count": 7,
       "top_result": {
         "product_id": "3663072",
@@ -6291,7 +6291,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.85,
+      "latency_ms": 3.61,
       "result_count": 7,
       "top_result": {
         "product_id": "2440110",
@@ -6313,7 +6313,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.81,
+      "latency_ms": 3.5,
       "result_count": 7,
       "top_result": {
         "product_id": "1627892",
@@ -6335,7 +6335,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.42,
+      "latency_ms": 4.44,
       "result_count": 7,
       "top_result": {
         "product_id": "1551840",
@@ -6357,7 +6357,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.61,
+      "latency_ms": 3.55,
       "result_count": 7,
       "top_result": {
         "product_id": "2149254",
@@ -6379,7 +6379,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.83,
+      "latency_ms": 3.77,
       "result_count": 7,
       "top_result": {
         "product_id": "2273084",
@@ -6401,7 +6401,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.65,
+      "latency_ms": 3.38,
       "result_count": 7,
       "top_result": {
         "product_id": "2702397",
@@ -6423,7 +6423,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.12,
+      "latency_ms": 3.67,
       "result_count": 7,
       "top_result": {
         "product_id": "1168906",
@@ -6445,7 +6445,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.09,
+      "latency_ms": 3.55,
       "result_count": 7,
       "top_result": {
         "product_id": "6224315",
@@ -6467,7 +6467,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.33,
+      "latency_ms": 3.23,
       "result_count": 7,
       "top_result": {
         "product_id": "3434621",
@@ -6489,7 +6489,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 5.23,
+      "latency_ms": 4.11,
       "result_count": 7,
       "top_result": {
         "product_id": "2086653",
@@ -6511,7 +6511,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.84,
+      "latency_ms": 3.51,
       "result_count": 7,
       "top_result": {
         "product_id": "3562068",
@@ -6533,7 +6533,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.97,
+      "latency_ms": 3.38,
       "result_count": 7,
       "top_result": {
         "product_id": "3663072",
@@ -6555,7 +6555,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.08,
+      "latency_ms": 3.64,
       "result_count": 7,
       "top_result": {
         "product_id": "2440110",
@@ -6577,7 +6577,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.78,
+      "latency_ms": 3.22,
       "result_count": 7,
       "top_result": {
         "product_id": "1627892",
@@ -6599,7 +6599,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.27,
+      "latency_ms": 4.12,
       "result_count": 7,
       "top_result": {
         "product_id": "1551840",
@@ -6621,7 +6621,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.58,
+      "latency_ms": 3.21,
       "result_count": 7,
       "top_result": {
         "product_id": "2149254",
@@ -6643,7 +6643,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.68,
+      "latency_ms": 3.24,
       "result_count": 7,
       "top_result": {
         "product_id": "2273084",
@@ -6665,7 +6665,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.52,
+      "latency_ms": 3.04,
       "result_count": 7,
       "top_result": {
         "product_id": "2702397",
@@ -6687,7 +6687,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.83,
+      "latency_ms": 3.42,
       "result_count": 7,
       "top_result": {
         "product_id": "1168906",
@@ -6709,7 +6709,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.62,
+      "latency_ms": 3.22,
       "result_count": 7,
       "top_result": {
         "product_id": "6224315",
@@ -6731,7 +6731,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.45,
+      "latency_ms": 2.72,
       "result_count": 7,
       "top_result": {
         "product_id": "3434621",
@@ -6753,7 +6753,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.13,
+      "latency_ms": 3.65,
       "result_count": 7,
       "top_result": {
         "product_id": "2086653",
@@ -6775,7 +6775,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.95,
+      "latency_ms": 3.42,
       "result_count": 7,
       "top_result": {
         "product_id": "3562068",
@@ -6797,7 +6797,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.74,
+      "latency_ms": 3.27,
       "result_count": 7,
       "top_result": {
         "product_id": "3663072",
@@ -6819,7 +6819,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.97,
+      "latency_ms": 3.45,
       "result_count": 7,
       "top_result": {
         "product_id": "1163169",
@@ -6841,7 +6841,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.76,
+      "latency_ms": 3.18,
       "result_count": 7,
       "top_result": {
         "product_id": "1627892",
@@ -6863,7 +6863,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.4,
+      "latency_ms": 3.87,
       "result_count": 7,
       "top_result": {
         "product_id": "1551840",
@@ -6885,7 +6885,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.72,
+      "latency_ms": 3.25,
       "result_count": 7,
       "top_result": {
         "product_id": "2149254",
@@ -6907,7 +6907,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.9,
+      "latency_ms": 3.52,
       "result_count": 7,
       "top_result": {
         "product_id": "2273084",
@@ -6929,7 +6929,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.7,
+      "latency_ms": 3.09,
       "result_count": 7,
       "top_result": {
         "product_id": "2702397",
@@ -6951,7 +6951,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 4.15,
+      "latency_ms": 3.51,
       "result_count": 7,
       "top_result": {
         "product_id": "1168906",
@@ -6973,7 +6973,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.62,
+      "latency_ms": 3.29,
       "result_count": 7,
       "top_result": {
         "product_id": "6224315",
@@ -6995,7 +6995,7 @@
         "limit": 7
       },
       "status": 200,
-      "latency_ms": 3.21,
+      "latency_ms": 2.77,
       "result_count": 7,
       "top_result": {
         "product_id": "3434621",

@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 
 const DEFAULT_TIMEOUT_MS = 1200;
+const DEFAULT_CACHE_URL = new URL('../data/index/opencrab-candidate-cache.json', import.meta.url);
 const PRODUCT_ID_RE = /(?:products\/|product[_-]?id["'\s:=]+)(\d{4,})/gi;
 
 export async function resolveOpenCrabCandidates(request = {}, options = {}) {
@@ -10,7 +11,7 @@ export async function resolveOpenCrabCandidates(request = {}, options = {}) {
   if (directIds.length) return result({ source: 'request_candidate_ids', product_ids: directIds, started });
   if (!['hybrid', 'opencrab_first'].includes(mode)) return result({ source: 'disabled', product_ids: [], started, skipped: true });
 
-  const cachePath = options.cachePath ?? process.env.OPENCRAB_RETRIEVAL_CACHE_PATH;
+  const cachePath = options.cachePath ?? process.env.OPENCRAB_RETRIEVAL_CACHE_PATH ?? DEFAULT_CACHE_URL;
   if (cachePath) {
     const cached = await readCacheCandidates(cachePath, request);
     if (cached.length) return result({ source: 'opencrab_cache', product_ids: cached, started, cache_hit: true });

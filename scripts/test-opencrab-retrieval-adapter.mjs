@@ -27,6 +27,7 @@ const plugin = spawn(process.execPath, ['src/server.mjs'], {
     ...process.env,
     PORT: String(pluginPort),
     OPENCRAB_RETRIEVAL_URL: `http://127.0.0.1:${mockPort}/retrieve`,
+    OPENCRAB_RETRIEVAL_CACHE_PATH: '',
     OPENCRAB_RETRIEVAL_TIMEOUT_MS: '1000'
   },
   stdio: ['ignore', 'pipe', 'pipe']

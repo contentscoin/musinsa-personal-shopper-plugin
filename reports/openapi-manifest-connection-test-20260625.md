@@ -19,13 +19,13 @@
 
 | Endpoint | Status | Content-Type | Latency ms |
 |---|---:|---|---:|
-| /health | 200 | application/json; charset=utf-8 | 27.79 |
-| /.well-known/ai-plugin.json | 200 | application/json; charset=utf-8 | 2.78 |
-| /openapi.yaml | 200 | application/yaml; charset=utf-8 | 1.72 |
-| /analytics/notice | 200 | application/json; charset=utf-8 | 0.86 |
-| /logo.png | 200 | image/png | 0.82 |
-| /shopper/recommend runtime | 200 | application/json | 59.06 |
-| /products/search runtime | 200 | application/json | 47.6 |
+| /health | 200 | application/json; charset=utf-8 | 27.5 |
+| /.well-known/ai-plugin.json | 200 | application/json; charset=utf-8 | 2.87 |
+| /openapi.yaml | 200 | application/yaml; charset=utf-8 | 1.52 |
+| /analytics/notice | 200 | application/json; charset=utf-8 | 0.99 |
+| /logo.png | 200 | image/png | 1.05 |
+| /shopper/recommend runtime | 200 | application/json | 63.5 |
+| /products/search runtime | 200 | application/json | 55.39 |
 
 ## Failures
 

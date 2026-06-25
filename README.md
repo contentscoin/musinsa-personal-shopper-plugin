@@ -29,7 +29,7 @@
 | Owner dashboard Convex/Vercel pack | OpenCrab private pack `6bc1f3e9-9c69-4ad6-96f0-0c8b40b3f930` |
 | Convex DB/backend | Production deployment `veracious-albatross-267` |
 | Vercel Owner Dashboard | **https://owner-dashboard-snowy.vercel.app** |
-| 테스트 | **24개 통과** |
+| 테스트 | **25개 통과** |
 | P0 hardening | API safe errors/body limit, analytics consent metadata, Convex HTTP ingest sync, Convex audit events |
 | Hybrid retrieval | Precomputed local search index + catalog-derived lexicon + OpenCrab candidate reranking hook |
 | Search index | 2,050 products / 1,416 brand tokens / 436 category terms / 549 lexicon terms |
@@ -128,8 +128,8 @@ npm test
 예상 결과:
 
 ```text
-# tests 24
-# pass 24
+# tests 25
+# pass 25
 # fail 0
 ```
 
@@ -156,6 +156,7 @@ curl -s http://localhost:8787/dashboard
 
 ```bash
 npm run index:build
+npm run cache:opencrab
 npm run benchmark:search
 ```
 
@@ -227,6 +228,7 @@ recommend
 | `src/httpUtils.mjs` | request body limit, invalid JSON, CORS, safe error response utilities |
 | `scripts/demo.mjs` | end-to-end demo script |
 | `scripts/build-search-index.mjs` | hot-path local search index/lexicon export |
+| `scripts/build-opencrab-candidate-cache.mjs` | OpenCrab candidate cache 생성 |
 | `scripts/benchmark-search-index.mjs` | local-index latency benchmark |
 | `scripts/test-opencrab-retrieval-adapter.mjs` | mock OpenCrab retrieval adapter integration test |
 | `scripts/crawl-musinsa-products.mjs` | 공개 상품 크롤러 |

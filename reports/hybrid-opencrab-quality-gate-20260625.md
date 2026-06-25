@@ -11,8 +11,8 @@
 | Hybrid non-empty | 60 |
 | OpenCrab provenance coverage | 60 |
 | Avg overlap | 0.28 |
-| Local p50/p95/max ms | 6.94 / 11.23 / 12.66 |
-| Hybrid p50/p95/max ms | 4.15 / 6.12 / 20.86 |
+| Local p50/p95/max ms | 6.44 / 9.74 / 12.01 |
+| Hybrid p50/p95/max ms | 3.66 / 6.51 / 20.27 |
 
 ## By family
 

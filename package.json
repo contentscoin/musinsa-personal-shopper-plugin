@@ -12,6 +12,7 @@
     "test:opencrab-adapter": "node scripts/test-opencrab-retrieval-adapter.mjs",
     "bridge:opencrab": "node scripts/opencrab-retrieval-bridge.mjs",
     "verify:opencrab-bridge": "node scripts/verify-real-opencrab-bridge.mjs",
+    "verify:opencrab-live-bridge": "node scripts/verify-opencrab-live-command-bridge.mjs",
     "test:hybrid-opencrab": "node scripts/test-hybrid-opencrab-quality-gate.mjs",
     "verify:dashboard": "node scripts/verify-dashboard-live-api.mjs",
     "demo": "node scripts/demo.mjs",

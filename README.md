@@ -160,6 +160,7 @@ npm run index:build
 npm run cache:opencrab
 npm run benchmark:search
 npm run verify:opencrab-bridge
+npm run verify:opencrab-live-bridge
 npm run test:hybrid-opencrab
 ```
 
@@ -195,12 +196,13 @@ Adapter contract:
 ```bash
 npm run test:opencrab-adapter
 npm run verify:opencrab-bridge
+npm run verify:opencrab-live-bridge
 npm run test:hybrid-opencrab
 ```
 
 `npm run test:hybrid-opencrab`는 60개 쇼핑 쿼리에 대해 local-only vs hybrid 결과를 비교하고, OpenCrab provenance coverage, p50/p95 latency, empty result rate, candidate row 유무를 검증합니다. 최근 결과는 60/60 pass, hybrid provenance coverage 60/60입니다.
 
-`npm run bridge:opencrab`은 repo-level HTTP bridge를 실행합니다. 기본은 실제 OpenCrab MCP `project_run` 결과를 캡처한 verified fixture 모드이고, `OPENCRAB_BRIDGE_UPSTREAM_URL`을 설정하면 향후 live OpenCrab HTTP service로 forward할 수 있습니다.
+`npm run bridge:opencrab`은 repo-level HTTP bridge를 실행합니다. 기본은 실제 OpenCrab MCP `project_run` 결과를 캡처한 verified fixture 모드입니다. `OPENCRAB_BRIDGE_UPSTREAM_URL`을 설정하면 HTTP upstream으로 live forward하고, `OPENCRAB_BRIDGE_COMMAND`를 설정하면 stdin/stdout command mode로 로컬 OpenCrab 호출 스크립트를 붙일 수 있습니다. live 실패 시 기본적으로 fixture fallback을 제공하며, 엄격 모드는 `OPENCRAB_BRIDGE_FALLBACK_ON_ERROR=false`로 설정합니다.
 
 ### Dashboard live/fallback 확인
 
@@ -249,8 +251,10 @@ recommend
 | `scripts/build-opencrab-candidate-cache.mjs` | OpenCrab candidate cache 생성 |
 | `scripts/benchmark-search-index.mjs` | local-index latency benchmark |
 | `scripts/test-opencrab-retrieval-adapter.mjs` | mock OpenCrab retrieval adapter integration test |
-| `scripts/opencrab-retrieval-bridge.mjs` | OpenCrab evidence payload를 plugin adapter용 HTTP `/retrieve`로 제공하는 bridge |
+| `scripts/opencrab-retrieval-bridge.mjs` | OpenCrab evidence payload를 plugin adapter용 HTTP `/retrieve`로 제공하는 bridge: fixture/upstream/command mode 지원 |
 | `scripts/verify-real-opencrab-bridge.mjs` | 실제 OpenCrab MCP project_run fixture 기반 hybrid/local 비교 검증 |
+| `scripts/verify-opencrab-live-command-bridge.mjs` | live command-mode bridge contract 검증 |
+| `scripts/mock-opencrab-live-command.mjs` | command-mode verifier용 mock OpenCrab command |
 | `scripts/verify-dashboard-live-api.mjs` | `/dashboard` live/fallback/refresh UI와 analytics API 연결 검증 |
 | `scripts/test-hybrid-opencrab-quality-gate.mjs` | 60개 쿼리 local-only vs OpenCrab hybrid quality gate |
 | `scripts/crawl-musinsa-products.mjs` | 공개 상품 크롤러 |

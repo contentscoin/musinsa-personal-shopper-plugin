@@ -202,7 +202,7 @@ npm run test:hybrid-opencrab
 
 `npm run test:hybrid-opencrab`는 60개 쇼핑 쿼리에 대해 local-only vs hybrid 결과를 비교하고, OpenCrab provenance coverage, p50/p95 latency, empty result rate, candidate row 유무를 검증합니다. 최근 결과는 60/60 pass, hybrid provenance coverage 60/60입니다.
 
-`npm run bridge:opencrab`은 repo-level HTTP bridge를 실행합니다. 기본은 실제 OpenCrab MCP `project_run` 결과를 캡처한 verified fixture 모드입니다. `OPENCRAB_BRIDGE_UPSTREAM_URL`을 설정하면 HTTP upstream으로 live forward하고, `OPENCRAB_BRIDGE_COMMAND`를 설정하면 stdin/stdout command mode로 로컬 OpenCrab 호출 스크립트를 붙일 수 있습니다. live 실패 시 기본적으로 fixture fallback을 제공하며, 엄격 모드는 `OPENCRAB_BRIDGE_FALLBACK_ON_ERROR=false`로 설정합니다.
+`npm run bridge:opencrab`은 repo-level HTTP bridge를 실행합니다. 기본은 실제 OpenCrab MCP `project_run` 결과를 캡처한 verified fixture 모드입니다. `OPENCRAB_BRIDGE_UPSTREAM_URL`을 설정하면 HTTP upstream으로 live forward하고, `OPENCRAB_BRIDGE_COMMAND='node scripts/opencrab-live-command.mjs'`를 설정하면 stdin/stdout command mode로 OpenCrab project_run 형태의 live adapter를 붙일 수 있습니다. `scripts/opencrab-live-command.mjs`는 `OPENCRAB_PROJECT_RUN_URL` / `OPENCRAB_PROJECT_RUN_API_KEY`가 있으면 HTTP project_run을 호출하고, 검증용으로는 `OPENCRAB_LIVE_RESPONSE_PATH=data/index/opencrab-live-project-run-verification-20260625.json` 캡처 payload를 사용할 수 있습니다. live 실패 시 기본적으로 fixture fallback을 제공하며, 엄격 모드는 `OPENCRAB_BRIDGE_FALLBACK_ON_ERROR=false`로 설정합니다.
 
 ### Dashboard live/fallback 확인
 
@@ -252,6 +252,7 @@ recommend
 | `scripts/benchmark-search-index.mjs` | local-index latency benchmark |
 | `scripts/test-opencrab-retrieval-adapter.mjs` | mock OpenCrab retrieval adapter integration test |
 | `scripts/opencrab-retrieval-bridge.mjs` | OpenCrab evidence payload를 plugin adapter용 HTTP `/retrieve`로 제공하는 bridge: fixture/upstream/command mode 지원 |
+| `scripts/opencrab-live-command.mjs` | OpenCrab project_run HTTP/live-response command adapter |
 | `scripts/verify-real-opencrab-bridge.mjs` | 실제 OpenCrab MCP project_run fixture 기반 hybrid/local 비교 검증 |
 | `scripts/verify-opencrab-live-command-bridge.mjs` | live command-mode bridge contract 검증 |
 | `scripts/mock-opencrab-live-command.mjs` | command-mode verifier용 mock OpenCrab command |

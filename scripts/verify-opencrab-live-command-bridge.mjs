@@ -8,8 +8,9 @@ const bridge = spawn('node', ['scripts/opencrab-retrieval-bridge.mjs'], {
   env: {
     ...process.env,
     PORT: String(port),
-    OPENCRAB_BRIDGE_COMMAND: 'node scripts/mock-opencrab-live-command.mjs',
-    OPENCRAB_BRIDGE_TIMEOUT_MS: '4000'
+    OPENCRAB_BRIDGE_COMMAND: 'node scripts/opencrab-live-command.mjs',
+    OPENCRAB_LIVE_RESPONSE_PATH: 'data/index/opencrab-live-project-run-verification-20260625.json',
+    OPENCRAB_BRIDGE_TIMEOUT_MS: '6000'
   },
   stdio: ['ignore', 'pipe', 'pipe']
 });

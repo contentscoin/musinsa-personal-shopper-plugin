@@ -24,16 +24,17 @@
 |---|---:|
 | 무신사 상품 샘플 DB | **2,050개 상품** |
 | 고유 브랜드/카테고리 | **713개 브랜드 / 190개 카테고리 경로** |
-| 상품 온톨로지팩 | OpenCrab private pack `0b3c79f7-1861-4466-ba20-2cbaa736de66` v2.1.0 |
+| 상품 온톨로지팩 | OpenCrab private pack `0b3c79f7-1861-4466-ba20-2cbaa736de66` v3.8.0 |
 | 상품 온톨로지 확장 seed pack | OpenCrab private pack `98c2c29e-c16f-4440-b98a-21ed45c75e9e` |
 | Owner dashboard Convex/Vercel pack | OpenCrab private pack `6bc1f3e9-9c69-4ad6-96f0-0c8b40b3f930` |
 | Convex DB/backend | Production deployment `veracious-albatross-267` |
 | Vercel Owner Dashboard | **https://owner-dashboard-snowy.vercel.app** |
-| 테스트 | **25개 통과** |
+| 로컬 dashboard | `/dashboard` live API/fallback mock 상태 배지 + manual/30s auto refresh |
+| 테스트 | **29개 통과** |
 | P0 hardening | API safe errors/body limit, analytics consent metadata, Convex HTTP ingest sync, Convex audit events |
-| Hybrid retrieval | Precomputed local search index + catalog-derived lexicon + OpenCrab candidate reranking hook |
+| Hybrid retrieval | Local search index + OpenCrab evidence parser + HTTP bridge + candidate provenance rows |
 | Search index | 2,050 products / 1,416 brand tokens / 436 category terms / 549 lexicon terms |
-| 검증 리포트 | product search 320/320, OpenAPI/manifest 0 failure |
+| 검증 리포트 | product search 320/320, OpenAPI/manifest 0 failure, dashboard live/fallback, OpenCrab bridge |
 | Plugin contract | OpenAPI 3.1 + `/.well-known/ai-plugin.json` |
 | Demo script | `npm run demo` |
 | GitHub repo | public |
@@ -128,8 +129,8 @@ npm test
 예상 결과:
 
 ```text
-# tests 25
-# pass 25
+# tests 29
+# pass 29
 # fail 0
 ```
 
@@ -158,6 +159,7 @@ curl -s http://localhost:8787/dashboard
 npm run index:build
 npm run cache:opencrab
 npm run benchmark:search
+npm run verify:opencrab-bridge
 ```
 
 Hybrid rerank 예시:
@@ -183,14 +185,26 @@ OPENCRAB_OWNER_TAG=hermes-profile:paperclipbase
 Adapter contract:
 
 - request: `{ query, top_k, project_name, owner_tag, purpose, require_product_ids }`
-- response: JSON 안의 `product_id`, `productId`, `source_url` 또는 `https://www.musinsa.com/products/{id}`에서 product ID를 추출
+- response: JSON 안의 `product_id`, `productId`, `source_url`, `https://www.musinsa.com/products/{id}` 또는 OpenCrab `evidence[].text` retrieval seed row에서 product ID와 provenance를 추출
+- `/products/search` 응답의 `retrieval.opencrab_adapter.candidate_rows`에 `product_id`, `source_url`, `source`, `package_id`, `evidence_source_url`, `extraction`을 노출
 - 실패/timeout 시 plugin은 local index로 fallback
 
 검증:
 
 ```bash
 npm run test:opencrab-adapter
+npm run verify:opencrab-bridge
 ```
+
+`npm run bridge:opencrab`은 repo-level HTTP bridge를 실행합니다. 기본은 실제 OpenCrab MCP `project_run` 결과를 캡처한 verified fixture 모드이고, `OPENCRAB_BRIDGE_UPSTREAM_URL`을 설정하면 향후 live OpenCrab HTTP service로 forward할 수 있습니다.
+
+### Dashboard live/fallback 확인
+
+```bash
+npm run verify:dashboard
+```
+
+`/dashboard`는 HTML mock shell이지만 서버에서 열면 매번 `/analytics/summary`와 `/analytics/insights`를 live 호출합니다. 성공하면 `Live API data` 또는 `Live API · no events yet` 배지가 표시되고, API 실패/정적 파일 실행 시 `Fallback mock data` 샘플을 표시합니다. 수동 `Refresh live data` 버튼과 `Auto refresh 30s` 옵션이 있습니다.
 
 ### End-to-end demo 실행
 
@@ -231,6 +245,9 @@ recommend
 | `scripts/build-opencrab-candidate-cache.mjs` | OpenCrab candidate cache 생성 |
 | `scripts/benchmark-search-index.mjs` | local-index latency benchmark |
 | `scripts/test-opencrab-retrieval-adapter.mjs` | mock OpenCrab retrieval adapter integration test |
+| `scripts/opencrab-retrieval-bridge.mjs` | OpenCrab evidence payload를 plugin adapter용 HTTP `/retrieve`로 제공하는 bridge |
+| `scripts/verify-real-opencrab-bridge.mjs` | 실제 OpenCrab MCP project_run fixture 기반 hybrid/local 비교 검증 |
+| `scripts/verify-dashboard-live-api.mjs` | `/dashboard` live/fallback/refresh UI와 analytics API 연결 검증 |
 | `scripts/crawl-musinsa-products.mjs` | 공개 상품 크롤러 |
 | `scripts/export-personal-shopper-data-ontology.mjs` | analytics ontology export |
 | `SUBMISSION.md` | 제출용 한국어 문서 |
@@ -254,7 +271,7 @@ recommend
 | `GET /health` | 서버 상태와 로드된 상품 수 확인 |
 | `GET /openapi.yaml` | OpenAPI spec 제공 |
 | `GET /.well-known/ai-plugin.json` | Plugin manifest 제공 |
-| `GET /dashboard` | 로컬 plugin server의 lightweight analytics dashboard 제공 |
+| `GET /dashboard` | 로컬 plugin server의 lightweight analytics dashboard 제공: live API/fallback 상태 배지, 수동/30초 auto refresh 포함 |
 | `GET /dashboard.html` | dashboard alias |
 | `GET /logo.png` | Manifest 호환용 placeholder |
 
